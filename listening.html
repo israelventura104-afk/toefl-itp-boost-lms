@@ -104,30 +104,66 @@
         <a class="button primary view-more" href="strategies.html#listening">View more strategies</a>
       </section>
 
+      <section class="intro-practice" aria-labelledby="listening-practice-title">
+        <div class="section-heading">
+          <p class="eyebrow">Free practice</p>
+          <h2 id="listening-practice-title">Try 3 fixed short conversations.</h2>
+          <p>
+            Open samples for everyone. They do not shuffle and are not reused in
+            class guided drills or mocks. Play the audio, answer, and read the explanation.
+          </p>
+        </div>
+
+        <p class="practice-status" data-listening-status hidden></p>
+
+        <div class="practice-card listening-card">
+          <div class="practice-topline">
+            <span data-listening-counter>1 / 3</span>
+            <strong data-listening-score>0/0 correct</strong>
+          </div>
+          <p class="question-meta" data-listening-meta></p>
+          <p class="question-meta" data-listening-topic></p>
+          <div class="listening-player">
+            <audio data-listening-audio controls preload="metadata"></audio>
+            <button class="button secondary compact-button" type="button" data-listening-replay>Replay</button>
+          </div>
+          <h3 data-listening-question>Loading…</h3>
+          <div class="choice-list" data-listening-options></div>
+          <div class="practice-feedback" data-listening-feedback hidden></div>
+          <div class="practice-actions">
+            <button class="button secondary" type="button" data-listening-prev>Previous</button>
+            <button class="button primary" type="button" data-listening-next>Next</button>
+          </div>
+        </div>
+      </section>
+
       <section class="strategy-vault commitment-locked" id="strategy-vault" data-requires-access aria-labelledby="listening-vault-title">
         <span class="lock-badge large">Teacher access</span>
         <div class="vault-copy">
           <p class="eyebrow">Class materials</p>
           <h2 id="listening-vault-title">Full Listening path for class students</h2>
           <p>
-            Full listening drills and deeper strategy work stay with Teacher
-            Israel Ventura’s class groups. Free preview strategies above stay open.
+            Class bank drills and timed Listening practice stay with Teacher
+            Israel Ventura’s groups. Free strategies and the 3 sample clips above stay open.
           </p>
         </div>
         <div class="vault-grid" aria-hidden="true">
-          <article><strong>Idioms of agreement</strong><span>You can say that again, I'll say, so do I.</span></article>
-          <article><strong>Double negatives</strong><span>Hardly, scarcely, barely, seldom, not uncommon.</span></article>
-          <article><strong>Speaker attitude</strong><span>Detect surprise, doubt, approval, and disagreement.</span></article>
-          <article><strong>Lecture notes</strong><span>Main topic, examples, sequence, and conclusion.</span></article>
+          <article><strong>Guided Part A</strong><span>10 random short conversations, no timer.</span></article>
+          <article><strong>Timed mock</strong><span>30 items · 20 minutes (Part A focus).</span></article>
+          <article><strong>Bank today</strong><span>89 ready clips; more audio can join later.</span></article>
+          <article><strong>Later</strong><span>Longer conversations and talks (Parts B/C).</span></article>
         </div>
         <div data-access-locked-only>
           <a class="button primary" href="dashboard.html#class-access">Enter class code on dashboard</a>
         </div>
-        <div data-access-open-only hidden>
-          <a class="button primary" href="dashboard.html#score-plan">Back to dashboard</a>
+        <div data-access-open-only hidden class="access-actions">
+          <a class="button primary" href="listening-guided-practice.html">Guided practice</a>
+          <a class="button secondary" href="listening-mock.html">Listening mock</a>
         </div>
       </section>
     </main>
     <script src="access.js"></script>
+    <script src="listening-lib.js"></script>
+    <script src="listening-practice.js"></script>
   </body>
 </html>

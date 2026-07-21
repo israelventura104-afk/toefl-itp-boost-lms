@@ -2060,3 +2060,26 @@ html.has-teacher-access .commitment-locked .mock-panel {
     grid-template-columns: repeat(5, minmax(0, 1fr));
   }
 }
+
+/* Phase 6 — Listening player */
+.listening-player {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+  margin: 0.75rem 0 1rem;
+  padding: 0.85rem 1rem;
+  border-radius: 14px;
+  border: 1px solid var(--line);
+  background: rgba(13, 138, 141, 0.06);
+}
+
+.listening-player audio {
+  flex: 1 1 220px;
+  min-width: 200px;
+  max-width: 100%;
+}
+
+.listening-card h3 {
+  margin-top: 0.35rem;
+}

@@ -151,6 +151,22 @@
         }`;
       }
     }
+
+    const listeningHost = document.querySelector("[data-dash-last-listening]");
+    if (listeningHost && summary.listening) {
+      if (!summary.listening.last) {
+        listeningHost.textContent = "No Listening class sessions on this device yet.";
+      } else {
+        const when = new Date(summary.listening.last.at);
+        const kind =
+          summary.listening.last.mode === "mock" ? "Last Listening mock" : "Last Listening drill";
+        listeningHost.textContent = `${kind}: ${summary.listening.last.correct}/${summary.listening.last.total} (${summary.listening.last.percent}%) · ${when.toLocaleString()}${
+          summary.listening.sessionCount > 1
+            ? ` · ${summary.listening.sessionCount} sessions`
+            : ""
+        }`;
+      }
+    }
   }
 
   if (document.readyState === "loading") {

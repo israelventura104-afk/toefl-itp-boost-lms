@@ -95,6 +95,16 @@ Indexes:
 
 Originals remain in `toefl-itp-boost/app/listening` (copy, not delete).
 
+## Listening practice (Phase 6)
+
+| Mode | File | Access |
+|------|------|--------|
+| Free 3 samples | `listening.html` | Open |
+| Guided 10 items | `listening-guided-practice.html` | Class code |
+| Timed mock 30 / 20 min | `listening-mock.html` | Class code |
+
+Part A short conversations only for now. Longer talks can join the same bank later.
+
 ## Project shape
 
 ```

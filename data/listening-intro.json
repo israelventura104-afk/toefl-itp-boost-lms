@@ -1,0 +1,15 @@
+{
+  "id": "LIST-INTRO",
+  "title": "Listening Free Sample Set",
+  "purpose": "free_intro_fixed",
+  "fixed": true,
+  "shuffle": false,
+  "reuse_in_mocks": false,
+  "item_count": 3,
+  "note": "Three fixed Part A samples for free preview. Not reused in class guided or mock sets.",
+  "item_ids": [
+    "LIST-0001",
+    "LIST-0002",
+    "LIST-0003"
+  ]
+}

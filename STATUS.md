@@ -110,7 +110,7 @@ GitHub Pages notes:
 | **3** | Guided Structure 15 from 190 + dashboard shows real data — **done** |
 | **4** | Structure mock timed 40 / 25 min — **done** |
 | **5** | Reading same pattern — **done** |
-| **6** | Listening + audio |
+| **6** | Listening + audio — **done** |
 | **7** | Full mock 140 + polish |
 
 ### Phase 1 notes (2026-07-21)
@@ -165,7 +165,15 @@ GitHub Pages notes:
 - Normalized playback file: `audio.mp3` (original name in `audio-source.txt`)
 - `data/listening-bank.json` — **89** items with audio (89 questions, Part A short conversations)
 - `data/listening-pending.json` — **11** items JSON-only (no mp3 yet): 0081, 0083, 0085, 0088, 0090, 0092, 0094–0097, 0099
-- UI for Listening free/guided/mock not built yet (Phase 6)
+- UI for Listening free/guided/mock built in Phase 6
+
+### Phase 6 notes
+
+- Free Listening: 3 fixed samples (LIST-0001..0003) via `listening-practice.js` + `data/listening-intro.json`
+- Guided: 10 random Part A items from ready bank (intro excluded), no timer
+- Mock: 30 items / 20 min Part A focus (full 50Q/35min when B/C assets exist)
+- Shared loader: `listening-lib.js`
+- Progress: `recordListeningSession` / `listeningSessions`
 
 ---
 

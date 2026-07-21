@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Listening Guided Practice | TOEFL ITP Boost</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="app-body">
+    <aside class="sidebar" aria-label="Student navigation">
+      <a class="brand app-brand" href="dashboard.html">
+        <span class="brand-mark">IB</span>
+        <span class="brand-copy">
+          <small>By Teacher Israel Ventura</small>
+          <strong>TOEFL ITP Boost</strong>
+        </span>
+      </a>
+      <nav class="app-nav">
+        <a href="dashboard.html#overview">Overview</a>
+        <a href="listening.html">Listening free</a>
+        <a class="active" href="listening-guided-practice.html">Guided practice</a>
+        <a href="listening-mock.html">Listening mock</a>
+      </nav>
+    </aside>
+
+    <main class="lesson-shell">
+      <header class="lesson-hero guided-hero">
+        <a class="back-link" href="dashboard.html#practice">Back to dashboard</a>
+        <p class="eyebrow">Listening Guided Practice</p>
+        <h1>Short conversations · no timer</h1>
+        <p>
+          Practice Part A items from the class bank. Play the audio, answer, read
+          the explanation, then continue. Free sample clips stay on the Listening preview page.
+        </p>
+        <p class="access-status" data-access-status></p>
+        <p class="practice-status" data-guided-status hidden></p>
+      </header>
+
+      <div data-access-gate></div>
+
+      <div data-access-protected hidden>
+        <section class="guided-practice-panel">
+          <div class="section-heading">
+            <p class="eyebrow">Class practice</p>
+            <h2>10-item Listening drill</h2>
+            <p>
+              Random short conversations from the ready bank (free intro samples excluded).
+              Session saves when you finish all 10.
+            </p>
+          </div>
+
+          <div class="practice-session-meta" style="margin-bottom: 0.75rem">
+            <span data-session-label>Loading…</span>
+            <button class="button secondary compact-button" type="button" data-new-set>New set</button>
+          </div>
+
+          <div class="practice-card guided-card listening-card">
+            <div class="practice-topline">
+              <span data-counter>1 / 10</span>
+              <strong data-score>0/0 correct</strong>
+            </div>
+            <p class="question-meta" data-meta></p>
+            <p class="question-meta" data-topic></p>
+            <div class="listening-player">
+              <audio data-audio controls preload="metadata"></audio>
+              <button class="button secondary compact-button" type="button" data-replay>Replay</button>
+            </div>
+            <h3 data-question></h3>
+            <div class="choice-list" data-options></div>
+            <div class="practice-feedback" data-feedback hidden></div>
+            <div class="practice-actions">
+              <button class="button secondary" type="button" data-prev>Previous</button>
+              <button class="button primary" type="button" data-next>Next</button>
+            </div>
+          </div>
+        </section>
+
+        <section class="results-panel" data-results hidden>
+          <div class="results-summary">
+            <div>
+              <p class="eyebrow">Session complete</p>
+              <h2>Listening review</h2>
+              <p data-result-message></p>
+            </div>
+            <div class="result-score">
+              <span>Score</span>
+              <strong data-final-score>0/10</strong>
+              <small data-final-note>Guided set</small>
+            </div>
+          </div>
+          <div class="mistake-review-list" data-mistakes></div>
+          <div class="practice-actions">
+            <button class="button primary" type="button" data-new-set-result>New set</button>
+            <a class="button secondary" href="listening-mock.html">Listening mock</a>
+            <a class="button secondary" href="dashboard.html">Dashboard</a>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <script src="access.js"></script>
+    <script src="progress.js"></script>
+    <script src="listening-lib.js"></script>
+    <script src="listening-guided-practice.js"></script>
+  </body>
+</html>

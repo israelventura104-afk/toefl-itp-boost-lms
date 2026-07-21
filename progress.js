@@ -13,6 +13,7 @@
       version: 1,
       structureSessions: [],
       readingSessions: [],
+      listeningSessions: [],
     };
   }
 
@@ -24,6 +25,7 @@
       if (!data || typeof data !== "object") return emptyState();
       if (!Array.isArray(data.structureSessions)) data.structureSessions = [];
       if (!Array.isArray(data.readingSessions)) data.readingSessions = [];
+      if (!Array.isArray(data.listeningSessions)) data.listeningSessions = [];
       return data;
     } catch {
       return emptyState();
@@ -198,6 +200,58 @@
     return load().readingSessions;
   }
 
+  function recordListeningSession(session) {
+    const state = load();
+    const total = Number(session.total) || 0;
+    const correct = Number(session.correct) || 0;
+    const percent = total > 0 ? Math.round((correct / total) * 100) : 0;
+    const mode = session.mode || "guided";
+
+    const skillMap = {};
+    const mistakes = [];
+    (session.items || []).forEach((entry) => {
+      const skill = normalizeSkill(entry.skill || "Listening");
+      if (!skillMap[skill]) skillMap[skill] = { correct: 0, total: 0 };
+      skillMap[skill].total += 1;
+      if (entry.correct) skillMap[skill].correct += 1;
+      else {
+        mistakes.push({
+          skill,
+          subskill: entry.subskill || "",
+          questionId: entry.questionId || "",
+          prompt: entry.prompt || "",
+          assetId: entry.assetId || "",
+        });
+      }
+    });
+
+    const record = {
+      id: `list-${Date.now()}`,
+      section: "listening",
+      mode,
+      at: new Date().toISOString(),
+      correct,
+      total,
+      percent,
+      skills: skillMap,
+      mistakes,
+      durationSeconds:
+        typeof session.durationSeconds === "number" ? session.durationSeconds : null,
+      timedOut: Boolean(session.timedOut),
+    };
+
+    state.listeningSessions.unshift(record);
+    if (state.listeningSessions.length > MAX_SESSIONS) {
+      state.listeningSessions = state.listeningSessions.slice(0, MAX_SESSIONS);
+    }
+    save(state);
+    return record;
+  }
+
+  function getListeningSessions() {
+    return load().listeningSessions;
+  }
+
   function getSkillTotals() {
     const totals = {};
     getStructureSessions().forEach((session) => {
@@ -262,7 +316,11 @@
   }
 
   function getStreakDays() {
-    const all = [...getStructureSessions(), ...getReadingSessions()];
+    const all = [
+      ...getStructureSessions(),
+      ...getReadingSessions(),
+      ...getListeningSessions(),
+    ];
     const days = [...new Set(all.map((s) => dayKey(s.at)).filter(Boolean))]
       .sort()
       .reverse();
@@ -369,6 +427,19 @@
     const lastReading = readingSessions[0] || null;
     const lastReadingMock = readingMocks[0] || null;
 
+    const listeningSessions = getListeningSessions();
+    const listeningGuided = listeningSessions.filter((s) => s.mode !== "mock");
+    const listeningMocks = listeningSessions.filter((s) => s.mode === "mock");
+    const listeningCount = listeningSessions.length;
+    const listeningAvg =
+      listeningCount > 0
+        ? Math.round(
+            listeningSessions.reduce((sum, s) => sum + (s.percent || 0), 0) / listeningCount
+          )
+        : null;
+    const lastListening = listeningSessions[0] || null;
+    const lastListeningMock = listeningMocks[0] || null;
+
     return {
       sessionCount,
       guidedCount,
@@ -395,6 +466,14 @@
         last: lastReading,
         lastMock: lastReadingMock,
       },
+      listening: {
+        sessionCount: listeningCount,
+        guidedCount: listeningGuided.length,
+        mockCount: listeningMocks.length,
+        averagePercent: listeningAvg,
+        last: lastListening,
+        lastMock: lastListeningMock,
+      },
     };
   }
 
@@ -406,8 +485,10 @@
     normalizeSkill,
     recordStructureSession,
     recordReadingSession,
+    recordListeningSession,
     getStructureSessions,
     getReadingSessions,
+    getListeningSessions,
     getSkillTotals,
     getTopSkills,
     getRecentMistakes,
