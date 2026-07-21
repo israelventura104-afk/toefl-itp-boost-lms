@@ -14,6 +14,7 @@
       structureSessions: [],
       readingSessions: [],
       listeningSessions: [],
+      fullMocks: [],
     };
   }
 
@@ -26,6 +27,7 @@
       if (!Array.isArray(data.structureSessions)) data.structureSessions = [];
       if (!Array.isArray(data.readingSessions)) data.readingSessions = [];
       if (!Array.isArray(data.listeningSessions)) data.listeningSessions = [];
+      if (!Array.isArray(data.fullMocks)) data.fullMocks = [];
       return data;
     } catch {
       return emptyState();
@@ -252,6 +254,39 @@
     return load().listeningSessions;
   }
 
+  function recordFullMock(session) {
+    const state = load();
+    const total = Number(session.total) || 0;
+    const correct = Number(session.correct) || 0;
+    const percent =
+      typeof session.percent === "number"
+        ? session.percent
+        : total > 0
+          ? Math.round((correct / total) * 100)
+          : 0;
+    const record = {
+      id: `full-${Date.now()}`,
+      at: session.finishedAt || new Date().toISOString(),
+      startedAt: session.startedAt || null,
+      correct,
+      total,
+      percent,
+      listening: session.listening || null,
+      structure: session.structure || null,
+      reading: session.reading || null,
+    };
+    state.fullMocks.unshift(record);
+    if (state.fullMocks.length > MAX_SESSIONS) {
+      state.fullMocks = state.fullMocks.slice(0, MAX_SESSIONS);
+    }
+    save(state);
+    return record;
+  }
+
+  function getFullMocks() {
+    return load().fullMocks;
+  }
+
   function getSkillTotals() {
     const totals = {};
     getStructureSessions().forEach((session) => {
@@ -474,6 +509,10 @@
         last: lastListening,
         lastMock: lastListeningMock,
       },
+      fullMock: {
+        count: getFullMocks().length,
+        last: getFullMocks()[0] || null,
+      },
     };
   }
 
@@ -486,9 +525,11 @@
     recordStructureSession,
     recordReadingSession,
     recordListeningSession,
+    recordFullMock,
     getStructureSessions,
     getReadingSessions,
     getListeningSessions,
+    getFullMocks,
     getSkillTotals,
     getTopSkills,
     getRecentMistakes,

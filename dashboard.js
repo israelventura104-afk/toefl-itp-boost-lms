@@ -167,6 +167,19 @@
         }`;
       }
     }
+
+    const fullHost = document.querySelector("[data-dash-last-full-mock]");
+    if (fullHost && summary.fullMock) {
+      if (!summary.fullMock.last) {
+        fullHost.textContent = "No full mock saved on this device yet.";
+      } else {
+        const last = summary.fullMock.last;
+        const when = new Date(last.at);
+        fullHost.textContent = `Last full mock: ${last.correct}/${last.total} (${last.percent}%) · ${when.toLocaleString()}${
+          summary.fullMock.count > 1 ? ` · ${summary.fullMock.count} full mocks` : ""
+        }`;
+      }
+    }
   }
 
   if (document.readyState === "loading") {

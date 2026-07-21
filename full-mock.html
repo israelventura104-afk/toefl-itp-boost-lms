@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Full TOEFL ITP Mock | TOEFL ITP Boost</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="app-body">
+    <aside class="sidebar" aria-label="Student navigation">
+      <a class="brand app-brand" href="dashboard.html">
+        <span class="brand-mark">IB</span>
+        <span class="brand-copy">
+          <small>By Teacher Israel Ventura</small>
+          <strong>TOEFL ITP Boost</strong>
+        </span>
+      </a>
+      <nav class="app-nav">
+        <a href="dashboard.html#overview">Overview</a>
+        <a href="dashboard.html#mock-exam">Mocks</a>
+        <a class="active" href="full-mock.html">Full mock</a>
+        <a href="structure-mock.html">Structure only</a>
+        <a href="reading-mock.html">Reading only</a>
+        <a href="listening-mock.html">Listening only</a>
+      </nav>
+    </aside>
+
+    <main class="lesson-shell">
+      <header class="lesson-hero guided-hero">
+        <a class="back-link" href="dashboard.html#mock-exam">Back to dashboard</a>
+        <p class="eyebrow">TOEFL real scenario · Full practice</p>
+        <h1>Full ITP-style mock exam</h1>
+        <p>
+          Three timed sections in order: Listening, Structure, then Reading.
+          No feedback until the entire exam is finished. Use class banks only
+          (free intro samples excluded).
+        </p>
+        <p class="access-status" data-access-status></p>
+        <p class="practice-status" data-full-status hidden></p>
+      </header>
+
+      <div data-access-gate></div>
+
+      <div data-access-protected hidden>
+        <!-- START -->
+        <section class="mock-start-panel" data-full-start>
+          <div class="section-heading">
+            <p class="eyebrow">Exam map</p>
+            <h2>What you will take</h2>
+          </div>
+          <ul class="mock-rules">
+            <li>
+              <strong>1. Listening</strong> — 50 questions · 35 minutes
+              <br /><small>Part A short conversations from the class audio bank (full A–C when longer talks are added later).</small>
+            </li>
+            <li>
+              <strong>2. Structure &amp; Written Expression</strong> — 40 questions · 25 minutes
+            </li>
+            <li>
+              <strong>3. Reading Comprehension</strong> — 50 questions · 55 minutes
+              <br /><small>Several passages from the class Reading bank.</small>
+            </li>
+            <li><strong>Total:</strong> 140 questions · about 1 hour 55 minutes of timed work.</li>
+            <li>No explanations while any section is running. Review everything at the end.</li>
+            <li>When a section timer ends, that section submits and the next section starts.</li>
+          </ul>
+          <div class="practice-actions">
+            <button class="button primary" type="button" data-full-begin>Start full mock</button>
+            <a class="button secondary" href="dashboard.html">Not now</a>
+          </div>
+        </section>
+
+        <!-- EXAM -->
+        <section class="guided-practice-panel" data-full-exam hidden>
+          <div class="mock-exam-bar">
+            <div>
+              <p class="eyebrow">Section</p>
+              <strong data-full-section-label>Listening</strong>
+            </div>
+            <div>
+              <p class="eyebrow">Section time left</p>
+              <strong class="mock-timer" data-full-timer>35:00</strong>
+            </div>
+            <div>
+              <p class="eyebrow">This section</p>
+              <strong data-full-answered>0 / 50 answered</strong>
+            </div>
+          </div>
+
+          <div class="full-section-steps" data-full-steps aria-hidden="true">
+            <span data-step="listening">1 Listening</span>
+            <span data-step="structure">2 Structure</span>
+            <span data-step="reading">3 Reading</span>
+          </div>
+
+          <div class="reading-practice-layout" data-full-layout>
+            <article class="reading-passage" data-full-passage-wrap hidden>
+              <h3 data-full-passage-title></h3>
+              <div data-full-passage-text></div>
+            </article>
+
+            <div class="practice-card guided-card listening-card">
+              <div class="practice-topline">
+                <span data-full-counter>1 / 50</span>
+                <span class="question-meta" data-full-type></span>
+              </div>
+              <p class="question-meta" data-full-meta></p>
+
+              <div class="listening-player" data-full-audio-wrap hidden>
+                <audio data-full-audio controls preload="metadata"></audio>
+                <button class="button secondary compact-button" type="button" data-full-replay>
+                  Replay
+                </button>
+              </div>
+
+              <h3 data-full-question></h3>
+              <div class="choice-list" data-full-options></div>
+              <div class="practice-actions">
+                <button class="button secondary" type="button" data-full-prev>Previous</button>
+                <button class="button secondary" type="button" data-full-next>Next</button>
+                <button class="button primary" type="button" data-full-submit-section>
+                  Submit section
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="mock-nav-grid" data-full-nav></div>
+        </section>
+
+        <!-- RESULTS -->
+        <section class="results-panel" data-full-results hidden>
+          <div class="results-summary">
+            <div>
+              <p class="eyebrow">Full mock complete</p>
+              <h2>Your ITP-style results</h2>
+              <p data-full-result-message></p>
+              <p class="dash-last-session" data-full-result-meta></p>
+            </div>
+            <div class="result-score">
+              <span>Total</span>
+              <strong data-full-total-score>0/140</strong>
+              <small data-full-total-note>All sections</small>
+            </div>
+          </div>
+
+          <div class="result-grid" data-full-section-scores></div>
+
+          <article class="mistake-review-panel">
+            <div class="section-heading compact">
+              <p class="eyebrow">Section review</p>
+              <h3>Scores and next steps</h3>
+            </div>
+            <div class="mistake-review-list" data-full-review></div>
+          </article>
+
+          <div class="practice-actions">
+            <a class="button primary" href="dashboard.html#score-plan">Dashboard</a>
+            <a class="button secondary" href="structure-guided-practice.html">Structure guided</a>
+            <a class="button secondary" href="reading-guided-practice.html">Reading guided</a>
+            <a class="button secondary" href="listening-guided-practice.html">Listening guided</a>
+            <button class="button secondary" type="button" data-full-retry>New full mock</button>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <script src="access.js"></script>
+    <script src="progress.js"></script>
+    <script src="listening-lib.js"></script>
+    <script src="full-mock.js"></script>
+  </body>
+</html>

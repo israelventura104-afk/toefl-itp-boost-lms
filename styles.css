@@ -2083,3 +2083,36 @@ html.has-teacher-access .commitment-locked .mock-panel {
 .listening-card h3 {
   margin-top: 0.35rem;
 }
+
+/* Phase 7 — full mock section steps */
+.full-section-steps {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0 0 1rem;
+}
+
+.full-section-steps span {
+  padding: 0.4rem 0.75rem;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: #fff;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--muted);
+}
+
+.full-section-steps span.is-active {
+  background: rgba(13, 138, 141, 0.12);
+  border-color: var(--teal);
+  color: var(--ink);
+}
+
+.full-section-steps span.is-done {
+  background: rgba(13, 138, 141, 0.2);
+  color: var(--teal-dark);
+}
+
+.mock-panel .button {
+  margin-top: 0.35rem;
+}
