@@ -70,6 +70,16 @@ Class-only timed Structure section:
 - Same teacher class code as guided practice
 - Results stored in the same local progress history (`mode: mock`)
 
+## Reading (Phase 5)
+
+| Mode | File | Access |
+|------|------|--------|
+| Free fixed passage | `reading.html` + `data/reading-intro.json` | Open |
+| Guided (one passage) | `reading-guided-practice.html` | Class code |
+| Timed mock (~50Q / 55 min) | `reading-mock.html` | Class code |
+
+Class bank: `data/reading-bank.json` (22 passages). Free intro passage is excluded from guided/mocks.
+
 ## Project shape
 
 ```

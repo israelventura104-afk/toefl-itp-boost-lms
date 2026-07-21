@@ -109,7 +109,7 @@ GitHub Pages notes:
 | **2** | Teacher class-code access (`localStorage`) — **done** |
 | **3** | Guided Structure 15 from 190 + dashboard shows real data — **done** |
 | **4** | Structure mock timed 40 / 25 min — **done** |
-| **5** | Reading same pattern |
+| **5** | Reading same pattern — **done** |
 | **6** | Listening + audio |
 | **7** | Full mock 140 + polish |
 
@@ -149,6 +149,14 @@ GitHub Pages notes:
 - Target mix when possible: ~15 completion + ~25 error-ID (bank currently has fewer error-style items; remainder filled from completion)
 - Results save via `progress.js` with `mode: "mock"`
 - Dashboard mock card links to Structure mock; readiness accounts for mock history
+
+### Phase 5 notes (2026-07-21)
+
+- Free Reading intro loads `data/reading-intro.json` (fixed passage READ-0001)
+- Guided Reading: `reading-guided-practice.html` — random class passage from `reading-bank.json` (22 passages / ~194 Q), free intro excluded, no timer, save on completion
+- Reading mock: `reading-mock.html` — ~50 questions / 55 minutes, multi-passage, feedback only at end
+- Progress: `recordReadingSession` in `progress.js` (`readingSessions` in localStorage)
+- Teacher class code required for guided + mock; free preview stays open
 
 ---
 

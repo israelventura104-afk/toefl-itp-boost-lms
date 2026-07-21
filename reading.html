@@ -96,10 +96,12 @@
           <p class="eyebrow">Free practice</p>
           <h2 id="reading-practice-title">Try one fixed Reading passage.</h2>
           <p>
-            This sample passage is open to everyone. Answer each question to see
-            correct or incorrect feedback with an explanation.
+            This sample passage is open to everyone. It does not shuffle and is not
+            reused in class guided drills or Reading mocks. No timer — learn the method.
           </p>
         </div>
+
+        <p class="practice-status" data-reading-status hidden></p>
 
         <div class="reading-practice-layout">
           <article class="reading-passage">
@@ -143,8 +145,9 @@
         <div data-access-locked-only>
           <a class="button primary" href="dashboard.html#class-access">Enter class code on dashboard</a>
         </div>
-        <div data-access-open-only hidden>
-          <a class="button primary" href="dashboard.html#score-plan">Back to dashboard</a>
+        <div data-access-open-only hidden class="access-actions">
+          <a class="button primary" href="reading-guided-practice.html">Guided practice</a>
+          <a class="button secondary" href="reading-mock.html">Reading mock</a>
         </div>
       </section>
     </main>

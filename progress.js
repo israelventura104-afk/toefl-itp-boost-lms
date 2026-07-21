@@ -1,6 +1,6 @@
 /**
- * Practice progress — Phase 3
- * Saves guided Structure sessions on this device (localStorage).
+ * Practice progress — Phases 3–5
+ * Saves Structure + Reading sessions on this device (localStorage).
  * No accounts. No store. Teacher class materials only.
  */
 
@@ -12,6 +12,7 @@
     return {
       version: 1,
       structureSessions: [],
+      readingSessions: [],
     };
   }
 
@@ -20,7 +21,9 @@
       const raw = localStorage.getItem(STORAGE_KEY);
       if (!raw) return emptyState();
       const data = JSON.parse(raw);
-      if (!data || !Array.isArray(data.structureSessions)) return emptyState();
+      if (!data || typeof data !== "object") return emptyState();
+      if (!Array.isArray(data.structureSessions)) data.structureSessions = [];
+      if (!Array.isArray(data.readingSessions)) data.readingSessions = [];
       return data;
     } catch {
       return emptyState();
@@ -137,8 +140,62 @@
     return record;
   }
 
+  function recordReadingSession(session) {
+    const state = load();
+    const total = Number(session.total) || 0;
+    const correct = Number(session.correct) || 0;
+    const percent = total > 0 ? Math.round((correct / total) * 100) : 0;
+    const mode = session.mode || "guided";
+
+    const skillMap = {};
+    const mistakes = [];
+    (session.items || []).forEach((entry) => {
+      const skill = normalizeSkill(entry.skill);
+      if (!skillMap[skill]) skillMap[skill] = { correct: 0, total: 0 };
+      skillMap[skill].total += 1;
+      if (entry.correct) skillMap[skill].correct += 1;
+      else {
+        mistakes.push({
+          skill,
+          subskill: entry.subskill || "",
+          questionId: entry.questionId || "",
+          prompt: entry.prompt || "",
+        });
+      }
+    });
+
+    const record = {
+      id: `read-${Date.now()}`,
+      section: "reading",
+      mode,
+      at: new Date().toISOString(),
+      correct,
+      total,
+      percent,
+      skills: skillMap,
+      mistakes,
+      passageId: session.passageId || null,
+      passageTitle: session.passageTitle || null,
+      passageIds: session.passageIds || [],
+      durationSeconds:
+        typeof session.durationSeconds === "number" ? session.durationSeconds : null,
+      timedOut: Boolean(session.timedOut),
+    };
+
+    state.readingSessions.unshift(record);
+    if (state.readingSessions.length > MAX_SESSIONS) {
+      state.readingSessions = state.readingSessions.slice(0, MAX_SESSIONS);
+    }
+    save(state);
+    return record;
+  }
+
   function getStructureSessions() {
     return load().structureSessions;
+  }
+
+  function getReadingSessions() {
+    return load().readingSessions;
   }
 
   function getSkillTotals() {
@@ -205,9 +262,9 @@
   }
 
   function getStreakDays() {
-    const days = [
-      ...new Set(getStructureSessions().map((s) => dayKey(s.at)).filter(Boolean)),
-    ].sort()
+    const all = [...getStructureSessions(), ...getReadingSessions()];
+    const days = [...new Set(all.map((s) => dayKey(s.at)).filter(Boolean))]
+      .sort()
       .reverse();
 
     if (!days.length) return 0;
@@ -298,6 +355,20 @@
     }
 
     const weak = getTopSkills(1)[0];
+
+    const readingSessions = getReadingSessions();
+    const readingGuided = readingSessions.filter((s) => s.mode !== "mock");
+    const readingMocks = readingSessions.filter((s) => s.mode === "mock");
+    const readingCount = readingSessions.length;
+    const readingAvg =
+      readingCount > 0
+        ? Math.round(
+            readingSessions.reduce((sum, s) => sum + (s.percent || 0), 0) / readingCount
+          )
+        : null;
+    const lastReading = readingSessions[0] || null;
+    const lastReadingMock = readingMocks[0] || null;
+
     return {
       sessionCount,
       guidedCount,
@@ -316,6 +387,14 @@
         : "Start guided practice to discover which patterns need work.",
       skills: getTopSkills(4),
       recentMistakes: getRecentMistakes(5),
+      reading: {
+        sessionCount: readingCount,
+        guidedCount: readingGuided.length,
+        mockCount: readingMocks.length,
+        averagePercent: readingAvg,
+        last: lastReading,
+        lastMock: lastReadingMock,
+      },
     };
   }
 
@@ -326,7 +405,9 @@
   global.ToeflProgress = {
     normalizeSkill,
     recordStructureSession,
+    recordReadingSession,
     getStructureSessions,
+    getReadingSessions,
     getSkillTotals,
     getTopSkills,
     getRecentMistakes,

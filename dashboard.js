@@ -138,6 +138,19 @@
         }`;
       }
     }
+
+    const readingHost = document.querySelector("[data-dash-last-reading]");
+    if (readingHost && summary.reading) {
+      if (!summary.reading.last) {
+        readingHost.textContent = "No Reading class sessions on this device yet.";
+      } else {
+        const when = new Date(summary.reading.last.at);
+        const kind = summary.reading.last.mode === "mock" ? "Last Reading mock" : "Last Reading drill";
+        readingHost.textContent = `${kind}: ${summary.reading.last.correct}/${summary.reading.last.total} (${summary.reading.last.percent}%) · ${when.toLocaleString()}${
+          summary.reading.sessionCount > 1 ? ` · ${summary.reading.sessionCount} sessions` : ""
+        }`;
+      }
+    }
   }
 
   if (document.readyState === "loading") {
