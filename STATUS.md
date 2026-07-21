@@ -2,7 +2,9 @@
 
 **Canonical project folder:** `C:\Toefl Preparation\toefl-itp-boost-lms`  
 **Source snapshot:** Codex output `Documents\Codex\2026-06-28\te\outputs\toefl-prep` (copied for Phase 0)  
-**Hosting target:** GitHub Pages (Netlify was only a temporary preview)  
+**GitHub repo:** https://github.com/israelventura104-afk/toefl-itp-boost-lms  
+**Live site (GitHub Pages):** https://israelventura104-afk.github.io/toefl-itp-boost-lms/  
+**Hosting:** GitHub Pages from `master` `/` (Netlify was only a temporary preview)  
 **Date frozen as baseline:** 2026-07-21
 
 ---

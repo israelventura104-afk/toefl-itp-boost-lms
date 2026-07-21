@@ -16,10 +16,25 @@ npx --yes serve .
 
 Then open the URL shown (usually `http://localhost:3000`).
 
-## Intended host
+## Host (canonical)
 
-**GitHub Pages** (not Netlify as source of truth).  
-Netlify was only used for temporary previews.
+| | URL |
+|--|-----|
+| **Live site (GitHub Pages)** | https://israelventura104-afk.github.io/toefl-itp-boost-lms/ |
+| **Source repo** | https://github.com/israelventura104-afk/toefl-itp-boost-lms |
+
+Netlify was only a temporary preview — **not** the source of truth.
+
+### Publish a change
+
+```bash
+cd "C:\Toefl Preparation\toefl-itp-boost-lms"
+git add .
+git commit -m "Describe the change"
+git push
+```
+
+Pages rebuilds from the `master` branch root (usually 1–2 minutes).
 
 ## Project shape
 
