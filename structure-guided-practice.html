@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Structure Guided Practice | TOEFL ITP Boost</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="app-body">
+    <aside class="sidebar" aria-label="Student navigation">
+      <a class="brand app-brand" href="dashboard.html">
+        <span class="brand-mark">IB</span>
+        <span class="brand-copy">
+          <small>By Teacher Israel Ventura</small>
+          <strong>TOEFL ITP Boost</strong>
+        </span>
+      </a>
+
+      <nav class="app-nav">
+        <a href="dashboard.html#overview">Overview</a>
+        <a class="active" href="dashboard.html#score-plan">Score Plan</a>
+        <a href="dashboard.html#practice">Sections</a>
+        <a href="structure.html">Structure</a>
+        <a href="#results">Results</a>
+      </nav>
+    </aside>
+
+    <main class="lesson-shell">
+      <header class="lesson-hero guided-hero">
+        <a class="back-link" href="dashboard.html#score-plan">Back to Score Plan</a>
+        <p class="eyebrow">Structure Guided Practice</p>
+        <h1>Practice 15 questions without a timer.</h1>
+        <p>
+          This session is for learning, not pressure. Answer carefully, read the
+          explanation, and use the final review to see which grammar patterns
+          need your next strategy lesson.
+        </p>
+      </header>
+
+      <section class="guided-practice-panel" aria-labelledby="guided-practice-title">
+        <div class="section-heading">
+          <p class="eyebrow">Score Improvement Plan</p>
+          <h2 id="guided-practice-title">Today&apos;s Structure drill</h2>
+          <p>
+            Every session gives you 15 questions from the Structure bank. Use
+            New practice when you want a fresh mix of grammar patterns.
+          </p>
+        </div>
+
+        <div class="practice-card guided-card">
+          <div class="practice-topline">
+            <span data-counter>1 / 15</span>
+            <strong data-score>0/0 correct</strong>
+          </div>
+          <div class="practice-session-meta">
+            <span data-session-label>Fresh random set</span>
+            <button class="button secondary compact-button" type="button" data-new-practice>New practice</button>
+          </div>
+          <div class="guided-progress" aria-hidden="true">
+            <span data-progress-bar></span>
+          </div>
+          <p class="question-meta" data-question-meta></p>
+          <h3 data-question></h3>
+          <div class="choice-list" data-options></div>
+          <div class="practice-feedback" data-feedback hidden></div>
+          <div class="practice-actions">
+            <button class="button secondary" type="button" data-prev>Previous</button>
+            <button class="button primary" type="button" data-next>Next</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="results-panel" id="results" aria-labelledby="results-title" data-results hidden>
+        <div class="results-summary">
+          <div>
+            <p class="eyebrow">Session summary</p>
+            <h2 id="results-title">Your Structure review is ready.</h2>
+            <p data-result-message>
+              Review the patterns below before choosing your next strategy.
+            </p>
+          </div>
+          <div class="result-score">
+            <span>Score</span>
+            <strong data-final-score>0/15</strong>
+            <small data-final-note>Keep going carefully.</small>
+          </div>
+        </div>
+
+        <div class="result-grid" data-skill-summary></div>
+
+        <article class="mistake-review-panel">
+          <div class="section-heading compact">
+            <p class="eyebrow">Mistake Review</p>
+            <h3>Study these before your next drill.</h3>
+          </div>
+          <div class="mistake-review-list" data-mistakes></div>
+        </article>
+
+        <div class="practice-actions">
+          <a class="button secondary" href="strategies.html#structure">Study Structure strategies</a>
+          <button class="button secondary" type="button" data-new-practice-result>New practice</button>
+          <a class="button primary" href="dashboard.html#score-plan">Back to Score Plan</a>
+        </div>
+      </section>
+    </main>
+    <script src="structure-guided-practice.js"></script>
+  </body>
+</html>

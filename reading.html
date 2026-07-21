@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Reading | TOEFL ITP Boost</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="app-body">
+    <aside class="sidebar" aria-label="Student navigation">
+      <a class="brand app-brand" href="dashboard.html">
+        <span class="brand-mark">IB</span>
+        <span class="brand-copy">
+          <small>By Teacher Israel Ventura</small>
+          <strong>TOEFL ITP Boost</strong>
+        </span>
+      </a>
+      <nav class="app-nav">
+        <a href="dashboard.html#overview">Overview</a>
+        <a class="active" href="dashboard.html#practice">Sections</a>
+        <a href="dashboard.html#quick-stats">Quick Stats</a>
+        <a href="strategies.html#reading">Strategies</a>
+      </nav>
+    </aside>
+
+    <main class="lesson-shell">
+      <header class="lesson-hero">
+        <a class="back-link" href="dashboard.html#practice">Back to dashboard</a>
+        <p class="eyebrow">Reading Comprehension</p>
+        <h1>Read with a mission, not with panic.</h1>
+        <p>
+          TOEFL ITP Reading rewards strategic searching. You do not need to
+          understand every word first. You need to know what each question is asking you to find.
+        </p>
+      </header>
+
+      <section class="free-lessons" aria-labelledby="reading-free-title">
+        <div class="section-heading">
+          <p class="eyebrow">Free preview</p>
+          <h2 id="reading-free-title">Three reading strategies everyone can use.</h2>
+        </div>
+
+        <article class="lesson-card">
+          <span class="lesson-number">01</span>
+          <div>
+            <h3>For main idea, read the beginning first.</h3>
+            <p>
+              Main idea questions usually depend on the opening lines of the
+              passage or paragraph. Do not start by reading every word slowly.
+              First, scan the first sentences and ask: "What is this mainly about?"
+            </p>
+            <div class="example-box">
+              <strong>Simple method</strong>
+              <p>Read the first two lines. Check the answer choices. Eliminate choices that are too specific or too extreme.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="lesson-card">
+          <span class="lesson-number">02</span>
+          <div>
+            <h3>For vocabulary, read around the word.</h3>
+            <p>
+              Do not panic if you do not know the target word. Read the sentence
+              before and the sentence after. The context usually tells you if the
+              word is positive, negative, neutral, a problem, or a solution.
+            </p>
+            <div class="rule-grid">
+              <div><strong>Do not ask only</strong><span>"What does this word mean in the dictionary?"</span></div>
+              <div><strong>Ask instead</strong><span>"What does this word mean in this sentence?"</span></div>
+            </div>
+          </div>
+        </article>
+
+        <article class="lesson-card">
+          <span class="lesson-number">03</span>
+          <div>
+            <h3>For pronoun reference, look backward.</h3>
+            <p>
+              When the question asks what "it," "they," or "which" refers to,
+              the answer is usually before the pronoun, not after it. Move one
+              sentence back and find the closest noun that matches number and meaning.
+            </p>
+            <div class="example-box">
+              <strong>Quick check</strong>
+              <p>If the pronoun is "they," your answer should probably be plural. If the pronoun is "it," your answer should probably be singular.</p>
+            </div>
+          </div>
+        </article>
+
+        <a class="button primary view-more" href="strategies.html#reading">View more strategies</a>
+      </section>
+
+      <section class="intro-practice reading-practice" aria-labelledby="reading-practice-title">
+        <div class="section-heading">
+          <p class="eyebrow">Free practice</p>
+          <h2 id="reading-practice-title">Try one fixed Reading passage.</h2>
+          <p>
+            This sample passage is open to everyone. Answer each question to see
+            correct or incorrect feedback with an explanation.
+          </p>
+        </div>
+
+        <div class="reading-practice-layout">
+          <article class="reading-passage">
+            <h3 data-reading-title></h3>
+            <div data-reading-text></div>
+          </article>
+
+          <div class="practice-card">
+            <div class="practice-topline">
+              <span data-reading-counter>1 / 7</span>
+              <strong data-reading-score>0/0 correct</strong>
+            </div>
+            <p class="question-meta" data-reading-meta></p>
+            <h3 data-reading-question></h3>
+            <div class="choice-list" data-reading-options></div>
+            <div class="practice-feedback" data-reading-feedback hidden></div>
+            <div class="practice-actions">
+              <button class="button secondary" type="button" data-reading-prev>Previous</button>
+              <button class="button primary" type="button" data-reading-next>Next</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="strategy-vault commitment-locked" id="strategy-vault" aria-labelledby="reading-vault-title">
+        <span class="lock-badge large">Score Improvement Plan</span>
+        <div class="vault-copy">
+          <p class="eyebrow">Strategy vault</p>
+          <h2 id="reading-vault-title">Unlock the complete Reading strategy library.</h2>
+          <p>
+            The full path includes question-type maps, NOT/EXCEPT strategy,
+            inference questions, passage timing, vocabulary traps, and review drills.
+          </p>
+        </div>
+        <div class="vault-grid" aria-hidden="true">
+          <article><strong>NOT / EXCEPT questions</strong><span>Find the three present options; choose what is absent.</span></article>
+          <article><strong>Inference questions</strong><span>Choose what the text strongly suggests, not your opinion.</span></article>
+          <article><strong>Reference questions</strong><span>Gender, number, and nearest logical noun.</span></article>
+          <article><strong>Time control</strong><span>When to scan, when to read, and when to move on.</span></article>
+        </div>
+        <button class="button primary" disabled>Activate my study plan to continue</button>
+      </section>
+    </main>
+    <script src="reading-practice.js"></script>
+  </body>
+</html>
