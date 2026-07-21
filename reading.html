@@ -124,14 +124,14 @@
         </div>
       </section>
 
-      <section class="strategy-vault commitment-locked" id="strategy-vault" aria-labelledby="reading-vault-title">
-        <span class="lock-badge large">Score Improvement Plan</span>
+      <section class="strategy-vault commitment-locked" id="strategy-vault" data-requires-access aria-labelledby="reading-vault-title">
+        <span class="lock-badge large">Teacher access</span>
         <div class="vault-copy">
-          <p class="eyebrow">Strategy vault</p>
-          <h2 id="reading-vault-title">Unlock the complete Reading strategy library.</h2>
+          <p class="eyebrow">Class materials</p>
+          <h2 id="reading-vault-title">Full Reading path for class students</h2>
           <p>
-            The full path includes question-type maps, NOT/EXCEPT strategy,
-            inference questions, passage timing, vocabulary traps, and review drills.
+            Full reading banks and deeper strategy work stay with Teacher
+            Israel Ventura’s class groups. The free sample passage above stays open.
           </p>
         </div>
         <div class="vault-grid" aria-hidden="true">
@@ -140,9 +140,15 @@
           <article><strong>Reference questions</strong><span>Gender, number, and nearest logical noun.</span></article>
           <article><strong>Time control</strong><span>When to scan, when to read, and when to move on.</span></article>
         </div>
-        <button class="button primary" disabled>Activate my study plan to continue</button>
+        <div data-access-locked-only>
+          <a class="button primary" href="dashboard.html#class-access">Enter class code on dashboard</a>
+        </div>
+        <div data-access-open-only hidden>
+          <a class="button primary" href="dashboard.html#score-plan">Back to dashboard</a>
+        </div>
       </section>
     </main>
+    <script src="access.js"></script>
     <script src="reading-practice.js"></script>
   </body>
 </html>

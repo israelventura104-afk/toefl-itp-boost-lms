@@ -106,7 +106,7 @@ GitHub Pages notes:
 |-------|--------|
 | **0** | One folder, one git, this STATUS — **done** |
 | **1** | Structure entry stable (strategies + 10 fixed, single data source) — **done** |
-| **2** | Real commitment unlock (`localStorage`) |
+| **2** | Teacher class-code access (`localStorage`) — **done** |
 | **3** | Guided Structure 15 from 190 + dashboard shows real data |
 | **4** | Structure mock timed 40 / 25 min |
 | **5** | Reading same pattern |
@@ -120,6 +120,16 @@ GitHub Pages notes:
 - Fixed order, 10 items, no timer, immediate feedback + common trap line
 - Strategies block (3 free lessons) unchanged on `structure.html`
 - GitHub Pages required for local-like testing (or `npx serve`); `file://` cannot fetch JSON
+
+### Phase 2 notes (2026-07-21)
+
+- Teacher-only access via class code (no store, no prices, no accounts)
+- Config: `data/access.json` — edit `codes` array; rotate per group/semester
+- Runtime: `access.js` + `localStorage` key `toefl-itp-boost.teacherAccess.v1`
+- **Open without code:** free strategies + Structure 10 fixed + Reading free sample
+- **Needs code:** Structure guided practice (and later mocks / full banks)
+- Default demo code (change it): `ITP-VENTURA-2026`
+- Landing copy cleaned (no Sign up / Log in / free account CTAs)
 
 ---
 

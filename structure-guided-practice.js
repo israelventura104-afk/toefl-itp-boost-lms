@@ -6250,4 +6250,18 @@ function handleNewPractice() {
 newPracticeBtn.addEventListener("click", handleNewPractice);
 newPracticeResultBtn.addEventListener("click", handleNewPractice);
 
-startPractice();
+function bootGuidedPractice() {
+  startPractice();
+}
+
+if (window.ToeflAccess && typeof window.ToeflAccess.guardPage === "function") {
+  window.ToeflAccess.guardPage({
+    title: "Structure guided practice is protected",
+    body: "This drill uses the full Structure bank for Teacher Israel Ventura’s classes. Enter the class code your teacher gave you. Free preview strategies and the 10 fixed sample questions stay open on the Structure page without a code.",
+    secondaryHref: "structure.html",
+    secondaryLabel: "Back to free Structure preview",
+    onUnlocked: bootGuidedPractice,
+  });
+} else {
+  bootGuidedPractice();
+}

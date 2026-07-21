@@ -23,8 +23,8 @@
       </nav>
 
       <div class="nav-actions">
-        <button class="button secondary" data-open="signupModal">Sign up</button>
-        <button class="button primary" data-open="loginModal">Log in</button>
+        <a class="button secondary" href="dashboard.html#class-access">Class access</a>
+        <a class="button primary" href="dashboard.html">Open dashboard</a>
       </div>
     </header>
 
@@ -33,14 +33,15 @@
         <img class="hero-image" src="assets/study-dashboard-hero.png" alt="" />
         <div class="hero-overlay"></div>
         <div class="hero-content">
-          <p class="eyebrow">TOEFL ITP preparation platform</p>
+          <p class="eyebrow">TOEFL ITP preparation by Teacher Israel Ventura</p>
           <h1 id="hero-title">Prepare for the TOEFL ITP with clarity and confidence.</h1>
           <p>
-            A focused preparation platform with expert strategies, timed practice,
-            and simulated exams designed for people who value quality over hype.
+            Expert strategies, focused practice, and a clear path designed for
+            serious students. Preview materials are open. Full class practice
+            opens with your teacher’s class code.
           </p>
           <div class="hero-actions">
-            <a class="button primary" href="dashboard.html">Start for free</a>
+            <a class="button primary" href="structure.html">Try free Structure preview</a>
             <a class="button ghost" href="#sections">Explore the test</a>
           </div>
         </div>
@@ -143,11 +144,11 @@
       <section class="cta" aria-labelledby="cta-title">
         <div>
           <p class="eyebrow">Ready when you are</p>
-          <h2 id="cta-title">Start your TOEFL ITP practice today.</h2>
+          <h2 id="cta-title">Start with the free preview. Open full practice with your class code.</h2>
         </div>
         <div class="cta-actions">
-          <a class="button primary" href="dashboard.html">Sign up free</a>
-          <button class="button secondary" data-open="loginModal">Log in</button>
+          <a class="button primary" href="dashboard.html">Open dashboard</a>
+          <a class="button secondary" href="dashboard.html#class-access">Enter class code</a>
         </div>
       </section>
     </main>
@@ -156,51 +157,5 @@
       <strong>TOEFL ITP BOOST</strong>
       <span>by Teacher Israel Ventura</span>
     </footer>
-
-    <dialog class="modal" id="signupModal">
-      <form method="dialog" class="modal-card">
-        <button class="close" value="cancel" aria-label="Close">x</button>
-        <p class="eyebrow">New student</p>
-        <h2>Create your free account</h2>
-        <label>
-          Full name
-          <input type="text" placeholder="Your name" />
-        </label>
-        <label>
-          Email
-          <input type="email" placeholder="you@example.com" />
-        </label>
-        <label>
-          Password
-          <input type="password" placeholder="Create a password" />
-        </label>
-        <button class="button primary" value="default">Sign up</button>
-      </form>
-    </dialog>
-
-    <dialog class="modal" id="loginModal">
-      <form method="dialog" class="modal-card">
-        <button class="close" value="cancel" aria-label="Close">x</button>
-        <p class="eyebrow">Welcome back</p>
-        <h2>Log in to your account</h2>
-        <label>
-          Email
-          <input type="email" placeholder="you@example.com" />
-        </label>
-        <label>
-          Password
-          <input type="password" placeholder="Your password" />
-        </label>
-        <button class="button primary" value="default">Log in</button>
-      </form>
-    </dialog>
-
-    <script>
-      document.querySelectorAll("[data-open]").forEach((trigger) => {
-        trigger.addEventListener("click", () => {
-          document.getElementById(trigger.dataset.open).showModal();
-        });
-      });
-    </script>
   </body>
 </html>

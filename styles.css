@@ -1860,3 +1860,113 @@ button:disabled {
   margin-top: 0.5rem;
   opacity: 0.9;
 }
+
+/* Phase 2 — teacher class-code access (no store language) */
+.access-gate {
+  margin: 0 0 1.5rem;
+  padding: clamp(22px, 4vw, 34px);
+  border-radius: 16px;
+  border: 1px solid var(--line);
+  background: var(--panel);
+  box-shadow: var(--shadow);
+}
+
+.access-gate h2 {
+  margin: 0.35rem 0 0.75rem;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+}
+
+.access-gate > p {
+  color: var(--muted);
+  line-height: 1.6;
+  max-width: 42rem;
+}
+
+.access-form {
+  display: grid;
+  gap: 12px;
+  margin-top: 1.25rem;
+  max-width: 28rem;
+}
+
+.access-form label {
+  display: grid;
+  gap: 0.4rem;
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.access-form input {
+  min-height: 48px;
+  padding: 0.7rem 0.9rem;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  font: inherit;
+}
+
+.access-form input:focus {
+  outline: 2px solid rgba(13, 138, 141, 0.35);
+  border-color: var(--teal);
+}
+
+.access-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.access-message {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.access-message.is-error {
+  color: #8a2f28;
+}
+
+.access-message.is-success {
+  color: var(--teal-dark);
+}
+
+.access-note {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.access-status {
+  margin: 0 0 1rem;
+  padding: 0.65rem 0.9rem;
+  border-radius: 12px;
+  background: rgba(13, 138, 141, 0.08);
+  color: var(--ink);
+  font-size: 0.92rem;
+}
+
+.access-status.is-open {
+  background: rgba(13, 138, 141, 0.14);
+}
+
+body.no-teacher-access .hide-when-locked,
+html.no-teacher-access .hide-when-locked {
+  display: none !important;
+}
+
+html.has-teacher-access .hide-when-unlocked {
+  display: none !important;
+}
+
+html.has-teacher-access .commitment-locked {
+  opacity: 1;
+}
+
+html.has-teacher-access .commitment-locked::after {
+  display: none;
+}
+
+html.has-teacher-access .commitment-locked .icon,
+html.has-teacher-access .commitment-locked h3,
+html.has-teacher-access .commitment-locked p,
+html.has-teacher-access .commitment-locked .mock-panel {
+  opacity: 1;
+}

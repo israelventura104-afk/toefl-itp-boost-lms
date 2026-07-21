@@ -104,14 +104,14 @@
         <a class="button primary view-more" href="strategies.html#listening">View more strategies</a>
       </section>
 
-      <section class="strategy-vault commitment-locked" id="strategy-vault" aria-labelledby="listening-vault-title">
-        <span class="lock-badge large">Score Improvement Plan</span>
+      <section class="strategy-vault commitment-locked" id="strategy-vault" data-requires-access aria-labelledby="listening-vault-title">
+        <span class="lock-badge large">Teacher access</span>
         <div class="vault-copy">
-          <p class="eyebrow">Strategy vault</p>
-          <h2 id="listening-vault-title">Unlock the complete Listening strategy library.</h2>
+          <p class="eyebrow">Class materials</p>
+          <h2 id="listening-vault-title">Full Listening path for class students</h2>
           <p>
-            The full path includes idioms, double negatives, tone questions,
-            lecture mapping, distractor traps, and timed listening drills.
+            Full listening drills and deeper strategy work stay with Teacher
+            Israel Ventura’s class groups. Free preview strategies above stay open.
           </p>
         </div>
         <div class="vault-grid" aria-hidden="true">
@@ -120,8 +120,14 @@
           <article><strong>Speaker attitude</strong><span>Detect surprise, doubt, approval, and disagreement.</span></article>
           <article><strong>Lecture notes</strong><span>Main topic, examples, sequence, and conclusion.</span></article>
         </div>
-        <button class="button primary" disabled>Activate my study plan to continue</button>
+        <div data-access-locked-only>
+          <a class="button primary" href="dashboard.html#class-access">Enter class code on dashboard</a>
+        </div>
+        <div data-access-open-only hidden>
+          <a class="button primary" href="dashboard.html#score-plan">Back to dashboard</a>
+        </div>
       </section>
     </main>
+    <script src="access.js"></script>
   </body>
 </html>

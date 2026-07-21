@@ -36,6 +36,20 @@ git push
 
 Pages rebuilds from the `master` branch root (usually 1–2 minutes).
 
+## Teacher class codes (Phase 2)
+
+Full class materials open only with **your** code. No store language, no prices, no student accounts.
+
+1. Edit `data/access.json` → `codes` array (one or more codes).
+2. Give the current code only to your students.
+3. Rotate the code when a group ends.
+4. Students enter it on **Dashboard → Class access** or when opening guided practice.
+5. Access is saved on **that browser only** (`localStorage`). Use “Remove access on this device” to clear.
+
+Default code after Phase 2 (change it): `ITP-VENTURA-2026`
+
+**Note:** because the site is public on GitHub Pages, treat codes like class keys, not banking passwords. Rotate them.
+
 ## Project shape
 
 ```
