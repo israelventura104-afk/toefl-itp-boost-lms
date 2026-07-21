@@ -1726,14 +1726,40 @@ button:disabled {
   }
 
   .hero-image {
-    object-position: 48% 30%;
-    transform: scale(1.2);
+    object-position: 48% 28%;
+    /* Less zoom so more of the photo (and the gradient) reads on small screens */
+    transform: scale(1.08);
+    filter: saturate(0.8) brightness(0.78) contrast(0.96);
   }
 
+  /*
+   * Mobile hero overlay: start the blue fade earlier so the transparent
+   * degradation is visible on phones (desktop stays as designed).
+   */
   .hero-overlay {
     background:
-      linear-gradient(90deg, rgba(19, 34, 56, 0.95), rgba(19, 34, 56, 0.86)),
-      linear-gradient(0deg, rgba(251, 250, 246, 0.96), rgba(251, 250, 246, 0) 22%);
+      linear-gradient(
+        105deg,
+        rgba(19, 34, 56, 0.94) 0%,
+        rgba(19, 34, 56, 0.82) 28%,
+        rgba(19, 34, 56, 0.55) 58%,
+        rgba(19, 34, 56, 0.28) 82%,
+        rgba(19, 34, 56, 0.16) 100%
+      ),
+      linear-gradient(
+        0deg,
+        rgba(251, 250, 246, 0.92) 0%,
+        rgba(251, 250, 246, 0.45) 18%,
+        rgba(251, 250, 246, 0) 42%
+      );
+  }
+
+  .hero-content {
+    max-width: min(100%, 34rem);
+  }
+
+  .hero p {
+    text-shadow: 0 1px 12px rgba(19, 34, 56, 0.45);
   }
 
   h1 {
@@ -1841,7 +1867,7 @@ button:disabled {
   }
 }
 
-/* Phase 1 — structure intro practice status */
+/* Phase 1 ï¿½ structure intro practice status */
 .practice-status {
   margin: 0 0 1rem;
   padding: 0.75rem 1rem;
@@ -1861,7 +1887,7 @@ button:disabled {
   opacity: 0.9;
 }
 
-/* Phase 2 — teacher class-code access (no store language) */
+/* Phase 2 ï¿½ teacher class-code access (no store language) */
 .access-gate {
   margin: 0 0 1.5rem;
   padding: clamp(22px, 4vw, 34px);
@@ -1971,7 +1997,7 @@ html.has-teacher-access .commitment-locked .mock-panel {
   opacity: 1;
 }
 
-/* Phase 3 — live dashboard progress */
+/* Phase 3 ï¿½ live dashboard progress */
 .dash-empty-note,
 .dash-last-session {
   margin: 0.75rem 0 0;
@@ -1984,7 +2010,7 @@ html.has-teacher-access .commitment-locked .mock-panel {
   margin-top: 1rem;
 }
 
-/* Phase 4 — Structure timed mock */
+/* Phase 4 ï¿½ Structure timed mock */
 .mock-rules {
   margin: 0 0 1.25rem;
   padding-left: 1.2rem;
@@ -2061,7 +2087,7 @@ html.has-teacher-access .commitment-locked .mock-panel {
   }
 }
 
-/* Phase 6 — Listening player */
+/* Phase 6 ï¿½ Listening player */
 .listening-player {
   display: flex;
   flex-wrap: wrap;
@@ -2084,7 +2110,7 @@ html.has-teacher-access .commitment-locked .mock-panel {
   margin-top: 0.35rem;
 }
 
-/* Phase 7 — full mock section steps */
+/* Phase 7 ï¿½ full mock section steps */
 .full-section-steps {
   display: flex;
   flex-wrap: wrap;
