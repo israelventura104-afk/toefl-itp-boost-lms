@@ -1,0 +1,83 @@
+{
+  "file_name": "TQB-LIST-0062.json",
+  "project": "TOEFL ITP Boost",
+  "phase": "Phase 3 - Listening Comprehension",
+  "asset_type": "Part A - Short Conversation",
+  "asset_id": "LIST-0062",
+  "version": "1.0.0",
+  "metadata": {
+    "difficulty": "Easy",
+    "question_count": 1,
+    "estimated_audio_seconds": 18,
+    "topic": "Campus Coffee Shop"
+  },
+  "narrator": {
+    "id": "NAR-001",
+    "gender": "neutral"
+  },
+  "speakers": [
+    {
+      "id": "M1",
+      "role": "Male Speaker",
+      "gender": "male"
+    },
+    {
+      "id": "F1",
+      "role": "Female Speaker",
+      "gender": "female"
+    }
+  ],
+  "audio_metadata": {
+    "language": "en-US",
+    "sample_rate": 44100,
+    "format": "wav",
+    "tts_ready": true
+  },
+  "transcript": {
+    "narrator_intro": "Listen to a conversation between a man and a woman.",
+    "dialogue": [
+      {
+        "speaker": "M1",
+        "text": "Would you like to stop by the campus coffee shop before class?"
+      },
+      {
+        "speaker": "F1",
+        "text": "I'd love to, but I need to finish printing my assignment first."
+      }
+    ],
+    "question_intro": "Why doesn't the woman want to go to the coffee shop now?"
+  },
+  "questions": [
+    {
+      "id": "Q1",
+      "type": "multiple_choice",
+      "prompt": "Why doesn't the woman want to go to the coffee shop now?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "She doesn't like coffee."
+        },
+        {
+          "id": "B",
+          "text": "She has already eaten."
+        },
+        {
+          "id": "C",
+          "text": "She needs to print her assignment first."
+        },
+        {
+          "id": "D",
+          "text": "The coffee shop is closed."
+        }
+      ],
+      "answer_key": "C",
+      "explanation": "She says she must finish printing her assignment before going.",
+      "evidence": "I need to finish printing my assignment first."
+    }
+  ],
+  "production_metadata": {
+    "status": "production_ready",
+    "schema_version": "1.0",
+    "tts_ready": true
+  }
+}

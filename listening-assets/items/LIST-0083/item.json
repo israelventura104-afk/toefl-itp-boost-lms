@@ -1,0 +1,83 @@
+{
+  "file_name": "TQB-LIST-0083.json",
+  "project": "TOEFL ITP Boost",
+  "phase": "Phase 3 - Listening Comprehension",
+  "asset_type": "Part A - Short Conversation",
+  "asset_id": "LIST-0083",
+  "version": "1.0.0",
+  "metadata": {
+    "difficulty": "Easy",
+    "question_count": 1,
+    "estimated_audio_seconds": 18,
+    "topic": "Student Orientation"
+  },
+  "narrator": {
+    "id": "NAR-001",
+    "gender": "neutral"
+  },
+  "speakers": [
+    {
+      "id": "F1",
+      "role": "Female Speaker",
+      "gender": "female"
+    },
+    {
+      "id": "M1",
+      "role": "Male Speaker",
+      "gender": "male"
+    }
+  ],
+  "audio_metadata": {
+    "language": "en-US",
+    "sample_rate": 44100,
+    "format": "wav",
+    "tts_ready": true
+  },
+  "transcript": {
+    "narrator_intro": "Listen to a conversation between a woman and a man.",
+    "dialogue": [
+      {
+        "speaker": "F1",
+        "text": "Are you helping with new student orientation next week?"
+      },
+      {
+        "speaker": "M1",
+        "text": "Yes. I volunteered because I enjoyed the program when I was a freshman."
+      }
+    ],
+    "question_intro": "Why did the man volunteer?"
+  },
+  "questions": [
+    {
+      "id": "Q1",
+      "type": "multiple_choice",
+      "prompt": "Why did the man volunteer?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "He enjoyed the orientation program as a freshman."
+        },
+        {
+          "id": "B",
+          "text": "He needs extra credit."
+        },
+        {
+          "id": "C",
+          "text": "His professor required him to help."
+        },
+        {
+          "id": "D",
+          "text": "He wants to change his major."
+        }
+      ],
+      "answer_key": "A",
+      "explanation": "He volunteered because he had a positive experience during his own orientation.",
+      "evidence": "I enjoyed the program when I was a freshman."
+    }
+  ],
+  "production_metadata": {
+    "status": "production_ready",
+    "schema_version": "1.0",
+    "tts_ready": true
+  }
+}

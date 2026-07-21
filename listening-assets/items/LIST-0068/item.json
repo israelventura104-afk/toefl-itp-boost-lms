@@ -1,0 +1,83 @@
+{
+  "file_name": "TQB-LIST-0068.json",
+  "project": "TOEFL ITP Boost",
+  "phase": "Phase 3 - Listening Comprehension",
+  "asset_type": "Part A - Short Conversation",
+  "asset_id": "LIST-0068",
+  "version": "1.0.0",
+  "metadata": {
+    "difficulty": "Easy",
+    "question_count": 1,
+    "estimated_audio_seconds": 18,
+    "topic": "Campus Bike Rack"
+  },
+  "narrator": {
+    "id": "NAR-001",
+    "gender": "neutral"
+  },
+  "speakers": [
+    {
+      "id": "M1",
+      "role": "Male Speaker",
+      "gender": "male"
+    },
+    {
+      "id": "F1",
+      "role": "Female Speaker",
+      "gender": "female"
+    }
+  ],
+  "audio_metadata": {
+    "language": "en-US",
+    "sample_rate": 44100,
+    "format": "wav",
+    "tts_ready": true
+  },
+  "transcript": {
+    "narrator_intro": "Listen to a conversation between a man and a woman.",
+    "dialogue": [
+      {
+        "speaker": "M1",
+        "text": "Did you find a place to lock your bike this morning?"
+      },
+      {
+        "speaker": "F1",
+        "text": "Yes, but almost every bike rack near the library was already full."
+      }
+    ],
+    "question_intro": "What does the woman imply?"
+  },
+  "questions": [
+    {
+      "id": "Q1",
+      "type": "multiple_choice",
+      "prompt": "What does the woman imply?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "She could not find the library."
+        },
+        {
+          "id": "B",
+          "text": "Most bike racks were already occupied."
+        },
+        {
+          "id": "C",
+          "text": "She decided not to ride her bike."
+        },
+        {
+          "id": "D",
+          "text": "The library does not allow bicycles."
+        }
+      ],
+      "answer_key": "B",
+      "explanation": "She says nearly all the bike racks near the library were full.",
+      "evidence": "Almost every bike rack near the library was already full."
+    }
+  ],
+  "production_metadata": {
+    "status": "production_ready",
+    "schema_version": "1.0",
+    "tts_ready": true
+  }
+}

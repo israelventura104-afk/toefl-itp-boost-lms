@@ -1,0 +1,83 @@
+{
+  "file_name": "TQB-LIST-0070.json",
+  "project": "TOEFL ITP Boost",
+  "phase": "Phase 3 - Listening Comprehension",
+  "asset_type": "Part A - Short Conversation",
+  "asset_id": "LIST-0070",
+  "version": "1.0.0",
+  "metadata": {
+    "difficulty": "Easy",
+    "question_count": 1,
+    "estimated_audio_seconds": 18,
+    "topic": "Exam Review Session"
+  },
+  "narrator": {
+    "id": "NAR-001",
+    "gender": "neutral"
+  },
+  "speakers": [
+    {
+      "id": "M1",
+      "role": "Male Speaker",
+      "gender": "male"
+    },
+    {
+      "id": "F1",
+      "role": "Female Speaker",
+      "gender": "female"
+    }
+  ],
+  "audio_metadata": {
+    "language": "en-US",
+    "sample_rate": 44100,
+    "format": "wav",
+    "tts_ready": true
+  },
+  "transcript": {
+    "narrator_intro": "Listen to a conversation between a man and a woman.",
+    "dialogue": [
+      {
+        "speaker": "M1",
+        "text": "Are you going to the exam review session tomorrow?"
+      },
+      {
+        "speaker": "F1",
+        "text": "Definitely. The professor said it will cover the most important topics for the final exam."
+      }
+    ],
+    "question_intro": "Why is the woman attending the review session?"
+  },
+  "questions": [
+    {
+      "id": "Q1",
+      "type": "multiple_choice",
+      "prompt": "Why is the woman attending the review session?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "To review the most important exam topics."
+        },
+        {
+          "id": "B",
+          "text": "To submit her final project."
+        },
+        {
+          "id": "C",
+          "text": "To meet with an academic advisor."
+        },
+        {
+          "id": "D",
+          "text": "To register for another class."
+        }
+      ],
+      "answer_key": "A",
+      "explanation": "She says the professor will review the most important topics for the final exam.",
+      "evidence": "It will cover the most important topics for the final exam."
+    }
+  ],
+  "production_metadata": {
+    "status": "production_ready",
+    "schema_version": "1.0",
+    "tts_ready": true
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "file_name": "TQB-LIST-0071.json",
+  "project": "TOEFL ITP Boost",
+  "phase": "Phase 3 - Listening Comprehension",
+  "asset_type": "Part A - Short Conversation",
+  "asset_id": "LIST-0071",
+  "version": "1.0.0",
+  "metadata": {
+    "difficulty": "Easy",
+    "question_count": 1,
+    "estimated_audio_seconds": 18,
+    "topic": "Campus Volunteer Fair"
+  },
+  "narrator": {
+    "id": "NAR-001",
+    "gender": "neutral"
+  },
+  "speakers": [
+    {
+      "id": "F1",
+      "role": "Female Speaker",
+      "gender": "female"
+    },
+    {
+      "id": "M1",
+      "role": "Male Speaker",
+      "gender": "male"
+    }
+  ],
+  "audio_metadata": {
+    "language": "en-US",
+    "sample_rate": 44100,
+    "format": "wav",
+    "tts_ready": true
+  },
+  "transcript": {
+    "narrator_intro": "Listen to a conversation between a woman and a man.",
+    "dialogue": [
+      {
+        "speaker": "F1",
+        "text": "Are you going to the volunteer fair this afternoon?"
+      },
+      {
+        "speaker": "M1",
+        "text": "Yes. I'm hoping to find a community service project for this semester."
+      }
+    ],
+    "question_intro": "Why is the man going to the volunteer fair?"
+  },
+  "questions": [
+    {
+      "id": "Q1",
+      "type": "multiple_choice",
+      "prompt": "Why is the man going to the volunteer fair?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "To look for a community service project."
+        },
+        {
+          "id": "B",
+          "text": "To buy textbooks."
+        },
+        {
+          "id": "C",
+          "text": "To meet his professor."
+        },
+        {
+          "id": "D",
+          "text": "To register for classes."
+        }
+      ],
+      "answer_key": "A",
+      "explanation": "He says he hopes to find a community service project for the semester.",
+      "evidence": "I'm hoping to find a community service project for this semester."
+    }
+  ],
+  "production_metadata": {
+    "status": "production_ready",
+    "schema_version": "1.0",
+    "tts_ready": true
+  }
+}

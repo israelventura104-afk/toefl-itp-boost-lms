@@ -1,0 +1,83 @@
+{
+  "file_name": "TQB-LIST-0030.json",
+  "project": "TOEFL ITP Boost",
+  "phase": "Phase 3 - Listening Comprehension",
+  "asset_type": "Part A - Short Conversation",
+  "asset_id": "LIST-0030",
+  "version": "1.0.0",
+  "metadata": {
+    "difficulty": "Easy",
+    "question_count": 1,
+    "estimated_audio_seconds": 18,
+    "topic": "Science Lab"
+  },
+  "narrator": {
+    "id": "NAR-001",
+    "gender": "neutral"
+  },
+  "speakers": [
+    {
+      "id": "M1",
+      "role": "Male Speaker",
+      "gender": "male"
+    },
+    {
+      "id": "F1",
+      "role": "Female Speaker",
+      "gender": "female"
+    }
+  ],
+  "audio_metadata": {
+    "language": "en-US",
+    "sample_rate": 44100,
+    "format": "wav",
+    "tts_ready": true
+  },
+  "transcript": {
+    "narrator_intro": "Listen to a conversation between a man and a woman.",
+    "dialogue": [
+      {
+        "speaker": "M1",
+        "text": "Are we meeting in the science lab this afternoon?"
+      },
+      {
+        "speaker": "F1",
+        "text": "No. The instructor moved today's experiment to Friday because new equipment hasn't arrived yet."
+      }
+    ],
+    "question_intro": "Why was the experiment postponed?"
+  },
+  "questions": [
+    {
+      "id": "Q1",
+      "type": "multiple_choice",
+      "prompt": "Why was the experiment postponed?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "The instructor is sick."
+        },
+        {
+          "id": "B",
+          "text": "The laboratory is being painted."
+        },
+        {
+          "id": "C",
+          "text": "The necessary equipment has not arrived."
+        },
+        {
+          "id": "D",
+          "text": "The students requested another date."
+        }
+      ],
+      "answer_key": "C",
+      "explanation": "The woman explains that the experiment was moved because the new equipment has not arrived.",
+      "evidence": "The instructor moved today's experiment to Friday because new equipment hasn't arrived yet."
+    }
+  ],
+  "production_metadata": {
+    "status": "production_ready",
+    "schema_version": "1.0",
+    "tts_ready": true
+  }
+}

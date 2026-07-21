@@ -1,0 +1,83 @@
+{
+  "file_name": "TQB-LIST-0025.json",
+  "project": "TOEFL ITP Boost",
+  "phase": "Phase 3 - Listening Comprehension",
+  "asset_type": "Part A - Short Conversation",
+  "asset_id": "LIST-0025",
+  "version": "1.0.0",
+  "metadata": {
+    "difficulty": "Easy",
+    "question_count": 1,
+    "estimated_audio_seconds": 18,
+    "topic": "Library Study Room"
+  },
+  "narrator": {
+    "id": "NAR-001",
+    "gender": "neutral"
+  },
+  "speakers": [
+    {
+      "id": "F1",
+      "role": "Female Speaker",
+      "gender": "female"
+    },
+    {
+      "id": "M1",
+      "role": "Male Speaker",
+      "gender": "male"
+    }
+  ],
+  "audio_metadata": {
+    "language": "en-US",
+    "sample_rate": 44100,
+    "format": "wav",
+    "tts_ready": true
+  },
+  "transcript": {
+    "narrator_intro": "Listen to a conversation between a woman and a man.",
+    "dialogue": [
+      {
+        "speaker": "F1",
+        "text": "Were you able to reserve a study room for our group?"
+      },
+      {
+        "speaker": "M1",
+        "text": "Yes, but the only available time was at seven o'clock this evening."
+      }
+    ],
+    "question_intro": "What does the man mean?"
+  },
+  "questions": [
+    {
+      "id": "Q1",
+      "type": "multiple_choice",
+      "prompt": "What does the man mean?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "No study rooms were available."
+        },
+        {
+          "id": "B",
+          "text": "The group must meet at seven this evening."
+        },
+        {
+          "id": "C",
+          "text": "The reservation was canceled."
+        },
+        {
+          "id": "D",
+          "text": "They should study at home instead."
+        }
+      ],
+      "answer_key": "B",
+      "explanation": "He successfully reserved a room, but only for 7:00 p.m.",
+      "evidence": "The only available time was at seven o'clock this evening."
+    }
+  ],
+  "production_metadata": {
+    "status": "production_ready",
+    "schema_version": "1.0",
+    "tts_ready": true
+  }
+}

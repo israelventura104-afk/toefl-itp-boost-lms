@@ -1,0 +1,83 @@
+{
+  "file_name": "TQB-LIST-0082.json",
+  "project": "TOEFL ITP Boost",
+  "phase": "Phase 3 - Listening Comprehension",
+  "asset_type": "Part A - Short Conversation",
+  "asset_id": "LIST-0082",
+  "version": "1.0.0",
+  "metadata": {
+    "difficulty": "Easy",
+    "question_count": 1,
+    "estimated_audio_seconds": 18,
+    "topic": "Campus Garden"
+  },
+  "narrator": {
+    "id": "NAR-001",
+    "gender": "neutral"
+  },
+  "speakers": [
+    {
+      "id": "M1",
+      "role": "Male Speaker",
+      "gender": "male"
+    },
+    {
+      "id": "F1",
+      "role": "Female Speaker",
+      "gender": "female"
+    }
+  ],
+  "audio_metadata": {
+    "language": "en-US",
+    "sample_rate": 44100,
+    "format": "wav",
+    "tts_ready": true
+  },
+  "transcript": {
+    "narrator_intro": "Listen to a conversation between a man and a woman.",
+    "dialogue": [
+      {
+        "speaker": "M1",
+        "text": "Are you volunteering in the campus garden this Saturday?"
+      },
+      {
+        "speaker": "F1",
+        "text": "Yes. I signed up because I enjoy outdoor projects and need community service hours."
+      }
+    ],
+    "question_intro": "Why did the woman volunteer?"
+  },
+  "questions": [
+    {
+      "id": "Q1",
+      "type": "multiple_choice",
+      "prompt": "Why did the woman volunteer?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "She enjoys outdoor projects and needs community service hours."
+        },
+        {
+          "id": "B",
+          "text": "She has to meet her biology professor."
+        },
+        {
+          "id": "C",
+          "text": "She wants to plant flowers for a class."
+        },
+        {
+          "id": "D",
+          "text": "She is looking for a part-time job."
+        }
+      ],
+      "answer_key": "A",
+      "explanation": "She says she enjoys outdoor projects and needs community service hours.",
+      "evidence": "I signed up because I enjoy outdoor projects and need community service hours."
+    }
+  ],
+  "production_metadata": {
+    "status": "production_ready",
+    "schema_version": "1.0",
+    "tts_ready": true
+  }
+}

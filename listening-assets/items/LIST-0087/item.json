@@ -1,0 +1,83 @@
+{
+  "file_name": "TQB-LIST-0087.json",
+  "project": "TOEFL ITP Boost",
+  "phase": "Phase 3 - Listening Comprehension",
+  "asset_type": "Part A - Short Conversation",
+  "asset_id": "LIST-0087",
+  "version": "1.0.0",
+  "metadata": {
+    "difficulty": "Easy",
+    "question_count": 1,
+    "estimated_audio_seconds": 18,
+    "topic": "Campus Tutoring Center"
+  },
+  "narrator": {
+    "id": "NAR-001",
+    "gender": "neutral"
+  },
+  "speakers": [
+    {
+      "id": "M1",
+      "role": "Male Speaker",
+      "gender": "male"
+    },
+    {
+      "id": "F1",
+      "role": "Female Speaker",
+      "gender": "female"
+    }
+  ],
+  "audio_metadata": {
+    "language": "en-US",
+    "sample_rate": 44100,
+    "format": "wav",
+    "tts_ready": true
+  },
+  "transcript": {
+    "narrator_intro": "Listen to a conversation between a man and a woman.",
+    "dialogue": [
+      {
+        "speaker": "M1",
+        "text": "Have you made an appointment at the tutoring center for calculus?"
+      },
+      {
+        "speaker": "F1",
+        "text": "Yes. My last quiz didn't go very well, so I want some extra help before the next one."
+      }
+    ],
+    "question_intro": "Why did the woman make the appointment?"
+  },
+  "questions": [
+    {
+      "id": "Q1",
+      "type": "multiple_choice",
+      "prompt": "Why did the woman make the appointment?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "She wants extra help before her next quiz."
+        },
+        {
+          "id": "B",
+          "text": "She needs to register for calculus."
+        },
+        {
+          "id": "C",
+          "text": "She is applying to be a tutor."
+        },
+        {
+          "id": "D",
+          "text": "She missed her mathematics class."
+        }
+      ],
+      "answer_key": "A",
+      "explanation": "She says her last quiz did not go well and she wants extra help before the next one.",
+      "evidence": "I want some extra help before the next one."
+    }
+  ],
+  "production_metadata": {
+    "status": "production_ready",
+    "schema_version": "1.0",
+    "tts_ready": true
+  }
+}

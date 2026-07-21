@@ -1,0 +1,83 @@
+{
+  "file_name": "TQB-LIST-0080.json",
+  "project": "TOEFL ITP Boost",
+  "phase": "Phase 3 - Listening Comprehension",
+  "asset_type": "Part A - Short Conversation",
+  "asset_id": "LIST-0080",
+  "version": "1.0.0",
+  "metadata": {
+    "difficulty": "Easy",
+    "question_count": 1,
+    "estimated_audio_seconds": 18,
+    "topic": "Professor's Office"
+  },
+  "narrator": {
+    "id": "NAR-001",
+    "gender": "neutral"
+  },
+  "speakers": [
+    {
+      "id": "M1",
+      "role": "Male Speaker",
+      "gender": "male"
+    },
+    {
+      "id": "F1",
+      "role": "Female Speaker",
+      "gender": "female"
+    }
+  ],
+  "audio_metadata": {
+    "language": "en-US",
+    "sample_rate": 44100,
+    "format": "wav",
+    "tts_ready": true
+  },
+  "transcript": {
+    "narrator_intro": "Listen to a conversation between a man and a woman.",
+    "dialogue": [
+      {
+        "speaker": "M1",
+        "text": "Did your professor answer your email about the project?"
+      },
+      {
+        "speaker": "F1",
+        "text": "Yes. She asked me to stop by her office tomorrow afternoon to discuss it."
+      }
+    ],
+    "question_intro": "What will the woman probably do tomorrow afternoon?"
+  },
+  "questions": [
+    {
+      "id": "Q1",
+      "type": "multiple_choice",
+      "prompt": "What will the woman probably do tomorrow afternoon?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Meet with her professor."
+        },
+        {
+          "id": "B",
+          "text": "Submit the project."
+        },
+        {
+          "id": "C",
+          "text": "Take an exam."
+        },
+        {
+          "id": "D",
+          "text": "Send another email."
+        }
+      ],
+      "answer_key": "A",
+      "explanation": "The professor asked her to come to the office to discuss the project.",
+      "evidence": "She asked me to stop by her office tomorrow afternoon."
+    }
+  ],
+  "production_metadata": {
+    "status": "production_ready",
+    "schema_version": "1.0",
+    "tts_ready": true
+  }
+}

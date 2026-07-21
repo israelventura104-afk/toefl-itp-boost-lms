@@ -1,0 +1,83 @@
+{
+  "file_name": "TQB-LIST-0098.json",
+  "project": "TOEFL ITP Boost",
+  "phase": "Phase 3 - Listening Comprehension",
+  "asset_type": "Part A - Short Conversation",
+  "asset_id": "LIST-0098",
+  "version": "1.0.0",
+  "metadata": {
+    "difficulty": "Easy",
+    "question_count": 1,
+    "estimated_audio_seconds": 18,
+    "topic": "Student Government Election"
+  },
+  "narrator": {
+    "id": "NAR-001",
+    "gender": "neutral"
+  },
+  "speakers": [
+    {
+      "id": "M1",
+      "role": "Male Speaker",
+      "gender": "male"
+    },
+    {
+      "id": "F1",
+      "role": "Female Speaker",
+      "gender": "female"
+    }
+  ],
+  "audio_metadata": {
+    "language": "en-US",
+    "sample_rate": 44100,
+    "format": "wav",
+    "tts_ready": true
+  },
+  "transcript": {
+    "narrator_intro": "Listen to a conversation between a man and a woman.",
+    "dialogue": [
+      {
+        "speaker": "M1",
+        "text": "Are you going to the student government candidate debate tonight?"
+      },
+      {
+        "speaker": "F1",
+        "text": "Yes. I want to hear the candidates' ideas before I vote next week."
+      }
+    ],
+    "question_intro": "Why is the woman attending the debate?"
+  },
+  "questions": [
+    {
+      "id": "Q1",
+      "type": "multiple_choice",
+      "prompt": "Why is the woman attending the debate?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "To learn about the candidates before voting."
+        },
+        {
+          "id": "B",
+          "text": "To campaign for a friend."
+        },
+        {
+          "id": "C",
+          "text": "To register as a candidate."
+        },
+        {
+          "id": "D",
+          "text": "To meet with a professor."
+        }
+      ],
+      "answer_key": "A",
+      "explanation": "She wants to hear the candidates' ideas before voting.",
+      "evidence": "I want to hear the candidates' ideas before I vote next week."
+    }
+  ],
+  "production_metadata": {
+    "status": "production_ready",
+    "schema_version": "1.0",
+    "tts_ready": true
+  }
+}

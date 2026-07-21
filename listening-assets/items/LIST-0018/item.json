@@ -1,0 +1,83 @@
+{
+  "file_name": "TQB-LIST-0018.json",
+  "project": "TOEFL ITP Boost",
+  "phase": "Phase 3 - Listening Comprehension",
+  "asset_type": "Part A - Short Conversation",
+  "asset_id": "LIST-0018",
+  "version": "1.0.0",
+  "metadata": {
+    "difficulty": "Easy",
+    "question_count": 1,
+    "estimated_audio_seconds": 18,
+    "topic": "Exam Review"
+  },
+  "narrator": {
+    "id": "NAR-001",
+    "gender": "neutral"
+  },
+  "speakers": [
+    {
+      "id": "M1",
+      "role": "Male Speaker",
+      "gender": "male"
+    },
+    {
+      "id": "F1",
+      "role": "Female Speaker",
+      "gender": "female"
+    }
+  ],
+  "audio_metadata": {
+    "language": "en-US",
+    "sample_rate": 44100,
+    "format": "wav",
+    "tts_ready": true
+  },
+  "transcript": {
+    "narrator_intro": "Listen to a conversation between a man and a woman.",
+    "dialogue": [
+      {
+        "speaker": "M1",
+        "text": "Did you understand yesterday's calculus lecture?"
+      },
+      {
+        "speaker": "F1",
+        "text": "Most of it, but I'm going to attend the review session tomorrow."
+      }
+    ],
+    "question_intro": "What will the woman probably do?"
+  },
+  "questions": [
+    {
+      "id": "Q1",
+      "type": "multiple_choice",
+      "prompt": "What will the woman probably do?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Skip tomorrow's class."
+        },
+        {
+          "id": "B",
+          "text": "Study calculus with the man tonight."
+        },
+        {
+          "id": "C",
+          "text": "Go to a review session."
+        },
+        {
+          "id": "D",
+          "text": "Ask the professor to repeat the lecture."
+        }
+      ],
+      "answer_key": "C",
+      "explanation": "She says she is going to attend the review session tomorrow.",
+      "evidence": "I'm going to attend the review session tomorrow."
+    }
+  ],
+  "production_metadata": {
+    "status": "production_ready",
+    "schema_version": "1.0",
+    "tts_ready": true
+  }
+}

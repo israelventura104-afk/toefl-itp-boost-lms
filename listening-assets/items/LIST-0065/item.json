@@ -1,0 +1,83 @@
+{
+  "file_name": "TQB-LIST-0065.json",
+  "project": "TOEFL ITP Boost",
+  "phase": "Phase 3 - Listening Comprehension",
+  "asset_type": "Part A - Short Conversation",
+  "asset_id": "LIST-0065",
+  "version": "1.0.0",
+  "metadata": {
+    "difficulty": "Easy",
+    "question_count": 1,
+    "estimated_audio_seconds": 18,
+    "topic": "Campus Fitness Class"
+  },
+  "narrator": {
+    "id": "NAR-001",
+    "gender": "neutral"
+  },
+  "speakers": [
+    {
+      "id": "F1",
+      "role": "Female Speaker",
+      "gender": "female"
+    },
+    {
+      "id": "M1",
+      "role": "Male Speaker",
+      "gender": "male"
+    }
+  ],
+  "audio_metadata": {
+    "language": "en-US",
+    "sample_rate": 44100,
+    "format": "wav",
+    "tts_ready": true
+  },
+  "transcript": {
+    "narrator_intro": "Listen to a conversation between a woman and a man.",
+    "dialogue": [
+      {
+        "speaker": "F1",
+        "text": "Are you signing up for the campus fitness class this semester?"
+      },
+      {
+        "speaker": "M1",
+        "text": "Yes. I heard it fills up quickly, so I registered this morning."
+      }
+    ],
+    "question_intro": "Why did the man register this morning?"
+  },
+  "questions": [
+    {
+      "id": "Q1",
+      "type": "multiple_choice",
+      "prompt": "Why did the man register this morning?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "He wanted to avoid the class filling up."
+        },
+        {
+          "id": "B",
+          "text": "The class started this morning."
+        },
+        {
+          "id": "C",
+          "text": "His friend registered him."
+        },
+        {
+          "id": "D",
+          "text": "He forgot to register earlier."
+        }
+      ],
+      "answer_key": "A",
+      "explanation": "He registered early because the class fills up quickly.",
+      "evidence": "I heard it fills up quickly, so I registered this morning."
+    }
+  ],
+  "production_metadata": {
+    "status": "production_ready",
+    "schema_version": "1.0",
+    "tts_ready": true
+  }
+}

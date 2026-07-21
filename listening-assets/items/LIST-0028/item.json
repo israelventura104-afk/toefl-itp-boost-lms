@@ -1,0 +1,83 @@
+{
+  "file_name": "TQB-LIST-0028.json",
+  "project": "TOEFL ITP Boost",
+  "phase": "Phase 3 - Listening Comprehension",
+  "asset_type": "Part A - Short Conversation",
+  "asset_id": "LIST-0028",
+  "version": "1.0.0",
+  "metadata": {
+    "difficulty": "Easy",
+    "question_count": 1,
+    "estimated_audio_seconds": 18,
+    "topic": "Campus Shuttle"
+  },
+  "narrator": {
+    "id": "NAR-001",
+    "gender": "neutral"
+  },
+  "speakers": [
+    {
+      "id": "M1",
+      "role": "Male Speaker",
+      "gender": "male"
+    },
+    {
+      "id": "F1",
+      "role": "Female Speaker",
+      "gender": "female"
+    }
+  ],
+  "audio_metadata": {
+    "language": "en-US",
+    "sample_rate": 44100,
+    "format": "wav",
+    "tts_ready": true
+  },
+  "transcript": {
+    "narrator_intro": "Listen to a conversation between a man and a woman.",
+    "dialogue": [
+      {
+        "speaker": "M1",
+        "text": "Has the campus shuttle arrived yet?"
+      },
+      {
+        "speaker": "F1",
+        "text": "Not yet. The driver called to say it will be about ten minutes late."
+      }
+    ],
+    "question_intro": "What does the woman mean?"
+  },
+  "questions": [
+    {
+      "id": "Q1",
+      "type": "multiple_choice",
+      "prompt": "What does the woman mean?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "The shuttle has already left."
+        },
+        {
+          "id": "B",
+          "text": "The shuttle is expected to arrive late."
+        },
+        {
+          "id": "C",
+          "text": "The driver canceled the route."
+        },
+        {
+          "id": "D",
+          "text": "They should take a taxi instead."
+        }
+      ],
+      "answer_key": "B",
+      "explanation": "She says the driver reported the shuttle will arrive about ten minutes late.",
+      "evidence": "The driver called to say it will be about ten minutes late."
+    }
+  ],
+  "production_metadata": {
+    "status": "production_ready",
+    "schema_version": "1.0",
+    "tts_ready": true
+  }
+}

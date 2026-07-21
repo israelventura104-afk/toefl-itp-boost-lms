@@ -1,0 +1,83 @@
+{
+  "file_name": "TQB-LIST-0035.json",
+  "project": "TOEFL ITP Boost",
+  "phase": "Phase 3 - Listening Comprehension",
+  "asset_type": "Part A - Short Conversation",
+  "asset_id": "LIST-0035",
+  "version": "1.0.0",
+  "metadata": {
+    "difficulty": "Easy",
+    "question_count": 1,
+    "estimated_audio_seconds": 18,
+    "topic": "Campus Tour"
+  },
+  "narrator": {
+    "id": "NAR-001",
+    "gender": "neutral"
+  },
+  "speakers": [
+    {
+      "id": "F1",
+      "role": "Female Speaker",
+      "gender": "female"
+    },
+    {
+      "id": "M1",
+      "role": "Male Speaker",
+      "gender": "male"
+    }
+  ],
+  "audio_metadata": {
+    "language": "en-US",
+    "sample_rate": 44100,
+    "format": "wav",
+    "tts_ready": true
+  },
+  "transcript": {
+    "narrator_intro": "Listen to a conversation between a woman and a man.",
+    "dialogue": [
+      {
+        "speaker": "F1",
+        "text": "Are you volunteering to lead the campus tour this weekend?"
+      },
+      {
+        "speaker": "M1",
+        "text": "Yes. The admissions office asked me to help the new students."
+      }
+    ],
+    "question_intro": "Why will the man lead the campus tour?"
+  },
+  "questions": [
+    {
+      "id": "Q1",
+      "type": "multiple_choice",
+      "prompt": "Why will the man lead the campus tour?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "He wants to visit the campus himself."
+        },
+        {
+          "id": "B",
+          "text": "The admissions office asked him to help."
+        },
+        {
+          "id": "C",
+          "text": "His class was canceled."
+        },
+        {
+          "id": "D",
+          "text": "He is looking for a classroom."
+        }
+      ],
+      "answer_key": "B",
+      "explanation": "He explains that the admissions office requested his help with the campus tour.",
+      "evidence": "The admissions office asked me to help the new students."
+    }
+  ],
+  "production_metadata": {
+    "status": "production_ready",
+    "schema_version": "1.0",
+    "tts_ready": true
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "file_name": "TQB-LIST-0003.json",
+  "project": "TOEFL ITP Boost",
+  "phase": "Phase 3 - Listening Comprehension",
+  "asset_type": "Part A - Short Conversation",
+  "asset_id": "LIST-0003",
+  "version": "1.0.0",
+  "metadata": {
+    "difficulty": "Easy",
+    "question_count": 1,
+    "estimated_audio_seconds": 19,
+    "topic": "Class Schedule"
+  },
+  "narrator": {
+    "id": "NAR-001",
+    "gender": "neutral"
+  },
+  "speakers": [
+    {
+      "id": "M1",
+      "role": "Male Speaker",
+      "gender": "male"
+    },
+    {
+      "id": "F1",
+      "role": "Female Speaker",
+      "gender": "female"
+    }
+  ],
+  "audio_metadata": {
+    "language": "en-US",
+    "sample_rate": 44100,
+    "format": "wav",
+    "tts_ready": true
+  },
+  "transcript": {
+    "narrator_intro": "Listen to a conversation between a man and a woman.",
+    "dialogue": [
+      {
+        "speaker": "M1",
+        "text": "I thought today's history lecture started at ten."
+      },
+      {
+        "speaker": "F1",
+        "text": "It usually does, but the professor moved it to nine because of tomorrow's conference."
+      }
+    ],
+    "question_intro": "What does the woman mean?"
+  },
+  "questions": [
+    {
+      "id": "Q1",
+      "type": "multiple_choice",
+      "prompt": "What does the woman mean?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "The lecture has been canceled."
+        },
+        {
+          "id": "B",
+          "text": "The class begins earlier today."
+        },
+        {
+          "id": "C",
+          "text": "The conference starts at nine."
+        },
+        {
+          "id": "D",
+          "text": "The professor is absent today."
+        }
+      ],
+      "answer_key": "B",
+      "explanation": "She explains that today's lecture was rescheduled from ten to nine.",
+      "evidence": "The professor moved it to nine because of tomorrow's conference."
+    }
+  ],
+  "production_metadata": {
+    "status": "production_ready",
+    "schema_version": "1.0",
+    "tts_ready": true
+  }
+}

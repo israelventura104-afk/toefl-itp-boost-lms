@@ -1,0 +1,83 @@
+{
+  "file_name": "TQB-LIST-0076.json",
+  "project": "TOEFL ITP Boost",
+  "phase": "Phase 3 - Listening Comprehension",
+  "asset_type": "Part A - Short Conversation",
+  "asset_id": "LIST-0076",
+  "version": "1.0.0",
+  "metadata": {
+    "difficulty": "Easy",
+    "question_count": 1,
+    "estimated_audio_seconds": 18,
+    "topic": "Study Room Reservation"
+  },
+  "narrator": {
+    "id": "NAR-001",
+    "gender": "neutral"
+  },
+  "speakers": [
+    {
+      "id": "M1",
+      "role": "Male Speaker",
+      "gender": "male"
+    },
+    {
+      "id": "F1",
+      "role": "Female Speaker",
+      "gender": "female"
+    }
+  ],
+  "audio_metadata": {
+    "language": "en-US",
+    "sample_rate": 44100,
+    "format": "wav",
+    "tts_ready": true
+  },
+  "transcript": {
+    "narrator_intro": "Listen to a conversation between a man and a woman.",
+    "dialogue": [
+      {
+        "speaker": "M1",
+        "text": "Did you reserve a study room for our group meeting?"
+      },
+      {
+        "speaker": "F1",
+        "text": "Yes. I booked one yesterday because they're usually full before exams."
+      }
+    ],
+    "question_intro": "Why did the woman reserve the study room early?"
+  },
+  "questions": [
+    {
+      "id": "Q1",
+      "type": "multiple_choice",
+      "prompt": "Why did the woman reserve the study room early?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Study rooms fill up before exams."
+        },
+        {
+          "id": "B",
+          "text": "She wanted to cancel another reservation."
+        },
+        {
+          "id": "C",
+          "text": "The library closes early."
+        },
+        {
+          "id": "D",
+          "text": "Her professor required it."
+        }
+      ],
+      "answer_key": "A",
+      "explanation": "She says study rooms are usually full before exams, so she booked early.",
+      "evidence": "They're usually full before exams."
+    }
+  ],
+  "production_metadata": {
+    "status": "production_ready",
+    "schema_version": "1.0",
+    "tts_ready": true
+  }
+}

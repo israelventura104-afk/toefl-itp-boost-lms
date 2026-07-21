@@ -1,0 +1,83 @@
+{
+  "file_name": "TQB-LIST-0059.json",
+  "project": "TOEFL ITP Boost",
+  "phase": "Phase 3 - Listening Comprehension",
+  "asset_type": "Part A - Short Conversation",
+  "asset_id": "LIST-0059",
+  "version": "1.0.0",
+  "metadata": {
+    "difficulty": "Easy",
+    "question_count": 1,
+    "estimated_audio_seconds": 18,
+    "topic": "Campus Parking"
+  },
+  "narrator": {
+    "id": "NAR-001",
+    "gender": "neutral"
+  },
+  "speakers": [
+    {
+      "id": "F1",
+      "role": "Female Speaker",
+      "gender": "female"
+    },
+    {
+      "id": "M1",
+      "role": "Male Speaker",
+      "gender": "male"
+    }
+  ],
+  "audio_metadata": {
+    "language": "en-US",
+    "sample_rate": 44100,
+    "format": "wav",
+    "tts_ready": true
+  },
+  "transcript": {
+    "narrator_intro": "Listen to a conversation between a woman and a man.",
+    "dialogue": [
+      {
+        "speaker": "F1",
+        "text": "Did you find a parking space near the science building?"
+      },
+      {
+        "speaker": "M1",
+        "text": "Yes, but I had to arrive much earlier than usual to get one."
+      }
+    ],
+    "question_intro": "What does the man imply?"
+  },
+  "questions": [
+    {
+      "id": "Q1",
+      "type": "multiple_choice",
+      "prompt": "What does the man imply?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Parking spaces are easy to find."
+        },
+        {
+          "id": "B",
+          "text": "He arrived early to find a parking space."
+        },
+        {
+          "id": "C",
+          "text": "The science building is closed."
+        },
+        {
+          "id": "D",
+          "text": "He usually walks to campus."
+        }
+      ],
+      "answer_key": "B",
+      "explanation": "He says he had to arrive much earlier than usual to get a parking space.",
+      "evidence": "I had to arrive much earlier than usual to get one."
+    }
+  ],
+  "production_metadata": {
+    "status": "production_ready",
+    "schema_version": "1.0",
+    "tts_ready": true
+  }
+}

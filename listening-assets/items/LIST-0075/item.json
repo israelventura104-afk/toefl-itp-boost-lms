@@ -1,0 +1,83 @@
+{
+  "file_name": "TQB-LIST-0075.json",
+  "project": "TOEFL ITP Boost",
+  "phase": "Phase 3 - Listening Comprehension",
+  "asset_type": "Part A - Short Conversation",
+  "asset_id": "LIST-0075",
+  "version": "1.0.0",
+  "metadata": {
+    "difficulty": "Easy",
+    "question_count": 1,
+    "estimated_audio_seconds": 18,
+    "topic": "Research Workshop"
+  },
+  "narrator": {
+    "id": "NAR-001",
+    "gender": "neutral"
+  },
+  "speakers": [
+    {
+      "id": "F1",
+      "role": "Female Speaker",
+      "gender": "female"
+    },
+    {
+      "id": "M1",
+      "role": "Male Speaker",
+      "gender": "male"
+    }
+  ],
+  "audio_metadata": {
+    "language": "en-US",
+    "sample_rate": 44100,
+    "format": "wav",
+    "tts_ready": true
+  },
+  "transcript": {
+    "narrator_intro": "Listen to a conversation between a woman and a man.",
+    "dialogue": [
+      {
+        "speaker": "F1",
+        "text": "Are you attending the research workshop tomorrow morning?"
+      },
+      {
+        "speaker": "M1",
+        "text": "Yes. I want to learn how to organize sources more efficiently for my term paper."
+      }
+    ],
+    "question_intro": "Why is the man attending the workshop?"
+  },
+  "questions": [
+    {
+      "id": "Q1",
+      "type": "multiple_choice",
+      "prompt": "Why is the man attending the workshop?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "To improve his research skills."
+        },
+        {
+          "id": "B",
+          "text": "To submit his term paper."
+        },
+        {
+          "id": "C",
+          "text": "To register for a new class."
+        },
+        {
+          "id": "D",
+          "text": "To meet a librarian."
+        }
+      ],
+      "answer_key": "A",
+      "explanation": "He wants to learn how to organize research sources more efficiently.",
+      "evidence": "I want to learn how to organize sources more efficiently for my term paper."
+    }
+  ],
+  "production_metadata": {
+    "status": "production_ready",
+    "schema_version": "1.0",
+    "tts_ready": true
+  }
+}

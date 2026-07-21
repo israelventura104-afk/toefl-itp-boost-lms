@@ -1,0 +1,83 @@
+{
+  "file_name": "TQB-LIST-0013.json",
+  "project": "TOEFL ITP Boost",
+  "phase": "Phase 3 - Listening Comprehension",
+  "asset_type": "Part A - Short Conversation",
+  "asset_id": "LIST-0013",
+  "version": "1.0.0",
+  "metadata": {
+    "difficulty": "Easy",
+    "question_count": 1,
+    "estimated_audio_seconds": 18,
+    "topic": "Registration"
+  },
+  "narrator": {
+    "id": "NAR-001",
+    "gender": "neutral"
+  },
+  "speakers": [
+    {
+      "id": "M1",
+      "role": "Male Speaker",
+      "gender": "male"
+    },
+    {
+      "id": "F1",
+      "role": "Female Speaker",
+      "gender": "female"
+    }
+  ],
+  "audio_metadata": {
+    "language": "en-US",
+    "sample_rate": 44100,
+    "format": "wav",
+    "tts_ready": true
+  },
+  "transcript": {
+    "narrator_intro": "Listen to a conversation between a man and a woman.",
+    "dialogue": [
+      {
+        "speaker": "M1",
+        "text": "Did you register for Professor Kim's psychology class?"
+      },
+      {
+        "speaker": "F1",
+        "text": "I tried, but it was already full, so I joined the waiting list."
+      }
+    ],
+    "question_intro": "What does the woman mean?"
+  },
+  "questions": [
+    {
+      "id": "Q1",
+      "type": "multiple_choice",
+      "prompt": "What does the woman mean?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "She decided not to take psychology."
+        },
+        {
+          "id": "B",
+          "text": "She enrolled in a different class."
+        },
+        {
+          "id": "C",
+          "text": "She hopes a space becomes available."
+        },
+        {
+          "id": "D",
+          "text": "She registered before everyone else."
+        }
+      ],
+      "answer_key": "C",
+      "explanation": "Joining the waiting list means she is waiting for an opening in the class.",
+      "evidence": "It was already full, so I joined the waiting list."
+    }
+  ],
+  "production_metadata": {
+    "status": "production_ready",
+    "schema_version": "1.0",
+    "tts_ready": true
+  }
+}

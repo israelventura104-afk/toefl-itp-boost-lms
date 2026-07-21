@@ -1,0 +1,83 @@
+{
+  "file_name": "TQB-LIST-0074.json",
+  "project": "TOEFL ITP Boost",
+  "phase": "Phase 3 - Listening Comprehension",
+  "asset_type": "Part A - Short Conversation",
+  "asset_id": "LIST-0074",
+  "version": "1.0.0",
+  "metadata": {
+    "difficulty": "Easy",
+    "question_count": 1,
+    "estimated_audio_seconds": 18,
+    "topic": "Campus Health Center"
+  },
+  "narrator": {
+    "id": "NAR-001",
+    "gender": "neutral"
+  },
+  "speakers": [
+    {
+      "id": "M1",
+      "role": "Male Speaker",
+      "gender": "male"
+    },
+    {
+      "id": "F1",
+      "role": "Female Speaker",
+      "gender": "female"
+    }
+  ],
+  "audio_metadata": {
+    "language": "en-US",
+    "sample_rate": 44100,
+    "format": "wav",
+    "tts_ready": true
+  },
+  "transcript": {
+    "narrator_intro": "Listen to a conversation between a man and a woman.",
+    "dialogue": [
+      {
+        "speaker": "M1",
+        "text": "Did you make an appointment at the campus health center?"
+      },
+      {
+        "speaker": "F1",
+        "text": "Yes. I scheduled one online because they fill up quickly during flu season."
+      }
+    ],
+    "question_intro": "Why did the woman schedule the appointment online?"
+  },
+  "questions": [
+    {
+      "id": "Q1",
+      "type": "multiple_choice",
+      "prompt": "Why did the woman schedule the appointment online?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "She wanted to get an appointment before they filled up."
+        },
+        {
+          "id": "B",
+          "text": "The health center accepts only online appointments."
+        },
+        {
+          "id": "C",
+          "text": "She needed to cancel another appointment."
+        },
+        {
+          "id": "D",
+          "text": "She was already at the health center."
+        }
+      ],
+      "answer_key": "A",
+      "explanation": "She explains that appointments fill up quickly during flu season.",
+      "evidence": "They fill up quickly during flu season."
+    }
+  ],
+  "production_metadata": {
+    "status": "production_ready",
+    "schema_version": "1.0",
+    "tts_ready": true
+  }
+}

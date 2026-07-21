@@ -1,0 +1,87 @@
+{
+  "file_name": "TQB-LIST-0001.json",
+  "project": "TOEFL ITP Boost",
+  "phase": "Phase 3 - Listening Comprehension",
+  "asset_type": "Part A - Short Conversation",
+  "asset_id": "LIST-0001",
+  "version": "1.0.0",
+  "metadata": {
+    "difficulty": "Easy",
+    "question_count": 1,
+    "estimated_audio_seconds": 18,
+    "topic": "Campus Life"
+  },
+  "narrator": {
+    "id": "NAR-001",
+    "gender": "neutral"
+  },
+  "speakers": [
+    {
+      "id": "M1",
+      "role": "Male Speaker",
+      "gender": "male"
+    },
+    {
+      "id": "F1",
+      "role": "Female Speaker",
+      "gender": "female"
+    }
+  ],
+  "audio_metadata": {
+    "language": "en-US",
+    "sample_rate": 44100,
+    "format": "wav",
+    "tts_ready": true
+  },
+  "transcript": {
+    "narrator_intro": "Listen to a conversation between a man and a woman.",
+    "dialogue": [
+      {
+        "speaker": "M1",
+        "text": "Did you finish the biology assignment?"
+      },
+      {
+        "speaker": "F1",
+        "text": "Not yet. I was at the library all afternoon looking for one of the reference books."
+      },
+      {
+        "speaker": "M1",
+        "text": "I found it online through the university database."
+      }
+    ],
+    "question_intro": "What does the man imply?"
+  },
+  "questions": [
+    {
+      "id": "Q1",
+      "type": "multiple_choice",
+      "prompt": "What does the man imply?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "The assignment has been canceled."
+        },
+        {
+          "id": "B",
+          "text": "The book can be accessed electronically."
+        },
+        {
+          "id": "C",
+          "text": "The library is closed."
+        },
+        {
+          "id": "D",
+          "text": "The woman should change classes."
+        }
+      ],
+      "answer_key": "B",
+      "explanation": "The man says he found the reference book online through the university database.",
+      "evidence": "I found it online through the university database."
+    }
+  ],
+  "production_metadata": {
+    "status": "production_ready",
+    "schema_version": "1.0",
+    "tts_ready": true
+  }
+}

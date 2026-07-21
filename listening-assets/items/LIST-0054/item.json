@@ -1,0 +1,83 @@
+{
+  "file_name": "TQB-LIST-0054.json",
+  "project": "TOEFL ITP Boost",
+  "phase": "Phase 3 - Listening Comprehension",
+  "asset_type": "Part A - Short Conversation",
+  "asset_id": "LIST-0054",
+  "version": "1.0.0",
+  "metadata": {
+    "difficulty": "Easy",
+    "question_count": 1,
+    "estimated_audio_seconds": 18,
+    "topic": "Campus Bus Pass"
+  },
+  "narrator": {
+    "id": "NAR-001",
+    "gender": "neutral"
+  },
+  "speakers": [
+    {
+      "id": "M1",
+      "role": "Male Speaker",
+      "gender": "male"
+    },
+    {
+      "id": "F1",
+      "role": "Female Speaker",
+      "gender": "female"
+    }
+  ],
+  "audio_metadata": {
+    "language": "en-US",
+    "sample_rate": 44100,
+    "format": "wav",
+    "tts_ready": true
+  },
+  "transcript": {
+    "narrator_intro": "Listen to a conversation between a man and a woman.",
+    "dialogue": [
+      {
+        "speaker": "M1",
+        "text": "Did you renew your campus bus pass this semester?"
+      },
+      {
+        "speaker": "F1",
+        "text": "Yes, I renewed it online, so I can ride the shuttle starting today."
+      }
+    ],
+    "question_intro": "What does the woman mean?"
+  },
+  "questions": [
+    {
+      "id": "Q1",
+      "type": "multiple_choice",
+      "prompt": "What does the woman mean?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "She still needs to renew her pass."
+        },
+        {
+          "id": "B",
+          "text": "She renewed her bus pass online."
+        },
+        {
+          "id": "C",
+          "text": "The shuttle is not operating today."
+        },
+        {
+          "id": "D",
+          "text": "She lost her bus pass."
+        }
+      ],
+      "answer_key": "B",
+      "explanation": "She says she renewed the pass online and can use it today.",
+      "evidence": "I renewed it online, so I can ride the shuttle starting today."
+    }
+  ],
+  "production_metadata": {
+    "status": "production_ready",
+    "schema_version": "1.0",
+    "tts_ready": true
+  }
+}

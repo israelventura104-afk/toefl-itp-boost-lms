@@ -1,0 +1,83 @@
+{
+  "file_name": "TQB-LIST-0045.json",
+  "project": "TOEFL ITP Boost",
+  "phase": "Phase 3 - Listening Comprehension",
+  "asset_type": "Part A - Short Conversation",
+  "asset_id": "LIST-0045",
+  "version": "1.0.0",
+  "metadata": {
+    "difficulty": "Easy",
+    "question_count": 1,
+    "estimated_audio_seconds": 18,
+    "topic": "Student Center"
+  },
+  "narrator": {
+    "id": "NAR-001",
+    "gender": "neutral"
+  },
+  "speakers": [
+    {
+      "id": "F1",
+      "role": "Female Speaker",
+      "gender": "female"
+    },
+    {
+      "id": "M1",
+      "role": "Male Speaker",
+      "gender": "male"
+    }
+  ],
+  "audio_metadata": {
+    "language": "en-US",
+    "sample_rate": 44100,
+    "format": "wav",
+    "tts_ready": true
+  },
+  "transcript": {
+    "narrator_intro": "Listen to a conversation between a woman and a man.",
+    "dialogue": [
+      {
+        "speaker": "F1",
+        "text": "Did you remember to buy tickets for tonight's student concert?"
+      },
+      {
+        "speaker": "M1",
+        "text": "Yes. I bought them online yesterday because they were selling out quickly."
+      }
+    ],
+    "question_intro": "Why did the man buy the tickets yesterday?"
+  },
+  "questions": [
+    {
+      "id": "Q1",
+      "type": "multiple_choice",
+      "prompt": "Why did the man buy the tickets yesterday?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "The concert was canceled."
+        },
+        {
+          "id": "B",
+          "text": "The tickets were almost sold out."
+        },
+        {
+          "id": "C",
+          "text": "He received free tickets."
+        },
+        {
+          "id": "D",
+          "text": "He forgot about the concert."
+        }
+      ],
+      "answer_key": "B",
+      "explanation": "He bought them early because they were selling out quickly.",
+      "evidence": "They were selling out quickly."
+    }
+  ],
+  "production_metadata": {
+    "status": "production_ready",
+    "schema_version": "1.0",
+    "tts_ready": true
+  }
+}

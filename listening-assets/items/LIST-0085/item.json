@@ -1,0 +1,83 @@
+{
+  "file_name": "TQB-LIST-0085.json",
+  "project": "TOEFL ITP Boost",
+  "phase": "Phase 3 - Listening Comprehension",
+  "asset_type": "Part A - Short Conversation",
+  "asset_id": "LIST-0085",
+  "version": "1.0.0",
+  "metadata": {
+    "difficulty": "Easy",
+    "question_count": 1,
+    "estimated_audio_seconds": 18,
+    "topic": "Writing Contest"
+  },
+  "narrator": {
+    "id": "NAR-001",
+    "gender": "neutral"
+  },
+  "speakers": [
+    {
+      "id": "F1",
+      "role": "Female Speaker",
+      "gender": "female"
+    },
+    {
+      "id": "M1",
+      "role": "Male Speaker",
+      "gender": "male"
+    }
+  ],
+  "audio_metadata": {
+    "language": "en-US",
+    "sample_rate": 44100,
+    "format": "wav",
+    "tts_ready": true
+  },
+  "transcript": {
+    "narrator_intro": "Listen to a conversation between a woman and a man.",
+    "dialogue": [
+      {
+        "speaker": "F1",
+        "text": "Are you entering the university writing contest this year?"
+      },
+      {
+        "speaker": "M1",
+        "text": "Yes. My English professor encouraged me to submit one of my essays."
+      }
+    ],
+    "question_intro": "Why is the man entering the writing contest?"
+  },
+  "questions": [
+    {
+      "id": "Q1",
+      "type": "multiple_choice",
+      "prompt": "Why is the man entering the writing contest?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "His professor encouraged him to participate."
+        },
+        {
+          "id": "B",
+          "text": "He needs extra credit."
+        },
+        {
+          "id": "C",
+          "text": "He has to complete a class assignment."
+        },
+        {
+          "id": "D",
+          "text": "He wants to become an editor."
+        }
+      ],
+      "answer_key": "A",
+      "explanation": "He says his English professor encouraged him to submit an essay.",
+      "evidence": "My English professor encouraged me to submit one of my essays."
+    }
+  ],
+  "production_metadata": {
+    "status": "production_ready",
+    "schema_version": "1.0",
+    "tts_ready": true
+  }
+}

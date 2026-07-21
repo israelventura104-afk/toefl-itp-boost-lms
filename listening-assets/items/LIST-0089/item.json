@@ -1,0 +1,83 @@
+{
+  "file_name": "TQB-LIST-0089.json",
+  "project": "TOEFL ITP Boost",
+  "phase": "Phase 3 - Listening Comprehension",
+  "asset_type": "Part A - Short Conversation",
+  "asset_id": "LIST-0089",
+  "version": "1.0.0",
+  "metadata": {
+    "difficulty": "Easy",
+    "question_count": 1,
+    "estimated_audio_seconds": 18,
+    "topic": "Campus Debate Club"
+  },
+  "narrator": {
+    "id": "NAR-001",
+    "gender": "neutral"
+  },
+  "speakers": [
+    {
+      "id": "M1",
+      "role": "Male Speaker",
+      "gender": "male"
+    },
+    {
+      "id": "F1",
+      "role": "Female Speaker",
+      "gender": "female"
+    }
+  ],
+  "audio_metadata": {
+    "language": "en-US",
+    "sample_rate": 44100,
+    "format": "wav",
+    "tts_ready": true
+  },
+  "transcript": {
+    "narrator_intro": "Listen to a conversation between a man and a woman.",
+    "dialogue": [
+      {
+        "speaker": "M1",
+        "text": "Are you joining the debate club meeting after class today?"
+      },
+      {
+        "speaker": "F1",
+        "text": "Yes. They're discussing this year's competition topics, and I want to participate."
+      }
+    ],
+    "question_intro": "Why is the woman attending the meeting?"
+  },
+  "questions": [
+    {
+      "id": "Q1",
+      "type": "multiple_choice",
+      "prompt": "Why is the woman attending the meeting?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "To learn about this year's competition topics."
+        },
+        {
+          "id": "B",
+          "text": "To submit a class assignment."
+        },
+        {
+          "id": "C",
+          "text": "To meet her academic advisor."
+        },
+        {
+          "id": "D",
+          "text": "To practice for an English exam."
+        }
+      ],
+      "answer_key": "A",
+      "explanation": "She says the club will discuss this year's competition topics and she wants to participate.",
+      "evidence": "They're discussing this year's competition topics, and I want to participate."
+    }
+  ],
+  "production_metadata": {
+    "status": "production_ready",
+    "schema_version": "1.0",
+    "tts_ready": true
+  }
+}

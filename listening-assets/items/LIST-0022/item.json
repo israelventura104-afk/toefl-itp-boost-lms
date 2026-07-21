@@ -1,0 +1,83 @@
+{
+  "file_name": "TQB-LIST-0022.json",
+  "project": "TOEFL ITP Boost",
+  "phase": "Phase 3 - Listening Comprehension",
+  "asset_type": "Part A - Short Conversation",
+  "asset_id": "LIST-0022",
+  "version": "1.0.0",
+  "metadata": {
+    "difficulty": "Easy",
+    "question_count": 1,
+    "estimated_audio_seconds": 18,
+    "topic": "Lost Item"
+  },
+  "narrator": {
+    "id": "NAR-001",
+    "gender": "neutral"
+  },
+  "speakers": [
+    {
+      "id": "M1",
+      "role": "Male Speaker",
+      "gender": "male"
+    },
+    {
+      "id": "F1",
+      "role": "Female Speaker",
+      "gender": "female"
+    }
+  ],
+  "audio_metadata": {
+    "language": "en-US",
+    "sample_rate": 44100,
+    "format": "wav",
+    "tts_ready": true
+  },
+  "transcript": {
+    "narrator_intro": "Listen to a conversation between a man and a woman.",
+    "dialogue": [
+      {
+        "speaker": "M1",
+        "text": "I can't find my notebook anywhere."
+      },
+      {
+        "speaker": "F1",
+        "text": "You left it on the table in the lecture hall. I saw it after class."
+      }
+    ],
+    "question_intro": "What does the woman imply?"
+  },
+  "questions": [
+    {
+      "id": "Q1",
+      "type": "multiple_choice",
+      "prompt": "What does the woman imply?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "The man should buy a new notebook."
+        },
+        {
+          "id": "B",
+          "text": "The notebook is in the lecture hall."
+        },
+        {
+          "id": "C",
+          "text": "She borrowed the notebook."
+        },
+        {
+          "id": "D",
+          "text": "The lecture has not started yet."
+        }
+      ],
+      "answer_key": "B",
+      "explanation": "She says the man left the notebook on a table in the lecture hall.",
+      "evidence": "You left it on the table in the lecture hall."
+    }
+  ],
+  "production_metadata": {
+    "status": "production_ready",
+    "schema_version": "1.0",
+    "tts_ready": true
+  }
+}

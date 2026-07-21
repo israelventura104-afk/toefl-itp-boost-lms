@@ -1,0 +1,83 @@
+{
+  "file_name": "TQB-LIST-0078.json",
+  "project": "TOEFL ITP Boost",
+  "phase": "Phase 3 - Listening Comprehension",
+  "asset_type": "Part A - Short Conversation",
+  "asset_id": "LIST-0078",
+  "version": "1.0.0",
+  "metadata": {
+    "difficulty": "Easy",
+    "question_count": 1,
+    "estimated_audio_seconds": 18,
+    "topic": "Campus Bookstore Sale"
+  },
+  "narrator": {
+    "id": "NAR-001",
+    "gender": "neutral"
+  },
+  "speakers": [
+    {
+      "id": "M1",
+      "role": "Male Speaker",
+      "gender": "male"
+    },
+    {
+      "id": "F1",
+      "role": "Female Speaker",
+      "gender": "female"
+    }
+  ],
+  "audio_metadata": {
+    "language": "en-US",
+    "sample_rate": 44100,
+    "format": "wav",
+    "tts_ready": true
+  },
+  "transcript": {
+    "narrator_intro": "Listen to a conversation between a man and a woman.",
+    "dialogue": [
+      {
+        "speaker": "M1",
+        "text": "Are you going to the bookstore's used book sale this afternoon?"
+      },
+      {
+        "speaker": "F1",
+        "text": "Yes. I'm hoping to find next semester's textbooks at a lower price."
+      }
+    ],
+    "question_intro": "Why is the woman going to the sale?"
+  },
+  "questions": [
+    {
+      "id": "Q1",
+      "type": "multiple_choice",
+      "prompt": "Why is the woman going to the sale?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "To buy cheaper textbooks."
+        },
+        {
+          "id": "B",
+          "text": "To sell her old books."
+        },
+        {
+          "id": "C",
+          "text": "To meet a classmate."
+        },
+        {
+          "id": "D",
+          "text": "To return a library book."
+        }
+      ],
+      "answer_key": "A",
+      "explanation": "She hopes to find textbooks at a lower price.",
+      "evidence": "I'm hoping to find next semester's textbooks at a lower price."
+    }
+  ],
+  "production_metadata": {
+    "status": "production_ready",
+    "schema_version": "1.0",
+    "tts_ready": true
+  }
+}

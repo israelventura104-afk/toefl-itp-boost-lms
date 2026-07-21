@@ -1,0 +1,83 @@
+{
+  "file_name": "TQB-LIST-0005.json",
+  "project": "TOEFL ITP Boost",
+  "phase": "Phase 3 - Listening Comprehension",
+  "asset_type": "Part A - Short Conversation",
+  "asset_id": "LIST-0005",
+  "version": "1.0.0",
+  "metadata": {
+    "difficulty": "Easy",
+    "question_count": 1,
+    "estimated_audio_seconds": 18,
+    "topic": "Bookstore"
+  },
+  "narrator": {
+    "id": "NAR-001",
+    "gender": "neutral"
+  },
+  "speakers": [
+    {
+      "id": "M1",
+      "role": "Male Speaker",
+      "gender": "male"
+    },
+    {
+      "id": "F1",
+      "role": "Female Speaker",
+      "gender": "female"
+    }
+  ],
+  "audio_metadata": {
+    "language": "en-US",
+    "sample_rate": 44100,
+    "format": "wav",
+    "tts_ready": true
+  },
+  "transcript": {
+    "narrator_intro": "Listen to a conversation between a man and a woman.",
+    "dialogue": [
+      {
+        "speaker": "M1",
+        "text": "Were you able to buy the chemistry textbook?"
+      },
+      {
+        "speaker": "F1",
+        "text": "No, the campus bookstore was sold out, so I ordered a copy online."
+      }
+    ],
+    "question_intro": "What does the woman imply?"
+  },
+  "questions": [
+    {
+      "id": "Q1",
+      "type": "multiple_choice",
+      "prompt": "What does the woman imply?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "She borrowed the textbook from a friend."
+        },
+        {
+          "id": "B",
+          "text": "She no longer needs the textbook."
+        },
+        {
+          "id": "C",
+          "text": "She purchased the textbook on the Internet."
+        },
+        {
+          "id": "D",
+          "text": "She plans to visit another campus."
+        }
+      ],
+      "answer_key": "C",
+      "explanation": "She says the bookstore had no copies available, so she ordered the book online.",
+      "evidence": "The campus bookstore was sold out, so I ordered a copy online."
+    }
+  ],
+  "production_metadata": {
+    "status": "production_ready",
+    "schema_version": "1.0",
+    "tts_ready": true
+  }
+}

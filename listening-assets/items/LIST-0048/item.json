@@ -1,0 +1,83 @@
+{
+  "file_name": "TQB-LIST-0048.json",
+  "project": "TOEFL ITP Boost",
+  "phase": "Phase 3 - Listening Comprehension",
+  "asset_type": "Part A - Short Conversation",
+  "asset_id": "LIST-0048",
+  "version": "1.0.0",
+  "metadata": {
+    "difficulty": "Easy",
+    "question_count": 1,
+    "estimated_audio_seconds": 18,
+    "topic": "Campus Gym"
+  },
+  "narrator": {
+    "id": "NAR-001",
+    "gender": "neutral"
+  },
+  "speakers": [
+    {
+      "id": "M1",
+      "role": "Male Speaker",
+      "gender": "male"
+    },
+    {
+      "id": "F1",
+      "role": "Female Speaker",
+      "gender": "female"
+    }
+  ],
+  "audio_metadata": {
+    "language": "en-US",
+    "sample_rate": 44100,
+    "format": "wav",
+    "tts_ready": true
+  },
+  "transcript": {
+    "narrator_intro": "Listen to a conversation between a man and a woman.",
+    "dialogue": [
+      {
+        "speaker": "M1",
+        "text": "Is the campus gym open during the holiday break?"
+      },
+      {
+        "speaker": "F1",
+        "text": "Yes, but it closes much earlier than usual each day."
+      }
+    ],
+    "question_intro": "What does the woman mean?"
+  },
+  "questions": [
+    {
+      "id": "Q1",
+      "type": "multiple_choice",
+      "prompt": "What does the woman mean?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "The gym is closed for the holidays."
+        },
+        {
+          "id": "B",
+          "text": "The gym has shorter operating hours."
+        },
+        {
+          "id": "C",
+          "text": "Students cannot use the gym."
+        },
+        {
+          "id": "D",
+          "text": "The gym opens later than usual."
+        }
+      ],
+      "answer_key": "B",
+      "explanation": "She explains that the gym remains open but closes earlier each day.",
+      "evidence": "It closes much earlier than usual each day."
+    }
+  ],
+  "production_metadata": {
+    "status": "production_ready",
+    "schema_version": "1.0",
+    "tts_ready": true
+  }
+}

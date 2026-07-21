@@ -1,0 +1,83 @@
+{
+  "file_name": "TQB-LIST-0041.json",
+  "project": "TOEFL ITP Boost",
+  "phase": "Phase 3 - Listening Comprehension",
+  "asset_type": "Part A - Short Conversation",
+  "asset_id": "LIST-0041",
+  "version": "1.0.0",
+  "metadata": {
+    "difficulty": "Easy",
+    "question_count": 1,
+    "estimated_audio_seconds": 18,
+    "topic": "Class Notes"
+  },
+  "narrator": {
+    "id": "NAR-001",
+    "gender": "neutral"
+  },
+  "speakers": [
+    {
+      "id": "F1",
+      "role": "Female Speaker",
+      "gender": "female"
+    },
+    {
+      "id": "M1",
+      "role": "Male Speaker",
+      "gender": "male"
+    }
+  ],
+  "audio_metadata": {
+    "language": "en-US",
+    "sample_rate": 44100,
+    "format": "wav",
+    "tts_ready": true
+  },
+  "transcript": {
+    "narrator_intro": "Listen to a conversation between a woman and a man.",
+    "dialogue": [
+      {
+        "speaker": "F1",
+        "text": "Could I borrow your notes from yesterday's economics lecture?"
+      },
+      {
+        "speaker": "M1",
+        "text": "Sure. I'll bring them to class tomorrow morning."
+      }
+    ],
+    "question_intro": "What will the man probably do?"
+  },
+  "questions": [
+    {
+      "id": "Q1",
+      "type": "multiple_choice",
+      "prompt": "What will the man probably do?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Email the notes tonight."
+        },
+        {
+          "id": "B",
+          "text": "Lend the woman his notes tomorrow."
+        },
+        {
+          "id": "C",
+          "text": "Miss tomorrow's class."
+        },
+        {
+          "id": "D",
+          "text": "Ask the professor for new notes."
+        }
+      ],
+      "answer_key": "B",
+      "explanation": "The man says he will bring his notes to class the next morning.",
+      "evidence": "I'll bring them to class tomorrow morning."
+    }
+  ],
+  "production_metadata": {
+    "status": "production_ready",
+    "schema_version": "1.0",
+    "tts_ready": true
+  }
+}

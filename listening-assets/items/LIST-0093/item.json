@@ -1,0 +1,83 @@
+{
+  "file_name": "TQB-LIST-0093.json",
+  "project": "TOEFL ITP Boost",
+  "phase": "Phase 3 - Listening Comprehension",
+  "asset_type": "Part A - Short Conversation",
+  "asset_id": "LIST-0093",
+  "version": "1.0.0",
+  "metadata": {
+    "difficulty": "Easy",
+    "question_count": 1,
+    "estimated_audio_seconds": 18,
+    "topic": "Career Services Resume Review"
+  },
+  "narrator": {
+    "id": "NAR-001",
+    "gender": "neutral"
+  },
+  "speakers": [
+    {
+      "id": "M1",
+      "role": "Male Speaker",
+      "gender": "male"
+    },
+    {
+      "id": "F1",
+      "role": "Female Speaker",
+      "gender": "female"
+    }
+  ],
+  "audio_metadata": {
+    "language": "en-US",
+    "sample_rate": 44100,
+    "format": "wav",
+    "tts_ready": true
+  },
+  "transcript": {
+    "narrator_intro": "Listen to a conversation between a man and a woman.",
+    "dialogue": [
+      {
+        "speaker": "M1",
+        "text": "Did you schedule a résumé review with Career Services?"
+      },
+      {
+        "speaker": "F1",
+        "text": "Yes. I want feedback before I apply for summer internships."
+      }
+    ],
+    "question_intro": "Why did the woman schedule the résumé review?"
+  },
+  "questions": [
+    {
+      "id": "Q1",
+      "type": "multiple_choice",
+      "prompt": "Why did the woman schedule the résumé review?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "To improve her résumé before applying for internships."
+        },
+        {
+          "id": "B",
+          "text": "To choose her major."
+        },
+        {
+          "id": "C",
+          "text": "To register for classes."
+        },
+        {
+          "id": "D",
+          "text": "To find a roommate."
+        }
+      ],
+      "answer_key": "A",
+      "explanation": "She wants feedback before applying for summer internships.",
+      "evidence": "I want feedback before I apply for summer internships."
+    }
+  ],
+  "production_metadata": {
+    "status": "production_ready",
+    "schema_version": "1.0",
+    "tts_ready": true
+  }
+}

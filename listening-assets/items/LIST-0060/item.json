@@ -1,0 +1,83 @@
+{
+  "file_name": "TQB-LIST-0060.json",
+  "project": "TOEFL ITP Boost",
+  "phase": "Phase 3 - Listening Comprehension",
+  "asset_type": "Part A - Short Conversation",
+  "asset_id": "LIST-0060",
+  "version": "1.0.0",
+  "metadata": {
+    "difficulty": "Easy",
+    "question_count": 1,
+    "estimated_audio_seconds": 18,
+    "topic": "Campus Career Fair"
+  },
+  "narrator": {
+    "id": "NAR-001",
+    "gender": "neutral"
+  },
+  "speakers": [
+    {
+      "id": "M1",
+      "role": "Male Speaker",
+      "gender": "male"
+    },
+    {
+      "id": "F1",
+      "role": "Female Speaker",
+      "gender": "female"
+    }
+  ],
+  "audio_metadata": {
+    "language": "en-US",
+    "sample_rate": 44100,
+    "format": "wav",
+    "tts_ready": true
+  },
+  "transcript": {
+    "narrator_intro": "Listen to a conversation between a man and a woman.",
+    "dialogue": [
+      {
+        "speaker": "M1",
+        "text": "Are you going to the career fair this afternoon?"
+      },
+      {
+        "speaker": "F1",
+        "text": "Yes. Several companies are offering internships, so I don't want to miss it."
+      }
+    ],
+    "question_intro": "Why is the woman going to the career fair?"
+  },
+  "questions": [
+    {
+      "id": "Q1",
+      "type": "multiple_choice",
+      "prompt": "Why is the woman going to the career fair?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "She wants to apply for internship opportunities."
+        },
+        {
+          "id": "B",
+          "text": "She is giving a presentation."
+        },
+        {
+          "id": "C",
+          "text": "She is meeting a professor."
+        },
+        {
+          "id": "D",
+          "text": "She needs to buy textbooks."
+        }
+      ],
+      "answer_key": "A",
+      "explanation": "She says several companies are offering internships and she does not want to miss the event.",
+      "evidence": "Several companies are offering internships, so I don't want to miss it."
+    }
+  ],
+  "production_metadata": {
+    "status": "production_ready",
+    "schema_version": "1.0",
+    "tts_ready": true
+  }
+}

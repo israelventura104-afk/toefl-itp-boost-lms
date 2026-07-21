@@ -1,0 +1,83 @@
+{
+  "file_name": "TQB-LIST-0072.json",
+  "project": "TOEFL ITP Boost",
+  "phase": "Phase 3 - Listening Comprehension",
+  "asset_type": "Part A - Short Conversation",
+  "asset_id": "LIST-0072",
+  "version": "1.0.0",
+  "metadata": {
+    "difficulty": "Easy",
+    "question_count": 1,
+    "estimated_audio_seconds": 18,
+    "topic": "Art Exhibit"
+  },
+  "narrator": {
+    "id": "NAR-001",
+    "gender": "neutral"
+  },
+  "speakers": [
+    {
+      "id": "M1",
+      "role": "Male Speaker",
+      "gender": "male"
+    },
+    {
+      "id": "F1",
+      "role": "Female Speaker",
+      "gender": "female"
+    }
+  ],
+  "audio_metadata": {
+    "language": "en-US",
+    "sample_rate": 44100,
+    "format": "wav",
+    "tts_ready": true
+  },
+  "transcript": {
+    "narrator_intro": "Listen to a conversation between a man and a woman.",
+    "dialogue": [
+      {
+        "speaker": "M1",
+        "text": "Are you going to the student art exhibit this evening?"
+      },
+      {
+        "speaker": "F1",
+        "text": "Yes. My roommate has several paintings on display, so I want to support her."
+      }
+    ],
+    "question_intro": "Why is the woman going to the art exhibit?"
+  },
+  "questions": [
+    {
+      "id": "Q1",
+      "type": "multiple_choice",
+      "prompt": "Why is the woman going to the art exhibit?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "To support her roommate."
+        },
+        {
+          "id": "B",
+          "text": "To buy a painting."
+        },
+        {
+          "id": "C",
+          "text": "To meet an art professor."
+        },
+        {
+          "id": "D",
+          "text": "To complete a class assignment."
+        }
+      ],
+      "answer_key": "A",
+      "explanation": "She says her roommate has paintings on display and she wants to support her.",
+      "evidence": "My roommate has several paintings on display, so I want to support her."
+    }
+  ],
+  "production_metadata": {
+    "status": "production_ready",
+    "schema_version": "1.0",
+    "tts_ready": true
+  }
+}

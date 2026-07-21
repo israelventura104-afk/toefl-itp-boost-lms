@@ -1,0 +1,83 @@
+{
+  "file_name": "TQB-LIST-0029.json",
+  "project": "TOEFL ITP Boost",
+  "phase": "Phase 3 - Listening Comprehension",
+  "asset_type": "Part A - Short Conversation",
+  "asset_id": "LIST-0029",
+  "version": "1.0.0",
+  "metadata": {
+    "difficulty": "Easy",
+    "question_count": 1,
+    "estimated_audio_seconds": 18,
+    "topic": "Assignment Deadline"
+  },
+  "narrator": {
+    "id": "NAR-001",
+    "gender": "neutral"
+  },
+  "speakers": [
+    {
+      "id": "F1",
+      "role": "Female Speaker",
+      "gender": "female"
+    },
+    {
+      "id": "M1",
+      "role": "Male Speaker",
+      "gender": "male"
+    }
+  ],
+  "audio_metadata": {
+    "language": "en-US",
+    "sample_rate": 44100,
+    "format": "wav",
+    "tts_ready": true
+  },
+  "transcript": {
+    "narrator_intro": "Listen to a conversation between a woman and a man.",
+    "dialogue": [
+      {
+        "speaker": "F1",
+        "text": "Did you submit your history essay this morning?"
+      },
+      {
+        "speaker": "M1",
+        "text": "Not yet. The professor extended the deadline until tomorrow afternoon."
+      }
+    ],
+    "question_intro": "What does the man mean?"
+  },
+  "questions": [
+    {
+      "id": "Q1",
+      "type": "multiple_choice",
+      "prompt": "What does the man mean?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "He forgot about the assignment."
+        },
+        {
+          "id": "B",
+          "text": "The essay is due tomorrow instead of today."
+        },
+        {
+          "id": "C",
+          "text": "He has already received his grade."
+        },
+        {
+          "id": "D",
+          "text": "The professor canceled the assignment."
+        }
+      ],
+      "answer_key": "B",
+      "explanation": "The professor extended the deadline, so the essay is due tomorrow.",
+      "evidence": "The professor extended the deadline until tomorrow afternoon."
+    }
+  ],
+  "production_metadata": {
+    "status": "production_ready",
+    "schema_version": "1.0",
+    "tts_ready": true
+  }
+}

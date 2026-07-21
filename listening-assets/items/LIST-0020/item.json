@@ -1,0 +1,83 @@
+{
+  "file_name": "TQB-LIST-0020.json",
+  "project": "TOEFL ITP Boost",
+  "phase": "Phase 3 - Listening Comprehension",
+  "asset_type": "Part A - Short Conversation",
+  "asset_id": "LIST-0020",
+  "version": "1.0.0",
+  "metadata": {
+    "difficulty": "Easy",
+    "question_count": 1,
+    "estimated_audio_seconds": 18,
+    "topic": "Campus Bus"
+  },
+  "narrator": {
+    "id": "NAR-001",
+    "gender": "neutral"
+  },
+  "speakers": [
+    {
+      "id": "M1",
+      "role": "Male Speaker",
+      "gender": "male"
+    },
+    {
+      "id": "F1",
+      "role": "Female Speaker",
+      "gender": "female"
+    }
+  ],
+  "audio_metadata": {
+    "language": "en-US",
+    "sample_rate": 44100,
+    "format": "wav",
+    "tts_ready": true
+  },
+  "transcript": {
+    "narrator_intro": "Listen to a conversation between a man and a woman.",
+    "dialogue": [
+      {
+        "speaker": "M1",
+        "text": "Do you think we'll catch the campus bus?"
+      },
+      {
+        "speaker": "F1",
+        "text": "Only if we leave right now. It usually arrives in two minutes."
+      }
+    ],
+    "question_intro": "What does the woman imply?"
+  },
+  "questions": [
+    {
+      "id": "Q1",
+      "type": "multiple_choice",
+      "prompt": "What does the woman imply?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "The bus has already left."
+        },
+        {
+          "id": "B",
+          "text": "They need to leave immediately."
+        },
+        {
+          "id": "C",
+          "text": "The bus is delayed."
+        },
+        {
+          "id": "D",
+          "text": "They should walk instead."
+        }
+      ],
+      "answer_key": "B",
+      "explanation": "She says they can catch the bus only if they leave now.",
+      "evidence": "Only if we leave right now."
+    }
+  ],
+  "production_metadata": {
+    "status": "production_ready",
+    "schema_version": "1.0",
+    "tts_ready": true
+  }
+}

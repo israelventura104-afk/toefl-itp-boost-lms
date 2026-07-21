@@ -1,0 +1,83 @@
+{
+  "file_name": "TQB-LIST-0002.json",
+  "project": "TOEFL ITP Boost",
+  "phase": "Phase 3 - Listening Comprehension",
+  "asset_type": "Part A - Short Conversation",
+  "asset_id": "LIST-0002",
+  "version": "1.0.0",
+  "metadata": {
+    "difficulty": "Easy",
+    "question_count": 1,
+    "estimated_audio_seconds": 17,
+    "topic": "Transportation"
+  },
+  "narrator": {
+    "id": "NAR-001",
+    "gender": "neutral"
+  },
+  "speakers": [
+    {
+      "id": "F1",
+      "role": "Female Speaker",
+      "gender": "female"
+    },
+    {
+      "id": "M1",
+      "role": "Male Speaker",
+      "gender": "male"
+    }
+  ],
+  "audio_metadata": {
+    "language": "en-US",
+    "sample_rate": 44100,
+    "format": "wav",
+    "tts_ready": true
+  },
+  "transcript": {
+    "narrator_intro": "Listen to a conversation between a woman and a man.",
+    "dialogue": [
+      {
+        "speaker": "F1",
+        "text": "Are you taking the bus to campus this morning?"
+      },
+      {
+        "speaker": "M1",
+        "text": "No. My roommate offered to give me a ride because it's raining."
+      }
+    ],
+    "question_intro": "What will the man probably do?"
+  },
+  "questions": [
+    {
+      "id": "Q1",
+      "type": "multiple_choice",
+      "prompt": "What will the man probably do?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Walk to campus."
+        },
+        {
+          "id": "B",
+          "text": "Drive his roommate's car."
+        },
+        {
+          "id": "C",
+          "text": "Ride with his roommate."
+        },
+        {
+          "id": "D",
+          "text": "Wait for the rain to stop."
+        }
+      ],
+      "answer_key": "C",
+      "explanation": "He says his roommate offered him a ride.",
+      "evidence": "My roommate offered to give me a ride because it's raining."
+    }
+  ],
+  "production_metadata": {
+    "status": "production_ready",
+    "schema_version": "1.0",
+    "tts_ready": true
+  }
+}

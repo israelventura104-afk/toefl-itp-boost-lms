@@ -1,0 +1,83 @@
+{
+  "file_name": "TQB-LIST-0067.json",
+  "project": "TOEFL ITP Boost",
+  "phase": "Phase 3 - Listening Comprehension",
+  "asset_type": "Part A - Short Conversation",
+  "asset_id": "LIST-0067",
+  "version": "1.0.0",
+  "metadata": {
+    "difficulty": "Easy",
+    "question_count": 1,
+    "estimated_audio_seconds": 18,
+    "topic": "Campus Theater"
+  },
+  "narrator": {
+    "id": "NAR-001",
+    "gender": "neutral"
+  },
+  "speakers": [
+    {
+      "id": "F1",
+      "role": "Female Speaker",
+      "gender": "female"
+    },
+    {
+      "id": "M1",
+      "role": "Male Speaker",
+      "gender": "male"
+    }
+  ],
+  "audio_metadata": {
+    "language": "en-US",
+    "sample_rate": 44100,
+    "format": "wav",
+    "tts_ready": true
+  },
+  "transcript": {
+    "narrator_intro": "Listen to a conversation between a woman and a man.",
+    "dialogue": [
+      {
+        "speaker": "F1",
+        "text": "Are you planning to see the student theater performance this weekend?"
+      },
+      {
+        "speaker": "M1",
+        "text": "Yes. I already bought my ticket because last year's shows sold out quickly."
+      }
+    ],
+    "question_intro": "Why did the man buy his ticket early?"
+  },
+  "questions": [
+    {
+      "id": "Q1",
+      "type": "multiple_choice",
+      "prompt": "Why did the man buy his ticket early?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "He is performing in the play."
+        },
+        {
+          "id": "B",
+          "text": "He wanted to avoid missing a sold-out show."
+        },
+        {
+          "id": "C",
+          "text": "Tickets were free only today."
+        },
+        {
+          "id": "D",
+          "text": "His friend bought the ticket for him."
+        }
+      ],
+      "answer_key": "B",
+      "explanation": "He bought the ticket early because previous performances sold out quickly.",
+      "evidence": "Last year's shows sold out quickly."
+    }
+  ],
+  "production_metadata": {
+    "status": "production_ready",
+    "schema_version": "1.0",
+    "tts_ready": true
+  }
+}

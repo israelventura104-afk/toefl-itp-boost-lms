@@ -1,0 +1,83 @@
+{
+  "file_name": "TQB-LIST-0042.json",
+  "project": "TOEFL ITP Boost",
+  "phase": "Phase 3 - Listening Comprehension",
+  "asset_type": "Part A - Short Conversation",
+  "asset_id": "LIST-0042",
+  "version": "1.0.0",
+  "metadata": {
+    "difficulty": "Easy",
+    "question_count": 1,
+    "estimated_audio_seconds": 18,
+    "topic": "Field Trip"
+  },
+  "narrator": {
+    "id": "NAR-001",
+    "gender": "neutral"
+  },
+  "speakers": [
+    {
+      "id": "M1",
+      "role": "Male Speaker",
+      "gender": "male"
+    },
+    {
+      "id": "F1",
+      "role": "Female Speaker",
+      "gender": "female"
+    }
+  ],
+  "audio_metadata": {
+    "language": "en-US",
+    "sample_rate": 44100,
+    "format": "wav",
+    "tts_ready": true
+  },
+  "transcript": {
+    "narrator_intro": "Listen to a conversation between a man and a woman.",
+    "dialogue": [
+      {
+        "speaker": "M1",
+        "text": "Did the geology field trip get canceled because of the weather?"
+      },
+      {
+        "speaker": "F1",
+        "text": "No. It was postponed until next Saturday when the forecast looks much better."
+      }
+    ],
+    "question_intro": "What does the woman mean?"
+  },
+  "questions": [
+    {
+      "id": "Q1",
+      "type": "multiple_choice",
+      "prompt": "What does the woman mean?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "The field trip has been canceled."
+        },
+        {
+          "id": "B",
+          "text": "The field trip will take place next Saturday."
+        },
+        {
+          "id": "C",
+          "text": "The weather is getting worse."
+        },
+        {
+          "id": "D",
+          "text": "The students must choose another course."
+        }
+      ],
+      "answer_key": "B",
+      "explanation": "She explains that the trip was postponed until next Saturday.",
+      "evidence": "It was postponed until next Saturday."
+    }
+  ],
+  "production_metadata": {
+    "status": "production_ready",
+    "schema_version": "1.0",
+    "tts_ready": true
+  }
+}

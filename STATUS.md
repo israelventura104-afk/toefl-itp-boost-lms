@@ -158,6 +158,15 @@ GitHub Pages notes:
 - Progress: `recordReadingSession` in `progress.js` (`readingSessions` in localStorage)
 - Teacher class code required for guided + mock; free preview stays open
 
+### Listening assets import (pre–Phase 6)
+
+- Copied from `toefl-itp-boost/app/listening` into LMS `listening-assets/items/LIST-xxxx/`
+- **Copied, not deleted** from the warehouse folder
+- Normalized playback file: `audio.mp3` (original name in `audio-source.txt`)
+- `data/listening-bank.json` — **89** items with audio (89 questions, Part A short conversations)
+- `data/listening-pending.json` — **11** items JSON-only (no mp3 yet): 0081, 0083, 0085, 0088, 0090, 0092, 0094–0097, 0099
+- UI for Listening free/guided/mock not built yet (Phase 6)
+
 ---
 
 ## Working rules

@@ -1,0 +1,83 @@
+{
+  "file_name": "TQB-LIST-0053.json",
+  "project": "TOEFL ITP Boost",
+  "phase": "Phase 3 - Listening Comprehension",
+  "asset_type": "Part A - Short Conversation",
+  "asset_id": "LIST-0053",
+  "version": "1.0.0",
+  "metadata": {
+    "difficulty": "Easy",
+    "question_count": 1,
+    "estimated_audio_seconds": 18,
+    "topic": "Campus Cafeteria"
+  },
+  "narrator": {
+    "id": "NAR-001",
+    "gender": "neutral"
+  },
+  "speakers": [
+    {
+      "id": "F1",
+      "role": "Female Speaker",
+      "gender": "female"
+    },
+    {
+      "id": "M1",
+      "role": "Male Speaker",
+      "gender": "male"
+    }
+  ],
+  "audio_metadata": {
+    "language": "en-US",
+    "sample_rate": 44100,
+    "format": "wav",
+    "tts_ready": true
+  },
+  "transcript": {
+    "narrator_intro": "Listen to a conversation between a woman and a man.",
+    "dialogue": [
+      {
+        "speaker": "F1",
+        "text": "Do you want to eat lunch at the campus cafeteria today?"
+      },
+      {
+        "speaker": "M1",
+        "text": "Sure, but let's go a little later to avoid the long lines."
+      }
+    ],
+    "question_intro": "Why does the man want to go later?"
+  },
+  "questions": [
+    {
+      "id": "Q1",
+      "type": "multiple_choice",
+      "prompt": "Why does the man want to go later?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "He has another class first."
+        },
+        {
+          "id": "B",
+          "text": "He wants to avoid long lines."
+        },
+        {
+          "id": "C",
+          "text": "The cafeteria is closed now."
+        },
+        {
+          "id": "D",
+          "text": "He forgot his wallet."
+        }
+      ],
+      "answer_key": "B",
+      "explanation": "He suggests waiting so they can avoid the long lunch lines.",
+      "evidence": "Let's go a little later to avoid the long lines."
+    }
+  ],
+  "production_metadata": {
+    "status": "production_ready",
+    "schema_version": "1.0",
+    "tts_ready": true
+  }
+}

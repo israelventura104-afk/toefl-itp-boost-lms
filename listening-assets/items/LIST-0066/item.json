@@ -1,0 +1,83 @@
+{
+  "file_name": "TQB-LIST-0066.json",
+  "project": "TOEFL ITP Boost",
+  "phase": "Phase 3 - Listening Comprehension",
+  "asset_type": "Part A - Short Conversation",
+  "asset_id": "LIST-0066",
+  "version": "1.0.0",
+  "metadata": {
+    "difficulty": "Easy",
+    "question_count": 1,
+    "estimated_audio_seconds": 18,
+    "topic": "Computer Lab Reservation"
+  },
+  "narrator": {
+    "id": "NAR-001",
+    "gender": "neutral"
+  },
+  "speakers": [
+    {
+      "id": "M1",
+      "role": "Male Speaker",
+      "gender": "male"
+    },
+    {
+      "id": "F1",
+      "role": "Female Speaker",
+      "gender": "female"
+    }
+  ],
+  "audio_metadata": {
+    "language": "en-US",
+    "sample_rate": 44100,
+    "format": "wav",
+    "tts_ready": true
+  },
+  "transcript": {
+    "narrator_intro": "Listen to a conversation between a man and a woman.",
+    "dialogue": [
+      {
+        "speaker": "M1",
+        "text": "Did you reserve a computer for tomorrow's design project?"
+      },
+      {
+        "speaker": "F1",
+        "text": "Yes. I booked one this morning because the lab gets crowded in the afternoon."
+      }
+    ],
+    "question_intro": "Why did the woman reserve the computer this morning?"
+  },
+  "questions": [
+    {
+      "id": "Q1",
+      "type": "multiple_choice",
+      "prompt": "Why did the woman reserve the computer this morning?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "She wanted to avoid the afternoon crowds."
+        },
+        {
+          "id": "B",
+          "text": "The lab opens only in the morning."
+        },
+        {
+          "id": "C",
+          "text": "She forgot her reservation yesterday."
+        },
+        {
+          "id": "D",
+          "text": "Her class was canceled."
+        }
+      ],
+      "answer_key": "A",
+      "explanation": "She explains that the computer lab gets crowded in the afternoon.",
+      "evidence": "The lab gets crowded in the afternoon."
+    }
+  ],
+  "production_metadata": {
+    "status": "production_ready",
+    "schema_version": "1.0",
+    "tts_ready": true
+  }
+}

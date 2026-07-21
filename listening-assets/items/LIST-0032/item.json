@@ -1,0 +1,83 @@
+{
+  "file_name": "TQB-LIST-0032.json",
+  "project": "TOEFL ITP Boost",
+  "phase": "Phase 3 - Listening Comprehension",
+  "asset_type": "Part A - Short Conversation",
+  "asset_id": "LIST-0032",
+  "version": "1.0.0",
+  "metadata": {
+    "difficulty": "Easy",
+    "question_count": 1,
+    "estimated_audio_seconds": 18,
+    "topic": "Classroom"
+  },
+  "narrator": {
+    "id": "NAR-001",
+    "gender": "neutral"
+  },
+  "speakers": [
+    {
+      "id": "M1",
+      "role": "Male Speaker",
+      "gender": "male"
+    },
+    {
+      "id": "F1",
+      "role": "Female Speaker",
+      "gender": "female"
+    }
+  ],
+  "audio_metadata": {
+    "language": "en-US",
+    "sample_rate": 44100,
+    "format": "wav",
+    "tts_ready": true
+  },
+  "transcript": {
+    "narrator_intro": "Listen to a conversation between a man and a woman.",
+    "dialogue": [
+      {
+        "speaker": "M1",
+        "text": "Do we have to bring our laptops to class tomorrow?"
+      },
+      {
+        "speaker": "F1",
+        "text": "Yes. The instructor said we'll be working on the online project during class."
+      }
+    ],
+    "question_intro": "Why should the students bring their laptops?"
+  },
+  "questions": [
+    {
+      "id": "Q1",
+      "type": "multiple_choice",
+      "prompt": "Why should the students bring their laptops?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "They will take an online exam."
+        },
+        {
+          "id": "B",
+          "text": "They will work on an online project."
+        },
+        {
+          "id": "C",
+          "text": "They need to repair them."
+        },
+        {
+          "id": "D",
+          "text": "The classroom has no textbooks."
+        }
+      ],
+      "answer_key": "B",
+      "explanation": "The instructor said the class will work on the online project.",
+      "evidence": "We'll be working on the online project during class."
+    }
+  ],
+  "production_metadata": {
+    "status": "production_ready",
+    "schema_version": "1.0",
+    "tts_ready": true
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "file_name": "TQB-LIST-0019.json",
+  "project": "TOEFL ITP Boost",
+  "phase": "Phase 3 - Listening Comprehension",
+  "asset_type": "Part A - Short Conversation",
+  "asset_id": "LIST-0019",
+  "version": "1.0.0",
+  "metadata": {
+    "difficulty": "Easy",
+    "question_count": 1,
+    "estimated_audio_seconds": 18,
+    "topic": "Office Hours"
+  },
+  "narrator": {
+    "id": "NAR-001",
+    "gender": "neutral"
+  },
+  "speakers": [
+    {
+      "id": "F1",
+      "role": "Female Speaker",
+      "gender": "female"
+    },
+    {
+      "id": "M1",
+      "role": "Male Speaker",
+      "gender": "male"
+    }
+  ],
+  "audio_metadata": {
+    "language": "en-US",
+    "sample_rate": 44100,
+    "format": "wav",
+    "tts_ready": true
+  },
+  "transcript": {
+    "narrator_intro": "Listen to a conversation between a woman and a man.",
+    "dialogue": [
+      {
+        "speaker": "F1",
+        "text": "Did your professor answer your email about the project?"
+      },
+      {
+        "speaker": "M1",
+        "text": "Not yet, so I'll stop by her office after class."
+      }
+    ],
+    "question_intro": "What will the man probably do?"
+  },
+  "questions": [
+    {
+      "id": "Q1",
+      "type": "multiple_choice",
+      "prompt": "What will the man probably do?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Send another email."
+        },
+        {
+          "id": "B",
+          "text": "Visit the professor's office."
+        },
+        {
+          "id": "C",
+          "text": "Cancel the project."
+        },
+        {
+          "id": "D",
+          "text": "Skip class."
+        }
+      ],
+      "answer_key": "B",
+      "explanation": "He says he will stop by the professor's office after class.",
+      "evidence": "I'll stop by her office after class."
+    }
+  ],
+  "production_metadata": {
+    "status": "production_ready",
+    "schema_version": "1.0",
+    "tts_ready": true
+  }
+}

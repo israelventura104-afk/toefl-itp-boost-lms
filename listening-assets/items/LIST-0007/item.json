@@ -1,0 +1,83 @@
+{
+  "file_name": "TQB-LIST-0007.json",
+  "project": "TOEFL ITP Boost",
+  "phase": "Phase 3 - Listening Comprehension",
+  "asset_type": "Part A - Short Conversation",
+  "asset_id": "LIST-0007",
+  "version": "1.0.0",
+  "metadata": {
+    "difficulty": "Easy",
+    "question_count": 1,
+    "estimated_audio_seconds": 19,
+    "topic": "Library"
+  },
+  "narrator": {
+    "id": "NAR-001",
+    "gender": "neutral"
+  },
+  "speakers": [
+    {
+      "id": "M1",
+      "role": "Male Speaker",
+      "gender": "male"
+    },
+    {
+      "id": "F1",
+      "role": "Female Speaker",
+      "gender": "female"
+    }
+  ],
+  "audio_metadata": {
+    "language": "en-US",
+    "sample_rate": 44100,
+    "format": "wav",
+    "tts_ready": true
+  },
+  "transcript": {
+    "narrator_intro": "Listen to a conversation between a man and a woman.",
+    "dialogue": [
+      {
+        "speaker": "M1",
+        "text": "I can't renew this library book online."
+      },
+      {
+        "speaker": "F1",
+        "text": "That's because another student has already requested it."
+      }
+    ],
+    "question_intro": "Why can't the man renew the book online?"
+  },
+  "questions": [
+    {
+      "id": "Q1",
+      "type": "multiple_choice",
+      "prompt": "Why can't the man renew the book online?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "The library website is unavailable."
+        },
+        {
+          "id": "B",
+          "text": "He has unpaid library fees."
+        },
+        {
+          "id": "C",
+          "text": "Someone else has requested the book."
+        },
+        {
+          "id": "D",
+          "text": "The book is already overdue."
+        }
+      ],
+      "answer_key": "C",
+      "explanation": "The woman explains that another student has placed a request for the book.",
+      "evidence": "Another student has already requested it."
+    }
+  ],
+  "production_metadata": {
+    "status": "production_ready",
+    "schema_version": "1.0",
+    "tts_ready": true
+  }
+}

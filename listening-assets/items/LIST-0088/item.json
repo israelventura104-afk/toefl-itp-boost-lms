@@ -1,0 +1,83 @@
+{
+  "file_name": "TQB-LIST-0088.json",
+  "project": "TOEFL ITP Boost",
+  "phase": "Phase 3 - Listening Comprehension",
+  "asset_type": "Part A - Short Conversation",
+  "asset_id": "LIST-0088",
+  "version": "1.0.0",
+  "metadata": {
+    "difficulty": "Easy",
+    "question_count": 1,
+    "estimated_audio_seconds": 18,
+    "topic": "Campus Music Concert"
+  },
+  "narrator": {
+    "id": "NAR-001",
+    "gender": "neutral"
+  },
+  "speakers": [
+    {
+      "id": "F1",
+      "role": "Female Speaker",
+      "gender": "female"
+    },
+    {
+      "id": "M1",
+      "role": "Male Speaker",
+      "gender": "male"
+    }
+  ],
+  "audio_metadata": {
+    "language": "en-US",
+    "sample_rate": 44100,
+    "format": "wav",
+    "tts_ready": true
+  },
+  "transcript": {
+    "narrator_intro": "Listen to a conversation between a woman and a man.",
+    "dialogue": [
+      {
+        "speaker": "F1",
+        "text": "Are you going to the outdoor concert on campus tonight?"
+      },
+      {
+        "speaker": "M1",
+        "text": "Yes. I've heard the student jazz band is excellent, so I don't want to miss it."
+      }
+    ],
+    "question_intro": "Why is the man going to the concert?"
+  },
+  "questions": [
+    {
+      "id": "Q1",
+      "type": "multiple_choice",
+      "prompt": "Why is the man going to the concert?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "He wants to hear the student jazz band."
+        },
+        {
+          "id": "B",
+          "text": "He is performing in the concert."
+        },
+        {
+          "id": "C",
+          "text": "He has to complete a class assignment."
+        },
+        {
+          "id": "D",
+          "text": "He is meeting his music professor."
+        }
+      ],
+      "answer_key": "A",
+      "explanation": "He says he has heard the student jazz band is excellent.",
+      "evidence": "I've heard the student jazz band is excellent, so I don't want to miss it."
+    }
+  ],
+  "production_metadata": {
+    "status": "production_ready",
+    "schema_version": "1.0",
+    "tts_ready": true
+  }
+}

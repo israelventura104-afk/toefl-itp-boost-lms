@@ -1,0 +1,83 @@
+{
+  "file_name": "TQB-LIST-0057.json",
+  "project": "TOEFL ITP Boost",
+  "phase": "Phase 3 - Listening Comprehension",
+  "asset_type": "Part A - Short Conversation",
+  "asset_id": "LIST-0057",
+  "version": "1.0.0",
+  "metadata": {
+    "difficulty": "Easy",
+    "question_count": 1,
+    "estimated_audio_seconds": 18,
+    "topic": "Campus Book Return"
+  },
+  "narrator": {
+    "id": "NAR-001",
+    "gender": "neutral"
+  },
+  "speakers": [
+    {
+      "id": "F1",
+      "role": "Female Speaker",
+      "gender": "female"
+    },
+    {
+      "id": "M1",
+      "role": "Male Speaker",
+      "gender": "male"
+    }
+  ],
+  "audio_metadata": {
+    "language": "en-US",
+    "sample_rate": 44100,
+    "format": "wav",
+    "tts_ready": true
+  },
+  "transcript": {
+    "narrator_intro": "Listen to a conversation between a woman and a man.",
+    "dialogue": [
+      {
+        "speaker": "F1",
+        "text": "Did you return the library book before it was due?"
+      },
+      {
+        "speaker": "M1",
+        "text": "Yes. I returned it yesterday, so I didn't have to pay a late fee."
+      }
+    ],
+    "question_intro": "Why did the man return the book yesterday?"
+  },
+  "questions": [
+    {
+      "id": "Q1",
+      "type": "multiple_choice",
+      "prompt": "Why did the man return the book yesterday?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "To avoid paying a late fee."
+        },
+        {
+          "id": "B",
+          "text": "Because the library was closing."
+        },
+        {
+          "id": "C",
+          "text": "To borrow another book."
+        },
+        {
+          "id": "D",
+          "text": "Because he finished reading it today."
+        }
+      ],
+      "answer_key": "A",
+      "explanation": "He returned the book before the due date to avoid a late fee.",
+      "evidence": "I didn't have to pay a late fee."
+    }
+  ],
+  "production_metadata": {
+    "status": "production_ready",
+    "schema_version": "1.0",
+    "tts_ready": true
+  }
+}

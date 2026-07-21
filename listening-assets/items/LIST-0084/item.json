@@ -1,0 +1,83 @@
+{
+  "file_name": "TQB-LIST-0084.json",
+  "project": "TOEFL ITP Boost",
+  "phase": "Phase 3 - Listening Comprehension",
+  "asset_type": "Part A - Short Conversation",
+  "asset_id": "LIST-0084",
+  "version": "1.0.0",
+  "metadata": {
+    "difficulty": "Easy",
+    "question_count": 1,
+    "estimated_audio_seconds": 18,
+    "topic": "Campus Museum"
+  },
+  "narrator": {
+    "id": "NAR-001",
+    "gender": "neutral"
+  },
+  "speakers": [
+    {
+      "id": "M1",
+      "role": "Male Speaker",
+      "gender": "male"
+    },
+    {
+      "id": "F1",
+      "role": "Female Speaker",
+      "gender": "female"
+    }
+  ],
+  "audio_metadata": {
+    "language": "en-US",
+    "sample_rate": 44100,
+    "format": "wav",
+    "tts_ready": true
+  },
+  "transcript": {
+    "narrator_intro": "Listen to a conversation between a man and a woman.",
+    "dialogue": [
+      {
+        "speaker": "M1",
+        "text": "Are you visiting the campus museum this weekend?"
+      },
+      {
+        "speaker": "F1",
+        "text": "Yes. They're opening a new exhibit on ancient civilizations that I've wanted to see."
+      }
+    ],
+    "question_intro": "Why is the woman going to the museum?"
+  },
+  "questions": [
+    {
+      "id": "Q1",
+      "type": "multiple_choice",
+      "prompt": "Why is the woman going to the museum?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "To see a new exhibit."
+        },
+        {
+          "id": "B",
+          "text": "To meet a history professor."
+        },
+        {
+          "id": "C",
+          "text": "To study for an exam."
+        },
+        {
+          "id": "D",
+          "text": "To work as a volunteer."
+        }
+      ],
+      "answer_key": "A",
+      "explanation": "She wants to see the newly opened exhibit on ancient civilizations.",
+      "evidence": "They're opening a new exhibit on ancient civilizations that I've wanted to see."
+    }
+  ],
+  "production_metadata": {
+    "status": "production_ready",
+    "schema_version": "1.0",
+    "tts_ready": true
+  }
+}

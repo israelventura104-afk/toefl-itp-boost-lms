@@ -1,0 +1,83 @@
+{
+  "file_name": "TQB-LIST-0077.json",
+  "project": "TOEFL ITP Boost",
+  "phase": "Phase 3 - Listening Comprehension",
+  "asset_type": "Part A - Short Conversation",
+  "asset_id": "LIST-0077",
+  "version": "1.0.0",
+  "metadata": {
+    "difficulty": "Easy",
+    "question_count": 1,
+    "estimated_audio_seconds": 18,
+    "topic": "Campus Shuttle"
+  },
+  "narrator": {
+    "id": "NAR-001",
+    "gender": "neutral"
+  },
+  "speakers": [
+    {
+      "id": "F1",
+      "role": "Female Speaker",
+      "gender": "female"
+    },
+    {
+      "id": "M1",
+      "role": "Male Speaker",
+      "gender": "male"
+    }
+  ],
+  "audio_metadata": {
+    "language": "en-US",
+    "sample_rate": 44100,
+    "format": "wav",
+    "tts_ready": true
+  },
+  "transcript": {
+    "narrator_intro": "Listen to a conversation between a woman and a man.",
+    "dialogue": [
+      {
+        "speaker": "F1",
+        "text": "Will you take the campus shuttle to the science building today?"
+      },
+      {
+        "speaker": "M1",
+        "text": "Yes. It's much faster than walking across campus in this heat."
+      }
+    ],
+    "question_intro": "Why will the man take the shuttle?"
+  },
+  "questions": [
+    {
+      "id": "Q1",
+      "type": "multiple_choice",
+      "prompt": "Why will the man take the shuttle?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "It is faster than walking."
+        },
+        {
+          "id": "B",
+          "text": "His bicycle is broken."
+        },
+        {
+          "id": "C",
+          "text": "The shuttle is free only today."
+        },
+        {
+          "id": "D",
+          "text": "He has never used the shuttle before."
+        }
+      ],
+      "answer_key": "A",
+      "explanation": "The man says the shuttle is much faster than walking across campus.",
+      "evidence": "It's much faster than walking across campus in this heat."
+    }
+  ],
+  "production_metadata": {
+    "status": "production_ready",
+    "schema_version": "1.0",
+    "tts_ready": true
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "file_name": "TQB-LIST-0024.json",
+  "project": "TOEFL ITP Boost",
+  "phase": "Phase 3 - Listening Comprehension",
+  "asset_type": "Part A - Short Conversation",
+  "asset_id": "LIST-0024",
+  "version": "1.0.0",
+  "metadata": {
+    "difficulty": "Easy",
+    "question_count": 1,
+    "estimated_audio_seconds": 18,
+    "topic": "Campus Bookstore"
+  },
+  "narrator": {
+    "id": "NAR-001",
+    "gender": "neutral"
+  },
+  "speakers": [
+    {
+      "id": "M1",
+      "role": "Male Speaker",
+      "gender": "male"
+    },
+    {
+      "id": "F1",
+      "role": "Female Speaker",
+      "gender": "female"
+    }
+  ],
+  "audio_metadata": {
+    "language": "en-US",
+    "sample_rate": 44100,
+    "format": "wav",
+    "tts_ready": true
+  },
+  "transcript": {
+    "narrator_intro": "Listen to a conversation between a man and a woman.",
+    "dialogue": [
+      {
+        "speaker": "M1",
+        "text": "Do you know if the campus bookstore is open on Saturday?"
+      },
+      {
+        "speaker": "F1",
+        "text": "Yes, but only until noon, so we'd better go in the morning."
+      }
+    ],
+    "question_intro": "What does the woman suggest?"
+  },
+  "questions": [
+    {
+      "id": "Q1",
+      "type": "multiple_choice",
+      "prompt": "What does the woman suggest?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Waiting until Monday."
+        },
+        {
+          "id": "B",
+          "text": "Shopping in the afternoon."
+        },
+        {
+          "id": "C",
+          "text": "Going to the bookstore in the morning."
+        },
+        {
+          "id": "D",
+          "text": "Buying the books online."
+        }
+      ],
+      "answer_key": "C",
+      "explanation": "She notes the bookstore closes at noon and recommends going in the morning.",
+      "evidence": "It is open only until noon, so we'd better go in the morning."
+    }
+  ],
+  "production_metadata": {
+    "status": "production_ready",
+    "schema_version": "1.0",
+    "tts_ready": true
+  }
+}

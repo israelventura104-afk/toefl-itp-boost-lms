@@ -1,0 +1,83 @@
+{
+  "file_name": "TQB-LIST-0096.json",
+  "project": "TOEFL ITP Boost",
+  "phase": "Phase 3 - Listening Comprehension",
+  "asset_type": "Part A - Short Conversation",
+  "asset_id": "LIST-0096",
+  "version": "1.0.0",
+  "metadata": {
+    "difficulty": "Easy",
+    "question_count": 1,
+    "estimated_audio_seconds": 18,
+    "topic": "Campus Astronomy Night"
+  },
+  "narrator": {
+    "id": "NAR-001",
+    "gender": "neutral"
+  },
+  "speakers": [
+    {
+      "id": "F1",
+      "role": "Female Speaker",
+      "gender": "female"
+    },
+    {
+      "id": "M1",
+      "role": "Male Speaker",
+      "gender": "male"
+    }
+  ],
+  "audio_metadata": {
+    "language": "en-US",
+    "sample_rate": 44100,
+    "format": "wav",
+    "tts_ready": true
+  },
+  "transcript": {
+    "narrator_intro": "Listen to a conversation between a woman and a man.",
+    "dialogue": [
+      {
+        "speaker": "F1",
+        "text": "Are you going to the astronomy club's stargazing event tonight?"
+      },
+      {
+        "speaker": "M1",
+        "text": "Yes. The weather is supposed to be clear, so it should be perfect for observing the stars."
+      }
+    ],
+    "question_intro": "Why is the man going to the event?"
+  },
+  "questions": [
+    {
+      "id": "Q1",
+      "type": "multiple_choice",
+      "prompt": "Why is the man going to the event?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Because the weather should be good for observing the stars."
+        },
+        {
+          "id": "B",
+          "text": "To return a telescope."
+        },
+        {
+          "id": "C",
+          "text": "To study for an astronomy exam."
+        },
+        {
+          "id": "D",
+          "text": "To meet a new professor."
+        }
+      ],
+      "answer_key": "A",
+      "explanation": "He says clear weather will make stargazing ideal.",
+      "evidence": "The weather is supposed to be clear, so it should be perfect for observing the stars."
+    }
+  ],
+  "production_metadata": {
+    "status": "production_ready",
+    "schema_version": "1.0",
+    "tts_ready": true
+  }
+}

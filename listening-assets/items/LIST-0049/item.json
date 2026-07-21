@@ -1,0 +1,83 @@
+{
+  "file_name": "TQB-LIST-0049.json",
+  "project": "TOEFL ITP Boost",
+  "phase": "Phase 3 - Listening Comprehension",
+  "asset_type": "Part A - Short Conversation",
+  "asset_id": "LIST-0049",
+  "version": "1.0.0",
+  "metadata": {
+    "difficulty": "Easy",
+    "question_count": 1,
+    "estimated_audio_seconds": 18,
+    "topic": "Campus Computer Lab"
+  },
+  "narrator": {
+    "id": "NAR-001",
+    "gender": "neutral"
+  },
+  "speakers": [
+    {
+      "id": "F1",
+      "role": "Female Speaker",
+      "gender": "female"
+    },
+    {
+      "id": "M1",
+      "role": "Male Speaker",
+      "gender": "male"
+    }
+  ],
+  "audio_metadata": {
+    "language": "en-US",
+    "sample_rate": 44100,
+    "format": "wav",
+    "tts_ready": true
+  },
+  "transcript": {
+    "narrator_intro": "Listen to a conversation between a woman and a man.",
+    "dialogue": [
+      {
+        "speaker": "F1",
+        "text": "Did you save your presentation on the lab computer?"
+      },
+      {
+        "speaker": "M1",
+        "text": "No, I saved it to my flash drive so I can use it in class tomorrow."
+      }
+    ],
+    "question_intro": "What does the man mean?"
+  },
+  "questions": [
+    {
+      "id": "Q1",
+      "type": "multiple_choice",
+      "prompt": "What does the man mean?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "He lost his presentation file."
+        },
+        {
+          "id": "B",
+          "text": "He saved the presentation on a portable drive."
+        },
+        {
+          "id": "C",
+          "text": "He will work in the lab tomorrow."
+        },
+        {
+          "id": "D",
+          "text": "He needs to borrow the woman's computer."
+        }
+      ],
+      "answer_key": "B",
+      "explanation": "The man says he saved the presentation to his flash drive.",
+      "evidence": "I saved it to my flash drive."
+    }
+  ],
+  "production_metadata": {
+    "status": "production_ready",
+    "schema_version": "1.0",
+    "tts_ready": true
+  }
+}

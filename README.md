@@ -80,6 +80,21 @@ Class-only timed Structure section:
 
 Class bank: `data/reading-bank.json` (22 passages). Free intro passage is excluded from guided/mocks.
 
+## Listening assets (imported, UI Phase 6)
+
+Assets live under `listening-assets/items/LIST-xxxx/`:
+
+- `item.json` — questions + transcript  
+- `audio.mp3` — when available (normalized name)  
+- `script.docx` — production script when present  
+
+Indexes:
+
+- `data/listening-bank.json` — **89 ready** (has audio)  
+- `data/listening-pending.json` — **11 waiting** for audio  
+
+Originals remain in `toefl-itp-boost/app/listening` (copy, not delete).
+
 ## Project shape
 
 ```

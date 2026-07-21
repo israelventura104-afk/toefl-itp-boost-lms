@@ -1,0 +1,83 @@
+{
+  "file_name": "TQB-LIST-0036.json",
+  "project": "TOEFL ITP Boost",
+  "phase": "Phase 3 - Listening Comprehension",
+  "asset_type": "Part A - Short Conversation",
+  "asset_id": "LIST-0036",
+  "version": "1.0.0",
+  "metadata": {
+    "difficulty": "Easy",
+    "question_count": 1,
+    "estimated_audio_seconds": 18,
+    "topic": "Art Museum"
+  },
+  "narrator": {
+    "id": "NAR-001",
+    "gender": "neutral"
+  },
+  "speakers": [
+    {
+      "id": "M1",
+      "role": "Male Speaker",
+      "gender": "male"
+    },
+    {
+      "id": "F1",
+      "role": "Female Speaker",
+      "gender": "female"
+    }
+  ],
+  "audio_metadata": {
+    "language": "en-US",
+    "sample_rate": 44100,
+    "format": "wav",
+    "tts_ready": true
+  },
+  "transcript": {
+    "narrator_intro": "Listen to a conversation between a man and a woman.",
+    "dialogue": [
+      {
+        "speaker": "M1",
+        "text": "Are you going to the art museum with the history class tomorrow?"
+      },
+      {
+        "speaker": "F1",
+        "text": "Yes. Our professor said the visit will count as part of our course grade."
+      }
+    ],
+    "question_intro": "Why is the woman going to the museum?"
+  },
+  "questions": [
+    {
+      "id": "Q1",
+      "type": "multiple_choice",
+      "prompt": "Why is the woman going to the museum?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "She works there after class."
+        },
+        {
+          "id": "B",
+          "text": "It is required for her course."
+        },
+        {
+          "id": "C",
+          "text": "She wants to meet a friend."
+        },
+        {
+          "id": "D",
+          "text": "Admission is free tomorrow."
+        }
+      ],
+      "answer_key": "B",
+      "explanation": "The professor said the museum visit counts toward the course grade.",
+      "evidence": "The visit will count as part of our course grade."
+    }
+  ],
+  "production_metadata": {
+    "status": "production_ready",
+    "schema_version": "1.0",
+    "tts_ready": true
+  }
+}

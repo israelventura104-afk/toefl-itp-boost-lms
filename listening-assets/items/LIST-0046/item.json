@@ -1,0 +1,83 @@
+{
+  "file_name": "TQB-LIST-0046.json",
+  "project": "TOEFL ITP Boost",
+  "phase": "Phase 3 - Listening Comprehension",
+  "asset_type": "Part A - Short Conversation",
+  "asset_id": "LIST-0046",
+  "version": "1.0.0",
+  "metadata": {
+    "difficulty": "Easy",
+    "question_count": 1,
+    "estimated_audio_seconds": 18,
+    "topic": "Chemistry Lab"
+  },
+  "narrator": {
+    "id": "NAR-001",
+    "gender": "neutral"
+  },
+  "speakers": [
+    {
+      "id": "M1",
+      "role": "Male Speaker",
+      "gender": "male"
+    },
+    {
+      "id": "F1",
+      "role": "Female Speaker",
+      "gender": "female"
+    }
+  ],
+  "audio_metadata": {
+    "language": "en-US",
+    "sample_rate": 44100,
+    "format": "wav",
+    "tts_ready": true
+  },
+  "transcript": {
+    "narrator_intro": "Listen to a conversation between a man and a woman.",
+    "dialogue": [
+      {
+        "speaker": "M1",
+        "text": "Did the chemistry lab start on time this morning?"
+      },
+      {
+        "speaker": "F1",
+        "text": "No. The instructor waited until everyone had received safety goggles."
+      }
+    ],
+    "question_intro": "Why did the lab start late?"
+  },
+  "questions": [
+    {
+      "id": "Q1",
+      "type": "multiple_choice",
+      "prompt": "Why did the lab start late?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "The instructor arrived late."
+        },
+        {
+          "id": "B",
+          "text": "Students forgot their textbooks."
+        },
+        {
+          "id": "C",
+          "text": "Everyone needed safety goggles first."
+        },
+        {
+          "id": "D",
+          "text": "The laboratory was closed."
+        }
+      ],
+      "answer_key": "C",
+      "explanation": "The instructor delayed the lab until all students had safety goggles.",
+      "evidence": "The instructor waited until everyone had received safety goggles."
+    }
+  ],
+  "production_metadata": {
+    "status": "production_ready",
+    "schema_version": "1.0",
+    "tts_ready": true
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "file_name": "TQB-LIST-0086.json",
+  "project": "TOEFL ITP Boost",
+  "phase": "Phase 3 - Listening Comprehension",
+  "asset_type": "Part A - Short Conversation",
+  "asset_id": "LIST-0086",
+  "version": "1.0.0",
+  "metadata": {
+    "difficulty": "Easy",
+    "question_count": 1,
+    "estimated_audio_seconds": 18,
+    "topic": "Campus Computer Repair"
+  },
+  "narrator": {
+    "id": "NAR-001",
+    "gender": "neutral"
+  },
+  "speakers": [
+    {
+      "id": "M1",
+      "role": "Male Speaker",
+      "gender": "male"
+    },
+    {
+      "id": "F1",
+      "role": "Female Speaker",
+      "gender": "female"
+    }
+  ],
+  "audio_metadata": {
+    "language": "en-US",
+    "sample_rate": 44100,
+    "format": "wav",
+    "tts_ready": true
+  },
+  "transcript": {
+    "narrator_intro": "Listen to a conversation between a man and a woman.",
+    "dialogue": [
+      {
+        "speaker": "M1",
+        "text": "Did the computer repair desk fix your laptop?"
+      },
+      {
+        "speaker": "F1",
+        "text": "Yes. They replaced the battery, and now it works much better."
+      }
+    ],
+    "question_intro": "What does the woman mean?"
+  },
+  "questions": [
+    {
+      "id": "Q1",
+      "type": "multiple_choice",
+      "prompt": "What does the woman mean?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Her laptop was repaired."
+        },
+        {
+          "id": "B",
+          "text": "She needs to buy a new laptop."
+        },
+        {
+          "id": "C",
+          "text": "The repair desk was closed."
+        },
+        {
+          "id": "D",
+          "text": "She lost her laptop battery."
+        }
+      ],
+      "answer_key": "A",
+      "explanation": "She says the repair desk replaced the battery and the laptop now works better.",
+      "evidence": "They replaced the battery, and now it works much better."
+    }
+  ],
+  "production_metadata": {
+    "status": "production_ready",
+    "schema_version": "1.0",
+    "tts_ready": true
+  }
+}

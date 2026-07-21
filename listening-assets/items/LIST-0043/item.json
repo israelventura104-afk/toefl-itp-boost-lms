@@ -1,0 +1,83 @@
+{
+  "file_name": "TQB-LIST-0043.json",
+  "project": "TOEFL ITP Boost",
+  "phase": "Phase 3 - Listening Comprehension",
+  "asset_type": "Part A - Short Conversation",
+  "asset_id": "LIST-0043",
+  "version": "1.0.0",
+  "metadata": {
+    "difficulty": "Easy",
+    "question_count": 1,
+    "estimated_audio_seconds": 18,
+    "topic": "Tutoring Center"
+  },
+  "narrator": {
+    "id": "NAR-001",
+    "gender": "neutral"
+  },
+  "speakers": [
+    {
+      "id": "F1",
+      "role": "Female Speaker",
+      "gender": "female"
+    },
+    {
+      "id": "M1",
+      "role": "Male Speaker",
+      "gender": "male"
+    }
+  ],
+  "audio_metadata": {
+    "language": "en-US",
+    "sample_rate": 44100,
+    "format": "wav",
+    "tts_ready": true
+  },
+  "transcript": {
+    "narrator_intro": "Listen to a conversation between a woman and a man.",
+    "dialogue": [
+      {
+        "speaker": "F1",
+        "text": "Are you going to the math tutoring session after class?"
+      },
+      {
+        "speaker": "M1",
+        "text": "Yes. I want someone to explain yesterday's homework before the quiz."
+      }
+    ],
+    "question_intro": "Why is the man going to the tutoring session?"
+  },
+  "questions": [
+    {
+      "id": "Q1",
+      "type": "multiple_choice",
+      "prompt": "Why is the man going to the tutoring session?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "To become a tutor."
+        },
+        {
+          "id": "B",
+          "text": "To prepare for an upcoming quiz."
+        },
+        {
+          "id": "C",
+          "text": "To return a textbook."
+        },
+        {
+          "id": "D",
+          "text": "To meet a classmate."
+        }
+      ],
+      "answer_key": "B",
+      "explanation": "He wants help understanding the homework before the quiz.",
+      "evidence": "I want someone to explain yesterday's homework before the quiz."
+    }
+  ],
+  "production_metadata": {
+    "status": "production_ready",
+    "schema_version": "1.0",
+    "tts_ready": true
+  }
+}
