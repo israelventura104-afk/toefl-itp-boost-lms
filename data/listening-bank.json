@@ -4,7 +4,7 @@
   "purpose": "guided_and_mocks",
   "section": "listening",
   "part": "Part A - Short Conversation (current set)",
-  "note": "Only items with playable audio.mp3. Missing audio in listening-pending.json. Copied from toefl-itp-boost/app/listening (originals kept).",
+  "note": "Ready items have audio.mp3. Synced from warehouse by Grok only.",
   "item_count": 89,
   "total_questions": 89,
   "items": [
