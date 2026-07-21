@@ -41,73 +41,59 @@
         <div class="plan-hero">
           <div>
             <p class="eyebrow">Practice path</p>
-            <h2 id="score-plan-title">Structure is a strong place to start.</h2>
-            <p>
+            <h2 id="score-plan-title" data-dash-plan-title>Structure is a strong place to start.</h2>
+            <p data-dash-plan-copy>
               Learn the strategies, try the fixed sample set, then use guided
               practice when your teacher has opened class access on this device.
             </p>
+            <p class="dash-last-session" data-dash-last-session></p>
           </div>
           <div class="target-card">
-            <span>Suggested focus</span>
-            <strong>Structure</strong>
-            <small>Grammar patterns first</small>
+            <span data-dash-focus-label>Suggested focus</span>
+            <strong data-dash-focus-skill>Structure</strong>
+            <small data-dash-focus-note>Grammar patterns first</small>
           </div>
         </div>
 
         <div class="plan-grid">
           <article class="today-focus-card">
             <p class="eyebrow">Free preview</p>
-            <h3>Subject-Verb Agreement</h3>
-            <p>Review true subjects, interrupting phrases, and agreement traps before starting practice.</p>
-            <a class="button primary" href="structure.html">Study strategy</a>
+            <h3 data-dash-focus-skill>Subject-Verb Agreement</h3>
+            <p data-dash-focus-note>Review true subjects, interrupting phrases, and agreement traps before starting practice.</p>
+            <a class="button primary" href="structure.html">Study free strategies</a>
           </article>
 
           <article class="skill-breakdown-card">
             <p class="eyebrow">Structure Skill Breakdown</p>
-            <div class="skill-row">
-              <span>Subject-Verb Agreement</span>
-              <div class="mini-bar"><span style="width: 54%"></span></div>
-              <b>Needs work</b>
-            </div>
-            <div class="skill-row">
-              <span>Verb Tenses</span>
-              <div class="mini-bar"><span style="width: 72%"></span></div>
-              <b>Stable</b>
-            </div>
-            <div class="skill-row">
-              <span>Passive Voice</span>
-              <div class="mini-bar"><span style="width: 66%"></span></div>
-              <b>Review</b>
-            </div>
-            <div class="skill-row">
-              <span>Connectors</span>
-              <div class="mini-bar"><span style="width: 81%"></span></div>
-              <b>Strong</b>
+            <div data-dash-skills>
+              <div class="skill-row">
+                <span>No guided sessions yet</span>
+                <div class="mini-bar"><span style="width: 8%"></span></div>
+                <b>Start</b>
+              </div>
             </div>
           </article>
 
           <article class="recommended-card" id="interactive-practice" data-requires-access>
             <p class="eyebrow">Class practice</p>
             <h3>15-question Structure drill</h3>
-            <p>Randomized from the Structure bank for students with teacher class access.</p>
+            <p>Randomized from the 190-item Structure bank (free intro set excluded). No timer. Results save on this device.</p>
             <a class="button primary" href="structure-guided-practice.html" data-access-link>Start guided practice</a>
           </article>
 
           <article class="mistake-card">
             <p class="eyebrow">Mistake Review</p>
-            <ul class="mistake-list">
-              <li><b>Each + singular verb</b><span>2 recent mistakes</span></li>
-              <li><b>Preposition + gerund</b><span>1 recent mistake</span></li>
-              <li><b>Present perfect passive</b><span>1 recent mistake</span></li>
+            <ul class="mistake-list" data-dash-mistakes>
+              <li><b>No saved mistakes yet</b><span>Finish a guided drill to collect patterns</span></li>
             </ul>
-            <a class="button secondary" href="structure-guided-practice.html">Review mistakes</a>
+            <a class="button secondary" href="structure-guided-practice.html" data-access-link>Practice again</a>
           </article>
 
-          <article class="readiness-card" id="mock-exam">
-            <p class="eyebrow">Mock Exam Readiness</p>
-            <div class="readiness-meter"><span style="width: 68%"></span></div>
-            <h3>Almost ready</h3>
-            <p>Complete one Structure drill and one mistake review before launching a full mock exam.</p>
+          <article class="readiness-card">
+            <p class="eyebrow">Structure readiness</p>
+            <div class="readiness-meter"><span data-dash-ready-meter style="width: 8%"></span></div>
+            <h3 data-dash-ready-label>Not started</h3>
+            <p data-dash-ready-note>Complete a Structure guided drill to build your baseline.</p>
           </article>
         </div>
       </section>
@@ -153,19 +139,19 @@
             </div>
             <div class="stats-row">
               <article>
-                <span>Readiness baseline</span>
-                <strong>In progress</strong>
-                <small>Build it through guided practice</small>
+                <span>Avg Structure score</span>
+                <strong data-dash-avg>—</strong>
+                <small data-dash-avg-note>After your first guided session</small>
               </article>
               <article>
                 <span>Practice streak</span>
-                <strong>6 days</strong>
-                <small>Keep the rhythm</small>
+                <strong data-dash-streak>—</strong>
+                <small data-dash-streak-note>Practice today to start a streak</small>
               </article>
               <article>
                 <span>Completed drills</span>
-                <strong>42</strong>
-                <small>Across all sections</small>
+                <strong data-dash-sessions>0</strong>
+                <small data-dash-sessions-note>Across Structure guided practice</small>
               </article>
             </div>
           </section>
@@ -242,5 +228,7 @@
       </section>
     </main>
     <script src="access.js"></script>
+    <script src="progress.js"></script>
+    <script src="dashboard.js"></script>
   </body>
 </html>

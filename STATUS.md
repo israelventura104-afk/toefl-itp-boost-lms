@@ -107,7 +107,7 @@ GitHub Pages notes:
 | **0** | One folder, one git, this STATUS — **done** |
 | **1** | Structure entry stable (strategies + 10 fixed, single data source) — **done** |
 | **2** | Teacher class-code access (`localStorage`) — **done** |
-| **3** | Guided Structure 15 from 190 + dashboard shows real data |
+| **3** | Guided Structure 15 from 190 + dashboard shows real data — **done** |
 | **4** | Structure mock timed 40 / 25 min |
 | **5** | Reading same pattern |
 | **6** | Listening + audio |
@@ -130,6 +130,15 @@ GitHub Pages notes:
 - **Needs code:** Structure guided practice (and later mocks / full banks)
 - Default demo code (change it): `ITP-VENTURA-2026`
 - Landing copy cleaned (no Sign up / Log in / free account CTAs)
+
+### Phase 3 notes (2026-07-21)
+
+- Guided practice loads `data/structure-bank.json` (190 items) via fetch — no embedded bank
+- Free intro IDs from `structure-intro.json` are excluded from guided sets
+- Session size 15, no timer, skill-balanced random selection
+- Sessions saved in `localStorage` key `toefl-itp-boost.progress.v1` via `progress.js`
+- Dashboard (`dashboard.js`) shows real skill breakdown, mistakes, streak, drill count, readiness
+- Empty states when the student has not practiced yet on that device
 
 ---
 

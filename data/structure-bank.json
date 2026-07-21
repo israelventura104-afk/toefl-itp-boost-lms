@@ -1,6 +1,10 @@
 {
   "id": "STR-BANK",
   "title": "Structure Random Practice Bank",
+  "purpose": "guided_and_mocks",
+  "reuse_in_mocks": true,
+  "exclude_from_free_intro": true,
+  "item_count": 190,
   "items": [
     {
       "id": "TQB-STR-0002",

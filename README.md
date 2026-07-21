@@ -50,6 +50,17 @@ Default code after Phase 2 (change it): `ITP-VENTURA-2026`
 
 **Note:** because the site is public on GitHub Pages, treat codes like class keys, not banking passwords. Rotate them.
 
+## Student progress (Phase 3)
+
+Guided Structure results save **on the student’s browser only** (`localStorage`).
+
+- Bank: `data/structure-bank.json` (190)
+- Free sample set never reused in guided: `data/structure-intro.json`
+- Progress module: `progress.js`
+- Dashboard reads that history for skills, mistakes, streak, and readiness
+
+Clearing site data or switching devices resets progress (no cloud accounts yet).
+
 ## Project shape
 
 ```

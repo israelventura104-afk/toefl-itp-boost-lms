@@ -1970,3 +1970,16 @@ html.has-teacher-access .commitment-locked p,
 html.has-teacher-access .commitment-locked .mock-panel {
   opacity: 1;
 }
+
+/* Phase 3 — live dashboard progress */
+.dash-empty-note,
+.dash-last-session {
+  margin: 0.75rem 0 0;
+  color: var(--muted);
+  font-size: 0.92rem;
+  line-height: 1.5;
+}
+
+.dash-last-session {
+  margin-top: 1rem;
+}
