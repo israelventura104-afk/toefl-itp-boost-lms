@@ -108,7 +108,7 @@ GitHub Pages notes:
 | **1** | Structure entry stable (strategies + 10 fixed, single data source) — **done** |
 | **2** | Teacher class-code access (`localStorage`) — **done** |
 | **3** | Guided Structure 15 from 190 + dashboard shows real data — **done** |
-| **4** | Structure mock timed 40 / 25 min |
+| **4** | Structure mock timed 40 / 25 min — **done** |
 | **5** | Reading same pattern |
 | **6** | Listening + audio |
 | **7** | Full mock 140 + polish |
@@ -139,6 +139,16 @@ GitHub Pages notes:
 - Sessions saved in `localStorage` key `toefl-itp-boost.progress.v1` via `progress.js`
 - Dashboard (`dashboard.js`) shows real skill breakdown, mistakes, streak, drill count, readiness
 - Empty states when the student has not practiced yet on that device
+
+### Phase 4 notes (2026-07-21)
+
+- Structure mock page: `structure-mock.html` + `structure-mock.js`
+- Exam conditions: **40 questions**, **25 minutes**, **no feedback until submit**
+- Auto-submit when timer hits zero; confirm if submitting early with blanks
+- Bank: `structure-bank.json` excluding free intro IDs
+- Target mix when possible: ~15 completion + ~25 error-ID (bank currently has fewer error-style items; remainder filled from completion)
+- Results save via `progress.js` with `mode: "mock"`
+- Dashboard mock card links to Structure mock; readiness accounts for mock history
 
 ---
 

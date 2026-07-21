@@ -119,10 +119,23 @@
     const lastHost = document.querySelector("[data-dash-last-session]");
     if (lastHost) {
       if (!summary.last) {
-        lastHost.textContent = "No Structure guided sessions saved on this device yet.";
+        lastHost.textContent = "No Structure sessions saved on this device yet.";
       } else {
         const when = new Date(summary.last.at);
-        lastHost.textContent = `Last drill: ${summary.last.correct}/${summary.last.total} (${summary.last.percent}%) · ${when.toLocaleString()}`;
+        const kind = summary.last.mode === "mock" ? "Last mock" : "Last drill";
+        lastHost.textContent = `${kind}: ${summary.last.correct}/${summary.last.total} (${summary.last.percent}%) · ${when.toLocaleString()}`;
+      }
+    }
+
+    const lastMockHost = document.querySelector("[data-dash-last-mock]");
+    if (lastMockHost) {
+      if (!summary.lastMock) {
+        lastMockHost.textContent = "No Structure mock saved on this device yet.";
+      } else {
+        const when = new Date(summary.lastMock.at);
+        lastMockHost.textContent = `Last Structure mock: ${summary.lastMock.correct}/${summary.lastMock.total} (${summary.lastMock.percent}%) · ${when.toLocaleString()}${
+          summary.mockCount > 1 ? ` · ${summary.mockCount} mocks total` : ""
+        }`;
       }
     }
   }

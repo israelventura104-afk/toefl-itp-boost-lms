@@ -1983,3 +1983,80 @@ html.has-teacher-access .commitment-locked .mock-panel {
 .dash-last-session {
   margin-top: 1rem;
 }
+
+/* Phase 4 — Structure timed mock */
+.mock-rules {
+  margin: 0 0 1.25rem;
+  padding-left: 1.2rem;
+  color: var(--muted);
+  line-height: 1.65;
+  max-width: 46rem;
+}
+
+.mock-rules li {
+  margin-bottom: 0.45rem;
+}
+
+.mock-exam-bar {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin-bottom: 1rem;
+}
+
+.mock-exam-bar > div {
+  padding: 14px 16px;
+  border-radius: 14px;
+  border: 1px solid var(--line);
+  background: var(--panel);
+}
+
+.mock-timer {
+  font-size: 1.8rem;
+  letter-spacing: 0.04em;
+  color: var(--ink);
+}
+
+.mock-timer.is-urgent {
+  color: #8a2f28;
+}
+
+.choice-button.is-selected {
+  border-color: var(--teal);
+  background: rgba(13, 138, 141, 0.1);
+}
+
+.mock-nav-grid {
+  display: grid;
+  grid-template-columns: repeat(10, minmax(0, 1fr));
+  gap: 8px;
+  margin-top: 1rem;
+}
+
+.mock-nav-btn {
+  min-height: 40px;
+  border-radius: 10px;
+  border: 1px solid var(--line);
+  background: #fff;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.mock-nav-btn.is-answered {
+  background: rgba(13, 138, 141, 0.12);
+  border-color: rgba(13, 138, 141, 0.35);
+}
+
+.mock-nav-btn.is-current {
+  outline: 2px solid var(--teal);
+}
+
+@media (max-width: 800px) {
+  .mock-exam-bar {
+    grid-template-columns: 1fr;
+  }
+
+  .mock-nav-grid {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+}

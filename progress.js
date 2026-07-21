@@ -80,18 +80,20 @@
 
   /**
    * @param {object} session
-   * @param {string} session.section - e.g. structure
-   * @param {string} session.mode - e.g. guided
+   * @param {string} [session.mode] - guided | mock
    * @param {number} session.correct
    * @param {number} session.total
    * @param {Array<{skill:string, subskill?:string, correct:boolean}>} session.items
    * @param {string[]} [session.questionIds]
+   * @param {number} [session.durationSeconds]
+   * @param {boolean} [session.timedOut]
    */
   function recordStructureSession(session) {
     const state = load();
     const total = Number(session.total) || 0;
     const correct = Number(session.correct) || 0;
     const percent = total > 0 ? Math.round((correct / total) * 100) : 0;
+    const mode = session.mode || "guided";
 
     const skillMap = {};
     const mistakes = [];
@@ -114,7 +116,7 @@
     const record = {
       id: `str-${Date.now()}`,
       section: "structure",
-      mode: session.mode || "guided",
+      mode,
       at: new Date().toISOString(),
       correct,
       total,
@@ -122,6 +124,9 @@
       skills: skillMap,
       mistakes,
       questionIds: session.questionIds || [],
+      durationSeconds:
+        typeof session.durationSeconds === "number" ? session.durationSeconds : null,
+      timedOut: Boolean(session.timedOut),
     };
 
     state.structureSessions.unshift(record);
@@ -229,56 +234,83 @@
 
   function getSummary() {
     const sessions = getStructureSessions();
+    const guidedSessions = sessions.filter((s) => s.mode !== "mock");
+    const mockSessions = sessions.filter((s) => s.mode === "mock");
     const sessionCount = sessions.length;
+    const guidedCount = guidedSessions.length;
+    const mockCount = mockSessions.length;
     const questionsAttempted = sessions.reduce((sum, s) => sum + (s.total || 0), 0);
     const questionsCorrect = sessions.reduce((sum, s) => sum + (s.correct || 0), 0);
     const last = sessions[0] || null;
+    const lastMock = mockSessions[0] || null;
     const avg =
       sessionCount > 0
         ? Math.round(
             sessions.reduce((sum, s) => sum + (s.percent || 0), 0) / sessionCount
           )
         : null;
+    const mockAvg =
+      mockCount > 0
+        ? Math.round(mockSessions.reduce((sum, s) => sum + (s.percent || 0), 0) / mockCount)
+        : null;
 
-    let readiness = { label: "Not started", width: 8, note: "Complete a Structure guided drill to build your baseline." };
-    if (sessionCount >= 1 && (avg ?? 0) < 60) {
+    let readiness = {
+      label: "Not started",
+      width: 8,
+      note: "Complete a Structure guided drill to build your baseline.",
+    };
+    if (mockCount >= 1 && (mockAvg ?? 0) >= 70) {
+      readiness = {
+        label: "Mock ready",
+        width: 88,
+        note: "You have completed Structure timed mock(s) with solid scores. Keep alternating guided review and mocks.",
+      };
+    } else if (mockCount >= 1) {
+      readiness = {
+        label: "Mock started",
+        width: 72,
+        note: "You have timed Structure mock experience. Review weak skills, then try another 40-question set.",
+      };
+    } else if (guidedCount >= 1 && (avg ?? 0) < 60) {
       readiness = {
         label: "Building",
         width: 35,
-        note: "Keep guided practice going. Focus on the weak skills below.",
+        note: "Keep guided practice going. Focus on the weak skills below, then attempt a Structure mock.",
       };
-    } else if (sessionCount >= 2 && (avg ?? 0) >= 60 && (avg ?? 0) < 80) {
+    } else if (guidedCount >= 2 && (avg ?? 0) >= 60 && (avg ?? 0) < 80) {
       readiness = {
         label: "On track",
         width: 62,
-        note: "Solid progress. One more strong drill before timed mocks (coming next).",
+        note: "Solid guided progress. You are ready to try a timed Structure mock (40 questions / 25 minutes).",
       };
-    } else if (sessionCount >= 3 && (avg ?? 0) >= 80) {
+    } else if (guidedCount >= 3 && (avg ?? 0) >= 80) {
       readiness = {
         label: "Almost ready",
-        width: 82,
-        note: "Strong Structure sessions. Timed mock exams are the next phase.",
+        width: 78,
+        note: "Strong guided sessions. Take a Structure timed mock under exam conditions.",
       };
-    } else if (sessionCount >= 1) {
+    } else if (guidedCount >= 1) {
       readiness = {
         label: "In progress",
         width: 48,
-        note: "Baseline started. Review mistakes and run another 15-question drill.",
+        note: "Baseline started. Review mistakes and run another 15-question drill—or try a mock when ready.",
       };
     }
 
     const weak = getTopSkills(1)[0];
     return {
       sessionCount,
+      guidedCount,
+      mockCount,
       questionsAttempted,
       questionsCorrect,
       averagePercent: avg,
+      mockAveragePercent: mockAvg,
       streakDays: getStreakDays(),
       last,
+      lastMock,
       readiness,
-      focusSkill: weak
-        ? weak.skill
-        : "Subject-Verb Agreement",
+      focusSkill: weak ? weak.skill : "Subject-Verb Agreement",
       focusNote: weak
         ? `Your weakest practiced skill so far is ${weak.skill} (${weak.percent}%).`
         : "Start guided practice to discover which patterns need work.",

@@ -61,6 +61,15 @@ Guided Structure results save **on the student’s browser only** (`localStorage
 
 Clearing site data or switching devices resets progress (no cloud accounts yet).
 
+## Structure mock (Phase 4)
+
+Class-only timed Structure section:
+
+- URL: `structure-mock.html`
+- 40 questions · 25 minutes · feedback only after submit
+- Same teacher class code as guided practice
+- Results stored in the same local progress history (`mode: mock`)
+
 ## Project shape
 
 ```
