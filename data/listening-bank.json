@@ -4,9 +4,9 @@
   "purpose": "guided_and_mocks",
   "section": "listening",
   "part": "Part A - Short Conversation (current set)",
-  "note": "Ready items have audio.mp3. Synced from warehouse by Grok only.",
-  "item_count": 89,
-  "total_questions": 89,
+  "note": "Synced by Grok from warehouse/LMS drops. ready_for_practice requires audio.mp3.",
+  "item_count": 100,
+  "total_questions": 100,
   "items": [
     {
       "id": "LIST-0001",
@@ -1049,6 +1049,19 @@
       "ready_for_practice": true
     },
     {
+      "id": "LIST-0081",
+      "asset_id": "LIST-0081",
+      "asset_type": "Part A - Short Conversation",
+      "difficulty": "Easy",
+      "topic": "Campus Job Fair",
+      "question_count": 1,
+      "has_audio": true,
+      "audio": "listening-assets/items/LIST-0081/audio.mp3",
+      "data": "listening-assets/items/LIST-0081/item.json",
+      "production_status": "production_ready",
+      "ready_for_practice": true
+    },
+    {
       "id": "LIST-0082",
       "asset_id": "LIST-0082",
       "asset_type": "Part A - Short Conversation",
@@ -1062,6 +1075,19 @@
       "ready_for_practice": true
     },
     {
+      "id": "LIST-0083",
+      "asset_id": "LIST-0083",
+      "asset_type": "Part A - Short Conversation",
+      "difficulty": "Easy",
+      "topic": "Student Orientation",
+      "question_count": 1,
+      "has_audio": true,
+      "audio": "listening-assets/items/LIST-0083/audio.mp3",
+      "data": "listening-assets/items/LIST-0083/item.json",
+      "production_status": "production_ready",
+      "ready_for_practice": true
+    },
+    {
       "id": "LIST-0084",
       "asset_id": "LIST-0084",
       "asset_type": "Part A - Short Conversation",
@@ -1071,6 +1097,19 @@
       "has_audio": true,
       "audio": "listening-assets/items/LIST-0084/audio.mp3",
       "data": "listening-assets/items/LIST-0084/item.json",
+      "production_status": "production_ready",
+      "ready_for_practice": true
+    },
+    {
+      "id": "LIST-0085",
+      "asset_id": "LIST-0085",
+      "asset_type": "Part A - Short Conversation",
+      "difficulty": "Easy",
+      "topic": "Writing Contest",
+      "question_count": 1,
+      "has_audio": true,
+      "audio": "listening-assets/items/LIST-0085/audio.mp3",
+      "data": "listening-assets/items/LIST-0085/item.json",
       "production_status": "production_ready",
       "ready_for_practice": true
     },
@@ -1101,6 +1140,19 @@
       "ready_for_practice": true
     },
     {
+      "id": "LIST-0088",
+      "asset_id": "LIST-0088",
+      "asset_type": "Part A - Short Conversation",
+      "difficulty": "Easy",
+      "topic": "Campus Music Concert",
+      "question_count": 1,
+      "has_audio": true,
+      "audio": "listening-assets/items/LIST-0088/audio.mp3",
+      "data": "listening-assets/items/LIST-0088/item.json",
+      "production_status": "production_ready",
+      "ready_for_practice": true
+    },
+    {
       "id": "LIST-0089",
       "asset_id": "LIST-0089",
       "asset_type": "Part A - Short Conversation",
@@ -1110,6 +1162,19 @@
       "has_audio": true,
       "audio": "listening-assets/items/LIST-0089/audio.mp3",
       "data": "listening-assets/items/LIST-0089/item.json",
+      "production_status": "production_ready",
+      "ready_for_practice": true
+    },
+    {
+      "id": "LIST-0090",
+      "asset_id": "LIST-0090",
+      "asset_type": "Part A - Short Conversation",
+      "difficulty": "Easy",
+      "topic": "Campus Recycling Program",
+      "question_count": 1,
+      "has_audio": true,
+      "audio": "listening-assets/items/LIST-0090/audio.mp3",
+      "data": "listening-assets/items/LIST-0090/item.json",
       "production_status": "production_ready",
       "ready_for_practice": true
     },
@@ -1127,6 +1192,19 @@
       "ready_for_practice": true
     },
     {
+      "id": "LIST-0092",
+      "asset_id": "LIST-0092",
+      "asset_type": "Part A - Short Conversation",
+      "difficulty": "Easy",
+      "topic": "Campus Language Club",
+      "question_count": 1,
+      "has_audio": true,
+      "audio": "listening-assets/items/LIST-0092/audio.mp3",
+      "data": "listening-assets/items/LIST-0092/item.json",
+      "production_status": "production_ready",
+      "ready_for_practice": true
+    },
+    {
       "id": "LIST-0093",
       "asset_id": "LIST-0093",
       "asset_type": "Part A - Short Conversation",
@@ -1140,6 +1218,58 @@
       "ready_for_practice": true
     },
     {
+      "id": "LIST-0094",
+      "asset_id": "LIST-0094",
+      "asset_type": "Part A - Short Conversation",
+      "difficulty": "Easy",
+      "topic": "Campus Fitness Center",
+      "question_count": 1,
+      "has_audio": true,
+      "audio": "listening-assets/items/LIST-0094/audio.mp3",
+      "data": "listening-assets/items/LIST-0094/item.json",
+      "production_status": "production_ready",
+      "ready_for_practice": true
+    },
+    {
+      "id": "LIST-0095",
+      "asset_id": "LIST-0095",
+      "asset_type": "Part A - Short Conversation",
+      "difficulty": "Easy",
+      "topic": "Study Abroad Fair",
+      "question_count": 1,
+      "has_audio": true,
+      "audio": "listening-assets/items/LIST-0095/audio.mp3",
+      "data": "listening-assets/items/LIST-0095/item.json",
+      "production_status": "production_ready",
+      "ready_for_practice": true
+    },
+    {
+      "id": "LIST-0096",
+      "asset_id": "LIST-0096",
+      "asset_type": "Part A - Short Conversation",
+      "difficulty": "Easy",
+      "topic": "Campus Astronomy Night",
+      "question_count": 1,
+      "has_audio": true,
+      "audio": "listening-assets/items/LIST-0096/audio.mp3",
+      "data": "listening-assets/items/LIST-0096/item.json",
+      "production_status": "production_ready",
+      "ready_for_practice": true
+    },
+    {
+      "id": "LIST-0097",
+      "asset_id": "LIST-0097",
+      "asset_type": "Part A - Short Conversation",
+      "difficulty": "Easy",
+      "topic": "Campus Science Club",
+      "question_count": 1,
+      "has_audio": true,
+      "audio": "listening-assets/items/LIST-0097/audio.mp3",
+      "data": "listening-assets/items/LIST-0097/item.json",
+      "production_status": "production_ready",
+      "ready_for_practice": true
+    },
+    {
       "id": "LIST-0098",
       "asset_id": "LIST-0098",
       "asset_type": "Part A - Short Conversation",
@@ -1149,6 +1279,19 @@
       "has_audio": true,
       "audio": "listening-assets/items/LIST-0098/audio.mp3",
       "data": "listening-assets/items/LIST-0098/item.json",
+      "production_status": "production_ready",
+      "ready_for_practice": true
+    },
+    {
+      "id": "LIST-0099",
+      "asset_id": "LIST-0099",
+      "asset_type": "Part A - Short Conversation",
+      "difficulty": "Easy",
+      "topic": "Campus Environmental Lecture",
+      "question_count": 1,
+      "has_audio": true,
+      "audio": "listening-assets/items/LIST-0099/audio.mp3",
+      "data": "listening-assets/items/LIST-0099/item.json",
       "production_status": "production_ready",
       "ready_for_practice": true
     },
