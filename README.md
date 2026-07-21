@@ -105,6 +105,20 @@ Originals remain in `toefl-itp-boost/app/listening` (copy, not delete).
 
 Part A short conversations only for now. Longer talks can join the same bank later.
 
+## Full mock (Phase 7)
+
+| File | Access |
+|------|--------|
+| `full-mock.html` | Class code |
+
+Order and timing:
+
+1. Listening — 50 questions · 35 minutes (Part A bank today)  
+2. Structure — 40 questions · 25 minutes  
+3. Reading — 50 questions · 55 minutes  
+
+**Total:** 140 questions. No feedback until the full exam ends. Results save on this device.
+
 ## Project shape
 
 ```
