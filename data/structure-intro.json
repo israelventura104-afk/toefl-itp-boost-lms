@@ -1,6 +1,11 @@
 {
   "id": "STR-INTRO-001",
   "title": "Structure Free Practice Set",
+  "purpose": "free_intro_fixed",
+  "fixed": true,
+  "shuffle": false,
+  "reuse_in_mocks": false,
+  "item_count": 10,
   "items": [
     {
       "id": "TQB-STR-0001",

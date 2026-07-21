@@ -1840,3 +1840,23 @@ button:disabled {
     font-size: 2.7rem;
   }
 }
+
+/* Phase 1 — structure intro practice status */
+.practice-status {
+  margin: 0 0 1rem;
+  padding: 0.75rem 1rem;
+  border-radius: 12px;
+  background: rgba(13, 138, 141, 0.08);
+  color: var(--ink);
+  font-size: 0.95rem;
+}
+
+.practice-status.is-error {
+  background: rgba(239, 111, 97, 0.12);
+  color: #8a2f28;
+}
+
+.practice-feedback .feedback-trap {
+  margin-top: 0.5rem;
+  opacity: 0.9;
+}

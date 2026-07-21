@@ -104,14 +104,22 @@ GitHub Pages notes:
 
 | Phase | Focus |
 |-------|--------|
-| **0** | One folder, one git, this STATUS — **in progress** |
-| **1** | Structure entry stable (strategies + 10 fixed, single data source) |
+| **0** | One folder, one git, this STATUS — **done** |
+| **1** | Structure entry stable (strategies + 10 fixed, single data source) — **done** |
 | **2** | Real commitment unlock (`localStorage`) |
 | **3** | Guided Structure 15 from 190 + dashboard shows real data |
 | **4** | Structure mock timed 40 / 25 min |
 | **5** | Reading same pattern |
 | **6** | Listening + audio |
 | **7** | Full mock 140 + polish |
+
+### Phase 1 notes (2026-07-21)
+
+- Source of truth for free Structure practice: `data/structure-intro.json`
+- `structure-practice.js` loads that JSON via `fetch` (no embedded bank)
+- Fixed order, 10 items, no timer, immediate feedback + common trap line
+- Strategies block (3 free lessons) unchanged on `structure.html`
+- GitHub Pages required for local-like testing (or `npx serve`); `file://` cannot fetch JSON
 
 ---
 

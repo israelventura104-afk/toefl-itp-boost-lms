@@ -7,14 +7,14 @@ Static preparation platform for TOEFL ITP — Structure, Reading, and Listening.
 
 ## Run locally
 
-No build step. Open in a browser, or serve the folder:
+No build step. **Use a local server** (the Structure intro quiz loads `data/*.json` with `fetch`, which does not work from `file://`).
 
 ```bash
-# optional local server (avoids some file:// limits)
+cd "C:\Toefl Preparation\toefl-itp-boost-lms"
 npx --yes serve .
 ```
 
-Then open the URL shown (usually `http://localhost:3000`).
+Then open the URL shown (usually `http://localhost:3000`) and go to **Structure**.
 
 ## Host (canonical)
 
