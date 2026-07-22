@@ -1721,11 +1721,21 @@ button:disabled {
 
 .reading-passage h3 {
   font-size: clamp(1.35rem, 2.2vw, 1.9rem);
+  text-align: left;
 }
 
-.reading-passage p {
+/* All reading exercise passages: justified body text */
+.reading-passage p,
+.reading-passage [data-reading-text] p,
+.reading-passage [data-mock-passage-text] p,
+.reading-passage [data-full-passage-text] p,
+.reading-passage [data-demo-passage-text] p {
   color: var(--muted);
   line-height: 1.72;
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
+  -webkit-hyphens: auto;
 }
 
 @media (max-width: 980px) {
