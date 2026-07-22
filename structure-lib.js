@@ -1,6 +1,6 @@
 /**
  * Shared Structure helpers — Error Identification display (ITP-style underlines).
- * Bank items store markers as "(A) … (B) … (C) … (D)"; render as underlined chunks.
+ * Bank items store markers as "phrase (A) phrase (B) …"; render as four clear chunks.
  */
 (function (global) {
   function escapeHtml(value) {
@@ -15,23 +15,15 @@
   function isErrorIdentification(type, questionText) {
     const t = String(type || "").toLowerCase();
     if (t.includes("error") || t.includes("written")) return true;
-    // Fallback: classic ABCD parenthetical markers in stem
     return /\(A\)[\s\S]*\(B\)[\s\S]*\(C\)[\s\S]*\(D\)/.test(String(questionText || ""));
   }
 
   /**
-   * Convert "… (A) … (B) … (C) … (D)…" into underlined A–D segments.
-   * Each letter sits under its underlined phrase (exam look).
-   * Sentence Completion and plain text pass through escaped only.
+   * Parse "… (A) … (B) … (C) … (D) …" into four labeled segments + trailing text.
+   * Letter comes AFTER the phrase it labels (prep-book convention).
    */
-  function formatStructureQuestionHtml(questionText, type) {
+  function parseErrorSegments(questionText) {
     const text = String(questionText ?? "");
-    if (!text) return "";
-
-    if (!isErrorIdentification(type, text)) {
-      return escapeHtml(text);
-    }
-
     const markerRe = /\(([A-D])\)/g;
     const markers = [];
     let match;
@@ -47,32 +39,62 @@
       markers.length !== 4 ||
       markers.map((m) => m.letter).join("") !== "ABCD"
     ) {
-      return escapeHtml(text);
+      return null;
     }
 
-    let html = "";
+    const segments = [];
     let cursor = 0;
-
     for (const marker of markers) {
       const raw = text.slice(cursor, marker.index);
-      const content = raw.trim();
-      const start = content ? raw.indexOf(content) : raw.length;
-      const end = start + content.length;
-
-      html += escapeHtml(raw.slice(0, start));
-      if (content) {
-        html +=
-          `<span class="error-id-chunk" data-choice="${marker.letter}">` +
-          `<span class="error-id-text">${escapeHtml(content)}</span>` +
-          `<span class="error-id-letter" aria-hidden="true">${marker.letter}</span>` +
-          `</span>`;
-      }
-      html += escapeHtml(raw.slice(end));
+      segments.push({
+        letter: marker.letter,
+        text: raw.trim(),
+      });
       cursor = marker.end;
     }
 
-    html += escapeHtml(text.slice(cursor));
-    return html;
+    return {
+      segments,
+      trailing: text.slice(cursor).trim(),
+    };
+  }
+
+  /**
+   * Convert parenthetical markers into underlined A–D chunks (exam look).
+   * Sentence Completion and plain text pass through escaped only.
+   */
+  function formatStructureQuestionHtml(questionText, type) {
+    const text = String(questionText ?? "");
+    if (!text) return "";
+
+    if (!isErrorIdentification(type, text)) {
+      return escapeHtml(text);
+    }
+
+    const parsed = parseErrorSegments(text);
+    if (!parsed) return escapeHtml(text);
+
+    const chunks = parsed.segments
+      .filter((seg) => seg.text)
+      .map(
+        (seg) =>
+          `<span class="error-id-chunk" data-choice="${seg.letter}">` +
+          `<span class="error-id-text">${escapeHtml(seg.text)}</span>` +
+          `<span class="error-id-letter">${seg.letter}</span>` +
+          `</span>`
+      )
+      .join("");
+
+    // Keep trailing text / final period outside the last underline
+    let ending = "";
+    const trail = parsed.trailing;
+    if (!trail || trail === ".") {
+      ending = `<span class="error-id-end">.</span>`;
+    } else {
+      ending = `<span class="error-id-trail"> ${escapeHtml(trail)}</span>`;
+    }
+
+    return `<span class="error-id-sentence">${chunks}${ending}</span>`;
   }
 
   function setStructureQuestion(el, questionText, type) {
@@ -87,6 +109,7 @@
   global.StructureLib = {
     escapeHtml,
     isErrorIdentification,
+    parseErrorSegments,
     formatStructureQuestionHtml,
     setStructureQuestion,
   };
