@@ -1223,6 +1223,46 @@ button:disabled {
   line-height: 1.28;
 }
 
+/* Error Identification — ITP-style underlined choices A–D */
+.practice-card h3.is-error-identification,
+[data-question].is-error-identification,
+[data-mock-question].is-error-identification,
+[data-full-question].is-error-identification,
+[data-demo-question].is-error-identification {
+  line-height: 1.85;
+}
+
+.error-id-chunk {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  vertical-align: baseline;
+  margin: 0 0.12em 0.15em;
+  max-width: 100%;
+}
+
+.error-id-text {
+  border-bottom: 2px solid currentColor;
+  padding: 0 1px 1px;
+  white-space: normal;
+  text-align: center;
+  line-height: 1.35;
+}
+
+.error-id-letter {
+  margin-top: 2px;
+  font-size: 0.68em;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  color: var(--muted);
+  line-height: 1.1;
+}
+
+.mistake-card h4 .error-id-chunk,
+.review-item h4 .error-id-chunk {
+  margin-bottom: 0.1em;
+}
+
 .choice-list {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));

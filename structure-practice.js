@@ -112,7 +112,11 @@ function renderQuestion() {
   metaEl.textContent = item.subskill
     ? `${item.skill} · ${item.subskill}`
     : item.skill;
-  questionEl.textContent = item.question;
+  if (window.StructureLib) {
+    StructureLib.setStructureQuestion(questionEl, item.question, item.type);
+  } else {
+    questionEl.textContent = item.question;
+  }
   optionsEl.innerHTML = "";
 
   item.options.forEach((option) => {

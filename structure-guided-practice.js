@@ -199,7 +199,11 @@ function renderQuestion() {
   metaEl.textContent = item.subskill
     ? `${normalizeSkill(item.skill)} · ${item.subskill}`
     : normalizeSkill(item.skill);
-  questionEl.textContent = item.question;
+  if (window.StructureLib) {
+    StructureLib.setStructureQuestion(questionEl, item.question, item.type);
+  } else {
+    questionEl.textContent = item.question;
+  }
   progressBarEl.style.width = `${Math.round(
     (answeredCount / guidedState.questions.length) * 100
   )}%`;
@@ -369,7 +373,11 @@ function renderMistakes(answered) {
       ({ item, answer }) => `
     <article class="mistake-review-item">
       <span>${normalizeSkill(item.skill)} · ${item.subskill || item.type}</span>
-      <h4>${item.question}</h4>
+      <h4>${
+        window.StructureLib
+          ? StructureLib.formatStructureQuestionHtml(item.question, item.type)
+          : item.question
+      }</h4>
       <p>You chose <b>${answer.selectedKey}</b>. Correct answer: <b>${item.correctKey}. ${item.correctAnswer}</b></p>
       <p>${item.explanation}</p>
       ${item.commonMistake ? `<small>Common trap: ${item.commonMistake}</small>` : ""}

@@ -438,7 +438,12 @@ function renderItem() {
   counterEl.textContent = `${state.index + 1} / ${state.rows.length}`;
   typeEl.textContent = row.typeLabel || row.kind;
   metaEl.textContent = [row.skill, row.subskill].filter(Boolean).join(" · ");
-  questionEl.textContent = row.prompt;
+  if (row.kind === "structure" && window.StructureLib) {
+    StructureLib.setStructureQuestion(questionEl, row.prompt, row.typeLabel || row.type);
+  } else {
+    questionEl.textContent = row.prompt;
+    questionEl.classList.remove("is-error-identification");
+  }
 
   // passage
   if (row.kind === "reading" && row.passageText) {

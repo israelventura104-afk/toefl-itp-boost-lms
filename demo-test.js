@@ -199,7 +199,12 @@ function renderItem() {
   counterEl.textContent = `${state.index + 1} / ${state.rows.length}`;
   typeEl.textContent = row.sectionLabel;
   metaEl.textContent = row.focus;
-  questionEl.textContent = row.prompt;
+  if (row.kind === "structure" && window.StructureLib) {
+    StructureLib.setStructureQuestion(questionEl, row.prompt, row.typeLabel || row.type);
+  } else {
+    questionEl.textContent = row.prompt;
+    questionEl.classList.remove("is-error-identification");
+  }
 
   const layoutEl = document.querySelector("[data-demo-layout]");
   if (row.kind === "reading") {
