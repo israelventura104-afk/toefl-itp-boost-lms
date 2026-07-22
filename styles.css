@@ -1742,7 +1742,7 @@ button:disabled {
   line-height: 1.55;
 }
 
-/* Always one full-width column. With a passage: questions on top, passage below. */
+/* Always one full-width column. With a passage: passage on top, questions below. */
 .reading-practice-layout {
   display: grid;
   grid-template-columns: 1fr;
@@ -1756,17 +1756,17 @@ button:disabled {
   max-width: none;
 }
 
-/* DOM may list passage first; show questions above the passage */
-.reading-practice-layout.has-passage .practice-card,
-.reading-practice-layout.has-passage .demo-question-card {
-  order: 1;
-}
-
+/* Passage first (top), question card second (below) */
 .reading-practice-layout.has-passage .reading-passage {
-  order: 2;
+  order: 1;
   max-height: none;
   max-width: none;
   width: 100%;
+}
+
+.reading-practice-layout.has-passage .practice-card,
+.reading-practice-layout.has-passage .demo-question-card {
+  order: 2;
 }
 
 .reading-practice-layout.has-passage .choice-list {
@@ -2407,22 +2407,22 @@ html.has-teacher-access .commitment-locked .mock-panel {
   width: 100%;
 }
 
-/* Reading: one column — questions on top, passage below (not side-by-side) */
+/* Reading: one column — passage on top, questions below (not side-by-side) */
 .demo-exam-layout.has-passage {
   grid-template-columns: 1fr;
   gap: 22px;
   align-items: stretch;
 }
 
-.demo-exam-layout.has-passage .demo-question-card {
+.demo-exam-layout.has-passage .reading-passage {
   order: 1;
+  max-height: none;
   max-width: none;
   width: 100%;
 }
 
-.demo-exam-layout.has-passage .reading-passage {
+.demo-exam-layout.has-passage .demo-question-card {
   order: 2;
-  max-height: none;
   max-width: none;
   width: 100%;
 }
