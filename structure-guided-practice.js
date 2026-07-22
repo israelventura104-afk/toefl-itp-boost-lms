@@ -302,8 +302,17 @@ function persistSession(answered) {
     const record = window.ToeflProgress.recordStructureSession(payload);
     guidedState.savedForSession = true;
     const skillCount = record?.skills ? Object.keys(record.skills).length : 0;
+    console.info("[TOEFL] Structure session saved", record);
     if (!skillCount) {
       console.warn("[TOEFL] Session saved but skill map is empty.", record);
+      setStatus(
+        `Score ${correctCount}/${payload.total} saved, but skills were empty. Open Dashboard after a hard refresh.`,
+        true
+      );
+    } else {
+      setStatus(
+        `Saved to this device · ${correctCount}/${payload.total} · ${skillCount} skill${skillCount === 1 ? "" : "s"}. Open Dashboard to see progress.`
+      );
     }
   } catch (error) {
     console.error("[TOEFL] Failed to save Structure session.", error);

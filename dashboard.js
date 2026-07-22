@@ -109,16 +109,22 @@
       )}</p>`;
     }
     return skills
-      .map(
-        (row) => `
+      .map((row) => {
+        const pct = Math.round(Number(row.percent) || 0);
+        const bar = Math.max(pct, row.total ? 6 : 0);
+        const frac =
+          row.total != null
+            ? `${Number(row.correct) || 0}/${Number(row.total) || 0}`
+            : "";
+        return `
       <div class="skill-row">
         <span title="${escapeHtml(row.skill)}">${escapeHtml(row.skill)}</span>
         <div class="mini-bar" aria-hidden="true">
-          <span style="width: ${Math.max(Number(row.width) || 0, row.total ? 8 : 0)}%"></span>
+          <span style="width:${bar}%"></span>
         </div>
-        <b>${Number(row.percent) || 0}%</b>
-      </div>`
-      )
+        <b>${frac ? `${frac} · ` : ""}${pct}%</b>
+      </div>`;
+      })
       .join("");
   }
 
@@ -193,8 +199,21 @@
     renderNameUI();
     bindNameForm(document.querySelector("[data-dash-name-form]"));
 
-    if (!window.ToeflProgress) return;
+    if (!window.ToeflProgress) {
+      console.error("[TOEFL] progress.js not loaded on dashboard.");
+      return;
+    }
     const summary = window.ToeflProgress.getSummary();
+    // Helpful for debugging in Chrome DevTools → Console
+    console.info("[TOEFL] Dashboard summary", {
+      structureSessions: summary.sessionCount,
+      structureAvg: summary.averagePercent,
+      structureSkills: summary.skills,
+      readingSessions: summary.reading?.sessionCount,
+      readingAvg: summary.reading?.averagePercent,
+      readingSkills: summary.reading?.skills,
+      totalSessionsAll: summary.totalSessionsAll,
+    });
 
     // Focus — one message only
     text(
@@ -296,6 +315,26 @@
       );
     }
 
+    // Section card headers: show real avg when we have data
+    const sTitle = document.querySelector("[data-dash-structure-meta]");
+    const lTitle = document.querySelector("[data-dash-listening-meta]");
+    const rTitle = document.querySelector("[data-dash-reading-meta]");
+    if (sTitle) {
+      sTitle.textContent = summary.sessionCount
+        ? `${summary.sessionCount} session${summary.sessionCount === 1 ? "" : "s"} · avg ${summary.averagePercent ?? 0}%`
+        : "No sessions yet";
+    }
+    if (lTitle) {
+      lTitle.textContent = summary.listening?.sessionCount
+        ? `${summary.listening.sessionCount} session${summary.listening.sessionCount === 1 ? "" : "s"} · avg ${summary.listening.averagePercent ?? 0}%`
+        : "No sessions yet";
+    }
+    if (rTitle) {
+      rTitle.textContent = summary.reading?.sessionCount
+        ? `${summary.reading.sessionCount} session${summary.reading.sessionCount === 1 ? "" : "s"} · avg ${summary.reading.averagePercent ?? 0}%`
+        : "No sessions yet";
+    }
+
     renderRecent(summary);
   }
 
@@ -304,4 +343,13 @@
   } else {
     render();
   }
+  // Re-read progress when returning to this tab/page
+  window.addEventListener("pageshow", render);
+  window.addEventListener("focus", () => {
+    try {
+      render();
+    } catch {
+      /* ignore */
+    }
+  });
 })();

@@ -156,14 +156,29 @@ function maybeSaveAndShowResults() {
   const correct = items.filter((row) => row.correct).length;
 
   if (window.ToeflProgress?.recordReadingSession) {
-    window.ToeflProgress.recordReadingSession({
-      mode: "guided",
-      passageId: state.passage.id,
-      passageTitle: state.passage.title,
-      correct,
-      total: items.length,
-      items,
-    });
+    try {
+      const record = window.ToeflProgress.recordReadingSession({
+        mode: "guided",
+        passageId: state.passage.id,
+        passageTitle: state.passage.title,
+        correct,
+        total: items.length,
+        items,
+      });
+      const skillCount = record?.skills ? Object.keys(record.skills).length : 0;
+      console.info("[TOEFL] Reading session saved", record);
+      setStatus(
+        skillCount
+          ? `Saved to this device · ${correct}/${items.length} · ${skillCount} skill${skillCount === 1 ? "" : "s"}. Open Dashboard to see progress.`
+          : `Score saved · ${correct}/${items.length}. Open Dashboard after a hard refresh.`
+      );
+    } catch (error) {
+      console.error("[TOEFL] Failed to save Reading session.", error);
+      setStatus("Could not save progress on this device (storage blocked or full).", true);
+    }
+  } else {
+    console.warn("[TOEFL] ToeflProgress missing — Reading session not saved.");
+    setStatus("Results shown, but progress could not be saved on this device.", true);
   }
   state.saved = true;
   showResults();
