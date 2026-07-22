@@ -1742,23 +1742,36 @@ button:disabled {
   line-height: 1.55;
 }
 
-/* Default: one full-width column (Listening / Structure / no passage).
-   Two columns only when .has-passage is set (Reading). */
+/* Always one full-width column. With a passage: questions on top, passage below. */
 .reading-practice-layout {
   display: grid;
   grid-template-columns: 1fr;
   gap: 18px;
-  align-items: start;
+  align-items: stretch;
   width: 100%;
 }
 
-.reading-practice-layout.has-passage {
-  grid-template-columns: minmax(0, 0.95fr) minmax(360px, 1.05fr);
-}
-
-.reading-practice-layout:not(.has-passage) .practice-card {
+.reading-practice-layout .practice-card {
   width: 100%;
   max-width: none;
+}
+
+/* DOM may list passage first; show questions above the passage */
+.reading-practice-layout.has-passage .practice-card,
+.reading-practice-layout.has-passage .demo-question-card {
+  order: 1;
+}
+
+.reading-practice-layout.has-passage .reading-passage {
+  order: 2;
+  max-height: none;
+  max-width: none;
+  width: 100%;
+}
+
+.reading-practice-layout.has-passage .choice-list {
+  grid-template-columns: 1fr;
+  gap: 14px;
 }
 
 .reading-passage {
@@ -2394,21 +2407,23 @@ html.has-teacher-access .commitment-locked .mock-panel {
   width: 100%;
 }
 
-/* Reading: passage on top, questions below (not side-by-side) so choices can breathe */
+/* Reading: one column — questions on top, passage below (not side-by-side) */
 .demo-exam-layout.has-passage {
   grid-template-columns: 1fr;
   gap: 22px;
   align-items: stretch;
 }
 
-.demo-exam-layout.has-passage .reading-passage {
-  max-height: none;
-  max-width: 48rem;
+.demo-exam-layout.has-passage .demo-question-card {
+  order: 1;
+  max-width: none;
   width: 100%;
 }
 
-.demo-exam-layout.has-passage .demo-question-card {
-  max-width: 48rem;
+.demo-exam-layout.has-passage .reading-passage {
+  order: 2;
+  max-height: none;
+  max-width: none;
   width: 100%;
 }
 
