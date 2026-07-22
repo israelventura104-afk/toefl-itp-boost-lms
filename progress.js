@@ -95,30 +95,36 @@
    * @param {number} [session.durationSeconds]
    * @param {boolean} [session.timedOut]
    */
-  function recordStructureSession(session) {
-    const state = load();
-    const total = Number(session.total) || 0;
-    const correct = Number(session.correct) || 0;
-    const percent = total > 0 ? Math.round((correct / total) * 100) : 0;
-    const mode = session.mode || "guided";
-
+  function buildSkillMapFromItems(items) {
     const skillMap = {};
     const mistakes = [];
-
-    (session.items || []).forEach((entry) => {
-      const skill = normalizeSkill(entry.skill);
+    (items || []).forEach((entry) => {
+      const skill = normalizeSkill(entry.skill || entry.topic || "Other");
       if (!skillMap[skill]) skillMap[skill] = { correct: 0, total: 0 };
       skillMap[skill].total += 1;
-      if (entry.correct) skillMap[skill].correct += 1;
+      const isCorrect = Boolean(entry.correct);
+      if (isCorrect) skillMap[skill].correct += 1;
       else {
         mistakes.push({
           skill,
           subskill: entry.subskill || "",
           questionId: entry.questionId || "",
           prompt: entry.prompt || "",
+          assetId: entry.assetId || "",
         });
       }
     });
+    return { skillMap, mistakes };
+  }
+
+  function recordStructureSession(session) {
+    const state = load();
+    const total = Number(session.total) || 0;
+    const correct = Number(session.correct) || 0;
+    const percent = total > 0 ? Math.round((correct / total) * 100) : 0;
+    const mode = session.mode || "guided";
+    const items = Array.isArray(session.items) ? session.items : [];
+    const { skillMap, mistakes } = buildSkillMapFromItems(items);
 
     const record = {
       id: `str-${Date.now()}`,
@@ -130,6 +136,13 @@
       percent,
       skills: skillMap,
       mistakes,
+      // Keep raw items so dashboard can rebuild skills if needed
+      items: items.map((entry) => ({
+        questionId: entry.questionId || "",
+        skill: entry.skill || "",
+        subskill: entry.subskill || "",
+        correct: Boolean(entry.correct),
+      })),
       questionIds: session.questionIds || [],
       durationSeconds:
         typeof session.durationSeconds === "number" ? session.durationSeconds : null,
@@ -150,23 +163,8 @@
     const correct = Number(session.correct) || 0;
     const percent = total > 0 ? Math.round((correct / total) * 100) : 0;
     const mode = session.mode || "guided";
-
-    const skillMap = {};
-    const mistakes = [];
-    (session.items || []).forEach((entry) => {
-      const skill = normalizeSkill(entry.skill);
-      if (!skillMap[skill]) skillMap[skill] = { correct: 0, total: 0 };
-      skillMap[skill].total += 1;
-      if (entry.correct) skillMap[skill].correct += 1;
-      else {
-        mistakes.push({
-          skill,
-          subskill: entry.subskill || "",
-          questionId: entry.questionId || "",
-          prompt: entry.prompt || "",
-        });
-      }
-    });
+    const items = Array.isArray(session.items) ? session.items : [];
+    const { skillMap, mistakes } = buildSkillMapFromItems(items);
 
     const record = {
       id: `read-${Date.now()}`,
@@ -178,6 +176,12 @@
       percent,
       skills: skillMap,
       mistakes,
+      items: items.map((entry) => ({
+        questionId: entry.questionId || "",
+        skill: entry.skill || "",
+        subskill: entry.subskill || "",
+        correct: Boolean(entry.correct),
+      })),
       passageId: session.passageId || null,
       passageTitle: session.passageTitle || null,
       passageIds: session.passageIds || [],
@@ -208,24 +212,13 @@
     const correct = Number(session.correct) || 0;
     const percent = total > 0 ? Math.round((correct / total) * 100) : 0;
     const mode = session.mode || "guided";
-
-    const skillMap = {};
-    const mistakes = [];
-    (session.items || []).forEach((entry) => {
-      const skill = normalizeSkill(entry.skill || "Listening");
-      if (!skillMap[skill]) skillMap[skill] = { correct: 0, total: 0 };
-      skillMap[skill].total += 1;
-      if (entry.correct) skillMap[skill].correct += 1;
-      else {
-        mistakes.push({
-          skill,
-          subskill: entry.subskill || "",
-          questionId: entry.questionId || "",
-          prompt: entry.prompt || "",
-          assetId: entry.assetId || "",
-        });
-      }
-    });
+    const items = Array.isArray(session.items) ? session.items : [];
+    const { skillMap, mistakes } = buildSkillMapFromItems(
+      items.map((entry) => ({
+        ...entry,
+        skill: entry.skill || entry.topic || "Listening",
+      }))
+    );
 
     const record = {
       id: `list-${Date.now()}`,
@@ -237,6 +230,13 @@
       percent,
       skills: skillMap,
       mistakes,
+      items: items.map((entry) => ({
+        questionId: entry.questionId || "",
+        skill: entry.skill || entry.topic || "Listening",
+        subskill: entry.subskill || "",
+        correct: Boolean(entry.correct),
+        assetId: entry.assetId || "",
+      })),
       durationSeconds:
         typeof session.durationSeconds === "number" ? session.durationSeconds : null,
       timedOut: Boolean(session.timedOut),
@@ -294,7 +294,21 @@
   function aggregateSkillsFromSessions(sessions) {
     const totals = {};
     (sessions || []).forEach((session) => {
-      Object.entries(session.skills || {}).forEach(([skill, row]) => {
+      let skills = session.skills || {};
+      // Rebuild from items when skills map is missing/empty (older or partial saves)
+      if (!skills || !Object.keys(skills).length) {
+        if (Array.isArray(session.items) && session.items.length) {
+          skills = buildSkillMapFromItems(session.items).skillMap;
+        } else if (Array.isArray(session.mistakes) && session.mistakes.length) {
+          // At least surface missed skills as practiced (accuracy unknown for corrects)
+          session.mistakes.forEach((m) => {
+            const skill = normalizeSkill(m.skill || "Other");
+            if (!skills[skill]) skills[skill] = { correct: 0, total: 0 };
+            skills[skill].total += 1;
+          });
+        }
+      }
+      Object.entries(skills).forEach(([skill, row]) => {
         if (!totals[skill]) totals[skill] = { correct: 0, total: 0 };
         totals[skill].correct += row.correct || 0;
         totals[skill].total += row.total || 0;

@@ -102,17 +102,21 @@
     });
   }
 
-  function skillRowsHtml(skills) {
+  function skillRowsHtml(skills, emptyNote) {
     if (!skills || !skills.length) {
-      return `<p class="dash-empty-note">No practice saved yet.</p>`;
+      return `<p class="dash-empty-note">${escapeHtml(
+        emptyNote || "No practice saved yet."
+      )}</p>`;
     }
     return skills
       .map(
         (row) => `
       <div class="skill-row">
-        <span>${escapeHtml(row.skill)}</span>
-        <div class="mini-bar"><span style="width: ${row.width}%"></span></div>
-        <b>${row.percent}%</b>
+        <span title="${escapeHtml(row.skill)}">${escapeHtml(row.skill)}</span>
+        <div class="mini-bar" aria-hidden="true">
+          <span style="width: ${Math.max(Number(row.width) || 0, row.total ? 8 : 0)}%"></span>
+        </div>
+        <b>${Number(row.percent) || 0}%</b>
       </div>`
       )
       .join("");
@@ -267,9 +271,30 @@
     const sHost = document.querySelector("[data-dash-skills-structure]");
     const lHost = document.querySelector("[data-dash-skills-listening]");
     const rHost = document.querySelector("[data-dash-skills-reading]");
-    if (sHost) sHost.innerHTML = skillRowsHtml(summary.skills);
-    if (lHost) lHost.innerHTML = skillRowsHtml(summary.listening?.skills);
-    if (rHost) rHost.innerHTML = skillRowsHtml(summary.reading?.skills);
+    if (sHost) {
+      sHost.innerHTML = skillRowsHtml(
+        summary.skills,
+        summary.sessionCount
+          ? "Sessions saved, but no skill tags on those items yet."
+          : "No Structure practice saved yet."
+      );
+    }
+    if (lHost) {
+      lHost.innerHTML = skillRowsHtml(
+        summary.listening?.skills,
+        summary.listening?.sessionCount
+          ? "Sessions saved, but no topic tags yet."
+          : "No Listening practice saved yet."
+      );
+    }
+    if (rHost) {
+      rHost.innerHTML = skillRowsHtml(
+        summary.reading?.skills,
+        summary.reading?.sessionCount
+          ? "Sessions saved, but no skill tags yet."
+          : "No Reading practice saved yet."
+      );
+    }
 
     renderRecent(summary);
   }

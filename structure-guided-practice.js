@@ -278,24 +278,37 @@ function updateScore() {
 function persistSession(answered) {
   if (guidedState.savedForSession) return;
   if (!window.ToeflProgress || typeof window.ToeflProgress.recordStructureSession !== "function") {
+    console.warn("[TOEFL] ToeflProgress missing — Structure session not saved.");
+    setStatus("Results shown, but progress could not be saved on this device.", true);
     return;
   }
 
   const correctCount = answered.filter((entry) => entry.answer?.correct).length;
-  window.ToeflProgress.recordStructureSession({
+  const payload = {
     mode: "guided",
     correct: correctCount,
     total: guidedState.questions.length,
     questionIds: guidedState.questions.map((item) => item.id),
     items: answered.map(({ item, answer }) => ({
       questionId: item.id,
-      skill: item.skill,
-      subskill: item.subskill,
+      skill: item.skill || item.subskill || "Structure",
+      subskill: item.subskill || "",
       correct: Boolean(answer?.correct),
       prompt: item.question,
     })),
-  });
-  guidedState.savedForSession = true;
+  };
+
+  try {
+    const record = window.ToeflProgress.recordStructureSession(payload);
+    guidedState.savedForSession = true;
+    const skillCount = record?.skills ? Object.keys(record.skills).length : 0;
+    if (!skillCount) {
+      console.warn("[TOEFL] Session saved but skill map is empty.", record);
+    }
+  } catch (error) {
+    console.error("[TOEFL] Failed to save Structure session.", error);
+    setStatus("Could not save progress on this device (storage blocked or full).", true);
+  }
 }
 
 function renderResults() {

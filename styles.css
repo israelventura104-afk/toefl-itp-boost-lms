@@ -781,9 +781,10 @@ input {
 }
 
 .dash-skill-card .skill-row {
-  grid-template-columns: minmax(0, 1fr) minmax(48px, 0.7fr) 44px;
+  grid-template-columns: minmax(0, 1.2fr) minmax(56px, 1fr) 48px;
   gap: 8px;
   padding-top: 10px;
+  align-items: center;
 }
 
 .dash-skill-card .skill-row span {
@@ -795,6 +796,18 @@ input {
 
 .dash-skill-card .skill-row b {
   font-size: 0.78rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.dash-skill-card .mini-bar {
+  min-width: 56px;
+  height: 10px;
+  background: #edf1f0;
+}
+
+.dash-skill-card .mini-bar span {
+  min-width: 0;
+  background: var(--teal);
 }
 
 .dash-recent-list {
