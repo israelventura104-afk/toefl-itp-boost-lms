@@ -2291,7 +2291,7 @@ html.has-teacher-access .commitment-locked .mock-panel {
   margin-top: 0.35rem;
 }
 
-/* Demo test � full-width question card; simple Listen button */
+/* Demo test — full-width question card; simple Listen button */
 .demo-exam-layout {
   display: grid;
   grid-template-columns: 1fr;
@@ -2299,9 +2299,32 @@ html.has-teacher-access .commitment-locked .mock-panel {
   width: 100%;
 }
 
+/* Reading: passage on top, questions below (not side-by-side) so choices can breathe */
 .demo-exam-layout.has-passage {
-  grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
-  align-items: start;
+  grid-template-columns: 1fr;
+  gap: 22px;
+  align-items: stretch;
+}
+
+.demo-exam-layout.has-passage .reading-passage {
+  max-height: none;
+  max-width: 48rem;
+  width: 100%;
+}
+
+.demo-exam-layout.has-passage .demo-question-card {
+  max-width: 48rem;
+  width: 100%;
+}
+
+.demo-exam-layout.has-passage .choice-list {
+  grid-template-columns: 1fr;
+  gap: 14px;
+}
+
+.demo-exam-layout.has-passage .choice-button {
+  min-height: 56px;
+  padding: 16px 18px;
 }
 
 .demo-question-card {
@@ -2325,10 +2348,4 @@ html.has-teacher-access .commitment-locked .mock-panel {
 
 .demo-listen-row audio {
   display: none;
-}
-
-@media (max-width: 900px) {
-  .demo-exam-layout.has-passage {
-    grid-template-columns: 1fr;
-  }
 }
