@@ -2288,3 +2288,45 @@ html.has-teacher-access .commitment-locked .mock-panel {
 .mock-panel .button {
   margin-top: 0.35rem;
 }
+
+/* Demo test — full-width question card; simple Listen button */
+.demo-exam-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 18px;
+  width: 100%;
+}
+
+.demo-exam-layout.has-passage {
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+  align-items: start;
+}
+
+.demo-question-card {
+  width: 100%;
+  max-width: none;
+}
+
+.demo-listen-row {
+  display: flex;
+  align-items: center;
+  margin: 0.35rem 0 1rem;
+}
+
+.demo-listen-btn {
+  min-width: 9.5rem;
+  min-height: 44px;
+  border-radius: 999px;
+  font-size: 0.95rem;
+  letter-spacing: 0.01em;
+}
+
+.demo-listen-row audio {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .demo-exam-layout.has-passage {
+    grid-template-columns: 1fr;
+  }
+}
