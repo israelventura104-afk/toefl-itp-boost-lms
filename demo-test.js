@@ -12,6 +12,7 @@ const state = {
   index: 0,
   answers: new Map(),
   ready: false,
+  phase: "start", // start | exam | results
 };
 
 const statusEl = document.querySelector("[data-demo-status]");
@@ -43,9 +44,13 @@ function setStatus(message, isError = false) {
 }
 
 function showPhase(phase) {
+  state.phase = phase;
   startPanel.hidden = phase !== "start";
   examPanel.hidden = phase !== "exam";
   resultsPanel.hidden = phase !== "results";
+  // Keep nav inert until the exam actually starts (avoids skipping Q1)
+  if (prevBtn) prevBtn.disabled = phase !== "exam" || state.index === 0;
+  if (nextBtn) nextBtn.disabled = phase !== "exam";
 }
 
 function paragraphs(text) {
@@ -171,6 +176,10 @@ async function buildDemoRows() {
 }
 
 function beginDemo() {
+  if (!state.ready || !state.rows.length) {
+    setStatus("Demo items are still loading. Please wait a moment.", true);
+    return;
+  }
   state.index = 0;
   state.answers = new Map();
   showPhase("exam");
@@ -180,6 +189,7 @@ function beginDemo() {
 }
 
 function renderItem() {
+  if (state.phase !== "exam") return;
   const row = state.rows[state.index];
   if (!row) return;
   const selected = state.answers.get(row.uid);
@@ -234,6 +244,7 @@ function renderItem() {
   });
 
   prevBtn.disabled = state.index === 0;
+  nextBtn.disabled = false;
   nextBtn.textContent =
     state.index === state.rows.length - 1 ? "See my snapshot" : "Next";
 }
@@ -327,16 +338,20 @@ function finishDemo() {
 function bindControls() {
   beginBtn.addEventListener("click", beginDemo);
   retryBtn.addEventListener("click", () => {
+    state.index = 0;
+    state.answers = new Map();
     showPhase("start");
     setStatus("Demo ready whenever you want another snapshot.");
   });
   prevBtn.addEventListener("click", () => {
+    if (state.phase !== "exam") return;
     if (state.index > 0) {
       state.index -= 1;
       renderItem();
     }
   });
   nextBtn.addEventListener("click", () => {
+    if (state.phase !== "exam") return;
     if (state.index < state.rows.length - 1) {
       state.index += 1;
       renderItem();
@@ -373,11 +388,11 @@ async function init() {
     state.rows = await buildDemoRows();
     state.ready = true;
     beginBtn.disabled = false;
+    bindControls();
+    showPhase("start");
     setStatus(
       `Demo ready · ${state.rows.length} items (3 Structure · 3 Listening · 3 Reading) · free · no timer`
     );
-    bindControls();
-    showPhase("start");
   } catch (error) {
     console.error(error);
     setStatus(`Could not load the demo test. ${error.message}`, true);

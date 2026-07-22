@@ -17,6 +17,12 @@
   box-sizing: border-box;
 }
 
+/* Author display:grid/flex rules must not override the hidden attribute.
+   Without this, exam shells stay visible (e.g. empty 1/9) before Start. */
+[hidden] {
+  display: none !important;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -1312,10 +1318,6 @@ button:disabled {
   box-shadow: 0 16px 42px rgba(19, 34, 56, 0.08);
 }
 
-.results-panel[hidden] {
-  display: none;
-}
-
 .results-summary {
   display: grid;
   grid-template-columns: minmax(0, 1fr) 180px;
@@ -2289,7 +2291,7 @@ html.has-teacher-access .commitment-locked .mock-panel {
   margin-top: 0.35rem;
 }
 
-/* Demo test — full-width question card; simple Listen button */
+/* Demo test ï¿½ full-width question card; simple Listen button */
 .demo-exam-layout {
   display: grid;
   grid-template-columns: 1fr;
