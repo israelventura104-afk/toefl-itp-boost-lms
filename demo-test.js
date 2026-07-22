@@ -191,22 +191,32 @@ function renderItem() {
   metaEl.textContent = row.focus;
   questionEl.textContent = row.prompt;
 
+  const layoutEl = document.querySelector("[data-demo-layout]");
   if (row.kind === "reading") {
     passageWrap.hidden = false;
+    layoutEl?.classList.add("has-passage");
     passageTitleEl.textContent = row.passageTitle || "Passage";
     passageTextEl.innerHTML = paragraphs(row.passageText);
   } else {
     passageWrap.hidden = true;
+    layoutEl?.classList.remove("has-passage");
   }
 
+  const playBtn = document.querySelector("[data-demo-play]");
   if (row.kind === "listening" && row.audio) {
     audioWrap.hidden = false;
     if (audioEl.getAttribute("src") !== row.audio) {
+      audioEl.pause();
       audioEl.src = row.audio;
       audioEl.load();
     }
+    if (playBtn) {
+      playBtn.textContent = "▶ Listen";
+      playBtn.setAttribute("aria-label", "Play listening audio");
+    }
   } else {
     audioWrap.hidden = true;
+    audioEl.pause();
     audioEl.removeAttribute("src");
   }
 
@@ -334,10 +344,25 @@ function bindControls() {
     }
     finishDemo();
   });
-  document.querySelector("[data-demo-replay]")?.addEventListener("click", () => {
-    if (!audioEl.src) return;
-    audioEl.currentTime = 0;
-    audioEl.play().catch(() => {});
+  const playBtn = document.querySelector("[data-demo-play]");
+  playBtn?.addEventListener("click", () => {
+    if (!audioEl.src && !audioEl.currentSrc) return;
+    if (audioEl.paused) {
+      audioEl.play().catch(() => {});
+      playBtn.textContent = "❚❚ Pause";
+    } else {
+      audioEl.pause();
+      playBtn.textContent = "▶ Listen";
+    }
+  });
+  audioEl?.addEventListener("ended", () => {
+    if (playBtn) playBtn.textContent = "▶ Listen again";
+  });
+  audioEl?.addEventListener("pause", () => {
+    if (playBtn && !audioEl.ended) playBtn.textContent = "▶ Listen";
+  });
+  audioEl?.addEventListener("play", () => {
+    if (playBtn) playBtn.textContent = "❚❚ Pause";
   });
 }
 
