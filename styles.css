@@ -795,6 +795,17 @@ button:disabled {
   opacity: 0.72;
 }
 
+/* Locked answer choices — not clickable, but no "prohibited" cursor */
+.choice-button.is-locked {
+  pointer-events: none;
+  cursor: default;
+  opacity: 0.95;
+}
+
+.choice-button.is-locked:not(.correct):not(.incorrect) {
+  opacity: 0.72;
+}
+
 .mock-exam {
   position: relative;
   display: grid;

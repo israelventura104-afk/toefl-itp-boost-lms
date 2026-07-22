@@ -11,6 +11,7 @@ const quizState = {
   answers: new Map(),
   questions: [],
   ready: false,
+  finished: false,
 };
 
 const questionEl = document.querySelector("[data-question]");
@@ -29,6 +30,15 @@ function setStatus(message, isError = false) {
   statusEl.hidden = !message;
   statusEl.textContent = message || "";
   statusEl.classList.toggle("is-error", Boolean(isError));
+}
+
+function escapeHtml(value) {
+  if (window.StructureLib?.escapeHtml) return StructureLib.escapeHtml(value);
+  return String(value ?? "")
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;");
 }
 
 function normalizeItem(raw) {
@@ -101,10 +111,36 @@ async function loadIntroQuestions() {
   return items;
 }
 
+function updateNav() {
+  const total = quizState.questions.length;
+  const atStart = quizState.index <= 0;
+  const atEnd = quizState.index >= total - 1;
+  const item = quizState.questions[quizState.index];
+  const answered = item ? quizState.answers.has(item.id) : false;
+
+  // Never trap the student with a permanently disabled Next mid-set.
+  prevBtn.disabled = atStart || quizState.finished;
+  nextBtn.disabled = false;
+
+  if (quizState.finished) {
+    nextBtn.textContent = "Restart";
+    prevBtn.disabled = true;
+    return;
+  }
+
+  if (atEnd) {
+    nextBtn.textContent = answered ? "Finish" : "Next";
+  } else {
+    nextBtn.textContent = "Next";
+  }
+}
+
 function renderQuestion() {
   if (!quizState.ready || !quizState.questions.length) return;
 
   const item = quizState.questions[quizState.index];
+  if (!item) return;
+
   const answer = quizState.answers.get(item.id);
   const total = quizState.questions.length;
 
@@ -112,45 +148,61 @@ function renderQuestion() {
   metaEl.textContent = item.subskill
     ? `${item.skill} · ${item.subskill}`
     : item.skill;
-  if (window.StructureLib) {
-    StructureLib.setStructureQuestion(questionEl, item.question, item.type);
-  } else {
+
+  try {
+    if (window.StructureLib) {
+      StructureLib.setStructureQuestion(questionEl, item.question, item.type);
+    } else {
+      questionEl.textContent = item.question;
+    }
+  } catch (error) {
+    console.error(error);
     questionEl.textContent = item.question;
   }
+
   optionsEl.innerHTML = "";
 
   item.options.forEach((option) => {
     const button = document.createElement("button");
     button.className = "choice-button";
     button.type = "button";
-    button.innerHTML = `<b>${option.key}</b><span>${option.text}</span>`;
+    button.innerHTML = `<b>${escapeHtml(option.key)}</b><span>${escapeHtml(option.text)}</span>`;
 
     if (answer) {
-      button.disabled = true;
+      // Lock choices without native disabled (avoids "not-allowed" cursor confusion)
+      button.classList.add("is-locked");
+      button.setAttribute("aria-disabled", "true");
       if (option.key === item.correctKey) button.classList.add("correct");
       if (option.key === answer.selectedKey && !answer.correct) {
         button.classList.add("incorrect");
       }
+    } else {
+      button.addEventListener("click", () => chooseAnswer(item, option));
     }
 
-    button.addEventListener("click", () => chooseAnswer(item, option));
     optionsEl.appendChild(button);
   });
 
   renderFeedback(item);
-  prevBtn.disabled = quizState.index === 0;
-  nextBtn.disabled = quizState.index === total - 1;
-  nextBtn.textContent =
-    quizState.index === total - 1 && answer ? "Done" : "Next";
+  updateNav();
   updateScore();
+
+  if (answer && feedbackEl) {
+    // Keep actions reachable after a long explanation
+    feedbackEl.scrollIntoView({ behavior: "smooth", block: "nearest" });
+  }
 }
 
 function chooseAnswer(item, option) {
+  if (quizState.finished) return;
+  if (quizState.answers.has(item.id)) return;
+
   const correct = option.key === item.correctKey;
   quizState.answers.set(item.id, {
     selectedKey: option.key,
     correct,
   });
+  setStatus("");
   renderQuestion();
 }
 
@@ -169,13 +221,13 @@ function renderFeedback(item) {
 
   const mistakeLine =
     !answer.correct && item.commonMistake
-      ? `<p class="feedback-trap"><small>Common trap: ${item.commonMistake}</small></p>`
+      ? `<p class="feedback-trap"><small>Common trap: ${escapeHtml(item.commonMistake)}</small></p>`
       : "";
 
   feedbackEl.innerHTML = `
     <strong>${answer.correct ? "Correct" : "Incorrect"}</strong>
-    <p>The correct answer is <b>${item.correctKey}. ${item.correctAnswer}</b></p>
-    <p>${item.explanation}</p>
+    <p>The correct answer is <b>${escapeHtml(item.correctKey)}. ${escapeHtml(item.correctAnswer)}</b></p>
+    <p>${escapeHtml(item.explanation)}</p>
     ${mistakeLine}
   `;
 }
@@ -186,20 +238,66 @@ function updateScore() {
   scoreEl.textContent = `${correct}/${answered.length || 0} correct`;
 }
 
-function bindControls() {
-  prevBtn.addEventListener("click", () => {
-    if (quizState.index > 0) {
-      quizState.index -= 1;
-      renderQuestion();
-    }
-  });
+function showFinished() {
+  const total = quizState.questions.length;
+  const answered = [...quizState.answers.values()];
+  const correct = answered.filter((entry) => entry.correct).length;
+  const percent = total ? Math.round((correct / total) * 100) : 0;
 
-  nextBtn.addEventListener("click", () => {
-    if (quizState.index < quizState.questions.length - 1) {
-      quizState.index += 1;
-      renderQuestion();
-    }
-  });
+  quizState.finished = true;
+  setStatus(
+    `Free practice complete · ${correct}/${total} (${percent}%). Tap Restart to try the same 10 again, or open strategies above.`
+  );
+  updateNav();
+  updateScore();
+  counterEl.textContent = `${total} / ${total}`;
+}
+
+function goNext() {
+  if (!quizState.ready || !quizState.questions.length) return;
+
+  if (quizState.finished) {
+    // Restart same fixed set
+    quizState.index = 0;
+    quizState.answers = new Map();
+    quizState.finished = false;
+    setStatus(
+      `Fixed set · ${quizState.questions.length} questions · same order every time · no timer`
+    );
+    renderQuestion();
+    practiceCardEl?.scrollIntoView({ behavior: "smooth", block: "start" });
+    return;
+  }
+
+  const item = quizState.questions[quizState.index];
+  if (!quizState.answers.has(item.id)) {
+    setStatus("Choose an answer first, then tap Next.", true);
+    return;
+  }
+
+  const atEnd = quizState.index >= quizState.questions.length - 1;
+  if (atEnd) {
+    showFinished();
+    return;
+  }
+
+  setStatus("");
+  quizState.index += 1;
+  renderQuestion();
+}
+
+function goPrev() {
+  if (quizState.finished) return;
+  if (quizState.index > 0) {
+    setStatus("");
+    quizState.index -= 1;
+    renderQuestion();
+  }
+}
+
+function bindControls() {
+  prevBtn.addEventListener("click", goPrev);
+  nextBtn.addEventListener("click", goNext);
 }
 
 async function init() {
@@ -217,6 +315,9 @@ async function init() {
     );
     if (practiceCardEl) practiceCardEl.setAttribute("aria-busy", "false");
     bindControls();
+    // Ensure Next is clickable after load (was disabled while loading)
+    nextBtn.disabled = false;
+    prevBtn.disabled = false;
     renderQuestion();
   } catch (error) {
     console.error(error);
@@ -231,6 +332,8 @@ async function init() {
     optionsEl.innerHTML = "";
     counterEl.textContent = "— / —";
     scoreEl.textContent = "0/0 correct";
+    prevBtn.disabled = true;
+    nextBtn.disabled = true;
   }
 }
 
