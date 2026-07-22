@@ -88,35 +88,25 @@
       </section>
 
       <section class="results-panel" id="results" aria-labelledby="results-title" data-results hidden>
-        <div class="results-summary">
+        <div class="results-hero">
           <div>
-            <p class="eyebrow">Session summary</p>
-            <h2 id="results-title">Your Structure review is ready.</h2>
-            <p data-result-message>
-              Review the patterns below before choosing your next strategy.
-            </p>
+            <p class="eyebrow">Session complete</p>
+            <h2 id="results-title">Your score</h2>
+            <p data-result-message hidden></p>
           </div>
           <div class="result-score">
             <span>Score</span>
             <strong data-final-score>0/15</strong>
-            <small data-final-note>Keep going carefully.</small>
+            <small data-final-note></small>
           </div>
         </div>
 
-        <div class="result-grid" data-skill-summary></div>
+        <div data-study-focus></div>
+        <div class="result-misses-panel" data-mistakes></div>
 
-        <article class="mistake-review-panel">
-          <div class="section-heading compact">
-            <p class="eyebrow">Mistake Review</p>
-            <h3>Study these before your next drill.</h3>
-          </div>
-          <div class="mistake-review-list" data-mistakes></div>
-        </article>
-
-        <div class="practice-actions">
-          <a class="button secondary" href="strategies.html#structure">Study Structure strategies</a>
-          <button class="button secondary" type="button" data-new-practice-result>New practice</button>
-          <a class="button primary" href="dashboard.html#score-plan">Back to Score Plan</a>
+        <div class="practice-actions results-actions">
+          <button class="button primary" type="button" data-new-practice-result>Practice again</button>
+          <a class="button secondary" href="dashboard.html">Dashboard</a>
         </div>
       </section>
       </div>
@@ -125,6 +115,7 @@
     <script src="access.js"></script>
     <script src="progress.js"></script>
     <script src="structure-lib.js"></script>
+    <script src="results-lib.js"></script>
     <script src="structure-guided-practice.js"></script>
   </body>
 </html>

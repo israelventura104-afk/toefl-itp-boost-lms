@@ -295,45 +295,75 @@ function finishDemo() {
     /* ignore */
   }
 
-  document.querySelector("[data-demo-total]").textContent = `${totalCorrect}/${total}`;
-  document.querySelector("[data-demo-total-note]").textContent = `${percent}% on this short demo`;
-  document.querySelector("[data-demo-result-message]").textContent =
-    percent >= 70
-      ? "Solid start on this short sample. Next: dig into free strategies, then use your class code for full guided practice and mocks."
-      : "Useful starting picture. Free strategies will help first; full course tools open with your teacher’s class code.";
+  const sectionStats = [
+    { skill: "Structure", ...structure, href: "structure.html" },
+    { skill: "Listening", ...listening, href: "listening.html" },
+    { skill: "Reading", ...reading, href: "reading.html" },
+  ];
+  const studyFocus = [...sectionStats]
+    .map((s) => ({
+      skill: s.skill,
+      wrong: Math.max(0, s.total - s.correct),
+      correct: s.correct,
+      total: s.total,
+      percent: s.percent,
+      href: s.href,
+    }))
+    .filter((s) => s.wrong > 0)
+    .sort((a, b) => a.percent - b.percent);
 
-  document.querySelector("[data-demo-section-scores]").innerHTML = `
-    <article class="skill-result"><span>Structure</span><strong>${structure.correct}/${structure.total}</strong><small>${structure.percent}%</small></article>
-    <article class="skill-result"><span>Listening</span><strong>${listening.correct}/${listening.total}</strong><small>${listening.percent}%</small></article>
-    <article class="skill-result"><span>Reading</span><strong>${reading.correct}/${reading.total}</strong><small>${reading.percent}%</small></article>
-  `;
+  const mistakeCards = state.rows
+    .filter((row) => {
+      const selected = state.answers.get(row.uid);
+      return selected !== row.correctKey;
+    })
+    .map((row) => {
+      const selected = state.answers.get(row.uid);
+      return {
+        tag: row.sectionLabel || row.kind,
+        stem: row.prompt,
+        yours: selected || "no answer",
+        correct: `${row.correctKey}${row.correctAnswer && row.correctAnswer !== row.correctKey ? `. ${row.correctAnswer}` : ""}`,
+        explanation: row.explanation || "",
+      };
+    });
 
-  const weak = [
-    { name: "Structure", ...structure, href: "structure.html" },
-    { name: "Listening", ...listening, href: "listening.html" },
-    { name: "Reading", ...reading, href: "reading.html" },
-  ].sort((a, b) => a.percent - b.percent);
+  if (window.ResultsLib) {
+    ResultsLib.paint({
+      scoreEl: document.querySelector("[data-demo-total]"),
+      noteEl: document.querySelector("[data-demo-total-note]"),
+      messageEl: document.querySelector("[data-demo-result-message]"),
+      studyEl: document.querySelector("[data-demo-study-focus]"),
+      mistakesEl: document.querySelector("[data-demo-mistakes]"),
+      correct: totalCorrect,
+      total,
+      studyRows: sectionStats.map((s) => ({
+        skill: s.skill,
+        correct: s.correct === s.total,
+        // buildStudyFocus counts per-row; expand to wrong/correct units
+      })),
+      mistakes: mistakeCards,
+    });
+    // Better study focus from section wrong counts (not boolean rows)
+    const studyEl = document.querySelector("[data-demo-study-focus]");
+    if (studyEl) {
+      studyEl.innerHTML = ResultsLib.renderStudyFocusHtml(
+        studyFocus.map((s) => ({
+          skill: s.skill,
+          wrong: s.wrong,
+          correct: s.correct,
+          total: s.total,
+        }))
+      );
+    }
+  }
 
-  const lowest = weak[0];
-  document.querySelector("[data-demo-next-steps]").innerHTML = `
-    <article class="mistake-review-item">
-      <span>1 · Free practice</span>
-      <h4>Start with free previews</h4>
-      <p>Your lowest area on this short demo was <b>${lowest.name}</b> (${lowest.percent}%). Open free strategies and samples first.</p>
-      <p><a class="button secondary compact-button" href="${lowest.href}">Open free ${lowest.name}</a></p>
-    </article>
-    <article class="mistake-review-item">
-      <span>2 · Full course</span>
-      <h4>Enter your teacher’s class code</h4>
-      <p>Guided drills, section mocks, and the full ITP-style mock open with class access — not from the public home page dashboard.</p>
-      <p><a class="button secondary compact-button" href="dashboard.html#class-access">Enter class code</a></p>
-    </article>
-    <article class="mistake-review-item">
-      <span>3 · After access</span>
-      <h4>Then use your dashboard</h4>
-      <p>Once your class code is active on this device, the dashboard becomes your training home for guided practice and mocks.</p>
-    </article>
-  `;
+  const primary = document.querySelector("[data-demo-primary-cta]");
+  const lowest = studyFocus[0] || sectionStats[0];
+  if (primary && lowest) {
+    primary.href = lowest.href;
+    primary.textContent = `Practice free ${lowest.skill || lowest.name}`;
+  }
 
   setStatus(`Demo snapshot saved on this device · ${totalCorrect}/${total} (${percent}%)`);
   showPhase("results");

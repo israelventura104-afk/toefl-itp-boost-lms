@@ -31,7 +31,7 @@ const resultsEl = document.querySelector("[data-results]");
 const finalScoreEl = document.querySelector("[data-final-score]");
 const finalNoteEl = document.querySelector("[data-final-note]");
 const resultMessageEl = document.querySelector("[data-result-message]");
-const skillSummaryEl = document.querySelector("[data-skill-summary]");
+const studyFocusEl = document.querySelector("[data-study-focus]");
 const mistakesEl = document.querySelector("[data-mistakes]");
 const sessionLabelEl = document.querySelector("[data-session-label]");
 const newPracticeBtn = document.querySelector("[data-new-practice]");
@@ -183,8 +183,8 @@ function startPractice() {
   guidedState.questions = buildBalancedPractice(guidedState.bank, PRACTICE_SIZE);
   sessionLabelEl.textContent = `Random set ${guidedState.sessionNumber} · ${guidedState.questions.length} of ${guidedState.bank.length} bank items · no timer`;
   resultsEl.hidden = true;
-  skillSummaryEl.innerHTML = "";
-  mistakesEl.innerHTML = "";
+  if (studyFocusEl) studyFocusEl.innerHTML = "";
+  if (mistakesEl) mistakesEl.innerHTML = "";
   renderQuestion();
 }
 
@@ -314,77 +314,40 @@ function renderResults() {
   persistSession(answered);
 
   const correctCount = answered.filter((entry) => entry.answer?.correct).length;
-  const percent = Math.round((correctCount / guidedState.questions.length) * 100);
+  const misses = answered.filter((entry) => entry.answer && !entry.answer.correct);
 
-  resultsEl.hidden = false;
-  finalScoreEl.textContent = `${correctCount}/${guidedState.questions.length}`;
-  finalNoteEl.textContent =
-    percent >= 80 ? "Strong session" : percent >= 60 ? "Good base" : "Needs strategy review";
-  resultMessageEl.textContent =
-    percent >= 80
-      ? "You handled most of the patterns well. Review any misses, then try another set or return to the dashboard."
-      : "This is useful information: choose one or two weak patterns and study them before the next practice.";
+  const studyRows = answered.map(({ item, answer }) => ({
+    skill: normalizeSkill(item.skill),
+    correct: Boolean(answer?.correct),
+  }));
 
-  renderSkillSummary(answered);
-  renderMistakes(answered);
-  resultsEl.scrollIntoView({ behavior: "smooth", block: "start" });
-}
+  const mistakeCards = misses.map(({ item, answer }) => ({
+    tag: [normalizeSkill(item.skill), item.subskill || item.type].filter(Boolean).join(" · "),
+    stemHtml: window.StructureLib
+      ? StructureLib.formatStructureQuestionHtml(item.question, item.type)
+      : ResultsLib.escapeHtml(item.question),
+    yours: answer.selectedKey,
+    correct: `${item.correctKey}. ${item.correctAnswer}`,
+    explanation: item.explanation,
+    trap: item.commonMistake,
+  }));
 
-function renderSkillSummary(answered) {
-  const summary = new Map();
-  answered.forEach(({ item, answer }) => {
-    const skillName = normalizeSkill(item.skill);
-    if (!summary.has(skillName)) summary.set(skillName, { correct: 0, total: 0 });
-    const row = summary.get(skillName);
-    row.total += 1;
-    if (answer?.correct) row.correct += 1;
-  });
-
-  skillSummaryEl.innerHTML = [...summary.entries()]
-    .map(([skill, row]) => {
-      const pct = Math.round((row.correct / row.total) * 100);
-      const status =
-        row.correct === 0 ? "Needs practice" : pct >= 80 ? "Strong" : pct >= 60 ? "OK" : "Review";
-      return `
-      <article class="skill-result">
-        <span>${skill}</span>
-        <strong>${row.correct}/${row.total}</strong>
-        <small>${status}</small>
-      </article>
-    `;
-    })
-    .join("");
-}
-
-function renderMistakes(answered) {
-  const mistakes = answered.filter((entry) => entry.answer && !entry.answer.correct);
-  if (!mistakes.length) {
-    mistakesEl.innerHTML = `
-      <div class="empty-review">
-        <strong>No mistakes in this session.</strong>
-        <p>Beautiful. Still read one strategy before your next drill so the pattern stays fresh.</p>
-      </div>
-    `;
-    return;
+  if (window.ResultsLib) {
+    ResultsLib.paint({
+      scoreEl: finalScoreEl,
+      noteEl: finalNoteEl,
+      messageEl: resultMessageEl,
+      studyEl: studyFocusEl,
+      mistakesEl,
+      correct: correctCount,
+      total: guidedState.questions.length,
+      studyRows,
+      mistakes: mistakeCards,
+    });
   }
 
-  mistakesEl.innerHTML = mistakes
-    .map(
-      ({ item, answer }) => `
-    <article class="mistake-review-item">
-      <span>${normalizeSkill(item.skill)} · ${item.subskill || item.type}</span>
-      <h4>${
-        window.StructureLib
-          ? StructureLib.formatStructureQuestionHtml(item.question, item.type)
-          : item.question
-      }</h4>
-      <p>You chose <b>${answer.selectedKey}</b>. Correct answer: <b>${item.correctKey}. ${item.correctAnswer}</b></p>
-      <p>${item.explanation}</p>
-      ${item.commonMistake ? `<small>Common trap: ${item.commonMistake}</small>` : ""}
-    </article>
-  `
-    )
-    .join("");
+  resultsEl.hidden = false;
+  resultsEl.scrollIntoView({ behavior: "smooth", block: "start" });
 }
 
 function handleNewPractice() {

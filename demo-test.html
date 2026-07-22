@@ -121,34 +121,24 @@
 
       <!-- RESULTS -->
       <section class="results-panel" data-demo-results hidden>
-        <div class="results-summary">
+        <div class="results-hero">
           <div>
-            <p class="eyebrow">Your demo snapshot</p>
-            <h2>This is a starting picture â€” not a final score</h2>
-            <p data-demo-result-message></p>
+            <p class="eyebrow">Demo snapshot</p>
+            <h2>Your score</h2>
+            <p data-demo-result-message hidden></p>
           </div>
           <div class="result-score">
             <span>Total</span>
             <strong data-demo-total>0/9</strong>
-            <small data-demo-total-note>Demo items</small>
+            <small data-demo-total-note></small>
           </div>
         </div>
 
-        <div class="result-grid" data-demo-section-scores></div>
+        <div data-demo-study-focus></div>
+        <div class="result-misses-panel" data-demo-mistakes></div>
 
-        <article class="mistake-review-panel">
-          <div class="section-heading compact">
-            <p class="eyebrow">What to do next</p>
-            <h3>Build from this snapshot</h3>
-          </div>
-          <div class="mistake-review-list" data-demo-next-steps></div>
-        </article>
-
-        <div class="practice-actions">
-          <a class="button primary" href="structure.html">Free Structure strategies</a>
-          <a class="button secondary" href="listening.html">Free Listening samples</a>
-          <a class="button secondary" href="reading.html">Free Reading sample</a>
-          <a class="button secondary" href="dashboard.html#class-access">Enter class code</a>
+        <div class="practice-actions results-actions">
+          <a class="button primary" href="structure.html" data-demo-primary-cta>Start free practice</a>
           <button class="button secondary" type="button" data-demo-retry>Try demo again</button>
         </div>
       </section>
@@ -158,6 +148,7 @@
     <script src="access.js"></script>
     <script src="listening-lib.js"></script>
     <script src="structure-lib.js"></script>
+    <script src="results-lib.js"></script>
     <script src="demo-test.js"></script>
   </body>
 </html>

@@ -28,7 +28,8 @@ const prevBtn = document.querySelector("[data-reading-prev]");
 const nextBtn = document.querySelector("[data-reading-next]");
 const scoreEl = document.querySelector("[data-reading-score]");
 const resultsEl = document.querySelector("[data-results]");
-const skillSummaryEl = document.querySelector("[data-skill-summary]");
+const studyFocusEl = document.querySelector("[data-study-focus]");
+const mistakesEl = document.querySelector("[data-mistakes]");
 const finalScoreEl = document.querySelector("[data-final-score]");
 const finalNoteEl = document.querySelector("[data-final-note]");
 const resultMessageEl = document.querySelector("[data-result-message]");
@@ -171,29 +172,41 @@ function maybeSaveAndShowResults() {
 function showResults() {
   const items = state.passage.items;
   const correct = items.filter((item) => state.answers.get(item.id)?.correct).length;
-  const percent = Math.round((correct / items.length) * 100);
+  const studyRows = items.map((item) => ({
+    skill: normalizeSkill(item.skill),
+    correct: Boolean(state.answers.get(item.id)?.correct),
+  }));
+  const mistakeCards = items
+    .filter((item) => !state.answers.get(item.id)?.correct)
+    .map((item) => {
+      const answer = state.answers.get(item.id);
+      return {
+        tag: normalizeSkill(item.skill),
+        stem: item.question,
+        yours: answer?.selectedKey || "—",
+        correct: `${item.correctKey}. ${item.correctAnswer}`,
+        explanation: item.explanation,
+      };
+    });
 
-  finalScoreEl.textContent = `${correct}/${items.length}`;
-  finalNoteEl.textContent = `${percent}% · ${state.passage.title}`;
-  resultMessageEl.textContent =
-    percent >= 80
-      ? "Strong passage. Try another, or move to a timed Reading mock."
-      : "Useful signal: review the skills below, then take another passage.";
-
-  const summary = new Map();
-  items.forEach((item) => {
-    const skill = normalizeSkill(item.skill);
-    if (!summary.has(skill)) summary.set(skill, { correct: 0, total: 0 });
-    const row = summary.get(skill);
-    row.total += 1;
-    if (state.answers.get(item.id)?.correct) row.correct += 1;
-  });
-  skillSummaryEl.innerHTML = [...summary.entries()]
-    .map(
-      ([skill, row]) =>
-        `<article class="skill-result"><span>${skill}</span><strong>${row.correct}/${row.total}</strong></article>`
-    )
-    .join("");
+  if (window.ResultsLib) {
+    ResultsLib.paint({
+      scoreEl: finalScoreEl,
+      noteEl: finalNoteEl,
+      messageEl: resultMessageEl,
+      studyEl: studyFocusEl,
+      mistakesEl,
+      correct,
+      total: items.length,
+      meta: state.passage.title,
+      studyRows,
+      mistakes: mistakeCards,
+    });
+    if (finalNoteEl) {
+      const percent = items.length ? Math.round((correct / items.length) * 100) : 0;
+      finalNoteEl.textContent = ResultsLib.scoreNote(percent);
+    }
+  }
 
   resultsEl.hidden = false;
   resultsEl.scrollIntoView({ behavior: "smooth", block: "start" });

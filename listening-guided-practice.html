@@ -88,22 +88,22 @@
         </section>
 
         <section class="results-panel" data-results hidden>
-          <div class="results-summary">
+          <div class="results-hero">
             <div>
               <p class="eyebrow">Session complete</p>
-              <h2>Listening review</h2>
-              <p data-result-message></p>
+              <h2>Your score</h2>
+              <p data-result-message hidden></p>
             </div>
             <div class="result-score">
               <span>Score</span>
               <strong data-final-score>0/10</strong>
-              <small data-final-note>Guided set</small>
+              <small data-final-note></small>
             </div>
           </div>
-          <div class="mistake-review-list" data-mistakes></div>
-          <div class="practice-actions">
-            <button class="button primary" type="button" data-new-set-result>New set</button>
-            <a class="button secondary" href="listening-mock.html">Listening mock</a>
+          <div data-study-focus></div>
+          <div class="result-misses-panel" data-mistakes></div>
+          <div class="practice-actions results-actions">
+            <button class="button primary" type="button" data-new-set-result>Practice again</button>
             <a class="button secondary" href="dashboard.html">Dashboard</a>
           </div>
         </section>
@@ -114,6 +114,7 @@
     <script src="access.js"></script>
     <script src="progress.js"></script>
     <script src="listening-lib.js"></script>
+    <script src="results-lib.js"></script>
     <script src="listening-guided-practice.js"></script>
   </body>
 </html>

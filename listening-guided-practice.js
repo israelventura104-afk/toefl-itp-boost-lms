@@ -147,30 +147,35 @@ function finishIfComplete() {
 
 function showResults() {
   const correct = state.rows.filter((row) => state.answers.get(row.question.id)?.correct).length;
-  const percent = Math.round((correct / state.rows.length) * 100);
-  finalScoreEl.textContent = `${correct}/${state.rows.length}`;
-  finalNoteEl.textContent = `${percent}% · guided Listening`;
-  resultMessageEl.textContent =
-    percent >= 80
-      ? "Strong set. Try another drill or a timed Listening mock."
-      : "Review the misses below, then run another set focusing on meaning, not repeated words.";
+  const studyRows = state.rows.map(({ item, question }) => ({
+    skill: item.topic || item.assetType || "Listening",
+    correct: Boolean(state.answers.get(question.id)?.correct),
+  }));
+  const mistakeCards = state.rows
+    .filter((row) => !state.answers.get(row.question.id)?.correct)
+    .map(({ item, question }) => {
+      const answer = state.answers.get(question.id);
+      return {
+        tag: [item.id, item.topic || item.assetType].filter(Boolean).join(" · "),
+        stem: question.prompt,
+        yours: answer?.selectedKey || "—",
+        correct: `${question.correctKey}. ${question.correctAnswer}`,
+        explanation: question.explanation,
+      };
+    });
 
-  const misses = state.rows.filter((row) => !state.answers.get(row.question.id)?.correct);
-  if (!misses.length) {
-    mistakesEl.innerHTML =
-      `<div class="empty-review"><strong>No misses.</strong><p>Excellent listening accuracy on this set.</p></div>`;
-  } else {
-    mistakesEl.innerHTML = misses
-      .map(({ item, question }) => {
-        const answer = state.answers.get(question.id);
-        return `<article class="mistake-review-item">
-          <span>${item.id} · ${item.topic || item.assetType}</span>
-          <h4>${question.prompt}</h4>
-          <p>You chose <b>${answer?.selectedKey || "—"}</b>. Correct: <b>${question.correctKey}. ${question.correctAnswer}</b></p>
-          <p>${question.explanation}</p>
-        </article>`;
-      })
-      .join("");
+  if (window.ResultsLib) {
+    ResultsLib.paint({
+      scoreEl: finalScoreEl,
+      noteEl: finalNoteEl,
+      messageEl: resultMessageEl,
+      studyEl: document.querySelector("[data-study-focus]"),
+      mistakesEl,
+      correct,
+      total: state.rows.length,
+      studyRows,
+      mistakes: mistakeCards,
+    });
   }
 
   resultsEl.hidden = false;

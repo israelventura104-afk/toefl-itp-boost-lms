@@ -142,35 +142,25 @@
 
         <!-- RESULTS -->
         <section class="results-panel" data-full-results hidden>
-          <div class="results-summary">
+          <div class="results-hero">
             <div>
               <p class="eyebrow">Full mock complete</p>
-              <h2>Your ITP-style results</h2>
-              <p data-full-result-message></p>
+              <h2>Your score</h2>
+              <p data-full-result-message hidden></p>
               <p class="dash-last-session" data-full-result-meta></p>
             </div>
             <div class="result-score">
               <span>Total</span>
               <strong data-full-total-score>0/140</strong>
-              <small data-full-total-note>All sections</small>
+              <small data-full-total-note></small>
             </div>
           </div>
 
-          <div class="result-grid" data-full-section-scores></div>
+          <div data-full-study-focus></div>
+          <div class="result-misses-panel" data-full-review></div>
 
-          <article class="mistake-review-panel">
-            <div class="section-heading compact">
-              <p class="eyebrow">Section review</p>
-              <h3>Scores and next steps</h3>
-            </div>
-            <div class="mistake-review-list" data-full-review></div>
-          </article>
-
-          <div class="practice-actions">
-            <a class="button primary" href="dashboard.html#score-plan">Dashboard</a>
-            <a class="button secondary" href="structure-guided-practice.html">Structure guided</a>
-            <a class="button secondary" href="reading-guided-practice.html">Reading guided</a>
-            <a class="button secondary" href="listening-guided-practice.html">Listening guided</a>
+          <div class="practice-actions results-actions">
+            <a class="button primary" href="dashboard.html" data-full-primary-cta>Dashboard</a>
             <button class="button secondary" type="button" data-full-retry>New full mock</button>
           </div>
         </section>
@@ -182,6 +172,7 @@
     <script src="progress.js"></script>
     <script src="listening-lib.js"></script>
     <script src="structure-lib.js"></script>
+    <script src="results-lib.js"></script>
     <script src="full-mock.js"></script>
   </body>
 </html>

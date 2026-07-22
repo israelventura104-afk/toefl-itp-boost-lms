@@ -93,23 +93,23 @@
         </section>
 
         <section class="results-panel" data-results hidden>
-          <div class="results-summary">
+          <div class="results-hero">
             <div>
               <p class="eyebrow">Passage complete</p>
-              <h2>Your Reading review is ready.</h2>
-              <p data-result-message>Review skills below, then try another passage.</p>
+              <h2>Your score</h2>
+              <p data-result-message hidden></p>
             </div>
             <div class="result-score">
               <span>Score</span>
               <strong data-final-score>0/0</strong>
-              <small data-final-note>This passage</small>
+              <small data-final-note></small>
             </div>
           </div>
-          <div class="result-grid" data-skill-summary></div>
-          <div class="practice-actions">
-            <button class="button primary" type="button" data-new-passage-result>New passage</button>
-            <a class="button secondary" href="reading-mock.html">Reading mock</a>
-            <a class="button secondary" href="dashboard.html#score-plan">Dashboard</a>
+          <div data-study-focus></div>
+          <div class="result-misses-panel" data-mistakes></div>
+          <div class="practice-actions results-actions">
+            <button class="button primary" type="button" data-new-passage-result>Practice again</button>
+            <a class="button secondary" href="dashboard.html">Dashboard</a>
           </div>
         </section>
       </div>
@@ -118,6 +118,7 @@
 
     <script src="access.js"></script>
     <script src="progress.js"></script>
+    <script src="results-lib.js"></script>
     <script src="reading-guided-practice.js"></script>
   </body>
 </html>

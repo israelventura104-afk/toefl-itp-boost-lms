@@ -107,23 +107,23 @@
         </section>
 
         <section class="results-panel" data-mock-results hidden>
-          <div class="results-summary">
+          <div class="results-hero">
             <div>
               <p class="eyebrow">Mock complete</p>
-              <h2>Your Listening mock results</h2>
-              <p data-mock-result-message></p>
+              <h2>Your score</h2>
+              <p data-mock-result-message hidden></p>
               <p class="dash-last-session" data-mock-result-meta></p>
             </div>
             <div class="result-score">
               <span>Score</span>
               <strong data-mock-final-score>0/30</strong>
-              <small data-mock-final-note>Listening mock</small>
+              <small data-mock-final-note></small>
             </div>
           </div>
-          <div class="mistake-review-list" data-mock-mistakes></div>
-          <div class="practice-actions">
-            <button class="button primary" type="button" data-mock-retry>New mock set</button>
-            <a class="button secondary" href="listening-guided-practice.html">Guided practice</a>
+          <div data-mock-study-focus></div>
+          <div class="result-misses-panel" data-mock-mistakes></div>
+          <div class="practice-actions results-actions">
+            <button class="button primary" type="button" data-mock-retry>Practice again</button>
             <a class="button secondary" href="dashboard.html">Dashboard</a>
           </div>
         </section>
@@ -134,6 +134,7 @@
     <script src="access.js"></script>
     <script src="progress.js"></script>
     <script src="listening-lib.js"></script>
+    <script src="results-lib.js"></script>
     <script src="listening-mock.js"></script>
   </body>
 </html>

@@ -341,71 +341,43 @@ function finishExam({ auto = false } = {}) {
     });
   }
 
-  document.querySelector("[data-mock-final-score]").textContent =
-    `${correctCount}/${state.questions.length}`;
-  document.querySelector("[data-mock-final-note]").textContent = `${percent}% · Structure mock`;
-  document.querySelector("[data-mock-result-message]").textContent = auto
-    ? "Time is up. Your answers were submitted automatically."
-    : "Mock submitted. Feedback is unlocked for review.";
-  document.querySelector("[data-mock-result-meta]").textContent =
-    `Time used: ${formatTime(usedSeconds)} of 25:00 · Answered ${state.answers.size}/${state.questions.length}`;
+  const studyRows = answered.map(({ item, correct }) => ({
+    skill: normalizeSkill(item.skill),
+    correct,
+  }));
+  const mistakeCards = answered
+    .filter((row) => !row.correct)
+    .map(({ item, selectedKey, blank }) => ({
+      tag: [normalizeSkill(item.skill), item.subskill || item.type].filter(Boolean).join(" · "),
+      stemHtml: window.StructureLib
+        ? StructureLib.formatStructureQuestionHtml(item.question, item.type)
+        : ResultsLib.escapeHtml(item.question),
+      yours: blank ? "no answer" : selectedKey,
+      correct: `${item.correctKey}. ${item.correctAnswer}`,
+      explanation: item.explanation,
+      trap: item.commonMistake,
+    }));
 
-  renderSkillSummary(answered);
-  renderMistakes(answered);
+  if (window.ResultsLib) {
+    ResultsLib.paint({
+      scoreEl: document.querySelector("[data-mock-final-score]"),
+      noteEl: document.querySelector("[data-mock-final-note]"),
+      messageEl: document.querySelector("[data-mock-result-message]"),
+      metaEl: document.querySelector("[data-mock-result-meta]"),
+      studyEl: document.querySelector("[data-mock-study-focus]"),
+      mistakesEl: document.querySelector("[data-mock-mistakes]"),
+      correct: correctCount,
+      total: state.questions.length,
+      message: auto ? "Time is up — answers submitted automatically." : "",
+      meta: `Time used: ${formatTime(usedSeconds)} of 25:00 · Answered ${state.answers.size}/${state.questions.length}`,
+      studyRows,
+      mistakes: mistakeCards,
+    });
+  }
+
   setStatus(`Mock saved on this device · ${correctCount}/${state.questions.length} (${percent}%)`);
   showPhase("results");
   resultsPanel.scrollIntoView({ behavior: "smooth", block: "start" });
-}
-
-function renderSkillSummary(answered) {
-  const summary = new Map();
-  answered.forEach(({ item, correct }) => {
-    const skill = normalizeSkill(item.skill);
-    if (!summary.has(skill)) summary.set(skill, { correct: 0, total: 0 });
-    const row = summary.get(skill);
-    row.total += 1;
-    if (correct) row.correct += 1;
-  });
-
-  document.querySelector("[data-mock-skill-summary]").innerHTML = [...summary.entries()]
-    .map(([skill, row]) => {
-      const pct = Math.round((row.correct / row.total) * 100);
-      const status =
-        row.correct === 0 ? "Needs practice" : pct >= 80 ? "Strong" : pct >= 60 ? "OK" : "Review";
-      return `<article class="skill-result"><span>${skill}</span><strong>${row.correct}/${row.total}</strong><small>${status}</small></article>`;
-    })
-    .join("");
-}
-
-function renderMistakes(answered) {
-  const host = document.querySelector("[data-mock-mistakes]");
-  const mistakes = answered.filter((row) => !row.correct);
-  if (!mistakes.length) {
-    host.innerHTML = `
-      <div class="empty-review">
-        <strong>No misses on this mock.</strong>
-        <p>Excellent. Keep a guided session warm so the patterns stay automatic.</p>
-      </div>`;
-    return;
-  }
-
-  host.innerHTML = mistakes
-    .map(({ item, selectedKey, blank }) => {
-      const yours = blank ? "no answer" : selectedKey;
-      return `
-      <article class="mistake-review-item">
-        <span>${normalizeSkill(item.skill)} · ${item.subskill || item.type}</span>
-        <h4>${
-          window.StructureLib
-            ? StructureLib.formatStructureQuestionHtml(item.question, item.type)
-            : item.question
-        }</h4>
-        <p>You chose <b>${yours}</b>. Correct: <b>${item.correctKey}. ${item.correctAnswer}</b></p>
-        <p>${item.explanation}</p>
-        ${item.commonMistake ? `<small>Common trap: ${item.commonMistake}</small>` : ""}
-      </article>`;
-    })
-    .join("");
 }
 
 function bindControls() {

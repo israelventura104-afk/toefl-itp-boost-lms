@@ -108,30 +108,23 @@
         </section>
 
         <section class="results-panel" data-mock-results hidden>
-          <div class="results-summary">
+          <div class="results-hero">
             <div>
               <p class="eyebrow">Mock complete</p>
-              <h2>Your Reading mock results</h2>
-              <p data-mock-result-message></p>
+              <h2>Your score</h2>
+              <p data-mock-result-message hidden></p>
               <p class="dash-last-session" data-mock-result-meta></p>
             </div>
             <div class="result-score">
               <span>Score</span>
               <strong data-mock-final-score>0/50</strong>
-              <small data-mock-final-note>Reading mock</small>
+              <small data-mock-final-note></small>
             </div>
           </div>
-          <div class="result-grid" data-mock-skill-summary></div>
-          <article class="mistake-review-panel">
-            <div class="section-heading compact">
-              <p class="eyebrow">Missed items</p>
-              <h3>Review before the next timed set.</h3>
-            </div>
-            <div class="mistake-review-list" data-mock-mistakes></div>
-          </article>
-          <div class="practice-actions">
-            <button class="button primary" type="button" data-mock-retry>New mock set</button>
-            <a class="button secondary" href="reading-guided-practice.html">Guided practice</a>
+          <div data-mock-study-focus></div>
+          <div class="result-misses-panel" data-mock-mistakes></div>
+          <div class="practice-actions results-actions">
+            <button class="button primary" type="button" data-mock-retry>Practice again</button>
             <a class="button secondary" href="dashboard.html">Dashboard</a>
           </div>
         </section>
@@ -141,6 +134,7 @@
 
     <script src="access.js"></script>
     <script src="progress.js"></script>
+    <script src="results-lib.js"></script>
     <script src="reading-mock.js"></script>
   </body>
 </html>

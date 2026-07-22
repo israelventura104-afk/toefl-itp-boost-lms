@@ -609,42 +609,107 @@ function finishExam() {
     });
   }
 
-  document.querySelector("[data-full-total-score]").textContent =
-    `${totalCorrect}/${totalItems}`;
-  document.querySelector("[data-full-total-note]").textContent = `${totalPercent}% overall`;
-  document.querySelector("[data-full-result-message]").textContent =
-    "Full mock finished. Section scores below. Use guided practice on weak areas before another full attempt.";
-  document.querySelector("[data-full-result-meta]").textContent =
-    `Completed ${new Date().toLocaleString()} · Listening ${L?.percent ?? "—"}% · Structure ${S?.percent ?? "—"}% · Reading ${R?.percent ?? "—"}%`;
-
-  document.querySelector("[data-full-section-scores]").innerHTML = SECTIONS.map((sec) => {
+  const sectionRows = SECTIONS.map((sec) => {
     const r = state.sectionResults[sec.id];
-    if (!r) return "";
-    return `<article class="skill-result">
-      <span>${r.label}</span>
-      <strong>${r.correct}/${r.total}</strong>
-      <small>${r.percent}%</small>
-    </article>`;
-  }).join("");
+    if (!r) return null;
+    return {
+      skill: r.label.replace(/\s*\(.*\)$/, "").trim() || r.label,
+      correct: r.correct,
+      total: r.total,
+      percent: r.percent,
+      wrong: r.detail.filter((d) => !d.correct).length,
+      id: sec.id,
+      auto: r.auto,
+    };
+  }).filter(Boolean);
 
+  const studyFocus = [...sectionRows]
+    .filter((row) => row.wrong > 0)
+    .sort((a, b) => a.percent - b.percent || b.wrong - a.wrong)
+    .slice(0, 3);
+
+  const studyEl = document.querySelector("[data-full-study-focus]");
+  if (studyEl && window.ResultsLib) {
+    if (!studyFocus.length) {
+      studyEl.innerHTML = ResultsLib.renderStudyFocusHtml([]);
+    } else {
+      studyEl.innerHTML = ResultsLib.renderStudyFocusHtml(
+        studyFocus.map((row) => ({
+          skill: row.skill,
+          wrong: row.wrong,
+          correct: row.correct,
+          total: row.total,
+        }))
+      );
+    }
+  }
+
+  // Section score cards as compact "where you missed" list (not item-level — 140 is too much)
   const review = document.querySelector("[data-full-review]");
-  review.innerHTML = SECTIONS.map((sec) => {
-    const r = state.sectionResults[sec.id];
-    if (!r) return "";
-    const misses = r.detail.filter((d) => !d.correct).length;
+  if (review) {
+    review.innerHTML = `
+      <div class="result-misses-head">
+        <p class="eyebrow">Section scores</p>
+        <strong>${sectionRows.length} sections</strong>
+      </div>
+      <div class="result-miss-list">
+        ${sectionRows
+          .map((row, index) => {
+            const href =
+              row.id === "listening"
+                ? "listening-guided-practice.html"
+                : row.id === "structure"
+                  ? "structure-guided-practice.html"
+                  : "reading-guided-practice.html";
+            return `
+          <article class="result-miss">
+            <div class="result-miss-top">
+              <span class="result-miss-num">${index + 1}</span>
+              <span class="result-miss-tag">${row.skill}</span>
+            </div>
+            <p class="result-miss-keys">
+              Score: <b>${row.correct}/${row.total}</b> (${row.percent}%)
+              · Misses: <b>${row.wrong}</b>${row.auto ? " · time ended" : ""}
+            </p>
+            ${
+              row.wrong > 0
+                ? `<p class="result-miss-keys"><a href="${href}">Practice ${row.skill.split(" ")[0]} guided →</a></p>`
+                : ""
+            }
+          </article>`;
+          })
+          .join("")}
+      </div>`;
+  }
+
+  // Primary CTA points at weakest section guided practice
+  const primary = document.querySelector("[data-full-primary-cta]");
+  const weakest = studyFocus[0];
+  if (primary && weakest) {
     const href =
-      sec.id === "listening"
+      weakest.id === "listening"
         ? "listening-guided-practice.html"
-        : sec.id === "structure"
+        : weakest.id === "structure"
           ? "structure-guided-practice.html"
           : "reading-guided-practice.html";
-    return `<article class="mistake-review-item">
-      <span>${r.label}</span>
-      <h4>${r.correct}/${r.total} correct (${r.percent}%)</h4>
-      <p>${misses} miss${misses === 1 ? "" : "es"} in this section${r.auto ? " · section auto-submitted on time" : ""}.</p>
-      <p><a class="button secondary compact-button" href="${href}">Practice ${sec.label.split(" ")[0]} guided</a></p>
-    </article>`;
-  }).join("");
+    primary.href = href;
+    primary.textContent = `Practice ${weakest.skill.split(" ")[0]}`;
+  } else if (primary) {
+    primary.href = "dashboard.html";
+    primary.textContent = "Dashboard";
+  }
+
+  if (window.ResultsLib) {
+    ResultsLib.paint({
+      scoreEl: document.querySelector("[data-full-total-score]"),
+      noteEl: document.querySelector("[data-full-total-note]"),
+      messageEl: document.querySelector("[data-full-result-message]"),
+      metaEl: document.querySelector("[data-full-result-meta]"),
+      correct: totalCorrect,
+      total: totalItems,
+      meta: `Listening ${L?.percent ?? "—"}% · Structure ${S?.percent ?? "—"}% · Reading ${R?.percent ?? "—"}%`,
+    });
+  }
 
   setStatus(`Full mock saved · ${totalCorrect}/${totalItems} (${totalPercent}%)`);
   showPhase("results");

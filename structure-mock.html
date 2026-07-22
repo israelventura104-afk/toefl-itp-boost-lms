@@ -109,34 +109,26 @@
 
         <!-- RESULTS -->
         <section class="results-panel" id="results" data-mock-results hidden>
-          <div class="results-summary">
+          <div class="results-hero">
             <div>
               <p class="eyebrow">Mock complete</p>
-              <h2>Your Structure mock results</h2>
-              <p data-mock-result-message>Review your score and weak patterns below.</p>
+              <h2>Your score</h2>
+              <p data-mock-result-message hidden></p>
               <p class="dash-last-session" data-mock-result-meta></p>
             </div>
             <div class="result-score">
               <span>Score</span>
               <strong data-mock-final-score>0/40</strong>
-              <small data-mock-final-note>Structure mock</small>
+              <small data-mock-final-note></small>
             </div>
           </div>
 
-          <div class="result-grid" data-mock-skill-summary></div>
+          <div data-mock-study-focus></div>
+          <div class="result-misses-panel" data-mock-mistakes></div>
 
-          <article class="mistake-review-panel">
-            <div class="section-heading compact">
-              <p class="eyebrow">Missed items</p>
-              <h3>Study these before your next mock or guided drill.</h3>
-            </div>
-            <div class="mistake-review-list" data-mock-mistakes></div>
-          </article>
-
-          <div class="practice-actions">
-            <button class="button primary" type="button" data-mock-retry>New mock set</button>
-            <a class="button secondary" href="structure-guided-practice.html">Guided practice</a>
-            <a class="button secondary" href="dashboard.html#score-plan">Dashboard</a>
+          <div class="practice-actions results-actions">
+            <button class="button primary" type="button" data-mock-retry>Practice again</button>
+            <a class="button secondary" href="dashboard.html">Dashboard</a>
           </div>
         </section>
       </div>
@@ -146,6 +138,7 @@
     <script src="access.js"></script>
     <script src="progress.js"></script>
     <script src="structure-lib.js"></script>
+    <script src="results-lib.js"></script>
     <script src="structure-mock.js"></script>
   </body>
 </html>

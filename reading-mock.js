@@ -297,17 +297,38 @@ function finishExam({ auto = false } = {}) {
     });
   }
 
-  document.querySelector("[data-mock-final-score]").textContent =
-    `${correctCount}/${state.items.length}`;
-  document.querySelector("[data-mock-final-note]").textContent = `${percent}% · Reading mock`;
-  document.querySelector("[data-mock-result-message]").textContent = auto
-    ? "Time is up. Your answers were submitted automatically."
-    : "Mock submitted. Feedback is unlocked for review.";
-  document.querySelector("[data-mock-result-meta]").textContent =
-    `Time used: ${formatTime(usedSeconds)} of 55:00 · Answered ${state.answers.size}/${state.items.length}`;
+  const studyRows = rows.map(({ question, correct }) => ({
+    skill: normalizeSkill(question.skill),
+    correct,
+  }));
+  const mistakeCards = rows
+    .filter((row) => !row.correct)
+    .slice(0, 25)
+    .map(({ question, selectedKey, blank, passage }) => ({
+      tag: [passage.title, normalizeSkill(question.skill)].filter(Boolean).join(" · "),
+      stem: question.question,
+      yours: blank ? "no answer" : selectedKey,
+      correct: `${question.correctKey}. ${question.correctAnswer}`,
+      explanation: question.explanation,
+    }));
 
-  renderSkills(rows);
-  renderMistakes(rows);
+  if (window.ResultsLib) {
+    ResultsLib.paint({
+      scoreEl: document.querySelector("[data-mock-final-score]"),
+      noteEl: document.querySelector("[data-mock-final-note]"),
+      messageEl: document.querySelector("[data-mock-result-message]"),
+      metaEl: document.querySelector("[data-mock-result-meta]"),
+      studyEl: document.querySelector("[data-mock-study-focus]"),
+      mistakesEl: document.querySelector("[data-mock-mistakes]"),
+      correct: correctCount,
+      total: state.items.length,
+      message: auto ? "Time is up — answers submitted automatically." : "",
+      meta: `Time used: ${formatTime(usedSeconds)} of 55:00 · Answered ${state.answers.size}/${state.items.length}`,
+      studyRows,
+      mistakes: mistakeCards,
+    });
+  }
+
   setStatus(`Reading mock saved · ${correctCount}/${state.items.length} (${percent}%)`);
   showPhase("results");
   resultsPanel.scrollIntoView({ behavior: "smooth", block: "start" });
@@ -324,48 +345,6 @@ function startTimerFromRemaining() {
       finishExam({ auto: true });
     }
   }, 1000);
-}
-
-function renderSkills(rows) {
-  const summary = new Map();
-  rows.forEach(({ question, correct }) => {
-    const skill = normalizeSkill(question.skill);
-    if (!summary.has(skill)) summary.set(skill, { correct: 0, total: 0 });
-    const row = summary.get(skill);
-    row.total += 1;
-    if (correct) row.correct += 1;
-  });
-  document.querySelector("[data-mock-skill-summary]").innerHTML = [...summary.entries()]
-    .map(
-      ([skill, row]) =>
-        `<article class="skill-result"><span>${skill}</span><strong>${row.correct}/${row.total}</strong></article>`
-    )
-    .join("");
-}
-
-function renderMistakes(rows) {
-  const host = document.querySelector("[data-mock-mistakes]");
-  const misses = rows.filter((row) => !row.correct);
-  if (!misses.length) {
-    host.innerHTML =
-      `<div class="empty-review"><strong>No misses on this mock.</strong><p>Excellent pacing and accuracy.</p></div>`;
-    return;
-  }
-  host.innerHTML = misses
-    .slice(0, 25)
-    .map(({ question, selectedKey, blank, passage }) => {
-      const yours = blank ? "no answer" : selectedKey;
-      return `<article class="mistake-review-item">
-        <span>${passage.title} · ${normalizeSkill(question.skill)}</span>
-        <h4>${question.question}</h4>
-        <p>You chose <b>${yours}</b>. Correct: <b>${question.correctKey}. ${question.correctAnswer}</b></p>
-        <p>${question.explanation}</p>
-      </article>`;
-    })
-    .join("");
-  if (misses.length > 25) {
-    host.innerHTML += `<p class="dash-empty-note">Showing 25 of ${misses.length} misses.</p>`;
-  }
 }
 
 function bindControls() {

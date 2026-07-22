@@ -215,36 +215,36 @@ function finishExam({ auto = false } = {}) {
     });
   }
 
-  document.querySelector("[data-mock-final-score]").textContent =
-    `${correctCount}/${state.rows.length}`;
-  document.querySelector("[data-mock-final-note]").textContent = `${percent}% · Listening mock`;
-  document.querySelector("[data-mock-result-message]").textContent = auto
-    ? "Time is up. Your answers were submitted automatically."
-    : "Mock submitted. Feedback is unlocked for review.";
-  document.querySelector("[data-mock-result-meta]").textContent =
-    `Time used: ${formatTime(usedSeconds)} of 20:00 · Answered ${state.answers.size}/${state.rows.length}`;
+  const studyRows = rows.map(({ item, correct }) => ({
+    skill: item.topic || item.assetType || "Listening",
+    correct,
+  }));
+  const mistakeCards = rows
+    .filter((row) => !row.correct)
+    .slice(0, 20)
+    .map(({ item, question, selectedKey, blank }) => ({
+      tag: [item.id, item.topic || item.assetType].filter(Boolean).join(" · "),
+      stem: question.prompt,
+      yours: blank ? "no answer" : selectedKey,
+      correct: `${question.correctKey}. ${question.correctAnswer}`,
+      explanation: question.explanation,
+    }));
 
-  const host = document.querySelector("[data-mock-mistakes]");
-  const misses = rows.filter((row) => !row.correct);
-  if (!misses.length) {
-    host.innerHTML =
-      `<div class="empty-review"><strong>No misses.</strong><p>Excellent Part A accuracy.</p></div>`;
-  } else {
-    host.innerHTML = misses
-      .slice(0, 20)
-      .map(({ item, question, selectedKey, blank }) => {
-        const yours = blank ? "no answer" : selectedKey;
-        return `<article class="mistake-review-item">
-          <span>${item.id} · ${item.topic || item.assetType}</span>
-          <h4>${question.prompt}</h4>
-          <p>You chose <b>${yours}</b>. Correct: <b>${question.correctKey}. ${question.correctAnswer}</b></p>
-          <p>${question.explanation}</p>
-        </article>`;
-      })
-      .join("");
-    if (misses.length > 20) {
-      host.innerHTML += `<p class="dash-empty-note">Showing 20 of ${misses.length} misses.</p>`;
-    }
+  if (window.ResultsLib) {
+    ResultsLib.paint({
+      scoreEl: document.querySelector("[data-mock-final-score]"),
+      noteEl: document.querySelector("[data-mock-final-note]"),
+      messageEl: document.querySelector("[data-mock-result-message]"),
+      metaEl: document.querySelector("[data-mock-result-meta]"),
+      studyEl: document.querySelector("[data-mock-study-focus]"),
+      mistakesEl: document.querySelector("[data-mock-mistakes]"),
+      correct: correctCount,
+      total: state.rows.length,
+      message: auto ? "Time is up — answers submitted automatically." : "",
+      meta: `Time used: ${formatTime(usedSeconds)} of 20:00 · Answered ${state.answers.size}/${state.rows.length}`,
+      studyRows,
+      mistakes: mistakeCards,
+    });
   }
 
   setStatus(`Listening mock saved · ${correctCount}/${state.rows.length} (${percent}%)`);
