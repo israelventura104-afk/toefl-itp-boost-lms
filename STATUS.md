@@ -192,3 +192,10 @@ GitHub Pages notes:
 - Free intro samples excluded from all three banks
 - Listening section uses Part A short conversations (class bank)
 - Saves section mocks + `recordFullMock` overall result
+
+### Entry path update
+
+- Landing no longer pushes "Open dashboard" as the main start
+- Free short demo test: `demo-test.html` (3 Structure + 3 Listening + 3 Reading)
+- Config: `data/demo-test.json`
+- Dashboard remains for after class code / course work

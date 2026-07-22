@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Short Demo Test | TOEFL ITP Boost</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="app-body">
+    <aside class="sidebar" aria-label="Student navigation">
+      <a class="brand app-brand" href="index.html">
+        <span class="brand-mark">IB</span>
+        <span class="brand-copy">
+          <small>By Teacher Israel Ventura</small>
+          <strong>TOEFL ITP Boost</strong>
+        </span>
+      </a>
+      <nav class="app-nav">
+        <a href="index.html">Home</a>
+        <a class="active" href="demo-test.html">Demo test</a>
+        <a href="structure.html">Structure free</a>
+        <a href="listening.html">Listening free</a>
+        <a href="reading.html">Reading free</a>
+        <a href="dashboard.html#class-access">Class access</a>
+      </nav>
+    </aside>
+
+    <main class="lesson-shell">
+      <header class="lesson-hero guided-hero">
+        <a class="back-link" href="index.html">Back to home</a>
+        <p class="eyebrow">Free · short snapshot</p>
+        <h1>See what you can do right now</h1>
+        <p>
+          A short demo — not the full TOEFL ITP and not your full course.
+          A few Structure items, 3 short listening clips, and a short reading sample.
+          No class code needed. No timer pressure.
+        </p>
+        <p class="practice-status" data-demo-status hidden></p>
+      </header>
+
+      <!-- START -->
+      <section class="mock-start-panel" data-demo-start>
+        <div class="section-heading">
+          <p class="eyebrow">What you will try</p>
+          <h2>About 9 quick items</h2>
+        </div>
+        <ul class="mock-rules">
+          <li><strong>Structure</strong> — 3 questions (one focus pattern each)</li>
+          <li><strong>Listening</strong> — 3 short conversations with audio</li>
+          <li><strong>Reading</strong> — 1 short passage · 3 questions</li>
+          <li>Answer carefully. You will see your snapshot when you finish.</li>
+          <li>Full course practice opens later with your teacher’s class code.</li>
+        </ul>
+        <div class="practice-actions">
+          <button class="button primary" type="button" data-demo-begin>Start demo test</button>
+          <a class="button secondary" href="index.html">Back to home</a>
+        </div>
+      </section>
+
+      <!-- EXAM -->
+      <section class="guided-practice-panel" data-demo-exam hidden>
+        <div class="mock-exam-bar">
+          <div>
+            <p class="eyebrow">Section</p>
+            <strong data-demo-section>Structure</strong>
+          </div>
+          <div>
+            <p class="eyebrow">Progress</p>
+            <strong data-demo-progress>1 / 9</strong>
+          </div>
+          <div>
+            <p class="eyebrow">Mode</p>
+            <strong>Free demo · no timer</strong>
+          </div>
+        </div>
+
+        <div class="reading-practice-layout">
+          <article class="reading-passage" data-demo-passage-wrap hidden>
+            <h3 data-demo-passage-title></h3>
+            <div data-demo-passage-text></div>
+          </article>
+
+          <div class="practice-card guided-card listening-card">
+            <div class="practice-topline">
+              <span data-demo-counter>1 / 9</span>
+              <span class="question-meta" data-demo-type></span>
+            </div>
+            <p class="question-meta" data-demo-meta></p>
+
+            <div class="listening-player" data-demo-audio-wrap hidden>
+              <audio data-demo-audio controls preload="metadata"></audio>
+              <button class="button secondary compact-button" type="button" data-demo-replay>
+                Replay
+              </button>
+            </div>
+
+            <h3 data-demo-question></h3>
+            <div class="choice-list" data-demo-options></div>
+            <div class="practice-actions">
+              <button class="button secondary" type="button" data-demo-prev>Previous</button>
+              <button class="button primary" type="button" data-demo-next>Next</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- RESULTS -->
+      <section class="results-panel" data-demo-results hidden>
+        <div class="results-summary">
+          <div>
+            <p class="eyebrow">Your demo snapshot</p>
+            <h2>This is a starting picture — not a final score</h2>
+            <p data-demo-result-message></p>
+          </div>
+          <div class="result-score">
+            <span>Total</span>
+            <strong data-demo-total>0/9</strong>
+            <small data-demo-total-note>Demo items</small>
+          </div>
+        </div>
+
+        <div class="result-grid" data-demo-section-scores></div>
+
+        <article class="mistake-review-panel">
+          <div class="section-heading compact">
+            <p class="eyebrow">What to do next</p>
+            <h3>Build from this snapshot</h3>
+          </div>
+          <div class="mistake-review-list" data-demo-next-steps></div>
+        </article>
+
+        <div class="practice-actions">
+          <a class="button primary" href="structure.html">Free Structure strategies</a>
+          <a class="button secondary" href="listening.html">Free Listening samples</a>
+          <a class="button secondary" href="reading.html">Free Reading sample</a>
+          <a class="button secondary" href="dashboard.html#class-access">Enter class code</a>
+          <button class="button secondary" type="button" data-demo-retry>Try demo again</button>
+        </div>
+      </section>
+    </main>
+
+    <script src="access.js"></script>
+    <script src="listening-lib.js"></script>
+    <script src="demo-test.js"></script>
+  </body>
+</html>

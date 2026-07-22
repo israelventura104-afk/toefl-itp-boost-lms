@@ -1,0 +1,28 @@
+{
+  "id": "DEMO-ITP-SHORT",
+  "title": "Short demo test",
+  "purpose": "free_entry_snapshot",
+  "fixed": true,
+  "note": "Short snapshot so new students see what they can do before the full course. Free for everyone. Not a placement exam and not the full ITP mock.",
+  "structure_ids": [
+    "TQB-STR-0001",
+    "TQB-STR-0004",
+    "TQB-STR-0070"
+  ],
+  "structure_focus": [
+    "Subject and verb agreement",
+    "True subject with interrupting phrases",
+    "Preposition + gerund patterns"
+  ],
+  "listening_ids": [
+    "LIST-0001",
+    "LIST-0002",
+    "LIST-0003"
+  ],
+  "reading_passage_id": "READ-0001",
+  "reading_question_ids": [
+    "READ-0001-Q01",
+    "READ-0001-Q02",
+    "READ-0001-Q03"
+  ]
+}
