@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -7,15 +7,26 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body class="app-body" data-access-page="dashboard">
-    <aside class="sidebar" aria-label="Student navigation">
-      <a class="brand app-brand" href="index.html">
-        <span class="brand-mark" aria-hidden="true"><img src="assets/logo.png" alt=""></span>
+    <header class="topbar">
+      <a class="brand" href="index.html" aria-label="TOEFL ITP Boost home">
+        <span class="brand-mark" aria-hidden="true"><img src="assets/logo.png" alt="Israel Ventura"></span>
         <span class="brand-copy">
           <small>By Teacher Israel Ventura</small>
           <strong>TOEFL ITP Boost</strong>
         </span>
       </a>
-
+      <nav class="nav" aria-label="Main navigation">
+        <a href="demo-test.html">Demo test</a>
+        <a href="structure.html">Structure</a>
+        <a href="listening.html">Listening</a>
+        <a href="reading.html">Reading</a>
+      </nav>
+      <div class="nav-actions">
+        <a class="button secondary" href="dashboard.html#class-access">Class access</a>
+        <a class="button primary" href="dashboard.html">Dashboard</a>
+      </div>
+    </header>
+    <div class="app-frame"><aside class="sidebar" aria-label="Student navigation">
       <nav class="app-nav">
         <a class="active" href="#overview">Overview</a>
         <a href="#score-plan">Score Plan</a>
@@ -32,7 +43,7 @@
         <div>
           <p class="eyebrow">Student dashboard</p>
           <h1>Welcome to your TOEFL ITP path.</h1>
-          <p>Start with free strategies and samples. Full class practice opens with your teacherâ€™s class code.</p>
+          <p>Start with free strategies and samples. Full class practice opens with your teacher's class code.</p>
           <p class="access-status" data-access-status></p>
         </div>
         <a class="button primary" href="structure.html">Open Structure preview</a>
@@ -207,7 +218,7 @@
           <p class="eyebrow">Teacher access</p>
           <h2 id="commitment-title">Open full class practice materials</h2>
           <p>
-            Full drills and protected practice stay with Teacher Israel Venturaâ€™s
+            Full drills and protected practice stay with Teacher Israel Ventura's
             groups. Free previews stay open. Enter the class code your teacher gave you.
           </p>
           <p class="access-status" data-access-status></p>
@@ -247,6 +258,7 @@
         </div>
       </section>
     </main>
+    </div>
     <script src="access.js"></script>
     <script src="progress.js"></script>
     <script src="dashboard.js"></script>

@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -7,15 +7,26 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body class="app-body">
-    <aside class="sidebar" aria-label="Student navigation">
-      <a class="brand app-brand" href="dashboard.html">
-        <span class="brand-mark" aria-hidden="true"><img src="assets/logo.png" alt=""></span>
+    <header class="topbar">
+      <a class="brand" href="index.html" aria-label="TOEFL ITP Boost home">
+        <span class="brand-mark" aria-hidden="true"><img src="assets/logo.png" alt="Israel Ventura"></span>
         <span class="brand-copy">
           <small>By Teacher Israel Ventura</small>
           <strong>TOEFL ITP Boost</strong>
         </span>
       </a>
-
+      <nav class="nav" aria-label="Main navigation">
+        <a href="demo-test.html">Demo test</a>
+        <a href="structure.html">Structure</a>
+        <a href="listening.html">Listening</a>
+        <a href="reading.html">Reading</a>
+      </nav>
+      <div class="nav-actions">
+        <a class="button secondary" href="dashboard.html#class-access">Class access</a>
+        <a class="button primary" href="dashboard.html">Dashboard</a>
+      </div>
+    </header>
+    <div class="app-frame"><aside class="sidebar" aria-label="Student navigation">
       <nav class="app-nav">
         <a href="dashboard.html#overview">Overview</a>
         <a class="active" href="dashboard.html#practice">Sections</a>
@@ -30,7 +41,7 @@
         <p class="eyebrow">Structure and Written Expression</p>
         <h1>Learn the patterns before you answer the questions.</h1>
         <p>
-          In this section, do not guess by what â€œsounds right.â€ Train your eyes
+          In this section, do not guess by what "sounds right." Train your eyes
           to find the structure: subject, verb, connector, and error pattern.
         </p>
       </header>
@@ -47,14 +58,14 @@
             <h3>Find the subject and the real verb first.</h3>
             <p>
               A TOEFL Structure question is like a sentence with missing bones.
-              Before looking at the answer choices, ask: â€œWho or what is the
-              sentence about?â€ That is the subject. Then ask: â€œWhat action or
-              state belongs to that subject?â€ That is the main verb.
+              Before looking at the answer choices, ask: "Who or what is the
+              sentence about?" That is the subject. Then ask: "What action or
+              state belongs to that subject?" That is the main verb.
             </p>
             <div class="example-box">
               <strong>Example</strong>
               <p>The students in the laboratory ___ the results carefully.</p>
-              <p><b>Think:</b> The subject is not â€œlaboratory.â€ The subject is â€œstudents.â€ The verb must match a plural subject.</p>
+              <p><b>Think:</b> The subject is not "laboratory." The subject is "students." The verb must match a plural subject.</p>
               <p><b>Best answer:</b> analyze</p>
             </div>
           </div>
@@ -100,7 +111,7 @@
               <strong>Example</strong>
               <p>The professor, along with two assistants, <u>are</u> preparing the exam.</p>
               <p><b>Remove the middle:</b> The professor are preparing...</p>
-              <p><b>Now it is obvious:</b> â€œareâ€ should be â€œis.â€</p>
+              <p><b>Now it is obvious:</b> "are" should be "is."</p>
             </div>
           </div>
         </article>
@@ -145,7 +156,7 @@
           <h2 id="vault-title">Full Structure path for class students</h2>
           <p>
             Deeper strategy notes, guided drills from the bank, and later timed
-            practice stay with Teacher Israel Venturaâ€™s class groups.
+            practice stay with Teacher Israel Ventura's class groups.
           </p>
         </div>
 
@@ -177,6 +188,7 @@
         </div>
       </section>
     </main>
+    </div>
     <script src="access.js"></script>
     <script src="structure-practice.js"></script>
   </body>

@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -7,14 +7,26 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body class="app-body">
-    <aside class="sidebar" aria-label="Student navigation">
-      <a class="brand app-brand" href="dashboard.html">
-        <span class="brand-mark" aria-hidden="true"><img src="assets/logo.png" alt=""></span>
+    <header class="topbar">
+      <a class="brand" href="index.html" aria-label="TOEFL ITP Boost home">
+        <span class="brand-mark" aria-hidden="true"><img src="assets/logo.png" alt="Israel Ventura"></span>
         <span class="brand-copy">
           <small>By Teacher Israel Ventura</small>
           <strong>TOEFL ITP Boost</strong>
         </span>
       </a>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="demo-test.html">Demo test</a>
+        <a href="structure.html">Structure</a>
+        <a href="listening.html">Listening</a>
+        <a href="reading.html">Reading</a>
+      </nav>
+      <div class="nav-actions">
+        <a class="button secondary" href="dashboard.html#class-access">Class access</a>
+        <a class="button primary" href="dashboard.html">Dashboard</a>
+      </div>
+    </header>
+    <div class="app-frame"><aside class="sidebar" aria-label="Student navigation">
       <nav class="app-nav">
         <a href="dashboard.html#overview">Overview</a>
         <a class="active" href="dashboard.html#practice">Sections</a>
@@ -133,7 +145,7 @@
           <h2 id="reading-vault-title">Full Reading path for class students</h2>
           <p>
             Full reading banks and deeper strategy work stay with Teacher
-            Israel Venturaâ€™s class groups. The free sample passage above stays open.
+            Israel Ventura's class groups. The free sample passage above stays open.
           </p>
         </div>
         <div class="vault-grid" aria-hidden="true">
@@ -151,6 +163,7 @@
         </div>
       </section>
     </main>
+    </div>
     <script src="access.js"></script>
     <script src="reading-practice.js"></script>
   </body>

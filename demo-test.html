@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -7,14 +7,26 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body class="app-body">
-    <aside class="sidebar" aria-label="Student navigation">
-      <a class="brand app-brand" href="index.html">
-        <span class="brand-mark" aria-hidden="true"><img src="assets/logo.png" alt=""></span>
+    <header class="topbar">
+      <a class="brand" href="index.html" aria-label="TOEFL ITP Boost home">
+        <span class="brand-mark" aria-hidden="true"><img src="assets/logo.png" alt="Israel Ventura"></span>
         <span class="brand-copy">
           <small>By Teacher Israel Ventura</small>
           <strong>TOEFL ITP Boost</strong>
         </span>
       </a>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="demo-test.html">Demo test</a>
+        <a href="structure.html">Structure</a>
+        <a href="listening.html">Listening</a>
+        <a href="reading.html">Reading</a>
+      </nav>
+      <div class="nav-actions">
+        <a class="button secondary" href="dashboard.html#class-access">Class access</a>
+        <a class="button primary" href="dashboard.html">Dashboard</a>
+      </div>
+    </header>
+    <div class="app-frame"><aside class="sidebar" aria-label="Student navigation">
       <nav class="app-nav">
         <a href="index.html">Home</a>
         <a class="active" href="demo-test.html">Demo test</a>
@@ -49,7 +61,7 @@
           <li><strong>Listening</strong> â€” 3 short conversations with audio</li>
           <li><strong>Reading</strong> â€” 1 short passage Â· 3 questions</li>
           <li>Answer carefully. You will see your snapshot when you finish.</li>
-          <li>Full course practice opens later with your teacherâ€™s class code.</li>
+          <li>Full course practice opens later with your teacher's class code.</li>
         </ul>
         <div class="practice-actions">
           <button class="button primary" type="button" data-demo-begin>Start demo test</button>
@@ -138,6 +150,7 @@
         </div>
       </section>
     </main>
+    </div>
 
     <script src="access.js"></script>
     <script src="listening-lib.js"></script>
