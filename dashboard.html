@@ -9,7 +9,14 @@
   <body class="app-body" data-access-page="dashboard">
     <header class="topbar">
       <a class="brand" href="index.html" aria-label="TOEFL ITP Boost home">
-        <span class="brand-mark" aria-hidden="true"><img class="brand-logo" src="assets/logo.png" alt="Israel Ventura" width="44" height="44"></span>
+        <span class="brand-mark" aria-hidden="true"
+          ><img
+            class="brand-logo"
+            src="assets/logo.png"
+            alt="Israel Ventura"
+            width="44"
+            height="44"
+        /></span>
         <span class="brand-copy">
           <small>By Teacher Israel Ventura</small>
           <strong>TOEFL ITP Boost</strong>
@@ -26,239 +33,181 @@
         <a class="button primary" href="dashboard.html">Dashboard</a>
       </div>
     </header>
-    <div class="app-frame"><aside class="sidebar" aria-label="Student navigation">
-      <nav class="app-nav">
-        <a class="active" href="#overview">Overview</a>
-        <a href="#score-plan">Score Plan</a>
-        <a href="#practice">Sections</a>
-        <a href="#quick-stats">Quick Stats</a>
-        <a href="#class-access">Class access</a>
-        <a href="#mock-exam">Mocks</a>
-        <a href="full-mock.html">Full mock</a>
-      </nav>
-    </aside>
 
-    <main class="dashboard-shell">
-      <header class="dashboard-header" id="overview">
-        <div>
-          <p class="eyebrow">Student dashboard</p>
-          <h1>Welcome to your TOEFL ITP path.</h1>
-          <p>Start with free strategies and samples. Full class practice opens with your teacher's class code.</p>
-          <p class="access-status" data-access-status></p>
-        </div>
-        <a class="button primary" href="structure.html">Open Structure preview</a>
-      </header>
+    <div class="app-frame">
+      <aside class="sidebar" aria-label="Student navigation">
+        <nav class="app-nav">
+          <a class="active" href="#overview">Overview</a>
+          <a href="#stats">My stats</a>
+          <a href="#skills">Skills</a>
+          <a href="#class-access">Class access</a>
+          <a href="structure.html">Practice sections</a>
+        </nav>
+      </aside>
 
-      <section class="score-plan-panel" id="score-plan" aria-labelledby="score-plan-title">
-        <div class="plan-hero">
-          <div>
-            <p class="eyebrow">Practice path</p>
-            <h2 id="score-plan-title" data-dash-plan-title>Structure is a strong place to start.</h2>
-            <p data-dash-plan-copy>
-              Learn the strategies, try the fixed sample set, then use guided
-              practice when your teacher has opened class access on this device.
+      <main class="dashboard-shell dashboard-home">
+        <!-- 1. Welcome + name -->
+        <header class="dashboard-header" id="overview">
+          <div class="dashboard-welcome">
+            <p class="eyebrow">Student dashboard</p>
+            <h1 data-dash-greeting>Welcome.</h1>
+            <p data-dash-welcome-sub>
+              Your results and study pulse on this device — calm, clear, nothing extra.
             </p>
-            <p class="dash-last-session" data-dash-last-session></p>
+            <p class="access-status" data-access-status></p>
           </div>
-          <div class="target-card">
-            <span data-dash-focus-label>Suggested focus</span>
-            <strong data-dash-focus-skill>Structure</strong>
-            <small data-dash-focus-note>Grammar patterns first</small>
+
+          <div class="dash-name-panel" data-dash-name-panel>
+            <form class="dash-name-form" data-dash-name-form>
+              <label>
+                Your name
+                <input
+                  type="text"
+                  name="studentName"
+                  data-dash-name-input
+                  maxlength="40"
+                  autocomplete="name"
+                  placeholder="e.g. María"
+                  required
+                />
+              </label>
+              <button class="button primary" type="submit">Save name</button>
+            </form>
+            <p class="dash-name-hint">Saved only on this browser — no account needed.</p>
           </div>
-        </div>
+        </header>
 
-        <div class="plan-grid">
-          <article class="today-focus-card">
-            <p class="eyebrow">Free preview</p>
-            <h3 data-dash-focus-skill>Subject-Verb Agreement</h3>
-            <p data-dash-focus-note>Review true subjects, interrupting phrases, and agreement traps before starting practice.</p>
-            <a class="button primary" href="structure.html">Study free strategies</a>
-          </article>
+        <!-- 2. One focus line (not duplicated cards) -->
+        <section class="dash-focus" id="focus" aria-labelledby="focus-title">
+          <p class="eyebrow">Study next</p>
+          <h2 id="focus-title" data-dash-focus-title>Complete a practice set to see your focus.</h2>
+          <p data-dash-focus-note>
+            When you finish guided practice or a mock, your weakest pattern appears here.
+          </p>
+        </section>
 
-          <article class="skill-breakdown-card">
-            <p class="eyebrow">Structure Skill Breakdown</p>
-            <div data-dash-skills>
-              <div class="skill-row">
-                <span>No guided sessions yet</span>
-                <div class="mini-bar"><span style="width: 8%"></span></div>
-                <b>Start</b>
+        <!-- 3. Stats only -->
+        <section class="dash-stats" id="stats" aria-labelledby="stats-title">
+          <div class="section-heading compact">
+            <p class="eyebrow">Quick stats</p>
+            <h2 id="stats-title">Your numbers</h2>
+          </div>
+          <div class="stats-row dash-stats-row">
+            <article>
+              <span>Structure avg</span>
+              <strong data-dash-avg-structure>—</strong>
+              <small data-dash-note-structure>No sessions yet</small>
+            </article>
+            <article>
+              <span>Listening avg</span>
+              <strong data-dash-avg-listening>—</strong>
+              <small data-dash-note-listening>No sessions yet</small>
+            </article>
+            <article>
+              <span>Reading avg</span>
+              <strong data-dash-avg-reading>—</strong>
+              <small data-dash-note-reading>No sessions yet</small>
+            </article>
+            <article>
+              <span>Practice streak</span>
+              <strong data-dash-streak>—</strong>
+              <small data-dash-streak-note>Practice today to start</small>
+            </article>
+            <article>
+              <span>Sessions saved</span>
+              <strong data-dash-sessions>0</strong>
+              <small data-dash-sessions-note>Guided + mocks on this device</small>
+            </article>
+          </div>
+        </section>
+
+        <!-- 4. Skills by section (3 columns) — no practice CTAs here -->
+        <section class="dash-skills" id="skills" aria-labelledby="skills-title">
+          <div class="section-heading compact">
+            <p class="eyebrow">Skill breakdown</p>
+            <h2 id="skills-title">How you are doing by section</h2>
+          </div>
+          <div class="dash-skills-grid">
+            <article class="dash-skill-card">
+              <p class="eyebrow">Structure</p>
+              <h3>Grammar patterns</h3>
+              <div data-dash-skills-structure>
+                <p class="dash-empty-note">No Structure practice saved yet.</p>
               </div>
-            </div>
-          </article>
-
-          <article class="recommended-card" id="interactive-practice" data-requires-access>
-            <p class="eyebrow">Class practice</p>
-            <h3>15-question Structure drill</h3>
-            <p>Randomized from the 190-item Structure bank (free intro set excluded). No timer. Results save on this device.</p>
-            <a class="button primary" href="structure-guided-practice.html" data-access-link>Start guided practice</a>
-          </article>
-
-          <article class="mistake-card">
-            <p class="eyebrow">Mistake Review</p>
-            <ul class="mistake-list" data-dash-mistakes>
-              <li><b>No saved mistakes yet</b><span>Finish a guided drill to collect patterns</span></li>
-            </ul>
-            <a class="button secondary" href="structure-guided-practice.html" data-access-link>Practice again</a>
-          </article>
-
-          <article class="readiness-card">
-            <p class="eyebrow">Structure readiness</p>
-            <div class="readiness-meter"><span data-dash-ready-meter style="width: 8%"></span></div>
-            <h3 data-dash-ready-label>Not started</h3>
-            <p data-dash-ready-note>Complete a Structure guided drill to build your baseline.</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="artifact-section" id="practice" aria-labelledby="practice-title">
-        <div class="section-heading">
-          <p class="eyebrow">Learning artifacts</p>
-          <h2 id="practice-title">Choose what you want to train.</h2>
-        </div>
-
-        <div class="artifact-grid">
-          <article class="artifact-card">
-            <span class="icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24"><path d="M4 13v-1a8 8 0 0 1 16 0v1"/><rect x="3" y="12" width="4" height="7" rx="2"/><rect x="17" y="12" width="4" height="7" rx="2"/></svg>
-            </span>
-            <h3>Listening</h3>
-            <p>Free sample clips, class Part A guided drills, and timed Listening mock (Part A focus).</p>
-            <div class="access-actions">
-              <a class="button secondary" href="listening.html">Free preview</a>
-              <a class="button secondary" href="listening-guided-practice.html" data-access-link>Guided</a>
-              <a class="button secondary" href="listening-mock.html" data-access-link>Mock</a>
-            </div>
-            <p class="dash-last-session" data-dash-last-listening></p>
-          </article>
-
-          <article class="artifact-card">
-            <span class="icon gold" aria-hidden="true">
-              <svg viewBox="0 0 24 24"><path d="M5 4h14"/><path d="M7 9h10"/><path d="M9 14h6"/><path d="M6 20 12 4l6 16"/></svg>
-            </span>
-            <h3>Structure</h3>
-            <p>Grammar patterns, sentence completion, error recognition, and teacher strategy notes.</p>
-            <a class="button secondary" href="structure.html">Open section</a>
-          </article>
-
-          <article class="artifact-card">
-            <span class="icon navy" aria-hidden="true">
-              <svg viewBox="0 0 24 24"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v17H6.5A2.5 2.5 0 0 0 4 22z"/><path d="M8 8h8"/><path d="M8 12h7"/><path d="M8 16h6"/></svg>
-            </span>
-            <h3>Reading</h3>
-            <p>Free sample passage, class guided drills, and timed Reading mock (~50Q / 55 min).</p>
-            <div class="access-actions">
-              <a class="button secondary" href="reading.html">Free preview</a>
-              <a class="button secondary" href="reading-guided-practice.html" data-access-link>Guided</a>
-              <a class="button secondary" href="reading-mock.html" data-access-link>Mock</a>
-            </div>
-            <p class="dash-last-session" data-dash-last-reading></p>
-          </article>
-
-          <section class="quick-stats" id="quick-stats" aria-label="Quick stats">
-            <div class="section-heading compact">
-              <p class="eyebrow">Quick Stats</p>
-              <h2>Your study pulse at a glance.</h2>
-            </div>
-            <div class="stats-row">
-              <article>
-                <span>Avg Structure score</span>
-                <strong data-dash-avg>â€”</strong>
-                <small data-dash-avg-note>After your first guided session</small>
-              </article>
-              <article>
-                <span>Practice streak</span>
-                <strong data-dash-streak>â€”</strong>
-                <small data-dash-streak-note>Practice today to start a streak</small>
-              </article>
-              <article>
-                <span>Completed drills</span>
-                <strong data-dash-sessions>0</strong>
-                <small data-dash-sessions-note>Across Structure guided practice</small>
-              </article>
-            </div>
-          </section>
-
-          <article class="artifact-card" id="old-interactive-practice" data-requires-access>
-            <span class="lock-badge">Teacher access</span>
-            <span class="icon gold" aria-hidden="true">
-              <svg viewBox="0 0 24 24"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z"/></svg>
-            </span>
-            <h3>Guided practice</h3>
-            <p>Focused mini-sessions with instant feedback, explanations, and review of weak patterns.</p>
-            <a class="button secondary" href="structure-guided-practice.html" data-access-link>Open Structure drill</a>
-          </article>
-        </div>
-      </section>
-
-      <section class="mock-exam" id="mock-exam" data-requires-access aria-labelledby="mock-title">
-        <span class="lock-badge large">Teacher access</span>
-        <div>
-          <p class="eyebrow">TOEFL real scenario Â· Full exam</p>
-          <h2 id="mock-title">Full ITP-style mock</h2>
-          <p>
-            All three sections in order: Listening (50 Â· 35 min), Structure (40 Â· 25 min),
-            Reading (50 Â· 55 min). No feedback until the full exam ends.
-          </p>
-          <p class="dash-last-session" data-dash-last-full-mock>No full mock saved on this device yet.</p>
-          <p class="dash-last-session" data-dash-last-mock>No Structure-only mock saved yet.</p>
-        </div>
-        <div class="mock-panel">
-          <span>Available now</span>
-          <strong>140 questions</strong>
-          <small>L 35 min Â· S 25 min Â· R 55 min</small>
-          <a class="button primary" href="full-mock.html" data-access-link>Start full mock</a>
-          <a class="button secondary" href="structure-mock.html" data-access-link>Structure only</a>
-          <a class="button secondary" href="listening-mock.html" data-access-link>Listening only</a>
-          <a class="button secondary" href="reading-mock.html" data-access-link>Reading only</a>
-        </div>
-      </section>
-
-      <section class="commitment-strip" id="class-access" aria-labelledby="commitment-title">
-        <div>
-          <p class="eyebrow">Teacher access</p>
-          <h2 id="commitment-title">Open full class practice materials</h2>
-          <p>
-            Full drills and protected practice stay with Teacher Israel Ventura's
-            groups. Free previews stay open. Enter the class code your teacher gave you.
-          </p>
-          <p class="access-status" data-access-status></p>
-        </div>
-
-        <div data-access-locked-only>
-          <form class="access-form" data-access-form>
-            <label>
-              Class code
-              <input
-                type="text"
-                name="code"
-                data-access-input
-                autocomplete="off"
-                spellcheck="false"
-                placeholder="Code from your teacher"
-                required
-              />
-            </label>
-            <p class="access-message" data-access-message hidden></p>
-            <div class="access-actions">
-              <button class="button primary" type="submit">Open class materials</button>
-            </div>
-          </form>
-        </div>
-
-        <div data-access-open-only hidden>
-          <div class="access-actions">
-            <a class="button primary" href="structure-guided-practice.html">Structure guided</a>
-            <a class="button secondary" href="structure-mock.html">Structure mock</a>
-            <a class="button secondary" href="reading-guided-practice.html">Reading guided</a>
-            <a class="button secondary" href="reading-mock.html">Reading mock</a>
-            <a class="button secondary" href="listening-guided-practice.html">Listening guided</a>
-            <a class="button secondary" href="listening-mock.html">Listening mock</a>
-            <button class="button secondary" type="button" data-access-revoke>Remove access on this device</button>
+            </article>
+            <article class="dash-skill-card">
+              <p class="eyebrow">Listening</p>
+              <h3>Topics &amp; clips</h3>
+              <div data-dash-skills-listening>
+                <p class="dash-empty-note">No Listening practice saved yet.</p>
+              </div>
+            </article>
+            <article class="dash-skill-card">
+              <p class="eyebrow">Reading</p>
+              <h3>Question skills</h3>
+              <div data-dash-skills-reading>
+                <p class="dash-empty-note">No Reading practice saved yet.</p>
+              </div>
+            </article>
           </div>
-        </div>
-      </section>
-    </main>
+        </section>
+
+        <!-- 5. Recent results (scores only — not a wall of mistakes) -->
+        <section class="dash-recent" id="recent" aria-labelledby="recent-title">
+          <div class="section-heading compact">
+            <p class="eyebrow">Recent results</p>
+            <h2 id="recent-title">Last sessions on this device</h2>
+          </div>
+          <ul class="dash-recent-list" data-dash-recent>
+            <li class="dash-empty-note">Finish a guided set or mock to see results here.</li>
+          </ul>
+        </section>
+
+        <!-- Class access stays minimal (needed for the product) -->
+        <section class="commitment-strip dash-access" id="class-access" aria-labelledby="commitment-title">
+          <div>
+            <p class="eyebrow">Teacher access</p>
+            <h2 id="commitment-title">Class materials</h2>
+            <p>
+              Guided practice and mocks open with your teacher’s class code. This dashboard only
+              shows your results — practice lives in each section.
+            </p>
+            <p class="access-status" data-access-status></p>
+          </div>
+
+          <div data-access-locked-only>
+            <form class="access-form" data-access-form>
+              <label>
+                Class code
+                <input
+                  type="text"
+                  name="code"
+                  data-access-input
+                  autocomplete="off"
+                  spellcheck="false"
+                  placeholder="Code from your teacher"
+                  required
+                />
+              </label>
+              <p class="access-message" data-access-message hidden></p>
+              <div class="access-actions">
+                <button class="button primary" type="submit">Open class materials</button>
+              </div>
+            </form>
+          </div>
+
+          <div data-access-open-only hidden>
+            <p class="dash-access-open-note">Class access is active on this device.</p>
+            <div class="access-actions">
+              <button class="button secondary" type="button" data-access-revoke>
+                Remove access on this device
+              </button>
+            </div>
+          </div>
+        </section>
+      </main>
     </div>
+
     <script src="access.js"></script>
     <script src="progress.js"></script>
     <script src="dashboard.js"></script>

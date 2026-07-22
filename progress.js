@@ -288,8 +288,12 @@
   }
 
   function getSkillTotals() {
+    return aggregateSkillsFromSessions(getStructureSessions());
+  }
+
+  function aggregateSkillsFromSessions(sessions) {
     const totals = {};
-    getStructureSessions().forEach((session) => {
+    (sessions || []).forEach((session) => {
       Object.entries(session.skills || {}).forEach(([skill, row]) => {
         if (!totals[skill]) totals[skill] = { correct: 0, total: 0 };
         totals[skill].correct += row.correct || 0;
@@ -308,9 +312,8 @@
     return { label: "Needs work", width: Math.max(pct, 12) };
   }
 
-  function getTopSkills(limit = 4) {
-    const totals = getSkillTotals();
-    return Object.entries(totals)
+  function rankSkills(totals, limit = 4) {
+    return Object.entries(totals || {})
       .map(([skill, row]) => {
         const status = skillStatus(row.correct, row.total);
         return {
@@ -323,11 +326,14 @@
         };
       })
       .sort((a, b) => {
-        // weakest first for study focus
         if (a.percent !== b.percent) return a.percent - b.percent;
         return b.total - a.total;
       })
       .slice(0, limit);
+  }
+
+  function getTopSkills(limit = 4) {
+    return rankSkills(getSkillTotals(), limit);
   }
 
   function getRecentMistakes(limit = 5) {
@@ -447,7 +453,8 @@
       };
     }
 
-    const weak = getTopSkills(1)[0];
+    const structureSkills = getTopSkills(5);
+    const weak = structureSkills[0];
 
     const readingSessions = getReadingSessions();
     const readingGuided = readingSessions.filter((s) => s.mode !== "mock");
@@ -461,6 +468,7 @@
         : null;
     const lastReading = readingSessions[0] || null;
     const lastReadingMock = readingMocks[0] || null;
+    const readingSkills = rankSkills(aggregateSkillsFromSessions(readingSessions), 5);
 
     const listeningSessions = getListeningSessions();
     const listeningGuided = listeningSessions.filter((s) => s.mode !== "mock");
@@ -474,6 +482,18 @@
         : null;
     const lastListening = listeningSessions[0] || null;
     const lastListeningMock = listeningMocks[0] || null;
+    const listeningSkills = rankSkills(aggregateSkillsFromSessions(listeningSessions), 5);
+
+    // Overall study focus: weakest among practiced section skills (all sections)
+    const allWeak = [
+      ...structureSkills.map((s) => ({ ...s, section: "Structure" })),
+      ...readingSkills.map((s) => ({ ...s, section: "Reading" })),
+      ...listeningSkills.map((s) => ({ ...s, section: "Listening" })),
+    ].sort((a, b) => a.percent - b.percent || b.total - a.total);
+
+    const focus = allWeak[0] || null;
+    const totalSessionsAll =
+      sessionCount + readingCount + listeningCount + getFullMocks().length;
 
     return {
       sessionCount,
@@ -487,12 +507,14 @@
       last,
       lastMock,
       readiness,
-      focusSkill: weak ? weak.skill : "Subject-Verb Agreement",
-      focusNote: weak
-        ? `Your weakest practiced skill so far is ${weak.skill} (${weak.percent}%).`
-        : "Start guided practice to discover which patterns need work.",
-      skills: getTopSkills(4),
+      focusSkill: focus ? focus.skill : "Structure patterns",
+      focusSection: focus ? focus.section : "Structure",
+      focusNote: focus
+        ? `${focus.section}: ${focus.skill} (${focus.percent}% so far).`
+        : "Complete a guided drill to see what to study next.",
+      skills: structureSkills,
       recentMistakes: getRecentMistakes(5),
+      totalSessionsAll,
       reading: {
         sessionCount: readingCount,
         guidedCount: readingGuided.length,
@@ -500,6 +522,7 @@
         averagePercent: readingAvg,
         last: lastReading,
         lastMock: lastReadingMock,
+        skills: readingSkills,
       },
       listening: {
         sessionCount: listeningCount,
@@ -508,6 +531,7 @@
         averagePercent: listeningAvg,
         last: lastListening,
         lastMock: lastListeningMock,
+        skills: listeningSkills,
       },
       fullMock: {
         count: getFullMocks().length,
