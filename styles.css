@@ -1742,11 +1742,23 @@ button:disabled {
   line-height: 1.55;
 }
 
+/* Default: one full-width column (Listening / Structure / no passage).
+   Two columns only when .has-passage is set (Reading). */
 .reading-practice-layout {
   display: grid;
-  grid-template-columns: minmax(0, 0.95fr) minmax(360px, 1.05fr);
+  grid-template-columns: 1fr;
   gap: 18px;
   align-items: start;
+  width: 100%;
+}
+
+.reading-practice-layout.has-passage {
+  grid-template-columns: minmax(0, 0.95fr) minmax(360px, 1.05fr);
+}
+
+.reading-practice-layout:not(.has-passage) .practice-card {
+  width: 100%;
+  max-width: none;
 }
 
 .reading-passage {

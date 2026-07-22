@@ -445,13 +445,16 @@ function renderItem() {
     questionEl.classList.remove("is-error-identification");
   }
 
-  // passage
+  // passage (Reading only). Toggle 2-column layout so Listening/Structure stay full width.
+  const layoutEl = document.querySelector("[data-full-layout]");
   if (row.kind === "reading" && row.passageText) {
     passageWrap.hidden = false;
+    layoutEl?.classList.add("has-passage");
     passageTitleEl.textContent = row.passageTitle || "Passage";
     passageTextEl.innerHTML = paragraphs(row.passageText);
   } else {
     passageWrap.hidden = true;
+    layoutEl?.classList.remove("has-passage");
     passageTitleEl.textContent = "";
     passageTextEl.innerHTML = "";
   }
