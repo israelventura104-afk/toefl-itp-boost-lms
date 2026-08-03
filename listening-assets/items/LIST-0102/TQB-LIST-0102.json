@@ -1,0 +1,67 @@
+{
+  "file_name": "TQB-LIST-0102.json",
+  "section": "Part B",
+  "asset_id": "LIST-0102",
+  "transcript": {
+    "narrator_intro": "Listen to a conversation between a student and a librarian.",
+    "dialogue": [
+      {
+        "speaker": "M1",
+        "text": "Hi. I received an email saying my library books are overdue, but I returned them last Friday."
+      },
+      {
+        "speaker": "F1",
+        "text": "Let me check your account. May I have your student ID?"
+      },
+      {
+        "speaker": "M1",
+        "text": "Sure. Here it is."
+      },
+      {
+        "speaker": "F1",
+        "text": "I see what happened. The books were returned on time, but they weren't scanned correctly."
+      },
+      {
+        "speaker": "M1",
+        "text": "So I won't have to pay the fine?"
+      },
+      {
+        "speaker": "F1",
+        "text": "No. I'll remove the charge right now."
+      },
+      {
+        "speaker": "M1",
+        "text": "That's a relief. I was worried because I need to borrow more books this week."
+      },
+      {
+        "speaker": "F1",
+        "text": "Your account will be cleared in a few minutes."
+      },
+      {
+        "speaker": "M1",
+        "text": "Great. Is there anything else I need to do?"
+      },
+      {
+        "speaker": "F1",
+        "text": "No. Just refresh your account online later today to make sure the balance is zero."
+      },
+      {
+        "speaker": "M1",
+        "text": "Thanks for your help."
+      }
+    ],
+    "question_intro": "Now answer the questions."
+  },
+  "questions": [
+    {
+      "id": "Q1",
+      "prompt": "Why did the student receive an overdue notice?",
+      "answer_key": "B"
+    },
+    {
+      "id": "Q2",
+      "prompt": "What does the librarian tell the student to do?",
+      "answer_key": "C"
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "id": "partB_item3",
+  "topic": "Roommate Conflict",
+  "setting": "Two students are discussing a problem with their dormitory room.",
+  "speakers": [
+    { "role": "narrator", "voice": "narrator" },
+    { "role": "speaker1", "name": "Woman", "voice": "female" },
+    { "role": "speaker2", "name": "Man", "voice": "male" }
+  ],
+  "narrator_intro": "Listen to a conversation between two roommates.",
+  "dialogue": [
+    { "speaker": "speaker1", "text": "Hey, can we talk about the room for a second? I've been getting maybe four hours of sleep because of your alarm going off at five every morning." },
+    { "speaker": "speaker2", "text": "Oh, sorry about that, I didn't realize it was waking you up too. I have swim practice before class, so I set it early to have time to get ready." },
+    { "speaker": "speaker1", "text": "I figured it was something like that. I'm not asking you to change your schedule, I just need a way to not hear it." },
+    { "speaker": "speaker2", "text": "That's fair. I could switch it to vibrate mode and keep the phone under my pillow. Would that work?" },
+    { "speaker": "speaker1", "text": "That should be fine. Also, would you mind not turning the lights on when you get dressed? Maybe just use your phone flashlight or something dimmer?" },
+    { "speaker": "speaker2", "text": "Sure, that's an easy fix. Honestly, I appreciate you bringing this up directly instead of just being annoyed about it." },
+    { "speaker": "speaker1", "text": "I almost asked to switch rooms, but I figured we could probably work it out first." },
+    { "speaker": "speaker2", "text": "I'm glad you did. Let's try this for a week and see how it goes. If it's still an issue, we can talk to the resident advisor about other options." }
+  ],
+  "narrator_outro": "Now get ready to answer the questions.",
+  "questions": [
+    {
+      "number": 1,
+      "question_type": "Main Idea",
+      "narrator_text": "What is the main problem being discussed?",
+      "options": {
+        "A": "The man wants to change roommates",
+        "B": "The woman is being disturbed by the man's morning routine",
+        "C": "The man is upset about noise from the woman",
+        "D": "Both students want to move to a different dorm"
+      },
+      "correct_answer": "B",
+      "explanation": "The woman explains she is losing sleep because of the man's alarm and the lights he turns on."
+    },
+    {
+      "number": 2,
+      "question_type": "Detail",
+      "narrator_text": "Why does the man wake up early?",
+      "options": {
+        "A": "He works a morning job",
+        "B": "He has swim practice before class",
+        "C": "He prefers to study early",
+        "D": "He has trouble sleeping"
+      },
+      "correct_answer": "B",
+      "explanation": "He states he has swim practice before class and sets his alarm early to prepare."
+    },
+    {
+      "number": 3,
+      "question_type": "Detail",
+      "narrator_text": "What two changes does the man agree to make?",
+      "options": {
+        "A": "Move his alarm later and study elsewhere",
+        "B": "Put his phone on vibrate and avoid turning on the lights",
+        "C": "Change his class schedule and buy a lamp",
+        "D": "Talk to the resident advisor and switch beds"
+      },
+      "correct_answer": "B",
+      "explanation": "He agrees to switch the alarm to vibrate and to avoid using the overhead light while getting dressed."
+    },
+    {
+      "number": 4,
+      "question_type": "Inference",
+      "narrator_text": "What can be inferred about the woman's attitude toward the situation?",
+      "options": {
+        "A": "She is angry and wants to end the roommate arrangement immediately",
+        "B": "She would rather avoid conflict altogether and say nothing",
+        "C": "She prefers addressing the issue directly before considering other options",
+        "D": "She thinks the man is doing this on purpose"
+      },
+      "correct_answer": "C",
+      "explanation": "She says she almost asked to switch rooms but decided to try working it out directly first."
+    }
+  ]
+}

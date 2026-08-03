@@ -1,0 +1,77 @@
+{
+  "id": "partB_item1",
+  "topic": "Course Registration",
+  "setting": "A student is talking to her academic advisor about registering for a class.",
+  "speakers": [
+    { "role": "narrator", "voice": "narrator" },
+    { "role": "speaker1", "name": "Woman (Student)", "voice": "female" },
+    { "role": "speaker2", "name": "Man (Advisor)", "voice": "male" }
+  ],
+  "narrator_intro": "Listen to a conversation between a student and her academic advisor.",
+  "dialogue": [
+    { "speaker": "speaker1", "text": "Professor Hayes, do you have a minute? I wanted to ask about the Statistics course for next semester." },
+    { "speaker": "speaker2", "text": "Of course, Melissa. Come on in. What's the issue?" },
+    { "speaker": "speaker1", "text": "Well, I checked the schedule, and Statistics 210 is only offered at eight in the morning, three days a week. I work at the campus library until nine most mornings." },
+    { "speaker": "speaker2", "text": "I see. Unfortunately, that's the only section this term, since Dr. Alvarez is on sabbatical. But there is an online version, Statistics 210E. Same content, same credit." },
+    { "speaker": "speaker1", "text": "I didn't even know that existed. Is it just as demanding as the regular class?" },
+    { "speaker": "speaker2", "text": "It is, actually a bit more, since you'll need to keep up with weekly deadlines on your own rather than having class discussions to remind you. But if your schedule is tight, it might be the better option." },
+    { "speaker": "speaker1", "text": "That sounds manageable. Could I switch my registration to that section today?" },
+    { "speaker": "speaker2", "text": "Sure, I can do that right now. Just be aware that the add period for online sections closes this Friday, so you won't be able to switch back easily after that." },
+    { "speaker": "speaker1", "text": "That's fine. My work schedule isn't changing anytime soon, so the online option makes more sense for me." }
+  ],
+  "narrator_outro": "Now get ready to answer the questions.",
+  "questions": [
+    {
+      "number": 1,
+      "question_type": "Main Idea",
+      "narrator_text": "What are the speakers mainly discussing?",
+      "options": {
+        "A": "The woman's poor grades in a statistics class",
+        "B": "A scheduling conflict and an alternative course option",
+        "C": "The requirements to become a teaching assistant",
+        "D": "A professor's sabbatical plans"
+      },
+      "correct_answer": "B",
+      "explanation": "The woman explains she cannot attend the class due to a work conflict, and the advisor proposes the online section as a solution."
+    },
+    {
+      "number": 2,
+      "question_type": "Detail",
+      "narrator_text": "Why can't the woman take the regular section of the course?",
+      "options": {
+        "A": "It is already full",
+        "B": "It conflicts with her work schedule",
+        "C": "It is not offered this semester",
+        "D": "She has not completed the prerequisite"
+      },
+      "correct_answer": "B",
+      "explanation": "She states she works until nine most mornings, which conflicts with the 8 a.m. class time."
+    },
+    {
+      "number": 3,
+      "question_type": "Detail",
+      "narrator_text": "According to the advisor, what is different about the online section?",
+      "options": {
+        "A": "It offers fewer credits",
+        "B": "It requires more independent time management",
+        "C": "It is taught by a different, less experienced instructor",
+        "D": "It has no weekly deadlines"
+      },
+      "correct_answer": "B",
+      "explanation": "The advisor says the online course is a bit more demanding because students must keep up with deadlines without in-class reminders."
+    },
+    {
+      "number": 4,
+      "question_type": "Inference",
+      "narrator_text": "What can be inferred about the woman's decision?",
+      "options": {
+        "A": "She is unsure whether she will stay in the course",
+        "B": "She plans to quit her job to attend the regular class",
+        "C": "She is confident the online format fits her situation",
+        "D": "She will wait until next semester to decide"
+      },
+      "correct_answer": "C",
+      "explanation": "She agrees to switch immediately and explains that her work schedule isn't changing, showing confidence in her decision."
+    }
+  ]
+}

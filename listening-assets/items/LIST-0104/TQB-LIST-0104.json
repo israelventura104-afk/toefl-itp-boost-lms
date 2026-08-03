@@ -1,0 +1,56 @@
+{
+  "set_id": "ITP_PARTB_001",
+  "topic": "Student seeking internship at university art museum",
+  "speakers": ["Larry (student)", "Professor Adams"],
+  "audio_length_estimate": "75 seconds",
+  "questions": [
+    {
+      "question_number": 4,
+      "question_text": "What do the speakers mainly discuss?",
+      "options": {
+        "A": "Work opportunities for students",
+        "B": "The professor's work at the museum",
+        "C": "The man's qualifications for a job",
+        "D": "Possible careers for the man after he graduates"
+      },
+      "correct_answer": "A",
+      "skill_tested": "Main idea"
+    },
+    {
+      "question_number": 5,
+      "question_text": "Why is the student disappointed?",
+      "options": {
+        "A": "He has to quit his job at the library.",
+        "B": "The professor will not allow him to take her class.",
+        "C": "The university recently closed its museum.",
+        "D": "The internship he wants is unavailable."
+      },
+      "correct_answer": "D",
+      "skill_tested": "Detail / Inference"
+    },
+    {
+      "question_number": 6,
+      "question_text": "What will be displayed in the exhibition at the university library?",
+      "options": {
+        "A": "Rare books",
+        "B": "Paintings",
+        "C": "Photographs",
+        "D": "Historical reports"
+      },
+      "correct_answer": "C",
+      "skill_tested": "Detail"
+    },
+    {
+      "question_number": 7,
+      "question_text": "What can be inferred about the library's exhibitions director, Emily Peterson?",
+      "options": {
+        "A": "She will select the library's volunteers.",
+        "B": "She studied art with the student's professor.",
+        "C": "She used to work at the art museum.",
+        "D": "She joined the library staff recently."
+      },
+      "correct_answer": "A",
+      "skill_tested": "Inference"
+    }
+  ]
+}
