@@ -21,8 +21,11 @@
       }));
       const correctKey = String(q.answer_key ?? q.correctKey ?? "").trim();
       const hit = options.find((o) => o.key === correctKey);
+      // Always prefix with asset id: bank items reuse "Q1" on every Part A clip,
+      // which would otherwise collapse answers across the whole guided/mock set.
+      const localId = String(q.id || `Q${index + 1}`).trim() || `Q${index + 1}`;
       return {
-        id: String(q.id || `${entry.id}-Q${index + 1}`),
+        id: `${entry.id}-${localId}`,
         prompt: q.prompt || q.question || "",
         options,
         correctKey,
