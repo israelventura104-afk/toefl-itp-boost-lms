@@ -1,0 +1,76 @@
+{
+  "id": "partB_item7",
+  "topic": "Dining Hall Meal Plan",
+  "setting": "A student is speaking with a dining services employee about changing her meal plan.",
+  "speakers": [
+    { "role": "narrator", "voice": "narrator" },
+    { "role": "speaker1", "name": "Woman (Student)", "voice": "female" },
+    { "role": "speaker2", "name": "Man (Dining Services Staff)", "voice": "male" }
+  ],
+  "narrator_intro": "Listen to a conversation between a student and a dining services employee.",
+  "dialogue": [
+    { "speaker": "speaker1", "text": "Hi, I signed up for the nineteen-meal plan at the start of the semester, but I barely use more than ten a week. Can I switch to something smaller?" },
+    { "speaker": "speaker2", "text": "Let me check. Yes, you can switch to the fourteen-meal plan, but changes can only happen during the first three weeks of the semester or during winter break." },
+    { "speaker": "speaker1", "text": "We're only in week two, so I should be fine, right?" },
+    { "speaker": "speaker2", "text": "Correct, you're within the window. Keep in mind, though, once you switch, any unused meals from the nineteen-plan this week won't roll over, they reset with the new plan." },
+    { "speaker": "speaker1", "text": "That's fine, I've already lost a few meals anyway since I keep forgetting to eat on campus during exam weeks." },
+    { "speaker": "speaker2", "text": "That happens a lot. One more thing, the fourteen-meal plan comes with fewer guest swipes, only two a semester instead of five. Is that going to be an issue?" },
+    { "speaker": "speaker1", "text": "No, I don't usually bring guests anyway. Let's go ahead and make the switch." },
+    { "speaker": "speaker2", "text": "Great, I'll process it now. It'll take effect starting tomorrow morning." }
+  ],
+  "narrator_outro": "Now get ready to answer the questions.",
+  "questions": [
+    {
+      "number": 1,
+      "question_type": "Main Idea",
+      "narrator_text": "What is the woman trying to do?",
+      "options": {
+        "A": "Cancel her meal plan entirely",
+        "B": "Switch to a meal plan with fewer meals",
+        "C": "Add more guest swipes to her account",
+        "D": "Complain about the quality of dining hall food"
+      },
+      "correct_answer": "B",
+      "explanation": "She explains she barely uses ten meals a week and wants to switch from nineteen to a smaller plan."
+    },
+    {
+      "number": 2,
+      "question_type": "Detail",
+      "narrator_text": "Why is the woman able to make the change now?",
+      "options": {
+        "A": "She has a special exception from the dean",
+        "B": "It is within the first three weeks of the semester",
+        "C": "It is currently winter break",
+        "D": "She never used any meals from her original plan"
+      },
+      "correct_answer": "B",
+      "explanation": "The staff member confirms changes are allowed during the first three weeks, and it is only week two."
+    },
+    {
+      "number": 3,
+      "question_type": "Detail",
+      "narrator_text": "What will happen to her unused meals from this week?",
+      "options": {
+        "A": "They will be refunded as credit",
+        "B": "They will roll over to the new plan",
+        "C": "They will not carry over to the new plan",
+        "D": "They will be donated to a campus food bank"
+      },
+      "correct_answer": "C",
+      "explanation": "The staff member explains unused meals reset and do not roll over when switching plans."
+    },
+    {
+      "number": 4,
+      "question_type": "Detail",
+      "narrator_text": "What difference does the staff member point out about guest swipes?",
+      "options": {
+        "A": "The new plan has more guest swipes",
+        "B": "The new plan has fewer guest swipes",
+        "C": "Guest swipes are being removed entirely",
+        "D": "Guest swipes now cost extra"
+      },
+      "correct_answer": "B",
+      "explanation": "He mentions the fourteen-meal plan includes only two guest swipes instead of five."
+    }
+  ]
+}

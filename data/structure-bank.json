@@ -4,7 +4,7 @@
   "purpose": "guided_and_mocks",
   "reuse_in_mocks": true,
   "exclude_from_free_intro": true,
-  "item_count": 190,
+  "item_count": 234,
   "items": [
     {
       "id": "TQB-STR-0002",
@@ -7714,6 +7714,1817 @@
         "mixed_advanced",
         "agreement",
         "the_number_of"
+      ]
+    },
+    {
+      "id": "TQB-STR-0126",
+      "section": "Structure",
+      "type": "Error Identification",
+      "skill": "Verb Tenses",
+      "subskill": "Time Clauses",
+      "difficulty": 3,
+      "estimatedTime": 50,
+      "academicTopic": "Education",
+      "question": "The professor asked the students (A) to hand in their (B) assignments before they (C) will leave (D) the classroom.",
+      "options": [
+        {
+          "key": "A",
+          "text": "A"
+        },
+        {
+          "key": "B",
+          "text": "B"
+        },
+        {
+          "key": "C",
+          "text": "C"
+        },
+        {
+          "key": "D",
+          "text": "D"
+        }
+      ],
+      "correctKey": "C",
+      "correctAnswer": "C",
+      "explanation": "In noun clauses after 'before', the future tense is not used. It should be 'left' (simple past) to match the past tense of 'asked'.",
+      "commonMistake": "Choosing a grammatically correct underlined part instead of the error.",
+      "learningObjective": "Identify the underlined error in a Structure Written Expression item.",
+      "tags": [
+        "error_identification",
+        "verb_tenses",
+        "time_clauses"
+      ],
+      "source": {
+        "file": "Grammar section part A.txt",
+        "original_number": 1,
+        "used_revised": false
+      }
+    },
+    {
+      "id": "TQB-STR-0127",
+      "section": "Structure",
+      "type": "Error Identification",
+      "skill": "Subject-Verb Agreement",
+      "subskill": "Neither...Nor",
+      "difficulty": 3,
+      "estimatedTime": 50,
+      "academicTopic": "Education",
+      "question": "Neither the students nor (A) the teacher (B) were able (C) to solve the (D) difficult equation.",
+      "options": [
+        {
+          "key": "A",
+          "text": "A"
+        },
+        {
+          "key": "B",
+          "text": "B"
+        },
+        {
+          "key": "C",
+          "text": "C"
+        },
+        {
+          "key": "D",
+          "text": "D"
+        }
+      ],
+      "correctKey": "B",
+      "correctAnswer": "B",
+      "explanation": "With 'neither...nor', the verb agrees with the nearest subject ('the teacher' = singular). It should be 'was able'.",
+      "commonMistake": "Choosing a grammatically correct underlined part instead of the error.",
+      "learningObjective": "Identify the underlined error in a Structure Written Expression item.",
+      "tags": [
+        "error_identification",
+        "subject_verb_agreement",
+        "neither_nor"
+      ],
+      "source": {
+        "file": "Grammar section part A.txt",
+        "original_number": 2,
+        "used_revised": false
+      }
+    },
+    {
+      "id": "TQB-STR-0128",
+      "section": "Structure",
+      "type": "Error Identification",
+      "skill": "Gerunds and Infinitives",
+      "subskill": "Spend + Gerund",
+      "difficulty": 3,
+      "estimatedTime": 50,
+      "academicTopic": "Research",
+      "question": "The researcher (A) spent three years (B) to collect (C) data for (D) her dissertation.",
+      "options": [
+        {
+          "key": "A",
+          "text": "A"
+        },
+        {
+          "key": "B",
+          "text": "B"
+        },
+        {
+          "key": "C",
+          "text": "C"
+        },
+        {
+          "key": "D",
+          "text": "D"
+        }
+      ],
+      "correctKey": "B",
+      "correctAnswer": "B",
+      "explanation": "After 'spend time', the correct structure is the gerund ('collecting'), not the infinitive ('to collect').",
+      "commonMistake": "Choosing a grammatically correct underlined part instead of the error.",
+      "learningObjective": "Identify the underlined error in a Structure Written Expression item.",
+      "tags": [
+        "error_identification",
+        "gerunds_and_infinitives",
+        "spend_gerund"
+      ],
+      "source": {
+        "file": "Grammar section part A.txt",
+        "original_number": 3,
+        "used_revised": false
+      }
+    },
+    {
+      "id": "TQB-STR-0129",
+      "section": "Structure",
+      "type": "Error Identification",
+      "skill": "Pronouns",
+      "subskill": "Collective Nouns",
+      "difficulty": 3,
+      "estimatedTime": 50,
+      "academicTopic": "Public Policy",
+      "question": "The committee (A) has already (B) made their (C) decision regarding (D) the new policy.",
+      "options": [
+        {
+          "key": "A",
+          "text": "A"
+        },
+        {
+          "key": "B",
+          "text": "B"
+        },
+        {
+          "key": "C",
+          "text": "C"
+        },
+        {
+          "key": "D",
+          "text": "D"
+        }
+      ],
+      "correctKey": "C",
+      "correctAnswer": "C",
+      "explanation": "'Committee' is a collective noun that can take a singular or plural verb, but in formal American English, it should be 'its' (singular pronoun) to match 'has' (singular verb).",
+      "commonMistake": "Choosing a grammatically correct underlined part instead of the error.",
+      "learningObjective": "Identify the underlined error in a Structure Written Expression item.",
+      "tags": [
+        "error_identification",
+        "pronouns",
+        "collective_nouns"
+      ],
+      "source": {
+        "file": "Grammar section part A.txt",
+        "original_number": 4,
+        "used_revised": false
+      }
+    },
+    {
+      "id": "TQB-STR-0130",
+      "section": "Structure",
+      "type": "Error Identification",
+      "skill": "Prepositions",
+      "subskill": "Despite",
+      "difficulty": 3,
+      "estimatedTime": 50,
+      "academicTopic": "Campus Life",
+      "question": "Despite (A) of the (B) heavy rain, the (C) outdoor concert (D) continued as scheduled.",
+      "options": [
+        {
+          "key": "A",
+          "text": "A"
+        },
+        {
+          "key": "B",
+          "text": "B"
+        },
+        {
+          "key": "C",
+          "text": "C"
+        },
+        {
+          "key": "D",
+          "text": "D"
+        }
+      ],
+      "correctKey": "A",
+      "correctAnswer": "A",
+      "explanation": "'Despite' is a preposition and is directly followed by a noun phrase. The word 'of' is incorrect and should be removed: 'Despite the heavy rain...'",
+      "commonMistake": "Choosing a grammatically correct underlined part instead of the error.",
+      "learningObjective": "Identify the underlined error in a Structure Written Expression item.",
+      "tags": [
+        "error_identification",
+        "prepositions",
+        "despite"
+      ],
+      "source": {
+        "file": "Grammar section part A.txt",
+        "original_number": 5,
+        "used_revised": false
+      }
+    },
+    {
+      "id": "TQB-STR-0131",
+      "section": "Structure",
+      "type": "Error Identification",
+      "skill": "Adjective Clauses",
+      "subskill": "Redundant Object Pronoun",
+      "difficulty": 3,
+      "estimatedTime": 50,
+      "academicTopic": "Campus Life",
+      "question": "The book (A) that I borrowed (B) it (C) from the library (D) is overdue.",
+      "options": [
+        {
+          "key": "A",
+          "text": "A"
+        },
+        {
+          "key": "B",
+          "text": "B"
+        },
+        {
+          "key": "C",
+          "text": "C"
+        },
+        {
+          "key": "D",
+          "text": "D"
+        }
+      ],
+      "correctKey": "B",
+      "correctAnswer": "B",
+      "explanation": "The relative pronoun 'that' already functions as the object of 'borrowed'. The pronoun 'it' is redundant and should be removed.",
+      "commonMistake": "Choosing a grammatically correct underlined part instead of the error.",
+      "learningObjective": "Identify the underlined error in a Structure Written Expression item.",
+      "tags": [
+        "error_identification",
+        "adjective_clauses",
+        "redundant_object_pronoun"
+      ],
+      "source": {
+        "file": "Grammar section part A.txt",
+        "original_number": 6,
+        "used_revised": false
+      }
+    },
+    {
+      "id": "TQB-STR-0132",
+      "section": "Structure",
+      "type": "Error Identification",
+      "skill": "Verb Tenses",
+      "subskill": "By The Time",
+      "difficulty": 3,
+      "estimatedTime": 50,
+      "academicTopic": "Education",
+      "question": "By the time (A) the lecture (B) will end, the students (C) will have been (D) waiting for two hours.",
+      "options": [
+        {
+          "key": "A",
+          "text": "A"
+        },
+        {
+          "key": "B",
+          "text": "B"
+        },
+        {
+          "key": "C",
+          "text": "C"
+        },
+        {
+          "key": "D",
+          "text": "D"
+        }
+      ],
+      "correctKey": "B",
+      "correctAnswer": "B",
+      "explanation": "In time clauses introduced by 'by the time', the simple present tense is used to refer to the future. It should be 'ends' instead of 'will end'.",
+      "commonMistake": "Choosing a grammatically correct underlined part instead of the error.",
+      "learningObjective": "Identify the underlined error in a Structure Written Expression item.",
+      "tags": [
+        "error_identification",
+        "verb_tenses",
+        "by_the_time"
+      ],
+      "source": {
+        "file": "Grammar section part A.txt",
+        "original_number": 7,
+        "used_revised": true
+      }
+    },
+    {
+      "id": "TQB-STR-0133",
+      "section": "Structure",
+      "type": "Error Identification",
+      "skill": "Subjunctive",
+      "subskill": "Require That",
+      "difficulty": 3,
+      "estimatedTime": 50,
+      "academicTopic": "University Administration",
+      "question": "The university (A) requires that (B) all students (C) must submit (D) their transcripts by Friday.",
+      "options": [
+        {
+          "key": "A",
+          "text": "A"
+        },
+        {
+          "key": "B",
+          "text": "B"
+        },
+        {
+          "key": "C",
+          "text": "C"
+        },
+        {
+          "key": "D",
+          "text": "D"
+        }
+      ],
+      "correctKey": "C",
+      "correctAnswer": "C",
+      "explanation": "After verbs like 'require', 'suggest', 'demand', the subjunctive mood is used in the that-clause: the base form of the verb without 'must'. It should be 'submit' instead of 'must submit'.",
+      "commonMistake": "Choosing a grammatically correct underlined part instead of the error.",
+      "learningObjective": "Identify the underlined error in a Structure Written Expression item.",
+      "tags": [
+        "error_identification",
+        "subjunctive",
+        "require_that"
+      ],
+      "source": {
+        "file": "Grammar section part A.txt",
+        "original_number": 8,
+        "used_revised": false
+      }
+    },
+    {
+      "id": "TQB-STR-0134",
+      "section": "Structure",
+      "type": "Error Identification",
+      "skill": "Parallel Structure",
+      "subskill": "Not Only...But Also",
+      "difficulty": 3,
+      "estimatedTime": 50,
+      "academicTopic": "Education",
+      "question": "Not only (A) did she (B) finish the exam early, but (C) also she (D) got the highest score.",
+      "options": [
+        {
+          "key": "A",
+          "text": "A"
+        },
+        {
+          "key": "B",
+          "text": "B"
+        },
+        {
+          "key": "C",
+          "text": "C"
+        },
+        {
+          "key": "D",
+          "text": "D"
+        }
+      ],
+      "correctKey": "C",
+      "correctAnswer": "C",
+      "explanation": "In the 'not only...but also' construction, 'also' should follow the subject, not precede it. It should be 'she also' instead of 'also she'.",
+      "commonMistake": "Choosing a grammatically correct underlined part instead of the error.",
+      "learningObjective": "Identify the underlined error in a Structure Written Expression item.",
+      "tags": [
+        "error_identification",
+        "parallel_structure",
+        "not_only_but_also"
+      ],
+      "source": {
+        "file": "Grammar section part A.txt",
+        "original_number": 9,
+        "used_revised": true
+      }
+    },
+    {
+      "id": "TQB-STR-0135",
+      "section": "Structure",
+      "type": "Error Identification",
+      "skill": "Comparatives",
+      "subskill": "The More...The More",
+      "difficulty": 3,
+      "estimatedTime": 50,
+      "academicTopic": "Language Learning",
+      "question": "The more (A) you practice (B) speaking English, (C) the more fluently (D) you will become.",
+      "options": [
+        {
+          "key": "A",
+          "text": "A"
+        },
+        {
+          "key": "B",
+          "text": "B"
+        },
+        {
+          "key": "C",
+          "text": "C"
+        },
+        {
+          "key": "D",
+          "text": "D"
+        }
+      ],
+      "correctKey": "C",
+      "correctAnswer": "C",
+      "explanation": "In the 'the more...the more' comparative construction, the second part should use an adjective (not adverb) after the linking verb 'become'. It should be 'the more fluent' instead of 'the more fluently'.",
+      "commonMistake": "Choosing a grammatically correct underlined part instead of the error.",
+      "learningObjective": "Identify the underlined error in a Structure Written Expression item.",
+      "tags": [
+        "error_identification",
+        "comparatives",
+        "the_more_the_more"
+      ],
+      "source": {
+        "file": "Grammar section part A.txt",
+        "original_number": 10,
+        "used_revised": false
+      }
+    },
+    {
+      "id": "TQB-STR-0136",
+      "section": "Structure",
+      "type": "Error Identification",
+      "skill": "Word Forms",
+      "subskill": "Gerund vs Noun",
+      "difficulty": 3,
+      "estimatedTime": 50,
+      "academicTopic": "Science",
+      "question": "The scientist (A) was awarded (B) the Nobel Prize for (C) his discovering (D) of the new element.",
+      "options": [
+        {
+          "key": "A",
+          "text": "A"
+        },
+        {
+          "key": "B",
+          "text": "B"
+        },
+        {
+          "key": "C",
+          "text": "C"
+        },
+        {
+          "key": "D",
+          "text": "D"
+        }
+      ],
+      "correctKey": "C",
+      "correctAnswer": "C",
+      "explanation": "After a possessive adjective ('his'), a gerund or noun is needed. 'Discovering' is a gerund, but the correct noun form is 'discovery'. It should be 'his discovery'.",
+      "commonMistake": "Choosing a grammatically correct underlined part instead of the error.",
+      "learningObjective": "Identify the underlined error in a Structure Written Expression item.",
+      "tags": [
+        "error_identification",
+        "word_forms",
+        "gerund_vs_noun"
+      ],
+      "source": {
+        "file": "Grammar section part A.txt",
+        "original_number": 11,
+        "used_revised": false
+      }
+    },
+    {
+      "id": "TQB-STR-0137",
+      "section": "Structure",
+      "type": "Error Identification",
+      "skill": "Participles",
+      "subskill": "Dangling Modifier",
+      "difficulty": 3,
+      "estimatedTime": 50,
+      "academicTopic": "Outdoor Recreation",
+      "question": "Having been (A) warned about (B) the storm, (C) the trip was postponed (D) by the hikers.",
+      "options": [
+        {
+          "key": "A",
+          "text": "A"
+        },
+        {
+          "key": "B",
+          "text": "B"
+        },
+        {
+          "key": "C",
+          "text": "C"
+        },
+        {
+          "key": "D",
+          "text": "D"
+        }
+      ],
+      "correctKey": "C",
+      "correctAnswer": "C",
+      "explanation": "The participial phrase 'Having been warned' must logically modify the subject of the main clause. 'The trip' cannot be warned — it should be 'the hikers postponed' so that 'hikers' is the subject.",
+      "commonMistake": "Choosing a grammatically correct underlined part instead of the error.",
+      "learningObjective": "Identify the underlined error in a Structure Written Expression item.",
+      "tags": [
+        "error_identification",
+        "participles",
+        "dangling_modifier"
+      ],
+      "source": {
+        "file": "Grammar section part A.txt",
+        "original_number": 12,
+        "used_revised": true
+      }
+    },
+    {
+      "id": "TQB-STR-0138",
+      "section": "Structure",
+      "type": "Error Identification",
+      "skill": "Subjunctive",
+      "subskill": "Suggest That",
+      "difficulty": 3,
+      "estimatedTime": 50,
+      "academicTopic": "Business",
+      "question": "The manager (A) suggested (B) that the meeting (C) is held (D) in the conference room.",
+      "options": [
+        {
+          "key": "A",
+          "text": "A"
+        },
+        {
+          "key": "B",
+          "text": "B"
+        },
+        {
+          "key": "C",
+          "text": "C"
+        },
+        {
+          "key": "D",
+          "text": "D"
+        }
+      ],
+      "correctKey": "C",
+      "correctAnswer": "C",
+      "explanation": "After verbs like 'suggest', 'recommend', 'demand', the subjunctive mood is used: the base form of the verb without 'to' and without conjugation. It should be 'be held' instead of 'is held'.",
+      "commonMistake": "Choosing a grammatically correct underlined part instead of the error.",
+      "learningObjective": "Identify the underlined error in a Structure Written Expression item.",
+      "tags": [
+        "error_identification",
+        "subjunctive",
+        "suggest_that"
+      ],
+      "source": {
+        "file": "Grammar section part A.txt",
+        "original_number": 13,
+        "used_revised": false
+      }
+    },
+    {
+      "id": "TQB-STR-0139",
+      "section": "Structure",
+      "type": "Error Identification",
+      "skill": "Gerunds and Infinitives",
+      "subskill": "Enjoy + Gerund",
+      "difficulty": 3,
+      "estimatedTime": 50,
+      "academicTopic": "Campus Life",
+      "question": "The students (A) enjoyed (B) to visit (C) the museum (D) last weekend.",
+      "options": [
+        {
+          "key": "A",
+          "text": "A"
+        },
+        {
+          "key": "B",
+          "text": "B"
+        },
+        {
+          "key": "C",
+          "text": "C"
+        },
+        {
+          "key": "D",
+          "text": "D"
+        }
+      ],
+      "correctKey": "B",
+      "correctAnswer": "B",
+      "explanation": "The verb 'enjoy' is always followed by a gerund, not an infinitive. It should be 'visiting' instead of 'to visit'.",
+      "commonMistake": "Choosing a grammatically correct underlined part instead of the error.",
+      "learningObjective": "Identify the underlined error in a Structure Written Expression item.",
+      "tags": [
+        "error_identification",
+        "gerunds_and_infinitives",
+        "enjoy_gerund"
+      ],
+      "source": {
+        "file": "Grammar section part A.txt",
+        "original_number": 14,
+        "used_revised": false
+      }
+    },
+    {
+      "id": "TQB-STR-0140",
+      "section": "Structure",
+      "type": "Error Identification",
+      "skill": "Comparatives",
+      "subskill": "So vs Such",
+      "difficulty": 3,
+      "estimatedTime": 50,
+      "academicTopic": "Literature",
+      "question": "The novel (A) was such (B) interesting (C) that I couldn't (D) put it down.",
+      "options": [
+        {
+          "key": "A",
+          "text": "A"
+        },
+        {
+          "key": "B",
+          "text": "B"
+        },
+        {
+          "key": "C",
+          "text": "C"
+        },
+        {
+          "key": "D",
+          "text": "D"
+        }
+      ],
+      "correctKey": "A",
+      "correctAnswer": "A",
+      "explanation": "'Such' is used before a noun phrase, while 'so' is used before an adjective alone. Since 'interesting' is an adjective without a noun, it should be 'was so interesting'.",
+      "commonMistake": "Choosing a grammatically correct underlined part instead of the error.",
+      "learningObjective": "Identify the underlined error in a Structure Written Expression item.",
+      "tags": [
+        "error_identification",
+        "mixed_advanced",
+        "so_vs_such_in_result_clauses"
+      ],
+      "source": {
+        "file": "Grammar section part A.txt",
+        "original_number": 16,
+        "used_revised": true
+      }
+    },
+    {
+      "id": "TQB-STR-0141",
+      "section": "Structure",
+      "type": "Error Identification",
+      "skill": "Noun Clauses",
+      "subskill": "Embedded Question Word Order",
+      "difficulty": 3,
+      "estimatedTime": 50,
+      "academicTopic": "Education",
+      "question": "The professor (A) asked the students (B) when (C) did they (D) finish their essays.",
+      "options": [
+        {
+          "key": "A",
+          "text": "A"
+        },
+        {
+          "key": "B",
+          "text": "B"
+        },
+        {
+          "key": "C",
+          "text": "C"
+        },
+        {
+          "key": "D",
+          "text": "D"
+        }
+      ],
+      "correctKey": "C",
+      "correctAnswer": "C",
+      "explanation": "In indirect questions (noun clauses), the word order is subject + verb, not question word order. It should be 'they finished' instead of 'did they finish'.",
+      "commonMistake": "Choosing a grammatically correct underlined part instead of the error.",
+      "learningObjective": "Identify the underlined error in a Structure Written Expression item.",
+      "tags": [
+        "error_identification",
+        "noun_clauses",
+        "embedded_question_word_order"
+      ],
+      "source": {
+        "file": "Grammar section part A.txt",
+        "original_number": 17,
+        "used_revised": false
+      }
+    },
+    {
+      "id": "TQB-STR-0142",
+      "section": "Structure",
+      "type": "Error Identification",
+      "skill": "Subject-Verb Agreement",
+      "subskill": "Neither...Nor",
+      "difficulty": 3,
+      "estimatedTime": 50,
+      "academicTopic": "Social Life",
+      "question": "Neither (A) John nor (B) his friends (C) was (D) at the party.",
+      "options": [
+        {
+          "key": "A",
+          "text": "A"
+        },
+        {
+          "key": "B",
+          "text": "B"
+        },
+        {
+          "key": "C",
+          "text": "C"
+        },
+        {
+          "key": "D",
+          "text": "D"
+        }
+      ],
+      "correctKey": "C",
+      "correctAnswer": "C",
+      "explanation": "With 'neither...nor', the verb agrees with the nearest subject. 'His friends' is plural, so the verb should be 'were' instead of 'was'.",
+      "commonMistake": "Choosing a grammatically correct underlined part instead of the error.",
+      "learningObjective": "Identify the underlined error in a Structure Written Expression item.",
+      "tags": [
+        "error_identification",
+        "subject_verb_agreement",
+        "neither_nor"
+      ],
+      "source": {
+        "file": "Grammar section part A.txt",
+        "original_number": 18,
+        "used_revised": false
+      }
+    },
+    {
+      "id": "TQB-STR-0143",
+      "section": "Structure",
+      "type": "Error Identification",
+      "skill": "Subject-Verb Agreement",
+      "subskill": "Uncountable Nouns",
+      "difficulty": 3,
+      "estimatedTime": 50,
+      "academicTopic": "Current Events",
+      "question": "The news (A) about (B) the earthquake (C) were (D) shocking.",
+      "options": [
+        {
+          "key": "A",
+          "text": "A"
+        },
+        {
+          "key": "B",
+          "text": "B"
+        },
+        {
+          "key": "C",
+          "text": "C"
+        },
+        {
+          "key": "D",
+          "text": "D"
+        }
+      ],
+      "correctKey": "C",
+      "correctAnswer": "C",
+      "explanation": "'News' is an uncountable noun and is always singular. The verb should be 'was' instead of 'were'.",
+      "commonMistake": "Choosing a grammatically correct underlined part instead of the error.",
+      "learningObjective": "Identify the underlined error in a Structure Written Expression item.",
+      "tags": [
+        "error_identification",
+        "subject_verb_agreement",
+        "uncountable_nouns"
+      ],
+      "source": {
+        "file": "Grammar section part A.txt",
+        "original_number": 19,
+        "used_revised": true
+      }
+    },
+    {
+      "id": "TQB-STR-0144",
+      "section": "Structure",
+      "type": "Error Identification",
+      "skill": "Gerunds and Infinitives",
+      "subskill": "Negative Infinitive",
+      "difficulty": 3,
+      "estimatedTime": 50,
+      "academicTopic": "Education",
+      "question": "The teacher (A) told (B) the students (C) to not (D) talk during the exam.",
+      "options": [
+        {
+          "key": "A",
+          "text": "A"
+        },
+        {
+          "key": "B",
+          "text": "B"
+        },
+        {
+          "key": "C",
+          "text": "C"
+        },
+        {
+          "key": "D",
+          "text": "D"
+        }
+      ],
+      "correctKey": "C",
+      "correctAnswer": "C",
+      "explanation": "With the negative infinitive, 'not' should precede 'to'. The correct form is 'not to talk' instead of 'to not talk'.",
+      "commonMistake": "Choosing a grammatically correct underlined part instead of the error.",
+      "learningObjective": "Identify the underlined error in a Structure Written Expression item.",
+      "tags": [
+        "error_identification",
+        "gerunds_and_infinitives",
+        "negative_infinitive"
+      ],
+      "source": {
+        "file": "Grammar section part A.txt",
+        "original_number": 20,
+        "used_revised": false
+      }
+    },
+    {
+      "id": "TQB-STR-0145",
+      "section": "Structure",
+      "type": "Error Identification",
+      "skill": "Gerunds and Infinitives",
+      "subskill": "Look Forward To + Gerund",
+      "difficulty": 3,
+      "estimatedTime": 50,
+      "academicTopic": "Education",
+      "question": "The graduate students (A) look forward to (B) meet the visiting lecturer (C) at next week's seminar (D).",
+      "options": [
+        {
+          "key": "A",
+          "text": "A"
+        },
+        {
+          "key": "B",
+          "text": "B"
+        },
+        {
+          "key": "C",
+          "text": "C"
+        },
+        {
+          "key": "D",
+          "text": "D"
+        }
+      ],
+      "correctKey": "C",
+      "correctAnswer": "C",
+      "explanation": "'Look forward to' is followed by a gerund. 'Meet' should be 'meeting.'",
+      "commonMistake": "Treating 'to' as an infinitive marker instead of a preposition.",
+      "learningObjective": "Recognize gerunds after phrasal prepositions such as 'look forward to.'",
+      "tags": [
+        "error_identification",
+        "gerunds",
+        "look_forward_to"
+      ]
+    },
+    {
+      "id": "TQB-STR-0146",
+      "section": "Structure",
+      "type": "Error Identification",
+      "skill": "Gerunds and Infinitives",
+      "subskill": "Capable Of + Gerund",
+      "difficulty": 3,
+      "estimatedTime": 50,
+      "academicTopic": "Technology",
+      "question": "The new software (A) is capable to process (B) large data sets (C) in a relatively short time (D).",
+      "options": [
+        {
+          "key": "A",
+          "text": "A"
+        },
+        {
+          "key": "B",
+          "text": "B"
+        },
+        {
+          "key": "C",
+          "text": "C"
+        },
+        {
+          "key": "D",
+          "text": "D"
+        }
+      ],
+      "correctKey": "B",
+      "correctAnswer": "B",
+      "explanation": "The correct pattern is 'capable of + gerund.' 'Capable to process' should be 'capable of processing.'",
+      "commonMistake": "Using an infinitive after 'capable' instead of 'of + gerund.'",
+      "learningObjective": "Use adjective + preposition + gerund combinations.",
+      "tags": [
+        "error_identification",
+        "gerunds",
+        "capable_of"
+      ]
+    },
+    {
+      "id": "TQB-STR-0147",
+      "section": "Structure",
+      "type": "Error Identification",
+      "skill": "Subject-Verb Agreement",
+      "subskill": "One Of The + Plural Noun",
+      "difficulty": 3,
+      "estimatedTime": 50,
+      "academicTopic": "Science",
+      "question": "One of the most important discoveries (A) of the past decade (B) were announced (C) at the conference (D).",
+      "options": [
+        {
+          "key": "A",
+          "text": "A"
+        },
+        {
+          "key": "B",
+          "text": "B"
+        },
+        {
+          "key": "C",
+          "text": "C"
+        },
+        {
+          "key": "D",
+          "text": "D"
+        }
+      ],
+      "correctKey": "C",
+      "correctAnswer": "C",
+      "explanation": "The subject is 'one,' which is singular, so the verb should be 'was announced,' not 'were announced.'",
+      "commonMistake": "Making the verb agree with 'discoveries' instead of 'one.'",
+      "learningObjective": "Identify the true subject in 'one of the + plural noun' structures.",
+      "tags": [
+        "error_identification",
+        "subject_verb_agreement",
+        "one_of_the"
+      ]
+    },
+    {
+      "id": "TQB-STR-0148",
+      "section": "Structure",
+      "type": "Error Identification",
+      "skill": "Subject-Verb Agreement",
+      "subskill": "The Number Of",
+      "difficulty": 3,
+      "estimatedTime": 50,
+      "academicTopic": "Education",
+      "question": "The number of applications (A) for the program (B) have increased (C) every year since 2018 (D).",
+      "options": [
+        {
+          "key": "A",
+          "text": "A"
+        },
+        {
+          "key": "B",
+          "text": "B"
+        },
+        {
+          "key": "C",
+          "text": "C"
+        },
+        {
+          "key": "D",
+          "text": "D"
+        }
+      ],
+      "correctKey": "C",
+      "correctAnswer": "C",
+      "explanation": "'The number of' is singular and takes 'has increased,' not 'have increased.'",
+      "commonMistake": "Making the verb agree with 'applications' instead of 'number.'",
+      "learningObjective": "Distinguish 'the number of' (singular) from 'a number of' (plural).",
+      "tags": [
+        "error_identification",
+        "subject_verb_agreement",
+        "the_number_of"
+      ]
+    },
+    {
+      "id": "TQB-STR-0149",
+      "section": "Structure",
+      "type": "Error Identification",
+      "skill": "Conditionals",
+      "subskill": "Third Conditional If-Clause",
+      "difficulty": 4,
+      "estimatedTime": 55,
+      "academicTopic": "Laboratory Science",
+      "question": "If the samples would have been stored properly (A), the results would have been (B) more reliable (C) than expected (D).",
+      "options": [
+        {
+          "key": "A",
+          "text": "A"
+        },
+        {
+          "key": "B",
+          "text": "B"
+        },
+        {
+          "key": "C",
+          "text": "C"
+        },
+        {
+          "key": "D",
+          "text": "D"
+        }
+      ],
+      "correctKey": "A",
+      "correctAnswer": "A",
+      "explanation": "The if-clause of a third conditional uses the past perfect: 'had been stored,' not 'would have been stored.'",
+      "commonMistake": "Putting 'would have' in both clauses of a third conditional.",
+      "learningObjective": "Use past perfect, not 'would have,' in third-conditional if-clauses.",
+      "tags": [
+        "error_identification",
+        "conditionals",
+        "third_conditional"
+      ]
+    },
+    {
+      "id": "TQB-STR-0150",
+      "section": "Structure",
+      "type": "Error Identification",
+      "skill": "Participles",
+      "subskill": "Dangling Modifier",
+      "difficulty": 4,
+      "estimatedTime": 55,
+      "academicTopic": "Engineering",
+      "question": "Having completed the measurements (A), the results were entered (B) into the computer (C) by the technicians (D).",
+      "options": [
+        {
+          "key": "A",
+          "text": "A"
+        },
+        {
+          "key": "B",
+          "text": "B"
+        },
+        {
+          "key": "C",
+          "text": "C"
+        },
+        {
+          "key": "D",
+          "text": "D"
+        }
+      ],
+      "correctKey": "B",
+      "correctAnswer": "B",
+      "explanation": "'Having completed the measurements' must modify the doer of that action. 'The results' cannot complete measurements; the subject should be 'the technicians.'",
+      "commonMistake": "Accepting a grammatically well-formed main clause that does not match the participial phrase.",
+      "learningObjective": "Match introductory participial phrases to a logical subject.",
+      "tags": [
+        "error_identification",
+        "dangling_modifier",
+        "participles"
+      ]
+    },
+    {
+      "id": "TQB-STR-0151",
+      "section": "Structure",
+      "type": "Error Identification",
+      "skill": "Word Order",
+      "subskill": "Adjective + Enough",
+      "difficulty": 3,
+      "estimatedTime": 50,
+      "academicTopic": "Research Methods",
+      "question": "The hypothesis was not supported (A) by evidence enough strong (B) to convince the reviewers (C) of its validity (D).",
+      "options": [
+        {
+          "key": "A",
+          "text": "A"
+        },
+        {
+          "key": "B",
+          "text": "B"
+        },
+        {
+          "key": "C",
+          "text": "C"
+        },
+        {
+          "key": "D",
+          "text": "D"
+        }
+      ],
+      "correctKey": "B",
+      "correctAnswer": "B",
+      "explanation": "'Enough' follows the adjective: 'strong enough,' not 'enough strong.'",
+      "commonMistake": "Placing 'enough' before an adjective as if it were 'too.'",
+      "learningObjective": "Use the pattern adjective + enough + infinitive.",
+      "tags": [
+        "error_identification",
+        "word_order",
+        "enough"
+      ]
+    },
+    {
+      "id": "TQB-STR-0152",
+      "section": "Structure",
+      "type": "Error Identification",
+      "skill": "Prepositions",
+      "subskill": "Between vs Among",
+      "difficulty": 2,
+      "estimatedTime": 45,
+      "academicTopic": "University Administration",
+      "question": "An agreement was reached last spring (A) that will allow students (B) to transfer credits (C) among the two campuses (D).",
+      "options": [
+        {
+          "key": "A",
+          "text": "A"
+        },
+        {
+          "key": "B",
+          "text": "B"
+        },
+        {
+          "key": "C",
+          "text": "C"
+        },
+        {
+          "key": "D",
+          "text": "D"
+        }
+      ],
+      "correctKey": "D",
+      "correctAnswer": "D",
+      "explanation": "'Between' is used for two items. 'Among the two campuses' should be 'between the two campuses.'",
+      "commonMistake": "Using 'among' whenever more than one person or place is mentioned.",
+      "learningObjective": "Choose 'between' for two and 'among' for three or more.",
+      "tags": [
+        "error_identification",
+        "prepositions",
+        "between_among"
+      ]
+    },
+    {
+      "id": "TQB-STR-0153",
+      "section": "Structure",
+      "type": "Error Identification",
+      "skill": "Prepositions",
+      "subskill": "For vs During with Periods",
+      "difficulty": 3,
+      "estimatedTime": 50,
+      "academicTopic": "Ecology",
+      "question": "The researchers stayed in the region (A) to observe seasonal changes (B) during three years (C) before returning home (D).",
+      "options": [
+        {
+          "key": "A",
+          "text": "A"
+        },
+        {
+          "key": "B",
+          "text": "B"
+        },
+        {
+          "key": "C",
+          "text": "C"
+        },
+        {
+          "key": "D",
+          "text": "D"
+        }
+      ],
+      "correctKey": "C",
+      "correctAnswer": "C",
+      "explanation": "'During' is followed by a named period or event, not a number + time noun. It should be 'for three years.'",
+      "commonMistake": "Using 'during' with quantified durations such as 'three years.'",
+      "learningObjective": "Use 'for' with lengths of time and 'during' with named periods.",
+      "tags": [
+        "error_identification",
+        "prepositions",
+        "for_during"
+      ]
+    },
+    {
+      "id": "TQB-STR-0154",
+      "section": "Structure",
+      "type": "Error Identification",
+      "skill": "Quantifiers",
+      "subskill": "Little vs Few",
+      "difficulty": 3,
+      "estimatedTime": 50,
+      "academicTopic": "Research Methods",
+      "question": "There is (A) few evidence (B) to support the claim (C) that the method is reliable (D).",
+      "options": [
+        {
+          "key": "A",
+          "text": "A"
+        },
+        {
+          "key": "B",
+          "text": "B"
+        },
+        {
+          "key": "C",
+          "text": "C"
+        },
+        {
+          "key": "D",
+          "text": "D"
+        }
+      ],
+      "correctKey": "B",
+      "correctAnswer": "B",
+      "explanation": "'Evidence' is uncountable, so 'few evidence' should be 'little evidence.' 'There is' is then correct.",
+      "commonMistake": "Using 'few' with uncountable nouns, or changing 'is' instead of the quantifier.",
+      "learningObjective": "Pair 'few' with countable nouns and 'little' with uncountable nouns.",
+      "tags": [
+        "error_identification",
+        "quantifiers",
+        "few_little"
+      ]
+    },
+    {
+      "id": "TQB-STR-0155",
+      "section": "Structure",
+      "type": "Error Identification",
+      "skill": "Word Forms",
+      "subskill": "Advice vs Advise",
+      "difficulty": 2,
+      "estimatedTime": 45,
+      "academicTopic": "Education",
+      "question": "The counselor gave the student (A) some useful advise (B) about choosing (C) a major (D).",
+      "options": [
+        {
+          "key": "A",
+          "text": "A"
+        },
+        {
+          "key": "B",
+          "text": "B"
+        },
+        {
+          "key": "C",
+          "text": "C"
+        },
+        {
+          "key": "D",
+          "text": "D"
+        }
+      ],
+      "correctKey": "B",
+      "correctAnswer": "B",
+      "explanation": "'Advise' is a verb. The noun needed after 'some useful' is 'advice.'",
+      "commonMistake": "Confusing the noun 'advice' with the verb 'advise.'",
+      "learningObjective": "Distinguish noun/verb pairs that differ by spelling.",
+      "tags": [
+        "error_identification",
+        "word_forms",
+        "advice_advise"
+      ]
+    },
+    {
+      "id": "TQB-STR-0156",
+      "section": "Structure",
+      "type": "Error Identification",
+      "skill": "Word Forms",
+      "subskill": "Economic vs Economical",
+      "difficulty": 4,
+      "estimatedTime": 55,
+      "academicTopic": "Economics",
+      "question": "After the trade agreement was signed, the country (A) entered a period (B) of economical growth (C) that lasted several years (D).",
+      "options": [
+        {
+          "key": "A",
+          "text": "A"
+        },
+        {
+          "key": "B",
+          "text": "B"
+        },
+        {
+          "key": "C",
+          "text": "C"
+        },
+        {
+          "key": "D",
+          "text": "D"
+        }
+      ],
+      "correctKey": "C",
+      "correctAnswer": "C",
+      "explanation": "'Economical' means thrifty. Growth of an economy is 'economic growth.'",
+      "commonMistake": "Treating 'economical' as the adjective form of 'economy.'",
+      "learningObjective": "Choose 'economic' for the economy and 'economical' for saving money or resources.",
+      "tags": [
+        "error_identification",
+        "word_forms",
+        "economic_economical"
+      ]
+    },
+    {
+      "id": "TQB-STR-0157",
+      "section": "Structure",
+      "type": "Error Identification",
+      "skill": "Prepositions",
+      "subskill": "Prefer X To Y",
+      "difficulty": 3,
+      "estimatedTime": 50,
+      "academicTopic": "Education",
+      "question": "Many students prefer (A) online instruction (B) than classroom instruction (C) because it is more flexible (D).",
+      "options": [
+        {
+          "key": "A",
+          "text": "A"
+        },
+        {
+          "key": "B",
+          "text": "B"
+        },
+        {
+          "key": "C",
+          "text": "C"
+        },
+        {
+          "key": "D",
+          "text": "D"
+        }
+      ],
+      "correctKey": "C",
+      "correctAnswer": "C",
+      "explanation": "The pattern is 'prefer X to Y,' not 'prefer X than Y.' 'Than classroom instruction' should be 'to classroom instruction.'",
+      "commonMistake": "Using 'than' after 'prefer' because comparatives often take 'than.'",
+      "learningObjective": "Use 'to,' not 'than,' after 'prefer.'",
+      "tags": [
+        "error_identification",
+        "prepositions",
+        "prefer_to"
+      ]
+    },
+    {
+      "id": "TQB-STR-0158",
+      "section": "Structure",
+      "type": "Error Identification",
+      "skill": "Parallel Structure",
+      "subskill": "Parallel Noun Phrases",
+      "difficulty": 4,
+      "estimatedTime": 55,
+      "academicTopic": "Research Funding",
+      "question": "Additional funding made possible (A) the purchase of equipment (B) and to train (C) new staff members (D).",
+      "options": [
+        {
+          "key": "A",
+          "text": "A"
+        },
+        {
+          "key": "B",
+          "text": "B"
+        },
+        {
+          "key": "C",
+          "text": "C"
+        },
+        {
+          "key": "D",
+          "text": "D"
+        }
+      ],
+      "correctKey": "C",
+      "correctAnswer": "C",
+      "explanation": "'The purchase of equipment' is a noun phrase, so the second element should also be a noun phrase: 'the training of new staff members,' not 'to train.'",
+      "commonMistake": "Switching from a noun phrase to an infinitive in a coordinated pair.",
+      "learningObjective": "Keep both elements of 'and' in the same grammatical form.",
+      "tags": [
+        "error_identification",
+        "parallel_structure",
+        "noun_phrases"
+      ]
+    },
+    {
+      "id": "TQB-STR-0159",
+      "section": "Structure",
+      "type": "Error Identification",
+      "skill": "Inversions",
+      "subskill": "No Sooner...Than",
+      "difficulty": 4,
+      "estimatedTime": 55,
+      "academicTopic": "Education",
+      "question": "No sooner had the lecture ended (A) when (B) the students began to ask questions (C) about the assignment (D).",
+      "options": [
+        {
+          "key": "A",
+          "text": "A"
+        },
+        {
+          "key": "B",
+          "text": "B"
+        },
+        {
+          "key": "C",
+          "text": "C"
+        },
+        {
+          "key": "D",
+          "text": "D"
+        }
+      ],
+      "correctKey": "B",
+      "correctAnswer": "B",
+      "explanation": "The correlative pattern is 'no sooner...than,' not 'no sooner...when.' 'When' should be 'than.'",
+      "commonMistake": "Confusing 'no sooner...than' with 'hardly...when.'",
+      "learningObjective": "Use 'than' after inverted 'no sooner.'",
+      "tags": [
+        "error_identification",
+        "inversions",
+        "no_sooner_than"
+      ]
+    },
+    {
+      "id": "TQB-STR-0160",
+      "section": "Structure",
+      "type": "Error Identification",
+      "skill": "Subjunctive",
+      "subskill": "Wish + Unreal Present",
+      "difficulty": 3,
+      "estimatedTime": 50,
+      "academicTopic": "University Administration",
+      "question": "The director wishes that the budget (A) is larger this year (B) than it was last year (C) after several cuts (D).",
+      "options": [
+        {
+          "key": "A",
+          "text": "A"
+        },
+        {
+          "key": "B",
+          "text": "B"
+        },
+        {
+          "key": "C",
+          "text": "C"
+        },
+        {
+          "key": "D",
+          "text": "D"
+        }
+      ],
+      "correctKey": "B",
+      "correctAnswer": "B",
+      "explanation": "After 'wish' for a present unreal situation, English uses a past form: 'were larger,' not 'is larger.'",
+      "commonMistake": "Keeping the present tense after 'wish' because the situation is current.",
+      "learningObjective": "Use past forms after 'wish' to express present unreality.",
+      "tags": [
+        "error_identification",
+        "subjunctive",
+        "wish"
+      ]
+    },
+    {
+      "id": "TQB-STR-0161",
+      "section": "Structure",
+      "type": "Error Identification",
+      "skill": "Subject-Verb Agreement",
+      "subskill": "As Well As",
+      "difficulty": 4,
+      "estimatedTime": 55,
+      "academicTopic": "University Administration",
+      "question": "The department chair, as well as the senior lecturers, (A) have submitted the annual report (B) to the dean (C) this week (D).",
+      "options": [
+        {
+          "key": "A",
+          "text": "A"
+        },
+        {
+          "key": "B",
+          "text": "B"
+        },
+        {
+          "key": "C",
+          "text": "C"
+        },
+        {
+          "key": "D",
+          "text": "D"
+        }
+      ],
+      "correctKey": "B",
+      "correctAnswer": "B",
+      "explanation": "Phrases with 'as well as' do not make the subject plural. The subject is 'the department chair,' so the verb should be 'has submitted.'",
+      "commonMistake": "Adding the noun after 'as well as' to the subject.",
+      "learningObjective": "Ignore 'as well as' phrases when choosing verb number.",
+      "tags": [
+        "error_identification",
+        "subject_verb_agreement",
+        "as_well_as"
+      ]
+    },
+    {
+      "id": "TQB-STR-0162",
+      "section": "Structure",
+      "type": "Error Identification",
+      "skill": "Pronouns",
+      "subskill": "Who vs Whom",
+      "difficulty": 4,
+      "estimatedTime": 55,
+      "academicTopic": "Social Science",
+      "question": "The researchers could not identify the person (A) who they had interviewed (B) during the first phase (C) of the study (D).",
+      "options": [
+        {
+          "key": "A",
+          "text": "A"
+        },
+        {
+          "key": "B",
+          "text": "B"
+        },
+        {
+          "key": "C",
+          "text": "C"
+        },
+        {
+          "key": "D",
+          "text": "D"
+        }
+      ],
+      "correctKey": "B",
+      "correctAnswer": "B",
+      "explanation": "'Who' is a subject form. Here the pronoun is the object of 'had interviewed,' so it should be 'whom they had interviewed.'",
+      "commonMistake": "Using 'who' in all relative clauses that refer to people.",
+      "learningObjective": "Use 'whom' when the relative pronoun is an object.",
+      "tags": [
+        "error_identification",
+        "pronouns",
+        "who_whom"
+      ]
+    },
+    {
+      "id": "TQB-STR-0163",
+      "section": "Structure",
+      "type": "Error Identification",
+      "skill": "Prepositions",
+      "subskill": "Different From",
+      "difficulty": 3,
+      "estimatedTime": 50,
+      "academicTopic": "Chemistry",
+      "question": "This compound is chemically (A) different (B) than any other substance (C) found in the sample (D).",
+      "options": [
+        {
+          "key": "A",
+          "text": "A"
+        },
+        {
+          "key": "B",
+          "text": "B"
+        },
+        {
+          "key": "C",
+          "text": "C"
+        },
+        {
+          "key": "D",
+          "text": "D"
+        }
+      ],
+      "correctKey": "C",
+      "correctAnswer": "C",
+      "explanation": "Formal academic English uses 'different from,' not 'different than.'",
+      "commonMistake": "Using 'than' after 'different' because comparatives take 'than.'",
+      "learningObjective": "Use 'different from' in academic writing.",
+      "tags": [
+        "error_identification",
+        "prepositions",
+        "different_from"
+      ]
+    },
+    {
+      "id": "TQB-STR-0164",
+      "section": "Structure",
+      "type": "Error Identification",
+      "skill": "Prepositions",
+      "subskill": "Time Expressions without In",
+      "difficulty": 2,
+      "estimatedTime": 45,
+      "academicTopic": "Publishing",
+      "question": "The findings will be published (A) in a major journal (B) after the peer review (C) in next month (D).",
+      "options": [
+        {
+          "key": "A",
+          "text": "A"
+        },
+        {
+          "key": "B",
+          "text": "B"
+        },
+        {
+          "key": "C",
+          "text": "C"
+        },
+        {
+          "key": "D",
+          "text": "D"
+        }
+      ],
+      "correctKey": "D",
+      "correctAnswer": "D",
+      "explanation": "'Next month' is not used with 'in.' It should be 'next month,' not 'in next month.'",
+      "commonMistake": "Adding 'in' before 'next' time expressions.",
+      "learningObjective": "Omit 'in' before 'next' and 'last' in time phrases.",
+      "tags": [
+        "error_identification",
+        "prepositions",
+        "next_month"
+      ]
+    },
+    {
+      "id": "TQB-STR-0165",
+      "section": "Structure",
+      "type": "Error Identification",
+      "skill": "Word Forms",
+      "subskill": "Plural after Number",
+      "difficulty": 2,
+      "estimatedTime": 45,
+      "academicTopic": "Medicine",
+      "question": "The treatment proved highly effective (A) in reducing infections (B) among older patients (C) during the first six month (D).",
+      "options": [
+        {
+          "key": "A",
+          "text": "A"
+        },
+        {
+          "key": "B",
+          "text": "B"
+        },
+        {
+          "key": "C",
+          "text": "C"
+        },
+        {
+          "key": "D",
+          "text": "D"
+        }
+      ],
+      "correctKey": "D",
+      "correctAnswer": "D",
+      "explanation": "After a number greater than one, the noun is plural: 'six months,' not 'six month.'",
+      "commonMistake": "Using the singular form after a plural number in time phrases.",
+      "learningObjective": "Use plural nouns after numbers greater than one.",
+      "tags": [
+        "error_identification",
+        "word_forms",
+        "plural_after_number"
+      ]
+    },
+    {
+      "id": "TQB-STR-0166",
+      "section": "Structure",
+      "type": "Error Identification",
+      "skill": "Adjective Clauses",
+      "subskill": "Whose vs Which",
+      "difficulty": 4,
+      "estimatedTime": 55,
+      "academicTopic": "Archival Science",
+      "question": "The documents were stored (A) in a room which temperature (B) was carefully controlled (C) throughout the year (D).",
+      "options": [
+        {
+          "key": "A",
+          "text": "A"
+        },
+        {
+          "key": "B",
+          "text": "B"
+        },
+        {
+          "key": "C",
+          "text": "C"
+        },
+        {
+          "key": "D",
+          "text": "D"
+        }
+      ],
+      "correctKey": "B",
+      "correctAnswer": "B",
+      "explanation": "Possession is expressed with 'whose': 'whose temperature,' not 'which temperature.'",
+      "commonMistake": "Using 'which' before a noun to show possession.",
+      "learningObjective": "Use 'whose' for possession with both people and things.",
+      "tags": [
+        "error_identification",
+        "adjective_clauses",
+        "whose"
+      ]
+    },
+    {
+      "id": "TQB-STR-0167",
+      "section": "Structure",
+      "type": "Error Identification",
+      "skill": "Word Forms",
+      "subskill": "Years Old",
+      "difficulty": 2,
+      "estimatedTime": 45,
+      "academicTopic": "Geology",
+      "question": "The fossils are believed to be (A) more than two million (B) years age (C) according to recent tests (D).",
+      "options": [
+        {
+          "key": "A",
+          "text": "A"
+        },
+        {
+          "key": "B",
+          "text": "B"
+        },
+        {
+          "key": "C",
+          "text": "C"
+        },
+        {
+          "key": "D",
+          "text": "D"
+        }
+      ],
+      "correctKey": "C",
+      "correctAnswer": "C",
+      "explanation": "The correct pattern is 'years old,' not 'years age.'",
+      "commonMistake": "Using the noun 'age' where the adjective 'old' is required.",
+      "learningObjective": "Use 'years old' for age expressions.",
+      "tags": [
+        "error_identification",
+        "word_forms",
+        "years_old"
+      ]
+    },
+    {
+      "id": "TQB-STR-0168",
+      "section": "Structure",
+      "type": "Error Identification",
+      "skill": "Parallel Structure",
+      "subskill": "Parallel Gerunds after Without",
+      "difficulty": 4,
+      "estimatedTime": 55,
+      "academicTopic": "Business",
+      "question": "The organization succeeded in reducing costs last year (A) without cutting staff (B) or to close (C) any offices (D).",
+      "options": [
+        {
+          "key": "A",
+          "text": "A"
+        },
+        {
+          "key": "B",
+          "text": "B"
+        },
+        {
+          "key": "C",
+          "text": "C"
+        },
+        {
+          "key": "D",
+          "text": "D"
+        }
+      ],
+      "correctKey": "C",
+      "correctAnswer": "C",
+      "explanation": "'Without' is followed by gerunds: 'cutting... or closing,' not 'to close.'",
+      "commonMistake": "Switching to an infinitive in the second half of a 'without' phrase.",
+      "learningObjective": "Keep gerunds parallel after prepositions such as 'without.'",
+      "tags": [
+        "error_identification",
+        "parallel_structure",
+        "gerunds"
+      ]
+    },
+    {
+      "id": "TQB-STR-0169",
+      "section": "Structure",
+      "type": "Error Identification",
+      "skill": "Quantifiers",
+      "subskill": "Amount vs Number",
+      "difficulty": 3,
+      "estimatedTime": 50,
+      "academicTopic": "Education",
+      "question": "A large amount of students (A) enrolled in the course (B) this semester (C) after the requirements changed (D).",
+      "options": [
+        {
+          "key": "A",
+          "text": "A"
+        },
+        {
+          "key": "B",
+          "text": "B"
+        },
+        {
+          "key": "C",
+          "text": "C"
+        },
+        {
+          "key": "D",
+          "text": "D"
+        }
+      ],
+      "correctKey": "A",
+      "correctAnswer": "A",
+      "explanation": "'Students' is countable, so the correct quantifier is 'a large number of,' not 'a large amount of.'",
+      "commonMistake": "Using 'amount' with countable plural nouns.",
+      "learningObjective": "Use 'amount' with uncountable nouns and 'number' with countable nouns.",
+      "tags": [
+        "error_identification",
+        "quantifiers",
+        "amount_number"
       ]
     }
   ]

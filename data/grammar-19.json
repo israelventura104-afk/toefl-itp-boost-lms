@@ -1,0 +1,850 @@
+{
+  "id": "STR-ERROR-ID-DROP-001",
+  "title": "Structure Written Expression drop (from Grammar section part A.txt)",
+  "note": "These are Error Identification items (ITP Structure Part B / Written Expression), not sentence completion. Q15 omitted: near-duplicate of TQB-STR-0091. IDs TQB-STR-0126+ are proposed; confirm no collision before merging into structure-bank.json.",
+  "item_count": 19,
+  "skipped": [
+    {
+      "original_number": 15,
+      "reason": "near-duplicate of TQB-STR-0091"
+    }
+  ],
+  "items": [
+    {
+      "id": "TQB-STR-0126",
+      "section": "Structure",
+      "type": "Error Identification",
+      "skill": "Verb Tenses",
+      "subskill": "Time Clauses",
+      "difficulty": 3,
+      "estimatedTime": 50,
+      "academicTopic": "Education",
+      "question": "The professor asked the students (A) to hand in their (B) assignments before they (C) will leave (D) the classroom.",
+      "options": [
+        {
+          "key": "A",
+          "text": "A"
+        },
+        {
+          "key": "B",
+          "text": "B"
+        },
+        {
+          "key": "C",
+          "text": "C"
+        },
+        {
+          "key": "D",
+          "text": "D"
+        }
+      ],
+      "correctKey": "C",
+      "correctAnswer": "C",
+      "explanation": "In noun clauses after 'before', the future tense is not used. It should be 'left' (simple past) to match the past tense of 'asked'.",
+      "commonMistake": "Choosing a grammatically correct underlined part instead of the error.",
+      "learningObjective": "Identify the underlined error in a Structure Written Expression item.",
+      "tags": [
+        "error_identification",
+        "verb_tenses",
+        "time_clauses"
+      ],
+      "source": {
+        "file": "Grammar section part A.txt",
+        "original_number": 1,
+        "used_revised": false
+      }
+    },
+    {
+      "id": "TQB-STR-0127",
+      "section": "Structure",
+      "type": "Error Identification",
+      "skill": "Subject-Verb Agreement",
+      "subskill": "Neither...Nor",
+      "difficulty": 3,
+      "estimatedTime": 50,
+      "academicTopic": "Education",
+      "question": "Neither the students nor (A) the teacher (B) were able (C) to solve the (D) difficult equation.",
+      "options": [
+        {
+          "key": "A",
+          "text": "A"
+        },
+        {
+          "key": "B",
+          "text": "B"
+        },
+        {
+          "key": "C",
+          "text": "C"
+        },
+        {
+          "key": "D",
+          "text": "D"
+        }
+      ],
+      "correctKey": "B",
+      "correctAnswer": "B",
+      "explanation": "With 'neither...nor', the verb agrees with the nearest subject ('the teacher' = singular). It should be 'was able'.",
+      "commonMistake": "Choosing a grammatically correct underlined part instead of the error.",
+      "learningObjective": "Identify the underlined error in a Structure Written Expression item.",
+      "tags": [
+        "error_identification",
+        "subject_verb_agreement",
+        "neither_nor"
+      ],
+      "source": {
+        "file": "Grammar section part A.txt",
+        "original_number": 2,
+        "used_revised": false
+      }
+    },
+    {
+      "id": "TQB-STR-0128",
+      "section": "Structure",
+      "type": "Error Identification",
+      "skill": "Gerunds and Infinitives",
+      "subskill": "Spend + Gerund",
+      "difficulty": 3,
+      "estimatedTime": 50,
+      "academicTopic": "Research",
+      "question": "The researcher (A) spent three years (B) to collect (C) data for (D) her dissertation.",
+      "options": [
+        {
+          "key": "A",
+          "text": "A"
+        },
+        {
+          "key": "B",
+          "text": "B"
+        },
+        {
+          "key": "C",
+          "text": "C"
+        },
+        {
+          "key": "D",
+          "text": "D"
+        }
+      ],
+      "correctKey": "B",
+      "correctAnswer": "B",
+      "explanation": "After 'spend time', the correct structure is the gerund ('collecting'), not the infinitive ('to collect').",
+      "commonMistake": "Choosing a grammatically correct underlined part instead of the error.",
+      "learningObjective": "Identify the underlined error in a Structure Written Expression item.",
+      "tags": [
+        "error_identification",
+        "gerunds_and_infinitives",
+        "spend_gerund"
+      ],
+      "source": {
+        "file": "Grammar section part A.txt",
+        "original_number": 3,
+        "used_revised": false
+      }
+    },
+    {
+      "id": "TQB-STR-0129",
+      "section": "Structure",
+      "type": "Error Identification",
+      "skill": "Pronouns",
+      "subskill": "Collective Nouns",
+      "difficulty": 3,
+      "estimatedTime": 50,
+      "academicTopic": "Public Policy",
+      "question": "The committee (A) has already (B) made their (C) decision regarding (D) the new policy.",
+      "options": [
+        {
+          "key": "A",
+          "text": "A"
+        },
+        {
+          "key": "B",
+          "text": "B"
+        },
+        {
+          "key": "C",
+          "text": "C"
+        },
+        {
+          "key": "D",
+          "text": "D"
+        }
+      ],
+      "correctKey": "C",
+      "correctAnswer": "C",
+      "explanation": "'Committee' is a collective noun that can take a singular or plural verb, but in formal American English, it should be 'its' (singular pronoun) to match 'has' (singular verb).",
+      "commonMistake": "Choosing a grammatically correct underlined part instead of the error.",
+      "learningObjective": "Identify the underlined error in a Structure Written Expression item.",
+      "tags": [
+        "error_identification",
+        "pronouns",
+        "collective_nouns"
+      ],
+      "source": {
+        "file": "Grammar section part A.txt",
+        "original_number": 4,
+        "used_revised": false
+      }
+    },
+    {
+      "id": "TQB-STR-0130",
+      "section": "Structure",
+      "type": "Error Identification",
+      "skill": "Prepositions",
+      "subskill": "Despite",
+      "difficulty": 3,
+      "estimatedTime": 50,
+      "academicTopic": "Campus Life",
+      "question": "Despite (A) of the (B) heavy rain, the (C) outdoor concert (D) continued as scheduled.",
+      "options": [
+        {
+          "key": "A",
+          "text": "A"
+        },
+        {
+          "key": "B",
+          "text": "B"
+        },
+        {
+          "key": "C",
+          "text": "C"
+        },
+        {
+          "key": "D",
+          "text": "D"
+        }
+      ],
+      "correctKey": "A",
+      "correctAnswer": "A",
+      "explanation": "'Despite' is a preposition and is directly followed by a noun phrase. The word 'of' is incorrect and should be removed: 'Despite the heavy rain...'",
+      "commonMistake": "Choosing a grammatically correct underlined part instead of the error.",
+      "learningObjective": "Identify the underlined error in a Structure Written Expression item.",
+      "tags": [
+        "error_identification",
+        "prepositions",
+        "despite"
+      ],
+      "source": {
+        "file": "Grammar section part A.txt",
+        "original_number": 5,
+        "used_revised": false
+      }
+    },
+    {
+      "id": "TQB-STR-0131",
+      "section": "Structure",
+      "type": "Error Identification",
+      "skill": "Adjective Clauses",
+      "subskill": "Redundant Object Pronoun",
+      "difficulty": 3,
+      "estimatedTime": 50,
+      "academicTopic": "Campus Life",
+      "question": "The book (A) that I borrowed (B) it (C) from the library (D) is overdue.",
+      "options": [
+        {
+          "key": "A",
+          "text": "A"
+        },
+        {
+          "key": "B",
+          "text": "B"
+        },
+        {
+          "key": "C",
+          "text": "C"
+        },
+        {
+          "key": "D",
+          "text": "D"
+        }
+      ],
+      "correctKey": "B",
+      "correctAnswer": "B",
+      "explanation": "The relative pronoun 'that' already functions as the object of 'borrowed'. The pronoun 'it' is redundant and should be removed.",
+      "commonMistake": "Choosing a grammatically correct underlined part instead of the error.",
+      "learningObjective": "Identify the underlined error in a Structure Written Expression item.",
+      "tags": [
+        "error_identification",
+        "adjective_clauses",
+        "redundant_object_pronoun"
+      ],
+      "source": {
+        "file": "Grammar section part A.txt",
+        "original_number": 6,
+        "used_revised": false
+      }
+    },
+    {
+      "id": "TQB-STR-0132",
+      "section": "Structure",
+      "type": "Error Identification",
+      "skill": "Verb Tenses",
+      "subskill": "By The Time",
+      "difficulty": 3,
+      "estimatedTime": 50,
+      "academicTopic": "Education",
+      "question": "By the time (A) the lecture (B) will end, the students (C) will have been (D) waiting for two hours.",
+      "options": [
+        {
+          "key": "A",
+          "text": "A"
+        },
+        {
+          "key": "B",
+          "text": "B"
+        },
+        {
+          "key": "C",
+          "text": "C"
+        },
+        {
+          "key": "D",
+          "text": "D"
+        }
+      ],
+      "correctKey": "B",
+      "correctAnswer": "B",
+      "explanation": "In time clauses introduced by 'by the time', the simple present tense is used to refer to the future. It should be 'ends' instead of 'will end'.",
+      "commonMistake": "Choosing a grammatically correct underlined part instead of the error.",
+      "learningObjective": "Identify the underlined error in a Structure Written Expression item.",
+      "tags": [
+        "error_identification",
+        "verb_tenses",
+        "by_the_time"
+      ],
+      "source": {
+        "file": "Grammar section part A.txt",
+        "original_number": 7,
+        "used_revised": true
+      }
+    },
+    {
+      "id": "TQB-STR-0133",
+      "section": "Structure",
+      "type": "Error Identification",
+      "skill": "Subjunctive",
+      "subskill": "Require That",
+      "difficulty": 3,
+      "estimatedTime": 50,
+      "academicTopic": "University Administration",
+      "question": "The university (A) requires that (B) all students (C) must submit (D) their transcripts by Friday.",
+      "options": [
+        {
+          "key": "A",
+          "text": "A"
+        },
+        {
+          "key": "B",
+          "text": "B"
+        },
+        {
+          "key": "C",
+          "text": "C"
+        },
+        {
+          "key": "D",
+          "text": "D"
+        }
+      ],
+      "correctKey": "C",
+      "correctAnswer": "C",
+      "explanation": "After verbs like 'require', 'suggest', 'demand', the subjunctive mood is used in the that-clause: the base form of the verb without 'must'. It should be 'submit' instead of 'must submit'.",
+      "commonMistake": "Choosing a grammatically correct underlined part instead of the error.",
+      "learningObjective": "Identify the underlined error in a Structure Written Expression item.",
+      "tags": [
+        "error_identification",
+        "subjunctive",
+        "require_that"
+      ],
+      "source": {
+        "file": "Grammar section part A.txt",
+        "original_number": 8,
+        "used_revised": false
+      }
+    },
+    {
+      "id": "TQB-STR-0134",
+      "section": "Structure",
+      "type": "Error Identification",
+      "skill": "Parallel Structure",
+      "subskill": "Not Only...But Also",
+      "difficulty": 3,
+      "estimatedTime": 50,
+      "academicTopic": "Education",
+      "question": "Not only (A) did she (B) finish the exam early, but (C) also she (D) got the highest score.",
+      "options": [
+        {
+          "key": "A",
+          "text": "A"
+        },
+        {
+          "key": "B",
+          "text": "B"
+        },
+        {
+          "key": "C",
+          "text": "C"
+        },
+        {
+          "key": "D",
+          "text": "D"
+        }
+      ],
+      "correctKey": "C",
+      "correctAnswer": "C",
+      "explanation": "In the 'not only...but also' construction, 'also' should follow the subject, not precede it. It should be 'she also' instead of 'also she'.",
+      "commonMistake": "Choosing a grammatically correct underlined part instead of the error.",
+      "learningObjective": "Identify the underlined error in a Structure Written Expression item.",
+      "tags": [
+        "error_identification",
+        "parallel_structure",
+        "not_only_but_also"
+      ],
+      "source": {
+        "file": "Grammar section part A.txt",
+        "original_number": 9,
+        "used_revised": true
+      }
+    },
+    {
+      "id": "TQB-STR-0135",
+      "section": "Structure",
+      "type": "Error Identification",
+      "skill": "Comparatives",
+      "subskill": "The More...The More",
+      "difficulty": 3,
+      "estimatedTime": 50,
+      "academicTopic": "Language Learning",
+      "question": "The more (A) you practice (B) speaking English, (C) the more fluently (D) you will become.",
+      "options": [
+        {
+          "key": "A",
+          "text": "A"
+        },
+        {
+          "key": "B",
+          "text": "B"
+        },
+        {
+          "key": "C",
+          "text": "C"
+        },
+        {
+          "key": "D",
+          "text": "D"
+        }
+      ],
+      "correctKey": "C",
+      "correctAnswer": "C",
+      "explanation": "In the 'the more...the more' comparative construction, the second part should use an adjective (not adverb) after the linking verb 'become'. It should be 'the more fluent' instead of 'the more fluently'.",
+      "commonMistake": "Choosing a grammatically correct underlined part instead of the error.",
+      "learningObjective": "Identify the underlined error in a Structure Written Expression item.",
+      "tags": [
+        "error_identification",
+        "comparatives",
+        "the_more_the_more"
+      ],
+      "source": {
+        "file": "Grammar section part A.txt",
+        "original_number": 10,
+        "used_revised": false
+      }
+    },
+    {
+      "id": "TQB-STR-0136",
+      "section": "Structure",
+      "type": "Error Identification",
+      "skill": "Word Forms",
+      "subskill": "Gerund vs Noun",
+      "difficulty": 3,
+      "estimatedTime": 50,
+      "academicTopic": "Science",
+      "question": "The scientist (A) was awarded (B) the Nobel Prize for (C) his discovering (D) of the new element.",
+      "options": [
+        {
+          "key": "A",
+          "text": "A"
+        },
+        {
+          "key": "B",
+          "text": "B"
+        },
+        {
+          "key": "C",
+          "text": "C"
+        },
+        {
+          "key": "D",
+          "text": "D"
+        }
+      ],
+      "correctKey": "C",
+      "correctAnswer": "C",
+      "explanation": "After a possessive adjective ('his'), a gerund or noun is needed. 'Discovering' is a gerund, but the correct noun form is 'discovery'. It should be 'his discovery'.",
+      "commonMistake": "Choosing a grammatically correct underlined part instead of the error.",
+      "learningObjective": "Identify the underlined error in a Structure Written Expression item.",
+      "tags": [
+        "error_identification",
+        "word_forms",
+        "gerund_vs_noun"
+      ],
+      "source": {
+        "file": "Grammar section part A.txt",
+        "original_number": 11,
+        "used_revised": false
+      }
+    },
+    {
+      "id": "TQB-STR-0137",
+      "section": "Structure",
+      "type": "Error Identification",
+      "skill": "Participles",
+      "subskill": "Dangling Modifier",
+      "difficulty": 3,
+      "estimatedTime": 50,
+      "academicTopic": "Outdoor Recreation",
+      "question": "Having been (A) warned about (B) the storm, (C) the trip was postponed (D) by the hikers.",
+      "options": [
+        {
+          "key": "A",
+          "text": "A"
+        },
+        {
+          "key": "B",
+          "text": "B"
+        },
+        {
+          "key": "C",
+          "text": "C"
+        },
+        {
+          "key": "D",
+          "text": "D"
+        }
+      ],
+      "correctKey": "C",
+      "correctAnswer": "C",
+      "explanation": "The participial phrase 'Having been warned' must logically modify the subject of the main clause. 'The trip' cannot be warned — it should be 'the hikers postponed' so that 'hikers' is the subject.",
+      "commonMistake": "Choosing a grammatically correct underlined part instead of the error.",
+      "learningObjective": "Identify the underlined error in a Structure Written Expression item.",
+      "tags": [
+        "error_identification",
+        "participles",
+        "dangling_modifier"
+      ],
+      "source": {
+        "file": "Grammar section part A.txt",
+        "original_number": 12,
+        "used_revised": true
+      }
+    },
+    {
+      "id": "TQB-STR-0138",
+      "section": "Structure",
+      "type": "Error Identification",
+      "skill": "Subjunctive",
+      "subskill": "Suggest That",
+      "difficulty": 3,
+      "estimatedTime": 50,
+      "academicTopic": "Business",
+      "question": "The manager (A) suggested (B) that the meeting (C) is held (D) in the conference room.",
+      "options": [
+        {
+          "key": "A",
+          "text": "A"
+        },
+        {
+          "key": "B",
+          "text": "B"
+        },
+        {
+          "key": "C",
+          "text": "C"
+        },
+        {
+          "key": "D",
+          "text": "D"
+        }
+      ],
+      "correctKey": "C",
+      "correctAnswer": "C",
+      "explanation": "After verbs like 'suggest', 'recommend', 'demand', the subjunctive mood is used: the base form of the verb without 'to' and without conjugation. It should be 'be held' instead of 'is held'.",
+      "commonMistake": "Choosing a grammatically correct underlined part instead of the error.",
+      "learningObjective": "Identify the underlined error in a Structure Written Expression item.",
+      "tags": [
+        "error_identification",
+        "subjunctive",
+        "suggest_that"
+      ],
+      "source": {
+        "file": "Grammar section part A.txt",
+        "original_number": 13,
+        "used_revised": false
+      }
+    },
+    {
+      "id": "TQB-STR-0139",
+      "section": "Structure",
+      "type": "Error Identification",
+      "skill": "Gerunds and Infinitives",
+      "subskill": "Enjoy + Gerund",
+      "difficulty": 3,
+      "estimatedTime": 50,
+      "academicTopic": "Campus Life",
+      "question": "The students (A) enjoyed (B) to visit (C) the museum (D) last weekend.",
+      "options": [
+        {
+          "key": "A",
+          "text": "A"
+        },
+        {
+          "key": "B",
+          "text": "B"
+        },
+        {
+          "key": "C",
+          "text": "C"
+        },
+        {
+          "key": "D",
+          "text": "D"
+        }
+      ],
+      "correctKey": "B",
+      "correctAnswer": "B",
+      "explanation": "The verb 'enjoy' is always followed by a gerund, not an infinitive. It should be 'visiting' instead of 'to visit'.",
+      "commonMistake": "Choosing a grammatically correct underlined part instead of the error.",
+      "learningObjective": "Identify the underlined error in a Structure Written Expression item.",
+      "tags": [
+        "error_identification",
+        "gerunds_and_infinitives",
+        "enjoy_gerund"
+      ],
+      "source": {
+        "file": "Grammar section part A.txt",
+        "original_number": 14,
+        "used_revised": false
+      }
+    },
+    {
+      "id": "TQB-STR-0140",
+      "section": "Structure",
+      "type": "Error Identification",
+      "skill": "Comparatives",
+      "subskill": "So vs Such",
+      "difficulty": 3,
+      "estimatedTime": 50,
+      "academicTopic": "Literature",
+      "question": "The novel (A) was such (B) interesting (C) that I couldn't (D) put it down.",
+      "options": [
+        {
+          "key": "A",
+          "text": "A"
+        },
+        {
+          "key": "B",
+          "text": "B"
+        },
+        {
+          "key": "C",
+          "text": "C"
+        },
+        {
+          "key": "D",
+          "text": "D"
+        }
+      ],
+      "correctKey": "A",
+      "correctAnswer": "A",
+      "explanation": "'Such' is used before a noun phrase, while 'so' is used before an adjective alone. Since 'interesting' is an adjective without a noun, it should be 'was so interesting'.",
+      "commonMistake": "Choosing a grammatically correct underlined part instead of the error.",
+      "learningObjective": "Identify the underlined error in a Structure Written Expression item.",
+      "tags": [
+        "error_identification",
+        "mixed_advanced",
+        "so_vs_such_in_result_clauses"
+      ],
+      "source": {
+        "file": "Grammar section part A.txt",
+        "original_number": 16,
+        "used_revised": true
+      }
+    },
+    {
+      "id": "TQB-STR-0141",
+      "section": "Structure",
+      "type": "Error Identification",
+      "skill": "Noun Clauses",
+      "subskill": "Embedded Question Word Order",
+      "difficulty": 3,
+      "estimatedTime": 50,
+      "academicTopic": "Education",
+      "question": "The professor (A) asked the students (B) when (C) did they (D) finish their essays.",
+      "options": [
+        {
+          "key": "A",
+          "text": "A"
+        },
+        {
+          "key": "B",
+          "text": "B"
+        },
+        {
+          "key": "C",
+          "text": "C"
+        },
+        {
+          "key": "D",
+          "text": "D"
+        }
+      ],
+      "correctKey": "C",
+      "correctAnswer": "C",
+      "explanation": "In indirect questions (noun clauses), the word order is subject + verb, not question word order. It should be 'they finished' instead of 'did they finish'.",
+      "commonMistake": "Choosing a grammatically correct underlined part instead of the error.",
+      "learningObjective": "Identify the underlined error in a Structure Written Expression item.",
+      "tags": [
+        "error_identification",
+        "noun_clauses",
+        "embedded_question_word_order"
+      ],
+      "source": {
+        "file": "Grammar section part A.txt",
+        "original_number": 17,
+        "used_revised": false
+      }
+    },
+    {
+      "id": "TQB-STR-0142",
+      "section": "Structure",
+      "type": "Error Identification",
+      "skill": "Subject-Verb Agreement",
+      "subskill": "Neither...Nor",
+      "difficulty": 3,
+      "estimatedTime": 50,
+      "academicTopic": "Social Life",
+      "question": "Neither (A) John nor (B) his friends (C) was (D) at the party.",
+      "options": [
+        {
+          "key": "A",
+          "text": "A"
+        },
+        {
+          "key": "B",
+          "text": "B"
+        },
+        {
+          "key": "C",
+          "text": "C"
+        },
+        {
+          "key": "D",
+          "text": "D"
+        }
+      ],
+      "correctKey": "C",
+      "correctAnswer": "C",
+      "explanation": "With 'neither...nor', the verb agrees with the nearest subject. 'His friends' is plural, so the verb should be 'were' instead of 'was'.",
+      "commonMistake": "Choosing a grammatically correct underlined part instead of the error.",
+      "learningObjective": "Identify the underlined error in a Structure Written Expression item.",
+      "tags": [
+        "error_identification",
+        "subject_verb_agreement",
+        "neither_nor"
+      ],
+      "source": {
+        "file": "Grammar section part A.txt",
+        "original_number": 18,
+        "used_revised": false
+      }
+    },
+    {
+      "id": "TQB-STR-0143",
+      "section": "Structure",
+      "type": "Error Identification",
+      "skill": "Subject-Verb Agreement",
+      "subskill": "Uncountable Nouns",
+      "difficulty": 3,
+      "estimatedTime": 50,
+      "academicTopic": "Current Events",
+      "question": "The news (A) about (B) the earthquake (C) were (D) shocking.",
+      "options": [
+        {
+          "key": "A",
+          "text": "A"
+        },
+        {
+          "key": "B",
+          "text": "B"
+        },
+        {
+          "key": "C",
+          "text": "C"
+        },
+        {
+          "key": "D",
+          "text": "D"
+        }
+      ],
+      "correctKey": "C",
+      "correctAnswer": "C",
+      "explanation": "'News' is an uncountable noun and is always singular. The verb should be 'was' instead of 'were'.",
+      "commonMistake": "Choosing a grammatically correct underlined part instead of the error.",
+      "learningObjective": "Identify the underlined error in a Structure Written Expression item.",
+      "tags": [
+        "error_identification",
+        "subject_verb_agreement",
+        "uncountable_nouns"
+      ],
+      "source": {
+        "file": "Grammar section part A.txt",
+        "original_number": 19,
+        "used_revised": true
+      }
+    },
+    {
+      "id": "TQB-STR-0144",
+      "section": "Structure",
+      "type": "Error Identification",
+      "skill": "Gerunds and Infinitives",
+      "subskill": "Negative Infinitive",
+      "difficulty": 3,
+      "estimatedTime": 50,
+      "academicTopic": "Education",
+      "question": "The teacher (A) told (B) the students (C) to not (D) talk during the exam.",
+      "options": [
+        {
+          "key": "A",
+          "text": "A"
+        },
+        {
+          "key": "B",
+          "text": "B"
+        },
+        {
+          "key": "C",
+          "text": "C"
+        },
+        {
+          "key": "D",
+          "text": "D"
+        }
+      ],
+      "correctKey": "C",
+      "correctAnswer": "C",
+      "explanation": "With the negative infinitive, 'not' should precede 'to'. The correct form is 'not to talk' instead of 'to not talk'.",
+      "commonMistake": "Choosing a grammatically correct underlined part instead of the error.",
+      "learningObjective": "Identify the underlined error in a Structure Written Expression item.",
+      "tags": [
+        "error_identification",
+        "gerunds_and_infinitives",
+        "negative_infinitive"
+      ],
+      "source": {
+        "file": "Grammar section part A.txt",
+        "original_number": 20,
+        "used_revised": false
+      }
+    }
+  ]
+}

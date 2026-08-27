@@ -1,0 +1,76 @@
+{
+  "id": "partB_item12",
+  "topic": "Student Health Center Appointment",
+  "setting": "A student is speaking with a receptionist at the campus health center about scheduling an appointment.",
+  "speakers": [
+    { "role": "narrator", "voice": "narrator" },
+    { "role": "speaker1", "name": "Man (Student)", "voice": "male" },
+    { "role": "speaker2", "name": "Woman (Health Center Receptionist)", "voice": "female" }
+  ],
+  "narrator_intro": "Listen to a conversation between a student and a receptionist at the student health center.",
+  "dialogue": [
+    { "speaker": "speaker1", "text": "Hi, I need to see a doctor about a sports injury, I hurt my ankle playing basketball yesterday. Do I need an appointment or can I walk in?" },
+    { "speaker": "speaker2", "text": "For injuries like that, we actually recommend the walk-in clinic downstairs rather than scheduling with your regular doctor, it'll be faster." },
+    { "speaker": "speaker1", "text": "Oh, I didn't know there was a separate clinic for that. How long is the wait usually?" },
+    { "speaker": "speaker2", "text": "It varies, but right now the board shows about a forty-minute wait. If you'd rather book a regular appointment instead, the earliest opening is tomorrow afternoon." },
+    { "speaker": "speaker1", "text": "Forty minutes is fine, I'd rather get it looked at today. Do I need to bring anything?" },
+    { "speaker": "speaker2", "text": "Just your student ID and insurance card if you have one on file. If it turns out you need an X-ray, they'll send you to the imaging center across the street." },
+    { "speaker": "speaker1", "text": "Got it. Is the visit itself covered by my student health fee, or will I be charged separately?" },
+    { "speaker": "speaker2", "text": "The visit itself is covered, but if you need an X-ray or a boot for your ankle, those come with a small additional charge." }
+  ],
+  "narrator_outro": "Now get ready to answer the questions.",
+  "questions": [
+    {
+      "number": 1,
+      "question_type": "Main Idea",
+      "narrator_text": "What is the student trying to arrange?",
+      "options": {
+        "A": "A follow-up appointment with his regular doctor",
+        "B": "Care for an ankle injury from basketball",
+        "C": "A referral to a physical therapist",
+        "D": "Insurance paperwork for a past visit"
+      },
+      "correct_answer": "B",
+      "explanation": "He explains he hurt his ankle playing basketball and wants to see someone about it."
+    },
+    {
+      "number": 2,
+      "question_type": "Detail",
+      "narrator_text": "Why does the receptionist recommend the walk-in clinic over a regular appointment?",
+      "options": {
+        "A": "It is cheaper",
+        "B": "It will be faster for this type of injury",
+        "C": "The regular doctor is out sick",
+        "D": "It includes free X-rays"
+      },
+      "correct_answer": "B",
+      "explanation": "She says the walk-in clinic is recommended for injuries because it will be faster than scheduling."
+    },
+    {
+      "number": 3,
+      "question_type": "Detail",
+      "narrator_text": "What does the student need to bring to the appointment?",
+      "options": {
+        "A": "A doctor's referral note",
+        "B": "His student ID and insurance card",
+        "C": "Cash payment only",
+        "D": "A parent's consent form"
+      },
+      "correct_answer": "B",
+      "explanation": "The receptionist tells him to bring his student ID and insurance card if he has one on file."
+    },
+    {
+      "number": 4,
+      "question_type": "Inference",
+      "narrator_text": "What can be inferred about the cost of the visit?",
+      "options": {
+        "A": "The entire visit, including any X-ray, is completely free",
+        "B": "The basic visit is covered, but extra services carry additional charges",
+        "C": "The student will need to pay for everything out of pocket",
+        "D": "Only students with private insurance are covered"
+      },
+      "correct_answer": "B",
+      "explanation": "The receptionist explains the visit is covered by the health fee, but an X-ray or boot comes with a small additional charge."
+    }
+  ]
+}
