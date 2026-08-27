@@ -92,12 +92,19 @@
 
   function bindToggle(header) {
     const btn = header.querySelector(".nav-toggle");
-    const nav = header.querySelector("#site-nav");
-    if (!btn || !nav) return;
-    btn.addEventListener("click", () => {
-      const open = header.classList.toggle("is-nav-open");
+    const nav = header.querySelector(".nav");
+    if (!btn || !nav || header.dataset.navBound) return;
+    header.dataset.navBound = "1";
+    const setOpen = (open) => {
+      header.classList.toggle("is-nav-open", open);
       btn.setAttribute("aria-expanded", open ? "true" : "false");
       btn.textContent = open ? "Close" : "Menu";
+    };
+    btn.addEventListener("click", () => {
+      setOpen(!header.classList.contains("is-nav-open"));
+    });
+    nav.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("click", () => setOpen(false));
     });
   }
 
@@ -108,8 +115,9 @@
 
   if (header) {
     header.innerHTML = renderHeader(place);
-    bindToggle(header);
   }
+
+  document.querySelectorAll(".topbar").forEach(bindToggle);
 
   const sideHtml = renderSidebar(place);
   if (sidebar) {

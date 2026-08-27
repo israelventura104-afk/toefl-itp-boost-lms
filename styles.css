@@ -166,6 +166,10 @@ button {
   text-underline-offset: 6px;
 }
 
+.nav-mobile-only {
+  display: none;
+}
+
 .nav-toggle {
   display: none;
   margin-left: auto;
@@ -2382,38 +2386,52 @@ h4 .error-id-letter {
     display: none;
   }
 
-  .app-body .nav-toggle {
+  .nav-toggle {
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    flex: 0 0 auto;
+    margin-left: auto;
   }
 
-  .app-body .topbar {
-    position: sticky;
-    flex-wrap: wrap;
-  }
-
-  .app-body .topbar .nav {
+  .topbar .nav-actions {
     display: none;
-    flex: 1 1 100%;
+  }
+
+  .topbar .nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
     flex-direction: column;
     align-items: stretch;
     gap: 4px;
-    padding: 8px 0 4px;
+    padding: 10px 12px 14px;
+    background: var(--navy);
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+    box-shadow: 0 18px 32px rgba(19, 34, 56, 0.32);
   }
 
-  .app-body .topbar.is-nav-open .nav {
+  .topbar.is-nav-open .nav {
     display: flex;
   }
 
-  .app-body .topbar .nav a {
-    min-height: 40px;
-    padding: 0 12px;
+  .topbar .nav a {
+    display: flex;
+    align-items: center;
+    min-height: 48px;
+    padding: 0 14px;
     border-radius: 10px;
+    font-size: 1rem;
   }
 
-  .app-body .topbar .nav a.active,
-  .app-body .topbar .nav a:hover {
+  .topbar .nav .nav-mobile-only {
+    display: flex;
+  }
+
+  .topbar .nav a.active,
+  .topbar .nav a:hover {
     background: rgba(255, 255, 255, 0.1);
     text-decoration: none;
   }

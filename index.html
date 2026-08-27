@@ -6,7 +6,7 @@
     <title>TOEFL ITP Boost</title>
     <link rel="icon" type="image/png" href="assets/logo.png" />
     <link rel="apple-touch-icon" href="assets/logo.png" />
-    <link rel="stylesheet" href="styles.css?v=20260826-nav" />
+    <link rel="stylesheet" href="styles.css?v=20260827-drop" />
   </head>
   <body>
     <header class="topbar">
@@ -18,10 +18,15 @@
         </span>
       </a>
 
-      <nav class="nav" aria-label="Main navigation">
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        Menu
+      </button>
+      <nav class="nav" id="site-nav" aria-label="Main navigation">
         <a href="#sections">The test</a>
         <a href="#method">Method</a>
         <a href="dashboard.html">Progress</a>
+        <a class="nav-mobile-only" href="dashboard.html#class-access">Enter class code</a>
+        <a class="nav-mobile-only" href="demo-test.html">Short demo test</a>
       </nav>
 
       <div class="nav-actions">
@@ -135,5 +140,6 @@
       <strong>TOEFL ITP BOOST</strong>
       <span>by Teacher Israel Ventura</span>
     </footer>
+    <script src="nav.js?v=20260827-drop"></script>
   </body>
 </html>
