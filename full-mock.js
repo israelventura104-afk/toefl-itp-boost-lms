@@ -321,28 +321,30 @@ function buildReadingRows(passages, target) {
 }
 
 function buildListeningRows(items, size) {
-  const picked = shuffle(items).slice(0, size);
-  const rows = [];
-  picked.forEach((item) => {
-    item.questions.forEach((q) => {
-      rows.push({
-        uid: `listening:${item.id}:${q.id}`,
-        section: "listening",
-        kind: "listening",
-        prompt: q.prompt,
-        options: q.options,
-        correctKey: q.correctKey,
-        correctAnswer: q.correctAnswer,
-        explanation: q.explanation,
-        skill: item.topic || "Listening",
-        typeLabel: item.assetType || "Part A",
-        assetId: item.id,
-        audio: item.audio,
-        evidence: q.evidence || "",
-      });
-    });
-  });
-  return rows.slice(0, size);
+  const mixed =
+    window.ListeningLib?.buildMixedRows?.(items, {
+      targetQuestions: size,
+      partBConversations: size >= 50 ? 5 : 2,
+    }) || [];
+  const source =
+    mixed.length >= size
+      ? mixed
+      : shuffle(items).flatMap((item) => item.questions.map((q) => ({ item, question: q })));
+  return source.slice(0, size).map(({ item, question: q }) => ({
+    uid: `listening:${item.id}:${q.id}`,
+    section: "listening",
+    kind: "listening",
+    prompt: q.prompt,
+    options: q.options,
+    correctKey: q.correctKey,
+    correctAnswer: q.correctAnswer,
+    explanation: q.explanation,
+    skill: item.topic || "Listening",
+    typeLabel: item.assetType || "Part A",
+    assetId: item.id,
+    audio: item.audio,
+    evidence: q.evidence || "",
+  }));
 }
 
 async function loadAllBanks() {
@@ -353,8 +355,12 @@ async function loadAllBanks() {
     loadStructureBank(),
     loadReadingBank(),
   ]);
-  if (listening.length < 50) {
-    throw new Error(`Listening bank needs 50 items (found ${listening.length}).`);
+  const listeningProbe = window.ListeningLib.buildMixedRows(listening, {
+    targetQuestions: 50,
+    partBConversations: 5,
+  });
+  if (listeningProbe.length < 50) {
+    throw new Error(`Listening bank needs 50 questions (found ${listeningProbe.length}).`);
   }
   if (structure.length < 40) {
     throw new Error(`Structure bank needs 40 items (found ${structure.length}).`);

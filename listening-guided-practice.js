@@ -1,9 +1,10 @@
 /**
  * Listening guided practice — Phase 6
- * 10 random Part A items, no timer, feedback, save on complete.
+ * 10 questions: 6 Part A shorts + 1 Part B long conversation (4 Q), no timer.
  */
 
 const PRACTICE_SIZE = 10;
+const GUIDED_PART_B = 1;
 
 const state = {
   pool: [],
@@ -40,13 +41,18 @@ function setStatus(message, isError = false) {
 }
 
 function startSet() {
-  const picked = window.ListeningLib.shuffle([...state.pool]).slice(0, PRACTICE_SIZE);
-  state.rows = window.ListeningLib.flattenRows(picked);
+  state.rows = window.ListeningLib.buildMixedRows(state.pool, {
+    targetQuestions: PRACTICE_SIZE,
+    partBConversations: GUIDED_PART_B,
+  });
   state.index = 0;
   state.answers = new Map();
   state.saved = false;
   resultsEl.hidden = true;
-  sessionLabelEl.textContent = `Set ${state.sessionNumber} · ${state.rows.length} items · bank ${state.pool.length} · no timer`;
+  const longCount = new Set(
+    state.rows.filter((row) => window.ListeningLib.isLongForm(row.item)).map((row) => row.item.id)
+  ).size;
+  sessionLabelEl.textContent = `Set ${state.sessionNumber} · ${state.rows.length} questions · ${longCount} long conversation · bank ${state.pool.length} · no timer`;
   render();
 }
 
@@ -57,7 +63,10 @@ function render() {
   const answer = state.answers.get(question.id);
 
   counterEl.textContent = `${state.index + 1} / ${state.rows.length}`;
-  metaEl.textContent = [item.difficulty, item.assetType].filter(Boolean).join(" · ");
+  const qPos = item.questions.findIndex((q) => q.id === question.id);
+  const longHint =
+    item.questions.length > 1 ? `question ${qPos + 1} of ${item.questions.length}` : "";
+  metaEl.textContent = [item.difficulty, item.assetType, longHint].filter(Boolean).join(" · ");
   topicEl.textContent = item.topic || "Campus conversation";
   questionEl.textContent = question.prompt;
 
@@ -214,11 +223,15 @@ async function boot() {
   setStatus("Loading Listening class bank…");
   try {
     state.pool = await window.ListeningLib.loadClassItems({ excludeIntro: true });
-    if (state.pool.length < PRACTICE_SIZE) {
-      throw new Error(`Need at least ${PRACTICE_SIZE} class items with audio (found ${state.pool.length}).`);
+    const longs = state.pool.filter((item) => window.ListeningLib.isLongForm(item));
+    const shorts = state.pool.filter((item) => !window.ListeningLib.isLongForm(item));
+    if (shorts.length < 6 || longs.length < GUIDED_PART_B) {
+      throw new Error(
+        `Need at least 6 short conversations and ${GUIDED_PART_B} long conversation with audio (found ${shorts.length} short, ${longs.length} long).`
+      );
     }
     setStatus(
-      `Class bank ready · ${state.pool.length} short conversations · sets of ${PRACTICE_SIZE} · free samples excluded`
+      `Class bank ready · ${shorts.length} short + ${longs.length} long · 10-question sets (6 Part A + 1 Part B) · free samples excluded`
     );
     bind();
     startSet();

@@ -1,6 +1,6 @@
 /**
  * Structure guided practice — Phase 3
- * Loads 190-item bank from data/structure-bank.json (never the 10 free intro items).
+ * Loads structure-bank.json (never the 10 free intro items).
  * 15 questions, no timer, balanced by skill, session saved to localStorage.
  */
 

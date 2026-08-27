@@ -13,39 +13,102 @@
     return skill || "Listening";
   }
 
+  function normalizeOptions(rawOptions) {
+    if (!rawOptions) return [];
+    if (Array.isArray(rawOptions)) {
+      return rawOptions
+        .map((choice) => {
+          if (typeof choice === "string") return { key: choice, text: choice };
+          return {
+            key: String(choice.id ?? choice.key ?? "").trim(),
+            text: String(choice.text ?? choice.label ?? "").trim(),
+          };
+        })
+        .filter((option) => option.key && option.text);
+    }
+    if (typeof rawOptions === "object") {
+      return Object.entries(rawOptions)
+        .map(([key, text]) => ({
+          key: String(key).trim(),
+          text: String(text ?? "").trim(),
+        }))
+        .filter((option) => option.key && option.text);
+    }
+    return [];
+  }
+
   function normalizeItem(entry, raw) {
-    const questions = (raw.questions || []).map((q, index) => {
-      const options = (q.choices || q.options || []).map((c) => ({
-        key: String(c.id ?? c.key ?? "").trim(),
-        text: String(c.text ?? "").trim(),
-      }));
-      const correctKey = String(q.answer_key ?? q.correctKey ?? "").trim();
-      const hit = options.find((o) => o.key === correctKey);
-      // Always prefix with asset id: bank items reuse "Q1" on every Part A clip,
-      // which would otherwise collapse answers across the whole guided/mock set.
-      const localId = String(q.id || `Q${index + 1}`).trim() || `Q${index + 1}`;
-      return {
-        id: `${entry.id}-${localId}`,
-        prompt: q.prompt || q.question || "",
-        options,
-        correctKey,
-        correctAnswer: hit?.text || correctKey,
-        explanation: q.explanation || "",
-        evidence: q.evidence || "",
-      };
-    });
+    const questions = (raw.questions || [])
+      .map((q, index) => {
+        const options = normalizeOptions(q.choices || q.options);
+        const correctKey = String(q.answer_key ?? q.correctKey ?? q.correct_answer ?? "").trim();
+        const hit = options.find((o) => o.key === correctKey);
+        // Always prefix with asset id: bank items reuse "Q1" on every Part A clip,
+        // which would otherwise collapse answers across the whole guided/mock set.
+        const localId = String(q.id || q.number || `Q${index + 1}`).trim() || `Q${index + 1}`;
+        return {
+          id: `${entry.id}-${localId}`,
+          prompt: q.prompt || q.question || q.narrator_text || q.question_text || "",
+          options,
+          correctKey,
+          correctAnswer: hit?.text || correctKey,
+          explanation: q.explanation || "",
+          evidence: q.evidence || "",
+          skill: q.question_type || q.skill_tested || "",
+        };
+      })
+      .filter((q) => q.prompt && q.options.length && q.correctKey);
+
+    const transcript = raw.transcript || {};
+    const assetType =
+      raw.asset_type ||
+      entry.asset_type ||
+      raw.section ||
+      (questions.length > 1 ? "Part B - Long Conversation" : "Part A");
 
     return {
       id: entry.id || raw.asset_id,
-      assetType: raw.asset_type || entry.asset_type || "Part A",
-      topic: (raw.metadata && raw.metadata.topic) || entry.topic || "",
+      assetType,
+      topic: (raw.metadata && raw.metadata.topic) || raw.topic || entry.topic || "",
       difficulty: (raw.metadata && raw.metadata.difficulty) || entry.difficulty || "",
       audio: entry.audio,
-      narratorIntro: raw.transcript?.narrator_intro || "",
-      questionIntro: raw.transcript?.question_intro || "",
-      dialogue: raw.transcript?.dialogue || [],
+      narratorIntro: transcript.narrator_intro || raw.narrator_intro || "",
+      questionIntro: transcript.question_intro || raw.narrator_outro || "",
+      dialogue: transcript.dialogue || raw.dialogue || [],
       questions,
     };
+  }
+
+  function isLongForm(item) {
+    const type = String(item.assetType || "").toLowerCase();
+    return type.includes("part b") || type.includes("long") || (item.questions || []).length > 1;
+  }
+
+  /**
+   * Keep long conversations whole. Part A first, then Part B (ITP order).
+   * Fills leftover slots with short conversations if fewer Part B items exist.
+   */
+  function pickMixedItems(items, { targetQuestions, partBConversations } = {}) {
+    const goal = Math.max(1, Number(targetQuestions) || 10);
+    const wantB = Math.max(0, Number(partBConversations) || 0);
+    const partA = shuffle(items.filter((item) => !isLongForm(item)));
+    const partB = shuffle(items.filter(isLongForm));
+    const pickedB = [];
+    let fromB = 0;
+    partB.forEach((item) => {
+      if (pickedB.length >= wantB) return;
+      const n = item.questions.length;
+      if (!n || fromB + n > goal) return;
+      pickedB.push(item);
+      fromB += n;
+    });
+    const needA = Math.max(0, goal - fromB);
+    const pickedA = partA.slice(0, needA);
+    return [...pickedA, ...pickedB];
+  }
+
+  function buildMixedRows(items, spec) {
+    return flattenRows(pickMixedItems(items, spec));
   }
 
   async function fetchJson(url) {
@@ -122,6 +185,9 @@
     loadClassItems,
     shuffle,
     flattenRows,
+    isLongForm,
+    pickMixedItems,
+    buildMixedRows,
     fetchJson,
   };
 })(window);

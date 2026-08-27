@@ -1,9 +1,10 @@
 /**
  * Listening mock — Phase 6
- * Part A focus: 30 items / 20 minutes until longer parts are in the bank.
+ * 30 questions / 20 minutes: 22 Part A shorts + 2 Part B long conversations.
  */
 
 const MOCK_SIZE = 30;
+const MOCK_PART_B = 2;
 const MOCK_SECONDS = 20 * 60;
 
 const state = {
@@ -122,7 +123,10 @@ function renderItem() {
 
   counterEl.textContent = `${state.index + 1} / ${state.rows.length}`;
   typeEl.textContent = item.assetType || "Part A";
-  metaEl.textContent = [item.difficulty, item.topic].filter(Boolean).join(" · ");
+  const qPos = item.questions.findIndex((q) => q.id === question.id);
+  const longHint =
+    item.questions.length > 1 ? `Q${qPos + 1}/${item.questions.length}` : "";
+  metaEl.textContent = [item.difficulty, item.topic, longHint].filter(Boolean).join(" · ");
   itemLabelEl.textContent = item.id;
   questionEl.textContent = question.prompt;
 
@@ -152,12 +156,14 @@ function renderItem() {
 }
 
 function beginExam() {
-  const picked = window.ListeningLib.shuffle([...state.pool]).slice(0, MOCK_SIZE);
-  state.rows = window.ListeningLib.flattenRows(picked);
+  state.rows = window.ListeningLib.buildMixedRows(state.pool, {
+    targetQuestions: MOCK_SIZE,
+    partBConversations: MOCK_PART_B,
+  });
   state.index = 0;
   state.answers = new Map();
   state.submitted = false;
-  setStatus(`Listening mock running · ${state.rows.length} Part A items · feedback locked`);
+  setStatus(`Listening mock running · ${state.rows.length} questions · feedback locked`);
   showPhase("exam");
   startTimer();
   renderItem();
@@ -282,11 +288,15 @@ async function boot() {
   beginBtn.disabled = true;
   try {
     state.pool = await window.ListeningLib.loadClassItems({ excludeIntro: true });
-    if (state.pool.length < MOCK_SIZE) {
-      throw new Error(`Need at least ${MOCK_SIZE} class items (found ${state.pool.length}).`);
+    const longs = state.pool.filter((item) => window.ListeningLib.isLongForm(item));
+    const shorts = state.pool.filter((item) => !window.ListeningLib.isLongForm(item));
+    if (shorts.length < 22 || longs.length < MOCK_PART_B) {
+      throw new Error(
+        `Need at least 22 short conversations and ${MOCK_PART_B} long conversations (found ${shorts.length} short, ${longs.length} long).`
+      );
     }
     setStatus(
-      `Mock bank ready · ${state.pool.length} Part A items · ${MOCK_SIZE} Q / 20 min (Part A focus)`
+      `Mock bank ready · ${shorts.length} short + ${longs.length} long · ${MOCK_SIZE} Q / 20 min (22 Part A + 2 Part B)`
     );
     beginBtn.disabled = false;
     bind();
