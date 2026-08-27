@@ -156,8 +156,72 @@ button {
   text-decoration: none;
 }
 
-.nav a:hover {
+.nav a:hover,
+.nav a.active {
   color: #fff;
+}
+
+.nav a.active {
+  text-decoration: underline;
+  text-underline-offset: 6px;
+}
+
+.nav-toggle {
+  display: none;
+  margin-left: auto;
+  min-height: 38px;
+  padding: 0 14px;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  font-size: 0.86rem;
+  font-weight: 800;
+}
+
+.sidebar-kicker {
+  margin: 0 12px 8px;
+  color: var(--muted);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.app-frame:not(.has-sidebar) {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.dash-go-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.dash-go-card {
+  display: grid;
+  gap: 6px;
+  padding: 16px 18px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: #fff;
+  color: inherit;
+  text-decoration: none;
+}
+
+.dash-go-card:hover {
+  border-color: rgba(35, 141, 133, 0.35);
+  background: var(--wash, #f0faf9);
+}
+
+.dash-go-card strong {
+  font-size: 1.05rem;
+}
+
+.dash-go-card span {
+  color: var(--muted);
+  font-size: 0.9rem;
+  font-weight: 600;
 }
 
 .nav-actions,
@@ -2318,8 +2382,40 @@ h4 .error-id-letter {
     display: none;
   }
 
-  .nav {
+  .app-body .nav-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .app-body .topbar {
+    position: sticky;
+    flex-wrap: wrap;
+  }
+
+  .app-body .topbar .nav {
     display: none;
+    flex: 1 1 100%;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 4px;
+    padding: 8px 0 4px;
+  }
+
+  .app-body .topbar.is-nav-open .nav {
+    display: flex;
+  }
+
+  .app-body .topbar .nav a {
+    min-height: 40px;
+    padding: 0 12px;
+    border-radius: 10px;
+  }
+
+  .app-body .topbar .nav a.active,
+  .app-body .topbar .nav a:hover {
+    background: rgba(255, 255, 255, 0.1);
+    text-decoration: none;
   }
 
   .test-grid,
@@ -2351,7 +2447,11 @@ h4 .error-id-letter {
   }
 
   .app-nav {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .dash-go-grid {
+    grid-template-columns: 1fr;
   }
 
   .dashboard-header,
@@ -2403,10 +2503,6 @@ h4 .error-id-letter {
   }
 
   .brand-copy small {
-    display: none;
-  }
-
-  .nav {
     display: none;
   }
 
@@ -2522,7 +2618,11 @@ h4 .error-id-letter {
   }
 
   .app-nav {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .dash-go-grid {
+    grid-template-columns: 1fr;
   }
 
   .dashboard-shell,

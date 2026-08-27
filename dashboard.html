@@ -4,46 +4,13 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Student Dashboard | TOEFL ITP Boost</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css?v=20260826-nav" />
   </head>
   <body class="app-body" data-access-page="dashboard">
-    <header class="topbar">
-      <a class="brand" href="index.html" aria-label="TOEFL ITP Boost home">
-        <span class="brand-mark" aria-hidden="true"
-          ><img
-            class="brand-logo"
-            src="assets/logo.png"
-            alt="Israel Ventura"
-            width="44"
-            height="44"
-        /></span>
-        <span class="brand-copy">
-          <small>By Teacher Israel Ventura</small>
-          <strong>TOEFL ITP Boost</strong>
-        </span>
-      </a>
-      <nav class="nav" aria-label="Main navigation">
-        <a href="demo-test.html">Demo test</a>
-        <a href="structure.html">Structure</a>
-        <a href="listening.html">Listening</a>
-        <a href="reading.html">Reading</a>
-      </nav>
-      <div class="nav-actions">
-        <a class="button secondary" href="dashboard.html#class-access">Class access</a>
-        <a class="button primary" href="dashboard.html">Dashboard</a>
-      </div>
-    </header>
-
-    <div class="app-frame">
-      <aside class="sidebar" aria-label="Student navigation">
-        <nav class="app-nav">
-          <a class="active" href="#overview">Overview</a>
-          <a href="#stats">My stats</a>
-          <a href="#skills">Skills</a>
-          <a href="#class-access">Class access</a>
-          <a href="structure.html">Practice sections</a>
-        </nav>
-      </aside>
+        <header class="topbar" data-site-header></header>
+    <div class="app-frame" data-site-frame>
+    <aside class="sidebar" data-site-sidebar hidden></aside>
+    <script src="nav.js?v=20260826-nav"></script>
 
       <main class="dashboard-shell dashboard-home">
         <!-- 1. Welcome + name -->
@@ -77,6 +44,36 @@
           </div>
         </header>
 
+        <section class="dash-go" id="practice" aria-labelledby="practice-title">
+          <div class="section-heading compact">
+            <p class="eyebrow">Go practice</p>
+            <h2 id="practice-title">Pick a section</h2>
+          </div>
+          <div class="dash-go-grid">
+            <a class="dash-go-card" href="structure.html">
+              <strong>Structure</strong>
+              <span>Learn, guided practice, then a timed mock.</span>
+            </a>
+            <a class="dash-go-card" href="listening.html">
+              <strong>Listening</strong>
+              <span>Learn, guided practice, then a timed mock.</span>
+            </a>
+            <a class="dash-go-card" href="reading.html">
+              <strong>Reading</strong>
+              <span>Learn, guided practice, then a timed mock.</span>
+            </a>
+            <a class="dash-go-card" href="full-mock.html" id="mock-exam">
+              <strong>Full mock</strong>
+              <span>140 questions in exam order: Listening, Structure, Reading.</span>
+            </a>
+          </div>
+          <p class="dash-name-hint" style="margin-top: 0.75rem">
+            New here?
+            <a href="demo-test.html">Take the short demo test</a>
+            first. Class materials open with the code below.
+          </p>
+        </section>
+
         <!-- 2. One focus line (not duplicated cards) -->
         <section class="dash-focus" id="focus" aria-labelledby="focus-title">
           <p class="eyebrow">Study next</p>
@@ -88,6 +85,7 @@
 
         <!-- 3. Stats only -->
         <section class="dash-stats" id="stats" aria-labelledby="stats-title">
+          <span id="quick-stats"></span>
           <div class="section-heading compact">
             <p class="eyebrow">Quick stats</p>
             <h2 id="stats-title">Your numbers</h2>
@@ -123,6 +121,7 @@
 
         <!-- 4. Skills by section (3 columns) — no practice CTAs here -->
         <section class="dash-skills" id="skills" aria-labelledby="skills-title">
+          <span id="score-plan"></span>
           <div class="section-heading compact">
             <p class="eyebrow">Skill breakdown</p>
             <h2 id="skills-title">How you are doing by section</h2>

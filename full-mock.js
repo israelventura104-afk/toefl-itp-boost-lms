@@ -702,7 +702,7 @@ function finishExam() {
     primary.textContent = `Practice ${weakest.skill.split(" ")[0]}`;
   } else if (primary) {
     primary.href = "dashboard.html";
-    primary.textContent = "Dashboard";
+    primary.textContent = "Progress";
   }
 
   if (window.ResultsLib) {
