@@ -45,25 +45,48 @@
   .topbar {
     background: var(--navy);
     color: #fff;
-    padding: 14px 20px;
+    padding: 12px 16px;
     display: flex;
     align-items: center;
-    gap: 14px;
+    justify-content: space-between;
+    gap: 12px;
     flex-wrap: wrap;
-    box-shadow: 0 4px 20px rgba(11, 31, 58, 0.35);
+    box-shadow: 0 8px 24px rgba(30, 45, 90, 0.18);
     position: sticky;
     top: 0;
     z-index: 50;
   }
 
-  .logo {
-    width: 48px;
-    height: 48px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 2px solid var(--teal);
-    background: var(--teal-deep);
-    flex-shrink: 0;
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    min-width: 0;
+    text-decoration: none;
+    color: inherit;
+  }
+  .brand-mark {
+    display: grid;
+    place-items: center;
+    flex: 0 0 52px;
+    width: 52px;
+    height: 52px;
+    border-radius: 999px;
+    background: #fff;
+    overflow: hidden;
+    padding: 4px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+  }
+  .brand-mark img {
+    width: 44px !important;
+    height: 44px !important;
+    max-width: 44px !important;
+    max-height: 44px !important;
+    border-radius: 999px;
+    object-fit: contain;
+    object-position: center;
+    display: block;
+    background: #fff;
   }
 
   .title-block { flex: 1; min-width: 160px; }
@@ -95,16 +118,18 @@
   }
 
   .home-link {
-    color: var(--teal);
-    font-weight: 600;
-    text-decoration: none;
-    font-size: 0.95rem;
+    color: #fff !important;
+    font-weight: 800;
+    text-decoration: none !important;
+    font-size: 0.82rem;
     padding: 8px 14px;
     border-radius: 999px;
-    border: 1.5px solid rgba(91, 184, 176, 0.45);
-    transition: background 0.2s;
+    background: #5bb8b0;
+    border: 0;
+    white-space: nowrap;
+    transition: background 0.15s;
   }
-  .home-link:hover { background: rgba(91, 184, 176, 0.15); }
+  .home-link:hover { background: #238d85; }
 
   .wrap {
     max-width: 1100px;
@@ -302,6 +327,18 @@
   }
 
   /* Word chips */
+  .ready-message {
+    margin: 28px 0 12px;
+    padding: 22px 18px;
+    border-radius: 16px;
+    background: var(--paper, #f0f4f8);
+    border: 2px dashed rgba(11,31,58,.2);
+    text-align: center;
+    font-weight: 800;
+    color: var(--navy);
+    font-size: 1.05rem;
+  }
+  .ready-message.hidden { display: none; }
   .chips {
     display: flex;
     flex-wrap: wrap;
@@ -649,13 +686,16 @@
 <body>
 
 <header class="topbar">
-  <img class="logo" src="../assets/logo.png" alt="Logo" width="48" height="48"
-       onerror="this.style.background='linear-gradient(135deg,#5bb8b0,#238d85)';this.removeAttribute('src')" />
-  <div class="title-block">
-    <h1>TOEFL Trap Battle <span class="pill">ITP</span></h1>
-    <p>Structure · Listening · light mode</p>
-  </div>
-  <a class="home-link" href="../dashboard.html">← Home</a>
+  <a class="brand" href="../index.html" aria-label="TOEFL ITP Boost home">
+    <span class="brand-mark" aria-hidden="true">
+      <img src="../assets/logo.png" alt="" width="44" height="44">
+    </span>
+    <div class="title-block">
+      <h1>TOEFL Trap Battle <span class="pill">ITP</span></h1>
+      <p>Structure · Listening · light mode</p>
+    </div>
+  </a>
+  <a class="home-link" href="../dashboard.html">Home</a>
 </header>
 
 <div class="wrap">
@@ -703,7 +743,8 @@
       <div class="stage" id="stage1">
         <div class="challenge-label" id="trapCounter">Trap 1/10</div>
         <p class="prompt">Tap the <strong>WRONG</strong> word — the grammar trap hiding in the sentence.</p>
-        <div class="chips" id="chips1"></div>
+        <div class="ready-message" id="ready1">Press <strong>Start</strong> to reveal the trap · 15 seconds</div>
+        <div class="chips hidden" id="chips1"></div>
         <div class="fix-box" id="fix1"></div>
         <div class="action-row">
           <button class="btn btn-primary hidden" id="nextTrapBtn" type="button">Next challenge →</button>
@@ -784,10 +825,11 @@
   <div id="round3" class="round-panel hidden">
     <div class="stage-grid">
       <div class="stage" id="stage3">
-        <div class="boss-banner">⚡ BOSS ROUND — 10 seconds · one shot</div>
+        <div class="boss-banner">⚡ BOSS ROUND — 15 seconds · one shot</div>
         <div class="challenge-label" id="bossCounter">Boss 1/5</div>
         <p class="prompt">Same rules — tap the trap. Miss or timeout = The Exam scores. No second chance!</p>
-        <div class="chips" id="chips3"></div>
+        <div class="ready-message" id="ready3">Press <strong>Start</strong> to reveal the boss · 15 seconds</div>
+        <div class="chips hidden" id="chips3"></div>
         <div class="fix-box" id="fix3"></div>
         <div class="action-row">
           <button class="btn btn-primary hidden" id="nextBossBtn" type="button">Next boss →</button>
@@ -800,8 +842,8 @@
       </div>
       <aside class="side">
         <div class="panel">
-          <h3>Boss timer · 10s</h3>
-          <div class="timer-display" id="timer3">10</div>
+          <h3>Boss timer · 15s</h3>
+          <div class="timer-display" id="timer3">15</div>
           <div class="timer-btns">
             <button class="btn btn-teal" id="startTimer3" type="button">Start</button>
             <button class="btn btn-ghost" id="resetTimer3" type="button">Reset</button>
@@ -809,7 +851,7 @@
         </div>
         <div class="tip-card">
           <h3>Teacher tip</h3>
-          <p>Auto-starts each boss item. Stay hyped — count down out loud if you want extra pressure!</p>
+          <p>Press Start when they are ready — the sentence appears and the 15s countdown begins. Count down out loud for extra pressure!</p>
         </div>
       </aside>
     </div>
@@ -939,7 +981,7 @@ Thank you, and watch your sandwich.`;
   let timer1Id = null;
   let timer3Id = null;
   let t1 = 15;
-  let t3 = 10;
+  let t3 = 15;
 
   const $ = (sel, el = document) => el.querySelector(sel);
   const $$ = (sel, el = document) => [...el.querySelectorAll(sel)];
@@ -1030,6 +1072,7 @@ Thank you, and watch your sandwich.`;
 
     if (i >= TRAPS.length) {
       $("#chips1").classList.add("hidden");
+      $("#ready1").classList.add("hidden");
       $(".prompt", $("#stage1")).classList.add("hidden");
       $("#trapCounter").textContent = "Trap 10/10";
       $("#round1Done").classList.remove("hidden");
@@ -1079,6 +1122,10 @@ Thank you, and watch your sandwich.`;
         }
       }
     });
+    // Hide sentence until Start
+    $("#chips1").classList.add("hidden");
+    $("#ready1").classList.remove("hidden");
+    disableChips($("#chips1"));
     resetTimer1Display();
   }
 
@@ -1097,8 +1144,24 @@ Thank you, and watch your sandwich.`;
   function stopTimer1() {
     if (timer1Id) { clearInterval(timer1Id); timer1Id = null; }
   }
+  function revealTrapSentence() {
+    $("#ready1").classList.add("hidden");
+    $("#chips1").classList.remove("hidden");
+    if (!trapResolved) {
+      $$(".chip", $("#chips1")).forEach((c) => {
+        if (!c.classList.contains("wrong-pick")) c.disabled = false;
+      });
+    }
+  }
+  function hideTrapSentence() {
+    if (trapResolved || trapIndex >= TRAPS.length) return;
+    $("#chips1").classList.add("hidden");
+    $("#ready1").classList.remove("hidden");
+    disableChips($("#chips1"));
+  }
   $("#startTimer1").addEventListener("click", () => {
     if (trapResolved || trapIndex >= TRAPS.length) return;
+    revealTrapSentence();
     stopTimer1();
     t1 = 15;
     $("#timer1").textContent = t1;
@@ -1128,7 +1191,10 @@ Thank you, and watch your sandwich.`;
       }
     }, 1000);
   });
-  $("#resetTimer1").addEventListener("click", resetTimer1Display);
+  $("#resetTimer1").addEventListener("click", () => {
+    resetTimer1Display();
+    hideTrapSentence();
+  });
 
   /* ========== ROUND 2 BINGO ========== */
   const WIN_LINES = [
@@ -1254,6 +1320,7 @@ Thank you, and watch your sandwich.`;
 
     if (i >= BOSS.length) {
       $("#chips3").classList.add("hidden");
+      $("#ready3").classList.add("hidden");
       $(".prompt", $("#stage3")).classList.add("hidden");
       $(".boss-banner").classList.add("hidden");
       $("#bossCounter").textContent = "Boss 5/5";
@@ -1302,8 +1369,13 @@ Thank you, and watch your sandwich.`;
         $("#nextBossBtn").classList.remove("hidden");
       }
     });
-    // auto-start boss timer
-    startBossTimer();
+    $("#chips3").classList.add("hidden");
+    $("#ready3").classList.remove("hidden");
+    disableChips($("#chips3"));
+    stopTimer3();
+    t3 = 15;
+    $("#timer3").textContent = t3;
+    $("#timer3").classList.remove("urgent");
   }
 
   $("#nextBossBtn").addEventListener("click", () => {
@@ -1314,15 +1386,29 @@ Thank you, and watch your sandwich.`;
   function stopTimer3() {
     if (timer3Id) { clearInterval(timer3Id); timer3Id = null; }
   }
+  function revealBossSentence() {
+    $("#ready3").classList.add("hidden");
+    $("#chips3").classList.remove("hidden");
+    if (!bossResolved) {
+      $$(".chip", $("#chips3")).forEach((c) => { c.disabled = false; });
+    }
+  }
+  function hideBossSentence() {
+    if (bossResolved || bossIndex >= BOSS.length) return;
+    $("#chips3").classList.add("hidden");
+    $("#ready3").classList.remove("hidden");
+    disableChips($("#chips3"));
+  }
   function startBossTimer() {
     stopTimer3();
-    t3 = 10;
+    revealBossSentence();
+    t3 = 15;
     $("#timer3").textContent = t3;
     $("#timer3").classList.remove("urgent");
     timer3Id = setInterval(() => {
       t3 -= 1;
       $("#timer3").textContent = t3;
-      if (t3 <= 4) $("#timer3").classList.add("urgent");
+      if (t3 <= 5) $("#timer3").classList.add("urgent");
       if (t3 <= 0) {
         stopTimer3();
         if (!bossResolved && bossIndex < BOSS.length) {
@@ -1349,9 +1435,10 @@ Thank you, and watch your sandwich.`;
   });
   $("#resetTimer3").addEventListener("click", () => {
     stopTimer3();
-    t3 = 10;
+    t3 = 15;
     $("#timer3").textContent = t3;
     $("#timer3").classList.remove("urgent");
+    hideBossSentence();
   });
 
   /* ========== NAV ========== */
