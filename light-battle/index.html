@@ -806,6 +806,47 @@
     letter-spacing: 0.03em;
   }
 
+
+  /* —— Paraphrase / Attitude / Vocab —— */
+  .sentence-box {
+    background: #f0f4f8;
+    border-radius: 14px;
+    padding: 16px 18px;
+    font-size: 1.05rem;
+    line-height: 1.55;
+    margin: 12px 0 14px;
+    border-left: 4px solid var(--gold);
+    font-weight: 650;
+    color: var(--navy);
+  }
+  .dialogue-box {
+    background: #f0f4f8;
+    border-radius: 14px;
+    padding: 14px 16px;
+    margin: 12px 0 14px;
+    border-left: 4px solid var(--teal);
+    display: grid;
+    gap: 8px;
+  }
+  .dialogue-box .line {
+    font-size: 0.98rem;
+    line-height: 1.45;
+    color: var(--navy);
+  }
+  .dialogue-box .who {
+    font-weight: 800;
+    color: var(--teal-deep);
+    margin-right: 6px;
+  }
+  .vocab-word {
+    background: var(--gold-light);
+    color: var(--navy);
+    font-weight: 800;
+    padding: 1px 6px;
+    border-radius: 6px;
+    box-shadow: 0 0 0 2px rgba(212, 168, 67, 0.35);
+  }
+
   /* —— Signal Match —— */
   .match-grid {
     display: grid;
@@ -967,6 +1008,18 @@
     <button class="tab" data-round="7" type="button" role="tab">
       Speed
       <span>Bonus traps · one shot</span>
+    </button>
+    <button class="tab" data-round="8" type="button" role="tab">
+      Paraphrase
+      <span>Reading · same meaning</span>
+    </button>
+    <button class="tab" data-round="9" type="button" role="tab">
+      Attitude
+      <span>Pragmatic · purpose</span>
+    </button>
+    <button class="tab" data-round="10" type="button" role="tab">
+      Vocab Strike
+      <span>Word in context</span>
     </button>
   </nav>
 
@@ -1193,8 +1246,8 @@
         </div>
         <div class="round-done hidden" id="round7Done">
           <h2>🚀 Speed Structure cleared!</h2>
-          <p id="speedFinalMsg">Bonus traps conquered. Check the scoreboard!</p>
-          <button class="btn btn-gold" type="button" id="playAgainFromSpeed">Play entire game again</button>
+          <p id="speedFinalMsg">Bonus traps conquered. Ready for paraphrase duels?</p>
+          <button class="btn btn-teal" type="button" data-goto="8">Go to Paraphrase →</button>
         </div>
       </div>
       <aside class="side">
@@ -1209,6 +1262,89 @@
         <div class="tip-card">
           <h3>Teacher tip</h3>
           <p>Same energy as Trap Hunt, but one shot only. Celebrate clean catches — and pause briefly after each reveal so the fix sticks.</p>
+        </div>
+      </aside>
+    </div>
+  </div>
+
+
+  <!-- ========== ROUND 8 Paraphrase Duel ========== -->
+  <div id="round8" class="round-panel hidden">
+    <div class="stage-grid">
+      <div class="stage" id="stage8">
+        <div class="challenge-label" id="paraCounter">Paraphrase Duel 1/5</div>
+        <p class="prompt">Tap the option that means the <strong>SAME</strong> thing as the sentence.</p>
+        <div class="sentence-box" id="paraSentence"></div>
+        <div class="answer-chips" id="paraAnswers"></div>
+        <div class="fix-box" id="fix8"></div>
+        <div class="action-row">
+          <button class="btn btn-primary hidden" id="nextParaBtn" type="button">Next duel →</button>
+        </div>
+        <div class="round-done hidden" id="round8Done">
+          <h2>💬 Paraphrase Duel cleared!</h2>
+          <p>Same-meaning radar unlocked. Ready to read the room?</p>
+          <button class="btn btn-teal" type="button" data-goto="9">Go to Attitude →</button>
+        </div>
+      </div>
+      <aside class="side">
+        <div class="tip-card">
+          <h3>Teacher tip</h3>
+          <p>Wrong options often swap cause/effect or add extra detail. Celebrate when students can say <em>why</em> the trap sounded close.</p>
+        </div>
+      </aside>
+    </div>
+  </div>
+
+  <!-- ========== ROUND 9 Attitude Check ========== -->
+  <div id="round9" class="round-panel hidden">
+    <div class="stage-grid">
+      <div class="stage" id="stage9">
+        <div class="challenge-label" id="attCounter">Attitude Check 1/5</div>
+        <p class="prompt">Read the tiny dialogue. What is the speaker’s <strong>attitude / purpose</strong>?</p>
+        <div class="dialogue-box" id="attDialogue"></div>
+        <div class="q-line" id="attQuestion"></div>
+        <div class="answer-chips" id="attAnswers"></div>
+        <div class="fix-box" id="fix9"></div>
+        <div class="action-row">
+          <button class="btn btn-primary hidden" id="nextAttBtn" type="button">Next check →</button>
+        </div>
+        <div class="round-done hidden" id="round9Done">
+          <h2>🎭 Attitude Check cleared!</h2>
+          <p>Pragmatic ears online. One more round — vocab in context!</p>
+          <button class="btn btn-teal" type="button" data-goto="10">Go to Vocab Strike →</button>
+        </div>
+      </div>
+      <aside class="side">
+        <div class="tip-card">
+          <h3>Teacher tip</h3>
+          <p>Tone beats dictionary meaning here. Ask: Is the speaker helping, warning, joking, or annoyed? One word can flip the whole vibe.</p>
+        </div>
+      </aside>
+    </div>
+  </div>
+
+  <!-- ========== ROUND 10 Vocab Strike ========== -->
+  <div id="round10" class="round-panel hidden">
+    <div class="stage-grid">
+      <div class="stage" id="stage10">
+        <div class="challenge-label" id="vocabCounter">Vocab Strike 1/5</div>
+        <p class="prompt">Tap the meaning that fits the <strong>highlighted</strong> word in context.</p>
+        <div class="sentence-box" id="vocabSentence"></div>
+        <div class="answer-chips" id="vocabAnswers"></div>
+        <div class="fix-box" id="fix10"></div>
+        <div class="action-row">
+          <button class="btn btn-primary hidden" id="nextVocabBtn" type="button">Next word →</button>
+        </div>
+        <div class="round-done hidden" id="round10Done">
+          <h2>⚔️ Vocab Strike cleared!</h2>
+          <p id="battleFinalMsg">Battle complete — check the scoreboard!</p>
+          <button class="btn btn-gold" type="button" id="playAgainFromVocab">Play entire game again</button>
+        </div>
+      </div>
+      <aside class="side">
+        <div class="tip-card">
+          <h3>Teacher tip</h3>
+          <p>Context first, synonym second. If a chip sounds fancy but breaks the sentence logic, it’s probably The Exam fishing.</p>
         </div>
       </aside>
     </div>
@@ -1496,6 +1632,163 @@ Thank you, and watch your sandwich.`;
 
 
 
+
+  const PARAPHRASE = [
+    {
+      sentence: "Although the library was crowded, Maya still found a quiet corner to finish her essay.",
+      options: [
+        "The library was busy, but Maya managed to locate a peaceful spot for her paper.",
+        "Maya left the library because it was too crowded to write.",
+        "Maya preferred noisy cafés when she needed to finish essays.",
+        "The library closed early, so Maya wrote her essay at home."
+      ],
+      correct: 0,
+      why: "Same idea: crowded place + still found a quiet spot to finish the essay.",
+      trapWhy: "Trap flips the outcome — she didn’t leave; she stayed and wrote."
+    },
+    {
+      sentence: "The professor postponed the quiz so students could review the chapter one more time.",
+      options: [
+        "Students asked to cancel the quiz forever.",
+        "The quiz was delayed to give everyone extra review time.",
+        "The professor moved the quiz earlier to save class time.",
+        "Reviewing the chapter was optional and unrelated to the quiz."
+      ],
+      correct: 1,
+      why: "Postponed = delayed, and the purpose was extra review.",
+      trapWhy: "Tempting traps change timing (earlier) or erase the review purpose."
+    },
+    {
+      sentence: "Campus Wi-Fi slowed down whenever too many students streamed videos at once.",
+      options: [
+        "Streaming videos always made the Wi-Fi faster.",
+        "Only professors could use campus Wi-Fi during peak hours.",
+        "Heavy video streaming by many students caused the network to lag.",
+        "The Wi-Fi never worked near the dorms."
+      ],
+      correct: 2,
+      why: "Cause–effect stays: many streams → slower Wi-Fi.",
+      trapWhy: "Opposite-effect options sound punchy but reverse the science."
+    },
+    {
+      sentence: "Rather than buying a new laptop, Jamal repaired his old one before midterms.",
+      options: [
+        "Jamal bought the newest laptop the week before midterms.",
+        "Jamal ignored his laptop problems until after finals.",
+        "Jamal sold his laptop and borrowed a tablet instead.",
+        "Instead of purchasing a new computer, Jamal fixed the one he already had."
+      ],
+      correct: 3,
+      why: "Rather than buying = instead of purchasing; repaired = fixed.",
+      trapWhy: "Buying-new traps look busy but contradict “rather than.”"
+    },
+    {
+      sentence: "The student union expanded café hours to reduce long lines during morning rush.",
+      options: [
+        "Café hours were lengthened so morning lines would be shorter.",
+        "The café closed during morning rush to avoid crowds.",
+        "Students were banned from buying coffee before 10 a.m.",
+        "Long lines disappeared because the café stopped serving espresso."
+      ],
+      correct: 0,
+      why: "Expanded hours = lengthened schedule; goal = shorter lines.",
+      trapWhy: "Closing / banning options invent a different policy."
+    }
+  ];
+
+  const ATTITUDE = [
+    {
+      lines: [
+        { who: "Sam", text: "Ugh, the printer jammed again right before my deadline." },
+        { who: "Sam", text: "I’ve restarted it three times. This is ridiculous." }
+      ],
+      question: "What is Sam’s attitude?",
+      options: ["annoyed", "encouraging", "joking", "uncertain"],
+      correct: 0,
+      why: "“Ugh,” “again,” and “ridiculous” show frustration, not humor or doubt."
+    },
+    {
+      lines: [
+        { who: "Tutor", text: "You’re closer than you think." },
+        { who: "Tutor", text: "Keep the daily vocab log — next week will feel easier." }
+      ],
+      question: "What is the tutor’s purpose?",
+      options: ["warning", "encouraging", "disagreeing", "apologizing"],
+      correct: 1,
+      why: "Supportive praise + a helpful next step = encouragement."
+    },
+    {
+      lines: [
+        { who: "Lia", text: "Wait… is the review session in Hall B or Hall D?" },
+        { who: "Lia", text: "My email says one thing, the flyer says another." }
+      ],
+      question: "What is Lia’s attitude?",
+      options: ["joking", "annoyed", "uncertain", "agreeing"],
+      correct: 2,
+      why: "Conflicting info + “Wait…” signals uncertainty, not anger."
+    },
+    {
+      lines: [
+        { who: "Coach", text: "If you skip warm-ups again, you’re sitting out the scrimmage." },
+        { who: "Coach", text: "No exceptions this time." }
+      ],
+      question: "What is the coach’s purpose?",
+      options: ["joking", "agreeing", "warning", "uncertain"],
+      correct: 2,
+      why: "Clear consequence + “no exceptions” = a serious warning."
+    },
+    {
+      lines: [
+        { who: "Mina", text: "So we meet at 6, bring snacks, and pretend we’re studying?" },
+        { who: "Rico", text: "Exactly. Operation ‘group project’ begins." },
+        { who: "Mina", text: "Perfect. I’ll bring the fake sticky notes." }
+      ],
+      question: "What is the speakers’ attitude?",
+      options: ["warning", "annoyed", "joking", "uncertain"],
+      correct: 2,
+      why: "Playful plan and “Operation…” show joking, not a real threat."
+    }
+  ];
+
+  const VOCAB = [
+    {
+      sentence: "The lecture was long; <span class=\"vocab-word\">nonetheless</span>, students stayed focused until the end.",
+      options: ["however / even so", "because of that", "for example", "in the beginning"],
+      correct: 0,
+      why: "Nonetheless signals contrast: long lecture, but they stayed focused.",
+      trapWhy: "“Because of that” flips contrast into cause — a classic trap."
+    },
+    {
+      sentence: "The department will <span class=\"vocab-word\">allocate</span> extra tutors to the writing center before finals.",
+      options: ["cancel permanently", "assign / set aside", "complain about", "ignore on purpose"],
+      correct: 1,
+      why: "Allocate = distribute or assign resources for a purpose.",
+      trapWhy: "Cancel/ignore sound campus-dramatic but break the helpful context."
+    },
+    {
+      sentence: "Weekend buses to the lab were <span class=\"vocab-word\">sparse</span>, so riders checked the schedule carefully.",
+      options: ["crowded and noisy", "free for students", "few / not many", "always on time"],
+      correct: 2,
+      why: "Sparse = few and spread out — that’s why they checked carefully.",
+      trapWhy: "“Crowded” is the opposite vibe and doesn’t fit “checked carefully.”"
+    },
+    {
+      sentence: "Her smile seemed to <span class=\"vocab-word\">imply</span> that the quiz would be easier than expected.",
+      options: ["prove with data", "suggest without saying directly", "refuse politely", "schedule officially"],
+      correct: 1,
+      why: "Imply = hint or suggest without stating it outright.",
+      trapWhy: "“Prove with data” is too strong — implying isn’t proving."
+    },
+    {
+      sentence: "Omar was <span class=\"vocab-word\">reluctant</span> to present first, but he volunteered after a deep breath.",
+      options: ["eager and excited", "unwilling / hesitant", "fully prepared", "accidentally late"],
+      correct: 1,
+      why: "Reluctant = not eager; hesitant — then he pushed through anyway.",
+      trapWhy: "“Eager” is the antonym; context shows hesitation first."
+    }
+  ];
+
+
   /* ========== STATE ========== */
   let scoreYou = 0;
   let scoreExam = 0;
@@ -1520,6 +1813,12 @@ Thank you, and watch your sandwich.`;
   let speedResolved = false;
   let timer7Id = null;
   let t7 = 15;
+  let paraIndex = 0;
+  let paraResolved = false;
+  let attIndex = 0;
+  let attResolved = false;
+  let vocabIndex = 0;
+  let vocabResolved = false;
 
   const $ = (sel, el = document) => el.querySelector(sel);
   const $$ = (sel, el = document) => [...el.querySelectorAll(sel)];
@@ -2447,6 +2746,208 @@ Thank you, and watch your sandwich.`;
     hideSpeedSentence();
   });
 
+
+  /* ========== ROUND 8 PARAPHRASE DUEL ========== */
+  function showPara(i) {
+    paraResolved = false;
+    $("#nextParaBtn").classList.add("hidden");
+    $("#fix8").classList.remove("show");
+    $("#fix8").innerHTML = "";
+    $("#round8Done").classList.add("hidden");
+    $(".prompt", $("#stage8")).classList.remove("hidden");
+    $("#paraSentence").classList.remove("hidden");
+    $("#paraAnswers").classList.remove("hidden");
+
+    if (i >= PARAPHRASE.length) {
+      $("#paraSentence").classList.add("hidden");
+      $("#paraAnswers").classList.add("hidden");
+      $(".prompt", $("#stage8")).classList.add("hidden");
+      $("#paraCounter").textContent = "Paraphrase Duel 5/5";
+      $("#round8Done").classList.remove("hidden");
+      return;
+    }
+
+    const item = PARAPHRASE[i];
+    $("#paraCounter").textContent = `Paraphrase Duel ${i + 1}/5`;
+    $("#paraSentence").textContent = item.sentence;
+    const box = $("#paraAnswers");
+    box.innerHTML = "";
+    item.options.forEach((opt, idx) => {
+      const btn = document.createElement("button");
+      btn.type = "button";
+      btn.className = "ans-chip";
+      btn.textContent = String.fromCharCode(65 + idx) + ". " + opt;
+      btn.addEventListener("click", () => {
+        if (paraResolved) return;
+        paraResolved = true;
+        $$(".ans-chip", box).forEach((c) => { c.disabled = true; });
+        const correctBtn = $$(".ans-chip", box)[item.correct];
+        if (idx === item.correct) {
+          btn.classList.add("correct");
+          flash("#stage8", "green");
+          toast("Same meaning! You +1", "good");
+          addScore("you", 1, true);
+          $("#fix8").innerHTML = "✓ " + item.why;
+        } else {
+          btn.classList.add("wrong");
+          correctBtn.classList.add("correct");
+          flash("#stage8", "red");
+          toast("Close — Exam +1", "bad");
+          addScore("exam", 1, true);
+          $("#fix8").innerHTML =
+            "✓ Correct: " + item.options[item.correct] + "<br>" + item.why +
+            `<div class="trap-why" style="margin-top:8px"><span class="tag">TRAP</span>${item.trapWhy}</div>`;
+        }
+        $("#fix8").classList.add("show");
+        $("#nextParaBtn").classList.remove("hidden");
+      });
+      box.appendChild(btn);
+    });
+  }
+
+  $("#nextParaBtn").addEventListener("click", () => {
+    paraIndex += 1;
+    showPara(paraIndex);
+  });
+
+  /* ========== ROUND 9 ATTITUDE CHECK ========== */
+  function showAtt(i) {
+    attResolved = false;
+    $("#nextAttBtn").classList.add("hidden");
+    $("#fix9").classList.remove("show");
+    $("#fix9").innerHTML = "";
+    $("#round9Done").classList.add("hidden");
+    $(".prompt", $("#stage9")).classList.remove("hidden");
+    $("#attDialogue").classList.remove("hidden");
+    $("#attQuestion").classList.remove("hidden");
+    $("#attAnswers").classList.remove("hidden");
+
+    if (i >= ATTITUDE.length) {
+      $("#attDialogue").classList.add("hidden");
+      $("#attQuestion").classList.add("hidden");
+      $("#attAnswers").classList.add("hidden");
+      $(".prompt", $("#stage9")).classList.add("hidden");
+      $("#attCounter").textContent = "Attitude Check 5/5";
+      $("#round9Done").classList.remove("hidden");
+      return;
+    }
+
+    const item = ATTITUDE[i];
+    $("#attCounter").textContent = `Attitude Check ${i + 1}/5`;
+    const dlg = $("#attDialogue");
+    dlg.innerHTML = item.lines.map((ln) =>
+      `<div class="line"><span class="who">${ln.who}:</span>${ln.text}</div>`
+    ).join("");
+    $("#attQuestion").textContent = item.question;
+    const box = $("#attAnswers");
+    box.innerHTML = "";
+    item.options.forEach((opt, idx) => {
+      const btn = document.createElement("button");
+      btn.type = "button";
+      btn.className = "ans-chip";
+      btn.textContent = opt;
+      btn.addEventListener("click", () => {
+        if (attResolved) return;
+        attResolved = true;
+        $$(".ans-chip", box).forEach((c) => { c.disabled = true; });
+        const correctBtn = $$(".ans-chip", box)[item.correct];
+        if (idx === item.correct) {
+          btn.classList.add("correct");
+          flash("#stage9", "green");
+          toast("Attitude locked! You +1", "good");
+          addScore("you", 1, true);
+          $("#fix9").innerHTML = "✓ " + item.why;
+        } else {
+          btn.classList.add("wrong");
+          correctBtn.classList.add("correct");
+          flash("#stage9", "red");
+          toast("Missed the vibe — Exam +1", "bad");
+          addScore("exam", 1, true);
+          $("#fix9").innerHTML =
+            "✓ Answer: <strong>" + item.options[item.correct] + "</strong><br>" + item.why;
+        }
+        $("#fix9").classList.add("show");
+        $("#nextAttBtn").classList.remove("hidden");
+      });
+      box.appendChild(btn);
+    });
+  }
+
+  $("#nextAttBtn").addEventListener("click", () => {
+    attIndex += 1;
+    showAtt(attIndex);
+  });
+
+  /* ========== ROUND 10 VOCAB STRIKE ========== */
+  function showVocab(i) {
+    vocabResolved = false;
+    $("#nextVocabBtn").classList.add("hidden");
+    $("#fix10").classList.remove("show");
+    $("#fix10").innerHTML = "";
+    $("#round10Done").classList.add("hidden");
+    $(".prompt", $("#stage10")).classList.remove("hidden");
+    $("#vocabSentence").classList.remove("hidden");
+    $("#vocabAnswers").classList.remove("hidden");
+
+    if (i >= VOCAB.length) {
+      $("#vocabSentence").classList.add("hidden");
+      $("#vocabAnswers").classList.add("hidden");
+      $(".prompt", $("#stage10")).classList.add("hidden");
+      $("#vocabCounter").textContent = "Vocab Strike 5/5";
+      const youName = $("#nameYou").value || "You";
+      const examName = $("#nameExam").value || "The Exam";
+      let msg;
+      if (scoreYou > scoreExam) msg = `Battle complete! ${youName} wins ${scoreYou}–${scoreExam}.`;
+      else if (scoreExam > scoreYou) msg = `Battle complete! ${examName} leads ${scoreExam}–${scoreYou}. Rematch?`;
+      else msg = `Battle complete! Tied ${scoreYou}–${scoreExam}. Epic duel.`;
+      $("#battleFinalMsg").textContent = msg;
+      $("#round10Done").classList.remove("hidden");
+      return;
+    }
+
+    const item = VOCAB[i];
+    $("#vocabCounter").textContent = `Vocab Strike ${i + 1}/5`;
+    $("#vocabSentence").innerHTML = item.sentence;
+    const box = $("#vocabAnswers");
+    box.innerHTML = "";
+    item.options.forEach((opt, idx) => {
+      const btn = document.createElement("button");
+      btn.type = "button";
+      btn.className = "ans-chip";
+      btn.textContent = String.fromCharCode(65 + idx) + ". " + opt;
+      btn.addEventListener("click", () => {
+        if (vocabResolved) return;
+        vocabResolved = true;
+        $$(".ans-chip", box).forEach((c) => { c.disabled = true; });
+        const correctBtn = $$(".ans-chip", box)[item.correct];
+        if (idx === item.correct) {
+          btn.classList.add("correct");
+          flash("#stage10", "green");
+          toast("Vocab strike! You +1", "good");
+          addScore("you", 1, true);
+          $("#fix10").innerHTML = "✓ " + item.why;
+        } else {
+          btn.classList.add("wrong");
+          correctBtn.classList.add("correct");
+          flash("#stage10", "red");
+          toast("Trap meaning — Exam +1", "bad");
+          addScore("exam", 1, true);
+          $("#fix10").innerHTML =
+            "✓ " + item.why +
+            `<div class="trap-why" style="margin-top:8px"><span class="tag">TRAP</span>${item.trapWhy}</div>`;
+        }
+        $("#fix10").classList.add("show");
+        $("#nextVocabBtn").classList.remove("hidden");
+      });
+      box.appendChild(btn);
+    });
+  }
+
+  $("#nextVocabBtn").addEventListener("click", () => {
+    vocabIndex += 1;
+    showVocab(vocabIndex);
+  });
+
   /* ========== NAV ========== */
   function goRound(n) {
     stopLectureAudio();
@@ -2470,6 +2971,9 @@ Thank you, and watch your sandwich.`;
         showSpeed(speedIndex);
       }
     }
+    if (n === 8 && $("#paraAnswers").children.length === 0) showPara(paraIndex);
+    if (n === 9 && $("#attAnswers").children.length === 0) showAtt(attIndex);
+    if (n === 10 && $("#vocabAnswers").children.length === 0) showVocab(vocabIndex);
   }
 
   $$(".tab").forEach((tab) => {
@@ -2502,6 +3006,12 @@ Thank you, and watch your sandwich.`;
     matchComplete = false;
     speedIndex = 0;
     speedResolved = false;
+    paraIndex = 0;
+    paraResolved = false;
+    attIndex = 0;
+    attResolved = false;
+    vocabIndex = 0;
+    vocabResolved = false;
     renderScores();
     buildBingo();
     $("#scriptBox").classList.remove("show");
@@ -2535,13 +3045,25 @@ Thank you, and watch your sandwich.`;
     $("#ready7").classList.remove("hidden");
     $("#timer7").textContent = "15";
     $("#timer7").classList.remove("urgent");
+    $("#paraAnswers").innerHTML = "";
+    $("#fix8").classList.remove("show");
+    $("#nextParaBtn").classList.add("hidden");
+    $("#round8Done").classList.add("hidden");
+    $("#attAnswers").innerHTML = "";
+    $("#fix9").classList.remove("show");
+    $("#nextAttBtn").classList.add("hidden");
+    $("#round9Done").classList.add("hidden");
+    $("#vocabAnswers").innerHTML = "";
+    $("#fix10").classList.remove("show");
+    $("#nextVocabBtn").classList.add("hidden");
+    $("#round10Done").classList.add("hidden");
     goRound(1);
     toast("Game reset — fight!", "good");
   }
 
   $("#resetGame").addEventListener("click", resetEntireGame);
   $("#playAgainAll").addEventListener("click", resetEntireGame);
-  $("#playAgainFromSpeed").addEventListener("click", resetEntireGame);
+  $("#playAgainFromVocab").addEventListener("click", resetEntireGame);
 
   // Chrome voices load async
   /* lecture uses real MP3 */
