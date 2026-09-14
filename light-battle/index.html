@@ -500,6 +500,13 @@
     border-color: var(--teal);
     background: #e6f5f3;
   }
+  .bingo-cell.missed {
+    border-color: var(--danger, #e05a5a);
+    background: #fde8e8;
+    color: #9c2837;
+    opacity: 0.95;
+  }
+  .bingo-cell.locked { pointer-events: none; }
   .bingo-cell.marked {
     background: var(--teal-deep);
     border-color: var(--teal);
@@ -962,11 +969,11 @@
       <div class="stage" id="stage2">
         <div class="confetti-burst" id="confetti"></div>
         <div class="challenge-label">Signal Bingo</div>
-        <p class="prompt">Hit <strong>Play lecture</strong>, then tap each discourse marker when you hear it. FREE is already yours!</p>
+        <p class="prompt">Hit <strong>Play lecture</strong> and tap each marker when you hear it. When the audio ends, the board locks: each missed marker = <strong>Exam +1</strong>. Bingo (3 in a row) = <strong>You +3</strong>. All eight = <strong>You +2</strong> extra.</p>
         <div class="bingo-board" id="bingoBoard"></div>
         <div class="bingo-celebrate" id="bingoWin">
           <h2>🎉 BINGO!</h2>
-          <p style="color:var(--muted);margin:8px 0 12px">You +3 — discourse markers conquered.</p>
+          <p style="color:var(--muted);margin:8px 0 12px">You +3 for the line. Missed markers already went to The Exam.</p>
         </div>
         <div class="action-row">
           <audio id="lectureAudio" src="./audio/signal-bingo-lecture.mp3" preload="auto"></audio>
@@ -996,7 +1003,7 @@
       <aside class="side">
         <div class="tip-card">
           <h3>Teacher tip</h3>
-          <p>Pause after key lines if needed. Students mark signals as they hear them — don’t let them hunt the script first. Bingo = 3 in a row any direction.</p>
+          <p>No script until after grading. When the audio ends, missed markers feed The Exam automatically. Keep the energy: “Did you catch it?”</p>
         </div>
         <div class="panel">
           <h3>Markers to catch</h3>
@@ -1691,10 +1698,17 @@ Thank you, and watch your sandwich.`;
     [0,4,8],[2,4,6]
   ];
 
+  let bingoLocked = false;
+  let bingoGraded = false;
+  let bingoListenLive = false;
+
   function buildBingo() {
     const board = $("#bingoBoard");
     board.innerHTML = "";
     bingoWon = false;
+    bingoLocked = false;
+    bingoGraded = false;
+    bingoListenLive = false;
     $("#bingoWin").classList.remove("show");
     $("#resetBingo").classList.add("hidden");
     $("#gistArea").classList.add("hidden");
@@ -1704,30 +1718,67 @@ Thank you, and watch your sandwich.`;
       cell.className = "bingo-cell" + (label === "FREE" ? " free marked" : "");
       cell.textContent = label;
       cell.dataset.index = i;
+      if (label === "FREE") cell.dataset.free = "1";
       if (label !== "FREE") {
         cell.addEventListener("click", () => {
-          if (bingoWon) return;
+          if (bingoLocked || bingoGraded) return;
+          if (!bingoListenLive) {
+            toast("Press Play lecture first — then tap as you hear it", "bad");
+            return;
+          }
           cell.classList.toggle("marked");
-          checkBingo();
+          // visual only during audio; score on audio end
+          const marked = $$(".bingo-cell", $("#bingoBoard")).map((c) => c.classList.contains("marked"));
+          if (!bingoWon && WIN_LINES.some((line) => line.every((i) => marked[i]))) {
+            bingoWon = true;
+            toast("Line! Keep listening — score lands when audio ends", "gold");
+          }
         });
       }
       board.appendChild(cell);
     });
   }
 
-  function checkBingo() {
+  function hasBingoLine() {
+    const marked = $$(".bingo-cell", $("#bingoBoard")).map((c) => c.classList.contains("marked"));
+    return WIN_LINES.some((line) => line.every((i) => marked[i]));
+  }
+
+  function gradeBingoListening() {
+    if (bingoGraded) return;
+    bingoGraded = true;
+    bingoLocked = true;
+    bingoListenLive = false;
     const cells = $$(".bingo-cell", $("#bingoBoard"));
-    const marked = cells.map((c) => c.classList.contains("marked"));
-    const win = WIN_LINES.some((line) => line.every((i) => marked[i]));
-    if (win && !bingoWon) {
+    let missed = 0;
+    cells.forEach((c) => {
+      c.classList.add("locked");
+      if (c.dataset.free === "1") return;
+      if (!c.classList.contains("marked")) {
+        missed += 1;
+        c.classList.add("missed");
+      }
+    });
+    if (missed > 0) {
+      addScore("exam", missed, true);
+      toast(`Missed ${missed} marker${missed > 1 ? "s" : ""} → Exam +${missed}`, "bad");
+    }
+    const allMarked = cells.every((c) => c.classList.contains("marked"));
+    if (hasBingoLine()) {
       bingoWon = true;
       $("#bingoWin").classList.add("show");
-      $("#resetBingo").classList.remove("hidden");
-      $("#gistArea").classList.remove("hidden");
       addScore("you", 3, true);
       toast("BINGO! You +3", "gold");
       launchConfetti();
+    } else if (missed === 0) {
+      toast("All marked, but no line — still solid listening", "good");
     }
+    if (allMarked) {
+      addScore("you", 2, true);
+      toast("Perfect ear! You +2", "gold");
+    }
+    $("#resetBingo").classList.remove("hidden");
+    $("#gistArea").classList.remove("hidden");
   }
 
   function launchConfetti() {
@@ -1763,14 +1814,34 @@ Thank you, and watch your sandwich.`;
       toast("Audio missing — use Show script", "bad");
       return;
     }
+    if (bingoGraded) {
+      toast("Hit Reset board for a new listening round", "bad");
+      return;
+    }
+    // Fresh listen attempt: clear marks except FREE
+    $$(".bingo-cell", $("#bingoBoard")).forEach((c) => {
+      if (c.dataset.free === "1") return;
+      c.classList.remove("marked", "missed", "locked");
+    });
+    bingoWon = false;
+    bingoLocked = false;
+    bingoListenLive = true;
+    $("#bingoWin").classList.remove("show");
     stopLectureAudio();
     const p = lectureAudio.play();
     if (p && typeof p.then === "function") {
-      p.then(() => toast("Lecture playing… listen for signals!", "good"))
-       .catch(() => toast("Tap Play again to allow audio", "bad"));
+      p.then(() => toast("Listening live — tap markers as you hear them!", "good"))
+       .catch(() => { bingoListenLive = false; toast("Tap Play again to allow audio", "bad"); });
     } else {
-      toast("Lecture playing… listen for signals!", "good");
+      toast("Listening live — tap markers as you hear them!", "good");
     }
+  }
+
+  if (lectureAudio) {
+    lectureAudio.addEventListener("ended", () => {
+      bingoListenLive = false;
+      gradeBingoListening();
+    });
   }
 
   $("#playLecture").addEventListener("click", playLectureAudio);
