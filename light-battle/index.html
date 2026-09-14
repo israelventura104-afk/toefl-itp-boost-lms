@@ -1,0 +1,1429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>TOEFL Trap Battle</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --navy: #0B1F3A;
+    --teal: #5bb8b0;
+    --teal-deep: #238d85;
+    --gold: #d4a843;
+    --gold-light: #f0d78c;
+    --bg: #f4f7fb;
+    --card: #ffffff;
+    --ink: #0B1F3A;
+    --muted: #5a6b7d;
+    --danger: #e05a5a;
+    --success: #2db87a;
+    --shadow: 0 10px 30px rgba(11, 31, 58, 0.12);
+    --radius: 18px;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: "Plus Jakarta Sans", system-ui, sans-serif;
+    background: var(--bg);
+    color: var(--ink);
+    min-height: 100vh;
+    line-height: 1.45;
+  }
+
+  button {
+    font-family: inherit;
+    cursor: pointer;
+    border: none;
+    background: none;
+  }
+
+  /* —— Topbar —— */
+  .topbar {
+    background: var(--navy);
+    color: #fff;
+    padding: 14px 20px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    flex-wrap: wrap;
+    box-shadow: 0 4px 20px rgba(11, 31, 58, 0.35);
+    position: sticky;
+    top: 0;
+    z-index: 50;
+  }
+
+  .logo {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--teal);
+    background: var(--teal-deep);
+    flex-shrink: 0;
+  }
+
+  .title-block { flex: 1; min-width: 160px; }
+  .title-block h1 {
+    font-size: 1.35rem;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  .title-block p {
+    font-size: 0.82rem;
+    opacity: 0.75;
+    margin-top: 2px;
+  }
+
+  .pill {
+    display: inline-flex;
+    align-items: center;
+    background: var(--gold);
+    color: var(--navy);
+    font-size: 0.7rem;
+    font-weight: 800;
+    padding: 3px 10px;
+    border-radius: 999px;
+    letter-spacing: 0.04em;
+  }
+
+  .home-link {
+    color: var(--teal);
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 0.95rem;
+    padding: 8px 14px;
+    border-radius: 999px;
+    border: 1.5px solid rgba(91, 184, 176, 0.45);
+    transition: background 0.2s;
+  }
+  .home-link:hover { background: rgba(91, 184, 176, 0.15); }
+
+  .wrap {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px 16px 80px;
+  }
+
+  /* —— Scoreboard —— */
+  .scoreboard {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    gap: 12px;
+    align-items: stretch;
+    margin-bottom: 22px;
+  }
+
+  .score-card {
+    background: var(--card);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: 18px 16px;
+    text-align: center;
+    border: 3px solid transparent;
+    transition: border-color 0.3s, transform 0.2s;
+  }
+  .score-card.you { border-color: var(--teal); }
+  .score-card.exam { border-color: var(--gold); }
+  .score-card.pulse-win { animation: pop 0.45s ease; }
+
+  @keyframes pop {
+    0% { transform: scale(1); }
+    40% { transform: scale(1.06); }
+    100% { transform: scale(1); }
+  }
+
+  .name-input {
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: center;
+    border: none;
+    border-bottom: 2px dashed transparent;
+    background: transparent;
+    color: var(--ink);
+    width: 100%;
+    max-width: 180px;
+    padding: 2px 4px;
+  }
+  .name-input:hover, .name-input:focus {
+    border-bottom-color: var(--muted);
+    outline: none;
+  }
+
+  .big-score {
+    font-size: 3.2rem;
+    font-weight: 800;
+    line-height: 1;
+    margin: 8px 0;
+    color: var(--navy);
+  }
+  .score-card.exam .big-score { color: #8a6a1f; }
+  .score-card.you .big-score { color: var(--teal-deep); }
+
+  .score-btns {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+  }
+  .score-btns button {
+    width: 40px;
+    height: 40px;
+    border-radius: 12px;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #fff;
+    transition: transform 0.15s, opacity 0.15s;
+  }
+  .score-btns button:active { transform: scale(0.92); }
+  .btn-plus { background: var(--teal-deep); }
+  .btn-minus { background: var(--muted); }
+
+  .vs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    font-size: 1.1rem;
+    color: var(--gold);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+
+  /* —— Round tabs —— */
+  .tabs {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 18px;
+    flex-wrap: wrap;
+  }
+  .tab {
+    flex: 1;
+    min-width: 140px;
+    padding: 14px 12px;
+    border-radius: 14px;
+    background: #e8eef5;
+    color: var(--muted);
+    font-weight: 700;
+    font-size: 0.92rem;
+    transition: all 0.2s;
+    border: 2px solid transparent;
+  }
+  .tab span {
+    display: block;
+    font-size: 0.72rem;
+    font-weight: 500;
+    opacity: 0.8;
+    margin-top: 2px;
+  }
+  .tab.active {
+    background: var(--navy);
+    color: #fff;
+    border-color: var(--teal);
+    box-shadow: 0 6px 18px rgba(11, 31, 58, 0.25);
+  }
+  .tab:hover:not(.active) { background: #dce6f0; }
+
+  /* —— Stage layout —— */
+  .stage-grid {
+    display: grid;
+    grid-template-columns: 1fr 260px;
+    gap: 16px;
+    align-items: start;
+  }
+
+  .stage {
+    background: var(--card);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: 24px 22px;
+    min-height: 380px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .stage.flash-green { animation: flashG 0.55s ease; }
+  .stage.flash-red { animation: flashR 0.55s ease; }
+
+  @keyframes flashG {
+    0%, 100% { box-shadow: var(--shadow); }
+    40% { box-shadow: 0 0 0 4px var(--success), 0 10px 40px rgba(45, 184, 122, 0.35); background: #f0faf5; }
+  }
+  @keyframes flashR {
+    0%, 100% { box-shadow: var(--shadow); }
+    40% { box-shadow: 0 0 0 4px var(--danger), 0 10px 40px rgba(224, 90, 90, 0.3); background: #fdf2f2; }
+  }
+
+  .side {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .panel {
+    background: var(--card);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: 16px;
+  }
+
+  .panel h3 {
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--muted);
+    margin-bottom: 10px;
+  }
+
+  .challenge-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(91, 184, 176, 0.15);
+    color: var(--teal-deep);
+    font-weight: 700;
+    font-size: 0.85rem;
+    padding: 6px 12px;
+    border-radius: 999px;
+    margin-bottom: 16px;
+  }
+
+  .prompt {
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin-bottom: 14px;
+    font-weight: 500;
+  }
+
+  /* Word chips */
+  .chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 18px 0 20px;
+    justify-content: center;
+  }
+  .chip {
+    background: #eef3f8;
+    border: 2px solid #d5e0ec;
+    padding: 10px 14px;
+    border-radius: 12px;
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: var(--navy);
+    transition: all 0.15s;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .chip:hover:not(:disabled) {
+    border-color: var(--teal);
+    transform: translateY(-2px);
+    background: #e6f5f3;
+  }
+  .chip:active:not(:disabled) { transform: scale(0.96); }
+  .chip.correct-trap {
+    background: var(--success);
+    border-color: var(--success);
+    color: #fff;
+  }
+  .chip.wrong-pick {
+    background: var(--danger);
+    border-color: var(--danger);
+    color: #fff;
+    opacity: 0.85;
+  }
+  .chip:disabled { cursor: default; }
+
+  .fix-box {
+    background: linear-gradient(135deg, #e8f7f5, #f5f0e0);
+    border-left: 4px solid var(--gold);
+    padding: 14px 16px;
+    border-radius: 12px;
+    margin-top: 12px;
+    font-size: 0.95rem;
+    display: none;
+  }
+  .fix-box.show { display: block; animation: fadeUp 0.35s ease; }
+  .fix-box strong { color: var(--teal-deep); }
+
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(8px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .action-row {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 18px;
+    justify-content: center;
+  }
+
+  .btn {
+    padding: 12px 22px;
+    border-radius: 14px;
+    font-weight: 700;
+    font-size: 0.95rem;
+    transition: transform 0.15s, box-shadow 0.15s;
+  }
+  .btn:active { transform: scale(0.97); }
+  .btn-primary {
+    background: var(--navy);
+    color: #fff;
+    box-shadow: 0 4px 14px rgba(11, 31, 58, 0.25);
+  }
+  .btn-primary:hover { background: #143056; }
+  .btn-teal {
+    background: var(--teal-deep);
+    color: #fff;
+  }
+  .btn-teal:hover { background: #1c756e; }
+  .btn-gold {
+    background: var(--gold);
+    color: var(--navy);
+  }
+  .btn-ghost {
+    background: #e8eef5;
+    color: var(--navy);
+  }
+  .btn:disabled {
+    opacity: 0.45;
+    cursor: not-allowed;
+    transform: none;
+  }
+
+  /* Timer */
+  .timer-display {
+    font-size: 2.8rem;
+    font-weight: 800;
+    text-align: center;
+    color: var(--navy);
+    font-variant-numeric: tabular-nums;
+    line-height: 1;
+  }
+  .timer-display.urgent { color: var(--danger); animation: blink 0.6s infinite; }
+  @keyframes blink {
+    50% { opacity: 0.5; }
+  }
+  .timer-btns {
+    display: flex;
+    gap: 8px;
+    margin-top: 12px;
+  }
+  .timer-btns .btn { flex: 1; padding: 10px; font-size: 0.85rem; }
+
+  .tip-card {
+    background: linear-gradient(160deg, var(--navy), #163458);
+    color: #fff;
+    border-radius: var(--radius);
+    padding: 16px;
+    font-size: 0.88rem;
+  }
+  .tip-card h3 {
+    color: var(--gold);
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    margin-bottom: 8px;
+  }
+  .tip-card p { opacity: 0.9; line-height: 1.5; }
+
+  /* —— Bingo —— */
+  .bingo-board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    max-width: 420px;
+    margin: 0 auto 20px;
+  }
+  .bingo-cell {
+    aspect-ratio: 1;
+    background: #eef3f8;
+    border: 3px solid #d5e0ec;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 8px;
+    font-weight: 700;
+    font-size: 0.82rem;
+    color: var(--navy);
+    transition: all 0.2s;
+    position: relative;
+    line-height: 1.25;
+  }
+  .bingo-cell:hover:not(.marked) {
+    border-color: var(--teal);
+    background: #e6f5f3;
+  }
+  .bingo-cell.marked {
+    background: var(--teal-deep);
+    border-color: var(--teal);
+    color: #fff;
+  }
+  .bingo-cell.marked::after {
+    content: "✓";
+    position: absolute;
+    top: 4px;
+    right: 6px;
+    font-size: 0.9rem;
+    opacity: 0.9;
+  }
+  .bingo-cell.free {
+    background: var(--gold);
+    border-color: var(--gold-light);
+    color: var(--navy);
+    font-size: 0.95rem;
+  }
+  .bingo-cell.free.marked { background: var(--gold); color: var(--navy); }
+
+  .bingo-celebrate {
+    text-align: center;
+    padding: 16px;
+    display: none;
+  }
+  .bingo-celebrate.show {
+    display: block;
+    animation: bingoPulse 0.8s ease infinite alternate;
+  }
+  @keyframes bingoPulse {
+    from { transform: scale(1); filter: brightness(1); }
+    to { transform: scale(1.04); filter: brightness(1.15); }
+  }
+  .bingo-celebrate h2 {
+    font-size: 2rem;
+    color: var(--gold);
+    text-shadow: 0 2px 0 var(--navy);
+  }
+
+  .confetti-burst {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    overflow: hidden;
+    opacity: 0;
+  }
+  .confetti-burst.go { animation: confettiFade 1.8s ease forwards; }
+  @keyframes confettiFade {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+  }
+  .confetti-piece {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 2px;
+    top: 40%;
+    left: 50%;
+    animation: confettiFly 1.5s ease-out forwards;
+  }
+  @keyframes confettiFly {
+    to {
+      transform: translate(var(--dx), var(--dy)) rotate(720deg);
+      opacity: 0;
+    }
+  }
+
+  .script-box {
+    background: #f0f4f8;
+    border-radius: 12px;
+    padding: 14px;
+    font-size: 0.88rem;
+    color: var(--muted);
+    margin-top: 12px;
+    display: none;
+    max-height: 180px;
+    overflow-y: auto;
+    line-height: 1.55;
+  }
+  .script-box.show { display: block; }
+
+  .gist-q {
+    background: #eef3f8;
+    border-radius: 14px;
+    padding: 14px 16px;
+    margin-top: 10px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: border-color 0.2s;
+  }
+  .gist-q:hover { border-color: var(--teal); }
+  .gist-q .q { font-weight: 700; margin-bottom: 6px; }
+  .gist-q .a {
+    display: none;
+    color: var(--teal-deep);
+    font-weight: 600;
+    padding-top: 6px;
+    border-top: 1px dashed #c5d3e0;
+    margin-top: 8px;
+  }
+  .gist-q.revealed .a { display: block; animation: fadeUp 0.3s ease; }
+  .gist-q .hint { font-size: 0.78rem; color: var(--muted); }
+
+  /* —— Round done / boss —— */
+  .round-done {
+    text-align: center;
+    padding: 40px 20px;
+  }
+  .round-done h2 { font-size: 1.8rem; margin-bottom: 10px; }
+  .round-done p { color: var(--muted); margin-bottom: 20px; }
+
+  .hidden { display: none !important; }
+
+  /* Toast */
+  .toast {
+    position: fixed;
+    bottom: 28px;
+    left: 50%;
+    transform: translateX(-50%) translateY(80px);
+    background: var(--navy);
+    color: #fff;
+    padding: 14px 28px;
+    border-radius: 999px;
+    font-weight: 700;
+    font-size: 1rem;
+    box-shadow: 0 8px 28px rgba(11, 31, 58, 0.4);
+    z-index: 100;
+    opacity: 0;
+    transition: all 0.3s ease;
+    pointer-events: none;
+    white-space: nowrap;
+    max-width: 90vw;
+    text-align: center;
+  }
+  .toast.show {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+  .toast.good { background: var(--success); }
+  .toast.bad { background: var(--danger); }
+  .toast.gold { background: var(--gold); color: var(--navy); }
+
+  .footer-reset {
+    text-align: center;
+    margin-top: 28px;
+    padding-top: 18px;
+    border-top: 1px solid #d5e0ec;
+  }
+  .footer-reset button {
+    color: var(--muted);
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+  .footer-reset button:hover { color: var(--danger); }
+
+  .boss-banner {
+    background: linear-gradient(90deg, var(--navy), #3a2a0a);
+    color: var(--gold);
+    text-align: center;
+    padding: 10px;
+    border-radius: 12px;
+    font-weight: 800;
+    letter-spacing: 0.04em;
+    margin-bottom: 14px;
+    font-size: 0.9rem;
+  }
+
+  @media (max-width: 700px) {
+    .stage-grid { grid-template-columns: 1fr; }
+    .scoreboard { grid-template-columns: 1fr; }
+    .vs { padding: 4px 0; }
+    .big-score { font-size: 2.6rem; }
+    .chip { font-size: 1rem; padding: 8px 12px; }
+    .bingo-cell { font-size: 0.72rem; }
+    .title-block h1 { font-size: 1.15rem; }
+    .tabs { flex-direction: column; }
+    .tab { min-width: 0; }
+  }
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <img class="logo" src="../assets/logo.png" alt="Logo" width="48" height="48"
+       onerror="this.style.background='linear-gradient(135deg,#5bb8b0,#238d85)';this.removeAttribute('src')" />
+  <div class="title-block">
+    <h1>TOEFL Trap Battle <span class="pill">ITP</span></h1>
+    <p>Structure · Listening · light mode</p>
+  </div>
+  <a class="home-link" href="../dashboard.html">← Home</a>
+</header>
+
+<div class="wrap">
+
+  <!-- Scoreboard -->
+  <div class="scoreboard">
+    <div class="score-card you" id="cardYou">
+      <input class="name-input" id="nameYou" value="You" maxlength="18" aria-label="Your name" />
+      <div class="big-score" id="scoreYou">0</div>
+      <div class="score-btns">
+        <button class="btn-minus" type="button" data-who="you" data-delta="-1" aria-label="Minus You">−</button>
+        <button class="btn-plus" type="button" data-who="you" data-delta="1" aria-label="Plus You">+</button>
+      </div>
+    </div>
+    <div class="vs">VS</div>
+    <div class="score-card exam" id="cardExam">
+      <input class="name-input" id="nameExam" value="The Exam" maxlength="18" aria-label="Opponent name" />
+      <div class="big-score" id="scoreExam">0</div>
+      <div class="score-btns">
+        <button class="btn-minus" type="button" data-who="exam" data-delta="-1" aria-label="Minus Exam">−</button>
+        <button class="btn-plus" type="button" data-who="exam" data-delta="1" aria-label="Plus Exam">+</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Tabs -->
+  <nav class="tabs" role="tablist">
+    <button class="tab active" data-round="1" type="button" role="tab">
+      Trap Hunt
+      <span>Structure · find the trap</span>
+    </button>
+    <button class="tab" data-round="2" type="button" role="tab">
+      Signal Bingo
+      <span>Listening markers</span>
+    </button>
+    <button class="tab" data-round="3" type="button" role="tab">
+      Boss Round
+      <span>Rapid mix · no mercy</span>
+    </button>
+  </nav>
+
+  <!-- ========== ROUND 1 ========== -->
+  <div id="round1" class="round-panel">
+    <div class="stage-grid">
+      <div class="stage" id="stage1">
+        <div class="challenge-label" id="trapCounter">Trap 1/10</div>
+        <p class="prompt">Tap the <strong>WRONG</strong> word — the grammar trap hiding in the sentence.</p>
+        <div class="chips" id="chips1"></div>
+        <div class="fix-box" id="fix1"></div>
+        <div class="action-row">
+          <button class="btn btn-primary hidden" id="nextTrapBtn" type="button">Next challenge →</button>
+        </div>
+        <div class="round-done hidden" id="round1Done">
+          <h2>🎯 Trap Hunt cleared!</h2>
+          <p>Nice eye for Structure traps. Ready for listening signals?</p>
+          <button class="btn btn-teal" type="button" data-goto="2">Go to Signal Bingo →</button>
+        </div>
+      </div>
+      <aside class="side">
+        <div class="panel">
+          <h3>Timer · 15s</h3>
+          <div class="timer-display" id="timer1">15</div>
+          <div class="timer-btns">
+            <button class="btn btn-teal" id="startTimer1" type="button">Start</button>
+            <button class="btn btn-ghost" id="resetTimer1" type="button">Reset</button>
+          </div>
+        </div>
+        <div class="tip-card">
+          <h3>Teacher tip</h3>
+          <p>Let them hunt first. Award extra +1 with the scoreboard if they explain <em>why</em> the trap is wrong. Keep energy high — this is a battle, not a worksheet!</p>
+        </div>
+      </aside>
+    </div>
+  </div>
+
+  <!-- ========== ROUND 2 ========== -->
+  <div id="round2" class="round-panel hidden">
+    <div class="stage-grid">
+      <div class="stage" id="stage2">
+        <div class="confetti-burst" id="confetti"></div>
+        <div class="challenge-label">Signal Bingo</div>
+        <p class="prompt">Hit <strong>Play lecture</strong>, then tap each discourse marker when you hear it. FREE is already yours!</p>
+        <div class="bingo-board" id="bingoBoard"></div>
+        <div class="bingo-celebrate" id="bingoWin">
+          <h2>🎉 BINGO!</h2>
+          <p style="color:var(--muted);margin:8px 0 12px">You +3 — discourse markers conquered.</p>
+        </div>
+        <div class="action-row">
+          <button class="btn btn-teal" id="playLecture" type="button">▶ Play lecture</button>
+          <button class="btn btn-ghost" id="playAgain" type="button">Play again</button>
+          <button class="btn btn-ghost" id="toggleScript" type="button">Show script</button>
+          <button class="btn btn-gold hidden" id="resetBingo" type="button">Reset board</button>
+        </div>
+        <div class="script-box" id="scriptBox"></div>
+        <div id="gistArea" class="hidden" style="margin-top:18px">
+          <p class="prompt" style="margin-bottom:8px">Gist check — tap to reveal</p>
+          <div class="gist-q" data-gist>
+            <div class="q">1. What is the speaker’s main complaint about campus pigeons?</div>
+            <div class="hint">tap to reveal</div>
+            <div class="a">They steal fries, leave “souvenirs,” and somehow still get treated like VIPs.</div>
+          </div>
+          <div class="gist-q" data-gist>
+            <div class="q">2. What does the speaker suggest as a result of the pigeon problem?</div>
+            <div class="hint">tap to reveal</div>
+            <div class="a">A “Pigeon Peace Treaty” — or at least fewer outdoor snack breaks.</div>
+          </div>
+        </div>
+        <div class="action-row" style="margin-top:16px">
+          <button class="btn btn-primary" type="button" data-goto="3">Boss Round →</button>
+        </div>
+      </div>
+      <aside class="side">
+        <div class="tip-card">
+          <h3>Teacher tip</h3>
+          <p>Pause after key lines if needed. Students mark signals as they hear them — don’t let them hunt the script first. Bingo = 3 in a row any direction.</p>
+        </div>
+        <div class="panel">
+          <h3>Markers to catch</h3>
+          <p style="font-size:0.85rem;color:var(--muted);line-height:1.6">however / but · for example · the main point · in contrast · as a result · in other words · first / next / finally · on the other hand</p>
+        </div>
+      </aside>
+    </div>
+  </div>
+
+  <!-- ========== ROUND 3 ========== -->
+  <div id="round3" class="round-panel hidden">
+    <div class="stage-grid">
+      <div class="stage" id="stage3">
+        <div class="boss-banner">⚡ BOSS ROUND — 10 seconds · one shot</div>
+        <div class="challenge-label" id="bossCounter">Boss 1/5</div>
+        <p class="prompt">Same rules — tap the trap. Miss or timeout = The Exam scores. No second chance!</p>
+        <div class="chips" id="chips3"></div>
+        <div class="fix-box" id="fix3"></div>
+        <div class="action-row">
+          <button class="btn btn-primary hidden" id="nextBossBtn" type="button">Next boss →</button>
+        </div>
+        <div class="round-done hidden" id="round3Done">
+          <h2>🏆 Boss defeated!</h2>
+          <p id="finalMsg">Check the scoreboard — who won the battle?</p>
+          <button class="btn btn-gold" type="button" id="playAgainAll">Play entire game again</button>
+        </div>
+      </div>
+      <aside class="side">
+        <div class="panel">
+          <h3>Boss timer · 10s</h3>
+          <div class="timer-display" id="timer3">10</div>
+          <div class="timer-btns">
+            <button class="btn btn-teal" id="startTimer3" type="button">Start</button>
+            <button class="btn btn-ghost" id="resetTimer3" type="button">Reset</button>
+          </div>
+        </div>
+        <div class="tip-card">
+          <h3>Teacher tip</h3>
+          <p>Auto-starts each boss item. Stay hyped — count down out loud if you want extra pressure!</p>
+        </div>
+      </aside>
+    </div>
+  </div>
+
+  <div class="footer-reset">
+    <button type="button" id="resetGame">Reset entire game</button>
+  </div>
+</div>
+
+<div class="toast" id="toast" role="status"></div>
+
+<script>
+(function () {
+  "use strict";
+
+  /* ========== DATA ========== */
+  const TRAPS = [
+    {
+      sentence: "Everybody in the class know the answer already.",
+      trap: "know",
+      fix: "Everybody is singular → <strong>knows</strong> the answer already."
+    },
+    {
+      sentence: "There is many books on the library table.",
+      trap: "is",
+      fix: "Books (plural) → <strong>There are</strong> many books…"
+    },
+    {
+      sentence: "The teacher suggested that he studies harder before the exam.",
+      trap: "studies",
+      fix: "Suggest + that-clause → subjunctive: <strong>study</strong> (not studies)."
+    },
+    {
+      sentence: "After finish the homework, she went to the café.",
+      trap: "finish",
+      fix: "After + gerund → <strong>After finishing</strong> the homework…"
+    },
+    {
+      sentence: "She explained me the problem very clearly.",
+      trap: "explained",
+      fix: "Explain needs <strong>to</strong>: She <strong>explained the problem to me</strong>."
+    },
+    {
+      sentence: "Neither the students nor the teacher were ready for the quiz.",
+      trap: "were",
+      fix: "With neither…nor, the verb agrees with the nearer subject → teacher <strong>was</strong> ready."
+    },
+    {
+      sentence: "I am very interested on learning academic vocabulary.",
+      trap: "on",
+      fix: "interested <strong>in</strong> + gerund → interested <strong>in</strong> learning…"
+    },
+    {
+      sentence: "If it will rain tomorrow, we will cancel the picnic.",
+      trap: "will",
+      fix: "1st conditional: If + present → If it <strong>rains</strong> tomorrow…"
+    },
+    {
+      sentence: "You have finished the practice test, isn't it?",
+      trap: "isn't",
+      fix: "Tag matches the main verb → You have finished…, <strong>haven't you</strong>?"
+    },
+    {
+      sentence: "This secret is just between you and I.",
+      trap: "I",
+      fix: "Object of a preposition → between you and <strong>me</strong>."
+    }
+  ];
+
+  const BOSS = [
+    {
+      sentence: "Not only the dean but also the professors was at the meeting.",
+      trap: "was",
+      fix: "Not only A but also B → verb agrees with B → professors <strong>were</strong>."
+    },
+    {
+      sentence: "She looks forward to meet the exchange students next week.",
+      trap: "meet",
+      fix: "look forward to + gerund → look forward to <strong>meeting</strong>…"
+    },
+    {
+      sentence: "Despite of the noise, he managed to concentrate.",
+      trap: "of",
+      fix: "Despite + noun (no of) → <strong>Despite</strong> the noise… (or In spite of)."
+    },
+    {
+      sentence: "The number of applicants have increased this semester.",
+      trap: "have",
+      fix: "The number of + plural noun → singular verb → <strong>has</strong> increased."
+    },
+    {
+      sentence: "He asked me that where the registrar's office was.",
+      trap: "that",
+      fix: "Wh-clause as object: no <em>that</em> → He asked me <strong>where</strong> the office was."
+    }
+  ];
+
+  const BINGO_CELLS = [
+    "however / but",
+    "for example",
+    "the main point",
+    "in contrast",
+    "FREE",
+    "as a result",
+    "in other words",
+    "first / next / finally",
+    "on the other hand"
+  ];
+
+  const LECTURE = `Good morning, everyone. Today I want to talk about a serious campus issue: pigeons.
+First, let me say that pigeons are everywhere near the cafeteria. Next, they have learned our snack schedule better than most freshmen. Finally, they wait by the benches like tiny feathered managers.
+However, not everyone sees them as a problem, but I disagree. For example, last Tuesday a pigeon stole my fries in under three seconds. In contrast, squirrels at least look cute while they commit crimes.
+The main point is this: pigeons have become the unofficial rulers of the quad. In other words, we are living in a bird dictatorship with free Wi-Fi.
+On the other hand, some students feed them on purpose, which only makes things worse. As a result, I propose a Pigeon Peace Treaty — or at least fewer outdoor snack breaks.
+Thank you, and watch your sandwich.`;
+
+  /* ========== STATE ========== */
+  let scoreYou = 0;
+  let scoreExam = 0;
+  let trapIndex = 0;
+  let bossIndex = 0;
+  let attemptsLeft = 2; // round 1: one retry
+  let trapResolved = false;
+  let bossResolved = false;
+  let bingoWon = false;
+  let timer1Id = null;
+  let timer3Id = null;
+  let t1 = 15;
+  let t3 = 10;
+
+  const $ = (sel, el = document) => el.querySelector(sel);
+  const $$ = (sel, el = document) => [...el.querySelectorAll(sel)];
+
+  /* ========== SCORE ========== */
+  function renderScores() {
+    $("#scoreYou").textContent = scoreYou;
+    $("#scoreExam").textContent = scoreExam;
+  }
+
+  function addScore(who, delta, pulse) {
+    if (who === "you") {
+      scoreYou = Math.max(0, scoreYou + delta);
+      if (pulse) {
+        $("#cardYou").classList.remove("pulse-win");
+        void $("#cardYou").offsetWidth;
+        $("#cardYou").classList.add("pulse-win");
+      }
+    } else {
+      scoreExam = Math.max(0, scoreExam + delta);
+      if (pulse) {
+        $("#cardExam").classList.remove("pulse-win");
+        void $("#cardExam").offsetWidth;
+        $("#cardExam").classList.add("pulse-win");
+      }
+    }
+    renderScores();
+  }
+
+  $$(".score-btns button").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      addScore(btn.dataset.who, Number(btn.dataset.delta), true);
+    });
+  });
+
+  /* ========== TOAST ========== */
+  let toastTimer;
+  function toast(msg, kind) {
+    const el = $("#toast");
+    el.textContent = msg;
+    el.className = "toast show" + (kind ? " " + kind : "");
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(() => el.classList.remove("show"), 2200);
+  }
+
+  /* ========== FLASH ========== */
+  function flash(stageId, kind) {
+    const s = $(stageId);
+    s.classList.remove("flash-green", "flash-red");
+    void s.offsetWidth;
+    s.classList.add(kind === "green" ? "flash-green" : "flash-red");
+  }
+
+  /* ========== WORD CHIPS ========== */
+  function splitWords(sentence) {
+    return sentence.trim().split(/\s+/);
+  }
+
+  function buildChips(container, item, onPick) {
+    container.innerHTML = "";
+    splitWords(item.sentence).forEach((word) => {
+      const chip = document.createElement("button");
+      chip.type = "button";
+      chip.className = "chip";
+      chip.textContent = word;
+      // Match trap: strip trailing punctuation for comparison, but keep display
+      const core = word.replace(/[.,!?;:]+$/g, "");
+      chip.dataset.core = core;
+      chip.addEventListener("click", () => onPick(chip, core, word));
+      container.appendChild(chip);
+    });
+  }
+
+  function disableChips(container) {
+    $$(".chip", container).forEach((c) => { c.disabled = true; });
+  }
+
+  /* ========== ROUND 1 ========== */
+  function showTrap(i) {
+    trapResolved = false;
+    attemptsLeft = 2;
+    $("#nextTrapBtn").classList.add("hidden");
+    $("#fix1").classList.remove("show");
+    $("#fix1").innerHTML = "";
+    $("#round1Done").classList.add("hidden");
+    $("#chips1").classList.remove("hidden");
+    $(".prompt", $("#stage1")).classList.remove("hidden");
+
+    if (i >= TRAPS.length) {
+      $("#chips1").classList.add("hidden");
+      $(".prompt", $("#stage1")).classList.add("hidden");
+      $("#trapCounter").textContent = "Trap 10/10";
+      $("#round1Done").classList.remove("hidden");
+      stopTimer1();
+      return;
+    }
+
+    $("#trapCounter").textContent = `Trap ${i + 1}/10`;
+    const item = TRAPS[i];
+    buildChips($("#chips1"), item, (chip, core) => {
+      if (trapResolved) return;
+      const isTrap = core.toLowerCase() === item.trap.toLowerCase();
+      if (isTrap) {
+        chip.classList.add("correct-trap");
+        trapResolved = true;
+        disableChips($("#chips1"));
+        flash("#stage1", "green");
+        toast("Trap cleared!", "good");
+        $("#fix1").innerHTML = "✓ Fix: " + item.fix;
+        $("#fix1").classList.add("show");
+        addScore("you", 1, true);
+        $("#nextTrapBtn").classList.remove("hidden");
+        stopTimer1();
+      } else {
+        chip.classList.add("wrong-pick");
+        chip.disabled = true;
+        flash("#stage1", "red");
+        attemptsLeft -= 1;
+        if (attemptsLeft <= 0) {
+          toast("Not that one — revealing…", "bad");
+          addScore("exam", 1, true);
+          trapResolved = true;
+          // highlight real trap
+          $$(".chip", $("#chips1")).forEach((c) => {
+            if (c.dataset.core.toLowerCase() === item.trap.toLowerCase()) {
+              c.classList.add("correct-trap");
+            }
+            c.disabled = true;
+          });
+          $("#fix1").innerHTML = "✓ Fix: " + item.fix;
+          $("#fix1").classList.add("show");
+          $("#nextTrapBtn").classList.remove("hidden");
+          stopTimer1();
+        } else {
+          toast("Not that one", "bad");
+          addScore("exam", 1, true);
+        }
+      }
+    });
+    resetTimer1Display();
+  }
+
+  $("#nextTrapBtn").addEventListener("click", () => {
+    trapIndex += 1;
+    showTrap(trapIndex);
+  });
+
+  /* Timer 1 */
+  function resetTimer1Display() {
+    stopTimer1();
+    t1 = 15;
+    $("#timer1").textContent = t1;
+    $("#timer1").classList.remove("urgent");
+  }
+  function stopTimer1() {
+    if (timer1Id) { clearInterval(timer1Id); timer1Id = null; }
+  }
+  $("#startTimer1").addEventListener("click", () => {
+    if (trapResolved || trapIndex >= TRAPS.length) return;
+    stopTimer1();
+    t1 = 15;
+    $("#timer1").textContent = t1;
+    $("#timer1").classList.remove("urgent");
+    timer1Id = setInterval(() => {
+      t1 -= 1;
+      $("#timer1").textContent = t1;
+      if (t1 <= 5) $("#timer1").classList.add("urgent");
+      if (t1 <= 0) {
+        stopTimer1();
+        if (!trapResolved) {
+          toast("Time's up — The Exam scores!", "bad");
+          addScore("exam", 1, true);
+          trapResolved = true;
+          const item = TRAPS[trapIndex];
+          $$(".chip", $("#chips1")).forEach((c) => {
+            if (c.dataset.core.toLowerCase() === item.trap.toLowerCase()) {
+              c.classList.add("correct-trap");
+            }
+            c.disabled = true;
+          });
+          $("#fix1").innerHTML = "✓ Fix: " + item.fix;
+          $("#fix1").classList.add("show");
+          $("#nextTrapBtn").classList.remove("hidden");
+          flash("#stage1", "red");
+        }
+      }
+    }, 1000);
+  });
+  $("#resetTimer1").addEventListener("click", resetTimer1Display);
+
+  /* ========== ROUND 2 BINGO ========== */
+  const WIN_LINES = [
+    [0,1,2],[3,4,5],[6,7,8],
+    [0,3,6],[1,4,7],[2,5,8],
+    [0,4,8],[2,4,6]
+  ];
+
+  function buildBingo() {
+    const board = $("#bingoBoard");
+    board.innerHTML = "";
+    bingoWon = false;
+    $("#bingoWin").classList.remove("show");
+    $("#resetBingo").classList.add("hidden");
+    $("#gistArea").classList.add("hidden");
+    BINGO_CELLS.forEach((label, i) => {
+      const cell = document.createElement("button");
+      cell.type = "button";
+      cell.className = "bingo-cell" + (label === "FREE" ? " free marked" : "");
+      cell.textContent = label;
+      cell.dataset.index = i;
+      if (label !== "FREE") {
+        cell.addEventListener("click", () => {
+          if (bingoWon) return;
+          cell.classList.toggle("marked");
+          checkBingo();
+        });
+      }
+      board.appendChild(cell);
+    });
+  }
+
+  function checkBingo() {
+    const cells = $$(".bingo-cell", $("#bingoBoard"));
+    const marked = cells.map((c) => c.classList.contains("marked"));
+    const win = WIN_LINES.some((line) => line.every((i) => marked[i]));
+    if (win && !bingoWon) {
+      bingoWon = true;
+      $("#bingoWin").classList.add("show");
+      $("#resetBingo").classList.remove("hidden");
+      $("#gistArea").classList.remove("hidden");
+      addScore("you", 3, true);
+      toast("BINGO! You +3", "gold");
+      launchConfetti();
+    }
+  }
+
+  function launchConfetti() {
+    const box = $("#confetti");
+    box.innerHTML = "";
+    box.classList.remove("go");
+    void box.offsetWidth;
+    const colors = ["#5bb8b0", "#d4a843", "#238d85", "#0B1F3A", "#e05a5a", "#2db87a"];
+    for (let i = 0; i < 28; i++) {
+      const p = document.createElement("div");
+      p.className = "confetti-piece";
+      p.style.background = colors[i % colors.length];
+      p.style.setProperty("--dx", (Math.random() * 400 - 200) + "px");
+      p.style.setProperty("--dy", (Math.random() * -280 - 40) + "px");
+      p.style.left = 20 + Math.random() * 60 + "%";
+      p.style.animationDelay = Math.random() * 0.3 + "s";
+      box.appendChild(p);
+    }
+    box.classList.add("go");
+  }
+
+  $("#resetBingo").addEventListener("click", buildBingo);
+
+  /* speechSynthesis lecture */
+  let speaking = false;
+  function speakLecture() {
+    if (!window.speechSynthesis) {
+      toast("Speech not supported here — use Show script", "bad");
+      return;
+    }
+    window.speechSynthesis.cancel();
+    const u = new SpeechSynthesisUtterance(LECTURE);
+    u.lang = "en-US";
+    u.rate = 0.92;
+    u.pitch = 1;
+    // Prefer an en-US voice if available
+    const voices = window.speechSynthesis.getVoices();
+    const en = voices.find((v) => v.lang.startsWith("en-US")) || voices.find((v) => v.lang.startsWith("en"));
+    if (en) u.voice = en;
+    speaking = true;
+    u.onend = () => { speaking = false; };
+    window.speechSynthesis.speak(u);
+    toast("Lecture playing… listen for signals!", "good");
+  }
+
+  $("#playLecture").addEventListener("click", speakLecture);
+  $("#playAgain").addEventListener("click", speakLecture);
+
+  $("#toggleScript").addEventListener("click", () => {
+    const box = $("#scriptBox");
+    const showing = box.classList.toggle("show");
+    if (showing) {
+      box.textContent = LECTURE;
+      $("#toggleScript").textContent = "Hide script";
+    } else {
+      $("#toggleScript").textContent = "Show script";
+    }
+  });
+
+  $$("[data-gist]").forEach((el) => {
+    el.addEventListener("click", () => {
+      el.classList.add("revealed");
+      const hint = $(".hint", el);
+      if (hint) hint.style.display = "none";
+    });
+  });
+
+  /* ========== ROUND 3 BOSS ========== */
+  function showBoss(i) {
+    bossResolved = false;
+    $("#nextBossBtn").classList.add("hidden");
+    $("#fix3").classList.remove("show");
+    $("#fix3").innerHTML = "";
+    $("#round3Done").classList.add("hidden");
+    $("#chips3").classList.remove("hidden");
+    $(".prompt", $("#stage3")).classList.remove("hidden");
+    $(".boss-banner").classList.remove("hidden");
+
+    if (i >= BOSS.length) {
+      $("#chips3").classList.add("hidden");
+      $(".prompt", $("#stage3")).classList.add("hidden");
+      $(".boss-banner").classList.add("hidden");
+      $("#bossCounter").textContent = "Boss 5/5";
+      const youName = $("#nameYou").value || "You";
+      const examName = $("#nameExam").value || "The Exam";
+      let msg;
+      if (scoreYou > scoreExam) msg = `${youName} wins ${scoreYou}–${scoreExam}! The Exam blinked first.`;
+      else if (scoreExam > scoreYou) msg = `${examName} leads ${scoreExam}–${scoreYou}. Rematch?`;
+      else msg = `Dead heat ${scoreYou}–${scoreExam}. Legendary.`;
+      $("#finalMsg").textContent = msg;
+      $("#round3Done").classList.remove("hidden");
+      stopTimer3();
+      return;
+    }
+
+    $("#bossCounter").textContent = `Boss ${i + 1}/5`;
+    const item = BOSS[i];
+    buildChips($("#chips3"), item, (chip, core) => {
+      if (bossResolved) return;
+      const isTrap = core.toLowerCase() === item.trap.toLowerCase();
+      stopTimer3();
+      if (isTrap) {
+        chip.classList.add("correct-trap");
+        bossResolved = true;
+        disableChips($("#chips3"));
+        flash("#stage3", "green");
+        toast("Trap cleared!", "good");
+        $("#fix3").innerHTML = "✓ Fix: " + item.fix;
+        $("#fix3").classList.add("show");
+        addScore("you", 1, true);
+        $("#nextBossBtn").classList.remove("hidden");
+      } else {
+        chip.classList.add("wrong-pick");
+        bossResolved = true;
+        flash("#stage3", "red");
+        toast("Miss! The Exam scores", "bad");
+        addScore("exam", 1, true);
+        $$(".chip", $("#chips3")).forEach((c) => {
+          if (c.dataset.core.toLowerCase() === item.trap.toLowerCase()) {
+            c.classList.add("correct-trap");
+          }
+          c.disabled = true;
+        });
+        $("#fix3").innerHTML = "✓ Fix: " + item.fix;
+        $("#fix3").classList.add("show");
+        $("#nextBossBtn").classList.remove("hidden");
+      }
+    });
+    // auto-start boss timer
+    startBossTimer();
+  }
+
+  $("#nextBossBtn").addEventListener("click", () => {
+    bossIndex += 1;
+    showBoss(bossIndex);
+  });
+
+  function stopTimer3() {
+    if (timer3Id) { clearInterval(timer3Id); timer3Id = null; }
+  }
+  function startBossTimer() {
+    stopTimer3();
+    t3 = 10;
+    $("#timer3").textContent = t3;
+    $("#timer3").classList.remove("urgent");
+    timer3Id = setInterval(() => {
+      t3 -= 1;
+      $("#timer3").textContent = t3;
+      if (t3 <= 4) $("#timer3").classList.add("urgent");
+      if (t3 <= 0) {
+        stopTimer3();
+        if (!bossResolved && bossIndex < BOSS.length) {
+          bossResolved = true;
+          toast("Too slow — Exam point!", "bad");
+          addScore("exam", 1, true);
+          flash("#stage3", "red");
+          const item = BOSS[bossIndex];
+          $$(".chip", $("#chips3")).forEach((c) => {
+            if (c.dataset.core.toLowerCase() === item.trap.toLowerCase()) {
+              c.classList.add("correct-trap");
+            }
+            c.disabled = true;
+          });
+          $("#fix3").innerHTML = "✓ Fix: " + item.fix;
+          $("#fix3").classList.add("show");
+          $("#nextBossBtn").classList.remove("hidden");
+        }
+      }
+    }, 1000);
+  }
+  $("#startTimer3").addEventListener("click", () => {
+    if (!bossResolved && bossIndex < BOSS.length) startBossTimer();
+  });
+  $("#resetTimer3").addEventListener("click", () => {
+    stopTimer3();
+    t3 = 10;
+    $("#timer3").textContent = t3;
+    $("#timer3").classList.remove("urgent");
+  });
+
+  /* ========== NAV ========== */
+  function goRound(n) {
+    if (window.speechSynthesis) window.speechSynthesis.cancel();
+    stopTimer1();
+    stopTimer3();
+    $$(".tab").forEach((t) => t.classList.toggle("active", Number(t.dataset.round) === n));
+    $$(".round-panel").forEach((p) => p.classList.add("hidden"));
+    $(`#round${n}`).classList.remove("hidden");
+    if (n === 3 && bossIndex === 0 && !bossResolved) {
+      // fresh visit — show first boss (timer will auto-start)
+      if ($("#chips3").children.length === 0 || $("#round3Done").classList.contains("hidden")) {
+        showBoss(bossIndex);
+      }
+    }
+  }
+
+  $$(".tab").forEach((tab) => {
+    tab.addEventListener("click", () => goRound(Number(tab.dataset.round)));
+  });
+  $$("[data-goto]").forEach((btn) => {
+    btn.addEventListener("click", () => goRound(Number(btn.dataset.goto)));
+  });
+
+  /* ========== RESET ========== */
+  function resetEntireGame() {
+    if (window.speechSynthesis) window.speechSynthesis.cancel();
+    stopTimer1();
+    stopTimer3();
+    scoreYou = 0;
+    scoreExam = 0;
+    trapIndex = 0;
+    bossIndex = 0;
+    attemptsLeft = 2;
+    trapResolved = false;
+    bossResolved = false;
+    bingoWon = false;
+    renderScores();
+    buildBingo();
+    $("#scriptBox").classList.remove("show");
+    $("#toggleScript").textContent = "Show script";
+    $$("[data-gist]").forEach((el) => {
+      el.classList.remove("revealed");
+      const hint = $(".hint", el);
+      if (hint) hint.style.display = "";
+    });
+    showTrap(0);
+    // clear boss stage for fresh start
+    $("#chips3").innerHTML = "";
+    $("#fix3").classList.remove("show");
+    $("#nextBossBtn").classList.add("hidden");
+    $("#round3Done").classList.add("hidden");
+    $("#timer3").textContent = "10";
+    goRound(1);
+    toast("Game reset — fight!", "good");
+  }
+
+  $("#resetGame").addEventListener("click", resetEntireGame);
+  $("#playAgainAll").addEventListener("click", resetEntireGame);
+
+  // Chrome voices load async
+  if (window.speechSynthesis) {
+    window.speechSynthesis.getVoices();
+    window.speechSynthesis.onvoiceschanged = () => window.speechSynthesis.getVoices();
+  }
+
+  /* Init */
+  buildBingo();
+  showTrap(0);
+  renderScores();
+})();
+</script>
+</body>
+</html>
