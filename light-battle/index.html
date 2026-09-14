@@ -969,6 +969,7 @@
           <p style="color:var(--muted);margin:8px 0 12px">You +3 — discourse markers conquered.</p>
         </div>
         <div class="action-row">
+          <audio id="lectureAudio" src="./audio/signal-bingo-lecture.mp3" preload="auto"></audio>
           <button class="btn btn-teal" id="playLecture" type="button">▶ Play lecture</button>
           <button class="btn btn-ghost" id="playAgain" type="button">Play again</button>
           <button class="btn btn-ghost" id="toggleScript" type="button">Show script</button>
@@ -1750,30 +1751,30 @@ Thank you, and watch your sandwich.`;
 
   $("#resetBingo").addEventListener("click", buildBingo);
 
-  /* speechSynthesis lecture */
-  let speaking = false;
-  function speakLecture() {
-    if (!window.speechSynthesis) {
-      toast("Speech not supported here — use Show script", "bad");
+  /* Real lecture audio (teacher recording) */
+  const lectureAudio = $("#lectureAudio");
+  function stopLectureAudio() {
+    if (!lectureAudio) return;
+    lectureAudio.pause();
+    lectureAudio.currentTime = 0;
+  }
+  function playLectureAudio() {
+    if (!lectureAudio) {
+      toast("Audio missing — use Show script", "bad");
       return;
     }
-    window.speechSynthesis.cancel();
-    const u = new SpeechSynthesisUtterance(LECTURE);
-    u.lang = "en-US";
-    u.rate = 0.92;
-    u.pitch = 1;
-    // Prefer an en-US voice if available
-    const voices = window.speechSynthesis.getVoices();
-    const en = voices.find((v) => v.lang.startsWith("en-US")) || voices.find((v) => v.lang.startsWith("en"));
-    if (en) u.voice = en;
-    speaking = true;
-    u.onend = () => { speaking = false; };
-    window.speechSynthesis.speak(u);
-    toast("Lecture playing… listen for signals!", "good");
+    stopLectureAudio();
+    const p = lectureAudio.play();
+    if (p && typeof p.then === "function") {
+      p.then(() => toast("Lecture playing… listen for signals!", "good"))
+       .catch(() => toast("Tap Play again to allow audio", "bad"));
+    } else {
+      toast("Lecture playing… listen for signals!", "good");
+    }
   }
 
-  $("#playLecture").addEventListener("click", speakLecture);
-  $("#playAgain").addEventListener("click", speakLecture);
+  $("#playLecture").addEventListener("click", playLectureAudio);
+  $("#playAgain").addEventListener("click", playLectureAudio);
 
   $("#toggleScript").addEventListener("click", () => {
     const box = $("#scriptBox");
@@ -2294,7 +2295,7 @@ Thank you, and watch your sandwich.`;
 
   /* ========== NAV ========== */
   function goRound(n) {
-    if (window.speechSynthesis) window.speechSynthesis.cancel();
+    stopLectureAudio();
     stopTimer1();
     stopTimer3();
     stopTimer7();
@@ -2326,7 +2327,7 @@ Thank you, and watch your sandwich.`;
 
   /* ========== RESET ========== */
   function resetEntireGame() {
-    if (window.speechSynthesis) window.speechSynthesis.cancel();
+    stopLectureAudio();
     stopTimer1();
     stopTimer3();
     stopTimer7();
@@ -2389,10 +2390,7 @@ Thank you, and watch your sandwich.`;
   $("#playAgainFromSpeed").addEventListener("click", resetEntireGame);
 
   // Chrome voices load async
-  if (window.speechSynthesis) {
-    window.speechSynthesis.getVoices();
-    window.speechSynthesis.onvoiceschanged = () => window.speechSynthesis.getVoices();
-  }
+  /* lecture uses real MP3 */
 
   /* Init */
   buildBingo();
