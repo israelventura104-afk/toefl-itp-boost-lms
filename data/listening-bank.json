@@ -4,9 +4,9 @@
   "purpose": "guided_and_mocks",
   "section": "listening",
   "part": "Part A short conversations + Part B long conversations",
-  "note": "Part A LIST-0001-0100; Part B LIST-0106-0115 from Drive listening faltantes. ready_for_practice requires audio.",
-  "item_count": 110,
-  "total_questions": 140,
+  "note": "Part A LIST-0001-0100; Part B long conversations with audio (includes LIST-0101, 0103, 0106-0115). ready_for_practice requires audio.",
+  "item_count": 112,
+  "total_questions": 148,
   "items": [
     {
       "id": "LIST-0001",
@@ -1307,6 +1307,34 @@
       "data": "listening-assets/items/LIST-0100/item.json",
       "production_status": "production_ready",
       "ready_for_practice": true
+    },
+    {
+      "id": "LIST-0101",
+      "asset_id": "LIST-0101",
+      "asset_type": "Part B - Long Conversation",
+      "difficulty": "Medium",
+      "topic": "Course Registration",
+      "question_count": 4,
+      "has_audio": true,
+      "audio": "listening-assets/items/LIST-0101/audio.mp3",
+      "data": "listening-assets/items/LIST-0101/item1_course_registration.json",
+      "production_status": "production_ready",
+      "ready_for_practice": true,
+      "part": "B"
+    },
+    {
+      "id": "LIST-0103",
+      "asset_id": "LIST-0103",
+      "asset_type": "Part B - Long Conversation",
+      "difficulty": "Medium",
+      "topic": "Roommate Conflict",
+      "question_count": 4,
+      "has_audio": true,
+      "audio": "listening-assets/items/LIST-0103/audio.mp3",
+      "data": "listening-assets/items/LIST-0103/item3_roommate_issue.json",
+      "production_status": "production_ready",
+      "ready_for_practice": true,
+      "part": "B"
     },
     {
       "id": "LIST-0106",
