@@ -1,0 +1,127 @@
+{
+  "id": "LIST-0119",
+  "topic": "Counseling Center Appointment",
+  "setting": "A student schedules a first visit at the campus counseling center and learns about wait times and confidentiality.",
+  "speakers": [
+    {
+      "role": "narrator",
+      "voice": "narrator"
+    },
+    {
+      "role": "speaker1",
+      "name": "Man (Student)",
+      "voice": "male"
+    },
+    {
+      "role": "speaker2",
+      "name": "Woman (Front Desk Staff)",
+      "voice": "female"
+    }
+  ],
+  "narrator_intro": "Listen to a conversation between a student and a staff member at the counseling center.",
+  "dialogue": [
+    {
+      "speaker": "speaker1",
+      "text": "Hi. I'd like to make an appointment with a counselor. I've been feeling overwhelmed with midterms."
+    },
+    {
+      "speaker": "speaker2",
+      "text": "Of course. Is this your first time with us?"
+    },
+    {
+      "speaker": "speaker1",
+      "text": "Yes. Do I need a referral from my doctor?"
+    },
+    {
+      "speaker": "speaker2",
+      "text": "No referral for a first visit. I can offer a twenty-minute intake this week, then a full session after that."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "How soon is the intake? My exam is Thursday."
+    },
+    {
+      "speaker": "speaker2",
+      "text": "We have a cancellation tomorrow at eleven, or Friday at nine. Tomorrow fills first."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "Tomorrow at eleven, please. Will my professors be told I came here?"
+    },
+    {
+      "speaker": "speaker2",
+      "text": "No. Visits are confidential unless there's a safety risk. We don't contact instructors without your written permission."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "That's a relief. Should I bring anything?"
+    },
+    {
+      "speaker": "speaker2",
+      "text": "Just your student ID, and arrive ten minutes early for forms. If you need same-day crisis help, use the after-hours number on our website—don't wait for the intake."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "Okay. I'll see you tomorrow at eleven. Thanks."
+    }
+  ],
+  "narrator_outro": "Now get ready to answer the questions.",
+  "questions": [
+    {
+      "number": 1,
+      "question_type": "Main Idea",
+      "narrator_text": "What is the conversation mainly about?",
+      "options": {
+        "A": "Changing the student's midterm dates",
+        "B": "Scheduling a first counseling appointment",
+        "C": "Getting a medical referral for a specialist off campus",
+        "D": "Complaining about a professor's teaching style"
+      },
+      "correct_answer": "B",
+      "explanation": "He books a first counseling intake because he feels overwhelmed with midterms.",
+      "commonMistake": "Choosing A—midterms explain stress, not a request to change exam dates."
+    },
+    {
+      "number": 2,
+      "question_type": "Detail",
+      "narrator_text": "What kind of appointment can he get this week?",
+      "options": {
+        "A": "A full hour-long therapy session only",
+        "B": "A twenty-minute intake, then a full session later",
+        "C": "An online group class with no individual meeting",
+        "D": "A meeting that requires a doctor's referral first"
+      },
+      "correct_answer": "B",
+      "explanation": "No referral for a first visit; she offers a twenty-minute intake this week, then a full session after.",
+      "commonMistake": "Choosing D—she says no referral is needed for the first visit."
+    },
+    {
+      "number": 3,
+      "question_type": "Detail",
+      "narrator_text": "When is his intake scheduled?",
+      "options": {
+        "A": "Friday at nine",
+        "B": "Thursday after his exam",
+        "C": "Tomorrow at eleven",
+        "D": "Next Monday morning"
+      },
+      "correct_answer": "C",
+      "explanation": "He chooses the cancellation tomorrow at eleven over Friday at nine.",
+      "commonMistake": "Choosing A because Friday was offered—he picks tomorrow."
+    },
+    {
+      "number": 4,
+      "question_type": "Detail",
+      "narrator_text": "What does the staff member say about confidentiality?",
+      "options": {
+        "A": "Professors are automatically emailed after each visit",
+        "B": "Visits are confidential unless there is a safety risk",
+        "C": "Parents must approve every appointment in writing",
+        "D": "Only group sessions are confidential"
+      },
+      "correct_answer": "B",
+      "explanation": "She says visits are confidential unless there is a safety risk; instructors are not contacted without written permission.",
+      "commonMistake": "Choosing A—he worried professors would be told; she says the opposite."
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "id": "LIST-0118",
+  "topic": "Dorm Laundry Card / Machine Outage",
+  "setting": "A student talks with a residence hall assistant about laundry machines that will not accept her laundry card.",
+  "speakers": [
+    {
+      "role": "narrator",
+      "voice": "narrator"
+    },
+    {
+      "role": "speaker1",
+      "name": "Woman (Student)",
+      "voice": "female"
+    },
+    {
+      "role": "speaker2",
+      "name": "Man (Residence Hall Assistant)",
+      "voice": "male"
+    }
+  ],
+  "narrator_intro": "Listen to a conversation between a student and a residence hall assistant.",
+  "dialogue": [
+    {
+      "speaker": "speaker1",
+      "text": "Hi. The washers on the second floor won't take my laundry card. The reader just blinks red."
+    },
+    {
+      "speaker": "speaker2",
+      "text": "Yeah, we've had reports since this morning. Building Services thinks the card readers lost connection after last night's power blip."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "I have a huge pile of clothes and a lab coat I need clean for tomorrow. Is there another floor I can use?"
+    },
+    {
+      "speaker": "speaker2",
+      "text": "The fourth-floor machines are working. You'll need to take the elevator—the stairwell door by laundry is temporarily locked for a fire-panel test until six."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "Okay. Do I need to reload money on my card, or is the balance still there?"
+    },
+    {
+      "speaker": "speaker2",
+      "text": "Your balance is fine. Just avoid machines two and three on two—those readers are offline. If a machine takes the card but doesn't start, don't swipe again; come back here and we'll refund the cycle."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "Got it. How long until second floor is fixed?"
+    },
+    {
+      "speaker": "speaker2",
+      "text": "They said by tomorrow afternoon. I'll post a notice on the laundry door when it's back online."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "Thanks. One more thing—can I borrow a spare laundry basket? Mine cracked."
+    },
+    {
+      "speaker": "speaker2",
+      "text": "We have two at the desk. Leave your student ID while you use it, and bring it back tonight."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "Perfect. I'll head to fourth floor now."
+    }
+  ],
+  "narrator_outro": "Now get ready to answer the questions.",
+  "questions": [
+    {
+      "number": 1,
+      "question_type": "Main Idea",
+      "narrator_text": "What is the conversation mainly about?",
+      "options": {
+        "A": "Moving the student to a new residence hall",
+        "B": "Solving a laundry-card problem in the dorm",
+        "C": "Buying a new washing machine for the building",
+        "D": "Scheduling a fire drill for the whole campus"
+      },
+      "correct_answer": "B",
+      "explanation": "Her laundry card readers fail on floor two; he redirects her and explains refunds and timing.",
+      "commonMistake": "Choosing D because a fire-panel test is mentioned—that only explains a locked stairwell."
+    },
+    {
+      "number": 2,
+      "question_type": "Detail",
+      "narrator_text": "Where can the student do laundry right now?",
+      "options": {
+        "A": "Only in the student union basement",
+        "B": "On the second floor using machines two and three",
+        "C": "On the fourth floor",
+        "D": "At the residence hall desk with a staff washer"
+      },
+      "correct_answer": "C",
+      "explanation": "He says the fourth-floor machines are working.",
+      "commonMistake": "Choosing B—those second-floor readers are specifically offline."
+    },
+    {
+      "number": 3,
+      "question_type": "Detail",
+      "narrator_text": "What should she do if a machine takes her card but does not start?",
+      "options": {
+        "A": "Swipe the card a second time immediately",
+        "B": "Kick the machine to reset the reader",
+        "C": "Return to the desk for a cycle refund and not swipe again",
+        "D": "Add more money online before trying again"
+      },
+      "correct_answer": "C",
+      "explanation": "He tells her not to swipe again and to come back for a refund of the cycle.",
+      "commonMistake": "Choosing A or D—balance is fine; double-swiping is what he warns against."
+    },
+    {
+      "number": 4,
+      "question_type": "Detail",
+      "narrator_text": "What must she leave in order to borrow a laundry basket?",
+      "options": {
+        "A": "Her room key",
+        "B": "A cash deposit of ten dollars",
+        "C": "Her laundry card",
+        "D": "Her student ID"
+      },
+      "correct_answer": "D",
+      "explanation": "Spare baskets require leaving a student ID and returning the basket tonight.",
+      "commonMistake": "Choosing C because the talk is about laundry cards—the deposit item is the student ID."
+    }
+  ]
+}
