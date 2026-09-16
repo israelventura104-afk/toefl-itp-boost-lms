@@ -4,9 +4,9 @@
   "purpose": "guided_and_mocks",
   "section": "listening",
   "part": "Part A short conversations + Part B long conversations",
-  "note": "Part A LIST-0001-0100; Part B LIST-0101–0117 (and earlier 0106–0115 set) with audio. ready_for_practice requires audio.",
-  "item_count": 117,
-  "total_questions": 168,
+  "note": "Part A LIST-0001-0100; Part B LIST-0101–0118 with audio. ready_for_practice requires audio.",
+  "item_count": 118,
+  "total_questions": 172,
   "items": [
     {
       "id": "LIST-0001",
@@ -1542,6 +1542,20 @@
       "has_audio": true,
       "audio": "listening-assets/items/LIST-0117/audio.mp3",
       "data": "listening-assets/items/LIST-0117/item17_chem_lab_checkout.json",
+      "production_status": "production_ready",
+      "ready_for_practice": true,
+      "part": "B"
+    },
+    {
+      "id": "LIST-0118",
+      "asset_id": "LIST-0118",
+      "asset_type": "Part B - Long Conversation",
+      "difficulty": "Medium",
+      "topic": "Dorm Laundry Card / Machine Outage",
+      "question_count": 4,
+      "has_audio": true,
+      "audio": "listening-assets/items/LIST-0118/audio.mp3",
+      "data": "listening-assets/items/LIST-0118/item18_dorm_laundry.json",
       "production_status": "production_ready",
       "ready_for_practice": true,
       "part": "B"
