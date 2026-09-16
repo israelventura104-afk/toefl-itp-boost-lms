@@ -4,9 +4,9 @@
   "purpose": "guided_and_mocks",
   "section": "listening",
   "part": "Part A short conversations + Part B long conversations",
-  "note": "Part A LIST-0001-0100; Part B long conversations with audio (includes LIST-0101, 0103, 0106-0115). ready_for_practice requires audio.",
-  "item_count": 112,
-  "total_questions": 148,
+  "note": "Part A LIST-0001-0100; Part B LIST-0101–0104 and LIST-0106–0115 with audio. ready_for_practice requires audio.",
+  "item_count": 114,
+  "total_questions": 156,
   "items": [
     {
       "id": "LIST-0001",
@@ -1323,6 +1323,20 @@
       "part": "B"
     },
     {
+      "id": "LIST-0102",
+      "asset_id": "LIST-0102",
+      "asset_type": "Part B - Long Conversation",
+      "difficulty": "Medium",
+      "topic": "Library Overdue Fine",
+      "question_count": 4,
+      "has_audio": true,
+      "audio": "listening-assets/items/LIST-0102/audio.mp3",
+      "data": "listening-assets/items/LIST-0102/item2_library_overdue.json",
+      "production_status": "production_ready",
+      "ready_for_practice": true,
+      "part": "B"
+    },
+    {
       "id": "LIST-0103",
       "asset_id": "LIST-0103",
       "asset_type": "Part B - Long Conversation",
@@ -1332,6 +1346,20 @@
       "has_audio": true,
       "audio": "listening-assets/items/LIST-0103/audio.mp3",
       "data": "listening-assets/items/LIST-0103/item3_roommate_issue.json",
+      "production_status": "production_ready",
+      "ready_for_practice": true,
+      "part": "B"
+    },
+    {
+      "id": "LIST-0104",
+      "asset_id": "LIST-0104",
+      "asset_type": "Part B - Long Conversation",
+      "difficulty": "Medium",
+      "topic": "Museum Internship / Library Exhibition Volunteer",
+      "question_count": 4,
+      "has_audio": true,
+      "audio": "listening-assets/items/LIST-0104/audio.mp3",
+      "data": "listening-assets/items/LIST-0104/item4_museum_internship.json",
       "production_status": "production_ready",
       "ready_for_practice": true,
       "part": "B"

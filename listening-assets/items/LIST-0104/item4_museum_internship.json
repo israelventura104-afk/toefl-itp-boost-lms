@@ -1,0 +1,151 @@
+{
+  "id": "LIST-0104",
+  "topic": "Museum Internship / Library Exhibition Volunteer",
+  "setting": "A student meets Professor Adams about a paid museum internship and learns about a library exhibition volunteer option.",
+  "speakers": [
+    {
+      "role": "narrator",
+      "voice": "narrator"
+    },
+    {
+      "role": "speaker1",
+      "name": "Man (Larry, Student)",
+      "voice": "male"
+    },
+    {
+      "role": "speaker2",
+      "name": "Woman (Professor Adams)",
+      "voice": "female"
+    }
+  ],
+  "narrator_intro": "Listen to a conversation between a student and a professor.",
+  "dialogue": [
+    {
+      "speaker": "speaker1",
+      "text": "Hi, Professor Adams. My name is Larry."
+    },
+    {
+      "speaker": "speaker2",
+      "text": "Hi, Larry. How can I help you?"
+    },
+    {
+      "speaker": "speaker1",
+      "text": "I was told that you place students in internships for various university programs."
+    },
+    {
+      "speaker": "speaker2",
+      "text": "Yes."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "Well, I'm interested in the internship at the university art museum... what responsibilities interns have, what qualifications they need to have..."
+    },
+    {
+      "speaker": "speaker2",
+      "text": "Sorry, those positions are all filled for this year."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "Oh! But I just saw the announcement on the museum website this morning."
+    },
+    {
+      "speaker": "speaker2",
+      "text": "Unfortunately, the website is out of date."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "I want to do museum work after I graduate, and the job experience would look great on my résumé. Plus it's the only paid internship on campus."
+    },
+    {
+      "speaker": "speaker2",
+      "text": "I understand. However, there are some other ways to get some work experience, even if it's not exactly what you want. For instance, the library is looking for student volunteers."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "The library? But..."
+    },
+    {
+      "speaker": "speaker2",
+      "text": "Well, they're planning an exhibition of photographs documenting the history of the university. And they're looking for student volunteers to help go through the archives and select images that'll show how the university's changed over the last hundred years."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "Hmm..."
+    },
+    {
+      "speaker": "speaker2",
+      "text": "Now that's only a four-week project, I think. And, of course, it's unpaid."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "But it would be something to put on my résumé..."
+    },
+    {
+      "speaker": "speaker2",
+      "text": "Exactly. Why don't you read the job description—it's posted on the library's website. If you're interested, let me know, and I'll put in a good word for you with Emily Peterson. She's the library's exhibitions director and will be interviewing applicants."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "OK, I'll do that right away."
+    }
+  ],
+  "narrator_outro": "Now get ready to answer the questions.",
+  "questions": [
+    {
+      "number": 1,
+      "question_type": "Main Idea",
+      "narrator_text": "What do the speakers mainly discuss?",
+      "options": {
+        "A": "Work opportunities for students",
+        "B": "The professor's work at the museum",
+        "C": "The man's qualifications for a job",
+        "D": "Possible careers for the man after he graduates"
+      },
+      "correct_answer": "A",
+      "explanation": "They discuss the filled museum internship and an alternative library exhibition volunteer role for experience.",
+      "commonMistake": "Choosing D because he mentions museum work after graduation — the talk centers on getting experience now."
+    },
+    {
+      "number": 2,
+      "question_type": "Detail",
+      "narrator_text": "Why is the student disappointed?",
+      "options": {
+        "A": "He has to quit his job at the library.",
+        "B": "The professor will not allow him to take her class.",
+        "C": "The university recently closed its museum.",
+        "D": "The internship he wants is unavailable."
+      },
+      "correct_answer": "D",
+      "explanation": "Museum internship positions are all filled for this year; the website announcement was outdated.",
+      "commonMistake": "Choosing C because 'museum' is repeated — the museum is open; the internship slots are full."
+    },
+    {
+      "number": 3,
+      "question_type": "Detail",
+      "narrator_text": "What will be displayed in the exhibition at the university library?",
+      "options": {
+        "A": "Rare books",
+        "B": "Paintings",
+        "C": "Photographs",
+        "D": "Historical reports"
+      },
+      "correct_answer": "C",
+      "explanation": "The library is planning an exhibition of photographs documenting university history.",
+      "commonMistake": "Choosing A or D because archives/history are mentioned — the display itself is photographs."
+    },
+    {
+      "number": 4,
+      "question_type": "Inference",
+      "narrator_text": "What can be inferred about Emily Peterson?",
+      "options": {
+        "A": "She will select the library's volunteers.",
+        "B": "She studied art with the student's professor.",
+        "C": "She used to work at the art museum.",
+        "D": "She joined the library staff recently."
+      },
+      "correct_answer": "A",
+      "explanation": "She is the library's exhibitions director and will be interviewing applicants for the volunteer roles.",
+      "commonMistake": "Choosing C because the student wanted museum work — Emily is at the library, not described as ex-museum staff."
+    }
+  ]
+}
