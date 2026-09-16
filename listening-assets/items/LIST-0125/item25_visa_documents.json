@@ -1,0 +1,127 @@
+{
+  "id": "LIST-0125",
+  "topic": "International Student Visa Document Pickup",
+  "setting": "An international student picks up updated immigration documents at the international student office before traveling home.",
+  "speakers": [
+    {
+      "role": "narrator",
+      "voice": "narrator"
+    },
+    {
+      "role": "speaker1",
+      "name": "Man (Student)",
+      "voice": "male"
+    },
+    {
+      "role": "speaker2",
+      "name": "Woman (International Office Advisor)",
+      "voice": "female"
+    }
+  ],
+  "narrator_intro": "Listen to a conversation between a student and an advisor at the international student office.",
+  "dialogue": [
+    {
+      "speaker": "speaker1",
+      "text": "Hi. I'm here to pick up my updated I-20. I travel home next week for the break."
+    },
+    {
+      "speaker": "speaker2",
+      "text": "Sure. May I see your student ID and passport? I also need you to sign the travel endorsement page."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "Here they are. Do I need a new visa stamp, or is this enough?"
+    },
+    {
+      "speaker": "speaker2",
+      "text": "If your visa stamp is still valid, you only need the travel signature on the I-20. Yours looks valid through next August."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "I'll be gone three weeks. Should I report my travel dates in the portal?"
+    },
+    {
+      "speaker": "speaker2",
+      "text": "Yes—enter your departure and return dates before you leave. If your return flight changes, update it within five days of landing."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "Can I work on campus during the break if I come back early?"
+    },
+    {
+      "speaker": "speaker2",
+      "text": "On-campus work is fine during the official break as long as you remain enrolled for next term. Off-campus work still needs separate authorization."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "Understood. Is there anything else I should carry at the airport?"
+    },
+    {
+      "speaker": "speaker2",
+      "text": "Carry your passport, I-20, and proof of enrollment—an unofficial transcript printout works. Keep digital copies too, but officers usually want paper."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "Great. I'll sign and update the portal tonight."
+    }
+  ],
+  "narrator_outro": "Now get ready to answer the questions.",
+  "questions": [
+    {
+      "number": 1,
+      "question_type": "Main Idea",
+      "narrator_text": "What is the conversation mainly about?",
+      "options": {
+        "A": "Changing the student's major before graduation",
+        "B": "Picking up travel documents and rules before a trip home",
+        "C": "Applying for a campus parking permit",
+        "D": "Scheduling an English placement test"
+      },
+      "correct_answer": "B",
+      "explanation": "He picks up an updated I-20 and learns travel reporting and what to carry.",
+      "commonMistake": "Choosing A—academics are not the topic."
+    },
+    {
+      "number": 2,
+      "question_type": "Detail",
+      "narrator_text": "What does he need if his visa stamp is still valid?",
+      "options": {
+        "A": "A brand-new visa interview immediately",
+        "B": "Only the travel signature on the I-20",
+        "C": "A letter from every professor",
+        "D": "Permission from Campus Safety"
+      },
+      "correct_answer": "B",
+      "explanation": "With a valid visa stamp, he only needs the travel signature on the I-20.",
+      "commonMistake": "Choosing A—she says a new stamp is not required if the current one is valid."
+    },
+    {
+      "number": 3,
+      "question_type": "Detail",
+      "narrator_text": "What must he do about travel dates in the portal?",
+      "options": {
+        "A": "Nothing—the office enters dates automatically",
+        "B": "Enter departure and return dates before leaving, and update within five days if the return flight changes",
+        "C": "Only report dates after he comes back",
+        "D": "Delete his enrollment record while traveling"
+      },
+      "correct_answer": "B",
+      "explanation": "Enter dates before departure; update within five days of landing if the return flight changes.",
+      "commonMistake": "Choosing C—he must enter dates before leaving, not only after return."
+    },
+    {
+      "number": 4,
+      "question_type": "Detail",
+      "narrator_text": "What should he carry at the airport?",
+      "options": {
+        "A": "Only a digital photo of his student ID",
+        "B": "Passport, I-20, and proof of enrollment on paper, plus digital copies",
+        "C": "His dorm room key and laundry card",
+        "D": "Cash for a new visa stamp on arrival"
+      },
+      "correct_answer": "B",
+      "explanation": "Passport, I-20, and paper proof of enrollment; digital copies are backup.",
+      "commonMistake": "Choosing A—officers usually want paper documents."
+    }
+  ]
+}
