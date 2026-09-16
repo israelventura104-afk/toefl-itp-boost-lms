@@ -4,9 +4,9 @@
   "purpose": "guided_and_mocks",
   "section": "listening",
   "part": "Part A short conversations + Part B long conversations",
-  "note": "Part A LIST-0001-0100; Part B LIST-0101–0115 with audio (gap none in 101-115). ready_for_practice requires audio.",
-  "item_count": 115,
-  "total_questions": 160,
+  "note": "Part A LIST-0001-0100; Part B LIST-0101–0117 (and earlier 0106–0115 set) with audio. ready_for_practice requires audio.",
+  "item_count": 117,
+  "total_questions": 168,
   "items": [
     {
       "id": "LIST-0001",
@@ -1514,6 +1514,34 @@
       "has_audio": true,
       "audio": "listening-assets/items/LIST-0115/audio.mp3",
       "data": "listening-assets/items/LIST-0115/item15_club_event_planning.json",
+      "production_status": "production_ready",
+      "ready_for_practice": true,
+      "part": "B"
+    },
+    {
+      "id": "LIST-0116",
+      "asset_id": "LIST-0116",
+      "asset_type": "Part B - Long Conversation",
+      "difficulty": "Medium",
+      "topic": "Campus ID Card Replacement",
+      "question_count": 4,
+      "has_audio": true,
+      "audio": "listening-assets/items/LIST-0116/audio.mp3",
+      "data": "listening-assets/items/LIST-0116/item16_campus_id_replacement.json",
+      "production_status": "production_ready",
+      "ready_for_practice": true,
+      "part": "B"
+    },
+    {
+      "id": "LIST-0117",
+      "asset_id": "LIST-0117",
+      "asset_type": "Part B - Long Conversation",
+      "difficulty": "Medium",
+      "topic": "Chemistry Lab Equipment Checkout",
+      "question_count": 4,
+      "has_audio": true,
+      "audio": "listening-assets/items/LIST-0117/audio.mp3",
+      "data": "listening-assets/items/LIST-0117/item17_chem_lab_checkout.json",
       "production_status": "production_ready",
       "ready_for_practice": true,
       "part": "B"
