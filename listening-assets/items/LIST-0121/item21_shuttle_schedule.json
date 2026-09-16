@@ -1,0 +1,127 @@
+{
+  "id": "LIST-0121",
+  "topic": "Campus Shuttle Schedule Change",
+  "setting": "A student asks a shuttle driver about evening route changes during midterms.",
+  "speakers": [
+    {
+      "role": "narrator",
+      "voice": "narrator"
+    },
+    {
+      "role": "speaker1",
+      "name": "Man (Student)",
+      "voice": "male"
+    },
+    {
+      "role": "speaker2",
+      "name": "Woman (Shuttle Driver)",
+      "voice": "female"
+    }
+  ],
+  "narrator_intro": "Listen to a conversation between a student and a campus shuttle driver.",
+  "dialogue": [
+    {
+      "speaker": "speaker1",
+      "text": "Excuse me. Does this bus still go to the science complex after eight?"
+    },
+    {
+      "speaker": "speaker2",
+      "text": "Not this week. During midterms we're on the exam schedule—after eight we only loop between the library, the dorms, and the student union."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "I have a review session in Science Hall at eight-thirty. How do I get there?"
+    },
+    {
+      "speaker": "speaker2",
+      "text": "Take the seven-forty from the union to the library, then walk the covered path—it's about six minutes. Or catch the daytime science route; the last one leaves the union at seven-fifty-five."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "Seven-fifty-five is tight. Is the covered path lit?"
+    },
+    {
+      "speaker": "speaker2",
+      "text": "Yes, and Campus Safety patrols it until midnight during exams. If you miss both options, call the night van—students can request a ride with their ID."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "Does the night van cost anything?"
+    },
+    {
+      "speaker": "speaker2",
+      "text": "No, it's free for enrolled students. You need to book it at least twenty minutes ahead on the transit app."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "Okay. Will normal service to Science Hall resume next week?"
+    },
+    {
+      "speaker": "speaker2",
+      "text": "Yes—starting Monday after exams. The change is only for midterm week. Check the app; it shows today's modified map in orange."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "Thanks. I'll aim for the seven-fifty-five."
+    }
+  ],
+  "narrator_outro": "Now get ready to answer the questions.",
+  "questions": [
+    {
+      "number": 1,
+      "question_type": "Main Idea",
+      "narrator_text": "What is the conversation mainly about?",
+      "options": {
+        "A": "Buying a monthly city bus pass",
+        "B": "How to reach Science Hall during a temporary shuttle change",
+        "C": "Reporting a broken elevator in the dorms",
+        "D": "Canceling a review session with a professor"
+      },
+      "correct_answer": "B",
+      "explanation": "Evening routes change during midterms; she explains how he can still get to Science Hall.",
+      "commonMistake": "Choosing A—campus shuttle changes, not a city pass, are the topic."
+    },
+    {
+      "number": 2,
+      "question_type": "Detail",
+      "narrator_text": "After eight o'clock this week, where does the shuttle loop?",
+      "options": {
+        "A": "Only to the airport and downtown",
+        "B": "Between the library, the dorms, and the student union",
+        "C": "Everywhere including Science Hall as usual",
+        "D": "Only around the sports complex"
+      },
+      "correct_answer": "B",
+      "explanation": "On the exam schedule after eight, the bus only loops library–dorms–union.",
+      "commonMistake": "Choosing C—Science Hall is not on the after-eight loop this week."
+    },
+    {
+      "number": 3,
+      "question_type": "Detail",
+      "narrator_text": "What is true about the night van?",
+      "options": {
+        "A": "It costs five dollars per ride",
+        "B": "It is free but must be booked at least twenty minutes ahead",
+        "C": "It only runs on weekends",
+        "D": "It replaces all daytime buses permanently"
+      },
+      "correct_answer": "B",
+      "explanation": "Free for enrolled students; book at least twenty minutes ahead on the transit app.",
+      "commonMistake": "Choosing A—she says it is free."
+    },
+    {
+      "number": 4,
+      "question_type": "Detail",
+      "narrator_text": "When does normal service to Science Hall resume?",
+      "options": {
+        "A": "Tonight at midnight",
+        "B": "Starting Monday after exams",
+        "C": "Next semester only",
+        "D": "It never returns to Science Hall"
+      },
+      "correct_answer": "B",
+      "explanation": "Normal service resumes Monday after exams; the change is only for midterm week.",
+      "commonMistake": "Choosing C—she ties the return to after midterms, not next semester."
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "id": "LIST-0120",
+  "topic": "Campus Printer Quota / Print Shop",
+  "setting": "A student asks at the campus print shop why her print jobs are blocked and how to add quota.",
+  "speakers": [
+    {
+      "role": "narrator",
+      "voice": "narrator"
+    },
+    {
+      "role": "speaker1",
+      "name": "Woman (Student)",
+      "voice": "female"
+    },
+    {
+      "role": "speaker2",
+      "name": "Man (Print Shop Staff)",
+      "voice": "male"
+    }
+  ],
+  "narrator_intro": "Listen to a conversation between a student and a staff member at the campus print shop.",
+  "dialogue": [
+    {
+      "speaker": "speaker1",
+      "text": "Hi. I tried to print my poster for class, but the system says I've exceeded my print quota."
+    },
+    {
+      "speaker": "speaker2",
+      "text": "Let me check your account. May I see your student ID?"
+    },
+    {
+      "speaker": "speaker1",
+      "text": "Sure. I still need twenty color pages today. Is there a way to add more quota?"
+    },
+    {
+      "speaker": "speaker2",
+      "text": "Yes. Undergraduates get a free black-and-white allotment each term, but color is pay-as-you-go. You can buy a ten-dollar top-up here or online."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "Can I pay with my campus card?"
+    },
+    {
+      "speaker": "speaker2",
+      "text": "Campus card or credit card both work. After you pay, wait about two minutes for the quota to refresh before you send the job again."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "My professor wants it on eleven-by-seventeen paper. Do you have that in color?"
+    },
+    {
+      "speaker": "speaker2",
+      "text": "We do, but large color sheets only print on the plotter by the window—not the regular color copiers. I'll unlock that queue after your top-up posts."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "Perfect. One more thing—if the poster looks faded, can I reprint for free?"
+    },
+    {
+      "speaker": "speaker2",
+      "text": "If it's a machine error, yes—bring the bad copy back the same day and we'll reprint. If you just change the design, you'll use more quota."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "Got it. I'll buy the top-up now."
+    }
+  ],
+  "narrator_outro": "Now get ready to answer the questions.",
+  "questions": [
+    {
+      "number": 1,
+      "question_type": "Main Idea",
+      "narrator_text": "What is the conversation mainly about?",
+      "options": {
+        "A": "Borrowing a laptop from the library",
+        "B": "Fixing a print-quota problem for a class poster",
+        "C": "Changing the student's major declaration",
+        "D": "Ordering textbooks for next semester"
+      },
+      "correct_answer": "B",
+      "explanation": "She cannot print because of quota; he explains top-ups and large-format color printing.",
+      "commonMistake": "Choosing A—nothing about laptop checkout is discussed."
+    },
+    {
+      "number": 2,
+      "question_type": "Detail",
+      "narrator_text": "How can she add more printing quota?",
+      "options": {
+        "A": "Ask her professor for a free override code",
+        "B": "Buy a ten-dollar top-up at the shop or online",
+        "C": "Wait until next term for an automatic reset only",
+        "D": "Use only the black-and-white machines forever"
+      },
+      "correct_answer": "B",
+      "explanation": "Color is pay-as-you-go; she can buy a ten-dollar top-up here or online.",
+      "commonMistake": "Choosing C—term allotment is for black-and-white; she needs color today."
+    },
+    {
+      "number": 3,
+      "question_type": "Detail",
+      "narrator_text": "Where must the eleven-by-seventeen color poster be printed?",
+      "options": {
+        "A": "On any regular color copier",
+        "B": "Only at the library reference desk",
+        "C": "On the plotter by the window",
+        "D": "At an off-campus shop after hours"
+      },
+      "correct_answer": "C",
+      "explanation": "Large color sheets print on the plotter by the window, not the regular color copiers.",
+      "commonMistake": "Choosing A because color copiers exist—they are not for that paper size."
+    },
+    {
+      "number": 4,
+      "question_type": "Detail",
+      "narrator_text": "When can she get a free reprint?",
+      "options": {
+        "A": "Anytime she changes the design",
+        "B": "Only after finals week",
+        "C": "If it is a machine error and she returns the bad copy the same day",
+        "D": "Never—reprints always cost extra"
+      },
+      "correct_answer": "C",
+      "explanation": "Machine-error reprints are free the same day with the bad copy; design changes use more quota.",
+      "commonMistake": "Choosing A—design changes are not free reprints."
+    }
+  ]
+}
