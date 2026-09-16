@@ -1,0 +1,127 @@
+{
+  "id": "LIST-0123",
+  "topic": "Library Group Study Room Booking",
+  "setting": "A student reserves a group study room and learns the rules about no-shows and equipment.",
+  "speakers": [
+    {
+      "role": "narrator",
+      "voice": "narrator"
+    },
+    {
+      "role": "speaker1",
+      "name": "Woman (Student)",
+      "voice": "female"
+    },
+    {
+      "role": "speaker2",
+      "name": "Man (Library Staff)",
+      "voice": "male"
+    }
+  ],
+  "narrator_intro": "Listen to a conversation between a student and a library staff member.",
+  "dialogue": [
+    {
+      "speaker": "speaker1",
+      "text": "Hi. I need a group study room for four people tomorrow evening. We're preparing a presentation."
+    },
+    {
+      "speaker": "speaker2",
+      "text": "Rooms book in two-hour blocks. I have 6 to 8 p.m. in room 214, or 7 to 9 in room 301—301 has a large display screen."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "301, please. Do we need to bring our own HDMI cable?"
+    },
+    {
+      "speaker": "speaker2",
+      "text": "There's a cable in the drawer, but check it when you arrive. If it's missing, borrow one at the desk with your ID."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "What if one person is late? Last time we lost a room for a no-show."
+    },
+    {
+      "speaker": "speaker2",
+      "text": "Someone from your group must check in at the desk within ten minutes of the start time, or the reservation is released."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "Can we bring snacks?"
+    },
+    {
+      "speaker": "speaker2",
+      "text": "Covered drinks are fine. No messy food—crumbs attract pests and you'll lose booking privileges for two weeks."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "Understood. Can I extend the booking if another group doesn't show?"
+    },
+    {
+      "speaker": "speaker2",
+      "text": "Only at the desk after your first hour, and only if the next slot is free. I can't promise it in advance."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "Okay. Please put it under Maya Chen, ID ending in 4421."
+    }
+  ],
+  "narrator_outro": "Now get ready to answer the questions.",
+  "questions": [
+    {
+      "number": 1,
+      "question_type": "Main Idea",
+      "narrator_text": "What is the conversation mainly about?",
+      "options": {
+        "A": "Paying an overdue fine for a laptop",
+        "B": "Booking a group study room and following its rules",
+        "C": "Moving books to the quiet floor",
+        "D": "Applying for a library student job"
+      },
+      "correct_answer": "B",
+      "explanation": "She reserves room 301 and learns check-in, food, cable, and extension rules.",
+      "commonMistake": "Choosing A—fines are not discussed."
+    },
+    {
+      "number": 2,
+      "question_type": "Detail",
+      "narrator_text": "Which room does she choose and why is it useful?",
+      "options": {
+        "A": "214, because it is closer to the entrance",
+        "B": "301, because it has a large display screen",
+        "C": "The cafe area, because food is allowed",
+        "D": "An outdoor courtyard table"
+      },
+      "correct_answer": "B",
+      "explanation": "She picks 301 for the large display screen (7–9 p.m.).",
+      "commonMistake": "Choosing A—214 was offered but she selects 301."
+    },
+    {
+      "number": 3,
+      "question_type": "Detail",
+      "narrator_text": "What must the group do to keep the reservation?",
+      "options": {
+        "A": "Email the librarian the night before",
+        "B": "Check in at the desk within ten minutes of the start time",
+        "C": "Leave a cash deposit at room 214",
+        "D": "Arrive with all four members at once"
+      },
+      "correct_answer": "B",
+      "explanation": "Someone must check in within ten minutes or the room is released.",
+      "commonMistake": "Choosing D—only someone from the group must check in, not necessarily all four at once."
+    },
+    {
+      "number": 4,
+      "question_type": "Detail",
+      "narrator_text": "What is the policy on food?",
+      "options": {
+        "A": "Any food is welcome",
+        "B": "Covered drinks are fine, but messy food can cost booking privileges for two weeks",
+        "C": "Only food from the library cafe is allowed inside rooms",
+        "D": "No drinks of any kind"
+      },
+      "correct_answer": "B",
+      "explanation": "Covered drinks OK; messy food risks losing booking privileges for two weeks.",
+      "commonMistake": "Choosing D—covered drinks are allowed."
+    }
+  ]
+}

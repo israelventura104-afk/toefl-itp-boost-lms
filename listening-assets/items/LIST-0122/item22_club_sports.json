@@ -1,0 +1,127 @@
+{
+  "id": "LIST-0122",
+  "topic": "Club Sports Registration Deadline",
+  "setting": "A student talks with the recreation office about joining the intramural soccer league before the deadline.",
+  "speakers": [
+    {
+      "role": "narrator",
+      "voice": "narrator"
+    },
+    {
+      "role": "speaker1",
+      "name": "Man (Student)",
+      "voice": "male"
+    },
+    {
+      "role": "speaker2",
+      "name": "Woman (Recreation Staff)",
+      "voice": "female"
+    }
+  ],
+  "narrator_intro": "Listen to a conversation between a student and a staff member at the recreation office.",
+  "dialogue": [
+    {
+      "speaker": "speaker1",
+      "text": "Hi. I want to join the intramural soccer league this semester. Am I too late?"
+    },
+    {
+      "speaker": "speaker2",
+      "text": "Almost. Team rosters close Friday at five, and every player needs a cleared online waiver before then."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "I already have a team—we're short one midfielder. Do I register myself or does the captain do it?"
+    },
+    {
+      "speaker": "speaker2",
+      "text": "Your captain adds you in the portal, then you complete the waiver and pay the twelve-dollar fee. Until both are done, you won't appear on the roster."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "Can I play if my physical exam from last year is still on file?"
+    },
+    {
+      "speaker": "speaker2",
+      "text": "For club sports we need a physical from this academic year. The health center can do walk-ins tomorrow morning—bring your ID."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "Games are Sundays, right? I work until noon."
+    },
+    {
+      "speaker": "speaker2",
+      "text": "Most divisions start at two, but check your pool schedule after Friday. Late adds sometimes get placed in the evening division."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "Okay. If I miss Friday, is there a waitlist?"
+    },
+    {
+      "speaker": "speaker2",
+      "text": "There's a waitlist for free-agent players, not for full teams. If your team is incomplete by Friday, the whole team is dropped."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "Got it. I'll finish the waiver tonight and book the physical for tomorrow."
+    }
+  ],
+  "narrator_outro": "Now get ready to answer the questions.",
+  "questions": [
+    {
+      "number": 1,
+      "question_type": "Main Idea",
+      "narrator_text": "What is the conversation mainly about?",
+      "options": {
+        "A": "Renting soccer equipment for a class project",
+        "B": "Registering for intramural soccer before the deadline",
+        "C": "Changing the student's work schedule on Sundays",
+        "D": "Trying out for the varsity soccer team"
+      },
+      "correct_answer": "B",
+      "explanation": "He needs to join intramural soccer; she explains roster deadline, waiver, fee, and physical.",
+      "commonMistake": "Choosing D—this is intramural/club sports, not varsity tryouts."
+    },
+    {
+      "number": 2,
+      "question_type": "Detail",
+      "narrator_text": "When do team rosters close?",
+      "options": {
+        "A": "Tomorrow morning at the health center",
+        "B": "Sunday at noon",
+        "C": "Friday at five",
+        "D": "Next month after midterms"
+      },
+      "correct_answer": "C",
+      "explanation": "Rosters close Friday at five, with waiver required before then.",
+      "commonMistake": "Choosing A—tomorrow is for the physical, not the roster deadline."
+    },
+    {
+      "number": 3,
+      "question_type": "Detail",
+      "narrator_text": "What must be true about his physical exam?",
+      "options": {
+        "A": "Last year's physical is enough",
+        "B": "It must be from this academic year",
+        "C": "Only the team captain needs a physical",
+        "D": "No physical is required for midfielders"
+      },
+      "correct_answer": "B",
+      "explanation": "Club sports need a physical from this academic year; health center walk-ins are available tomorrow.",
+      "commonMistake": "Choosing A—he hoped last year counted; she says no."
+    },
+    {
+      "number": 4,
+      "question_type": "Detail",
+      "narrator_text": "What happens if the team is incomplete by Friday?",
+      "options": {
+        "A": "Players move automatically to varsity",
+        "B": "The whole team is dropped",
+        "C": "They pay a double fee and play anyway",
+        "D": "Only the captain is waitlisted"
+      },
+      "correct_answer": "B",
+      "explanation": "Waitlist is for free agents; incomplete teams are dropped Friday.",
+      "commonMistake": "Choosing D—the waitlist is not for incomplete full teams."
+    }
+  ]
+}
