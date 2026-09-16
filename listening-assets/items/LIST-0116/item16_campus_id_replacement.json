@@ -1,0 +1,127 @@
+{
+  "id": "LIST-0116",
+  "topic": "Campus ID Card Replacement",
+  "setting": "A student reports a lost campus ID at the Campus Card Office and learns how to get a replacement.",
+  "speakers": [
+    {
+      "role": "narrator",
+      "voice": "narrator"
+    },
+    {
+      "role": "speaker1",
+      "name": "Man (Student)",
+      "voice": "male"
+    },
+    {
+      "role": "speaker2",
+      "name": "Woman (Card Office Staff)",
+      "voice": "female"
+    }
+  ],
+  "narrator_intro": "Listen to a conversation between a student and a staff member at the campus card office.",
+  "dialogue": [
+    {
+      "speaker": "speaker1",
+      "text": "Hi. I think I lost my campus ID. I had it yesterday in the dining hall, but it's not in my wallet now."
+    },
+    {
+      "speaker": "speaker2",
+      "text": "Okay. First, I can deactivate the old card so nobody else can use your meal plan or building access."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "Please do that. How long does a replacement take?"
+    },
+    {
+      "speaker": "speaker2",
+      "text": "If you have another photo ID with you, we can print a new card today—usually in about twenty minutes. There's a ten-dollar replacement fee."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "I have my driver's license. Can I pay with a card?"
+    },
+    {
+      "speaker": "speaker2",
+      "text": "Yes, debit or credit. Also, check the lost-and-found desk in the student union. Dining hall staff sometimes turn IDs in there within a day."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "I already called them—nothing yet. I'll go ahead and replace it. I need library access tonight."
+    },
+    {
+      "speaker": "speaker2",
+      "text": "Understood. Stand on the marks for the photo, and I'll deactivate the old number now. Your new card will work as soon as it's printed."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "Great. One more question—does this affect my bus pass?"
+    },
+    {
+      "speaker": "speaker2",
+      "text": "The campus shuttle is linked to your student account, not the physical card number, so that stays active. Only door access and meal swipes move to the new card."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "Perfect. Thanks for walking me through it."
+    }
+  ],
+  "narrator_outro": "Now get ready to answer the questions.",
+  "questions": [
+    {
+      "number": 1,
+      "question_type": "Main Idea",
+      "narrator_text": "What is the conversation mainly about?",
+      "options": {
+        "A": "Applying for a first-time campus meal plan",
+        "B": "Replacing a lost campus ID card",
+        "C": "Reporting a problem with the campus shuttle",
+        "D": "Changing the student's dining hall schedule"
+      },
+      "correct_answer": "B",
+      "explanation": "The student lost his ID and arranges deactivation plus a same-day replacement.",
+      "commonMistake": "Choosing A because the meal plan is mentioned—only as a reason to deactivate the old card."
+    },
+    {
+      "number": 2,
+      "question_type": "Detail",
+      "narrator_text": "What will the staff member do first?",
+      "options": {
+        "A": "Charge a late library fine",
+        "B": "Call the dining hall manager",
+        "C": "Deactivate the old campus ID",
+        "D": "Issue a temporary paper pass for one week"
+      },
+      "correct_answer": "C",
+      "explanation": "She says she can deactivate the old card so nobody else can use meal plan or building access.",
+      "commonMistake": "Choosing B because the dining hall is where he last had the card—not her first action."
+    },
+    {
+      "number": 3,
+      "question_type": "Detail",
+      "narrator_text": "How long will the replacement usually take if he has photo ID?",
+      "options": {
+        "A": "About twenty minutes today",
+        "B": "Three business days",
+        "C": "Until the lost-and-found returns the old card",
+        "D": "One week after paying by cash only"
+      },
+      "correct_answer": "A",
+      "explanation": "With another photo ID, they can print a new card today in about twenty minutes; fee is ten dollars.",
+      "commonMistake": "Choosing B—no multi-day wait is stated for this case."
+    },
+    {
+      "number": 4,
+      "question_type": "Detail",
+      "narrator_text": "What happens to the student's campus shuttle access?",
+      "options": {
+        "A": "It stops until he pays an extra shuttle fee",
+        "B": "It moves to the new card only after 24 hours",
+        "C": "It stays active because it is linked to his student account",
+        "D": "It is canceled when the old card is deactivated"
+      },
+      "correct_answer": "C",
+      "explanation": "She says the shuttle is linked to the student account, not the physical card number, so it stays active.",
+      "commonMistake": "Choosing D because deactivation sounds total—door access and meals move; shuttle does not."
+    }
+  ]
+}

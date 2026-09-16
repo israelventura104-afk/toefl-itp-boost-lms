@@ -1,0 +1,127 @@
+{
+  "id": "LIST-0105",
+  "topic": "Writing Center Appointment",
+  "setting": "A student talks with a writing tutor about booking help for a research paper draft.",
+  "speakers": [
+    {
+      "role": "narrator",
+      "voice": "narrator"
+    },
+    {
+      "role": "speaker1",
+      "name": "Woman (Student)",
+      "voice": "female"
+    },
+    {
+      "role": "speaker2",
+      "name": "Man (Writing Tutor)",
+      "voice": "male"
+    }
+  ],
+  "narrator_intro": "Listen to a conversation between a student and a writing tutor.",
+  "dialogue": [
+    {
+      "speaker": "speaker1",
+      "text": "Hi. I'd like to make an appointment at the Writing Center. I've got a research paper due next Friday."
+    },
+    {
+      "speaker": "speaker2",
+      "text": "Sure. Have you already written a draft, or are you still outlining?"
+    },
+    {
+      "speaker": "speaker1",
+      "text": "I have a rough draft, but my professor said the thesis is too broad and the sources aren't strong enough."
+    },
+    {
+      "speaker": "speaker2",
+      "text": "That's a common issue. We can look at both. Sessions are forty-five minutes. Do mornings or afternoons work better?"
+    },
+    {
+      "speaker": "speaker1",
+      "text": "Afternoons. I have labs until one every day this week."
+    },
+    {
+      "speaker": "speaker2",
+      "text": "I have an opening tomorrow at two-thirty, or Thursday at three. Tomorrow fills up fast, though."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "Tomorrow at two-thirty works. Should I bring anything besides the draft?"
+    },
+    {
+      "speaker": "speaker2",
+      "text": "Yes—bring the assignment sheet and a list of the sources you're using. Also, upload the draft to our portal tonight so I can skim it before we meet."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "I can do that. One more thing: can we focus on citations? I'm never sure about APA format."
+    },
+    {
+      "speaker": "speaker2",
+      "text": "Absolutely. We'll tighten the thesis first, then spend the last part of the session on APA. See you tomorrow at two-thirty."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "Great. Thanks."
+    }
+  ],
+  "narrator_outro": "Now get ready to answer the questions.",
+  "questions": [
+    {
+      "number": 1,
+      "question_type": "Main Idea",
+      "narrator_text": "What is the conversation mainly about?",
+      "options": {
+        "A": "Changing the student's lab schedule",
+        "B": "Scheduling a Writing Center session for a research paper",
+        "C": "Choosing a new research topic for next semester",
+        "D": "Complaining about a professor's grading policy"
+      },
+      "correct_answer": "B",
+      "explanation": "The student books a Writing Center appointment to improve a research paper draft before Friday.",
+      "commonMistake": "Choosing A because labs are mentioned — that only limits her available times."
+    },
+    {
+      "number": 2,
+      "question_type": "Detail",
+      "narrator_text": "What problem did the professor identify with the student's paper?",
+      "options": {
+        "A": "The paper is shorter than the required length.",
+        "B": "The thesis is too broad and the sources are weak.",
+        "C": "The student used the wrong citation style entirely.",
+        "D": "The draft was submitted after the deadline."
+      },
+      "correct_answer": "B",
+      "explanation": "She says her professor found the thesis too broad and the sources not strong enough.",
+      "commonMistake": "Choosing C because APA comes up later — citations are her extra request, not the professor's main note."
+    },
+    {
+      "number": 3,
+      "question_type": "Detail",
+      "narrator_text": "When will the student meet with the tutor?",
+      "options": {
+        "A": "Thursday at three o'clock",
+        "B": "Tomorrow morning before lab",
+        "C": "Tomorrow at two-thirty",
+        "D": "Next Friday before the paper is due"
+      },
+      "correct_answer": "C",
+      "explanation": "They agree on tomorrow at two-thirty; Thursday at three was the unused alternative.",
+      "commonMistake": "Choosing A because Thursday at three was offered — she picks tomorrow instead."
+    },
+    {
+      "number": 4,
+      "question_type": "Detail",
+      "narrator_text": "What does the tutor ask the student to do before the appointment?",
+      "options": {
+        "A": "Rewrite the entire thesis overnight",
+        "B": "Email the professor for a grade extension",
+        "C": "Print extra copies of journal articles",
+        "D": "Upload the draft to the portal and bring the assignment sheet and source list"
+      },
+      "correct_answer": "D",
+      "explanation": "He asks her to bring the assignment sheet and source list and to upload the draft to the portal tonight.",
+      "commonMistake": "Choosing A because the thesis needs work — that happens in the session, not before."
+    }
+  ]
+}

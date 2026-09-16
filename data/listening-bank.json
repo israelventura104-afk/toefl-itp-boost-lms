@@ -4,9 +4,9 @@
   "purpose": "guided_and_mocks",
   "section": "listening",
   "part": "Part A short conversations + Part B long conversations",
-  "note": "Part A LIST-0001-0100; Part B LIST-0101–0104 and LIST-0106–0115 with audio. ready_for_practice requires audio.",
-  "item_count": 114,
-  "total_questions": 156,
+  "note": "Part A LIST-0001-0100; Part B LIST-0101–0115 with audio (gap none in 101-115). ready_for_practice requires audio.",
+  "item_count": 115,
+  "total_questions": 160,
   "items": [
     {
       "id": "LIST-0001",
@@ -1360,6 +1360,20 @@
       "has_audio": true,
       "audio": "listening-assets/items/LIST-0104/audio.mp3",
       "data": "listening-assets/items/LIST-0104/item4_museum_internship.json",
+      "production_status": "production_ready",
+      "ready_for_practice": true,
+      "part": "B"
+    },
+    {
+      "id": "LIST-0105",
+      "asset_id": "LIST-0105",
+      "asset_type": "Part B - Long Conversation",
+      "difficulty": "Medium",
+      "topic": "Writing Center Appointment",
+      "question_count": 4,
+      "has_audio": true,
+      "audio": "listening-assets/items/LIST-0105/audio.mp3",
+      "data": "listening-assets/items/LIST-0105/item5_writing_center.json",
       "production_status": "production_ready",
       "ready_for_practice": true,
       "part": "B"

@@ -1,0 +1,127 @@
+{
+  "id": "LIST-0117",
+  "topic": "Chemistry Lab Equipment Checkout",
+  "setting": "A student checks out lab equipment with a lab supervisor before an afternoon chemistry practical.",
+  "speakers": [
+    {
+      "role": "narrator",
+      "voice": "narrator"
+    },
+    {
+      "role": "speaker1",
+      "name": "Woman (Student)",
+      "voice": "female"
+    },
+    {
+      "role": "speaker2",
+      "name": "Man (Lab Supervisor)",
+      "voice": "male"
+    }
+  ],
+  "narrator_intro": "Listen to a conversation between a student and a chemistry lab supervisor.",
+  "dialogue": [
+    {
+      "speaker": "speaker1",
+      "text": "Excuse me. I'm in Professor Kim's afternoon lab, and I need to check out a digital balance and two graduated cylinders."
+    },
+    {
+      "speaker": "speaker2",
+      "text": "Sure. Are you on the lab roster for today? I'll need your student ID and the experiment number from the syllabus."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "Here's my ID. It's experiment six—the titration lab. My partner is already saving a bench by the window."
+    },
+    {
+      "speaker": "speaker2",
+      "text": "Good. Balances can't leave the instrument room, so you'll weigh samples here and carry only the labeled vials back to your bench."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "Got it. Do the cylinders have to be returned washed, or can we leave them in the rinse rack?"
+    },
+    {
+      "speaker": "speaker2",
+      "text": "Rinse them at your sink, then place them on the drying rack by the window—not the dirty cart. We inventory everything before five."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "What if the balance reading jumps around? Last week mine wouldn't stabilize."
+    },
+    {
+      "speaker": "speaker2",
+      "text": "Close the draft doors, and wait for the green light. If it still drifts, move to balance three—balance two is out for calibration until Thursday."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "Okay. Can I also get a pair of heat-resistant gloves for the hot plate?"
+    },
+    {
+      "speaker": "speaker2",
+      "text": "Yes, but sign the glove log. Damaged gloves go in the red bin; don't put them back on the shelf."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "Understood. Thanks—I'll bring the cylinders back before five."
+    }
+  ],
+  "narrator_outro": "Now get ready to answer the questions.",
+  "questions": [
+    {
+      "number": 1,
+      "question_type": "Main Idea",
+      "narrator_text": "What is the conversation mainly about?",
+      "options": {
+        "A": "Changing the student's chemistry lecture section",
+        "B": "Checking out lab equipment and following lab rules",
+        "C": "Repairing a broken hot plate in the storeroom",
+        "D": "Scheduling a make-up titration for next week"
+      },
+      "correct_answer": "B",
+      "explanation": "She checks out a balance and cylinders and gets rules on use, return, and gloves.",
+      "commonMistake": "Choosing D because titration is named—that is today's experiment, not a make-up."
+    },
+    {
+      "number": 2,
+      "question_type": "Detail",
+      "narrator_text": "Where must the student weigh her samples?",
+      "options": {
+        "A": "At her bench by the window",
+        "B": "In the instrument room",
+        "C": "At the teaching assistant's desk",
+        "D": "In Professor Kim's office"
+      },
+      "correct_answer": "B",
+      "explanation": "Balances cannot leave the instrument room; she weighs there and carries labeled vials to the bench.",
+      "commonMistake": "Choosing A because her partner saved a window bench—weighing stays in the instrument room."
+    },
+    {
+      "number": 3,
+      "question_type": "Detail",
+      "narrator_text": "What should she do if balance two will not stabilize?",
+      "options": {
+        "A": "Use balance three because balance two is out for calibration",
+        "B": "Shake the balance to reset it",
+        "C": "Borrow Professor Kim's personal scale",
+        "D": "Skip the weighing step until Thursday"
+      },
+      "correct_answer": "A",
+      "explanation": "He says close the draft doors; if it still drifts, move to balance three—balance two is out for calibration until Thursday.",
+      "commonMistake": "Choosing D because Thursday is mentioned—that is when balance two returns, not when she skips work."
+    },
+    {
+      "number": 4,
+      "question_type": "Detail",
+      "narrator_text": "What must the student do with heat-resistant gloves?",
+      "options": {
+        "A": "Buy a new pair at the bookstore first",
+        "B": "Leave them on the dirty cart after use",
+        "C": "Sign the glove log and put damaged gloves in the red bin",
+        "D": "Share one pair with the whole lab section"
+      },
+      "correct_answer": "C",
+      "explanation": "She may get gloves but must sign the glove log; damaged gloves go in the red bin, not back on the shelf.",
+      "commonMistake": "Choosing B because a rack/cart was mentioned for cylinders—gloves have a different rule."
+    }
+  ]
+}
