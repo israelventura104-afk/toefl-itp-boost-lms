@@ -1,0 +1,124 @@
+{
+  "id": "LIST-0132",
+  "part": "C",
+  "topic": "The Invention of the Printing Press",
+  "setting": "A short talk in a world history class about Gutenberg and the early printing press.",
+  "speaker": {
+    "role": "speaker1",
+    "name": "Woman (History Professor)",
+    "voice": "female"
+  },
+  "speakers": [
+    {
+      "role": "narrator",
+      "voice": "narrator"
+    },
+    {
+      "role": "speaker1",
+      "name": "Woman (History Professor)",
+      "voice": "female"
+    }
+  ],
+  "narrator_intro": "Listen to part of a talk in a world history class.",
+  "talk": [
+    {
+      "speaker": "speaker1",
+      "text": "Before the mid-1400s in Europe, books were copied by hand, mostly by monks and professional scribes."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "That made books rare and expensive, so few people outside the elite could own one."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "Around 1450, Johannes Gutenberg in Mainz combined movable metal type, oil-based ink, and a press adapted from wine presses."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "His workshop produced the famous forty-two-line Bible, one of the first major books printed in the West."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "The key idea was reusable type: once letters were cast, they could be rearranged for new pages instead of carving each page from scratch."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "Within decades, printing shops spread across Europe, and the cost of books fell sharply."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "Cheaper books helped literacy grow and sped the spread of scientific ideas, religious debates, and news."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "Of course, printing did not invent writing—China and Korea had earlier printing traditions—but Gutenberg’s system transformed European publishing."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "So when we talk about an information revolution in early modern Europe, this technology is usually at the center of the story."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "Next lecture we’ll look at how printed pamphlets shaped politics in the sixteenth century."
+    }
+  ],
+  "narrator_outro": "Now get ready to answer the questions.",
+  "questions": [
+    {
+      "number": 1,
+      "question_type": "Main Idea",
+      "narrator_text": "What is the talk mainly about?",
+      "options": {
+        "A": "How monks built wine presses for monasteries",
+        "B": "Gutenberg’s printing press and how it changed book production in Europe",
+        "C": "Why the Bible was never printed",
+        "D": "How to cast metal for jewelry"
+      },
+      "correct_answer": "B",
+      "explanation": "The professor explains Gutenberg’s movable type system and its impact on European books and literacy.",
+      "commonMistake": "Choosing A—wine presses are only mentioned as a model for the press mechanism."
+    },
+    {
+      "number": 2,
+      "question_type": "Detail",
+      "narrator_text": "According to the professor, what made books rare before the mid-1400s in Europe?",
+      "options": {
+        "A": "They were copied by hand and were expensive",
+        "B": "Paper had not been invented yet",
+        "C": "Only farmers were allowed to read",
+        "D": "Libraries refused to store books"
+      },
+      "correct_answer": "A",
+      "explanation": "She says books were copied by hand, making them rare and expensive.",
+      "commonMistake": "Choosing B—paper is not the reason she gives."
+    },
+    {
+      "number": 3,
+      "question_type": "Detail",
+      "narrator_text": "What does the professor say was the key idea of Gutenberg’s system?",
+      "options": {
+        "A": "Reusable movable type that could be rearranged for new pages",
+        "B": "Carving a new wooden page for every book forever",
+        "C": "Printing only maps, never text",
+        "D": "Hiring more scribes instead of using machines"
+      },
+      "correct_answer": "A",
+      "explanation": "She emphasizes reusable type that could be rearranged instead of carving each page from scratch.",
+      "commonMistake": "Choosing B—that describes the older, slower approach."
+    },
+    {
+      "number": 4,
+      "question_type": "Inference",
+      "narrator_text": "What can be inferred about earlier printing outside Europe?",
+      "options": {
+        "A": "No culture had ever printed anything before Gutenberg",
+        "B": "China and Korea had earlier printing traditions, but Gutenberg’s system transformed European publishing",
+        "C": "Korea banned all books after 1450",
+        "D": "China copied Gutenberg’s Bible first"
+      },
+      "correct_answer": "B",
+      "explanation": "She notes earlier traditions in China and Korea while stressing Gutenberg’s impact in Europe.",
+      "commonMistake": "Choosing A—she explicitly rejects that idea."
+    }
+  ]
+}
