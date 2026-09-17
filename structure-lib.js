@@ -106,11 +106,35 @@
     );
   }
 
+  /**
+   * Error Identification choices must match the underlined chunks.
+   * Some bank items store A/A…D/D or a short word on the wrong letter.
+   */
+  function alignErrorOptions(questionText, options, type) {
+    if (!Array.isArray(options) || !options.length) return options;
+    if (!isErrorIdentification(type, questionText)) return options;
+    const parsed = parseErrorSegments(questionText);
+    if (!parsed) return options;
+
+    const byLetter = {};
+    parsed.segments.forEach((seg) => {
+      if (seg.letter && seg.text) byLetter[seg.letter] = seg.text;
+    });
+
+    return options.map((option) => {
+      const key = String(option.key || "").trim();
+      const phrase = byLetter[key];
+      if (!phrase) return option;
+      return { key, text: phrase };
+    });
+  }
+
   global.StructureLib = {
     escapeHtml,
     isErrorIdentification,
     parseErrorSegments,
     formatStructureQuestionHtml,
     setStructureQuestion,
+    alignErrorOptions,
   };
 })(window);

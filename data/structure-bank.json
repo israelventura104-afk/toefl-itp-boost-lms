@@ -6052,22 +6052,22 @@
       "options": [
         {
           "key": "A",
-          "text": "is"
+          "text": "There"
         },
         {
           "key": "B",
-          "text": "reasons"
+          "text": "is several reasons"
         },
         {
           "key": "C",
-          "text": "experiment"
+          "text": "why the experiment"
         },
         {
           "key": "D",
-          "text": "stage"
+          "text": "failed during the final stage"
         }
       ],
-      "correctKey": "A",
+      "correctKey": "B",
       "correctAnswer": "is",
       "explanation": "\"Is\" should be \"are\" because the real subject, \"several reasons,\" is plural.",
       "commonMistake": {
@@ -7744,8 +7744,8 @@
           "text": "D"
         }
       ],
-      "correctKey": "C",
-      "correctAnswer": "C",
+      "correctKey": "D",
+      "correctAnswer": "D",
       "explanation": "In noun clauses after 'before', the future tense is not used. It should be 'left' (simple past) to match the past tense of 'asked'.",
       "commonMistake": "Choosing a grammatically correct underlined part instead of the error.",
       "learningObjective": "Identify the underlined error in a Structure Written Expression item.",
@@ -7788,8 +7788,8 @@
           "text": "D"
         }
       ],
-      "correctKey": "B",
-      "correctAnswer": "B",
+      "correctKey": "C",
+      "correctAnswer": "C",
       "explanation": "With 'neither...nor', the verb agrees with the nearest subject ('the teacher' = singular). It should be 'was able'.",
       "commonMistake": "Choosing a grammatically correct underlined part instead of the error.",
       "learningObjective": "Identify the underlined error in a Structure Written Expression item.",
@@ -7832,8 +7832,8 @@
           "text": "D"
         }
       ],
-      "correctKey": "B",
-      "correctAnswer": "B",
+      "correctKey": "C",
+      "correctAnswer": "C",
       "explanation": "After 'spend time', the correct structure is the gerund ('collecting'), not the infinitive ('to collect').",
       "commonMistake": "Choosing a grammatically correct underlined part instead of the error.",
       "learningObjective": "Identify the underlined error in a Structure Written Expression item.",
@@ -7920,8 +7920,8 @@
           "text": "D"
         }
       ],
-      "correctKey": "A",
-      "correctAnswer": "A",
+      "correctKey": "B",
+      "correctAnswer": "B",
       "explanation": "'Despite' is a preposition and is directly followed by a noun phrase. The word 'of' is incorrect and should be removed: 'Despite the heavy rain...'",
       "commonMistake": "Choosing a grammatically correct underlined part instead of the error.",
       "learningObjective": "Identify the underlined error in a Structure Written Expression item.",
@@ -7964,8 +7964,8 @@
           "text": "D"
         }
       ],
-      "correctKey": "B",
-      "correctAnswer": "B",
+      "correctKey": "C",
+      "correctAnswer": "C",
       "explanation": "The relative pronoun 'that' already functions as the object of 'borrowed'. The pronoun 'it' is redundant and should be removed.",
       "commonMistake": "Choosing a grammatically correct underlined part instead of the error.",
       "learningObjective": "Identify the underlined error in a Structure Written Expression item.",
@@ -8008,8 +8008,8 @@
           "text": "D"
         }
       ],
-      "correctKey": "B",
-      "correctAnswer": "B",
+      "correctKey": "C",
+      "correctAnswer": "C",
       "explanation": "In time clauses introduced by 'by the time', the simple present tense is used to refer to the future. It should be 'ends' instead of 'will end'.",
       "commonMistake": "Choosing a grammatically correct underlined part instead of the error.",
       "learningObjective": "Identify the underlined error in a Structure Written Expression item.",
@@ -8052,8 +8052,8 @@
           "text": "D"
         }
       ],
-      "correctKey": "C",
-      "correctAnswer": "C",
+      "correctKey": "D",
+      "correctAnswer": "D",
       "explanation": "After verbs like 'require', 'suggest', 'demand', the subjunctive mood is used in the that-clause: the base form of the verb without 'must'. It should be 'submit' instead of 'must submit'.",
       "commonMistake": "Choosing a grammatically correct underlined part instead of the error.",
       "learningObjective": "Identify the underlined error in a Structure Written Expression item.",
@@ -8096,8 +8096,8 @@
           "text": "D"
         }
       ],
-      "correctKey": "C",
-      "correctAnswer": "C",
+      "correctKey": "D",
+      "correctAnswer": "D",
       "explanation": "In the 'not only...but also' construction, 'also' should follow the subject, not precede it. It should be 'she also' instead of 'also she'.",
       "commonMistake": "Choosing a grammatically correct underlined part instead of the error.",
       "learningObjective": "Identify the underlined error in a Structure Written Expression item.",
@@ -8140,8 +8140,8 @@
           "text": "D"
         }
       ],
-      "correctKey": "C",
-      "correctAnswer": "C",
+      "correctKey": "D",
+      "correctAnswer": "D",
       "explanation": "In the 'the more...the more' comparative construction, the second part should use an adjective (not adverb) after the linking verb 'become'. It should be 'the more fluent' instead of 'the more fluently'.",
       "commonMistake": "Choosing a grammatically correct underlined part instead of the error.",
       "learningObjective": "Identify the underlined error in a Structure Written Expression item.",
@@ -8184,8 +8184,8 @@
           "text": "D"
         }
       ],
-      "correctKey": "C",
-      "correctAnswer": "C",
+      "correctKey": "D",
+      "correctAnswer": "D",
       "explanation": "After a possessive adjective ('his'), a gerund or noun is needed. 'Discovering' is a gerund, but the correct noun form is 'discovery'. It should be 'his discovery'.",
       "commonMistake": "Choosing a grammatically correct underlined part instead of the error.",
       "learningObjective": "Identify the underlined error in a Structure Written Expression item.",
@@ -8228,8 +8228,8 @@
           "text": "D"
         }
       ],
-      "correctKey": "C",
-      "correctAnswer": "C",
+      "correctKey": "D",
+      "correctAnswer": "D",
       "explanation": "The participial phrase 'Having been warned' must logically modify the subject of the main clause. 'The trip' cannot be warned — it should be 'the hikers postponed' so that 'hikers' is the subject.",
       "commonMistake": "Choosing a grammatically correct underlined part instead of the error.",
       "learningObjective": "Identify the underlined error in a Structure Written Expression item.",
@@ -8272,8 +8272,8 @@
           "text": "D"
         }
       ],
-      "correctKey": "C",
-      "correctAnswer": "C",
+      "correctKey": "D",
+      "correctAnswer": "D",
       "explanation": "After verbs like 'suggest', 'recommend', 'demand', the subjunctive mood is used: the base form of the verb without 'to' and without conjugation. It should be 'be held' instead of 'is held'.",
       "commonMistake": "Choosing a grammatically correct underlined part instead of the error.",
       "learningObjective": "Identify the underlined error in a Structure Written Expression item.",
@@ -8316,8 +8316,8 @@
           "text": "D"
         }
       ],
-      "correctKey": "B",
-      "correctAnswer": "B",
+      "correctKey": "C",
+      "correctAnswer": "C",
       "explanation": "The verb 'enjoy' is always followed by a gerund, not an infinitive. It should be 'visiting' instead of 'to visit'.",
       "commonMistake": "Choosing a grammatically correct underlined part instead of the error.",
       "learningObjective": "Identify the underlined error in a Structure Written Expression item.",
@@ -8360,8 +8360,8 @@
           "text": "D"
         }
       ],
-      "correctKey": "A",
-      "correctAnswer": "A",
+      "correctKey": "B",
+      "correctAnswer": "B",
       "explanation": "'Such' is used before a noun phrase, while 'so' is used before an adjective alone. Since 'interesting' is an adjective without a noun, it should be 'was so interesting'.",
       "commonMistake": "Choosing a grammatically correct underlined part instead of the error.",
       "learningObjective": "Identify the underlined error in a Structure Written Expression item.",
@@ -8404,8 +8404,8 @@
           "text": "D"
         }
       ],
-      "correctKey": "C",
-      "correctAnswer": "C",
+      "correctKey": "D",
+      "correctAnswer": "D",
       "explanation": "In indirect questions (noun clauses), the word order is subject + verb, not question word order. It should be 'they finished' instead of 'did they finish'.",
       "commonMistake": "Choosing a grammatically correct underlined part instead of the error.",
       "learningObjective": "Identify the underlined error in a Structure Written Expression item.",
@@ -8448,8 +8448,8 @@
           "text": "D"
         }
       ],
-      "correctKey": "C",
-      "correctAnswer": "C",
+      "correctKey": "D",
+      "correctAnswer": "D",
       "explanation": "With 'neither...nor', the verb agrees with the nearest subject. 'His friends' is plural, so the verb should be 'were' instead of 'was'.",
       "commonMistake": "Choosing a grammatically correct underlined part instead of the error.",
       "learningObjective": "Identify the underlined error in a Structure Written Expression item.",
@@ -8492,8 +8492,8 @@
           "text": "D"
         }
       ],
-      "correctKey": "C",
-      "correctAnswer": "C",
+      "correctKey": "D",
+      "correctAnswer": "D",
       "explanation": "'News' is an uncountable noun and is always singular. The verb should be 'was' instead of 'were'.",
       "commonMistake": "Choosing a grammatically correct underlined part instead of the error.",
       "learningObjective": "Identify the underlined error in a Structure Written Expression item.",
@@ -8536,8 +8536,8 @@
           "text": "D"
         }
       ],
-      "correctKey": "C",
-      "correctAnswer": "C",
+      "correctKey": "D",
+      "correctAnswer": "D",
       "explanation": "With the negative infinitive, 'not' should precede 'to'. The correct form is 'not to talk' instead of 'to not talk'.",
       "commonMistake": "Choosing a grammatically correct underlined part instead of the error.",
       "learningObjective": "Identify the underlined error in a Structure Written Expression item.",

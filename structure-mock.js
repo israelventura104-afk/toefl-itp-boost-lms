@@ -65,7 +65,7 @@ function formatCommonMistake(value, correctKey) {
 }
 
 function normalizeItem(raw) {
-  const options = Array.isArray(raw.options)
+  let options = Array.isArray(raw.options)
     ? raw.options.map((option) => {
         if (typeof option === "string") return { key: option, text: option };
         return {
@@ -75,8 +75,6 @@ function normalizeItem(raw) {
       })
     : [];
 
-  const correctKey = String(raw.correctKey ?? raw.correct_answer ?? "").trim();
-  const correctFromOptions = options.find((option) => option.key === correctKey);
   const rawType = raw.type || "Sentence Completion";
   const type =
     rawType === "structure_completion"
@@ -84,16 +82,22 @@ function normalizeItem(raw) {
       : rawType === "written_expression"
         ? "Error Identification"
         : rawType;
+  const question = raw.question || raw.stem || "";
+  if (window.StructureLib?.alignErrorOptions) {
+    options = StructureLib.alignErrorOptions(question, options, type);
+  }
+  const correctKey = String(raw.correctKey ?? raw.correct_answer ?? "").trim();
+  const correctFromOptions = options.find((option) => option.key === correctKey);
 
   return {
     id: String(raw.id ?? "").trim(),
     type,
     skill: raw.skill || "Structure",
     subskill: raw.subskill || "",
-    question: raw.question || raw.stem || "",
+    question,
     options,
     correctKey,
-    correctAnswer: raw.correctAnswer || correctFromOptions?.text || correctKey,
+    correctAnswer: correctFromOptions?.text || raw.correctAnswer || correctKey,
     explanation: raw.explanation || "",
     commonMistake: formatCommonMistake(
       raw.commonMistake || raw.distractor_rationale,
@@ -254,7 +258,8 @@ function renderQuestion() {
     const button = document.createElement("button");
     button.type = "button";
     button.className = `choice-button${selected === option.key ? " is-selected" : ""}`;
-    button.innerHTML = `<b>${option.key}</b><span>${option.text}</span>`;
+    const label = window.StructureLib ? StructureLib.escapeHtml(option.text) : option.text;
+    button.innerHTML = `<b>${option.key}</b><span>${label}</span>`;
     button.addEventListener("click", () => {
       state.answers.set(item.id, option.key);
       updateAnsweredCount();

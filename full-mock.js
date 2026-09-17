@@ -152,7 +152,7 @@ function formatCommonMistake(value, correctKey) {
 }
 
 function normalizeStructureItem(raw) {
-  const options = Array.isArray(raw.options)
+  let options = Array.isArray(raw.options)
     ? raw.options.map((option) => {
         if (typeof option === "string") return { key: option, text: option };
         return {
@@ -161,8 +161,6 @@ function normalizeStructureItem(raw) {
         };
       })
     : [];
-  const correctKey = String(raw.correctKey ?? raw.correct_answer ?? "").trim();
-  const hit = options.find((o) => o.key === correctKey);
   const rawType = raw.type || "Sentence Completion";
   const type =
     rawType === "structure_completion"
@@ -170,15 +168,21 @@ function normalizeStructureItem(raw) {
       : rawType === "written_expression"
         ? "Error Identification"
         : rawType;
+  const prompt = raw.question || raw.stem || "";
+  if (window.StructureLib?.alignErrorOptions) {
+    options = StructureLib.alignErrorOptions(prompt, options, type);
+  }
+  const correctKey = String(raw.correctKey ?? raw.correct_answer ?? "").trim();
+  const hit = options.find((o) => o.key === correctKey);
   return {
     id: String(raw.id ?? "").trim(),
     type,
     skill: raw.skill || "Structure",
     subskill: raw.subskill || "",
-    prompt: raw.question || raw.stem || "",
+    prompt,
     options,
     correctKey,
-    correctAnswer: raw.correctAnswer || hit?.text || correctKey,
+    correctAnswer: hit?.text || raw.correctAnswer || correctKey,
     explanation: raw.explanation || "",
     commonMistake: formatCommonMistake(raw.commonMistake || raw.distractor_rationale, correctKey),
   };

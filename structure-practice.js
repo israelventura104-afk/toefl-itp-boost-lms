@@ -42,7 +42,7 @@ function escapeHtml(value) {
 }
 
 function normalizeItem(raw) {
-  const options = Array.isArray(raw.options)
+  let options = Array.isArray(raw.options)
     ? raw.options.map((option) => {
         if (typeof option === "string") {
           return { key: option, text: option };
@@ -54,18 +54,23 @@ function normalizeItem(raw) {
       })
     : [];
 
+  const type = raw.type || "Sentence Completion";
+  const question = raw.question || raw.stem || "";
+  if (window.StructureLib?.alignErrorOptions) {
+    options = StructureLib.alignErrorOptions(question, options, type);
+  }
   const correctKey = String(raw.correctKey ?? "").trim();
   const correctFromOptions = options.find((option) => option.key === correctKey);
 
   return {
     id: String(raw.id ?? "").trim(),
-    type: raw.type || "Sentence Completion",
+    type,
     skill: raw.skill || "Structure",
     subskill: raw.subskill || "",
-    question: raw.question || raw.stem || "",
+    question,
     options,
     correctKey,
-    correctAnswer: raw.correctAnswer || correctFromOptions?.text || correctKey,
+    correctAnswer: correctFromOptions?.text || raw.correctAnswer || correctKey,
     explanation: raw.explanation || "",
     commonMistake: raw.commonMistake || "",
   };
