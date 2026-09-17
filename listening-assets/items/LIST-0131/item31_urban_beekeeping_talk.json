@@ -1,0 +1,124 @@
+{
+  "id": "LIST-0131",
+  "part": "C",
+  "topic": "Urban Beekeeping and Local Food",
+  "setting": "A short campus sustainability talk about keeping bees in cities and how it relates to local food.",
+  "speaker": {
+    "role": "speaker1",
+    "name": "Man (Sustainability Speaker)",
+    "voice": "male"
+  },
+  "speakers": [
+    {
+      "role": "narrator",
+      "voice": "narrator"
+    },
+    {
+      "role": "speaker1",
+      "name": "Man (Sustainability Speaker)",
+      "voice": "male"
+    }
+  ],
+  "narrator_intro": "Listen to part of a talk at a campus sustainability event.",
+  "talk": [
+    {
+      "speaker": "speaker1",
+      "text": "When people picture beekeeping, they often imagine quiet countryside farms."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "But a growing number of cities now host rooftop and community-garden hives."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "Urban bees can forage on parks, balconies, and street trees—sometimes finding a surprising variety of flowers."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "Local honey is one product, yet the bigger story is pollination for neighborhood gardens and small farms at the city edge."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "Beekeepers must follow city rules: hive registration, safe distances from sidewalks, and water sources so bees do not crowd fountains."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "Neighbors worry about stings, so responsible keepers post signs and choose gentle bee strains."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "Pesticides remain a challenge; some cities limit spraying during bloom periods to protect pollinators."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "Students here can volunteer with the campus apiary and track bloom calendars for the gardens."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "The point is not that every resident should keep bees—it is that pollinators are part of a healthier local food system."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "Next month's workshop will cover how to plant a pollinator strip with native flowers."
+    }
+  ],
+  "narrator_outro": "Now get ready to answer the questions.",
+  "questions": [
+    {
+      "number": 1,
+      "question_type": "Main Idea",
+      "narrator_text": "What is the talk mainly about?",
+      "options": {
+        "A": "How to cook with honey in a dorm kitchen",
+        "B": "Urban beekeeping and its link to local food and pollination",
+        "C": "Why cities should ban all insects",
+        "D": "How to build a wooden fence for a farm"
+      },
+      "correct_answer": "B",
+      "explanation": "The speaker explains city hives, pollination, rules, and why pollinators support local food systems.",
+      "commonMistake": "Choosing A—honey is mentioned as one product, not the main focus."
+    },
+    {
+      "number": 2,
+      "question_type": "Detail",
+      "narrator_text": "According to the speaker, what is the bigger story beyond local honey?",
+      "options": {
+        "A": "Selling bees to airports",
+        "B": "Pollination for neighborhood gardens and small farms at the city edge",
+        "C": "Replacing all grocery stores",
+        "D": "Training bees to carry mail"
+      },
+      "correct_answer": "B",
+      "explanation": "He says the bigger story is pollination for neighborhood gardens and small farms at the city edge.",
+      "commonMistake": "Choosing A or D—those are not mentioned."
+    },
+    {
+      "number": 3,
+      "question_type": "Detail",
+      "narrator_text": "What city rules for beekeepers does he mention?",
+      "options": {
+        "A": "Hive registration, safe distances from sidewalks, and water sources",
+        "B": "A requirement to keep bees only indoors",
+        "C": "A ban on all community gardens",
+        "D": "Mandatory daily spraying of every flower"
+      },
+      "correct_answer": "A",
+      "explanation": "Keepers must follow registration, safe distances from sidewalks, and provide water sources.",
+      "commonMistake": "Choosing D—he says pesticides are a challenge and some cities limit spraying."
+    },
+    {
+      "number": 4,
+      "question_type": "Inference",
+      "narrator_text": "What does the speaker suggest about who should keep bees?",
+      "options": {
+        "A": "Every resident must keep a hive",
+        "B": "Not everyone needs to keep bees; pollinators still matter for local food systems",
+        "C": "Only tourists should handle hives",
+        "D": "Beekeeping has no connection to food"
+      },
+      "correct_answer": "B",
+      "explanation": "He says the point is not that every resident should keep bees, but that pollinators are part of a healthier local food system.",
+      "commonMistake": "Choosing A—that is what he explicitly rejects."
+    }
+  ]
+}
