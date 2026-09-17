@@ -1,0 +1,124 @@
+{
+  "id": "LIST-0127",
+  "part": "C",
+  "topic": "The Silk Road Trade Routes",
+  "setting": "A short lecture in a world history class about how the Silk Road connected regions through trade.",
+  "speaker": {
+    "role": "speaker1",
+    "name": "Man (History Professor)",
+    "voice": "male"
+  },
+  "speakers": [
+    {
+      "role": "narrator",
+      "voice": "narrator"
+    },
+    {
+      "role": "speaker1",
+      "name": "Man (History Professor)",
+      "voice": "male"
+    }
+  ],
+  "narrator_intro": "Listen to part of a talk in a world history class.",
+  "talk": [
+    {
+      "speaker": "speaker1",
+      "text": "When people hear “Silk Road,” they often imagine one paved highway. It was actually a network of routes."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "For centuries, caravans moved goods between East Asia, Central Asia, the Middle East, and parts of Europe."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "Silk was famous, but traders also carried spices, glass, metals, horses, and paper-making ideas."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "Cities such as Samarkand became busy hubs where merchants rested, exchanged currency, and shared news."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "The routes were dangerous: deserts, mountain passes, and bandits made travel slow and expensive."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "Because of that cost, long-distance trade favored high-value, lightweight goods rather than bulk grain."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "Ideas traveled too—religions, artistic styles, and technologies moved along with the caravans."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "The network declined as maritime trade grew and political control along the land routes shifted."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "Still, historians study the Silk Road to understand early globalization—not just fashion or fabric."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "Next time we'll compare land routes with Indian Ocean sea trade in the same period."
+    }
+  ],
+  "narrator_outro": "Now get ready to answer the questions.",
+  "questions": [
+    {
+      "number": 1,
+      "question_type": "Main Idea",
+      "narrator_text": "What is the talk mainly about?",
+      "options": {
+        "A": "How to manufacture modern silk clothing",
+        "B": "How Silk Road routes connected regions through trade and ideas",
+        "C": "Why Europe banned all Asian imports",
+        "D": "How to navigate a desert with GPS"
+      },
+      "correct_answer": "B",
+      "explanation": "The professor describes the Silk Road as a network moving goods and ideas across regions.",
+      "commonMistake": "Choosing A—silk is mentioned as a famous good, not as a manufacturing lesson."
+    },
+    {
+      "number": 2,
+      "question_type": "Detail",
+      "narrator_text": "According to the professor, what was the Silk Road?",
+      "options": {
+        "A": "A single paved highway from China to Rome",
+        "B": "A network of routes across multiple regions",
+        "C": "A railroad built in the nineteenth century",
+        "D": "A river used only for fishing"
+      },
+      "correct_answer": "B",
+      "explanation": "He says people imagine one highway, but it was actually a network of routes.",
+      "commonMistake": "Choosing A—that is the misconception he corrects."
+    },
+    {
+      "number": 3,
+      "question_type": "Detail",
+      "narrator_text": "Why did long-distance trade favor high-value, lightweight goods?",
+      "options": {
+        "A": "Because farmers refused to grow grain",
+        "B": "Because travel was slow, dangerous, and expensive",
+        "C": "Because silk could not be folded",
+        "D": "Because ships were illegal on land routes"
+      },
+      "correct_answer": "B",
+      "explanation": "Deserts, mountains, and bandits made travel slow and expensive, so traders preferred high-value lightweight goods.",
+      "commonMistake": "Choosing A—grain is mentioned as an example of bulk goods that were less favored, not a farmer refusal."
+    },
+    {
+      "number": 4,
+      "question_type": "Detail",
+      "narrator_text": "Besides goods, what else moved along the routes?",
+      "options": {
+        "A": "Only military tanks",
+        "B": "Ideas such as religions, artistic styles, and technologies",
+        "C": "Ocean currents",
+        "D": "Modern stock prices"
+      },
+      "correct_answer": "B",
+      "explanation": "He says ideas traveled too—religions, artistic styles, and technologies moved with the caravans.",
+      "commonMistake": "Choosing A—military equipment is not what he lists as traveling with the caravans."
+    }
+  ]
+}
