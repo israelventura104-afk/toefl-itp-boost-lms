@@ -1,0 +1,124 @@
+{
+  "id": "LIST-0136",
+  "part": "C",
+  "topic": "Bird Migration and Navigation",
+  "setting": "A short lecture in a biology class about how migratory birds find their way across long distances.",
+  "speaker": {
+    "role": "speaker1",
+    "name": "Woman (Biology Professor)",
+    "voice": "female"
+  },
+  "speakers": [
+    {
+      "role": "narrator",
+      "voice": "narrator"
+    },
+    {
+      "role": "speaker1",
+      "name": "Woman (Biology Professor)",
+      "voice": "female"
+    }
+  ],
+  "narrator_intro": "Listen to part of a talk in a biology class.",
+  "talk": [
+    {
+      "speaker": "speaker1",
+      "text": "Every year, millions of birds travel between breeding grounds and wintering sites."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "Some species fly thousands of kilometers, often at night and over open water."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "How do they navigate? Researchers think birds use several cues at once."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "The position of the sun and stars can serve as a compass for daytime and nighttime flights."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "Many birds also sense Earth’s magnetic field, which gives them a sense of direction even when skies are cloudy."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "Landmarks matter too: coastlines, mountain ranges, and rivers help experienced birds stay on route."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "Young birds sometimes learn routes by following their parents on the first journey."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "Climate change and city lights can disrupt these systems, causing birds to arrive late or become disoriented."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "So migration is not one trick—it is a toolkit of celestial, magnetic, and landscape cues."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "Next week we’ll look at tracking studies that map exact migration highways."
+    }
+  ],
+  "narrator_outro": "Now get ready to answer the questions.",
+  "questions": [
+    {
+      "number": 1,
+      "question_type": "Main Idea",
+      "narrator_text": "What is the talk mainly about?",
+      "options": {
+        "A": "How migratory birds navigate over long distances",
+        "B": "How to build birdhouses for city parks",
+        "C": "Why birds never leave their nests",
+        "D": "How satellites photograph oceans"
+      },
+      "correct_answer": "A",
+      "explanation": "The professor explains multiple navigation cues birds use during migration.",
+      "commonMistake": "Choosing B—unrelated practical tip."
+    },
+    {
+      "number": 2,
+      "question_type": "Detail",
+      "narrator_text": "According to the professor, what can serve as a compass for daytime and nighttime flights?",
+      "options": {
+        "A": "The position of the sun and stars",
+        "B": "Traffic lights in cities",
+        "C": "Human cell phone towers only",
+        "D": "The sound of ocean waves alone"
+      },
+      "correct_answer": "A",
+      "explanation": "She says sun and stars can serve as a compass day and night.",
+      "commonMistake": "Choosing C—not mentioned as the compass."
+    },
+    {
+      "number": 3,
+      "question_type": "Detail",
+      "narrator_text": "What does she say many birds can sense?",
+      "options": {
+        "A": "Earth’s magnetic field",
+        "B": "Radio stations in other countries",
+        "C": "The color of underwater coral",
+        "D": "Train schedules"
+      },
+      "correct_answer": "A",
+      "explanation": "Many birds sense Earth’s magnetic field for direction when skies are cloudy.",
+      "commonMistake": "Choosing B or D—not mentioned."
+    },
+    {
+      "number": 4,
+      "question_type": "Inference",
+      "narrator_text": "What does the professor imply about bird navigation?",
+      "options": {
+        "A": "Birds rely on only one cue for every trip",
+        "B": "Migration uses a combination of celestial, magnetic, and landscape cues",
+        "C": "Young birds never learn from parents",
+        "D": "City lights improve navigation for all species"
+      },
+      "correct_answer": "B",
+      "explanation": "She calls migration a toolkit of celestial, magnetic, and landscape cues.",
+      "commonMistake": "Choosing A—she emphasizes several cues at once."
+    }
+  ]
+}
