@@ -4,9 +4,9 @@
   "purpose": "guided_and_mocks",
   "section": "listening",
   "part": "Part A short conversations + Part B long conversations",
-  "note": "Part A LIST-0001-0100; Part B LIST-0101–0122 with audio. ready_for_practice requires audio.",
-  "item_count": 122,
-  "total_questions": 188,
+  "note": "Part A LIST-0001-0100; Part B LIST-0101–0123 with audio. ready_for_practice requires audio.",
+  "item_count": 123,
+  "total_questions": 192,
   "items": [
     {
       "id": "LIST-0001",
@@ -1612,6 +1612,20 @@
       "has_audio": true,
       "audio": "listening-assets/items/LIST-0122/audio.mp3",
       "data": "listening-assets/items/LIST-0122/item22_club_sports.json",
+      "production_status": "production_ready",
+      "ready_for_practice": true,
+      "part": "B"
+    },
+    {
+      "id": "LIST-0123",
+      "asset_id": "LIST-0123",
+      "asset_type": "Part B - Long Conversation",
+      "difficulty": "Medium",
+      "topic": "Library Group Study Room Booking",
+      "question_count": 4,
+      "has_audio": true,
+      "audio": "listening-assets/items/LIST-0123/audio.mp3",
+      "data": "listening-assets/items/LIST-0123/item23_study_room.json",
       "production_status": "production_ready",
       "ready_for_practice": true,
       "part": "B"
