@@ -4,9 +4,9 @@
   "purpose": "guided_and_mocks",
   "section": "listening",
   "part": "Part A short conversations + Part B long conversations",
-  "note": "Part A LIST-0001-0100; Part B LIST-0101–0121 with audio. ready_for_practice requires audio.",
-  "item_count": 121,
-  "total_questions": 184,
+  "note": "Part A LIST-0001-0100; Part B LIST-0101–0122 with audio. ready_for_practice requires audio.",
+  "item_count": 122,
+  "total_questions": 188,
   "items": [
     {
       "id": "LIST-0001",
@@ -1598,6 +1598,20 @@
       "has_audio": true,
       "audio": "listening-assets/items/LIST-0121/audio.mp3",
       "data": "listening-assets/items/LIST-0121/item21_shuttle_schedule.json",
+      "production_status": "production_ready",
+      "ready_for_practice": true,
+      "part": "B"
+    },
+    {
+      "id": "LIST-0122",
+      "asset_id": "LIST-0122",
+      "asset_type": "Part B - Long Conversation",
+      "difficulty": "Medium",
+      "topic": "Club Sports Registration Deadline",
+      "question_count": 4,
+      "has_audio": true,
+      "audio": "listening-assets/items/LIST-0122/audio.mp3",
+      "data": "listening-assets/items/LIST-0122/item22_club_sports.json",
       "production_status": "production_ready",
       "ready_for_practice": true,
       "part": "B"
