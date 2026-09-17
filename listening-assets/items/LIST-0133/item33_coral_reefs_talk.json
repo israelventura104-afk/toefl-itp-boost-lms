@@ -1,0 +1,124 @@
+{
+  "id": "LIST-0133",
+  "part": "C",
+  "topic": "Coral Reefs and Ocean Warming",
+  "setting": "A short lecture in a marine biology class about coral bleaching and rising sea temperatures.",
+  "speaker": {
+    "role": "speaker1",
+    "name": "Man (Marine Biology Professor)",
+    "voice": "male"
+  },
+  "speakers": [
+    {
+      "role": "narrator",
+      "voice": "narrator"
+    },
+    {
+      "role": "speaker1",
+      "name": "Man (Marine Biology Professor)",
+      "voice": "male"
+    }
+  ],
+  "narrator_intro": "Listen to part of a talk in a marine biology class.",
+  "talk": [
+    {
+      "speaker": "speaker1",
+      "text": "Coral reefs look like rocky gardens, but living coral animals build those structures over time."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "Many corals depend on tiny algae that live inside their tissues and share energy from photosynthesis."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "When ocean water stays unusually warm, that partnership breaks down—a process called bleaching."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "The coral turns pale because it loses the colorful algae, and without them it can starve."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "Some reefs recover if temperatures cool quickly, but repeated heat waves raise the risk of mass die-offs."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "Bleaching also weakens habitat for fish that communities rely on for food and tourism."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "Scientists track surface temperatures with satellites and send divers to count bleached colonies on site."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "Protecting reefs means cutting greenhouse gases and reducing local stress from pollution and overfishing."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "In short, coral health is an early warning system for how oceans respond to a warming climate."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "Next week we’ll examine case studies from the Great Barrier Reef and the Caribbean."
+    }
+  ],
+  "narrator_outro": "Now get ready to answer the questions.",
+  "questions": [
+    {
+      "number": 1,
+      "question_type": "Main Idea",
+      "narrator_text": "What is the talk mainly about?",
+      "options": {
+        "A": "How to build artificial beaches for tourists",
+        "B": "Coral bleaching and how ocean warming threatens reefs",
+        "C": "Why fish prefer cold rivers",
+        "D": "How satellites photograph cities"
+      },
+      "correct_answer": "B",
+      "explanation": "The professor explains bleaching, warm water stress, and why reef health signals climate impacts.",
+      "commonMistake": "Choosing D—satellites are only mentioned as a monitoring tool."
+    },
+    {
+      "number": 2,
+      "question_type": "Detail",
+      "narrator_text": "According to the professor, why do many corals need algae?",
+      "options": {
+        "A": "The algae share energy from photosynthesis with the coral",
+        "B": "The algae scare away all sharks",
+        "C": "The algae turn seawater into fresh water",
+        "D": "The algae build wooden boats"
+      },
+      "correct_answer": "A",
+      "explanation": "He says algae live inside coral tissues and share energy from photosynthesis.",
+      "commonMistake": "Choosing B or C—those are not mentioned."
+    },
+    {
+      "number": 3,
+      "question_type": "Detail",
+      "narrator_text": "What happens during bleaching?",
+      "options": {
+        "A": "Coral loses its algae, turns pale, and may starve",
+        "B": "Coral grows faster than ever",
+        "C": "Ocean water freezes around the reef",
+        "D": "Fish paint the coral with new colors"
+      },
+      "correct_answer": "A",
+      "explanation": "Bleaching is when coral loses colorful algae, turns pale, and can starve.",
+      "commonMistake": "Choosing B—bleaching is harmful, not helpful growth."
+    },
+    {
+      "number": 4,
+      "question_type": "Inference",
+      "narrator_text": "What does the professor imply about protecting reefs?",
+      "options": {
+        "A": "Only tourism matters; climate action does not",
+        "B": "Both global emissions cuts and local reductions in pollution and overfishing matter",
+        "C": "Reefs need no protection if satellites exist",
+        "D": "Divers should stop visiting oceans entirely"
+      },
+      "correct_answer": "B",
+      "explanation": "He links greenhouse gas cuts with reducing local stress from pollution and overfishing.",
+      "commonMistake": "Choosing A—he treats climate and local stress together."
+    }
+  ]
+}
