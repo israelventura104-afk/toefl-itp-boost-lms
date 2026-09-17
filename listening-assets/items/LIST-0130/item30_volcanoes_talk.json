@@ -1,0 +1,124 @@
+{
+  "id": "LIST-0130",
+  "part": "C",
+  "topic": "Volcanoes and Plate Boundaries",
+  "setting": "A short lecture in an introductory geology class about where volcanoes form.",
+  "speaker": {
+    "role": "speaker1",
+    "name": "Woman (Geology Professor)",
+    "voice": "female"
+  },
+  "speakers": [
+    {
+      "role": "narrator",
+      "voice": "narrator"
+    },
+    {
+      "role": "speaker1",
+      "name": "Woman (Geology Professor)",
+      "voice": "female"
+    }
+  ],
+  "narrator_intro": "Listen to part of a talk in a geology class.",
+  "talk": [
+    {
+      "speaker": "speaker1",
+      "text": "Volcanoes are not randomly scattered across Earth's surface."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "Most of them form near the edges of tectonic plates—huge slabs of crust that move slowly over time."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "At divergent boundaries, plates pull apart and magma rises to fill the gap, creating new crust."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "The mid-ocean ridges are a classic example of that process under the sea."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "At convergent boundaries, one plate can sink beneath another in a process called subduction."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "Water carried down with the sinking plate helps melt rock above it, feeding chains of volcanoes like those around the Pacific “Ring of Fire.”"
+    },
+    {
+      "speaker": "speaker1",
+      "text": "A smaller number of volcanoes form over hot spots, where a plume of heat rises from deep in the mantle."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "As a plate drifts over a hot spot, a chain of islands can form—Hawaii is the usual classroom example."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "So when you see a volcanic chain on a map, ask first: plate edge or hot spot?"
+    },
+    {
+      "speaker": "speaker1",
+      "text": "Next time we'll talk about how magma chemistry changes eruption style—from gentle lava flows to explosive ash columns."
+    }
+  ],
+  "narrator_outro": "Now get ready to answer the questions.",
+  "questions": [
+    {
+      "number": 1,
+      "question_type": "Main Idea",
+      "narrator_text": "What is the talk mainly about?",
+      "options": {
+        "A": "How to forecast tomorrow's weather with volcanoes",
+        "B": "Where volcanoes form in relation to tectonic plates and hot spots",
+        "C": "How to build a model volcano for a science fair",
+        "D": "Why oceans have no geological activity"
+      },
+      "correct_answer": "B",
+      "explanation": "The professor explains volcanoes at divergent and convergent plate boundaries and over hot spots.",
+      "commonMistake": "Choosing A—weather forecasting is not the topic."
+    },
+    {
+      "number": 2,
+      "question_type": "Detail",
+      "narrator_text": "What happens at divergent boundaries, according to the professor?",
+      "options": {
+        "A": "Plates pull apart and magma rises to create new crust",
+        "B": "Plates stop moving forever",
+        "C": "Only hot spots can exist",
+        "D": "Oceans dry up completely"
+      },
+      "correct_answer": "A",
+      "explanation": "At divergent boundaries plates pull apart and magma rises to fill the gap, creating new crust.",
+      "commonMistake": "Choosing B—plates continue to move in the talk's account."
+    },
+    {
+      "number": 3,
+      "question_type": "Detail",
+      "narrator_text": "How does subduction help create volcanoes?",
+      "options": {
+        "A": "By freezing magma instantly at the surface",
+        "B": "Water carried down with the sinking plate helps melt rock above it",
+        "C": "By removing all oxygen from the atmosphere",
+        "D": "By pushing continents into the Sun"
+      },
+      "correct_answer": "B",
+      "explanation": "In subduction, water carried down helps melt rock above the sinking plate, feeding volcanic chains.",
+      "commonMistake": "Choosing A—that is not the mechanism she describes."
+    },
+    {
+      "number": 4,
+      "question_type": "Detail",
+      "narrator_text": "What example does the professor give of a hot-spot chain?",
+      "options": {
+        "A": "The Amazon rainforest",
+        "B": "Hawaii",
+        "C": "The Sahara Desert dunes",
+        "D": "The Moon's surface"
+      },
+      "correct_answer": "B",
+      "explanation": "She says Hawaii is the usual classroom example of a hot-spot island chain.",
+      "commonMistake": "Choosing A or C—those are not given as hot-spot examples here."
+    }
+  ]
+}
