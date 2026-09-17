@@ -81,7 +81,13 @@
 
   function isLongForm(item) {
     const type = String(item.assetType || "").toLowerCase();
-    return type.includes("part b") || type.includes("long") || (item.questions || []).length > 1;
+    return (
+      type.includes("part b") ||
+      type.includes("part c") ||
+      type.includes("long") ||
+      type.includes("talk") ||
+      (item.questions || []).length > 1
+    );
   }
 
   /**

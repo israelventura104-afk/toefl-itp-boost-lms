@@ -4,9 +4,9 @@
   "purpose": "guided_and_mocks",
   "section": "listening",
   "part": "Part A short conversations + Part B long conversations",
-  "note": "Part A LIST-0001-0100; Part B LIST-0101–0125 COMPLETE with audio. Part C 0126–0150 pending. ready_for_practice requires audio.",
-  "item_count": 125,
-  "total_questions": 200,
+  "note": "Part A 0001–0100; Part B 0101–0125; Part C starting 0126. ready_for_practice requires audio.",
+  "item_count": 126,
+  "total_questions": 204,
   "items": [
     {
       "id": "LIST-0001",
@@ -1657,6 +1657,20 @@
       "production_status": "production_ready",
       "ready_for_practice": true,
       "part": "B"
+    },
+    {
+      "id": "LIST-0126",
+      "asset_id": "LIST-0126",
+      "asset_type": "Part C - Short Talk",
+      "difficulty": "Medium",
+      "topic": "Photosynthesis in Leaf Cells",
+      "question_count": 4,
+      "has_audio": true,
+      "audio": "listening-assets/items/LIST-0126/audio.mp3",
+      "data": "listening-assets/items/LIST-0126/item26_photosynthesis_talk.json",
+      "production_status": "production_ready",
+      "ready_for_practice": true,
+      "part": "C"
     }
   ]
 }
