@@ -1,0 +1,124 @@
+{
+  "id": "LIST-0134",
+  "part": "C",
+  "topic": "The Science of Habit Formation",
+  "setting": "A short talk in an introductory psychology class about how habits form and how to change them.",
+  "speaker": {
+    "role": "speaker1",
+    "name": "Woman (Psychology Professor)",
+    "voice": "female"
+  },
+  "speakers": [
+    {
+      "role": "narrator",
+      "voice": "narrator"
+    },
+    {
+      "role": "speaker1",
+      "name": "Woman (Psychology Professor)",
+      "voice": "female"
+    }
+  ],
+  "narrator_intro": "Listen to part of a talk in a psychology class.",
+  "talk": [
+    {
+      "speaker": "speaker1",
+      "text": "A habit is a behavior that becomes automatic after repeated practice in a stable context."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "Researchers often describe a simple loop: cue, routine, and reward."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "The cue is a trigger—time of day, a place, or a feeling—that starts the behavior."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "The routine is the action itself, and the reward is whatever makes your brain want to repeat it."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "Once a habit is strong, you may start the routine with little conscious planning."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "That efficiency saves mental energy, but it also makes unhealthy habits hard to break."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "One evidence-based strategy is to keep the same cue and reward while swapping in a better routine."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "For example, if stress cues afternoon snacking, you might replace chips with a short walk that still reduces tension."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "Changing the environment—removing the cue—also helps more than relying on willpower alone."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "Next class we’ll look at experiments on how long new habits typically take to stabilize."
+    }
+  ],
+  "narrator_outro": "Now get ready to answer the questions.",
+  "questions": [
+    {
+      "number": 1,
+      "question_type": "Main Idea",
+      "narrator_text": "What is the talk mainly about?",
+      "options": {
+        "A": "How habits form and one way to change them",
+        "B": "How to memorize vocabulary lists overnight",
+        "C": "Why psychology classes should be canceled",
+        "D": "How to design a campus cafeteria menu"
+      },
+      "correct_answer": "A",
+      "explanation": "The professor explains the cue–routine–reward loop and strategies for changing habits.",
+      "commonMistake": "Choosing D—snacking is only an example, not the main topic."
+    },
+    {
+      "number": 2,
+      "question_type": "Detail",
+      "narrator_text": "According to the professor, what are the three parts of the habit loop?",
+      "options": {
+        "A": "Cue, routine, and reward",
+        "B": "Test, grade, and diploma",
+        "C": "Sleep, dream, and wake",
+        "D": "Buy, sell, and profit"
+      },
+      "correct_answer": "A",
+      "explanation": "She describes the loop as cue, routine, and reward.",
+      "commonMistake": "Choosing B—unrelated campus terms."
+    },
+    {
+      "number": 3,
+      "question_type": "Detail",
+      "narrator_text": "What strategy does she recommend for changing a habit?",
+      "options": {
+        "A": "Keep the same cue and reward but swap in a better routine",
+        "B": "Ignore cues and never seek any reward",
+        "C": "Change every habit at the same time with no plan",
+        "D": "Only use willpower and never change the environment"
+      },
+      "correct_answer": "A",
+      "explanation": "She says keep cue and reward, replace the routine; also changing the environment helps.",
+      "commonMistake": "Choosing D—she says environment change helps more than willpower alone."
+    },
+    {
+      "number": 4,
+      "question_type": "Inference",
+      "narrator_text": "What can be inferred about strong habits?",
+      "options": {
+        "A": "They always require careful planning every time",
+        "B": "They can run with little conscious planning, which makes unhealthy ones hard to break",
+        "C": "They disappear after one day",
+        "D": "They only form in laboratories"
+      },
+      "correct_answer": "B",
+      "explanation": "She notes strong habits start with little conscious planning and unhealthy ones are hard to break.",
+      "commonMistake": "Choosing A—that contradicts automaticity."
+    }
+  ]
+}
