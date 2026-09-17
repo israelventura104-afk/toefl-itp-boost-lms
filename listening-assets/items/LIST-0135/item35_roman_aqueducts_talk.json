@@ -1,0 +1,124 @@
+{
+  "id": "LIST-0135",
+  "part": "C",
+  "topic": "Ancient Roman Aqueducts",
+  "setting": "A short talk in an archaeology class about how Roman aqueducts supplied cities with water.",
+  "speaker": {
+    "role": "speaker1",
+    "name": "Man (Archaeology Professor)",
+    "voice": "male"
+  },
+  "speakers": [
+    {
+      "role": "narrator",
+      "voice": "narrator"
+    },
+    {
+      "role": "speaker1",
+      "name": "Man (Archaeology Professor)",
+      "voice": "male"
+    }
+  ],
+  "narrator_intro": "Listen to part of a talk in an archaeology class.",
+  "talk": [
+    {
+      "speaker": "speaker1",
+      "text": "Roman cities needed huge amounts of fresh water for drinking, baths, and fountains."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "Engineers solved that with aqueducts—channels that carried water from distant springs into town."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "Most of an aqueduct ran underground or in covered trenches to keep the water clean and cool."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "The famous arched bridges appear where the route had to cross a valley while keeping a gentle slope."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "Gravity did the work: a slight downhill grade moved water for kilometers without pumps."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "Inside the city, water reached public baths, street fountains, and sometimes private homes of the wealthy."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "Maintenance crews cleared sediment and repaired leaks, because a break could cut supply for days."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "Some aqueducts still stand, which tells us how carefully the Romans planned long-distance water systems."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "So when you see those arches in photos, remember they were only one visible piece of a much longer network."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "Next time we’ll compare Roman water technology with earlier systems in Greece and the Near East."
+    }
+  ],
+  "narrator_outro": "Now get ready to answer the questions.",
+  "questions": [
+    {
+      "number": 1,
+      "question_type": "Main Idea",
+      "narrator_text": "What is the talk mainly about?",
+      "options": {
+        "A": "How Roman aqueducts brought water to cities",
+        "B": "How Romans invented electric pumps",
+        "C": "Why baths were banned in Rome",
+        "D": "How to dig modern subway tunnels"
+      },
+      "correct_answer": "A",
+      "explanation": "The professor explains aqueduct design, gravity flow, and city water use.",
+      "commonMistake": "Choosing B—he says gravity moved water without pumps."
+    },
+    {
+      "number": 2,
+      "question_type": "Detail",
+      "narrator_text": "According to the professor, why did most of an aqueduct run underground or in covered trenches?",
+      "options": {
+        "A": "To keep the water clean and cool",
+        "B": "To hide treasure from enemies",
+        "C": "Because Romans disliked open sky",
+        "D": "To make the water salty"
+      },
+      "correct_answer": "A",
+      "explanation": "He says covered routes kept water clean and cool.",
+      "commonMistake": "Choosing B—not mentioned."
+    },
+    {
+      "number": 3,
+      "question_type": "Detail",
+      "narrator_text": "What made the water move through the aqueduct?",
+      "options": {
+        "A": "A slight downhill grade using gravity",
+        "B": "Teams of horses pulling carts of water",
+        "C": "Steam engines under every arch",
+        "D": "Ocean tides pushing inland"
+      },
+      "correct_answer": "A",
+      "explanation": "Gravity and a gentle slope moved water for kilometers without pumps.",
+      "commonMistake": "Choosing C—modern technology not used."
+    },
+    {
+      "number": 4,
+      "question_type": "Inference",
+      "narrator_text": "What does the professor imply about the arched bridges people photograph?",
+      "options": {
+        "A": "They were the entire aqueduct system by themselves",
+        "B": "They were only the visible part of a much longer water network",
+        "C": "They were built only for decoration in theaters",
+        "D": "They never carried water at all"
+      },
+      "correct_answer": "B",
+      "explanation": "He says the arches were one visible piece of a much longer network.",
+      "commonMistake": "Choosing A—he stresses the longer underground route."
+    }
+  ]
+}
