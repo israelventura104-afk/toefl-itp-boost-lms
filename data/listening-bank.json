@@ -4,9 +4,9 @@
   "purpose": "guided_and_mocks",
   "section": "listening",
   "part": "Part A short conversations + Part B long conversations",
-  "note": "Part A LIST-0001-0100; Part B LIST-0101–0119 with audio. ready_for_practice requires audio.",
-  "item_count": 119,
-  "total_questions": 176,
+  "note": "Part A LIST-0001-0100; Part B LIST-0101–0120 with audio. ready_for_practice requires audio.",
+  "item_count": 120,
+  "total_questions": 180,
   "items": [
     {
       "id": "LIST-0001",
@@ -1570,6 +1570,20 @@
       "has_audio": true,
       "audio": "listening-assets/items/LIST-0119/audio.mp3",
       "data": "listening-assets/items/LIST-0119/item19_counseling_center.json",
+      "production_status": "production_ready",
+      "ready_for_practice": true,
+      "part": "B"
+    },
+    {
+      "id": "LIST-0120",
+      "asset_id": "LIST-0120",
+      "asset_type": "Part B - Long Conversation",
+      "difficulty": "Medium",
+      "topic": "Campus Printer Quota / Print Shop",
+      "question_count": 4,
+      "has_audio": true,
+      "audio": "listening-assets/items/LIST-0120/audio.mp3",
+      "data": "listening-assets/items/LIST-0120/item20_print_shop_quota.json",
       "production_status": "production_ready",
       "ready_for_practice": true,
       "part": "B"
