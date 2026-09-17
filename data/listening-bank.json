@@ -5,8 +5,8 @@
   "section": "listening",
   "part": "Part A short conversations + Part B long conversations",
   "note": "Part A 0001–0100; Part B 0101–0125; Part C 0126–0129 published; 0130 script ready. ready_for_practice requires audio.",
-  "item_count": 133,
-  "total_questions": 232,
+  "item_count": 134,
+  "total_questions": 236,
   "items": [
     {
       "id": "LIST-0001",
@@ -1766,6 +1766,20 @@
       "has_audio": true,
       "audio": "listening-assets/items/LIST-0133/audio.mp3",
       "data": "listening-assets/items/LIST-0133/item33_coral_reefs_talk.json",
+      "production_status": "production_ready",
+      "ready_for_practice": true,
+      "part": "C"
+    },
+    {
+      "id": "LIST-0134",
+      "asset_id": "LIST-0134",
+      "asset_type": "Part C - Short Talk",
+      "difficulty": "Medium",
+      "topic": "The Science of Habit Formation",
+      "question_count": 4,
+      "has_audio": true,
+      "audio": "listening-assets/items/LIST-0134/audio.mp3",
+      "data": "listening-assets/items/LIST-0134/item34_habit_formation_talk.json",
       "production_status": "production_ready",
       "ready_for_practice": true,
       "part": "C"
