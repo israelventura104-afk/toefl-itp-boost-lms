@@ -1,0 +1,124 @@
+{
+  "id": "LIST-0129",
+  "part": "C",
+  "topic": "Sleep Cycles and Memory",
+  "setting": "A short lecture in an introductory psychology class about how sleep stages relate to memory.",
+  "speaker": {
+    "role": "speaker1",
+    "name": "Man (Psychology Professor)",
+    "voice": "male"
+  },
+  "speakers": [
+    {
+      "role": "narrator",
+      "voice": "narrator"
+    },
+    {
+      "role": "speaker1",
+      "name": "Man (Psychology Professor)",
+      "voice": "male"
+    }
+  ],
+  "narrator_intro": "Listen to part of a talk in a psychology class.",
+  "talk": [
+    {
+      "speaker": "speaker1",
+      "text": "Many students think sleep is just “time off” for the brain. Research suggests the opposite."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "During a normal night, we cycle through light sleep, deep sleep, and REM sleep several times."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "Deep sleep seems especially important for stabilizing factual memories—the kind you need for dates, definitions, and formulas."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "REM sleep, when most dreaming occurs, appears more linked to integrating ideas and practicing skills."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "If you cut sleep short, you often lose more REM toward morning, which can hurt problem-solving the next day."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "That is one reason an all-nighter can leave you able to recognize a term but unable to apply it on an essay."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "Naps help a little, but they rarely replace a full set of night cycles."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "Caffeine can make you feel alert without restoring the memory processes that happen during sleep."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "So for exam weeks, consistent sleep may matter as much as another hour of review."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "Next lecture we'll look at experiments that tested sleep and vocabulary learning in adults."
+    }
+  ],
+  "narrator_outro": "Now get ready to answer the questions.",
+  "questions": [
+    {
+      "number": 1,
+      "question_type": "Main Idea",
+      "narrator_text": "What is the talk mainly about?",
+      "options": {
+        "A": "How to brew stronger coffee before exams",
+        "B": "How sleep stages support different kinds of memory",
+        "C": "Why dreaming is always meaningless",
+        "D": "How to avoid all deep sleep permanently"
+      },
+      "correct_answer": "B",
+      "explanation": "The professor links deep sleep and REM sleep to different memory functions and study outcomes.",
+      "commonMistake": "Choosing A—caffeine is mentioned only as something that does not replace sleep processes."
+    },
+    {
+      "number": 2,
+      "question_type": "Detail",
+      "narrator_text": "According to the professor, what is deep sleep especially important for?",
+      "options": {
+        "A": "Stabilizing factual memories such as dates and definitions",
+        "B": "Making caffeine more effective",
+        "C": "Stopping all dreaming forever",
+        "D": "Replacing the need to study"
+      },
+      "correct_answer": "A",
+      "explanation": "He says deep sleep seems especially important for stabilizing factual memories like dates, definitions, and formulas.",
+      "commonMistake": "Choosing D—sleep supports memory; it does not replace study."
+    },
+    {
+      "number": 3,
+      "question_type": "Detail",
+      "narrator_text": "What often happens if sleep is cut short?",
+      "options": {
+        "A": "People gain extra deep sleep at sunrise",
+        "B": "More REM sleep toward morning is lost, which can hurt problem-solving",
+        "C": "Naps automatically become a full night of sleep",
+        "D": "Factual memory improves without any REM"
+      },
+      "correct_answer": "B",
+      "explanation": "Cutting sleep short often reduces later REM, which can hurt problem-solving the next day.",
+      "commonMistake": "Choosing A—he does not say deep sleep increases when sleep is shortened."
+    },
+    {
+      "number": 4,
+      "question_type": "Inference",
+      "narrator_text": "What does the professor suggest about caffeine?",
+      "options": {
+        "A": "It fully restores memory processes lost from missing sleep",
+        "B": "It can increase alertness without restoring sleep-related memory processes",
+        "C": "It is required before every psychology exam",
+        "D": "It only works during REM sleep"
+      },
+      "correct_answer": "B",
+      "explanation": "He says caffeine can make you feel alert without restoring the memory processes that happen during sleep.",
+      "commonMistake": "Choosing A—that is what he warns against assuming."
+    }
+  ]
+}
