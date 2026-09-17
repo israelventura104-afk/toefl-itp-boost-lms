@@ -4,9 +4,9 @@
   "purpose": "guided_and_mocks",
   "section": "listening",
   "part": "Part A short conversations + Part B long conversations",
-  "note": "Part A 0001–0100; Part B 0101–0125; Part C 0126–0128 published. ready_for_practice requires audio.",
-  "item_count": 128,
-  "total_questions": 212,
+  "note": "Part A 0001–0100; Part B 0101–0125; Part C 0126–0129 published; 0130 script ready. ready_for_practice requires audio.",
+  "item_count": 129,
+  "total_questions": 216,
   "items": [
     {
       "id": "LIST-0001",
@@ -1696,6 +1696,20 @@
       "has_audio": true,
       "audio": "listening-assets/items/LIST-0128/audio.mp3",
       "data": "listening-assets/items/LIST-0128/item28_impressionism_talk.json",
+      "production_status": "production_ready",
+      "ready_for_practice": true,
+      "part": "C"
+    },
+    {
+      "id": "LIST-0129",
+      "asset_id": "LIST-0129",
+      "asset_type": "Part C - Short Talk",
+      "difficulty": "Medium",
+      "topic": "Sleep Cycles and Memory",
+      "question_count": 4,
+      "has_audio": true,
+      "audio": "listening-assets/items/LIST-0129/audio.mp3",
+      "data": "listening-assets/items/LIST-0129/item29_sleep_memory_talk.json",
       "production_status": "production_ready",
       "ready_for_practice": true,
       "part": "C"
