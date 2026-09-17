@@ -1,0 +1,124 @@
+{
+  "id": "LIST-0128",
+  "part": "C",
+  "topic": "Impressionism in 19th-Century Painting",
+  "setting": "A short lecture in an art history class about why Impressionist painters worked outdoors and how critics first responded.",
+  "speaker": {
+    "role": "speaker1",
+    "name": "Woman (Art History Professor)",
+    "voice": "female"
+  },
+  "speakers": [
+    {
+      "role": "narrator",
+      "voice": "narrator"
+    },
+    {
+      "role": "speaker1",
+      "name": "Woman (Art History Professor)",
+      "voice": "female"
+    }
+  ],
+  "narrator_intro": "Listen to part of a talk in an art history class.",
+  "talk": [
+    {
+      "speaker": "speaker1",
+      "text": "In the 1870s, a group of French painters began working in a way that shocked many viewers."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "Instead of finishing every detail in a studio, Impressionists often painted outdoors to catch changing light."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "They used short, visible brushstrokes and brighter colors placed side by side."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "From a distance, those strokes blend in the viewer’s eye; up close, the surface looks rough and unfinished."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "Subjects were everyday scenes—cafés, train stations, rivers, and ordinary people—not only gods or kings."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "Early critics mocked the style; the name “Impressionism” itself began as an insult after a painting titled Impression, Sunrise."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "Dealers and independent exhibitions helped the artists reach buyers outside the official Salon."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "Over time, the public grew used to the look, and museums later treated these works as modern classics."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "What matters for us is the shift: painting became about momentary perception, not only polished storytelling."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "Next week we'll compare Impressionism with Post-Impressionist approaches by Seurat and Cézanne."
+    }
+  ],
+  "narrator_outro": "Now get ready to answer the questions.",
+  "questions": [
+    {
+      "number": 1,
+      "question_type": "Main Idea",
+      "narrator_text": "What is the talk mainly about?",
+      "options": {
+        "A": "How to stretch a canvas for oil painting",
+        "B": "How Impressionist painters changed subject and technique in the 1870s",
+        "C": "Why the Salon banned all landscape art forever",
+        "D": "How digital cameras create modern museum photos"
+      },
+      "correct_answer": "B",
+      "explanation": "The professor explains outdoor light, brushstrokes, everyday subjects, and early criticism of Impressionism.",
+      "commonMistake": "Choosing C—the Salon is mentioned as an official path artists sometimes bypassed, not a total ban on landscapes."
+    },
+    {
+      "number": 2,
+      "question_type": "Detail",
+      "narrator_text": "Why did many Impressionists paint outdoors?",
+      "options": {
+        "A": "To avoid buying paint",
+        "B": "To catch changing light",
+        "C": "Because studios were illegal",
+        "D": "To hide from art dealers"
+      },
+      "correct_answer": "B",
+      "explanation": "She says they often painted outdoors to catch changing light.",
+      "commonMistake": "Choosing A or C—those reasons are not given."
+    },
+    {
+      "number": 3,
+      "question_type": "Detail",
+      "narrator_text": "How did the name “Impressionism” begin, according to the professor?",
+      "options": {
+        "A": "As an official government award",
+        "B": "As an insult from early critics after Impression, Sunrise",
+        "C": "As a brand name invented by a paint company",
+        "D": "As a title required by the Salon for every work"
+      },
+      "correct_answer": "B",
+      "explanation": "The name began as an insult after a painting titled Impression, Sunrise.",
+      "commonMistake": "Choosing A—early response was mockery, not an award."
+    },
+    {
+      "number": 4,
+      "question_type": "Inference",
+      "narrator_text": "What shift in painting does the professor emphasize?",
+      "options": {
+        "A": "A move toward momentary perception rather than only polished storytelling",
+        "B": "A rule that artists must paint only kings and gods",
+        "C": "A requirement to finish every canvas indoors",
+        "D": "A rejection of all color in favor of black and white"
+      },
+      "correct_answer": "A",
+      "explanation": "She says painting became about momentary perception, not only polished storytelling.",
+      "commonMistake": "Choosing B—everyday scenes replaced a focus only on gods or kings."
+    }
+  ]
+}
