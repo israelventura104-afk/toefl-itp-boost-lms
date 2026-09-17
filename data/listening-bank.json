@@ -4,9 +4,9 @@
   "purpose": "guided_and_mocks",
   "section": "listening",
   "part": "Part A short conversations + Part B long conversations",
-  "note": "Part A LIST-0001-0100; Part B LIST-0101–0124 with audio. ready_for_practice requires audio.",
-  "item_count": 124,
-  "total_questions": 196,
+  "note": "Part A LIST-0001-0100; Part B LIST-0101–0125 COMPLETE with audio. Part C 0126–0150 pending. ready_for_practice requires audio.",
+  "item_count": 125,
+  "total_questions": 200,
   "items": [
     {
       "id": "LIST-0001",
@@ -1640,6 +1640,20 @@
       "has_audio": true,
       "audio": "listening-assets/items/LIST-0124/audio.mp3",
       "data": "listening-assets/items/LIST-0124/item24_career_fair.json",
+      "production_status": "production_ready",
+      "ready_for_practice": true,
+      "part": "B"
+    },
+    {
+      "id": "LIST-0125",
+      "asset_id": "LIST-0125",
+      "asset_type": "Part B - Long Conversation",
+      "difficulty": "Medium",
+      "topic": "International Student Visa Document Pickup",
+      "question_count": 4,
+      "has_audio": true,
+      "audio": "listening-assets/items/LIST-0125/audio.mp3",
+      "data": "listening-assets/items/LIST-0125/item25_visa_documents.json",
       "production_status": "production_ready",
       "ready_for_practice": true,
       "part": "B"
