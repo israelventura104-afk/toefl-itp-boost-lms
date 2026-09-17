@@ -1,0 +1,124 @@
+{
+  "id": "LIST-0126",
+  "part": "C",
+  "topic": "Photosynthesis in Leaf Cells",
+  "setting": "A short lecture in an introductory biology class about how leaf cells capture light energy.",
+  "speaker": {
+    "role": "speaker1",
+    "name": "Woman (Biology Professor)",
+    "voice": "female"
+  },
+  "speakers": [
+    {
+      "role": "narrator",
+      "voice": "narrator"
+    },
+    {
+      "role": "speaker1",
+      "name": "Woman (Biology Professor)",
+      "voice": "female"
+    }
+  ],
+  "narrator_intro": "Listen to part of a talk in a biology class.",
+  "talk": [
+    {
+      "speaker": "speaker1",
+      "text": "Today I want to focus on what happens inside a leaf when sunlight hits it."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "Photosynthesis is the process plants use to convert light energy into chemical energy stored as sugar."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "Most of the work takes place in chloroplasts—tiny green structures packed with chlorophyll."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "Chlorophyll absorbs mainly blue and red wavelengths; green light is mostly reflected, which is why leaves look green to us."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "In the first stage, called the light-dependent reactions, water molecules are split and oxygen is released as a by-product."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "That stage also produces energy carriers—ATP and NADPH—that power the next stage."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "In the Calvin cycle, carbon dioxide from the air is fixed into sugar using those energy carriers."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "Notice the plant does not “eat” sunlight the way animals eat food; it transforms light into a usable chemical form."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "If a plant gets too little light, sugar production slows, and growth can stall even when water and soil nutrients are available."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "Next class we'll look at how temperature and carbon dioxide levels change the rate of the Calvin cycle."
+    }
+  ],
+  "narrator_outro": "Now get ready to answer the questions.",
+  "questions": [
+    {
+      "number": 1,
+      "question_type": "Main Idea",
+      "narrator_text": "What is the talk mainly about?",
+      "options": {
+        "A": "How animals digest sugar from plants",
+        "B": "How leaf cells convert light into chemical energy",
+        "C": "How to grow plants without any water",
+        "D": "How museums display plant fossils"
+      },
+      "correct_answer": "B",
+      "explanation": "The professor explains photosynthesis inside leaf cells: chloroplasts, light reactions, and the Calvin cycle.",
+      "commonMistake": "Choosing A—animals eating plants are not discussed; the focus is the plant’s energy conversion."
+    },
+    {
+      "number": 2,
+      "question_type": "Detail",
+      "narrator_text": "According to the professor, why do leaves usually look green?",
+      "options": {
+        "A": "They absorb only green light for sugar production",
+        "B": "They reflect most green light while absorbing blue and red wavelengths",
+        "C": "They store green oxygen inside the stem",
+        "D": "They paint the leaf surface with green minerals from soil"
+      },
+      "correct_answer": "B",
+      "explanation": "Chlorophyll absorbs mainly blue and red light; green is mostly reflected, so leaves look green.",
+      "commonMistake": "Choosing A—green is reflected, not the main wavelength absorbed for the process described."
+    },
+    {
+      "number": 3,
+      "question_type": "Detail",
+      "narrator_text": "What is released when water is split in the light-dependent reactions?",
+      "options": {
+        "A": "Nitrogen gas",
+        "B": "Pure carbon solid",
+        "C": "Oxygen",
+        "D": "Soil fertilizer"
+      },
+      "correct_answer": "C",
+      "explanation": "She says water molecules are split and oxygen is released as a by-product.",
+      "commonMistake": "Choosing A or D—those are not named as products of splitting water here."
+    },
+    {
+      "number": 4,
+      "question_type": "Inference",
+      "narrator_text": "What can be inferred if a healthy plant receives very little light?",
+      "options": {
+        "A": "It will immediately stop needing carbon dioxide forever",
+        "B": "Sugar production may slow and growth can stall even with water and nutrients",
+        "C": "Chloroplasts will start absorbing only green light",
+        "D": "The Calvin cycle will run faster than usual"
+      },
+      "correct_answer": "B",
+      "explanation": "She notes that with too little light, sugar production slows and growth can stall even when water and nutrients are available.",
+      "commonMistake": "Choosing D—less light would not make the Calvin cycle faster in this talk."
+    }
+  ]
+}
