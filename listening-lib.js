@@ -83,38 +83,58 @@
     };
   }
 
-  function isLongForm(item) {
+  function isPartC(item) {
+    const type = String(item.assetType || "").toLowerCase();
+    return type.includes("part c") || (type.includes("talk") && !type.includes("part b"));
+  }
+
+  function isPartB(item) {
+    if (isPartC(item)) return false;
     const type = String(item.assetType || "").toLowerCase();
     return (
       type.includes("part b") ||
-      type.includes("part c") ||
-      type.includes("long") ||
-      type.includes("talk") ||
-      (item.questions || []).length > 1
+      type.includes("long conversation") ||
+      ((item.questions || []).length > 1 && !isPartC(item))
     );
   }
 
+  function isLongForm(item) {
+    return isPartB(item) || isPartC(item);
+  }
+
+  function pickLongGroup(pool, want, goal, usedQuestions) {
+    const picked = [];
+    let from = 0;
+    pool.forEach((item) => {
+      if (picked.length >= want) return;
+      const n = item.questions.length;
+      if (!n || usedQuestions + from + n > goal) return;
+      picked.push(item);
+      from += n;
+    });
+    return { picked, from };
+  }
+
   /**
-   * Keep long conversations whole. Part A first, then Part B (ITP order).
-   * Fills leftover slots with short conversations if fewer Part B items exist.
+   * Keep long items whole. Order: Part A, then Part B, then Part C (ITP-style).
+   * partBConversations / partCTalks pick from those pools only.
    */
-  function pickMixedItems(items, { targetQuestions, partBConversations } = {}) {
+  function pickMixedItems(
+    items,
+    { targetQuestions, partBConversations, partCTalks } = {}
+  ) {
     const goal = Math.max(1, Number(targetQuestions) || 10);
     const wantB = Math.max(0, Number(partBConversations) || 0);
+    const wantC = Math.max(0, Number(partCTalks) || 0);
     const partA = shuffle(items.filter((item) => !isLongForm(item)));
-    const partB = shuffle(items.filter(isLongForm));
-    const pickedB = [];
-    let fromB = 0;
-    partB.forEach((item) => {
-      if (pickedB.length >= wantB) return;
-      const n = item.questions.length;
-      if (!n || fromB + n > goal) return;
-      pickedB.push(item);
-      fromB += n;
-    });
-    const needA = Math.max(0, goal - fromB);
+    const partB = shuffle(items.filter(isPartB));
+    const partC = shuffle(items.filter(isPartC));
+
+    const b = pickLongGroup(partB, wantB, goal, 0);
+    const c = pickLongGroup(partC, wantC, goal, b.from);
+    const needA = Math.max(0, goal - b.from - c.from);
     const pickedA = partA.slice(0, needA);
-    return [...pickedA, ...pickedB];
+    return [...pickedA, ...b.picked, ...c.picked];
   }
 
   function buildMixedRows(items, spec) {
@@ -196,6 +216,8 @@
     shuffle,
     flattenRows,
     isLongForm,
+    isPartB,
+    isPartC,
     pickMixedItems,
     buildMixedRows,
     fetchJson,

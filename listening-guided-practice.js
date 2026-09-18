@@ -1,10 +1,11 @@
 /**
  * Listening guided practice — Phase 6
- * 10 questions: 6 Part A shorts + 1 Part B long conversation (4 Q), no timer.
+ * 14 questions: 6 Part A + 1 Part B (4 Q) + 1 Part C talk (4 Q), no timer.
  */
 
-const PRACTICE_SIZE = 10;
+const PRACTICE_SIZE = 14;
 const GUIDED_PART_B = 1;
+const GUIDED_PART_C = 1;
 
 const state = {
   pool: [],
@@ -44,6 +45,7 @@ function startSet() {
   state.rows = window.ListeningLib.buildMixedRows(state.pool, {
     targetQuestions: PRACTICE_SIZE,
     partBConversations: GUIDED_PART_B,
+    partCTalks: GUIDED_PART_C,
   });
   state.index = 0;
   state.answers = new Map();
@@ -225,15 +227,16 @@ async function boot() {
   setStatus("Loading Listening class bank…");
   try {
     state.pool = await window.ListeningLib.loadClassItems({ excludeIntro: true });
-    const longs = state.pool.filter((item) => window.ListeningLib.isLongForm(item));
     const shorts = state.pool.filter((item) => !window.ListeningLib.isLongForm(item));
-    if (shorts.length < 6 || longs.length < GUIDED_PART_B) {
+    const partB = state.pool.filter((item) => window.ListeningLib.isPartB(item));
+    const partC = state.pool.filter((item) => window.ListeningLib.isPartC(item));
+    if (shorts.length < 6 || partB.length < GUIDED_PART_B || partC.length < GUIDED_PART_C) {
       throw new Error(
-        `Need at least 6 short conversations and ${GUIDED_PART_B} long conversation with audio (found ${shorts.length} short, ${longs.length} long).`
+        `Need at least 6 Part A, ${GUIDED_PART_B} Part B, and ${GUIDED_PART_C} Part C with audio (found ${shorts.length} A, ${partB.length} B, ${partC.length} C).`
       );
     }
     setStatus(
-      `Class bank ready · ${shorts.length} short + ${longs.length} long · 10-question sets (6 Part A + 1 Part B) · free samples excluded`
+      `Class bank ready · ${shorts.length} Part A + ${partB.length} Part B + ${partC.length} Part C · 14-question sets (6 A + 1 B + 1 C) · free samples excluded`
     );
     bind();
     startSet();
