@@ -5,8 +5,8 @@
   "section": "listening",
   "part": "Part A short conversations + Part B long conversations",
   "note": "Part A 0001–0100; Part B 0101–0125; Part C 0126–0129 published; 0130 script ready. ready_for_practice requires audio.",
-  "item_count": 137,
-  "total_questions": 248,
+  "item_count": 138,
+  "total_questions": 252,
   "items": [
     {
       "id": "LIST-0001",
@@ -1822,6 +1822,20 @@
       "has_audio": true,
       "audio": "listening-assets/items/LIST-0137/audio.mp3",
       "data": "listening-assets/items/LIST-0137/item37_water_cycle_talk.json",
+      "production_status": "production_ready",
+      "ready_for_practice": true,
+      "part": "C"
+    },
+    {
+      "id": "LIST-0138",
+      "asset_id": "LIST-0138",
+      "asset_type": "Part C - Short Talk",
+      "difficulty": "Medium",
+      "topic": "Jazz and the Blues Roots",
+      "question_count": 4,
+      "has_audio": true,
+      "audio": "listening-assets/items/LIST-0138/audio.mp3",
+      "data": "listening-assets/items/LIST-0138/item38_jazz_blues_talk.json",
       "production_status": "production_ready",
       "ready_for_practice": true,
       "part": "C"
