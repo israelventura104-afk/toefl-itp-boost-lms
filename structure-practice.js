@@ -56,10 +56,19 @@ function normalizeItem(raw) {
 
   const type = raw.type || "Sentence Completion";
   const question = raw.question || raw.stem || "";
+  options = options.map((option) => ({
+    key: String(option.key ?? "").trim().toUpperCase(),
+    text: String(option.text ?? option.key ?? "").trim(),
+  }));
   if (window.StructureLib?.alignErrorOptions) {
-    options = StructureLib.alignErrorOptions(question, options, type);
+    options = StructureLib.alignErrorOptions(question, options, type).map((option) => ({
+      key: String(option.key ?? "").trim().toUpperCase(),
+      text: String(option.text ?? option.key ?? "").trim(),
+    }));
   }
-  const correctKey = String(raw.correctKey ?? "").trim();
+  const correctKey = String(raw.correctKey ?? raw.correct_answer ?? "")
+    .trim()
+    .toUpperCase();
   const correctFromOptions = options.find((option) => option.key === correctKey);
 
   return {
@@ -202,9 +211,10 @@ function chooseAnswer(item, option) {
   if (quizState.finished) return;
   if (quizState.answers.has(item.id)) return;
 
-  const correct = option.key === item.correctKey;
+  const selectedKey = String(option.key ?? "").trim().toUpperCase();
+  const correct = selectedKey === String(item.correctKey ?? "").trim().toUpperCase();
   quizState.answers.set(item.id, {
-    selectedKey: option.key,
+    selectedKey,
     correct,
   });
   setStatus("");

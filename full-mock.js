@@ -145,7 +145,10 @@ function formatCommonMistake(value, correctKey) {
   if (!value) return "";
   if (typeof value === "string") return value;
   if (typeof value === "object") {
-    const entries = Object.entries(value).filter(([key]) => key !== correctKey);
+    const ck = String(correctKey ?? "").trim().toUpperCase();
+    const entries = Object.entries(value).filter(
+      ([key]) => String(key).trim().toUpperCase() !== ck
+    );
     return entries[0] ? String(entries[0][1]) : "";
   }
   return "";
@@ -154,9 +157,11 @@ function formatCommonMistake(value, correctKey) {
 function normalizeStructureItem(raw) {
   let options = Array.isArray(raw.options)
     ? raw.options.map((option) => {
-        if (typeof option === "string") return { key: option, text: option };
+        if (typeof option === "string") {
+          return { key: String(option).trim().toUpperCase(), text: option };
+        }
         return {
-          key: String(option.key ?? "").trim(),
+          key: String(option.key ?? "").trim().toUpperCase(),
           text: String(option.text ?? option.key ?? "").trim(),
         };
       })
@@ -170,9 +175,14 @@ function normalizeStructureItem(raw) {
         : rawType;
   const prompt = raw.question || raw.stem || "";
   if (window.StructureLib?.alignErrorOptions) {
-    options = StructureLib.alignErrorOptions(prompt, options, type);
+    options = StructureLib.alignErrorOptions(prompt, options, type).map((option) => ({
+      key: String(option.key ?? "").trim().toUpperCase(),
+      text: String(option.text ?? option.key ?? "").trim(),
+    }));
   }
-  const correctKey = String(raw.correctKey ?? raw.correct_answer ?? "").trim();
+  const correctKey = String(raw.correctKey ?? raw.correct_answer ?? "")
+    .trim()
+    .toUpperCase();
   const hit = options.find((o) => o.key === correctKey);
   return {
     id: String(raw.id ?? "").trim(),
@@ -488,7 +498,7 @@ function renderItem() {
     button.className = `choice-button${selected === option.key ? " is-selected" : ""}`;
     button.innerHTML = `<b>${option.key}</b><span>${option.text}</span>`;
     button.addEventListener("click", () => {
-      state.answers.set(row.uid, option.key);
+      state.answers.set(row.uid, String(option.key ?? "").trim().toUpperCase());
       updateAnswered();
       renderItem();
     });
@@ -505,7 +515,7 @@ function scoreCurrentSection() {
   let correct = 0;
   const detail = state.rows.map((row) => {
     const selectedKey = state.answers.get(row.uid);
-    const isCorrect = selectedKey === row.correctKey;
+    const isCorrect = String(selectedKey ?? "").trim().toUpperCase() === String(row.correctKey ?? "").trim().toUpperCase();
     if (isCorrect) correct += 1;
     return {
       ...row,

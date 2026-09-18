@@ -3217,24 +3217,24 @@
       "options": [
         {
           "key": "A",
-          "text": "A"
+          "text": "Each of the participants"
         },
         {
           "key": "B",
-          "text": "B"
+          "text": "were asked"
         },
         {
           "key": "C",
-          "text": "C"
+          "text": "to complete a survey"
         },
         {
           "key": "D",
-          "text": "D"
+          "text": "before leaving the room"
         }
       ],
       "correctKey": "B",
-      "correctAnswer": "B",
-      "explanation": "'Each' is singular, so 'were asked' should be 'was asked.'",
+      "correctAnswer": "were asked",
+      "explanation": "The underlined verb phrase \"were asked\" is incorrect. 'Each' is singular, so 'were asked' should be 'was asked.'",
       "commonMistake": "Making the verb agree with the plural noun 'participants.'",
       "learningObjective": "Identify singular indefinite pronoun agreement errors.",
       "tags": [
@@ -3256,23 +3256,23 @@
       "options": [
         {
           "key": "A",
-          "text": "A"
+          "text": "The workshop focused on"
         },
         {
           "key": "B",
-          "text": "B"
+          "text": "analyzing data,"
         },
         {
           "key": "C",
-          "text": "C"
+          "text": "preparing reports, and"
         },
         {
           "key": "D",
-          "text": "D"
+          "text": "to present findings"
         }
       ],
       "correctKey": "D",
-      "correctAnswer": "D",
+      "correctAnswer": "to present findings",
       "explanation": "'To present findings' should be 'presenting findings' to match the gerund series.",
       "commonMistake": "Mixing infinitives and gerunds in a parallel list.",
       "learningObjective": "Recognize errors in parallel structure.",
@@ -3295,23 +3295,23 @@
       "options": [
         {
           "key": "A",
-          "text": "A"
+          "text": "By the time"
         },
         {
           "key": "B",
-          "text": "B"
+          "text": "the archive opened, the researchers already complete"
         },
         {
           "key": "C",
-          "text": "C"
+          "text": "most of their preliminary work"
         },
         {
           "key": "D",
-          "text": "D"
+          "text": "on the project"
         }
       ],
       "correctKey": "B",
-      "correctAnswer": "B",
+      "correctAnswer": "the archive opened, the researchers already complete",
       "explanation": "'Already complete' should be 'had already completed' because the action occurred before another past action.",
       "commonMistake": "Using a base verb instead of past perfect in a past-time sequence.",
       "learningObjective": "Identify past perfect tense errors.",
@@ -3334,24 +3334,24 @@
       "options": [
         {
           "key": "A",
-          "text": "A"
+          "text": "The study was concerned"
         },
         {
           "key": "B",
-          "text": "B"
+          "text": "about"
         },
         {
           "key": "C",
-          "text": "C"
+          "text": "the effects of stress"
         },
         {
           "key": "D",
-          "text": "D"
+          "text": "on decision-making"
         }
       ],
       "correctKey": "B",
-      "correctAnswer": "B",
-      "explanation": "In this academic context, 'concerned with' is preferred when meaning 'focused on.'",
+      "correctAnswer": "about",
+      "explanation": "The underlined part \"about\" is incorrect. In this academic context, 'concerned with' is preferred when meaning 'focused on.'",
       "commonMistake": "Using a common conversational preposition in a formal academic collocation.",
       "learningObjective": "Recognize errors in adjective-preposition combinations.",
       "tags": [
@@ -3373,23 +3373,23 @@
       "options": [
         {
           "key": "A",
-          "text": "A"
+          "text": "The author which"
         },
         {
           "key": "B",
-          "text": "B"
+          "text": "wrote the essay"
         },
         {
           "key": "C",
-          "text": "C"
+          "text": "was known for"
         },
         {
           "key": "D",
-          "text": "D"
+          "text": "her detailed descriptions of rural life"
         }
       ],
       "correctKey": "A",
-      "correctAnswer": "A",
+      "correctAnswer": "The author which",
       "explanation": "'Which' should be 'who' because the relative pronoun refers to a person.",
       "commonMistake": "Using 'which' for people in adjective clauses.",
       "learningObjective": "Choose appropriate relative pronouns for people and things.",
@@ -3412,23 +3412,23 @@
       "options": [
         {
           "key": "A",
-          "text": "A"
+          "text": "The safety procedures"
         },
         {
           "key": "B",
-          "text": "B"
+          "text": "should review"
         },
         {
           "key": "C",
-          "text": "C"
+          "text": "carefully before"
         },
         {
           "key": "D",
-          "text": "D"
+          "text": "the machinery is operated"
         }
       ],
       "correctKey": "B",
-      "correctAnswer": "B",
+      "correctAnswer": "should review",
       "explanation": "'Should review' should be 'should be reviewed' because the procedures receive the action.",
       "commonMistake": "Using active modal form when passive is required.",
       "learningObjective": "Identify errors in modal passive structures.",
@@ -3451,23 +3451,23 @@
       "options": [
         {
           "key": "A",
-          "text": "A"
+          "text": "This method is"
         },
         {
           "key": "B",
-          "text": "B"
+          "text": "more efficient than"
         },
         {
           "key": "C",
-          "text": "C"
+          "text": "any technique"
         },
         {
           "key": "D",
-          "text": "D"
+          "text": "currently using"
         }
       ],
       "correctKey": "D",
-      "correctAnswer": "D",
+      "correctAnswer": "currently using",
       "explanation": "'Currently using' should be 'currently used' because the technique receives the action.",
       "commonMistake": "Using a present participle where a passive participle is needed.",
       "learningObjective": "Recognize participle errors in comparative sentences.",
@@ -3490,23 +3490,23 @@
       "options": [
         {
           "key": "A",
-          "text": "A"
+          "text": "The report explains"
         },
         {
           "key": "B",
-          "text": "B"
+          "text": "why did migration patterns change"
         },
         {
           "key": "C",
-          "text": "C"
+          "text": "during the twentieth century"
         },
         {
           "key": "D",
-          "text": "D"
+          "text": "in many industrial cities"
         }
       ],
       "correctKey": "B",
-      "correctAnswer": "B",
+      "correctAnswer": "why did migration patterns change",
       "explanation": "The phrase should be 'why migration patterns changed' because embedded questions use statement word order.",
       "commonMistake": "Using direct question word order inside a noun clause.",
       "learningObjective": "Identify word-order errors in embedded questions.",
@@ -3529,23 +3529,23 @@
       "options": [
         {
           "key": "A",
-          "text": "A"
+          "text": "The doctor recommended"
         },
         {
           "key": "B",
-          "text": "B"
+          "text": "that the patient takes"
         },
         {
           "key": "C",
-          "text": "C"
+          "text": "the medication"
         },
         {
           "key": "D",
-          "text": "D"
+          "text": "at the same time every day"
         }
       ],
       "correctKey": "B",
-      "correctAnswer": "B",
+      "correctAnswer": "that the patient takes",
       "explanation": "'Takes' should be 'take' because the subjunctive uses the base form after 'recommended that.'",
       "commonMistake": "Using a third-person singular verb in a subjunctive clause.",
       "learningObjective": "Recognize subjunctive errors after verbs of recommendation.",
@@ -3568,23 +3568,23 @@
       "options": [
         {
           "key": "A",
-          "text": "A"
+          "text": "Rarely the committee has"
         },
         {
           "key": "B",
-          "text": "B"
+          "text": "reached"
         },
         {
           "key": "C",
-          "text": "C"
+          "text": "a decision so quickly"
         },
         {
           "key": "D",
-          "text": "D"
+          "text": "on such a complex issue"
         }
       ],
       "correctKey": "A",
-      "correctAnswer": "A",
+      "correctAnswer": "Rarely the committee has",
       "explanation": "After 'Rarely,' the correct order is 'has the committee reached.'",
       "commonMistake": "Using normal subject-verb order after a negative adverbial.",
       "learningObjective": "Identify inversion errors after negative adverbs.",
@@ -4309,23 +4309,23 @@
       "options": [
         {
           "key": "A",
-          "text": "A"
+          "text": "The neighborhood"
         },
         {
           "key": "B",
-          "text": "B"
+          "text": "in where"
         },
         {
           "key": "C",
-          "text": "C"
+          "text": "the survey was conducted"
         },
         {
           "key": "D",
-          "text": "D"
+          "text": "has changed rapidly"
         }
       ],
       "correctKey": "B",
-      "correctAnswer": "B",
+      "correctAnswer": "in where",
       "explanation": "'In where' should be 'where' or 'in which.'",
       "commonMistake": "Combining a preposition with 'where' incorrectly.",
       "learningObjective": "Identify correct relative adverb and preposition structures.",
@@ -4348,23 +4348,23 @@
       "options": [
         {
           "key": "A",
-          "text": "A"
+          "text": "The report provides"
         },
         {
           "key": "B",
-          "text": "B"
+          "text": "a detail"
         },
         {
           "key": "C",
-          "text": "C"
+          "text": "analysis of the factors"
         },
         {
           "key": "D",
-          "text": "D"
+          "text": "affecting inflation"
         }
       ],
       "correctKey": "B",
-      "correctAnswer": "B",
+      "correctAnswer": "a detail",
       "explanation": "'A detail analysis' should be 'a detailed analysis' because an adjective is needed before the noun.",
       "commonMistake": "Using a noun where an adjective form is required.",
       "learningObjective": "Identify word-form errors in academic noun phrases.",
@@ -4387,23 +4387,23 @@
       "options": [
         {
           "key": "A",
-          "text": "A"
+          "text": "Only after the solution cooled"
         },
         {
           "key": "B",
-          "text": "B"
+          "text": "the crystals began"
         },
         {
           "key": "C",
-          "text": "C"
+          "text": "to form"
         },
         {
           "key": "D",
-          "text": "D"
+          "text": "at the bottom of the container"
         }
       ],
       "correctKey": "B",
-      "correctAnswer": "B",
+      "correctAnswer": "the crystals began",
       "explanation": "After 'Only after...' at the beginning, the main clause requires inversion: 'did the crystals begin.'",
       "commonMistake": "Using normal word order after an initial 'only after' phrase.",
       "learningObjective": "Identify inversion errors after 'only after.'",
@@ -6009,7 +6009,7 @@
       "options": [
         {
           "key": "A",
-          "text": "acted"
+          "text": "The medicine acted"
         },
         {
           "key": "B",
@@ -6017,11 +6017,11 @@
         },
         {
           "key": "C",
-          "text": "symptoms"
+          "text": "enough to reduce the symptoms"
         },
         {
           "key": "D",
-          "text": "within"
+          "text": "within minutes"
         }
       ],
       "correctKey": "B",
@@ -6068,10 +6068,10 @@
         }
       ],
       "correctKey": "B",
-      "correctAnswer": "is",
-      "explanation": "\"Is\" should be \"are\" because the real subject, \"several reasons,\" is plural.",
+      "correctAnswer": "is several reasons",
+      "explanation": "The underlined verb phrase \"is several reasons\" is incorrect. \"Is\" should be \"are\" because the real subject, \"several reasons,\" is plural.",
       "commonMistake": {
-        "B": "The plural noun is appropriate after \"several.\"",
+        "A": "\"There\" is a correct expletive opener; the error is the verb agreement after it.",
         "C": "The singular noun correctly agrees with \"failed.\"",
         "D": "The noun correctly completes the prepositional phrase."
       },
@@ -6095,7 +6095,7 @@
       "options": [
         {
           "key": "A",
-          "text": "objected"
+          "text": "The engineer objected"
         },
         {
           "key": "B",
@@ -6103,11 +6103,11 @@
         },
         {
           "key": "C",
-          "text": "materials"
+          "text": "cheaper materials"
         },
         {
           "key": "D",
-          "text": "design"
+          "text": "in the bridge design"
         }
       ],
       "correctKey": "B",
@@ -6138,23 +6138,23 @@
       "options": [
         {
           "key": "A",
-          "text": "participant"
+          "text": "Each participant"
         },
         {
           "key": "B",
-          "text": "submit"
+          "text": "was asked to submit"
         },
         {
           "key": "C",
-          "text": "their"
+          "text": "their response"
         },
         {
           "key": "D",
-          "text": "laboratory"
+          "text": "before leaving the laboratory"
         }
       ],
       "correctKey": "C",
-      "correctAnswer": "their",
+      "correctAnswer": "their response",
       "explanation": "\"Their\" should be \"his or her\" in formal agreement because \"each participant\" is singular.",
       "commonMistake": {
         "A": "The singular noun is correct after \"each.\"",
@@ -6181,7 +6181,7 @@
       "options": [
         {
           "key": "A",
-          "text": "is"
+          "text": "The new microscope is"
         },
         {
           "key": "B",
@@ -6189,11 +6189,11 @@
         },
         {
           "key": "C",
-          "text": "model"
+          "text": "than the model"
         },
         {
           "key": "D",
-          "text": "studies"
+          "text": "used in previous studies"
         }
       ],
       "correctKey": "B",
@@ -6224,11 +6224,11 @@
       "options": [
         {
           "key": "A",
-          "text": "historian"
+          "text": "The historian"
         },
         {
           "key": "B",
-          "text": "village"
+          "text": "wrote about a village"
         },
         {
           "key": "C",
@@ -6236,7 +6236,7 @@
         },
         {
           "key": "D",
-          "text": "flood"
+          "text": "during the flood"
         }
       ],
       "correctKey": "C",
@@ -6267,23 +6267,23 @@
       "options": [
         {
           "key": "A",
-          "text": "reading"
+          "text": "The course requires reading"
         },
         {
           "key": "B",
-          "text": "writing"
+          "text": "journal articles, writing"
         },
         {
           "key": "C",
-          "text": "to present"
+          "text": "weekly reports, and to present"
         },
         {
           "key": "D",
-          "text": "project"
+          "text": "a final project"
         }
       ],
       "correctKey": "C",
-      "correctAnswer": "to present",
+      "correctAnswer": "weekly reports, and to present",
       "explanation": "\"To present\" should be \"presenting\" to match the gerunds \"reading\" and \"writing.\"",
       "commonMistake": {
         "A": "The gerund correctly begins the parallel series.",
@@ -6314,15 +6314,15 @@
         },
         {
           "key": "B",
-          "text": "essential"
+          "text": "is essential"
         },
         {
           "key": "C",
-          "text": "organisms"
+          "text": "for most living organisms"
         },
         {
           "key": "D",
-          "text": "Earth"
+          "text": "on Earth"
         }
       ],
       "correctKey": "A",
@@ -6353,7 +6353,7 @@
       "options": [
         {
           "key": "A",
-          "text": "depends"
+          "text": "The success of the project depends"
         },
         {
           "key": "B",
@@ -6361,11 +6361,11 @@
         },
         {
           "key": "C",
-          "text": "and"
+          "text": "careful planning and"
         },
         {
           "key": "D",
-          "text": "communication"
+          "text": "consistent communication"
         }
       ],
       "correctKey": "B",
@@ -6396,7 +6396,7 @@
       "options": [
         {
           "key": "A",
-          "text": "may"
+          "text": "The findings may"
         },
         {
           "key": "B",
@@ -6404,11 +6404,11 @@
         },
         {
           "key": "C",
-          "text": "treatment"
+          "text": "that the treatment"
         },
         {
           "key": "D",
-          "text": "expected"
+          "text": "is more effective than expected"
         }
       ],
       "correctKey": "B",
@@ -7084,23 +7084,23 @@
       "options": [
         {
           "key": "A",
-          "text": "reached"
+          "text": "The committee reached"
         },
         {
           "key": "B",
-          "text": "logic"
+          "text": "a logic"
         },
         {
           "key": "C",
-          "text": "reviewing"
+          "text": "conclusion after reviewing"
         },
         {
           "key": "D",
-          "text": "evidence"
+          "text": "all the available evidence"
         }
       ],
       "correctKey": "B",
-      "correctAnswer": "logic",
+      "correctAnswer": "a logic",
       "explanation": "\"Logic\" should be \"logical\" because an adjective is needed to modify the noun \"conclusion.\"",
       "commonMistake": {
         "A": "The verb is correctly used in simple past tense.",
@@ -7127,7 +7127,7 @@
       "options": [
         {
           "key": "A",
-          "text": "proposals"
+          "text": "Each of the proposals"
         },
         {
           "key": "B",
@@ -7135,7 +7135,7 @@
         },
         {
           "key": "C",
-          "text": "decision"
+          "text": "carefully before the final decision"
         },
         {
           "key": "D",
@@ -7144,7 +7144,7 @@
       ],
       "correctKey": "B",
       "correctAnswer": "were examined",
-      "explanation": "\"Each\" is singular, so the verb phrase should be \"was examined.\"",
+      "explanation": "The underlined verb phrase \"were examined\" is incorrect. \"Each\" is singular, so the verb phrase should be \"was examined.\"",
       "commonMistake": {
         "A": "The plural noun is correct after \"of the.\"",
         "C": "The singular noun correctly fits the phrase \"the final decision.\"",
@@ -7170,23 +7170,23 @@
       "options": [
         {
           "key": "A",
-          "text": "entered"
+          "text": "Before the satellite entered"
         },
         {
           "key": "B",
-          "text": "tested"
+          "text": "orbit, engineers tested"
         },
         {
           "key": "C",
-          "text": "had require"
+          "text": "every system that had require"
         },
         {
           "key": "D",
-          "text": "calibration"
+          "text": "special calibration"
         }
       ],
       "correctKey": "C",
-      "correctAnswer": "had require",
+      "correctAnswer": "every system that had require",
       "explanation": "\"Had require\" should be \"had required\" because the past perfect uses \"had + past participle.\"",
       "commonMistake": {
         "A": "The simple past verb correctly refers to a past event.",
@@ -7213,7 +7213,7 @@
       "options": [
         {
           "key": "A",
-          "text": "documents"
+          "text": "The old documents"
         },
         {
           "key": "B",
@@ -7221,15 +7221,15 @@
         },
         {
           "key": "C",
-          "text": "carefully"
+          "text": "in the archive were carefully"
         },
         {
           "key": "D",
-          "text": "preserve"
+          "text": "preserve by specialists"
         }
       ],
       "correctKey": "D",
-      "correctAnswer": "preserve",
+      "correctAnswer": "preserve by specialists",
       "explanation": "\"Preserve\" should be \"preserved\" because the passive structure is \"were + past participle.\"",
       "commonMistake": {
         "A": "The plural noun correctly serves as the subject.",
@@ -7256,7 +7256,7 @@
       "options": [
         {
           "key": "A",
-          "text": "is"
+          "text": "This method is"
         },
         {
           "key": "B",
@@ -7264,15 +7264,15 @@
         },
         {
           "key": "C",
-          "text": "less expensive"
+          "text": "and less expensive"
         },
         {
           "key": "D",
-          "text": "use"
+          "text": "than the one use"
         }
       ],
       "correctKey": "D",
-      "correctAnswer": "use",
+      "correctAnswer": "than the one use",
       "explanation": "\"Use\" should be \"used\" because the phrase means \"the one that was used last year.\"",
       "commonMistake": {
         "A": "The verb correctly links the subject to the comparison.",
@@ -7299,7 +7299,7 @@
       "options": [
         {
           "key": "A",
-          "text": "scientist"
+          "text": "The scientist"
         },
         {
           "key": "B",
@@ -7307,11 +7307,11 @@
         },
         {
           "key": "C",
-          "text": "received"
+          "text": "the new technique received"
         },
         {
           "key": "D",
-          "text": "recognition"
+          "text": "international recognition"
         }
       ],
       "correctKey": "B",
@@ -7342,7 +7342,7 @@
       "options": [
         {
           "key": "A",
-          "text": "determine"
+          "text": "The researchers could not determine"
         },
         {
           "key": "B",
@@ -7350,11 +7350,11 @@
         },
         {
           "key": "C",
-          "text": "occur"
+          "text": "occur so rapidly"
         },
         {
           "key": "D",
-          "text": "conditions"
+          "text": "under normal conditions"
         }
       ],
       "correctKey": "B",
@@ -7385,23 +7385,23 @@
       "options": [
         {
           "key": "A",
-          "text": "emphasizes"
+          "text": "The course emphasizes"
         },
         {
           "key": "B",
-          "text": "writing"
+          "text": "reading academic texts, writing"
         },
         {
           "key": "C",
-          "text": "to present"
+          "text": "research summaries, and to present"
         },
         {
           "key": "D",
-          "text": "clearly"
+          "text": "findings clearly"
         }
       ],
       "correctKey": "C",
-      "correctAnswer": "to present",
+      "correctAnswer": "research summaries, and to present",
       "explanation": "\"To present\" should be \"presenting\" to match the gerund phrases \"reading\" and \"writing.\"",
       "commonMistake": {
         "A": "The singular verb correctly agrees with \"course.\"",
@@ -7428,11 +7428,11 @@
       "options": [
         {
           "key": "A",
-          "text": "success"
+          "text": "The success"
         },
         {
           "key": "B",
-          "text": "depends"
+          "text": "of the program depends"
         },
         {
           "key": "C",
@@ -7440,12 +7440,12 @@
         },
         {
           "key": "D",
-          "text": "schools"
+          "text": "of local schools"
         }
       ],
       "correctKey": "C",
       "correctAnswer": "from the cooperation",
-      "explanation": "\"Depends from\" should be \"depends on\" because \"depend on\" is the correct verb-preposition combination.",
+      "explanation": "The underlined phrase \"from the cooperation\" is incorrect. \"Depends from\" should be \"depends on\" because \"depend on\" is the correct verb-preposition combination.",
       "commonMistake": {
         "A": "The noun correctly begins the subject phrase.",
         "B": "The verb correctly agrees with the singular subject.",
@@ -7471,23 +7471,23 @@
       "options": [
         {
           "key": "A",
-          "text": "economist"
+          "text": "An economist"
         },
         {
           "key": "B",
-          "text": "supply"
+          "text": "must consider both supply"
         },
         {
           "key": "C",
-          "text": "market"
+          "text": "and demand when analyzing market"
         },
         {
           "key": "D",
-          "text": "region"
+          "text": "in a developing region"
         }
       ],
       "correctKey": "C",
-      "correctAnswer": "market",
+      "correctAnswer": "and demand when analyzing market",
       "explanation": "\"Market\" should be \"a market\" because it is a singular count noun used in a general sense.",
       "commonMistake": {
         "A": "The article \"An\" is correct before a vowel sound.",
@@ -7729,24 +7729,24 @@
       "options": [
         {
           "key": "A",
-          "text": "A"
+          "text": "The professor asked the students"
         },
         {
           "key": "B",
-          "text": "B"
+          "text": "to hand in their"
         },
         {
           "key": "C",
-          "text": "C"
+          "text": "assignments before they"
         },
         {
           "key": "D",
-          "text": "D"
+          "text": "will leave"
         }
       ],
       "correctKey": "D",
-      "correctAnswer": "D",
-      "explanation": "In noun clauses after 'before', the future tense is not used. It should be 'left' (simple past) to match the past tense of 'asked'.",
+      "correctAnswer": "will leave",
+      "explanation": "The underlined part \"will leave\" is incorrect. In noun clauses after 'before', the future tense is not used. It should be 'left' (simple past) to match the past tense of 'asked'.",
       "commonMistake": "Choosing a grammatically correct underlined part instead of the error.",
       "learningObjective": "Identify the underlined error in a Structure Written Expression item.",
       "tags": [
@@ -7773,23 +7773,23 @@
       "options": [
         {
           "key": "A",
-          "text": "A"
+          "text": "Neither the students nor"
         },
         {
           "key": "B",
-          "text": "B"
+          "text": "the teacher"
         },
         {
           "key": "C",
-          "text": "C"
+          "text": "were able"
         },
         {
           "key": "D",
-          "text": "D"
+          "text": "to solve the"
         }
       ],
       "correctKey": "C",
-      "correctAnswer": "C",
+      "correctAnswer": "were able",
       "explanation": "With 'neither...nor', the verb agrees with the nearest subject ('the teacher' = singular). It should be 'was able'.",
       "commonMistake": "Choosing a grammatically correct underlined part instead of the error.",
       "learningObjective": "Identify the underlined error in a Structure Written Expression item.",
@@ -7817,23 +7817,23 @@
       "options": [
         {
           "key": "A",
-          "text": "A"
+          "text": "The researcher"
         },
         {
           "key": "B",
-          "text": "B"
+          "text": "spent three years"
         },
         {
           "key": "C",
-          "text": "C"
+          "text": "to collect"
         },
         {
           "key": "D",
-          "text": "D"
+          "text": "data for"
         }
       ],
       "correctKey": "C",
-      "correctAnswer": "C",
+      "correctAnswer": "to collect",
       "explanation": "After 'spend time', the correct structure is the gerund ('collecting'), not the infinitive ('to collect').",
       "commonMistake": "Choosing a grammatically correct underlined part instead of the error.",
       "learningObjective": "Identify the underlined error in a Structure Written Expression item.",
@@ -7861,24 +7861,24 @@
       "options": [
         {
           "key": "A",
-          "text": "A"
+          "text": "The committee"
         },
         {
           "key": "B",
-          "text": "B"
+          "text": "has already"
         },
         {
           "key": "C",
-          "text": "C"
+          "text": "made their"
         },
         {
           "key": "D",
-          "text": "D"
+          "text": "decision regarding"
         }
       ],
       "correctKey": "C",
-      "correctAnswer": "C",
-      "explanation": "'Committee' is a collective noun that can take a singular or plural verb, but in formal American English, it should be 'its' (singular pronoun) to match 'has' (singular verb).",
+      "correctAnswer": "made their",
+      "explanation": "The underlined part \"made their\" is incorrect. 'Committee' is a collective noun that can take a singular or plural verb, but in formal American English, it should be 'its' (singular pronoun) to match 'has' (singular verb).",
       "commonMistake": "Choosing a grammatically correct underlined part instead of the error.",
       "learningObjective": "Identify the underlined error in a Structure Written Expression item.",
       "tags": [
@@ -7905,23 +7905,23 @@
       "options": [
         {
           "key": "A",
-          "text": "A"
+          "text": "Despite"
         },
         {
           "key": "B",
-          "text": "B"
+          "text": "of the"
         },
         {
           "key": "C",
-          "text": "C"
+          "text": "heavy rain, the"
         },
         {
           "key": "D",
-          "text": "D"
+          "text": "outdoor concert"
         }
       ],
       "correctKey": "B",
-      "correctAnswer": "B",
+      "correctAnswer": "of the",
       "explanation": "'Despite' is a preposition and is directly followed by a noun phrase. The word 'of' is incorrect and should be removed: 'Despite the heavy rain...'",
       "commonMistake": "Choosing a grammatically correct underlined part instead of the error.",
       "learningObjective": "Identify the underlined error in a Structure Written Expression item.",
@@ -7949,23 +7949,23 @@
       "options": [
         {
           "key": "A",
-          "text": "A"
+          "text": "The book"
         },
         {
           "key": "B",
-          "text": "B"
+          "text": "that I borrowed"
         },
         {
           "key": "C",
-          "text": "C"
+          "text": "it"
         },
         {
           "key": "D",
-          "text": "D"
+          "text": "from the library"
         }
       ],
       "correctKey": "C",
-      "correctAnswer": "C",
+      "correctAnswer": "it",
       "explanation": "The relative pronoun 'that' already functions as the object of 'borrowed'. The pronoun 'it' is redundant and should be removed.",
       "commonMistake": "Choosing a grammatically correct underlined part instead of the error.",
       "learningObjective": "Identify the underlined error in a Structure Written Expression item.",
@@ -7993,23 +7993,23 @@
       "options": [
         {
           "key": "A",
-          "text": "A"
+          "text": "By the time"
         },
         {
           "key": "B",
-          "text": "B"
+          "text": "the lecture"
         },
         {
           "key": "C",
-          "text": "C"
+          "text": "will end, the students"
         },
         {
           "key": "D",
-          "text": "D"
+          "text": "will have been"
         }
       ],
       "correctKey": "C",
-      "correctAnswer": "C",
+      "correctAnswer": "will end, the students",
       "explanation": "In time clauses introduced by 'by the time', the simple present tense is used to refer to the future. It should be 'ends' instead of 'will end'.",
       "commonMistake": "Choosing a grammatically correct underlined part instead of the error.",
       "learningObjective": "Identify the underlined error in a Structure Written Expression item.",
@@ -8037,23 +8037,23 @@
       "options": [
         {
           "key": "A",
-          "text": "A"
+          "text": "The university"
         },
         {
           "key": "B",
-          "text": "B"
+          "text": "requires that"
         },
         {
           "key": "C",
-          "text": "C"
+          "text": "all students"
         },
         {
           "key": "D",
-          "text": "D"
+          "text": "must submit"
         }
       ],
       "correctKey": "D",
-      "correctAnswer": "D",
+      "correctAnswer": "must submit",
       "explanation": "After verbs like 'require', 'suggest', 'demand', the subjunctive mood is used in the that-clause: the base form of the verb without 'must'. It should be 'submit' instead of 'must submit'.",
       "commonMistake": "Choosing a grammatically correct underlined part instead of the error.",
       "learningObjective": "Identify the underlined error in a Structure Written Expression item.",
@@ -8081,23 +8081,23 @@
       "options": [
         {
           "key": "A",
-          "text": "A"
+          "text": "Not only"
         },
         {
           "key": "B",
-          "text": "B"
+          "text": "did she"
         },
         {
           "key": "C",
-          "text": "C"
+          "text": "finish the exam early, but"
         },
         {
           "key": "D",
-          "text": "D"
+          "text": "also she"
         }
       ],
       "correctKey": "D",
-      "correctAnswer": "D",
+      "correctAnswer": "also she",
       "explanation": "In the 'not only...but also' construction, 'also' should follow the subject, not precede it. It should be 'she also' instead of 'also she'.",
       "commonMistake": "Choosing a grammatically correct underlined part instead of the error.",
       "learningObjective": "Identify the underlined error in a Structure Written Expression item.",
@@ -8125,23 +8125,23 @@
       "options": [
         {
           "key": "A",
-          "text": "A"
+          "text": "The more"
         },
         {
           "key": "B",
-          "text": "B"
+          "text": "you practice"
         },
         {
           "key": "C",
-          "text": "C"
+          "text": "speaking English,"
         },
         {
           "key": "D",
-          "text": "D"
+          "text": "the more fluently"
         }
       ],
       "correctKey": "D",
-      "correctAnswer": "D",
+      "correctAnswer": "the more fluently",
       "explanation": "In the 'the more...the more' comparative construction, the second part should use an adjective (not adverb) after the linking verb 'become'. It should be 'the more fluent' instead of 'the more fluently'.",
       "commonMistake": "Choosing a grammatically correct underlined part instead of the error.",
       "learningObjective": "Identify the underlined error in a Structure Written Expression item.",
@@ -8169,23 +8169,23 @@
       "options": [
         {
           "key": "A",
-          "text": "A"
+          "text": "The scientist"
         },
         {
           "key": "B",
-          "text": "B"
+          "text": "was awarded"
         },
         {
           "key": "C",
-          "text": "C"
+          "text": "the Nobel Prize for"
         },
         {
           "key": "D",
-          "text": "D"
+          "text": "his discovering"
         }
       ],
       "correctKey": "D",
-      "correctAnswer": "D",
+      "correctAnswer": "his discovering",
       "explanation": "After a possessive adjective ('his'), a gerund or noun is needed. 'Discovering' is a gerund, but the correct noun form is 'discovery'. It should be 'his discovery'.",
       "commonMistake": "Choosing a grammatically correct underlined part instead of the error.",
       "learningObjective": "Identify the underlined error in a Structure Written Expression item.",
@@ -8213,23 +8213,23 @@
       "options": [
         {
           "key": "A",
-          "text": "A"
+          "text": "Having been"
         },
         {
           "key": "B",
-          "text": "B"
+          "text": "warned about"
         },
         {
           "key": "C",
-          "text": "C"
+          "text": "the storm,"
         },
         {
           "key": "D",
-          "text": "D"
+          "text": "the trip was postponed"
         }
       ],
       "correctKey": "D",
-      "correctAnswer": "D",
+      "correctAnswer": "the trip was postponed",
       "explanation": "The participial phrase 'Having been warned' must logically modify the subject of the main clause. 'The trip' cannot be warned — it should be 'the hikers postponed' so that 'hikers' is the subject.",
       "commonMistake": "Choosing a grammatically correct underlined part instead of the error.",
       "learningObjective": "Identify the underlined error in a Structure Written Expression item.",
@@ -8257,23 +8257,23 @@
       "options": [
         {
           "key": "A",
-          "text": "A"
+          "text": "The manager"
         },
         {
           "key": "B",
-          "text": "B"
+          "text": "suggested"
         },
         {
           "key": "C",
-          "text": "C"
+          "text": "that the meeting"
         },
         {
           "key": "D",
-          "text": "D"
+          "text": "is held"
         }
       ],
       "correctKey": "D",
-      "correctAnswer": "D",
+      "correctAnswer": "is held",
       "explanation": "After verbs like 'suggest', 'recommend', 'demand', the subjunctive mood is used: the base form of the verb without 'to' and without conjugation. It should be 'be held' instead of 'is held'.",
       "commonMistake": "Choosing a grammatically correct underlined part instead of the error.",
       "learningObjective": "Identify the underlined error in a Structure Written Expression item.",
@@ -8301,23 +8301,23 @@
       "options": [
         {
           "key": "A",
-          "text": "A"
+          "text": "The students"
         },
         {
           "key": "B",
-          "text": "B"
+          "text": "enjoyed"
         },
         {
           "key": "C",
-          "text": "C"
+          "text": "to visit"
         },
         {
           "key": "D",
-          "text": "D"
+          "text": "the museum"
         }
       ],
       "correctKey": "C",
-      "correctAnswer": "C",
+      "correctAnswer": "to visit",
       "explanation": "The verb 'enjoy' is always followed by a gerund, not an infinitive. It should be 'visiting' instead of 'to visit'.",
       "commonMistake": "Choosing a grammatically correct underlined part instead of the error.",
       "learningObjective": "Identify the underlined error in a Structure Written Expression item.",
@@ -8345,24 +8345,24 @@
       "options": [
         {
           "key": "A",
-          "text": "A"
+          "text": "The novel"
         },
         {
           "key": "B",
-          "text": "B"
+          "text": "was such"
         },
         {
           "key": "C",
-          "text": "C"
+          "text": "interesting"
         },
         {
           "key": "D",
-          "text": "D"
+          "text": "that I couldn't"
         }
       ],
       "correctKey": "B",
-      "correctAnswer": "B",
-      "explanation": "'Such' is used before a noun phrase, while 'so' is used before an adjective alone. Since 'interesting' is an adjective without a noun, it should be 'was so interesting'.",
+      "correctAnswer": "was such",
+      "explanation": "The underlined phrase \"was such\" is incorrect. 'Such' is used before a noun phrase, while 'so' is used before an adjective alone. Since 'interesting' is an adjective without a noun, it should be 'was so interesting'.",
       "commonMistake": "Choosing a grammatically correct underlined part instead of the error.",
       "learningObjective": "Identify the underlined error in a Structure Written Expression item.",
       "tags": [
@@ -8389,23 +8389,23 @@
       "options": [
         {
           "key": "A",
-          "text": "A"
+          "text": "The professor"
         },
         {
           "key": "B",
-          "text": "B"
+          "text": "asked the students"
         },
         {
           "key": "C",
-          "text": "C"
+          "text": "when"
         },
         {
           "key": "D",
-          "text": "D"
+          "text": "did they"
         }
       ],
       "correctKey": "D",
-      "correctAnswer": "D",
+      "correctAnswer": "did they",
       "explanation": "In indirect questions (noun clauses), the word order is subject + verb, not question word order. It should be 'they finished' instead of 'did they finish'.",
       "commonMistake": "Choosing a grammatically correct underlined part instead of the error.",
       "learningObjective": "Identify the underlined error in a Structure Written Expression item.",
@@ -8433,23 +8433,23 @@
       "options": [
         {
           "key": "A",
-          "text": "A"
+          "text": "Neither"
         },
         {
           "key": "B",
-          "text": "B"
+          "text": "John nor"
         },
         {
           "key": "C",
-          "text": "C"
+          "text": "his friends"
         },
         {
           "key": "D",
-          "text": "D"
+          "text": "was"
         }
       ],
       "correctKey": "D",
-      "correctAnswer": "D",
+      "correctAnswer": "was",
       "explanation": "With 'neither...nor', the verb agrees with the nearest subject. 'His friends' is plural, so the verb should be 'were' instead of 'was'.",
       "commonMistake": "Choosing a grammatically correct underlined part instead of the error.",
       "learningObjective": "Identify the underlined error in a Structure Written Expression item.",
@@ -8477,23 +8477,23 @@
       "options": [
         {
           "key": "A",
-          "text": "A"
+          "text": "The news"
         },
         {
           "key": "B",
-          "text": "B"
+          "text": "about"
         },
         {
           "key": "C",
-          "text": "C"
+          "text": "the earthquake"
         },
         {
           "key": "D",
-          "text": "D"
+          "text": "were"
         }
       ],
       "correctKey": "D",
-      "correctAnswer": "D",
+      "correctAnswer": "were",
       "explanation": "'News' is an uncountable noun and is always singular. The verb should be 'was' instead of 'were'.",
       "commonMistake": "Choosing a grammatically correct underlined part instead of the error.",
       "learningObjective": "Identify the underlined error in a Structure Written Expression item.",
@@ -8521,23 +8521,23 @@
       "options": [
         {
           "key": "A",
-          "text": "A"
+          "text": "The teacher"
         },
         {
           "key": "B",
-          "text": "B"
+          "text": "told"
         },
         {
           "key": "C",
-          "text": "C"
+          "text": "the students"
         },
         {
           "key": "D",
-          "text": "D"
+          "text": "to not"
         }
       ],
       "correctKey": "D",
-      "correctAnswer": "D",
+      "correctAnswer": "to not",
       "explanation": "With the negative infinitive, 'not' should precede 'to'. The correct form is 'not to talk' instead of 'to not talk'.",
       "commonMistake": "Choosing a grammatically correct underlined part instead of the error.",
       "learningObjective": "Identify the underlined error in a Structure Written Expression item.",
@@ -8565,23 +8565,23 @@
       "options": [
         {
           "key": "A",
-          "text": "A"
+          "text": "The graduate students"
         },
         {
           "key": "B",
-          "text": "B"
+          "text": "look forward to"
         },
         {
           "key": "C",
-          "text": "C"
+          "text": "meet the visiting lecturer"
         },
         {
           "key": "D",
-          "text": "D"
+          "text": "at next week's seminar"
         }
       ],
       "correctKey": "C",
-      "correctAnswer": "C",
+      "correctAnswer": "meet the visiting lecturer",
       "explanation": "'Look forward to' is followed by a gerund. 'Meet' should be 'meeting.'",
       "commonMistake": "Treating 'to' as an infinitive marker instead of a preposition.",
       "learningObjective": "Recognize gerunds after phrasal prepositions such as 'look forward to.'",
@@ -8604,23 +8604,23 @@
       "options": [
         {
           "key": "A",
-          "text": "A"
+          "text": "The new software"
         },
         {
           "key": "B",
-          "text": "B"
+          "text": "is capable to process"
         },
         {
           "key": "C",
-          "text": "C"
+          "text": "large data sets"
         },
         {
           "key": "D",
-          "text": "D"
+          "text": "in a relatively short time"
         }
       ],
       "correctKey": "B",
-      "correctAnswer": "B",
+      "correctAnswer": "is capable to process",
       "explanation": "The correct pattern is 'capable of + gerund.' 'Capable to process' should be 'capable of processing.'",
       "commonMistake": "Using an infinitive after 'capable' instead of 'of + gerund.'",
       "learningObjective": "Use adjective + preposition + gerund combinations.",
@@ -8643,24 +8643,24 @@
       "options": [
         {
           "key": "A",
-          "text": "A"
+          "text": "One of the most important discoveries"
         },
         {
           "key": "B",
-          "text": "B"
+          "text": "of the past decade"
         },
         {
           "key": "C",
-          "text": "C"
+          "text": "were announced"
         },
         {
           "key": "D",
-          "text": "D"
+          "text": "at the conference"
         }
       ],
       "correctKey": "C",
-      "correctAnswer": "C",
-      "explanation": "The subject is 'one,' which is singular, so the verb should be 'was announced,' not 'were announced.'",
+      "correctAnswer": "were announced",
+      "explanation": "The underlined verb phrase \"were announced\" is incorrect. The subject is 'one,' which is singular, so the verb should be 'was announced,' not 'were announced.'",
       "commonMistake": "Making the verb agree with 'discoveries' instead of 'one.'",
       "learningObjective": "Identify the true subject in 'one of the + plural noun' structures.",
       "tags": [
@@ -8682,24 +8682,24 @@
       "options": [
         {
           "key": "A",
-          "text": "A"
+          "text": "The number of applications"
         },
         {
           "key": "B",
-          "text": "B"
+          "text": "for the program"
         },
         {
           "key": "C",
-          "text": "C"
+          "text": "have increased"
         },
         {
           "key": "D",
-          "text": "D"
+          "text": "every year since 2018"
         }
       ],
       "correctKey": "C",
-      "correctAnswer": "C",
-      "explanation": "'The number of' is singular and takes 'has increased,' not 'have increased.'",
+      "correctAnswer": "have increased",
+      "explanation": "The underlined verb phrase \"have increased\" is incorrect. 'The number of' is singular and takes 'has increased,' not 'have increased.'",
       "commonMistake": "Making the verb agree with 'applications' instead of 'number.'",
       "learningObjective": "Distinguish 'the number of' (singular) from 'a number of' (plural).",
       "tags": [
@@ -8721,23 +8721,23 @@
       "options": [
         {
           "key": "A",
-          "text": "A"
+          "text": "If the samples would have been stored properly"
         },
         {
           "key": "B",
-          "text": "B"
+          "text": ", the results would have been"
         },
         {
           "key": "C",
-          "text": "C"
+          "text": "more reliable"
         },
         {
           "key": "D",
-          "text": "D"
+          "text": "than expected"
         }
       ],
       "correctKey": "A",
-      "correctAnswer": "A",
+      "correctAnswer": "If the samples would have been stored properly",
       "explanation": "The if-clause of a third conditional uses the past perfect: 'had been stored,' not 'would have been stored.'",
       "commonMistake": "Putting 'would have' in both clauses of a third conditional.",
       "learningObjective": "Use past perfect, not 'would have,' in third-conditional if-clauses.",
@@ -8760,23 +8760,23 @@
       "options": [
         {
           "key": "A",
-          "text": "A"
+          "text": "Having completed the measurements"
         },
         {
           "key": "B",
-          "text": "B"
+          "text": ", the results were entered"
         },
         {
           "key": "C",
-          "text": "C"
+          "text": "into the computer"
         },
         {
           "key": "D",
-          "text": "D"
+          "text": "by the technicians"
         }
       ],
       "correctKey": "B",
-      "correctAnswer": "B",
+      "correctAnswer": ", the results were entered",
       "explanation": "'Having completed the measurements' must modify the doer of that action. 'The results' cannot complete measurements; the subject should be 'the technicians.'",
       "commonMistake": "Accepting a grammatically well-formed main clause that does not match the participial phrase.",
       "learningObjective": "Match introductory participial phrases to a logical subject.",
@@ -8799,23 +8799,23 @@
       "options": [
         {
           "key": "A",
-          "text": "A"
+          "text": "The hypothesis was not supported"
         },
         {
           "key": "B",
-          "text": "B"
+          "text": "by evidence enough strong"
         },
         {
           "key": "C",
-          "text": "C"
+          "text": "to convince the reviewers"
         },
         {
           "key": "D",
-          "text": "D"
+          "text": "of its validity"
         }
       ],
       "correctKey": "B",
-      "correctAnswer": "B",
+      "correctAnswer": "by evidence enough strong",
       "explanation": "'Enough' follows the adjective: 'strong enough,' not 'enough strong.'",
       "commonMistake": "Placing 'enough' before an adjective as if it were 'too.'",
       "learningObjective": "Use the pattern adjective + enough + infinitive.",
@@ -8838,23 +8838,23 @@
       "options": [
         {
           "key": "A",
-          "text": "A"
+          "text": "An agreement was reached last spring"
         },
         {
           "key": "B",
-          "text": "B"
+          "text": "that will allow students"
         },
         {
           "key": "C",
-          "text": "C"
+          "text": "to transfer credits"
         },
         {
           "key": "D",
-          "text": "D"
+          "text": "among the two campuses"
         }
       ],
       "correctKey": "D",
-      "correctAnswer": "D",
+      "correctAnswer": "among the two campuses",
       "explanation": "'Between' is used for two items. 'Among the two campuses' should be 'between the two campuses.'",
       "commonMistake": "Using 'among' whenever more than one person or place is mentioned.",
       "learningObjective": "Choose 'between' for two and 'among' for three or more.",
@@ -8877,23 +8877,23 @@
       "options": [
         {
           "key": "A",
-          "text": "A"
+          "text": "The researchers stayed in the region"
         },
         {
           "key": "B",
-          "text": "B"
+          "text": "to observe seasonal changes"
         },
         {
           "key": "C",
-          "text": "C"
+          "text": "during three years"
         },
         {
           "key": "D",
-          "text": "D"
+          "text": "before returning home"
         }
       ],
       "correctKey": "C",
-      "correctAnswer": "C",
+      "correctAnswer": "during three years",
       "explanation": "'During' is followed by a named period or event, not a number + time noun. It should be 'for three years.'",
       "commonMistake": "Using 'during' with quantified durations such as 'three years.'",
       "learningObjective": "Use 'for' with lengths of time and 'during' with named periods.",
@@ -8916,23 +8916,23 @@
       "options": [
         {
           "key": "A",
-          "text": "A"
+          "text": "There is"
         },
         {
           "key": "B",
-          "text": "B"
+          "text": "few evidence"
         },
         {
           "key": "C",
-          "text": "C"
+          "text": "to support the claim"
         },
         {
           "key": "D",
-          "text": "D"
+          "text": "that the method is reliable"
         }
       ],
       "correctKey": "B",
-      "correctAnswer": "B",
+      "correctAnswer": "few evidence",
       "explanation": "'Evidence' is uncountable, so 'few evidence' should be 'little evidence.' 'There is' is then correct.",
       "commonMistake": "Using 'few' with uncountable nouns, or changing 'is' instead of the quantifier.",
       "learningObjective": "Pair 'few' with countable nouns and 'little' with uncountable nouns.",
@@ -8955,23 +8955,23 @@
       "options": [
         {
           "key": "A",
-          "text": "A"
+          "text": "The counselor gave the student"
         },
         {
           "key": "B",
-          "text": "B"
+          "text": "some useful advise"
         },
         {
           "key": "C",
-          "text": "C"
+          "text": "about choosing"
         },
         {
           "key": "D",
-          "text": "D"
+          "text": "a major"
         }
       ],
       "correctKey": "B",
-      "correctAnswer": "B",
+      "correctAnswer": "some useful advise",
       "explanation": "'Advise' is a verb. The noun needed after 'some useful' is 'advice.'",
       "commonMistake": "Confusing the noun 'advice' with the verb 'advise.'",
       "learningObjective": "Distinguish noun/verb pairs that differ by spelling.",
@@ -8994,23 +8994,23 @@
       "options": [
         {
           "key": "A",
-          "text": "A"
+          "text": "After the trade agreement was signed, the country"
         },
         {
           "key": "B",
-          "text": "B"
+          "text": "entered a period"
         },
         {
           "key": "C",
-          "text": "C"
+          "text": "of economical growth"
         },
         {
           "key": "D",
-          "text": "D"
+          "text": "that lasted several years"
         }
       ],
       "correctKey": "C",
-      "correctAnswer": "C",
+      "correctAnswer": "of economical growth",
       "explanation": "'Economical' means thrifty. Growth of an economy is 'economic growth.'",
       "commonMistake": "Treating 'economical' as the adjective form of 'economy.'",
       "learningObjective": "Choose 'economic' for the economy and 'economical' for saving money or resources.",
@@ -9033,23 +9033,23 @@
       "options": [
         {
           "key": "A",
-          "text": "A"
+          "text": "Many students prefer"
         },
         {
           "key": "B",
-          "text": "B"
+          "text": "online instruction"
         },
         {
           "key": "C",
-          "text": "C"
+          "text": "than classroom instruction"
         },
         {
           "key": "D",
-          "text": "D"
+          "text": "because it is more flexible"
         }
       ],
       "correctKey": "C",
-      "correctAnswer": "C",
+      "correctAnswer": "than classroom instruction",
       "explanation": "The pattern is 'prefer X to Y,' not 'prefer X than Y.' 'Than classroom instruction' should be 'to classroom instruction.'",
       "commonMistake": "Using 'than' after 'prefer' because comparatives often take 'than.'",
       "learningObjective": "Use 'to,' not 'than,' after 'prefer.'",
@@ -9072,23 +9072,23 @@
       "options": [
         {
           "key": "A",
-          "text": "A"
+          "text": "Additional funding made possible"
         },
         {
           "key": "B",
-          "text": "B"
+          "text": "the purchase of equipment"
         },
         {
           "key": "C",
-          "text": "C"
+          "text": "and to train"
         },
         {
           "key": "D",
-          "text": "D"
+          "text": "new staff members"
         }
       ],
       "correctKey": "C",
-      "correctAnswer": "C",
+      "correctAnswer": "and to train",
       "explanation": "'The purchase of equipment' is a noun phrase, so the second element should also be a noun phrase: 'the training of new staff members,' not 'to train.'",
       "commonMistake": "Switching from a noun phrase to an infinitive in a coordinated pair.",
       "learningObjective": "Keep both elements of 'and' in the same grammatical form.",
@@ -9111,23 +9111,23 @@
       "options": [
         {
           "key": "A",
-          "text": "A"
+          "text": "No sooner had the lecture ended"
         },
         {
           "key": "B",
-          "text": "B"
+          "text": "when"
         },
         {
           "key": "C",
-          "text": "C"
+          "text": "the students began to ask questions"
         },
         {
           "key": "D",
-          "text": "D"
+          "text": "about the assignment"
         }
       ],
       "correctKey": "B",
-      "correctAnswer": "B",
+      "correctAnswer": "when",
       "explanation": "The correlative pattern is 'no sooner...than,' not 'no sooner...when.' 'When' should be 'than.'",
       "commonMistake": "Confusing 'no sooner...than' with 'hardly...when.'",
       "learningObjective": "Use 'than' after inverted 'no sooner.'",
@@ -9150,23 +9150,23 @@
       "options": [
         {
           "key": "A",
-          "text": "A"
+          "text": "The director wishes that the budget"
         },
         {
           "key": "B",
-          "text": "B"
+          "text": "is larger this year"
         },
         {
           "key": "C",
-          "text": "C"
+          "text": "than it was last year"
         },
         {
           "key": "D",
-          "text": "D"
+          "text": "after several cuts"
         }
       ],
       "correctKey": "B",
-      "correctAnswer": "B",
+      "correctAnswer": "is larger this year",
       "explanation": "After 'wish' for a present unreal situation, English uses a past form: 'were larger,' not 'is larger.'",
       "commonMistake": "Keeping the present tense after 'wish' because the situation is current.",
       "learningObjective": "Use past forms after 'wish' to express present unreality.",
@@ -9189,24 +9189,24 @@
       "options": [
         {
           "key": "A",
-          "text": "A"
+          "text": "The department chair, as well as the senior lecturers,"
         },
         {
           "key": "B",
-          "text": "B"
+          "text": "have submitted the annual report"
         },
         {
           "key": "C",
-          "text": "C"
+          "text": "to the dean"
         },
         {
           "key": "D",
-          "text": "D"
+          "text": "this week"
         }
       ],
       "correctKey": "B",
-      "correctAnswer": "B",
-      "explanation": "Phrases with 'as well as' do not make the subject plural. The subject is 'the department chair,' so the verb should be 'has submitted.'",
+      "correctAnswer": "have submitted the annual report",
+      "explanation": "The underlined verb phrase \"have submitted the annual report\" is incorrect. Phrases with 'as well as' do not make the subject plural. The subject is 'the department chair,' so the verb should be 'has submitted.'",
       "commonMistake": "Adding the noun after 'as well as' to the subject.",
       "learningObjective": "Ignore 'as well as' phrases when choosing verb number.",
       "tags": [
@@ -9228,23 +9228,23 @@
       "options": [
         {
           "key": "A",
-          "text": "A"
+          "text": "The researchers could not identify the person"
         },
         {
           "key": "B",
-          "text": "B"
+          "text": "who they had interviewed"
         },
         {
           "key": "C",
-          "text": "C"
+          "text": "during the first phase"
         },
         {
           "key": "D",
-          "text": "D"
+          "text": "of the study"
         }
       ],
       "correctKey": "B",
-      "correctAnswer": "B",
+      "correctAnswer": "who they had interviewed",
       "explanation": "'Who' is a subject form. Here the pronoun is the object of 'had interviewed,' so it should be 'whom they had interviewed.'",
       "commonMistake": "Using 'who' in all relative clauses that refer to people.",
       "learningObjective": "Use 'whom' when the relative pronoun is an object.",
@@ -9267,24 +9267,24 @@
       "options": [
         {
           "key": "A",
-          "text": "A"
+          "text": "This compound is chemically"
         },
         {
           "key": "B",
-          "text": "B"
+          "text": "different"
         },
         {
           "key": "C",
-          "text": "C"
+          "text": "than any other substance"
         },
         {
           "key": "D",
-          "text": "D"
+          "text": "found in the sample"
         }
       ],
       "correctKey": "C",
-      "correctAnswer": "C",
-      "explanation": "Formal academic English uses 'different from,' not 'different than.'",
+      "correctAnswer": "than any other substance",
+      "explanation": "The underlined phrase \"than any other substance\" is incorrect. Formal academic English uses 'different from,' not 'different than.'",
       "commonMistake": "Using 'than' after 'different' because comparatives take 'than.'",
       "learningObjective": "Use 'different from' in academic writing.",
       "tags": [
@@ -9306,23 +9306,23 @@
       "options": [
         {
           "key": "A",
-          "text": "A"
+          "text": "The findings will be published"
         },
         {
           "key": "B",
-          "text": "B"
+          "text": "in a major journal"
         },
         {
           "key": "C",
-          "text": "C"
+          "text": "after the peer review"
         },
         {
           "key": "D",
-          "text": "D"
+          "text": "in next month"
         }
       ],
       "correctKey": "D",
-      "correctAnswer": "D",
+      "correctAnswer": "in next month",
       "explanation": "'Next month' is not used with 'in.' It should be 'next month,' not 'in next month.'",
       "commonMistake": "Adding 'in' before 'next' time expressions.",
       "learningObjective": "Omit 'in' before 'next' and 'last' in time phrases.",
@@ -9345,23 +9345,23 @@
       "options": [
         {
           "key": "A",
-          "text": "A"
+          "text": "The treatment proved highly effective"
         },
         {
           "key": "B",
-          "text": "B"
+          "text": "in reducing infections"
         },
         {
           "key": "C",
-          "text": "C"
+          "text": "among older patients"
         },
         {
           "key": "D",
-          "text": "D"
+          "text": "during the first six month"
         }
       ],
       "correctKey": "D",
-      "correctAnswer": "D",
+      "correctAnswer": "during the first six month",
       "explanation": "After a number greater than one, the noun is plural: 'six months,' not 'six month.'",
       "commonMistake": "Using the singular form after a plural number in time phrases.",
       "learningObjective": "Use plural nouns after numbers greater than one.",
@@ -9384,23 +9384,23 @@
       "options": [
         {
           "key": "A",
-          "text": "A"
+          "text": "The documents were stored"
         },
         {
           "key": "B",
-          "text": "B"
+          "text": "in a room which temperature"
         },
         {
           "key": "C",
-          "text": "C"
+          "text": "was carefully controlled"
         },
         {
           "key": "D",
-          "text": "D"
+          "text": "throughout the year"
         }
       ],
       "correctKey": "B",
-      "correctAnswer": "B",
+      "correctAnswer": "in a room which temperature",
       "explanation": "Possession is expressed with 'whose': 'whose temperature,' not 'which temperature.'",
       "commonMistake": "Using 'which' before a noun to show possession.",
       "learningObjective": "Use 'whose' for possession with both people and things.",
@@ -9423,23 +9423,23 @@
       "options": [
         {
           "key": "A",
-          "text": "A"
+          "text": "The fossils are believed to be"
         },
         {
           "key": "B",
-          "text": "B"
+          "text": "more than two million"
         },
         {
           "key": "C",
-          "text": "C"
+          "text": "years age"
         },
         {
           "key": "D",
-          "text": "D"
+          "text": "according to recent tests"
         }
       ],
       "correctKey": "C",
-      "correctAnswer": "C",
+      "correctAnswer": "years age",
       "explanation": "The correct pattern is 'years old,' not 'years age.'",
       "commonMistake": "Using the noun 'age' where the adjective 'old' is required.",
       "learningObjective": "Use 'years old' for age expressions.",
@@ -9462,23 +9462,23 @@
       "options": [
         {
           "key": "A",
-          "text": "A"
+          "text": "The organization succeeded in reducing costs last year"
         },
         {
           "key": "B",
-          "text": "B"
+          "text": "without cutting staff"
         },
         {
           "key": "C",
-          "text": "C"
+          "text": "or to close"
         },
         {
           "key": "D",
-          "text": "D"
+          "text": "any offices"
         }
       ],
       "correctKey": "C",
-      "correctAnswer": "C",
+      "correctAnswer": "or to close",
       "explanation": "'Without' is followed by gerunds: 'cutting... or closing,' not 'to close.'",
       "commonMistake": "Switching to an infinitive in the second half of a 'without' phrase.",
       "learningObjective": "Keep gerunds parallel after prepositions such as 'without.'",
@@ -9501,23 +9501,23 @@
       "options": [
         {
           "key": "A",
-          "text": "A"
+          "text": "A large amount of students"
         },
         {
           "key": "B",
-          "text": "B"
+          "text": "enrolled in the course"
         },
         {
           "key": "C",
-          "text": "C"
+          "text": "this semester"
         },
         {
           "key": "D",
-          "text": "D"
+          "text": "after the requirements changed"
         }
       ],
       "correctKey": "A",
-      "correctAnswer": "A",
+      "correctAnswer": "A large amount of students",
       "explanation": "'Students' is countable, so the correct quantifier is 'a large number of,' not 'a large amount of.'",
       "commonMistake": "Using 'amount' with countable plural nouns.",
       "learningObjective": "Use 'amount' with uncountable nouns and 'number' with countable nouns.",

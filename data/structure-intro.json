@@ -332,23 +332,23 @@
       "options": [
         {
           "key": "A",
-          "text": "A"
+          "text": "Several new vaccines"
         },
         {
           "key": "B",
-          "text": "B"
+          "text": "have developed"
         },
         {
           "key": "C",
-          "text": "C"
+          "text": "to prevent diseases"
         },
         {
           "key": "D",
-          "text": "D"
+          "text": "that were once common"
         }
       ],
       "correctKey": "B",
-      "correctAnswer": "B",
+      "correctAnswer": "have developed",
       "explanation": "'Have developed' should be 'have been developed' because the vaccines receive the action.",
       "commonMistake": "Using active present perfect when passive voice is required.",
       "learningObjective": "Identify errors in present perfect passive structures.",
@@ -371,23 +371,23 @@
       "options": [
         {
           "key": "A",
-          "text": "A"
+          "text": "The manager objected"
         },
         {
           "key": "B",
-          "text": "B"
+          "text": "to change"
         },
         {
           "key": "C",
-          "text": "C"
+          "text": "the schedule"
         },
         {
           "key": "D",
-          "text": "D"
+          "text": "without consulting the team"
         }
       ],
       "correctKey": "B",
-      "correctAnswer": "B",
+      "correctAnswer": "to change",
       "explanation": "'To change' should be 'to changing' because 'object to' is followed by a gerund.",
       "commonMistake": "Treating 'to' as an infinitive marker instead of a preposition.",
       "learningObjective": "Recognize gerunds after prepositional expressions.",

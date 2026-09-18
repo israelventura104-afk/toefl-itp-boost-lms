@@ -58,7 +58,10 @@ function formatCommonMistake(value, correctKey) {
   if (!value) return "";
   if (typeof value === "string") return value;
   if (typeof value === "object") {
-    const entries = Object.entries(value).filter(([key]) => key !== correctKey);
+    const ck = String(correctKey ?? "").trim().toUpperCase();
+    const entries = Object.entries(value).filter(
+      ([key]) => String(key).trim().toUpperCase() !== ck
+    );
     return entries[0] ? String(entries[0][1]) : "";
   }
   return "";
@@ -83,10 +86,19 @@ function normalizeItem(raw) {
         ? "Error Identification"
         : rawType;
   const question = raw.question || raw.stem || "";
+  options = options.map((option) => ({
+    key: String(option.key ?? "").trim().toUpperCase(),
+    text: String(option.text ?? option.key ?? "").trim(),
+  }));
   if (window.StructureLib?.alignErrorOptions) {
-    options = StructureLib.alignErrorOptions(question, options, type);
+    options = StructureLib.alignErrorOptions(question, options, type).map((option) => ({
+      key: String(option.key ?? "").trim().toUpperCase(),
+      text: String(option.text ?? option.key ?? "").trim(),
+    }));
   }
-  const correctKey = String(raw.correctKey ?? raw.correct_answer ?? "").trim();
+  const correctKey = String(raw.correctKey ?? raw.correct_answer ?? "")
+    .trim()
+    .toUpperCase();
   const correctFromOptions = options.find((option) => option.key === correctKey);
 
   return {
@@ -261,7 +273,7 @@ function renderQuestion() {
     const label = window.StructureLib ? StructureLib.escapeHtml(option.text) : option.text;
     button.innerHTML = `<b>${option.key}</b><span>${label}</span>`;
     button.addEventListener("click", () => {
-      state.answers.set(item.id, option.key);
+      state.answers.set(item.id, String(option.key ?? "").trim().toUpperCase());
       updateAnsweredCount();
       renderQuestion();
     });
@@ -319,9 +331,13 @@ function finishExam({ auto = false } = {}) {
   }
 
   const answered = state.questions.map((item) => {
-    const selectedKey = state.answers.get(item.id);
-    const correct = selectedKey === item.correctKey;
-    return { item, selectedKey, correct: Boolean(selectedKey) && correct, blank: !selectedKey };
+    const rawSelected = state.answers.get(item.id);
+    const blank = rawSelected == null || rawSelected === "";
+    const selectedKey = blank ? null : String(rawSelected).trim().toUpperCase();
+    const correct =
+      !blank &&
+      selectedKey === String(item.correctKey ?? "").trim().toUpperCase();
+    return { item, selectedKey, correct, blank };
   });
 
   const correctCount = answered.filter((row) => row.correct).length;

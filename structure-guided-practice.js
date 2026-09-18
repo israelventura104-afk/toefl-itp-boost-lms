@@ -56,7 +56,10 @@ function formatCommonMistake(value, correctKey) {
   if (!value) return "";
   if (typeof value === "string") return value;
   if (typeof value === "object") {
-    const entries = Object.entries(value).filter(([key]) => key !== correctKey);
+    const ck = String(correctKey ?? "").trim().toUpperCase();
+    const entries = Object.entries(value).filter(
+      ([key]) => String(key).trim().toUpperCase() !== ck
+    );
     if (!entries.length) return "";
     return entries[0][1];
   }
@@ -81,10 +84,19 @@ function normalizeItem(raw) {
         ? "Error Identification"
         : raw.type || "Sentence Completion";
   const question = raw.question || raw.stem || "";
+  options = options.map((option) => ({
+    key: String(option.key ?? "").trim().toUpperCase(),
+    text: String(option.text ?? option.key ?? "").trim(),
+  }));
   if (window.StructureLib?.alignErrorOptions) {
-    options = StructureLib.alignErrorOptions(question, options, type);
+    options = StructureLib.alignErrorOptions(question, options, type).map((option) => ({
+      key: String(option.key ?? "").trim().toUpperCase(),
+      text: String(option.text ?? option.key ?? "").trim(),
+    }));
   }
-  const correctKey = String(raw.correctKey ?? raw.correct_answer ?? "").trim();
+  const correctKey = String(raw.correctKey ?? raw.correct_answer ?? "")
+    .trim()
+    .toUpperCase();
   const correctFromOptions = options.find((option) => option.key === correctKey);
 
   return {
@@ -240,8 +252,9 @@ function renderQuestion() {
 }
 
 function chooseAnswer(item, option) {
-  const correct = option.key === item.correctKey;
-  guidedState.answers.set(item.id, { selectedKey: option.key, correct });
+  const selectedKey = String(option.key ?? "").trim().toUpperCase();
+  const correct = selectedKey === String(item.correctKey ?? "").trim().toUpperCase();
+  guidedState.answers.set(item.id, { selectedKey, correct });
   renderQuestion();
   if (guidedState.answers.size === guidedState.questions.length) {
     // auto-prepare results data; user still clicks View results / Next on last

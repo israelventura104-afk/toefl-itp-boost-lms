@@ -122,9 +122,9 @@
     });
 
     return options.map((option) => {
-      const key = String(option.key || "").trim();
+      const key = String(option.key || "").trim().toUpperCase();
       const phrase = byLetter[key];
-      if (!phrase) return option;
+      if (!phrase) return { key, text: String(option.text ?? option.key ?? "").trim() };
       return { key, text: phrase };
     });
   }
