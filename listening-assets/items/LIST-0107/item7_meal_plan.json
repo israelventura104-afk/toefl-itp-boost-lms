@@ -3,20 +3,55 @@
   "topic": "Dining Hall Meal Plan",
   "setting": "A student is speaking with a dining services employee about changing her meal plan.",
   "speakers": [
-    { "role": "narrator", "voice": "narrator" },
-    { "role": "speaker1", "name": "Woman (Student)", "voice": "female" },
-    { "role": "speaker2", "name": "Man (Dining Services Staff)", "voice": "male" }
+    {
+      "role": "narrator",
+      "voice": "narrator"
+    },
+    {
+      "role": "speaker1",
+      "name": "Woman (Student)",
+      "voice": "female"
+    },
+    {
+      "role": "speaker2",
+      "name": "Man (Dining Services Staff)",
+      "voice": "male"
+    }
   ],
   "narrator_intro": "Listen to a conversation between a student and a dining services employee.",
   "dialogue": [
-    { "speaker": "speaker1", "text": "Hi, I signed up for the nineteen-meal plan at the start of the semester, but I barely use more than ten a week. Can I switch to something smaller?" },
-    { "speaker": "speaker2", "text": "Let me check. Yes, you can switch to the fourteen-meal plan, but changes can only happen during the first three weeks of the semester or during winter break." },
-    { "speaker": "speaker1", "text": "We're only in week two, so I should be fine, right?" },
-    { "speaker": "speaker2", "text": "Correct, you're within the window. Keep in mind, though, once you switch, any unused meals from the nineteen-plan this week won't roll over, they reset with the new plan." },
-    { "speaker": "speaker1", "text": "That's fine, I've already lost a few meals anyway since I keep forgetting to eat on campus during exam weeks." },
-    { "speaker": "speaker2", "text": "That happens a lot. One more thing, the fourteen-meal plan comes with fewer guest swipes, only two a semester instead of five. Is that going to be an issue?" },
-    { "speaker": "speaker1", "text": "No, I don't usually bring guests anyway. Let's go ahead and make the switch." },
-    { "speaker": "speaker2", "text": "Great, I'll process it now. It'll take effect starting tomorrow morning." }
+    {
+      "speaker": "speaker1",
+      "text": "Hi, I signed up for the nineteen-meal plan at the start of the semester, but I barely use more than ten a week. Can I switch to something smaller?"
+    },
+    {
+      "speaker": "speaker2",
+      "text": "Let me check. Yes, you can switch to the fourteen-meal plan, but changes can only happen during the first three weeks of the semester or during winter break."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "We're only in week two, so I should be fine, right?"
+    },
+    {
+      "speaker": "speaker2",
+      "text": "Correct, you're within the window. Keep in mind, though, once you switch, any unused meals from the nineteen-plan this week won't roll over, they reset with the new plan."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "That's fine, I've already lost a few meals anyway since I keep forgetting to eat on campus during exam weeks."
+    },
+    {
+      "speaker": "speaker2",
+      "text": "That happens a lot. One more thing, the fourteen-meal plan comes with fewer guest swipes, only two a semester instead of five. Is that going to be an issue?"
+    },
+    {
+      "speaker": "speaker1",
+      "text": "No, I don't usually bring guests anyway. Let's go ahead and make the switch."
+    },
+    {
+      "speaker": "speaker2",
+      "text": "Great, I'll process it now. It'll take effect starting tomorrow morning."
+    }
   ],
   "narrator_outro": "Now get ready to answer the questions.",
   "questions": [

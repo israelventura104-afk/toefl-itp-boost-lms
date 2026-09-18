@@ -55,22 +55,22 @@
       "choices": [
         {
           "id": "A",
-          "text": "To learn how to find reliable research sources."
-        },
-        {
-          "id": "B",
           "text": "To return library books."
         },
         {
-          "id": "C",
+          "id": "B",
           "text": "To apply for a library job."
+        },
+        {
+          "id": "C",
+          "text": "To learn how to find reliable research sources."
         },
         {
           "id": "D",
           "text": "To meet with her professor."
         }
       ],
-      "answer_key": "A",
+      "answer_key": "C",
       "explanation": "She says she wants to learn how to find reliable sources for her research paper.",
       "evidence": "I want to learn how to find reliable sources for my research paper."
     }

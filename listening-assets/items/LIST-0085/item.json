@@ -55,22 +55,22 @@
       "choices": [
         {
           "id": "A",
-          "text": "His professor encouraged him to participate."
-        },
-        {
-          "id": "B",
           "text": "He needs extra credit."
         },
         {
-          "id": "C",
+          "id": "B",
           "text": "He has to complete a class assignment."
+        },
+        {
+          "id": "C",
+          "text": "His professor encouraged him to participate."
         },
         {
           "id": "D",
           "text": "He wants to become an editor."
         }
       ],
-      "answer_key": "A",
+      "answer_key": "C",
       "explanation": "He says his English professor encouraged him to submit an essay.",
       "evidence": "My English professor encouraged me to submit one of my essays."
     }

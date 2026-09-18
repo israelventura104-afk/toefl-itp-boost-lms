@@ -73,13 +73,13 @@
       "narrator_text": "What is the conversation mainly about?",
       "options": {
         "A": "Changing the student's academic advisor",
-        "B": "How to check in and navigate the campus career fair",
-        "C": "Buying business clothes at the campus store",
-        "D": "Scheduling a make-up final exam"
+        "B": "Buying business clothes at the campus store",
+        "C": "Scheduling a make-up final exam",
+        "D": "How to check in and navigate the campus career fair"
       },
-      "correct_answer": "B",
+      "correct_answer": "D",
       "explanation": "She arrives for the career fair; he explains entry time, registration, dress, resumes, and bag check.",
-      "commonMistake": "Choosing C—dress code is only one detail."
+      "commonMistake": "Choosing B—dress code is only one detail."
     },
     {
       "number": 2,
@@ -87,13 +87,13 @@
       "narrator_text": "When can students enter, and when do booth conversations start?",
       "options": {
         "A": "Enter at nine; conversations at nine-thirty",
-        "B": "Enter at ten; conversations at ten-thirty",
-        "C": "Enter at ten-thirty; conversations at noon",
-        "D": "Enter anytime; conversations only after three"
+        "B": "Enter at ten-thirty; conversations at noon",
+        "C": "Enter anytime; conversations only after three",
+        "D": "Enter at ten; conversations at ten-thirty"
       },
-      "correct_answer": "B",
+      "correct_answer": "D",
       "explanation": "Students enter at ten; employer booths start conversations at ten-thirty.",
-      "commonMistake": "Choosing C—ten-thirty is when talks start, not when doors open."
+      "commonMistake": "Choosing B—ten-thirty is when talks start, not when doors open."
     },
     {
       "number": 3,
@@ -115,11 +115,11 @@
       "narrator_text": "Until what time do upstairs interviews run?",
       "options": {
         "A": "Until three, when the fair floor closes",
-        "B": "Until five",
-        "C": "Only until ten-thirty",
-        "D": "All night"
+        "B": "Only until ten-thirty",
+        "C": "All night",
+        "D": "Until five"
       },
-      "correct_answer": "B",
+      "correct_answer": "D",
       "explanation": "The fair closes at three, but interviews upstairs run until five.",
       "commonMistake": "Choosing A—confuses fair floor closing with interview end time."
     }

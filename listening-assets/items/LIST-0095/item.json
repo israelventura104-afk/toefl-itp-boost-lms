@@ -55,22 +55,22 @@
       "choices": [
         {
           "id": "A",
-          "text": "To learn about exchange programs."
-        },
-        {
-          "id": "B",
           "text": "To apply for a campus job."
         },
         {
-          "id": "C",
+          "id": "B",
           "text": "To meet an English professor."
         },
         {
-          "id": "D",
+          "id": "C",
           "text": "To register for next semester."
+        },
+        {
+          "id": "D",
+          "text": "To learn about exchange programs."
         }
       ],
-      "answer_key": "A",
+      "answer_key": "D",
       "explanation": "She wants to learn more about exchange programs in Australia.",
       "evidence": "I want to learn more about exchange programs in Australia."
     }

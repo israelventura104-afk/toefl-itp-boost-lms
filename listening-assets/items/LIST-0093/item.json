@@ -55,22 +55,22 @@
       "choices": [
         {
           "id": "A",
-          "text": "To improve her résumé before applying for internships."
-        },
-        {
-          "id": "B",
           "text": "To choose her major."
         },
         {
-          "id": "C",
+          "id": "B",
           "text": "To register for classes."
         },
         {
-          "id": "D",
+          "id": "C",
           "text": "To find a roommate."
+        },
+        {
+          "id": "D",
+          "text": "To improve her résumé before applying for internships."
         }
       ],
-      "answer_key": "A",
+      "answer_key": "D",
       "explanation": "She wants feedback before applying for summer internships.",
       "evidence": "I want feedback before I apply for summer internships."
     }

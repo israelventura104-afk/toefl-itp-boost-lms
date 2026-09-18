@@ -3,20 +3,55 @@
   "topic": "Campus Parking Permit",
   "setting": "A student is talking to a campus parking office employee about a parking permit issue.",
   "speakers": [
-    { "role": "narrator", "voice": "narrator" },
-    { "role": "speaker1", "name": "Man (Student)", "voice": "male" },
-    { "role": "speaker2", "name": "Woman (Parking Office Staff)", "voice": "female" }
+    {
+      "role": "narrator",
+      "voice": "narrator"
+    },
+    {
+      "role": "speaker1",
+      "name": "Man (Student)",
+      "voice": "male"
+    },
+    {
+      "role": "speaker2",
+      "name": "Woman (Parking Office Staff)",
+      "voice": "female"
+    }
   ],
   "narrator_intro": "Listen to a conversation between a student and a parking office employee.",
   "dialogue": [
-    { "speaker": "speaker1", "text": "Hi, I got a ticket yesterday for parking in the faculty lot, but I have a valid student permit for the north lot. I just couldn't find a single open spot there." },
-    { "speaker": "speaker2", "text": "I understand the frustration, the north lot does fill up fast in the mornings. Unfortunately, the permit is only valid for the lot it's assigned to, so the ticket itself is valid." },
-    { "speaker": "speaker1", "text": "That doesn't seem fair if there's genuinely nowhere to park." },
-    { "speaker": "speaker2", "text": "I hear you, and you're not the first to bring this up this semester. You can file an appeal, and if the lot was confirmed full at that time, the fine is often reduced or waived." },
-    { "speaker": "speaker1", "text": "How do I know if it'll be confirmed full? Is there some kind of record?" },
-    { "speaker": "speaker2", "text": "Yes, actually, our lots have sensors now that log capacity every fifteen minutes, so we can check the exact time you were ticketed." },
-    { "speaker": "speaker1", "text": "That's reassuring. Where do I submit the appeal?" },
-    { "speaker": "speaker2", "text": "There's an online form on the parking services website, under 'Appeals.' You'll need the ticket number and the approximate time you were looking for parking." }
+    {
+      "speaker": "speaker1",
+      "text": "Hi, I got a ticket yesterday for parking in the faculty lot, but I have a valid student permit for the north lot. I just couldn't find a single open spot there."
+    },
+    {
+      "speaker": "speaker2",
+      "text": "I understand the frustration, the north lot does fill up fast in the mornings. Unfortunately, the permit is only valid for the lot it's assigned to, so the ticket itself is valid."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "That doesn't seem fair if there's genuinely nowhere to park."
+    },
+    {
+      "speaker": "speaker2",
+      "text": "I hear you, and you're not the first to bring this up this semester. You can file an appeal, and if the lot was confirmed full at that time, the fine is often reduced or waived."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "How do I know if it'll be confirmed full? Is there some kind of record?"
+    },
+    {
+      "speaker": "speaker2",
+      "text": "Yes, actually, our lots have sensors now that log capacity every fifteen minutes, so we can check the exact time you were ticketed."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "That's reassuring. Where do I submit the appeal?"
+    },
+    {
+      "speaker": "speaker2",
+      "text": "There's an online form on the parking services website, under 'Appeals.' You'll need the ticket number and the approximate time you were looking for parking."
+    }
   ],
   "narrator_outro": "Now get ready to answer the questions.",
   "questions": [
@@ -51,12 +86,12 @@
       "question_type": "Detail",
       "narrator_text": "How can the parking office verify whether the lot was actually full?",
       "options": {
-        "A": "By reviewing security camera footage",
-        "B": "By checking sensor data that logs capacity every fifteen minutes",
+        "A": "By checking sensor data that logs capacity every fifteen minutes",
+        "B": "By reviewing security camera footage",
         "C": "By asking other students who were parking nearby",
         "D": "There is no way to verify it"
       },
-      "correct_answer": "B",
+      "correct_answer": "A",
       "explanation": "The staff member mentions sensors that log lot capacity every fifteen minutes."
     },
     {
@@ -64,12 +99,12 @@
       "question_type": "Inference",
       "narrator_text": "What can be inferred about this situation?",
       "options": {
-        "A": "The student is the first person to ever complain about this",
-        "B": "Full parking lots causing tickets is a recurring issue this semester",
+        "A": "Full parking lots causing tickets is a recurring issue this semester",
+        "B": "The student is the first person to ever complain about this",
         "C": "The parking office refuses to consider appeals",
         "D": "The student will definitely have his fine waived"
       },
-      "correct_answer": "B",
+      "correct_answer": "A",
       "explanation": "The staff member says he is not the first to bring this up this semester, implying it's a recurring problem."
     }
   ]

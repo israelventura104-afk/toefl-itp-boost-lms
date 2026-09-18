@@ -3,20 +3,55 @@
   "topic": "Career Center Internship Advice",
   "setting": "A student is meeting with a career counselor about finding a summer internship.",
   "speakers": [
-    { "role": "narrator", "voice": "narrator" },
-    { "role": "speaker1", "name": "Woman (Student)", "voice": "female" },
-    { "role": "speaker2", "name": "Man (Career Counselor)", "voice": "male" }
+    {
+      "role": "narrator",
+      "voice": "narrator"
+    },
+    {
+      "role": "speaker1",
+      "name": "Woman (Student)",
+      "voice": "female"
+    },
+    {
+      "role": "speaker2",
+      "name": "Man (Career Counselor)",
+      "voice": "male"
+    }
   ],
   "narrator_intro": "Listen to a conversation between a student and a career counselor.",
   "dialogue": [
-    { "speaker": "speaker1", "text": "I've applied to about fifteen marketing internships so far and haven't heard back from any of them. I'm starting to think my resume is the problem." },
-    { "speaker": "speaker2", "text": "Let's take a look. Actually, your experience is solid, but the resume is formatted more like an academic CV than a professional one. It's a bit dense for recruiters who skim quickly." },
-    { "speaker": "speaker1", "text": "I didn't realize that mattered so much. What should I change?" },
-    { "speaker": "speaker2", "text": "Cut it down to one page, use bullet points instead of paragraphs, and lead each bullet with an action verb. Also, move your marketing club experience above your part-time retail job, it's more relevant." },
-    { "speaker": "speaker1", "text": "That makes sense. Should I also mention the class project where we developed a mock ad campaign?" },
-    { "speaker": "speaker2", "text": "Definitely, that's exactly the kind of concrete experience recruiters look for. Quantify it if you can, mention any metrics from the project, even estimated ones." },
-    { "speaker": "speaker1", "text": "Okay, I'll revise it tonight. Is there someone here who can review it before I resend applications?" },
-    { "speaker": "speaker2", "text": "Yes, drop it off at the front desk once it's revised, and we'll have feedback back to you within two business days." }
+    {
+      "speaker": "speaker1",
+      "text": "I've applied to about fifteen marketing internships so far and haven't heard back from any of them. I'm starting to think my resume is the problem."
+    },
+    {
+      "speaker": "speaker2",
+      "text": "Let's take a look. Actually, your experience is solid, but the resume is formatted more like an academic CV than a professional one. It's a bit dense for recruiters who skim quickly."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "I didn't realize that mattered so much. What should I change?"
+    },
+    {
+      "speaker": "speaker2",
+      "text": "Cut it down to one page, use bullet points instead of paragraphs, and lead each bullet with an action verb. Also, move your marketing club experience above your part-time retail job, it's more relevant."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "That makes sense. Should I also mention the class project where we developed a mock ad campaign?"
+    },
+    {
+      "speaker": "speaker2",
+      "text": "Definitely, that's exactly the kind of concrete experience recruiters look for. Quantify it if you can, mention any metrics from the project, even estimated ones."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "Okay, I'll revise it tonight. Is there someone here who can review it before I resend applications?"
+    },
+    {
+      "speaker": "speaker2",
+      "text": "Yes, drop it off at the front desk once it's revised, and we'll have feedback back to you within two business days."
+    }
   ],
   "narrator_outro": "Now get ready to answer the questions.",
   "questions": [

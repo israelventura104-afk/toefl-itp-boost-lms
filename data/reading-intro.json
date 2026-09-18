@@ -256,30 +256,25 @@
         "options": [
           {
             "key": "A",
-            "text": "They are useful but must be planned carefully."
-          },
-          {
-            "key": "B",
             "text": "They are too expensive to be considered by cities."
           },
           {
-            "key": "C",
+            "key": "B",
             "text": "They are mainly decorative and have little ecological value."
+          },
+          {
+            "key": "C",
+            "text": "They are useful but must be planned carefully."
           },
           {
             "key": "D",
             "text": "They are the only effective solution to urban environmental problems."
           }
         ],
-        "correctKey": "A",
+        "correctKey": "C",
         "correctAnswer": "They are useful but must be planned carefully.",
         "explanation": "The author presents several benefits of green roofs but also emphasizes cost, weight, maintenance, and the need to include them in a larger strategy.",
-        "evidence": {
-          "paragraphs": [
-            5
-          ],
-          "quote": "as part of a larger environmental strategy rather than as a single answer"
-        }
+        "evidence": "{'paragraphs': [5], 'quote': 'as part of a larger environmental strategy rather than as a single answer'}"
       }
     ]
   }

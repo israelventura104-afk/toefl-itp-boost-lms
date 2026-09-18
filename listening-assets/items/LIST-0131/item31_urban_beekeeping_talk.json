@@ -70,11 +70,11 @@
       "narrator_text": "What is the talk mainly about?",
       "options": {
         "A": "How to cook with honey in a dorm kitchen",
-        "B": "Urban beekeeping and its link to local food and pollination",
-        "C": "Why cities should ban all insects",
-        "D": "How to build a wooden fence for a farm"
+        "B": "Why cities should ban all insects",
+        "C": "How to build a wooden fence for a farm",
+        "D": "Urban beekeeping and its link to local food and pollination"
       },
-      "correct_answer": "B",
+      "correct_answer": "D",
       "explanation": "The speaker explains city hives, pollination, rules, and why pollinators support local food systems.",
       "commonMistake": "Choosing A—honey is mentioned as one product, not the main focus."
     },
@@ -84,13 +84,13 @@
       "narrator_text": "According to the speaker, what is the bigger story beyond local honey?",
       "options": {
         "A": "Selling bees to airports",
-        "B": "Pollination for neighborhood gardens and small farms at the city edge",
-        "C": "Replacing all grocery stores",
-        "D": "Training bees to carry mail"
+        "B": "Replacing all grocery stores",
+        "C": "Training bees to carry mail",
+        "D": "Pollination for neighborhood gardens and small farms at the city edge"
       },
-      "correct_answer": "B",
+      "correct_answer": "D",
       "explanation": "He says the bigger story is pollination for neighborhood gardens and small farms at the city edge.",
-      "commonMistake": "Choosing A or D—those are not mentioned."
+      "commonMistake": "Choosing A or C—those are not mentioned."
     },
     {
       "number": 3,
@@ -112,11 +112,11 @@
       "narrator_text": "What does the speaker suggest about who should keep bees?",
       "options": {
         "A": "Every resident must keep a hive",
-        "B": "Not everyone needs to keep bees; pollinators still matter for local food systems",
-        "C": "Only tourists should handle hives",
-        "D": "Beekeeping has no connection to food"
+        "B": "Only tourists should handle hives",
+        "C": "Beekeeping has no connection to food",
+        "D": "Not everyone needs to keep bees; pollinators still matter for local food systems"
       },
-      "correct_answer": "B",
+      "correct_answer": "D",
       "explanation": "He says the point is not that every resident should keep bees, but that pollinators are part of a healthier local food system.",
       "commonMistake": "Choosing A—that is what he explicitly rejects."
     }

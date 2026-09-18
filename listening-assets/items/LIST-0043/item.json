@@ -59,18 +59,18 @@
         },
         {
           "id": "B",
-          "text": "To prepare for an upcoming quiz."
-        },
-        {
-          "id": "C",
           "text": "To return a textbook."
         },
         {
-          "id": "D",
+          "id": "C",
           "text": "To meet a classmate."
+        },
+        {
+          "id": "D",
+          "text": "To prepare for an upcoming quiz."
         }
       ],
-      "answer_key": "B",
+      "answer_key": "D",
       "explanation": "He wants help understanding the homework before the quiz.",
       "evidence": "I want someone to explain yesterday's homework before the quiz."
     }

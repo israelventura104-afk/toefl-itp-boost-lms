@@ -59,18 +59,18 @@
         },
         {
           "id": "B",
-          "text": "He had to add money before printing."
-        },
-        {
-          "id": "C",
           "text": "The library printer was broken."
         },
         {
-          "id": "D",
+          "id": "C",
           "text": "Someone printed the report for him."
+        },
+        {
+          "id": "D",
+          "text": "He had to add money before printing."
         }
       ],
-      "answer_key": "B",
+      "answer_key": "D",
       "explanation": "He needed to add funds to his printing account before printing.",
       "evidence": "After I added more money to my printing account."
     }

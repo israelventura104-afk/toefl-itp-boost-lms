@@ -65,10 +65,10 @@ function normalizeSkill(skill) {
 
 function normalizeQuestion(raw) {
   const options = (raw.options || []).map((option) => ({
-    key: String(option.key ?? "").trim(),
+    key: String(option.key ?? "").trim().toUpperCase(),
     text: String(option.text ?? "").trim(),
   }));
-  const correctKey = String(raw.correctKey ?? "").trim();
+  const correctKey = String(raw.correctKey ?? "").trim().toUpperCase();
   const hit = options.find((option) => option.key === correctKey);
   return {
     id: String(raw.id ?? "").trim(),
@@ -264,8 +264,8 @@ function finishExam({ auto = false } = {}) {
   }
 
   const rows = state.items.map(({ passage, question }) => {
-    const selectedKey = state.answers.get(question.id);
-    const correct = selectedKey === question.correctKey;
+    const selectedKey = String(state.answers.get(question.id) ?? "").trim().toUpperCase();
+    const correct = selectedKey === String(question.correctKey ?? "").trim().toUpperCase();
     return {
       passage,
       question,

@@ -55,22 +55,22 @@
       "choices": [
         {
           "id": "A",
-          "text": "Because the weather should be good for observing the stars."
-        },
-        {
-          "id": "B",
           "text": "To return a telescope."
         },
         {
-          "id": "C",
+          "id": "B",
           "text": "To study for an astronomy exam."
         },
         {
-          "id": "D",
+          "id": "C",
           "text": "To meet a new professor."
+        },
+        {
+          "id": "D",
+          "text": "Because the weather should be good for observing the stars."
         }
       ],
-      "answer_key": "A",
+      "answer_key": "D",
       "explanation": "He says clear weather will make stargazing ideal.",
       "evidence": "The weather is supposed to be clear, so it should be perfect for observing the stars."
     }

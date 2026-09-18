@@ -55,22 +55,22 @@
       "choices": [
         {
           "id": "A",
-          "text": "He enjoyed the orientation program as a freshman."
-        },
-        {
-          "id": "B",
           "text": "He needs extra credit."
         },
         {
-          "id": "C",
+          "id": "B",
           "text": "His professor required him to help."
+        },
+        {
+          "id": "C",
+          "text": "He enjoyed the orientation program as a freshman."
         },
         {
           "id": "D",
           "text": "He wants to change his major."
         }
       ],
-      "answer_key": "A",
+      "answer_key": "C",
       "explanation": "He volunteered because he had a positive experience during his own orientation.",
       "evidence": "I enjoyed the program when I was a freshman."
     }

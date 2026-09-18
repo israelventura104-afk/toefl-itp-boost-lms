@@ -73,11 +73,11 @@
       "narrator_text": "What is the conversation mainly about?",
       "options": {
         "A": "Moving the student to a new residence hall",
-        "B": "Solving a laundry-card problem in the dorm",
-        "C": "Buying a new washing machine for the building",
+        "B": "Buying a new washing machine for the building",
+        "C": "Solving a laundry-card problem in the dorm",
         "D": "Scheduling a fire drill for the whole campus"
       },
-      "correct_answer": "B",
+      "correct_answer": "C",
       "explanation": "Her laundry card readers fail on floor two; he redirects her and explains refunds and timing.",
       "commonMistake": "Choosing D because a fire-panel test is mentioned—that only explains a locked stairwell."
     },

@@ -69,56 +69,56 @@
       "question_type": "Main Idea",
       "narrator_text": "What is the talk mainly about?",
       "options": {
-        "A": "How blues traditions helped shape early jazz",
-        "B": "How to tune a piano for classical exams",
-        "C": "Why brass instruments were banned in New Orleans",
+        "A": "How to tune a piano for classical exams",
+        "B": "Why brass instruments were banned in New Orleans",
+        "C": "How blues traditions helped shape early jazz",
         "D": "How to write pop song lyrics"
       },
-      "correct_answer": "A",
+      "correct_answer": "C",
       "explanation": "She traces jazz roots to blues and New Orleans mixing of styles.",
-      "commonMistake": "Choosing C—not claimed."
+      "commonMistake": "Choosing B—not claimed."
     },
     {
       "number": 2,
       "question_type": "Detail",
       "narrator_text": "What does the professor say blues often uses?",
       "options": {
-        "A": "A twelve-bar structure and blue notes",
-        "B": "Only strict military marches",
-        "C": "Silent films without sound",
+        "A": "Only strict military marches",
+        "B": "Silent films without sound",
+        "C": "A twelve-bar structure and blue notes",
         "D": "Orchestra pit elevators"
       },
-      "correct_answer": "A",
+      "correct_answer": "C",
       "explanation": "Blues often uses twelve-bar structure and blue notes.",
-      "commonMistake": "Choosing B—not blues."
+      "commonMistake": "Choosing A—not blues."
     },
     {
       "number": 3,
       "question_type": "Detail",
       "narrator_text": "According to the talk, what became central in early jazz?",
       "options": {
-        "A": "Improvisation within a shared form",
-        "B": "Reading every note exactly with no variation",
-        "C": "Replacing all instruments with computers",
+        "A": "Reading every note exactly with no variation",
+        "B": "Replacing all instruments with computers",
+        "C": "Improvisation within a shared form",
         "D": "Singing only in Latin"
       },
-      "correct_answer": "A",
+      "correct_answer": "C",
       "explanation": "Improvisation on the spot while staying within a shared form.",
-      "commonMistake": "Choosing B—opposite of improvisation."
+      "commonMistake": "Choosing A—opposite of improvisation."
     },
     {
       "number": 4,
       "question_type": "Inference",
       "narrator_text": "What does the professor imply about jazz today?",
       "options": {
-        "A": "Blues feeling can still be heard in many jazz solos",
-        "B": "Jazz has no connection to earlier music",
-        "C": "Recordings destroyed all blues influence",
+        "A": "Jazz has no connection to earlier music",
+        "B": "Recordings destroyed all blues influence",
+        "C": "Blues feeling can still be heard in many jazz solos",
         "D": "Only pianos matter in jazz history"
       },
-      "correct_answer": "A",
+      "correct_answer": "C",
       "explanation": "She says blues sensibility can still be heard in jazz solos today.",
-      "commonMistake": "Choosing B—contradicts her thesis."
+      "commonMistake": "Choosing A—contradicts her thesis."
     }
   ]
 }

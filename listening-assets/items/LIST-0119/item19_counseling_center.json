@@ -73,11 +73,11 @@
       "narrator_text": "What is the conversation mainly about?",
       "options": {
         "A": "Changing the student's midterm dates",
-        "B": "Scheduling a first counseling appointment",
-        "C": "Getting a medical referral for a specialist off campus",
+        "B": "Getting a medical referral for a specialist off campus",
+        "C": "Scheduling a first counseling appointment",
         "D": "Complaining about a professor's teaching style"
       },
-      "correct_answer": "B",
+      "correct_answer": "C",
       "explanation": "He books a first counseling intake because he feels overwhelmed with midterms.",
       "commonMistake": "Choosing A—midterms explain stress, not a request to change exam dates."
     },
@@ -87,13 +87,13 @@
       "narrator_text": "What kind of appointment can he get this week?",
       "options": {
         "A": "A full hour-long therapy session only",
-        "B": "A twenty-minute intake, then a full session later",
-        "C": "An online group class with no individual meeting",
-        "D": "A meeting that requires a doctor's referral first"
+        "B": "An online group class with no individual meeting",
+        "C": "A meeting that requires a doctor's referral first",
+        "D": "A twenty-minute intake, then a full session later"
       },
-      "correct_answer": "B",
+      "correct_answer": "D",
       "explanation": "No referral for a first visit; she offers a twenty-minute intake this week, then a full session after.",
-      "commonMistake": "Choosing D—she says no referral is needed for the first visit."
+      "commonMistake": "Choosing C—she says no referral is needed for the first visit."
     },
     {
       "number": 3,
@@ -115,11 +115,11 @@
       "narrator_text": "What does the staff member say about confidentiality?",
       "options": {
         "A": "Professors are automatically emailed after each visit",
-        "B": "Visits are confidential unless there is a safety risk",
-        "C": "Parents must approve every appointment in writing",
-        "D": "Only group sessions are confidential"
+        "B": "Parents must approve every appointment in writing",
+        "C": "Only group sessions are confidential",
+        "D": "Visits are confidential unless there is a safety risk"
       },
-      "correct_answer": "B",
+      "correct_answer": "D",
       "explanation": "She says visits are confidential unless there is a safety risk; instructors are not contacted without written permission.",
       "commonMistake": "Choosing A—he worried professors would be told; she says the opposite."
     }

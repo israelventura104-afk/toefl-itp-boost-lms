@@ -88,8 +88,10 @@ function render() {
     }
     button.addEventListener("click", () => {
       state.answers.set(question.id, {
-        selectedKey: option.key,
-        correct: option.key === question.correctKey,
+        selectedKey: String(option.key ?? "").trim().toUpperCase(),
+        correct:
+          String(option.key ?? "").trim().toUpperCase() ===
+          String(question.correctKey ?? "").trim().toUpperCase(),
       });
       render();
       if (state.answers.size === state.rows.length) finishIfComplete();

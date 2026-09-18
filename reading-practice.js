@@ -47,12 +47,12 @@ function normalizeQuestion(raw) {
     ? raw.options.map((option) => {
         if (typeof option === "string") return { key: option, text: option };
         return {
-          key: String(option.key ?? "").trim(),
+          key: String(option.key ?? "").trim().toUpperCase(),
           text: String(option.text ?? "").trim(),
         };
       })
     : [];
-  const correctKey = String(raw.correctKey ?? "").trim();
+  const correctKey = String(raw.correctKey ?? "").trim().toUpperCase();
   const hit = options.find((option) => option.key === correctKey);
   return {
     id: String(raw.id ?? "").trim(),
@@ -110,9 +110,10 @@ function renderQuestion() {
       if (option.key === answer.selectedKey && !answer.correct) button.classList.add("incorrect");
     }
     button.addEventListener("click", () => {
+      const selectedKey = String(option.key ?? "").trim().toUpperCase();
       state.answers.set(item.id, {
-        selectedKey: option.key,
-        correct: option.key === item.correctKey,
+        selectedKey,
+        correct: selectedKey === String(item.correctKey ?? "").trim().toUpperCase(),
       });
       renderQuestion();
     });

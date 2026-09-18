@@ -59,18 +59,18 @@
         },
         {
           "id": "B",
-          "text": "He wants to hear an expert on climate research."
-        },
-        {
-          "id": "C",
           "text": "He is meeting a friend after class."
         },
         {
-          "id": "D",
+          "id": "C",
           "text": "He needs extra course credit."
+        },
+        {
+          "id": "D",
+          "text": "He wants to hear an expert on climate research."
         }
       ],
-      "answer_key": "B",
+      "answer_key": "D",
       "explanation": "The man says he heard the speaker is an expert in climate research.",
       "evidence": "I heard the speaker is an expert in climate research."
     }

@@ -59,18 +59,18 @@
         },
         {
           "id": "B",
-          "text": "The gym has shorter operating hours."
-        },
-        {
-          "id": "C",
           "text": "Students cannot use the gym."
         },
         {
-          "id": "D",
+          "id": "C",
           "text": "The gym opens later than usual."
+        },
+        {
+          "id": "D",
+          "text": "The gym has shorter operating hours."
         }
       ],
-      "answer_key": "B",
+      "answer_key": "D",
       "explanation": "She explains that the gym remains open but closes earlier each day.",
       "evidence": "It closes much earlier than usual each day."
     }

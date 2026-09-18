@@ -188,8 +188,8 @@ function finishExam({ auto = false } = {}) {
   }
 
   const rows = state.rows.map(({ item, question }) => {
-    const selectedKey = state.answers.get(question.id);
-    const correct = selectedKey === question.correctKey;
+    const selectedKey = String(state.answers.get(question.id) ?? "").trim().toUpperCase();
+    const correct = selectedKey === String(question.correctKey ?? "").trim().toUpperCase();
     return {
       item,
       question,

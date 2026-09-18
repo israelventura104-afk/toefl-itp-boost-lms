@@ -55,22 +55,22 @@
       "choices": [
         {
           "id": "A",
-          "text": "To practice speaking with international students."
-        },
-        {
-          "id": "B",
           "text": "To register for a language course."
         },
         {
-          "id": "C",
+          "id": "B",
           "text": "To meet his academic advisor."
         },
         {
-          "id": "D",
+          "id": "C",
           "text": "To borrow language textbooks."
+        },
+        {
+          "id": "D",
+          "text": "To practice speaking with international students."
         }
       ],
-      "answer_key": "A",
+      "answer_key": "D",
       "explanation": "He says it is a great opportunity to practice speaking with international students.",
       "evidence": "It's a great opportunity to practice speaking with international students."
     }

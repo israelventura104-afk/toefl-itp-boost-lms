@@ -59,18 +59,18 @@
         },
         {
           "id": "B",
-          "text": "He wants to avoid long lines."
-        },
-        {
-          "id": "C",
           "text": "The cafeteria is closed now."
         },
         {
-          "id": "D",
+          "id": "C",
           "text": "He forgot his wallet."
+        },
+        {
+          "id": "D",
+          "text": "He wants to avoid long lines."
         }
       ],
-      "answer_key": "B",
+      "answer_key": "D",
       "explanation": "He suggests waiting so they can avoid the long lunch lines.",
       "evidence": "Let's go a little later to avoid the long lines."
     }

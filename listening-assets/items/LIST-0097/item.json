@@ -55,22 +55,22 @@
       "choices": [
         {
           "id": "A",
-          "text": "To see a robotics demonstration."
-        },
-        {
-          "id": "B",
           "text": "To borrow laboratory equipment."
         },
         {
-          "id": "C",
+          "id": "B",
           "text": "To sign up for a chemistry class."
         },
         {
-          "id": "D",
+          "id": "C",
           "text": "To meet his academic advisor."
+        },
+        {
+          "id": "D",
+          "text": "To see a robotics demonstration."
         }
       ],
-      "answer_key": "A",
+      "answer_key": "D",
       "explanation": "He says the club is demonstrating a new robotics project.",
       "evidence": "They're demonstrating a new robotics project."
     }

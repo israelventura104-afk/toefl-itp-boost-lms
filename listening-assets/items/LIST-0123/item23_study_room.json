@@ -73,11 +73,11 @@
       "narrator_text": "What is the conversation mainly about?",
       "options": {
         "A": "Paying an overdue fine for a laptop",
-        "B": "Booking a group study room and following its rules",
-        "C": "Moving books to the quiet floor",
-        "D": "Applying for a library student job"
+        "B": "Moving books to the quiet floor",
+        "C": "Applying for a library student job",
+        "D": "Booking a group study room and following its rules"
       },
-      "correct_answer": "B",
+      "correct_answer": "D",
       "explanation": "She reserves room 301 and learns check-in, food, cable, and extension rules.",
       "commonMistake": "Choosing A—fines are not discussed."
     },
@@ -87,11 +87,11 @@
       "narrator_text": "Which room does she choose and why is it useful?",
       "options": {
         "A": "214, because it is closer to the entrance",
-        "B": "301, because it has a large display screen",
-        "C": "The cafe area, because food is allowed",
-        "D": "An outdoor courtyard table"
+        "B": "The cafe area, because food is allowed",
+        "C": "An outdoor courtyard table",
+        "D": "301, because it has a large display screen"
       },
-      "correct_answer": "B",
+      "correct_answer": "D",
       "explanation": "She picks 301 for the large display screen (7–9 p.m.).",
       "commonMistake": "Choosing A—214 was offered but she selects 301."
     },
@@ -101,13 +101,13 @@
       "narrator_text": "What must the group do to keep the reservation?",
       "options": {
         "A": "Email the librarian the night before",
-        "B": "Check in at the desk within ten minutes of the start time",
-        "C": "Leave a cash deposit at room 214",
-        "D": "Arrive with all four members at once"
+        "B": "Leave a cash deposit at room 214",
+        "C": "Arrive with all four members at once",
+        "D": "Check in at the desk within ten minutes of the start time"
       },
-      "correct_answer": "B",
+      "correct_answer": "D",
       "explanation": "Someone must check in within ten minutes or the room is released.",
-      "commonMistake": "Choosing D—only someone from the group must check in, not necessarily all four at once."
+      "commonMistake": "Choosing C—only someone from the group must check in, not necessarily all four at once."
     },
     {
       "number": 4,
@@ -115,13 +115,13 @@
       "narrator_text": "What is the policy on food?",
       "options": {
         "A": "Any food is welcome",
-        "B": "Covered drinks are fine, but messy food can cost booking privileges for two weeks",
-        "C": "Only food from the library cafe is allowed inside rooms",
-        "D": "No drinks of any kind"
+        "B": "Only food from the library cafe is allowed inside rooms",
+        "C": "No drinks of any kind",
+        "D": "Covered drinks are fine, but messy food can cost booking privileges for two weeks"
       },
-      "correct_answer": "B",
+      "correct_answer": "D",
       "explanation": "Covered drinks OK; messy food risks losing booking privileges for two weeks.",
-      "commonMistake": "Choosing D—covered drinks are allowed."
+      "commonMistake": "Choosing C—covered drinks are allowed."
     }
   ]
 }

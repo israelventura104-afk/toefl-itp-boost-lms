@@ -59,18 +59,18 @@
         },
         {
           "id": "B",
-          "text": "She renewed her bus pass online."
-        },
-        {
-          "id": "C",
           "text": "The shuttle is not operating today."
         },
         {
-          "id": "D",
+          "id": "C",
           "text": "She lost her bus pass."
+        },
+        {
+          "id": "D",
+          "text": "She renewed her bus pass online."
         }
       ],
-      "answer_key": "B",
+      "answer_key": "D",
       "explanation": "She says she renewed the pass online and can use it today.",
       "evidence": "I renewed it online, so I can ride the shuttle starting today."
     }

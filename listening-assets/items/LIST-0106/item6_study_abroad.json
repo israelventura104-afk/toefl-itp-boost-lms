@@ -3,20 +3,55 @@
   "topic": "Study Abroad Advising",
   "setting": "A student is meeting with a study abroad advisor to discuss a semester program overseas.",
   "speakers": [
-    { "role": "narrator", "voice": "narrator" },
-    { "role": "speaker1", "name": "Man (Student)", "voice": "male" },
-    { "role": "speaker2", "name": "Woman (Advisor)", "voice": "female" }
+    {
+      "role": "narrator",
+      "voice": "narrator"
+    },
+    {
+      "role": "speaker1",
+      "name": "Man (Student)",
+      "voice": "male"
+    },
+    {
+      "role": "speaker2",
+      "name": "Woman (Advisor)",
+      "voice": "female"
+    }
   ],
   "narrator_intro": "Listen to a conversation between a student and a study abroad advisor.",
   "dialogue": [
-    { "speaker": "speaker1", "text": "Hi, I'm interested in the exchange program in Spain for next fall, but I'm worried about how the credits will transfer back." },
-    { "speaker": "speaker2", "text": "That's a fair concern. For the Spain program specifically, we have an established agreement, so most courses transfer automatically as long as you stay within the approved course list." },
-    { "speaker": "speaker1", "text": "And if I want to take a class that's not on that list?" },
-    { "speaker": "speaker2", "text": "You can request a petition, but it has to be approved by your department chair before you leave, not after you come back. Otherwise there's a real risk the credits won't count." },
-    { "speaker": "speaker1", "text": "Okay, that's good to know. My major is engineering, will that be a problem, since I've heard the Spain program is mostly humanities-focused?" },
-    { "speaker": "speaker2", "text": "It leans that way, yes, but there are two engineering electives on the approved list. Combined with a petitioned course, you could still make solid progress toward your degree." },
-    { "speaker": "speaker1", "text": "That sounds workable. What's the deadline to apply?" },
-    { "speaker": "speaker2", "text": "Applications close in six weeks, but I'd recommend submitting the petition for your extra course at least two weeks before that, since department approval can take time." }
+    {
+      "speaker": "speaker1",
+      "text": "Hi, I'm interested in the exchange program in Spain for next fall, but I'm worried about how the credits will transfer back."
+    },
+    {
+      "speaker": "speaker2",
+      "text": "That's a fair concern. For the Spain program specifically, we have an established agreement, so most courses transfer automatically as long as you stay within the approved course list."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "And if I want to take a class that's not on that list?"
+    },
+    {
+      "speaker": "speaker2",
+      "text": "You can request a petition, but it has to be approved by your department chair before you leave, not after you come back. Otherwise there's a real risk the credits won't count."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "Okay, that's good to know. My major is engineering, will that be a problem, since I've heard the Spain program is mostly humanities-focused?"
+    },
+    {
+      "speaker": "speaker2",
+      "text": "It leans that way, yes, but there are two engineering electives on the approved list. Combined with a petitioned course, you could still make solid progress toward your degree."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "That sounds workable. What's the deadline to apply?"
+    },
+    {
+      "speaker": "speaker2",
+      "text": "Applications close in six weeks, but I'd recommend submitting the petition for your extra course at least two weeks before that, since department approval can take time."
+    }
   ],
   "narrator_outro": "Now get ready to answer the questions.",
   "questions": [

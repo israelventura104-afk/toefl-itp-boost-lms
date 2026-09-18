@@ -55,22 +55,22 @@
       "choices": [
         {
           "id": "A",
-          "text": "To discuss a novel with the group."
-        },
-        {
-          "id": "B",
           "text": "To borrow a textbook."
         },
         {
-          "id": "C",
+          "id": "B",
           "text": "To sign up for a literature class."
         },
         {
-          "id": "D",
+          "id": "C",
           "text": "To meet the author of the novel."
+        },
+        {
+          "id": "D",
+          "text": "To discuss a novel with the group."
         }
       ],
-      "answer_key": "A",
+      "answer_key": "D",
       "explanation": "She wants to discuss the novel and hear other members' opinions.",
       "evidence": "We're discussing a novel I finished last week, and I'm excited to hear everyone's opinions."
     }

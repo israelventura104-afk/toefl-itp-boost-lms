@@ -69,56 +69,56 @@
       "question_type": "Main Idea",
       "narrator_text": "What is the talk mainly about?",
       "options": {
-        "A": "The Library of Alexandria as a center for collecting and studying texts",
-        "B": "How to build modern skyscrapers in Egypt",
-        "C": "Why ships never entered Alexandria’s harbor",
-        "D": "How to write novels without libraries"
+        "A": "How to build modern skyscrapers in Egypt",
+        "B": "Why ships never entered Alexandria’s harbor",
+        "C": "How to write novels without libraries",
+        "D": "The Library of Alexandria as a center for collecting and studying texts"
       },
-      "correct_answer": "A",
+      "correct_answer": "D",
       "explanation": "She describes collecting, copying, editing texts and scholarly exchange.",
-      "commonMistake": "Choosing C—contradicts harbor copying."
+      "commonMistake": "Choosing B—contradicts harbor copying."
     },
     {
       "number": 2,
       "question_type": "Detail",
       "narrator_text": "Besides storing scrolls, what else did scholars do?",
       "options": {
-        "A": "Copy, compare, and edit important texts",
-        "B": "Burn all foreign books on arrival",
-        "C": "Replace writing with only oral myths",
-        "D": "Ban mathematics from the city"
+        "A": "Burn all foreign books on arrival",
+        "B": "Replace writing with only oral myths",
+        "C": "Ban mathematics from the city",
+        "D": "Copy, compare, and edit important texts"
       },
-      "correct_answer": "A",
+      "correct_answer": "D",
       "explanation": "Goal included copy, compare, and edit texts.",
-      "commonMistake": "Choosing B—opposite."
+      "commonMistake": "Choosing A—opposite."
     },
     {
       "number": 3,
       "question_type": "Detail",
       "narrator_text": "What sometimes happened when ships arrived at the harbor?",
       "options": {
-        "A": "Books were copied before travelers continued",
-        "B": "All cargo was thrown into the sea",
-        "C": "Scholars refused any foreign texts",
-        "D": "The library closed permanently each morning"
+        "A": "All cargo was thrown into the sea",
+        "B": "Scholars refused any foreign texts",
+        "C": "The library closed permanently each morning",
+        "D": "Books were copied before travelers continued"
       },
-      "correct_answer": "A",
+      "correct_answer": "D",
       "explanation": "Ships sometimes had books copied before continuing.",
-      "commonMistake": "Choosing C—not what she says."
+      "commonMistake": "Choosing B—not what she says."
     },
     {
       "number": 4,
       "question_type": "Inference",
       "narrator_text": "What does the professor emphasize about Alexandria’s importance?",
       "options": {
-        "A": "It models organized, state-backed scholarship beyond merely lost scrolls",
-        "B": "It proves libraries are useless today",
-        "C": "It shows scholarship needs no copying or editing",
-        "D": "It only mattered for cooking recipes"
+        "A": "It proves libraries are useless today",
+        "B": "It shows scholarship needs no copying or editing",
+        "C": "It only mattered for cooking recipes",
+        "D": "It models organized, state-backed scholarship beyond merely lost scrolls"
       },
-      "correct_answer": "A",
+      "correct_answer": "D",
       "explanation": "She calls it an early symbol of organized scholarship, not just lost scrolls.",
-      "commonMistake": "Choosing B—opposite of her point."
+      "commonMistake": "Choosing A—opposite of her point."
     }
   ]
 }

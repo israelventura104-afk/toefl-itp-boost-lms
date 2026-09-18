@@ -65,11 +65,11 @@ function normalizeSkill(skill) {
 function normalizeQuestion(raw) {
   const options = Array.isArray(raw.options)
     ? raw.options.map((option) => ({
-        key: String(option.key ?? "").trim(),
+        key: String(option.key ?? "").trim().toUpperCase(),
         text: String(option.text ?? "").trim(),
       }))
     : [];
-  const correctKey = String(raw.correctKey ?? "").trim();
+  const correctKey = String(raw.correctKey ?? "").trim().toUpperCase();
   const hit = options.find((option) => option.key === correctKey);
   return {
     id: String(raw.id ?? "").trim(),
@@ -252,8 +252,10 @@ function renderQuestion() {
     }
     button.addEventListener("click", () => {
       state.answers.set(item.id, {
-        selectedKey: option.key,
-        correct: option.key === item.correctKey,
+        selectedKey: String(option.key ?? "").trim().toUpperCase(),
+        correct:
+          String(option.key ?? "").trim().toUpperCase() ===
+          String(item.correctKey ?? "").trim().toUpperCase(),
       });
       renderQuestion();
       if (state.answers.size === state.passage.items.length) {

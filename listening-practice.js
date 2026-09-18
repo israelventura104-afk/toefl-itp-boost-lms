@@ -62,9 +62,10 @@ function render() {
       if (option.key === answer.selectedKey && !answer.correct) button.classList.add("incorrect");
     }
     button.addEventListener("click", () => {
+      const selectedKey = String(option.key ?? "").trim().toUpperCase();
       state.answers.set(question.id, {
-        selectedKey: option.key,
-        correct: option.key === question.correctKey,
+        selectedKey,
+        correct: selectedKey === String(question.correctKey ?? "").trim().toUpperCase(),
       });
       render();
     });

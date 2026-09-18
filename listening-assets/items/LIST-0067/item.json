@@ -59,18 +59,18 @@
         },
         {
           "id": "B",
-          "text": "He wanted to avoid missing a sold-out show."
-        },
-        {
-          "id": "C",
           "text": "Tickets were free only today."
         },
         {
-          "id": "D",
+          "id": "C",
           "text": "His friend bought the ticket for him."
+        },
+        {
+          "id": "D",
+          "text": "He wanted to avoid missing a sold-out show."
         }
       ],
-      "answer_key": "B",
+      "answer_key": "D",
       "explanation": "He bought the ticket early because previous performances sold out quickly.",
       "evidence": "Last year's shows sold out quickly."
     }

@@ -55,22 +55,22 @@
       "choices": [
         {
           "id": "A",
-          "text": "To learn about this year's competition topics."
-        },
-        {
-          "id": "B",
           "text": "To submit a class assignment."
         },
         {
-          "id": "C",
+          "id": "B",
           "text": "To meet her academic advisor."
+        },
+        {
+          "id": "C",
+          "text": "To learn about this year's competition topics."
         },
         {
           "id": "D",
           "text": "To practice for an English exam."
         }
       ],
-      "answer_key": "A",
+      "answer_key": "C",
       "explanation": "She says the club will discuss this year's competition topics and she wants to participate.",
       "evidence": "They're discussing this year's competition topics, and I want to participate."
     }

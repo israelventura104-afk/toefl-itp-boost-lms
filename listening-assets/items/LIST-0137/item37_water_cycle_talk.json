@@ -69,56 +69,56 @@
       "question_type": "Main Idea",
       "narrator_text": "What is the talk mainly about?",
       "options": {
-        "A": "How the water cycle works and how climate can change it",
-        "B": "How to dig a private swimming pool",
-        "C": "Why oceans never evaporate",
+        "A": "How to dig a private swimming pool",
+        "B": "Why oceans never evaporate",
+        "C": "How the water cycle works and how climate can change it",
         "D": "How to build cloud machines"
       },
-      "correct_answer": "A",
+      "correct_answer": "C",
       "explanation": "He explains evaporation, condensation, precipitation, and climate effects.",
-      "commonMistake": "Choosing C—contradicts evaporation."
+      "commonMistake": "Choosing B—contradicts evaporation."
     },
     {
       "number": 2,
       "question_type": "Detail",
       "narrator_text": "According to the professor, what starts evaporation?",
       "options": {
-        "A": "Heat from the sun",
-        "B": "Underground volcanoes only",
-        "C": "City streetlights",
+        "A": "Underground volcanoes only",
+        "B": "City streetlights",
+        "C": "Heat from the sun",
         "D": "Fish swimming in circles"
       },
-      "correct_answer": "A",
+      "correct_answer": "C",
       "explanation": "He says heat from the sun evaporates water into vapor.",
-      "commonMistake": "Choosing B—not the cause he gives."
+      "commonMistake": "Choosing A—not the cause he gives."
     },
     {
       "number": 3,
       "question_type": "Detail",
       "narrator_text": "What does he say warmer air can do?",
       "options": {
-        "A": "Hold more moisture, so some regions see heavier rain",
-        "B": "Stop all precipitation forever",
-        "C": "Turn rivers into ice instantly",
+        "A": "Stop all precipitation forever",
+        "B": "Turn rivers into ice instantly",
+        "C": "Hold more moisture, so some regions see heavier rain",
         "D": "Remove aquifers from maps"
       },
-      "correct_answer": "A",
+      "correct_answer": "C",
       "explanation": "Warmer air holds more moisture, linked to heavier rain in some regions.",
-      "commonMistake": "Choosing B—opposite of intensified cycle."
+      "commonMistake": "Choosing A—opposite of intensified cycle."
     },
     {
       "number": 4,
       "question_type": "Inference",
       "narrator_text": "What can be inferred about shrinking glaciers and snowpack?",
       "options": {
-        "A": "They may reduce summer river flow because they store water seasonally",
-        "B": "They have no link to rivers",
-        "C": "They only affect deserts far from mountains",
+        "A": "They have no link to rivers",
+        "B": "They only affect deserts far from mountains",
+        "C": "They may reduce summer river flow because they store water seasonally",
         "D": "They increase ocean salt for drinking water"
       },
-      "correct_answer": "A",
+      "correct_answer": "C",
       "explanation": "He says they act as seasonal storage; when they shrink, summer flow can drop.",
-      "commonMistake": "Choosing B—he connects them to river flow."
+      "commonMistake": "Choosing A—he connects them to river flow."
     }
   ]
 }

@@ -59,18 +59,18 @@
         },
         {
           "id": "B",
-          "text": "Most bike racks were already occupied."
-        },
-        {
-          "id": "C",
           "text": "She decided not to ride her bike."
         },
         {
-          "id": "D",
+          "id": "C",
           "text": "The library does not allow bicycles."
+        },
+        {
+          "id": "D",
+          "text": "Most bike racks were already occupied."
         }
       ],
-      "answer_key": "B",
+      "answer_key": "D",
       "explanation": "She says nearly all the bike racks near the library were full.",
       "evidence": "Almost every bike rack near the library was already full."
     }

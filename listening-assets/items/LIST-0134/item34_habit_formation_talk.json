@@ -112,11 +112,11 @@
       "narrator_text": "What can be inferred about strong habits?",
       "options": {
         "A": "They always require careful planning every time",
-        "B": "They can run with little conscious planning, which makes unhealthy ones hard to break",
-        "C": "They disappear after one day",
-        "D": "They only form in laboratories"
+        "B": "They disappear after one day",
+        "C": "They only form in laboratories",
+        "D": "They can run with little conscious planning, which makes unhealthy ones hard to break"
       },
-      "correct_answer": "B",
+      "correct_answer": "D",
       "explanation": "She notes strong habits start with little conscious planning and unhealthy ones are hard to break.",
       "commonMistake": "Choosing A—that contradicts automaticity."
     }

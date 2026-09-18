@@ -59,18 +59,18 @@
         },
         {
           "id": "B",
-          "text": "The package must be picked up before five."
-        },
-        {
-          "id": "C",
           "text": "The biology department is closed."
         },
         {
-          "id": "D",
+          "id": "C",
           "text": "The man should send the package today."
+        },
+        {
+          "id": "D",
+          "text": "The package must be picked up before five."
         }
       ],
-      "answer_key": "B",
+      "answer_key": "D",
       "explanation": "She says the package arrived, but it must be picked up before five.",
       "evidence": "You have to pick it up at the campus mailroom before five."
     }

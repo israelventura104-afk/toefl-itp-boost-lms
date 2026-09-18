@@ -112,11 +112,11 @@
       "narrator_text": "What does the professor imply about the arched bridges people photograph?",
       "options": {
         "A": "They were the entire aqueduct system by themselves",
-        "B": "They were only the visible part of a much longer water network",
-        "C": "They were built only for decoration in theaters",
-        "D": "They never carried water at all"
+        "B": "They were built only for decoration in theaters",
+        "C": "They never carried water at all",
+        "D": "They were only the visible part of a much longer water network"
       },
-      "correct_answer": "B",
+      "correct_answer": "D",
       "explanation": "He says the arches were one visible piece of a much longer network.",
       "commonMistake": "Choosing A—he stresses the longer underground route."
     }

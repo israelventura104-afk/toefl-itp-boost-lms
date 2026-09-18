@@ -59,18 +59,18 @@
         },
         {
           "id": "B",
-          "text": "He received an email from the registrar's office."
-        },
-        {
-          "id": "C",
           "text": "He saw a notice in the library."
         },
         {
-          "id": "D",
+          "id": "C",
           "text": "The professor announced it in class."
+        },
+        {
+          "id": "D",
+          "text": "He received an email from the registrar's office."
         }
       ],
-      "answer_key": "B",
+      "answer_key": "D",
       "explanation": "The registrar's office emailed him that the card was ready.",
       "evidence": "The registrar's office emailed me yesterday that it was ready to pick up."
     }

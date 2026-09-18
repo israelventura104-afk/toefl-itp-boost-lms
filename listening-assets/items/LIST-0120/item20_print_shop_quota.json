@@ -73,11 +73,11 @@
       "narrator_text": "What is the conversation mainly about?",
       "options": {
         "A": "Borrowing a laptop from the library",
-        "B": "Fixing a print-quota problem for a class poster",
-        "C": "Changing the student's major declaration",
-        "D": "Ordering textbooks for next semester"
+        "B": "Changing the student's major declaration",
+        "C": "Ordering textbooks for next semester",
+        "D": "Fixing a print-quota problem for a class poster"
       },
-      "correct_answer": "B",
+      "correct_answer": "D",
       "explanation": "She cannot print because of quota; he explains top-ups and large-format color printing.",
       "commonMistake": "Choosing A—nothing about laptop checkout is discussed."
     },
@@ -87,13 +87,13 @@
       "narrator_text": "How can she add more printing quota?",
       "options": {
         "A": "Ask her professor for a free override code",
-        "B": "Buy a ten-dollar top-up at the shop or online",
-        "C": "Wait until next term for an automatic reset only",
-        "D": "Use only the black-and-white machines forever"
+        "B": "Wait until next term for an automatic reset only",
+        "C": "Use only the black-and-white machines forever",
+        "D": "Buy a ten-dollar top-up at the shop or online"
       },
-      "correct_answer": "B",
+      "correct_answer": "D",
       "explanation": "Color is pay-as-you-go; she can buy a ten-dollar top-up here or online.",
-      "commonMistake": "Choosing C—term allotment is for black-and-white; she needs color today."
+      "commonMistake": "Choosing B—term allotment is for black-and-white; she needs color today."
     },
     {
       "number": 3,

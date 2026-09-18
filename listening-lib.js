@@ -18,9 +18,11 @@
     if (Array.isArray(rawOptions)) {
       return rawOptions
         .map((choice) => {
-          if (typeof choice === "string") return { key: choice, text: choice };
+          if (typeof choice === "string") {
+            return { key: String(choice).trim().toUpperCase(), text: choice };
+          }
           return {
-            key: String(choice.id ?? choice.key ?? "").trim(),
+            key: String(choice.id ?? choice.key ?? "").trim().toUpperCase(),
             text: String(choice.text ?? choice.label ?? "").trim(),
           };
         })
@@ -29,7 +31,7 @@
     if (typeof rawOptions === "object") {
       return Object.entries(rawOptions)
         .map(([key, text]) => ({
-          key: String(key).trim(),
+          key: String(key).trim().toUpperCase(),
           text: String(text ?? "").trim(),
         }))
         .filter((option) => option.key && option.text);
@@ -41,7 +43,9 @@
     const questions = (raw.questions || [])
       .map((q, index) => {
         const options = normalizeOptions(q.choices || q.options);
-        const correctKey = String(q.answer_key ?? q.correctKey ?? q.correct_answer ?? "").trim();
+        const correctKey = String(q.answer_key ?? q.correctKey ?? q.correct_answer ?? "")
+          .trim()
+          .toUpperCase();
         const hit = options.find((o) => o.key === correctKey);
         // Always prefix with asset id: bank items reuse "Q1" on every Part A clip,
         // which would otherwise collapse answers across the whole guided/mock set.

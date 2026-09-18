@@ -55,22 +55,22 @@
       "choices": [
         {
           "id": "A",
-          "text": "He wants to hear the student jazz band."
-        },
-        {
-          "id": "B",
           "text": "He is performing in the concert."
         },
         {
-          "id": "C",
+          "id": "B",
           "text": "He has to complete a class assignment."
+        },
+        {
+          "id": "C",
+          "text": "He wants to hear the student jazz band."
         },
         {
           "id": "D",
           "text": "He is meeting his music professor."
         }
       ],
-      "answer_key": "A",
+      "answer_key": "C",
       "explanation": "He says he has heard the student jazz band is excellent.",
       "evidence": "I've heard the student jazz band is excellent, so I don't want to miss it."
     }

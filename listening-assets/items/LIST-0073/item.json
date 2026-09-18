@@ -59,18 +59,18 @@
         },
         {
           "id": "B",
-          "text": "He wanted to make sure a booth was available."
-        },
-        {
-          "id": "C",
           "text": "His professor required an early reservation."
         },
         {
-          "id": "D",
+          "id": "C",
           "text": "He forgot to reserve one yesterday."
+        },
+        {
+          "id": "D",
+          "text": "He wanted to make sure a booth was available."
         }
       ],
-      "answer_key": "B",
+      "answer_key": "D",
       "explanation": "He reserved early because the booths are usually full in the afternoon.",
       "evidence": "They're usually full in the afternoon, so I made the reservation early."
     }

@@ -3,20 +3,55 @@
   "topic": "Bookstore Textbook Return",
   "setting": "A student is talking to a bookstore clerk about returning a textbook.",
   "speakers": [
-    { "role": "narrator", "voice": "narrator" },
-    { "role": "speaker1", "name": "Man (Student)", "voice": "male" },
-    { "role": "speaker2", "name": "Woman (Bookstore Clerk)", "voice": "female" }
+    {
+      "role": "narrator",
+      "voice": "narrator"
+    },
+    {
+      "role": "speaker1",
+      "name": "Man (Student)",
+      "voice": "male"
+    },
+    {
+      "role": "speaker2",
+      "name": "Woman (Bookstore Clerk)",
+      "voice": "female"
+    }
   ],
   "narrator_intro": "Listen to a conversation between a student and a bookstore clerk.",
   "dialogue": [
-    { "speaker": "speaker1", "text": "Hi, I bought this chemistry textbook last week, but I ended up dropping the class. Can I return it?" },
-    { "speaker": "speaker2", "text": "Sure, as long as it's within two weeks of purchase and you have the receipt. Do you have it with you?" },
-    { "speaker": "speaker1", "text": "I do, right here. But I already wrote some notes in the margins, is that still okay?" },
-    { "speaker": "speaker2", "text": "That could be a problem for a full refund. If there's writing inside, we can only offer store credit, not cash back." },
-    { "speaker": "speaker1", "text": "Hmm, I didn't realize that. How much store credit would I get?" },
-    { "speaker": "speaker2", "text": "Usually about seventy percent of the purchase price for a book with light markings. Let me take a look... yeah, this qualifies for that rate." },
-    { "speaker": "speaker1", "text": "That's better than nothing, I guess. Can I use the credit toward a different textbook today?" },
-    { "speaker": "speaker2", "text": "Absolutely, store credit doesn't expire and can be used on anything in the store, not just textbooks." }
+    {
+      "speaker": "speaker1",
+      "text": "Hi, I bought this chemistry textbook last week, but I ended up dropping the class. Can I return it?"
+    },
+    {
+      "speaker": "speaker2",
+      "text": "Sure, as long as it's within two weeks of purchase and you have the receipt. Do you have it with you?"
+    },
+    {
+      "speaker": "speaker1",
+      "text": "I do, right here. But I already wrote some notes in the margins, is that still okay?"
+    },
+    {
+      "speaker": "speaker2",
+      "text": "That could be a problem for a full refund. If there's writing inside, we can only offer store credit, not cash back."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "Hmm, I didn't realize that. How much store credit would I get?"
+    },
+    {
+      "speaker": "speaker2",
+      "text": "Usually about seventy percent of the purchase price for a book with light markings. Let me take a look... yeah, this qualifies for that rate."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "That's better than nothing, I guess. Can I use the credit toward a different textbook today?"
+    },
+    {
+      "speaker": "speaker2",
+      "text": "Absolutely, store credit doesn't expire and can be used on anything in the store, not just textbooks."
+    }
   ],
   "narrator_outro": "Now get ready to answer the questions.",
   "questions": [

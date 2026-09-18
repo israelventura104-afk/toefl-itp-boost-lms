@@ -59,18 +59,18 @@
         },
         {
           "id": "B",
-          "text": "The tickets were almost sold out."
-        },
-        {
-          "id": "C",
           "text": "He received free tickets."
         },
         {
-          "id": "D",
+          "id": "C",
           "text": "He forgot about the concert."
+        },
+        {
+          "id": "D",
+          "text": "The tickets were almost sold out."
         }
       ],
-      "answer_key": "B",
+      "answer_key": "D",
       "explanation": "He bought them early because they were selling out quickly.",
       "evidence": "They were selling out quickly."
     }

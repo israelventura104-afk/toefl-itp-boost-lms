@@ -55,22 +55,22 @@
       "choices": [
         {
           "id": "A",
-          "text": "She wants extra help before her next quiz."
-        },
-        {
-          "id": "B",
           "text": "She needs to register for calculus."
         },
         {
-          "id": "C",
+          "id": "B",
           "text": "She is applying to be a tutor."
+        },
+        {
+          "id": "C",
+          "text": "She wants extra help before her next quiz."
         },
         {
           "id": "D",
           "text": "She missed her mathematics class."
         }
       ],
-      "answer_key": "A",
+      "answer_key": "C",
       "explanation": "She says her last quiz did not go well and she wants extra help before the next one.",
       "evidence": "I want some extra help before the next one."
     }

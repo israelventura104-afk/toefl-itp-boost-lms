@@ -73,13 +73,13 @@
       "narrator_text": "What is the conversation mainly about?",
       "options": {
         "A": "Renting soccer equipment for a class project",
-        "B": "Registering for intramural soccer before the deadline",
-        "C": "Changing the student's work schedule on Sundays",
-        "D": "Trying out for the varsity soccer team"
+        "B": "Changing the student's work schedule on Sundays",
+        "C": "Trying out for the varsity soccer team",
+        "D": "Registering for intramural soccer before the deadline"
       },
-      "correct_answer": "B",
+      "correct_answer": "D",
       "explanation": "He needs to join intramural soccer; she explains roster deadline, waiver, fee, and physical.",
-      "commonMistake": "Choosing D—this is intramural/club sports, not varsity tryouts."
+      "commonMistake": "Choosing C—this is intramural/club sports, not varsity tryouts."
     },
     {
       "number": 2,
@@ -101,11 +101,11 @@
       "narrator_text": "What must be true about his physical exam?",
       "options": {
         "A": "Last year's physical is enough",
-        "B": "It must be from this academic year",
-        "C": "Only the team captain needs a physical",
-        "D": "No physical is required for midfielders"
+        "B": "Only the team captain needs a physical",
+        "C": "No physical is required for midfielders",
+        "D": "It must be from this academic year"
       },
-      "correct_answer": "B",
+      "correct_answer": "D",
       "explanation": "Club sports need a physical from this academic year; health center walk-ins are available tomorrow.",
       "commonMistake": "Choosing A—he hoped last year counted; she says no."
     },
@@ -115,13 +115,13 @@
       "narrator_text": "What happens if the team is incomplete by Friday?",
       "options": {
         "A": "Players move automatically to varsity",
-        "B": "The whole team is dropped",
-        "C": "They pay a double fee and play anyway",
-        "D": "Only the captain is waitlisted"
+        "B": "They pay a double fee and play anyway",
+        "C": "Only the captain is waitlisted",
+        "D": "The whole team is dropped"
       },
-      "correct_answer": "B",
+      "correct_answer": "D",
       "explanation": "Waitlist is for free agents; incomplete teams are dropped Friday.",
-      "commonMistake": "Choosing D—the waitlist is not for incomplete full teams."
+      "commonMistake": "Choosing C—the waitlist is not for incomplete full teams."
     }
   ]
 }

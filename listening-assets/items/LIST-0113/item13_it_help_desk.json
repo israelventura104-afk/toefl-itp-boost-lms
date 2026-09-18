@@ -3,20 +3,55 @@
   "topic": "IT Help Desk - Wi-Fi Access",
   "setting": "A student is talking to an IT help desk employee about a problem connecting to the campus Wi-Fi network.",
   "speakers": [
-    { "role": "narrator", "voice": "narrator" },
-    { "role": "speaker1", "name": "Woman (Student)", "voice": "female" },
-    { "role": "speaker2", "name": "Man (IT Help Desk Staff)", "voice": "male" }
+    {
+      "role": "narrator",
+      "voice": "narrator"
+    },
+    {
+      "role": "speaker1",
+      "name": "Woman (Student)",
+      "voice": "female"
+    },
+    {
+      "role": "speaker2",
+      "name": "Man (IT Help Desk Staff)",
+      "voice": "male"
+    }
   ],
   "narrator_intro": "Listen to a conversation between a student and an IT help desk employee.",
   "dialogue": [
-    { "speaker": "speaker1", "text": "Hi, I can't connect my laptop to the campus Wi-Fi anymore. It worked fine last week, but now it just keeps asking for a password even though I'm entering the right one." },
-    { "speaker": "speaker2", "text": "That's likely related to the network upgrade we did over the weekend. A lot of students have had similar issues since older saved networks weren't automatically updated." },
-    { "speaker": "speaker1", "text": "Oh, that explains it. What do I need to do to fix it?" },
-    { "speaker": "speaker2", "text": "First, forget the saved network on your laptop completely, then reconnect from scratch using your student login, not your old password. Sometimes people are still typing the previous one out of habit." },
-    { "speaker": "speaker1", "text": "That might actually be the problem, I think I've been using my old password without realizing it." },
-    { "speaker": "speaker2", "text": "That would definitely cause exactly this issue. If forgetting and reconnecting doesn't work, you may also need to update your network drivers, especially if your laptop is a few years old." },
-    { "speaker": "speaker1", "text": "It's about three years old, so that's possible. Is there a way to check if the drivers are outdated?" },
-    { "speaker": "speaker2", "text": "Yes, I can walk you through checking that right now if the first fix doesn't work. Let's try reconnecting first, though, since that solves it for most people." }
+    {
+      "speaker": "speaker1",
+      "text": "Hi, I can't connect my laptop to the campus Wi-Fi anymore. It worked fine last week, but now it just keeps asking for a password even though I'm entering the right one."
+    },
+    {
+      "speaker": "speaker2",
+      "text": "That's likely related to the network upgrade we did over the weekend. A lot of students have had similar issues since older saved networks weren't automatically updated."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "Oh, that explains it. What do I need to do to fix it?"
+    },
+    {
+      "speaker": "speaker2",
+      "text": "First, forget the saved network on your laptop completely, then reconnect from scratch using your student login, not your old password. Sometimes people are still typing the previous one out of habit."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "That might actually be the problem, I think I've been using my old password without realizing it."
+    },
+    {
+      "speaker": "speaker2",
+      "text": "That would definitely cause exactly this issue. If forgetting and reconnecting doesn't work, you may also need to update your network drivers, especially if your laptop is a few years old."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "It's about three years old, so that's possible. Is there a way to check if the drivers are outdated?"
+    },
+    {
+      "speaker": "speaker2",
+      "text": "Yes, I can walk you through checking that right now if the first fix doesn't work. Let's try reconnecting first, though, since that solves it for most people."
+    }
   ],
   "narrator_outro": "Now get ready to answer the questions.",
   "questions": [
@@ -25,12 +60,12 @@
       "question_type": "Main Idea",
       "narrator_text": "What problem is the student experiencing?",
       "options": {
-        "A": "Her laptop won't turn on",
-        "B": "She cannot connect to the campus Wi-Fi",
+        "A": "She cannot connect to the campus Wi-Fi",
+        "B": "Her laptop won't turn on",
         "C": "Her student login has been deactivated",
         "D": "Her laptop has a virus"
       },
-      "correct_answer": "B",
+      "correct_answer": "A",
       "explanation": "She explains her laptop keeps rejecting the password when trying to connect to Wi-Fi."
     },
     {
@@ -38,12 +73,12 @@
       "question_type": "Detail",
       "narrator_text": "According to the IT staff member, what likely caused this issue for many students?",
       "options": {
-        "A": "A campus-wide internet outage",
-        "B": "A weekend network upgrade",
+        "A": "A weekend network upgrade",
+        "B": "A campus-wide internet outage",
         "C": "A virus spreading through the network",
         "D": "An error in the student ID system"
       },
-      "correct_answer": "B",
+      "correct_answer": "A",
       "explanation": "He explains the issue is likely related to a network upgrade done over the weekend."
     },
     {
@@ -51,12 +86,12 @@
       "question_type": "Detail",
       "narrator_text": "What mistake does the student realize she might have been making?",
       "options": {
-        "A": "Using the wrong Wi-Fi network name",
-        "B": "Typing her old password instead of her current one",
+        "A": "Typing her old password instead of her current one",
+        "B": "Using the wrong Wi-Fi network name",
         "C": "Forgetting to charge her laptop",
         "D": "Trying to connect from outside the Wi-Fi range"
       },
-      "correct_answer": "B",
+      "correct_answer": "A",
       "explanation": "She realizes she may have been entering her old password out of habit."
     },
     {

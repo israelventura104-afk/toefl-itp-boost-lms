@@ -72,12 +72,12 @@
       "question_type": "Main Idea",
       "narrator_text": "What is the conversation mainly about?",
       "options": {
-        "A": "Changing the student's chemistry lecture section",
-        "B": "Checking out lab equipment and following lab rules",
+        "A": "Checking out lab equipment and following lab rules",
+        "B": "Changing the student's chemistry lecture section",
         "C": "Repairing a broken hot plate in the storeroom",
         "D": "Scheduling a make-up titration for next week"
       },
-      "correct_answer": "B",
+      "correct_answer": "A",
       "explanation": "She checks out a balance and cylinders and gets rules on use, return, and gloves.",
       "commonMistake": "Choosing D because titration is named—that is today's experiment, not a make-up."
     },
@@ -87,11 +87,11 @@
       "narrator_text": "Where must the student weigh her samples?",
       "options": {
         "A": "At her bench by the window",
-        "B": "In the instrument room",
-        "C": "At the teaching assistant's desk",
+        "B": "At the teaching assistant's desk",
+        "C": "In the instrument room",
         "D": "In Professor Kim's office"
       },
-      "correct_answer": "B",
+      "correct_answer": "C",
       "explanation": "Balances cannot leave the instrument room; she weighs there and carries labeled vials to the bench.",
       "commonMistake": "Choosing A because her partner saved a window bench—weighing stays in the instrument room."
     },

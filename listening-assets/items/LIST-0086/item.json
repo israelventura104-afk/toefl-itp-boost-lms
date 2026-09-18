@@ -55,22 +55,22 @@
       "choices": [
         {
           "id": "A",
-          "text": "Her laptop was repaired."
-        },
-        {
-          "id": "B",
           "text": "She needs to buy a new laptop."
         },
         {
-          "id": "C",
+          "id": "B",
           "text": "The repair desk was closed."
+        },
+        {
+          "id": "C",
+          "text": "Her laptop was repaired."
         },
         {
           "id": "D",
           "text": "She lost her laptop battery."
         }
       ],
-      "answer_key": "A",
+      "answer_key": "C",
       "explanation": "She says the repair desk replaced the battery and the laptop now works better.",
       "evidence": "They replaced the battery, and now it works much better."
     }

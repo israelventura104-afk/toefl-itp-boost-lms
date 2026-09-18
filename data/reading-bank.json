@@ -2850,11 +2850,11 @@
           "options": [
             {
               "key": "A",
-              "text": "To show how knowledge of papermaking traveled between regions"
+              "text": "To explain why paper was invented by travelers"
             },
             {
               "key": "B",
-              "text": "To explain why paper was invented by travelers"
+              "text": "To show how knowledge of papermaking traveled between regions"
             },
             {
               "key": "C",
@@ -2865,7 +2865,7 @@
               "text": "To argue that trade routes were used only for written documents"
             }
           ],
-          "correctKey": "A",
+          "correctKey": "B",
           "correctAnswer": "To show how knowledge of papermaking traveled between regions",
           "explanation": "The author mentions these groups to illustrate how people moving along trade routes helped spread papermaking knowledge.",
           "evidence": "Paragraph 3"
@@ -2910,11 +2910,11 @@
           "options": [
             {
               "key": "A",
-              "text": "By describing the development, spread, and long-term importance of paper"
+              "text": "By listing different types of modern office supplies"
             },
             {
               "key": "B",
-              "text": "By listing different types of modern office supplies"
+              "text": "By describing the development, spread, and long-term importance of paper"
             },
             {
               "key": "C",
@@ -2925,7 +2925,7 @@
               "text": "By presenting arguments against written communication"
             }
           ],
-          "correctKey": "A",
+          "correctKey": "B",
           "correctAnswer": "By describing the development, spread, and long-term importance of paper",
           "explanation": "The passage begins with the need for writing materials, explains paper's development and spread, and ends with its broader significance.",
           "evidence": "Entire passage"
@@ -2940,11 +2940,11 @@
           "options": [
             {
               "key": "A",
-              "text": "It is a simple material with major historical and social importance."
+              "text": "It was useful only before the invention of printing."
             },
             {
               "key": "B",
-              "text": "It was useful only before the invention of printing."
+              "text": "It is a simple material with major historical and social importance."
             },
             {
               "key": "C",
@@ -2955,7 +2955,7 @@
               "text": "It was important only in ancient China."
             }
           ],
-          "correctKey": "A",
+          "correctKey": "B",
           "correctAnswer": "It is a simple material with major historical and social importance.",
           "explanation": "The final paragraph emphasizes that paper has influenced communication, education, and social organization over long periods.",
           "evidence": "Paragraph 6"
@@ -2980,11 +2980,11 @@
           "options": [
             {
               "key": "A",
-              "text": "To explain how coral reefs form, function, and respond to environmental conditions"
+              "text": "To compare different species of tropical fish"
             },
             {
               "key": "B",
-              "text": "To compare different species of tropical fish"
+              "text": "To explain how coral reefs form, function, and respond to environmental conditions"
             },
             {
               "key": "C",
@@ -2995,7 +2995,7 @@
               "text": "To argue that tourism is harmful to all coral reefs"
             }
           ],
-          "correctKey": "A",
+          "correctKey": "B",
           "correctAnswer": "To explain how coral reefs form, function, and respond to environmental conditions",
           "explanation": "The passage explains reef formation, the relationship between corals and algae, environmental threats, scientific monitoring, and ecological importance.",
           "evidence": "Entire passage"
@@ -3010,11 +3010,11 @@
           "options": [
             {
               "key": "A",
-              "text": "By layers of coral skeletons accumulating over many generations"
+              "text": "By volcanic eruptions beneath the ocean floor"
             },
             {
               "key": "B",
-              "text": "By volcanic eruptions beneath the ocean floor"
+              "text": "By layers of coral skeletons accumulating over many generations"
             },
             {
               "key": "C",
@@ -3025,7 +3025,7 @@
               "text": "By the shells of large marine animals"
             }
           ],
-          "correctKey": "A",
+          "correctKey": "B",
           "correctAnswer": "By layers of coral skeletons accumulating over many generations",
           "explanation": "The passage explains that successive generations of coral polyps build skeletons on top of earlier ones, gradually forming reefs.",
           "evidence": "Paragraph 2"
@@ -3040,11 +3040,11 @@
           "options": [
             {
               "key": "A",
-              "text": "Because their symbiotic algae require sunlight for photosynthesis"
+              "text": "Because shallow water contains fewer fish"
             },
             {
               "key": "B",
-              "text": "Because shallow water contains fewer fish"
+              "text": "Because their symbiotic algae require sunlight for photosynthesis"
             },
             {
               "key": "C",
@@ -3055,7 +3055,7 @@
               "text": "Because calcium carbonate forms only near beaches"
             }
           ],
-          "correctKey": "A",
+          "correctKey": "B",
           "correctAnswer": "Because their symbiotic algae require sunlight for photosynthesis",
           "explanation": "The algae living within corals perform photosynthesis, making sunlight essential for reef-building corals.",
           "evidence": "Paragraph 3"
@@ -3070,11 +3070,11 @@
           "options": [
             {
               "key": "A",
-              "text": "release"
+              "text": "protect"
             },
             {
               "key": "B",
-              "text": "protect"
+              "text": "release"
             },
             {
               "key": "C",
@@ -3085,7 +3085,7 @@
               "text": "feed"
             }
           ],
-          "correctKey": "A",
+          "correctKey": "B",
           "correctAnswer": "release",
           "explanation": "In context, corals expel the algae by releasing them from their tissues.",
           "evidence": "Paragraph 4"
@@ -3130,11 +3130,11 @@
           "options": [
             {
               "key": "A",
-              "text": "To illustrate how environmental stress can damage coral reefs"
+              "text": "To explain how corals reproduce"
             },
             {
               "key": "B",
-              "text": "To explain how corals reproduce"
+              "text": "To illustrate how environmental stress can damage coral reefs"
             },
             {
               "key": "C",
@@ -3145,7 +3145,7 @@
               "text": "To describe the chemical composition of coral skeletons"
             }
           ],
-          "correctKey": "A",
+          "correctKey": "B",
           "correctAnswer": "To illustrate how environmental stress can damage coral reefs",
           "explanation": "The discussion of bleaching demonstrates one important consequence of unfavorable environmental conditions.",
           "evidence": "Paragraph 4"
@@ -3190,11 +3190,11 @@
           "options": [
             {
               "key": "A",
-              "text": "By explaining reef formation, environmental influences, scientific study, and ecological importance"
+              "text": "By presenting a chronological history of marine exploration"
             },
             {
               "key": "B",
-              "text": "By presenting a chronological history of marine exploration"
+              "text": "By explaining reef formation, environmental influences, scientific study, and ecological importance"
             },
             {
               "key": "C",
@@ -3205,7 +3205,7 @@
               "text": "By describing a single scientific experiment"
             }
           ],
-          "correctKey": "A",
+          "correctKey": "B",
           "correctAnswer": "By explaining reef formation, environmental influences, scientific study, and ecological importance",
           "explanation": "The passage progresses logically from reef formation to threats, monitoring, and significance.",
           "evidence": "Entire passage"
@@ -3220,11 +3220,11 @@
           "options": [
             {
               "key": "A",
-              "text": "They are valuable ecosystems that deserve careful scientific study and conservation."
+              "text": "They are interesting primarily because of their appearance."
             },
             {
               "key": "B",
-              "text": "They are interesting primarily because of their appearance."
+              "text": "They are valuable ecosystems that deserve careful scientific study and conservation."
             },
             {
               "key": "C",
@@ -3235,7 +3235,7 @@
               "text": "They can recover easily from all environmental disturbances."
             }
           ],
-          "correctKey": "A",
+          "correctKey": "B",
           "correctAnswer": "They are valuable ecosystems that deserve careful scientific study and conservation.",
           "explanation": "The concluding paragraph emphasizes the ecological and economic value of reefs and the importance of understanding and protecting them.",
           "evidence": "Paragraph 6"
@@ -3260,11 +3260,11 @@
           "options": [
             {
               "key": "A",
-              "text": "To explain the development of early writing systems and their significance for human societies"
+              "text": "To compare modern alphabets used around the world"
             },
             {
               "key": "B",
-              "text": "To compare modern alphabets used around the world"
+              "text": "To explain the development of early writing systems and their significance for human societies"
             },
             {
               "key": "C",
@@ -3275,7 +3275,7 @@
               "text": "To argue that oral traditions were more reliable than writing"
             }
           ],
-          "correctKey": "A",
+          "correctKey": "B",
           "correctAnswer": "To explain the development of early writing systems and their significance for human societies",
           "explanation": "The passage traces the origins of writing, describes early systems, and explains their historical importance.",
           "evidence": "Entire passage"
@@ -3290,11 +3290,11 @@
           "options": [
             {
               "key": "A",
-              "text": "Recording trade, agriculture, and taxation"
+              "text": "Writing religious poetry"
             },
             {
               "key": "B",
-              "text": "Writing religious poetry"
+              "text": "Recording trade, agriculture, and taxation"
             },
             {
               "key": "C",
@@ -3305,7 +3305,7 @@
               "text": "Creating monumental inscriptions"
             }
           ],
-          "correctKey": "A",
+          "correctKey": "B",
           "correctAnswer": "Recording trade, agriculture, and taxation",
           "explanation": "Paragraph 2 explains that cuneiform first served administrative and economic purposes.",
           "evidence": "Paragraph 2"
@@ -3320,11 +3320,11 @@
           "options": [
             {
               "key": "A",
-              "text": "They often became more versatile over time."
+              "text": "They remained limited to a single purpose."
             },
             {
               "key": "B",
-              "text": "They remained limited to a single purpose."
+              "text": "They often became more versatile over time."
             },
             {
               "key": "C",
@@ -3335,7 +3335,7 @@
               "text": "They replaced spoken language entirely."
             }
           ],
-          "correctKey": "A",
+          "correctKey": "B",
           "correctAnswer": "They often became more versatile over time.",
           "explanation": "The passage notes that cuneiform expanded into literature and science, and that societies adapted writing for different purposes.",
           "evidence": "Paragraphs 2-4"
@@ -3350,11 +3350,11 @@
           "options": [
             {
               "key": "A",
-              "text": "highlighted"
+              "text": "copied"
             },
             {
               "key": "B",
-              "text": "copied"
+              "text": "highlighted"
             },
             {
               "key": "C",
@@ -3365,7 +3365,7 @@
               "text": "measured"
             }
           ],
-          "correctKey": "A",
+          "correctKey": "B",
           "correctAnswer": "highlighted",
           "explanation": "In context, monumental inscriptions highlighted or stressed religious and political themes.",
           "evidence": "Paragraph 3"
@@ -3410,11 +3410,11 @@
           "options": [
             {
               "key": "A",
-              "text": "To illustrate how a practical writing material supported administrative records"
+              "text": "To compare Egyptian agriculture with Mesopotamian farming"
             },
             {
               "key": "B",
-              "text": "To compare Egyptian agriculture with Mesopotamian farming"
+              "text": "To illustrate how a practical writing material supported administrative records"
             },
             {
               "key": "C",
@@ -3425,7 +3425,7 @@
               "text": "To describe the religious importance of plants"
             }
           ],
-          "correctKey": "A",
+          "correctKey": "B",
           "correctAnswer": "To illustrate how a practical writing material supported administrative records",
           "explanation": "Papyrus is mentioned to explain how officials could prepare records more efficiently.",
           "evidence": "Paragraph 3"
@@ -3470,11 +3470,11 @@
           "options": [
             {
               "key": "A",
-              "text": "It introduces the invention of writing, presents historical examples, and explains its long-term significance."
+              "text": "It compares two modern educational systems."
             },
             {
               "key": "B",
-              "text": "It compares two modern educational systems."
+              "text": "It introduces the invention of writing, presents historical examples, and explains its long-term significance."
             },
             {
               "key": "C",
@@ -3485,7 +3485,7 @@
               "text": "It presents arguments against written communication."
             }
           ],
-          "correctKey": "A",
+          "correctKey": "B",
           "correctAnswer": "It introduces the invention of writing, presents historical examples, and explains its long-term significance.",
           "explanation": "The passage follows a logical progression from origins to examples and finally to historical importance.",
           "evidence": "Entire passage"
@@ -3500,11 +3500,11 @@
           "options": [
             {
               "key": "A",
-              "text": "It was a major achievement that transformed human civilization."
+              "text": "It had little influence outside government."
             },
             {
               "key": "B",
-              "text": "It had little influence outside government."
+              "text": "It was a major achievement that transformed human civilization."
             },
             {
               "key": "C",
@@ -3515,7 +3515,7 @@
               "text": "Its importance has declined completely in the modern world."
             }
           ],
-          "correctKey": "A",
+          "correctKey": "B",
           "correctAnswer": "It was a major achievement that transformed human civilization.",
           "explanation": "The author consistently presents writing as one of humanity's most influential inventions.",
           "evidence": "Paragraphs 1, 5, and 6"
@@ -3540,11 +3540,11 @@
           "options": [
             {
               "key": "A",
-              "text": "To explain how sleep contributes to memory, learning, and cognitive performance"
+              "text": "To compare different methods of studying"
             },
             {
               "key": "B",
-              "text": "To compare different methods of studying"
+              "text": "To explain how sleep contributes to memory, learning, and cognitive performance"
             },
             {
               "key": "C",
@@ -3555,7 +3555,7 @@
               "text": "To argue that people should sleep longer every weekend"
             }
           ],
-          "correctKey": "A",
+          "correctKey": "B",
           "correctAnswer": "To explain how sleep contributes to memory, learning, and cognitive performance",
           "explanation": "The passage focuses on the scientific relationship between sleep, memory, and learning.",
           "evidence": "Entire passage"
@@ -3570,11 +3570,11 @@
           "options": [
             {
               "key": "A",
-              "text": "Integrating information and recognizing patterns"
+              "text": "Producing hormones for muscle growth"
             },
             {
               "key": "B",
-              "text": "Producing hormones for muscle growth"
+              "text": "Integrating information and recognizing patterns"
             },
             {
               "key": "C",
@@ -3585,7 +3585,7 @@
               "text": "Preventing all memory loss"
             }
           ],
-          "correctKey": "A",
+          "correctKey": "B",
           "correctAnswer": "Integrating information and recognizing patterns",
           "explanation": "The passage states that REM sleep has been associated with integrating information, recognizing patterns, and processing emotions.",
           "evidence": "Paragraph 2"
@@ -3600,11 +3600,11 @@
           "options": [
             {
               "key": "A",
-              "text": "It helps organize information after it has been learned."
+              "text": "It occurs only while people are awake."
             },
             {
               "key": "B",
-              "text": "It occurs only while people are awake."
+              "text": "It helps organize information after it has been learned."
             },
             {
               "key": "C",
@@ -3615,7 +3615,7 @@
               "text": "It affects only emotional memories."
             }
           ],
-          "correctKey": "A",
+          "correctKey": "B",
           "correctAnswer": "It helps organize information after it has been learned.",
           "explanation": "The passage explains that experiences are reorganized and strengthened during sleep.",
           "evidence": "Paragraph 3"
@@ -3630,11 +3630,11 @@
           "options": [
             {
               "key": "A",
-              "text": "equal"
+              "text": "unexpected"
             },
             {
               "key": "B",
-              "text": "unexpected"
+              "text": "equal"
             },
             {
               "key": "C",
@@ -3645,7 +3645,7 @@
               "text": "extended"
             }
           ],
-          "correctKey": "A",
+          "correctKey": "B",
           "correctAnswer": "equal",
           "explanation": "The passage compares people who sleep with those who remain awake for an equal amount of time.",
           "evidence": "Paragraph 4"
@@ -3690,11 +3690,11 @@
           "options": [
             {
               "key": "A",
-              "text": "To provide examples of areas in which sleep has been shown to improve performance"
+              "text": "To compare different school subjects"
             },
             {
               "key": "B",
-              "text": "To compare different school subjects"
+              "text": "To provide examples of areas in which sleep has been shown to improve performance"
             },
             {
               "key": "C",
@@ -3705,7 +3705,7 @@
               "text": "To identify the only skills influenced by sleep"
             }
           ],
-          "correctKey": "A",
+          "correctKey": "B",
           "correctAnswer": "To provide examples of areas in which sleep has been shown to improve performance",
           "explanation": "The examples demonstrate that sleep benefits many different types of learning.",
           "evidence": "Paragraph 4"
@@ -3750,22 +3750,22 @@
           "options": [
             {
               "key": "A",
-              "text": "By introducing a scientific topic, explaining theories and evidence, and discussing practical implications"
-            },
-            {
-              "key": "B",
               "text": "By presenting the history of medical discoveries in chronological order"
             },
             {
-              "key": "C",
+              "key": "B",
               "text": "By comparing several unrelated neurological disorders"
+            },
+            {
+              "key": "C",
+              "text": "By introducing a scientific topic, explaining theories and evidence, and discussing practical implications"
             },
             {
               "key": "D",
               "text": "By describing a single laboratory experiment step by step"
             }
           ],
-          "correctKey": "A",
+          "correctKey": "C",
           "correctAnswer": "By introducing a scientific topic, explaining theories and evidence, and discussing practical implications",
           "explanation": "The passage defines the topic, explains mechanisms, presents supporting research, and concludes with broader significance.",
           "evidence": "Entire passage"
@@ -3780,22 +3780,22 @@
           "options": [
             {
               "key": "A",
-              "text": "Current evidence strongly supports the importance of sleep while recognizing that additional research is needed."
-            },
-            {
-              "key": "B",
               "text": "Scientists have already answered every important question about sleep."
             },
             {
-              "key": "C",
+              "key": "B",
               "text": "Sleep has little influence on learning."
+            },
+            {
+              "key": "C",
+              "text": "Current evidence strongly supports the importance of sleep while recognizing that additional research is needed."
             },
             {
               "key": "D",
               "text": "The value of sleep has been greatly exaggerated."
             }
           ],
-          "correctKey": "A",
+          "correctKey": "C",
           "correctAnswer": "Current evidence strongly supports the importance of sleep while recognizing that additional research is needed.",
           "explanation": "The final paragraph acknowledges both the strength of current evidence and the need for continued investigation.",
           "evidence": "Paragraph 6"
@@ -3820,22 +3820,22 @@
           "options": [
             {
               "key": "A",
-              "text": "To explain how glaciers form, move, shape landscapes, and provide information about climate"
-            },
-            {
-              "key": "B",
               "text": "To compare glaciers with rivers in different countries"
             },
             {
-              "key": "C",
+              "key": "B",
               "text": "To describe the history of mountain exploration"
+            },
+            {
+              "key": "C",
+              "text": "To explain how glaciers form, move, shape landscapes, and provide information about climate"
             },
             {
               "key": "D",
               "text": "To argue that glaciers have no effect on sea level"
             }
           ],
-          "correctKey": "A",
+          "correctKey": "C",
           "correctAnswer": "To explain how glaciers form, move, shape landscapes, and provide information about climate",
           "explanation": "The passage discusses glacier formation, movement, geological effects, climate connections, and scientific study.",
           "evidence": "Entire passage"
@@ -3850,22 +3850,22 @@
           "options": [
             {
               "key": "A",
-              "text": "It is compressed by the weight of additional layers of snow."
-            },
-            {
-              "key": "B",
               "text": "It freezes instantly during winter storms."
             },
             {
-              "key": "C",
+              "key": "B",
               "text": "It mixes with volcanic ash."
+            },
+            {
+              "key": "C",
+              "text": "It is compressed by the weight of additional layers of snow."
             },
             {
               "key": "D",
               "text": "It is carried downhill by rivers."
             }
           ],
-          "correctKey": "A",
+          "correctKey": "C",
           "correctAnswer": "It is compressed by the weight of additional layers of snow.",
           "explanation": "The passage explains that accumulated snow compresses lower layers until dense glacial ice forms.",
           "evidence": "Paragraph 1"
@@ -3880,22 +3880,22 @@
           "options": [
             {
               "key": "A",
-              "text": "Even slow movement can produce major changes over long periods."
-            },
-            {
-              "key": "B",
               "text": "Glaciers move only during the summer."
             },
             {
-              "key": "C",
+              "key": "B",
               "text": "Most glaciers remain completely stationary."
+            },
+            {
+              "key": "C",
+              "text": "Even slow movement can produce major changes over long periods."
             },
             {
               "key": "D",
               "text": "Glaciers move faster than rivers."
             }
           ],
-          "correctKey": "A",
+          "correctKey": "C",
           "correctAnswer": "Even slow movement can produce major changes over long periods.",
           "explanation": "Although glaciers move slowly, the passage emphasizes that they travel great distances and reshape landscapes over time.",
           "evidence": "Paragraphs 2 and 3"
@@ -3910,22 +3910,22 @@
           "options": [
             {
               "key": "A",
-              "text": "recognizable"
-            },
-            {
-              "key": "B",
               "text": "temporary"
             },
             {
-              "key": "C",
+              "key": "B",
               "text": "hidden"
+            },
+            {
+              "key": "C",
+              "text": "recognizable"
             },
             {
               "key": "D",
               "text": "artificial"
             }
           ],
-          "correctKey": "A",
+          "correctKey": "C",
           "correctAnswer": "recognizable",
           "explanation": "Distinctive landforms are recognizable features left behind by glaciers.",
           "evidence": "Paragraph 3"
@@ -3970,22 +3970,22 @@
           "options": [
             {
               "key": "A",
-              "text": "To provide examples of landforms created by glaciers"
-            },
-            {
-              "key": "B",
               "text": "To compare different mountain ranges"
             },
             {
-              "key": "C",
+              "key": "B",
               "text": "To explain how rivers are formed"
+            },
+            {
+              "key": "C",
+              "text": "To provide examples of landforms created by glaciers"
             },
             {
               "key": "D",
               "text": "To identify locations where glaciers never existed"
             }
           ],
-          "correctKey": "A",
+          "correctKey": "C",
           "correctAnswer": "To provide examples of landforms created by glaciers",
           "explanation": "The listed features are examples of landforms left behind after glaciers melt.",
           "evidence": "Paragraph 3"
@@ -4030,22 +4030,22 @@
           "options": [
             {
               "key": "A",
-              "text": "By explaining glacier formation, movement, effects, scientific study, and present-day changes"
-            },
-            {
-              "key": "B",
               "text": "By comparing glaciers from different continents"
             },
             {
-              "key": "C",
+              "key": "B",
               "text": "By presenting a timeline of famous expeditions"
+            },
+            {
+              "key": "C",
+              "text": "By explaining glacier formation, movement, effects, scientific study, and present-day changes"
             },
             {
               "key": "D",
               "text": "By describing a laboratory experiment in chronological order"
             }
           ],
-          "correctKey": "A",
+          "correctKey": "C",
           "correctAnswer": "By explaining glacier formation, movement, effects, scientific study, and present-day changes",
           "explanation": "The passage progresses logically from glacier formation to movement, impacts, research methods, and current observations.",
           "evidence": "Entire passage"
@@ -4060,22 +4060,22 @@
           "options": [
             {
               "key": "A",
-              "text": "It is valuable because glaciers provide important evidence about Earth's past and present climate."
-            },
-            {
-              "key": "B",
               "text": "It is useful only for mountain climbers."
             },
             {
-              "key": "C",
+              "key": "B",
               "text": "It has little connection to environmental science."
+            },
+            {
+              "key": "C",
+              "text": "It is valuable because glaciers provide important evidence about Earth's past and present climate."
             },
             {
               "key": "D",
               "text": "It is no longer necessary because glaciers change very slowly."
             }
           ],
-          "correctKey": "A",
+          "correctKey": "C",
           "correctAnswer": "It is valuable because glaciers provide important evidence about Earth's past and present climate.",
           "explanation": "The concluding paragraphs emphasize the importance of glacier research for understanding climate and environmental change.",
           "evidence": "Paragraphs 4-6"
@@ -4100,22 +4100,22 @@
           "options": [
             {
               "key": "A",
-              "text": "To explain why rivers have historically influenced the location and growth of cities"
-            },
-            {
-              "key": "B",
               "text": "To compare modern highways with ancient rivers"
             },
             {
-              "key": "C",
+              "key": "B",
               "text": "To describe how dams are constructed"
+            },
+            {
+              "key": "C",
+              "text": "To explain why rivers have historically influenced the location and growth of cities"
             },
             {
               "key": "D",
               "text": "To argue that cities should no longer be built near rivers"
             }
           ],
-          "correctKey": "A",
+          "correctKey": "C",
           "correctAnswer": "To explain why rivers have historically influenced the location and growth of cities",
           "explanation": "The passage discusses the historical and continuing importance of rivers in urban development.",
           "evidence": "Entire passage"
@@ -4130,22 +4130,22 @@
           "options": [
             {
               "key": "A",
-              "text": "It deposited nutrient-rich sediments that improved farmland."
-            },
-            {
-              "key": "B",
               "text": "It prevented trade with neighboring communities."
             },
             {
-              "key": "C",
+              "key": "B",
               "text": "It reduced access to fresh water."
+            },
+            {
+              "key": "C",
+              "text": "It deposited nutrient-rich sediments that improved farmland."
             },
             {
               "key": "D",
               "text": "It eliminated the need for irrigation."
             }
           ],
-          "correctKey": "A",
+          "correctKey": "C",
           "correctAnswer": "It deposited nutrient-rich sediments that improved farmland.",
           "explanation": "The passage states that seasonal flooding deposited fertile sediments, increasing agricultural productivity.",
           "evidence": "Paragraph 2"
@@ -4160,22 +4160,22 @@
           "options": [
             {
               "key": "A",
-              "text": "Rivers made transporting goods more efficient than overland travel."
-            },
-            {
-              "key": "B",
               "text": "River cities produced all the goods they needed."
             },
             {
-              "key": "C",
+              "key": "B",
               "text": "Governments prohibited trade in inland settlements."
+            },
+            {
+              "key": "C",
+              "text": "Rivers made transporting goods more efficient than overland travel."
             },
             {
               "key": "D",
               "text": "Boats traveled faster than modern airplanes."
             }
           ],
-          "correctKey": "A",
+          "correctKey": "C",
           "correctAnswer": "Rivers made transporting goods more efficient than overland travel.",
           "explanation": "Paragraph 3 explains that rivers provided efficient transportation routes for goods, encouraging commerce.",
           "evidence": "Paragraph 3"
@@ -4190,22 +4190,22 @@
           "options": [
             {
               "key": "A",
-              "text": "deep enough for boats to travel"
-            },
-            {
-              "key": "B",
               "text": "surrounded by mountains"
             },
             {
-              "key": "C",
+              "key": "B",
               "text": "protected from flooding"
+            },
+            {
+              "key": "C",
+              "text": "deep enough for boats to travel"
             },
             {
               "key": "D",
               "text": "located near farmland"
             }
           ],
-          "correctKey": "A",
+          "correctKey": "C",
           "correctAnswer": "deep enough for boats to travel",
           "explanation": "In context, navigable rivers are those that boats can travel on.",
           "evidence": "Paragraph 3"
@@ -4250,22 +4250,22 @@
           "options": [
             {
               "key": "A",
-              "text": "To illustrate methods used to reduce the risks associated with rivers"
-            },
-            {
-              "key": "B",
               "text": "To compare ancient and modern transportation"
             },
             {
-              "key": "C",
+              "key": "B",
               "text": "To explain how rivers are formed"
+            },
+            {
+              "key": "C",
+              "text": "To illustrate methods used to reduce the risks associated with rivers"
             },
             {
               "key": "D",
               "text": "To describe different sources of electricity"
             }
           ],
-          "correctKey": "A",
+          "correctKey": "C",
           "correctAnswer": "To illustrate methods used to reduce the risks associated with rivers",
           "explanation": "These examples demonstrate engineering solutions developed to reduce flooding.",
           "evidence": "Paragraph 5"
@@ -4310,22 +4310,22 @@
           "options": [
             {
               "key": "A",
-              "text": "By presenting reasons for river settlement, discussing challenges, and concluding with modern relevance"
-            },
-            {
-              "key": "B",
               "text": "By describing one famous river in chronological order"
             },
             {
-              "key": "C",
+              "key": "B",
               "text": "By comparing rivers on different continents"
+            },
+            {
+              "key": "C",
+              "text": "By presenting reasons for river settlement, discussing challenges, and concluding with modern relevance"
             },
             {
               "key": "D",
               "text": "By explaining the chemistry of freshwater"
             }
           ],
-          "correctKey": "A",
+          "correctKey": "C",
           "correctAnswer": "By presenting reasons for river settlement, discussing challenges, and concluding with modern relevance",
           "explanation": "The passage first explains the advantages of rivers, then discusses challenges, and finally describes their continuing importance.",
           "evidence": "Entire passage"
@@ -4340,22 +4340,22 @@
           "options": [
             {
               "key": "A",
-              "text": "They have been fundamental to the growth of cities despite presenting certain risks."
-            },
-            {
-              "key": "B",
               "text": "Their importance ended with the invention of railroads."
             },
             {
-              "key": "C",
+              "key": "B",
               "text": "They create more problems than benefits for human settlements."
+            },
+            {
+              "key": "C",
+              "text": "They have been fundamental to the growth of cities despite presenting certain risks."
             },
             {
               "key": "D",
               "text": "Their role in history has been greatly exaggerated."
             }
           ],
-          "correctKey": "A",
+          "correctKey": "C",
           "correctAnswer": "They have been fundamental to the growth of cities despite presenting certain risks.",
           "explanation": "The author emphasizes both the benefits and challenges of rivers while concluding that they remain essential to urban development.",
           "evidence": "Paragraphs 1 and 6"
@@ -4380,22 +4380,22 @@
           "options": [
             {
               "key": "A",
-              "text": "To explain current scientific understanding of how dogs became domesticated"
-            },
-            {
-              "key": "B",
               "text": "To compare dogs with modern farm animals"
             },
             {
-              "key": "C",
+              "key": "B",
               "text": "To describe the anatomy of wolves"
+            },
+            {
+              "key": "C",
+              "text": "To explain current scientific understanding of how dogs became domesticated"
             },
             {
               "key": "D",
               "text": "To argue that wolves should never have been domesticated"
             }
           ],
-          "correctKey": "A",
+          "correctKey": "C",
           "correctAnswer": "To explain current scientific understanding of how dogs became domesticated",
           "explanation": "The passage examines hypotheses and evidence regarding the domestication of dogs.",
           "evidence": "Entire passage"
@@ -4410,22 +4410,22 @@
           "options": [
             {
               "key": "A",
-              "text": "They were searching for food scraps."
-            },
-            {
-              "key": "B",
               "text": "They wanted protection from other wolves."
             },
             {
-              "key": "C",
+              "key": "B",
               "text": "They were trained by early farmers."
+            },
+            {
+              "key": "C",
+              "text": "They were searching for food scraps."
             },
             {
               "key": "D",
               "text": "They followed migrating birds."
             }
           ],
-          "correctKey": "A",
+          "correctKey": "C",
           "correctAnswer": "They were searching for food scraps.",
           "explanation": "The passage states that food left by hunter-gatherers likely attracted certain wolves.",
           "evidence": "Paragraph 2"
@@ -4440,22 +4440,22 @@
           "options": [
             {
               "key": "A",
-              "text": "Humans intentionally favored dogs with desirable traits."
-            },
-            {
-              "key": "B",
               "text": "It occurred before wolves interacted with humans."
             },
             {
-              "key": "C",
+              "key": "B",
               "text": "It eliminated all aggressive behavior immediately."
+            },
+            {
+              "key": "C",
+              "text": "Humans intentionally favored dogs with desirable traits."
             },
             {
               "key": "D",
               "text": "It happened only in recent centuries."
             }
           ],
-          "correctKey": "A",
+          "correctKey": "C",
           "correctAnswer": "Humans intentionally favored dogs with desirable traits.",
           "explanation": "Paragraph 3 explains that humans selected animals possessing useful characteristics.",
           "evidence": "Paragraph 3"
@@ -4470,22 +4470,22 @@
           "options": [
             {
               "key": "A",
-              "text": "reliable"
-            },
-            {
-              "key": "B",
               "text": "temporary"
             },
             {
-              "key": "C",
+              "key": "B",
               "text": "limited"
+            },
+            {
+              "key": "C",
+              "text": "reliable"
             },
             {
               "key": "D",
               "text": "unusual"
             }
           ],
-          "correctKey": "A",
+          "correctKey": "C",
           "correctAnswer": "reliable",
           "explanation": "A dependable food source is one that is reliable and consistently available.",
           "evidence": "Paragraph 2"
@@ -4530,22 +4530,22 @@
           "options": [
             {
               "key": "A",
-              "text": "To present another type of evidence used to investigate dog domestication"
-            },
-            {
-              "key": "B",
               "text": "To compare dogs with other domestic animals"
             },
             {
-              "key": "C",
+              "key": "B",
               "text": "To explain how wolves communicate"
+            },
+            {
+              "key": "C",
+              "text": "To present another type of evidence used to investigate dog domestication"
             },
             {
               "key": "D",
               "text": "To describe modern veterinary medicine"
             }
           ],
-          "correctKey": "A",
+          "correctKey": "C",
           "correctAnswer": "To present another type of evidence used to investigate dog domestication",
           "explanation": "DNA analysis provides scientific evidence about the timing and process of domestication.",
           "evidence": "Paragraph 5"
@@ -4590,22 +4590,22 @@
           "options": [
             {
               "key": "A",
-              "text": "By presenting hypotheses, archaeological and genetic evidence, and modern significance"
-            },
-            {
-              "key": "B",
               "text": "By describing the life cycle of wolves"
             },
             {
-              "key": "C",
+              "key": "B",
               "text": "By comparing different breeds of dogs"
+            },
+            {
+              "key": "C",
+              "text": "By presenting hypotheses, archaeological and genetic evidence, and modern significance"
             },
             {
               "key": "D",
               "text": "By presenting a timeline of famous archaeological excavations"
             }
           ],
-          "correctKey": "A",
+          "correctKey": "C",
           "correctAnswer": "By presenting hypotheses, archaeological and genetic evidence, and modern significance",
           "explanation": "The passage introduces the question of domestication, reviews supporting evidence, and concludes with its significance.",
           "evidence": "Entire passage"
@@ -4620,22 +4620,22 @@
           "options": [
             {
               "key": "A",
-              "text": "Evidence has greatly improved understanding, although important questions remain unresolved."
-            },
-            {
-              "key": "B",
               "text": "Scientists have completely solved every question about domestication."
             },
             {
-              "key": "C",
+              "key": "B",
               "text": "Archaeological evidence is no longer useful."
+            },
+            {
+              "key": "C",
+              "text": "Evidence has greatly improved understanding, although important questions remain unresolved."
             },
             {
               "key": "D",
               "text": "Modern genetic research has replaced all previous methods."
             }
           ],
-          "correctKey": "A",
+          "correctKey": "C",
           "correctAnswer": "Evidence has greatly improved understanding, although important questions remain unresolved.",
           "explanation": "The passage emphasizes that multiple forms of evidence have advanced knowledge while acknowledging ongoing scientific debate.",
           "evidence": "Paragraphs 5 and 6"
@@ -4660,22 +4660,22 @@
           "options": [
             {
               "key": "A",
-              "text": "To explain the ecological importance of mangrove forests and the need to protect them"
-            },
-            {
-              "key": "B",
               "text": "To compare tropical forests with deserts"
             },
             {
-              "key": "C",
+              "key": "B",
               "text": "To describe the life cycle of marine fish"
+            },
+            {
+              "key": "C",
+              "text": "To explain the ecological importance of mangrove forests and the need to protect them"
             },
             {
               "key": "D",
               "text": "To argue that all coastal development should stop"
             }
           ],
-          "correctKey": "A",
+          "correctKey": "C",
           "correctAnswer": "To explain the ecological importance of mangrove forests and the need to protect them",
           "explanation": "The passage explains the adaptations, ecological functions, threats, and conservation of mangrove forests.",
           "evidence": "Entire passage"
@@ -4690,22 +4690,22 @@
           "options": [
             {
               "key": "A",
-              "text": "To obtain oxygen in waterlogged soils"
-            },
-            {
-              "key": "B",
               "text": "To capture more sunlight"
             },
             {
-              "key": "C",
+              "key": "B",
               "text": "To store freshwater"
+            },
+            {
+              "key": "C",
+              "text": "To obtain oxygen in waterlogged soils"
             },
             {
               "key": "D",
               "text": "To prevent birds from nesting"
             }
           ],
-          "correctKey": "A",
+          "correctKey": "C",
           "correctAnswer": "To obtain oxygen in waterlogged soils",
           "explanation": "The passage explains that exposed roots allow mangroves to obtain oxygen where soil contains little air.",
           "evidence": "Paragraph 1"
@@ -4720,22 +4720,22 @@
           "options": [
             {
               "key": "A",
-              "text": "They provide protected nursery habitats for many young marine animals."
-            },
-            {
-              "key": "B",
               "text": "They increase the salt content of seawater."
             },
             {
-              "key": "C",
+              "key": "B",
               "text": "They prevent all predators from entering coastal waters."
+            },
+            {
+              "key": "C",
+              "text": "They provide protected nursery habitats for many young marine animals."
             },
             {
               "key": "D",
               "text": "They produce food directly for humans."
             }
           ],
-          "correctKey": "A",
+          "correctKey": "C",
           "correctAnswer": "They provide protected nursery habitats for many young marine animals.",
           "explanation": "Young fish, crabs, and shrimp develop safely among mangrove roots, supporting future fish populations.",
           "evidence": "Paragraph 2"
@@ -4750,22 +4750,22 @@
           "options": [
             {
               "key": "A",
-              "text": "protect from change"
-            },
-            {
-              "key": "B",
               "text": "measure accurately"
             },
             {
-              "key": "C",
+              "key": "B",
               "text": "move gradually"
+            },
+            {
+              "key": "C",
+              "text": "protect from change"
             },
             {
               "key": "D",
               "text": "separate completely"
             }
           ],
-          "correctKey": "A",
+          "correctKey": "C",
           "correctAnswer": "protect from change",
           "explanation": "In context, mangroves stabilize coastlines by reducing erosion and helping them remain intact.",
           "evidence": "Paragraph 2"
@@ -4810,22 +4810,22 @@
           "options": [
             {
               "key": "A",
-              "text": "To explain how mangroves contribute to regulating Earth's climate"
-            },
-            {
-              "key": "B",
               "text": "To describe how mangroves obtain nutrients"
             },
             {
-              "key": "C",
+              "key": "B",
               "text": "To compare tropical and temperate forests"
+            },
+            {
+              "key": "C",
+              "text": "To explain how mangroves contribute to regulating Earth's climate"
             },
             {
               "key": "D",
               "text": "To explain why mangrove wood is valuable"
             }
           ],
-          "correctKey": "A",
+          "correctKey": "C",
           "correctAnswer": "To explain how mangroves contribute to regulating Earth's climate",
           "explanation": "Carbon storage is presented as one of the important environmental services provided by mangrove forests.",
           "evidence": "Paragraph 3"
@@ -4870,22 +4870,22 @@
           "options": [
             {
               "key": "A",
-              "text": "By describing mangrove adaptations, ecological functions, threats, monitoring, and conservation"
-            },
-            {
-              "key": "B",
               "text": "By comparing mangroves with coral reefs in chronological order"
             },
             {
-              "key": "C",
+              "key": "B",
               "text": "By presenting one scientific experiment"
+            },
+            {
+              "key": "C",
+              "text": "By describing mangrove adaptations, ecological functions, threats, monitoring, and conservation"
             },
             {
               "key": "D",
               "text": "By explaining how rivers form coastal wetlands"
             }
           ],
-          "correctKey": "A",
+          "correctKey": "C",
           "correctAnswer": "By describing mangrove adaptations, ecological functions, threats, monitoring, and conservation",
           "explanation": "The passage follows a logical expository structure from adaptations to ecological importance and conservation.",
           "evidence": "Entire passage"
@@ -4900,22 +4900,22 @@
           "options": [
             {
               "key": "A",
-              "text": "They are highly valuable ecosystems that deserve continued protection and restoration."
-            },
-            {
-              "key": "B",
               "text": "Their importance has been greatly exaggerated."
             },
             {
-              "key": "C",
+              "key": "B",
               "text": "They mainly benefit scientists rather than society."
+            },
+            {
+              "key": "C",
+              "text": "They are highly valuable ecosystems that deserve continued protection and restoration."
             },
             {
               "key": "D",
               "text": "They should be replaced by artificial coastal structures whenever possible."
             }
           ],
-          "correctKey": "A",
+          "correctKey": "C",
           "correctAnswer": "They are highly valuable ecosystems that deserve continued protection and restoration.",
           "explanation": "The author consistently emphasizes the multiple ecological and economic benefits of mangrove forests and supports conservation efforts.",
           "evidence": "Paragraphs 5 and 6"
@@ -4940,22 +4940,22 @@
           "options": [
             {
               "key": "A",
-              "text": "To explain how postal systems developed and adapted to changing technologies and social needs"
-            },
-            {
-              "key": "B",
               "text": "To compare modern email with handwritten letters"
             },
             {
-              "key": "C",
+              "key": "B",
               "text": "To describe the history of horse breeding"
+            },
+            {
+              "key": "C",
+              "text": "To explain how postal systems developed and adapted to changing technologies and social needs"
             },
             {
               "key": "D",
               "text": "To argue that traditional mail should replace electronic communication"
             }
           ],
-          "correctKey": "A",
+          "correctKey": "C",
           "correctAnswer": "To explain how postal systems developed and adapted to changing technologies and social needs",
           "explanation": "The passage traces the historical development of postal systems and explains how they have evolved over time.",
           "evidence": "Entire passage"
@@ -4970,22 +4970,22 @@
           "options": [
             {
               "key": "A",
-              "text": "To allow messengers to continue their journeys using fresh horses"
-            },
-            {
-              "key": "B",
               "text": "To collect taxes from travelers"
             },
             {
-              "key": "C",
+              "key": "B",
               "text": "To provide housing for government officials"
             },
             {
-              "key": "D",
+              "key": "C",
               "text": "To train new military recruits"
+            },
+            {
+              "key": "D",
+              "text": "To allow messengers to continue their journeys using fresh horses"
             }
           ],
-          "correctKey": "A",
+          "correctKey": "D",
           "correctAnswer": "To allow messengers to continue their journeys using fresh horses",
           "explanation": "Relay stations enabled faster message delivery by allowing messengers to exchange tired horses for fresh ones.",
           "evidence": "Paragraph 2"
@@ -5000,22 +5000,22 @@
           "options": [
             {
               "key": "A",
-              "text": "It increased the need for dependable long-distance communication."
-            },
-            {
-              "key": "B",
               "text": "It eliminated the importance of written contracts."
             },
             {
-              "key": "C",
+              "key": "B",
               "text": "It reduced improvements in transportation."
             },
             {
-              "key": "D",
+              "key": "C",
               "text": "It made postal systems unnecessary."
+            },
+            {
+              "key": "D",
+              "text": "It increased the need for dependable long-distance communication."
             }
           ],
-          "correctKey": "A",
+          "correctKey": "D",
           "correctAnswer": "It increased the need for dependable long-distance communication.",
           "explanation": "The passage explains that merchants required reliable ways to exchange business information as commerce expanded.",
           "evidence": "Paragraph 3"
@@ -5030,22 +5030,22 @@
           "options": [
             {
               "key": "A",
-              "text": "considerably"
-            },
-            {
-              "key": "B",
               "text": "rarely"
             },
             {
-              "key": "C",
+              "key": "B",
               "text": "temporarily"
             },
             {
-              "key": "D",
+              "key": "C",
               "text": "unexpectedly"
+            },
+            {
+              "key": "D",
+              "text": "considerably"
             }
           ],
-          "correctKey": "A",
+          "correctKey": "D",
           "correctAnswer": "considerably",
           "explanation": "In context, parcel delivery has increased considerably because of online shopping.",
           "evidence": "Paragraph 5"
@@ -5090,22 +5090,22 @@
           "options": [
             {
               "key": "A",
-              "text": "To illustrate how advances in transportation improved postal services"
-            },
-            {
-              "key": "B",
               "text": "To compare different methods of manufacturing vehicles"
             },
             {
-              "key": "C",
+              "key": "B",
               "text": "To explain why roads became unnecessary"
             },
             {
-              "key": "D",
+              "key": "C",
               "text": "To describe the history of international tourism"
+            },
+            {
+              "key": "D",
+              "text": "To illustrate how advances in transportation improved postal services"
             }
           ],
-          "correctKey": "A",
+          "correctKey": "D",
           "correctAnswer": "To illustrate how advances in transportation improved postal services",
           "explanation": "These examples show how transportation innovations increased the speed and efficiency of mail delivery.",
           "evidence": "Paragraph 4"
@@ -5150,22 +5150,22 @@
           "options": [
             {
               "key": "A",
-              "text": "Chronologically, showing how postal systems evolved from ancient times to the present"
-            },
-            {
-              "key": "B",
               "text": "By comparing postal services in different countries"
             },
             {
-              "key": "C",
+              "key": "B",
               "text": "By describing one historical event in detail"
             },
             {
-              "key": "D",
+              "key": "C",
               "text": "By presenting opposing opinions about technology"
+            },
+            {
+              "key": "D",
+              "text": "Chronologically, showing how postal systems evolved from ancient times to the present"
             }
           ],
-          "correctKey": "A",
+          "correctKey": "D",
           "correctAnswer": "Chronologically, showing how postal systems evolved from ancient times to the present",
           "explanation": "The passage progresses from ancient postal systems through the Industrial Revolution to modern services.",
           "evidence": "Entire passage"
@@ -5180,22 +5180,22 @@
           "options": [
             {
               "key": "A",
-              "text": "They have remained valuable by adapting to changing technologies and social needs."
-            },
-            {
-              "key": "B",
               "text": "They became obsolete with the invention of electronic communication."
             },
             {
-              "key": "C",
+              "key": "B",
               "text": "They were important only in ancient civilizations."
             },
             {
-              "key": "D",
+              "key": "C",
               "text": "They now play a very limited role in society."
+            },
+            {
+              "key": "D",
+              "text": "They have remained valuable by adapting to changing technologies and social needs."
             }
           ],
-          "correctKey": "A",
+          "correctKey": "D",
           "correctAnswer": "They have remained valuable by adapting to changing technologies and social needs.",
           "explanation": "The concluding paragraph emphasizes that postal systems continue to serve important functions despite digital communication.",
           "evidence": "Paragraphs 5 and 6"
@@ -5220,22 +5220,22 @@
           "options": [
             {
               "key": "A",
-              "text": "To explain why honey resists spoilage and why scientists continue to study it"
-            },
-            {
-              "key": "B",
               "text": "To describe how bees communicate inside a hive"
             },
             {
-              "key": "C",
+              "key": "B",
               "text": "To compare different sweeteners used throughout history"
             },
             {
-              "key": "D",
+              "key": "C",
               "text": "To argue that honey should replace all modern medicines"
+            },
+            {
+              "key": "D",
+              "text": "To explain why honey resists spoilage and why scientists continue to study it"
             }
           ],
-          "correctKey": "A",
+          "correctKey": "D",
           "correctAnswer": "To explain why honey resists spoilage and why scientists continue to study it",
           "explanation": "The passage explains honey's stability, the science behind it, and its potential medical applications.",
           "evidence": "Entire passage"
@@ -5250,22 +5250,22 @@
           "options": [
             {
               "key": "A",
-              "text": "Honey contains very little available water."
-            },
-            {
-              "key": "B",
               "text": "Honey freezes at ordinary temperatures."
             },
             {
-              "key": "C",
+              "key": "B",
               "text": "Honey contains no natural sugars."
             },
             {
-              "key": "D",
+              "key": "C",
               "text": "Honey completely lacks acidity."
+            },
+            {
+              "key": "D",
+              "text": "Honey contains very little available water."
             }
           ],
-          "correctKey": "A",
+          "correctKey": "D",
           "correctAnswer": "Honey contains very little available water.",
           "explanation": "The passage explains that honey's low water content prevents many microorganisms from growing.",
           "evidence": "Paragraph 2"
@@ -5280,22 +5280,22 @@
           "options": [
             {
               "key": "A",
-              "text": "It removes water from microbial cells in highly concentrated sugar solutions."
-            },
-            {
-              "key": "B",
               "text": "It causes honey to become more acidic."
             },
             {
-              "key": "C",
+              "key": "B",
               "text": "It increases bacterial reproduction."
             },
             {
-              "key": "D",
+              "key": "C",
               "text": "It permanently changes the chemical composition of honey."
+            },
+            {
+              "key": "D",
+              "text": "It removes water from microbial cells in highly concentrated sugar solutions."
             }
           ],
-          "correctKey": "A",
+          "correctKey": "D",
           "correctAnswer": "It removes water from microbial cells in highly concentrated sugar solutions.",
           "explanation": "The passage states that the concentrated sugars in honey draw water out of microbial cells through osmosis.",
           "evidence": "Paragraph 2"
@@ -5310,22 +5310,22 @@
           "options": [
             {
               "key": "A",
-              "text": "inhibit"
-            },
-            {
-              "key": "B",
               "text": "measure"
             },
             {
-              "key": "C",
+              "key": "B",
               "text": "replace"
             },
             {
-              "key": "D",
+              "key": "C",
               "text": "observe"
+            },
+            {
+              "key": "D",
+              "text": "inhibit"
             }
           ],
-          "correctKey": "A",
+          "correctKey": "D",
           "correctAnswer": "inhibit",
           "explanation": "In context, honey's acidity inhibits bacterial growth.",
           "evidence": "Paragraph 3"
@@ -5370,22 +5370,22 @@
           "options": [
             {
               "key": "A",
-              "text": "To provide an example of a practical application of honey's antimicrobial properties"
-            },
-            {
-              "key": "B",
               "text": "To explain how bees produce enzymes"
             },
             {
-              "key": "C",
+              "key": "B",
               "text": "To compare traditional and modern diets"
             },
             {
-              "key": "D",
+              "key": "C",
               "text": "To argue that honey should replace antibiotics in every situation"
+            },
+            {
+              "key": "D",
+              "text": "To provide an example of a practical application of honey's antimicrobial properties"
             }
           ],
-          "correctKey": "A",
+          "correctKey": "D",
           "correctAnswer": "To provide an example of a practical application of honey's antimicrobial properties",
           "explanation": "Medical-grade honey is presented as an example of how honey's natural properties are used in medicine.",
           "evidence": "Paragraph 5"
@@ -5430,22 +5430,22 @@
           "options": [
             {
               "key": "A",
-              "text": "By explaining honey's properties, describing scientific evidence, and discussing practical applications"
-            },
-            {
-              "key": "B",
               "text": "By presenting a chronological history of beekeeping"
             },
             {
-              "key": "C",
+              "key": "B",
               "text": "By comparing different insects that produce food"
             },
             {
-              "key": "D",
+              "key": "C",
               "text": "By describing one laboratory experiment step by step"
+            },
+            {
+              "key": "D",
+              "text": "By explaining honey's properties, describing scientific evidence, and discussing practical applications"
             }
           ],
-          "correctKey": "A",
+          "correctKey": "D",
           "correctAnswer": "By explaining honey's properties, describing scientific evidence, and discussing practical applications",
           "explanation": "The passage moves from explaining honey's preservation to its medical uses and broader scientific importance.",
           "evidence": "Entire passage"
@@ -5460,22 +5460,22 @@
           "options": [
             {
               "key": "A",
-              "text": "Its unique properties make it both scientifically interesting and practically useful."
-            },
-            {
-              "key": "B",
               "text": "Its importance has been greatly exaggerated."
             },
             {
-              "key": "C",
+              "key": "B",
               "text": "It should be considered primarily a historical curiosity."
             },
             {
-              "key": "D",
+              "key": "C",
               "text": "Its value lies only in its sweetness."
+            },
+            {
+              "key": "D",
+              "text": "Its unique properties make it both scientifically interesting and practically useful."
             }
           ],
-          "correctKey": "A",
+          "correctKey": "D",
           "correctAnswer": "Its unique properties make it both scientifically interesting and practically useful.",
           "explanation": "The conclusion emphasizes honey's significance as both a food and a subject of scientific investigation.",
           "evidence": "Paragraph 6"
@@ -5500,22 +5500,22 @@
           "options": [
             {
               "key": "A",
-              "text": "To explain how maps have evolved and how their uses have expanded over time"
-            },
-            {
-              "key": "B",
               "text": "To compare ancient and modern methods of printing"
             },
             {
-              "key": "C",
+              "key": "B",
               "text": "To describe the history of satellite technology"
             },
             {
-              "key": "D",
+              "key": "C",
               "text": "To argue that paper maps are no longer useful"
+            },
+            {
+              "key": "D",
+              "text": "To explain how maps have evolved and how their uses have expanded over time"
             }
           ],
-          "correctKey": "A",
+          "correctKey": "D",
           "correctAnswer": "To explain how maps have evolved and how their uses have expanded over time",
           "explanation": "The passage traces the historical development of maps and explains their changing applications.",
           "evidence": "Entire passage"
@@ -5530,22 +5530,22 @@
           "options": [
             {
               "key": "A",
-              "text": "Helping people identify property boundaries"
-            },
-            {
-              "key": "B",
               "text": "Planning international air travel"
             },
             {
-              "key": "C",
+              "key": "B",
               "text": "Predicting weather patterns"
             },
             {
-              "key": "D",
+              "key": "C",
               "text": "Displaying political elections"
+            },
+            {
+              "key": "D",
+              "text": "Helping people identify property boundaries"
             }
           ],
-          "correctKey": "A",
+          "correctKey": "D",
           "correctAnswer": "Helping people identify property boundaries",
           "explanation": "The passage states that early maps helped identify property boundaries, resources, and nearby settlements.",
           "evidence": "Paragraph 2"
@@ -5560,22 +5560,22 @@
           "options": [
             {
               "key": "A",
-              "text": "They allowed cartographers to estimate locations more accurately."
-            },
-            {
-              "key": "B",
               "text": "They reduced the need for exploration."
             },
             {
-              "key": "C",
+              "key": "B",
               "text": "They replaced all earlier navigation methods."
             },
             {
-              "key": "D",
+              "key": "C",
               "text": "They made printed maps unnecessary."
+            },
+            {
+              "key": "D",
+              "text": "They allowed cartographers to estimate locations more accurately."
             }
           ],
-          "correctKey": "A",
+          "correctKey": "D",
           "correctAnswer": "They allowed cartographers to estimate locations more accurately.",
           "explanation": "The passage explains that advances in these fields improved positional accuracy.",
           "evidence": "Paragraph 3"
@@ -5590,22 +5590,22 @@
           "options": [
             {
               "key": "A",
-              "text": "include"
-            },
-            {
-              "key": "B",
               "text": "remove"
             },
             {
-              "key": "C",
+              "key": "B",
               "text": "compare"
             },
             {
-              "key": "D",
+              "key": "C",
               "text": "protect"
+            },
+            {
+              "key": "D",
+              "text": "include"
             }
           ],
-          "correctKey": "A",
+          "correctKey": "D",
           "correctAnswer": "include",
           "explanation": "In context, mapmakers incorporated new information by including it in updated maps.",
           "evidence": "Paragraph 4"
@@ -5650,22 +5650,22 @@
           "options": [
             {
               "key": "A",
-              "text": "To provide examples of the many modern uses of maps"
-            },
-            {
-              "key": "B",
               "text": "To compare different government agencies"
             },
             {
-              "key": "C",
+              "key": "B",
               "text": "To explain how maps are manufactured"
             },
             {
-              "key": "D",
+              "key": "C",
               "text": "To identify the oldest forms of cartography"
+            },
+            {
+              "key": "D",
+              "text": "To provide examples of the many modern uses of maps"
             }
           ],
-          "correctKey": "A",
+          "correctKey": "D",
           "correctAnswer": "To provide examples of the many modern uses of maps",
           "explanation": "These examples demonstrate that maps are used for many purposes beyond navigation.",
           "evidence": "Paragraph 6"
@@ -5710,22 +5710,22 @@
           "options": [
             {
               "key": "A",
-              "text": "Chronologically, describing the historical development of maps from ancient times to the present"
-            },
-            {
-              "key": "B",
               "text": "By comparing maps produced on different continents"
             },
             {
-              "key": "C",
+              "key": "B",
               "text": "By presenting opposing theories of geography"
             },
             {
-              "key": "D",
+              "key": "C",
               "text": "By describing one mapping project in detail"
+            },
+            {
+              "key": "D",
+              "text": "Chronologically, describing the historical development of maps from ancient times to the present"
             }
           ],
-          "correctKey": "A",
+          "correctKey": "D",
           "correctAnswer": "Chronologically, describing the historical development of maps from ancient times to the present",
           "explanation": "The passage follows a chronological progression from early maps to modern digital mapping technologies.",
           "evidence": "Entire passage"
@@ -5740,22 +5740,22 @@
           "options": [
             {
               "key": "A",
-              "text": "They remain indispensable tools despite major technological advances."
-            },
-            {
-              "key": "B",
               "text": "Their usefulness has declined because of satellite technology."
             },
             {
-              "key": "C",
+              "key": "B",
               "text": "They were important only for early explorers."
             },
             {
-              "key": "D",
+              "key": "C",
               "text": "They are now valuable mainly as historical artifacts."
+            },
+            {
+              "key": "D",
+              "text": "They remain indispensable tools despite major technological advances."
             }
           ],
-          "correctKey": "A",
+          "correctKey": "D",
           "correctAnswer": "They remain indispensable tools despite major technological advances.",
           "explanation": "The conclusion emphasizes that maps continue to be essential for understanding and managing the world.",
           "evidence": "Paragraph 6"
@@ -5780,22 +5780,22 @@
           "options": [
             {
               "key": "A",
-              "text": "To explain why birds migrate, how they navigate, and how scientists study their movements"
-            },
-            {
-              "key": "B",
               "text": "To compare birds with other migrating animals"
             },
             {
-              "key": "C",
+              "key": "B",
               "text": "To describe the anatomy of bird wings"
             },
             {
-              "key": "D",
+              "key": "C",
               "text": "To argue that migration is becoming unnecessary"
+            },
+            {
+              "key": "D",
+              "text": "To explain why birds migrate, how they navigate, and how scientists study their movements"
             }
           ],
-          "correctKey": "A",
+          "correctKey": "D",
           "correctAnswer": "To explain why birds migrate, how they navigate, and how scientists study their movements",
           "explanation": "The passage discusses the reasons for migration, navigation mechanisms, research methods, and conservation.",
           "evidence": "Entire passage"
@@ -5810,22 +5810,22 @@
           "options": [
             {
               "key": "A",
-              "text": "Food resources become more readily available."
-            },
-            {
-              "key": "B",
               "text": "Predators disappear completely."
             },
             {
-              "key": "C",
+              "key": "B",
               "text": "Daylight hours become longer."
             },
             {
-              "key": "D",
+              "key": "C",
               "text": "They can avoid all storms."
+            },
+            {
+              "key": "D",
+              "text": "Food resources become more readily available."
             }
           ],
-          "correctKey": "A",
+          "correctKey": "D",
           "correctAnswer": "Food resources become more readily available.",
           "explanation": "The passage explains that warmer regions provide more abundant food during winter.",
           "evidence": "Paragraph 2"
@@ -5840,22 +5840,22 @@
           "options": [
             {
               "key": "A",
-              "text": "Most species depend on several sources of information rather than a single cue."
-            },
-            {
-              "key": "B",
               "text": "All birds navigate using only Earth's magnetic field."
             },
             {
-              "key": "C",
+              "key": "B",
               "text": "Young birds immediately follow the most efficient routes."
             },
             {
-              "key": "D",
+              "key": "C",
               "text": "Birds cannot migrate without human assistance."
+            },
+            {
+              "key": "D",
+              "text": "Most species depend on several sources of information rather than a single cue."
             }
           ],
-          "correctKey": "A",
+          "correctKey": "D",
           "correctAnswer": "Most species depend on several sources of information rather than a single cue.",
           "explanation": "The passage states that birds combine celestial, magnetic, and geographic information.",
           "evidence": "Paragraph 3"
@@ -5870,22 +5870,22 @@
           "options": [
             {
               "key": "A",
-              "text": "abundant"
-            },
-            {
-              "key": "B",
               "text": "limited"
             },
             {
-              "key": "C",
+              "key": "B",
               "text": "unusual"
             },
             {
-              "key": "D",
+              "key": "C",
               "text": "temporary"
+            },
+            {
+              "key": "D",
+              "text": "abundant"
             }
           ],
-          "correctKey": "A",
+          "correctKey": "D",
           "correctAnswer": "abundant",
           "explanation": "In context, plentiful food means abundant food.",
           "evidence": "Paragraph 2"
@@ -5930,22 +5930,22 @@
           "options": [
             {
               "key": "A",
-              "text": "To illustrate that experience can improve migratory performance"
-            },
-            {
-              "key": "B",
               "text": "To show that young birds migrate more quickly"
             },
             {
-              "key": "C",
+              "key": "B",
               "text": "To explain why breeding seasons are becoming shorter"
             },
             {
-              "key": "D",
+              "key": "C",
               "text": "To compare birds with mammals"
+            },
+            {
+              "key": "D",
+              "text": "To illustrate that experience can improve migratory performance"
             }
           ],
-          "correctKey": "A",
+          "correctKey": "D",
           "correctAnswer": "To illustrate that experience can improve migratory performance",
           "explanation": "The example demonstrates that experience helps birds choose more efficient routes.",
           "evidence": "Paragraph 4"
@@ -5990,22 +5990,22 @@
           "options": [
             {
               "key": "A",
-              "text": "By introducing migration, explaining its causes and mechanisms, describing research methods, and concluding with conservation implications"
-            },
-            {
-              "key": "B",
               "text": "By comparing migration patterns on different continents"
             },
             {
-              "key": "C",
+              "key": "B",
               "text": "By presenting the results of one laboratory experiment"
             },
             {
-              "key": "D",
+              "key": "C",
               "text": "By describing the life cycle of a single bird species"
+            },
+            {
+              "key": "D",
+              "text": "By introducing migration, explaining its causes and mechanisms, describing research methods, and concluding with conservation implications"
             }
           ],
-          "correctKey": "A",
+          "correctKey": "D",
           "correctAnswer": "By introducing migration, explaining its causes and mechanisms, describing research methods, and concluding with conservation implications",
           "explanation": "The passage progresses logically from migration to navigation, research, and conservation.",
           "evidence": "Entire passage"
@@ -6020,22 +6020,22 @@
           "options": [
             {
               "key": "A",
-              "text": "It is essential for understanding and protecting migratory bird populations."
-            },
-            {
-              "key": "B",
               "text": "It has answered all important scientific questions."
             },
             {
-              "key": "C",
+              "key": "B",
               "text": "It is valuable only to professional birdwatchers."
             },
             {
-              "key": "D",
+              "key": "C",
               "text": "It has little relevance to conservation."
+            },
+            {
+              "key": "D",
+              "text": "It is essential for understanding and protecting migratory bird populations."
             }
           ],
-          "correctKey": "A",
+          "correctKey": "D",
           "correctAnswer": "It is essential for understanding and protecting migratory bird populations.",
           "explanation": "The concluding paragraph emphasizes that migration research supports conservation and informed decision-making.",
           "evidence": "Paragraphs 5 and 6"

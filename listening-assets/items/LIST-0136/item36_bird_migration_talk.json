@@ -83,28 +83,28 @@
       "question_type": "Detail",
       "narrator_text": "According to the professor, what can serve as a compass for daytime and nighttime flights?",
       "options": {
-        "A": "The position of the sun and stars",
-        "B": "Traffic lights in cities",
-        "C": "Human cell phone towers only",
+        "A": "Traffic lights in cities",
+        "B": "Human cell phone towers only",
+        "C": "The position of the sun and stars",
         "D": "The sound of ocean waves alone"
       },
-      "correct_answer": "A",
+      "correct_answer": "C",
       "explanation": "She says sun and stars can serve as a compass day and night.",
-      "commonMistake": "Choosing C—not mentioned as the compass."
+      "commonMistake": "Choosing B—not mentioned as the compass."
     },
     {
       "number": 3,
       "question_type": "Detail",
       "narrator_text": "What does she say many birds can sense?",
       "options": {
-        "A": "Earth’s magnetic field",
-        "B": "Radio stations in other countries",
-        "C": "The color of underwater coral",
+        "A": "Radio stations in other countries",
+        "B": "The color of underwater coral",
+        "C": "Earth’s magnetic field",
         "D": "Train schedules"
       },
-      "correct_answer": "A",
+      "correct_answer": "C",
       "explanation": "Many birds sense Earth’s magnetic field for direction when skies are cloudy.",
-      "commonMistake": "Choosing B or D—not mentioned."
+      "commonMistake": "Choosing A or D—not mentioned."
     },
     {
       "number": 4,
@@ -112,11 +112,11 @@
       "narrator_text": "What does the professor imply about bird navigation?",
       "options": {
         "A": "Birds rely on only one cue for every trip",
-        "B": "Migration uses a combination of celestial, magnetic, and landscape cues",
-        "C": "Young birds never learn from parents",
-        "D": "City lights improve navigation for all species"
+        "B": "Young birds never learn from parents",
+        "C": "City lights improve navigation for all species",
+        "D": "Migration uses a combination of celestial, magnetic, and landscape cues"
       },
-      "correct_answer": "B",
+      "correct_answer": "D",
       "explanation": "She calls migration a toolkit of celestial, magnetic, and landscape cues.",
       "commonMistake": "Choosing A—she emphasizes several cues at once."
     }

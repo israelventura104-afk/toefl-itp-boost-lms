@@ -55,22 +55,22 @@
       "choices": [
         {
           "id": "A",
-          "text": "To learn about renewable energy."
-        },
-        {
-          "id": "B",
           "text": "To complete a laboratory experiment."
         },
         {
-          "id": "C",
+          "id": "B",
           "text": "To meet a new classmate."
         },
         {
-          "id": "D",
+          "id": "C",
           "text": "To register for an environmental science course."
+        },
+        {
+          "id": "D",
+          "text": "To learn about renewable energy."
         }
       ],
-      "answer_key": "A",
+      "answer_key": "D",
       "explanation": "He says he is interested in renewable energy and wants to hear the lecture.",
       "evidence": "The speaker is going to talk about renewable energy."
     }

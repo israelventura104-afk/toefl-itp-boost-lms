@@ -112,13 +112,13 @@
       "narrator_text": "What example does the professor give of a hot-spot chain?",
       "options": {
         "A": "The Amazon rainforest",
-        "B": "Hawaii",
-        "C": "The Sahara Desert dunes",
-        "D": "The Moon's surface"
+        "B": "The Sahara Desert dunes",
+        "C": "The Moon's surface",
+        "D": "Hawaii"
       },
-      "correct_answer": "B",
+      "correct_answer": "D",
       "explanation": "She says Hawaii is the usual classroom example of a hot-spot island chain.",
-      "commonMistake": "Choosing A or C—those are not given as hot-spot examples here."
+      "commonMistake": "Choosing A or B—those are not given as hot-spot examples here."
     }
   ]
 }

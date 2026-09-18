@@ -72,14 +72,14 @@
       "question_type": "Main Idea",
       "narrator_text": "What is the conversation mainly about?",
       "options": {
-        "A": "Applying for a first-time campus meal plan",
-        "B": "Replacing a lost campus ID card",
+        "A": "Replacing a lost campus ID card",
+        "B": "Applying for a first-time campus meal plan",
         "C": "Reporting a problem with the campus shuttle",
         "D": "Changing the student's dining hall schedule"
       },
-      "correct_answer": "B",
+      "correct_answer": "A",
       "explanation": "The student lost his ID and arranges deactivation plus a same-day replacement.",
-      "commonMistake": "Choosing A because the meal plan is mentioned—only as a reason to deactivate the old card."
+      "commonMistake": "Choosing B because the meal plan is mentioned—only as a reason to deactivate the old card."
     },
     {
       "number": 2,

@@ -55,22 +55,22 @@
       "choices": [
         {
           "id": "A",
-          "text": "To see a new exhibit."
-        },
-        {
-          "id": "B",
           "text": "To meet a history professor."
         },
         {
-          "id": "C",
+          "id": "B",
           "text": "To study for an exam."
+        },
+        {
+          "id": "C",
+          "text": "To see a new exhibit."
         },
         {
           "id": "D",
           "text": "To work as a volunteer."
         }
       ],
-      "answer_key": "A",
+      "answer_key": "C",
       "explanation": "She wants to see the newly opened exhibit on ancient civilizations.",
       "evidence": "They're opening a new exhibit on ancient civilizations that I've wanted to see."
     }

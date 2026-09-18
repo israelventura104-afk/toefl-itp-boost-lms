@@ -59,18 +59,18 @@
         },
         {
           "id": "B",
-          "text": "Several students had a class conflict."
-        },
-        {
-          "id": "C",
           "text": "The instructor canceled it."
         },
         {
-          "id": "D",
+          "id": "C",
           "text": "The library closed early."
+        },
+        {
+          "id": "D",
+          "text": "Several students had a class conflict."
         }
       ],
-      "answer_key": "B",
+      "answer_key": "D",
       "explanation": "The woman says several students had another class tonight.",
       "evidence": "Several students had another class tonight."
     }

@@ -70,11 +70,11 @@
       "narrator_text": "What is the talk mainly about?",
       "options": {
         "A": "How monks built wine presses for monasteries",
-        "B": "Gutenberg’s printing press and how it changed book production in Europe",
-        "C": "Why the Bible was never printed",
-        "D": "How to cast metal for jewelry"
+        "B": "Why the Bible was never printed",
+        "C": "How to cast metal for jewelry",
+        "D": "Gutenberg’s printing press and how it changed book production in Europe"
       },
-      "correct_answer": "B",
+      "correct_answer": "D",
       "explanation": "The professor explains Gutenberg’s movable type system and its impact on European books and literacy.",
       "commonMistake": "Choosing A—wine presses are only mentioned as a model for the press mechanism."
     },
@@ -112,11 +112,11 @@
       "narrator_text": "What can be inferred about earlier printing outside Europe?",
       "options": {
         "A": "No culture had ever printed anything before Gutenberg",
-        "B": "China and Korea had earlier printing traditions, but Gutenberg’s system transformed European publishing",
-        "C": "Korea banned all books after 1450",
-        "D": "China copied Gutenberg’s Bible first"
+        "B": "Korea banned all books after 1450",
+        "C": "China copied Gutenberg’s Bible first",
+        "D": "China and Korea had earlier printing traditions, but Gutenberg’s system transformed European publishing"
       },
-      "correct_answer": "B",
+      "correct_answer": "D",
       "explanation": "She notes earlier traditions in China and Korea while stressing Gutenberg’s impact in Europe.",
       "commonMistake": "Choosing A—she explicitly rejects that idea."
     }

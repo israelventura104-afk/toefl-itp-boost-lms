@@ -70,13 +70,13 @@
       "narrator_text": "What is the talk mainly about?",
       "options": {
         "A": "How to build artificial beaches for tourists",
-        "B": "Coral bleaching and how ocean warming threatens reefs",
-        "C": "Why fish prefer cold rivers",
-        "D": "How satellites photograph cities"
+        "B": "Why fish prefer cold rivers",
+        "C": "How satellites photograph cities",
+        "D": "Coral bleaching and how ocean warming threatens reefs"
       },
-      "correct_answer": "B",
+      "correct_answer": "D",
       "explanation": "The professor explains bleaching, warm water stress, and why reef health signals climate impacts.",
-      "commonMistake": "Choosing D—satellites are only mentioned as a monitoring tool."
+      "commonMistake": "Choosing C—satellites are only mentioned as a monitoring tool."
     },
     {
       "number": 2,
@@ -112,11 +112,11 @@
       "narrator_text": "What does the professor imply about protecting reefs?",
       "options": {
         "A": "Only tourism matters; climate action does not",
-        "B": "Both global emissions cuts and local reductions in pollution and overfishing matter",
-        "C": "Reefs need no protection if satellites exist",
-        "D": "Divers should stop visiting oceans entirely"
+        "B": "Reefs need no protection if satellites exist",
+        "C": "Divers should stop visiting oceans entirely",
+        "D": "Both global emissions cuts and local reductions in pollution and overfishing matter"
       },
-      "correct_answer": "B",
+      "correct_answer": "D",
       "explanation": "He links greenhouse gas cuts with reducing local stress from pollution and overfishing.",
       "commonMistake": "Choosing A—he treats climate and local stress together."
     }

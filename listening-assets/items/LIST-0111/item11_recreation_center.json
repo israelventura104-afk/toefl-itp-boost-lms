@@ -3,20 +3,55 @@
   "topic": "Recreation Center Membership",
   "setting": "A student is talking to a staff member at the campus recreation center about a class schedule conflict.",
   "speakers": [
-    { "role": "narrator", "voice": "narrator" },
-    { "role": "speaker1", "name": "Woman (Student)", "voice": "female" },
-    { "role": "speaker2", "name": "Man (Recreation Center Staff)", "voice": "male" }
+    {
+      "role": "narrator",
+      "voice": "narrator"
+    },
+    {
+      "role": "speaker1",
+      "name": "Woman (Student)",
+      "voice": "female"
+    },
+    {
+      "role": "speaker2",
+      "name": "Man (Recreation Center Staff)",
+      "voice": "male"
+    }
   ],
   "narrator_intro": "Listen to a conversation between a student and a staff member at the recreation center.",
   "dialogue": [
-    { "speaker": "speaker1", "text": "Hi, I signed up for the rock climbing class that meets Tuesday evenings, but I just found out I have a lab at the same time this semester." },
-    { "speaker": "speaker2", "text": "That's a common scheduling headache. Let me check what else is available. There's actually a Thursday section of the same class, same instructor, same skill level." },
-    { "speaker": "speaker1", "text": "That would work perfectly. Is there space in it?" },
-    { "speaker": "speaker2", "text": "There are two spots left, so you're in luck. I can switch you over right now if you'd like." },
-    { "speaker": "speaker1", "text": "Yes, please. Also, will I lose the gear deposit I already paid for the Tuesday section?" },
-    { "speaker": "speaker2", "text": "No, deposits transfer automatically between sections of the same class, so that won't be an issue." },
-    { "speaker": "speaker1", "text": "Great. One more thing, do I need to bring my own climbing shoes, or does the center provide them?" },
-    { "speaker": "speaker2", "text": "We provide shoes and harnesses for the first two sessions so you can decide if you like it before buying your own gear." }
+    {
+      "speaker": "speaker1",
+      "text": "Hi, I signed up for the rock climbing class that meets Tuesday evenings, but I just found out I have a lab at the same time this semester."
+    },
+    {
+      "speaker": "speaker2",
+      "text": "That's a common scheduling headache. Let me check what else is available. There's actually a Thursday section of the same class, same instructor, same skill level."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "That would work perfectly. Is there space in it?"
+    },
+    {
+      "speaker": "speaker2",
+      "text": "There are two spots left, so you're in luck. I can switch you over right now if you'd like."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "Yes, please. Also, will I lose the gear deposit I already paid for the Tuesday section?"
+    },
+    {
+      "speaker": "speaker2",
+      "text": "No, deposits transfer automatically between sections of the same class, so that won't be an issue."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "Great. One more thing, do I need to bring my own climbing shoes, or does the center provide them?"
+    },
+    {
+      "speaker": "speaker2",
+      "text": "We provide shoes and harnesses for the first two sessions so you can decide if you like it before buying your own gear."
+    }
   ],
   "narrator_outro": "Now get ready to answer the questions.",
   "questions": [
@@ -25,12 +60,12 @@
       "question_type": "Main Idea",
       "narrator_text": "Why does the woman go to the recreation center desk?",
       "options": {
-        "A": "To cancel her climbing class entirely",
-        "B": "To resolve a scheduling conflict with her climbing class",
+        "A": "To resolve a scheduling conflict with her climbing class",
+        "B": "To cancel her climbing class entirely",
         "C": "To buy her own climbing shoes",
         "D": "To request a refund for her deposit"
       },
-      "correct_answer": "B",
+      "correct_answer": "A",
       "explanation": "She explains her lab now conflicts with her Tuesday climbing class and needs another option."
     },
     {
@@ -51,12 +86,12 @@
       "question_type": "Detail",
       "narrator_text": "What happens to the woman's gear deposit?",
       "options": {
-        "A": "It is forfeited when switching sections",
-        "B": "It automatically transfers to the new section",
+        "A": "It automatically transfers to the new section",
+        "B": "It is forfeited when switching sections",
         "C": "It must be paid again",
         "D": "It is only refundable at the end of the semester"
       },
-      "correct_answer": "B",
+      "correct_answer": "A",
       "explanation": "The staff member confirms deposits transfer automatically between sections of the same class."
     },
     {
@@ -64,12 +99,12 @@
       "question_type": "Detail",
       "narrator_text": "According to the staff member, what does the center provide for the first two sessions?",
       "options": {
-        "A": "Free snacks and drinks",
-        "B": "Climbing shoes and harnesses",
+        "A": "Climbing shoes and harnesses",
+        "B": "Free snacks and drinks",
         "C": "Transportation to the climbing site",
         "D": "A personal trainer"
       },
-      "correct_answer": "B",
+      "correct_answer": "A",
       "explanation": "He states the center provides shoes and harnesses for the first two sessions."
     }
   ]

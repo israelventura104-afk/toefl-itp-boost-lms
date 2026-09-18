@@ -55,22 +55,22 @@
       "choices": [
         {
           "id": "A",
-          "text": "To help the environment and meet other students."
-        },
-        {
-          "id": "B",
           "text": "To earn extra money."
         },
         {
-          "id": "C",
+          "id": "B",
           "text": "To complete a biology experiment."
+        },
+        {
+          "id": "C",
+          "text": "To help the environment and meet other students."
         },
         {
           "id": "D",
           "text": "To prepare for a class presentation."
         }
       ],
-      "answer_key": "A",
+      "answer_key": "C",
       "explanation": "He says volunteering lets him help the environment and meet other students.",
       "evidence": "I think it's a good way to help the environment and meet other students."
     }

@@ -55,22 +55,22 @@
       "choices": [
         {
           "id": "A",
-          "text": "To exercise regularly before class."
-        },
-        {
-          "id": "B",
           "text": "To meet a personal trainer."
         },
         {
-          "id": "C",
+          "id": "B",
           "text": "To watch a sporting event."
         },
         {
-          "id": "D",
+          "id": "C",
           "text": "To register for a health course."
+        },
+        {
+          "id": "D",
+          "text": "To exercise regularly before class."
         }
       ],
-      "answer_key": "A",
+      "answer_key": "D",
       "explanation": "He says he is trying to exercise regularly before his evening classes.",
       "evidence": "I'm trying to exercise regularly before my evening classes."
     }

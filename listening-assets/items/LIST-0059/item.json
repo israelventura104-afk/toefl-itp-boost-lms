@@ -59,18 +59,18 @@
         },
         {
           "id": "B",
-          "text": "He arrived early to find a parking space."
-        },
-        {
-          "id": "C",
           "text": "The science building is closed."
         },
         {
-          "id": "D",
+          "id": "C",
           "text": "He usually walks to campus."
+        },
+        {
+          "id": "D",
+          "text": "He arrived early to find a parking space."
         }
       ],
-      "answer_key": "B",
+      "answer_key": "D",
       "explanation": "He says he had to arrive much earlier than usual to get a parking space.",
       "evidence": "I had to arrive much earlier than usual to get one."
     }

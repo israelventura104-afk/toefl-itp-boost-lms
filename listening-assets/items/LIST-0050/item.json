@@ -59,18 +59,18 @@
         },
         {
           "id": "B",
-          "text": "The bookstore had very few copies remaining."
-        },
-        {
-          "id": "C",
           "text": "She borrowed the textbook from the library."
         },
         {
-          "id": "D",
+          "id": "C",
           "text": "She plans to buy the book later."
+        },
+        {
+          "id": "D",
+          "text": "The bookstore had very few copies remaining."
         }
       ],
-      "answer_key": "B",
+      "answer_key": "D",
       "explanation": "She says only one copy remained when she arrived.",
       "evidence": "The bookstore only had one copy left when I got there."
     }

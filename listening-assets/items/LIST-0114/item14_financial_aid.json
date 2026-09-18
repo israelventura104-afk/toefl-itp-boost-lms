@@ -3,20 +3,55 @@
   "topic": "Financial Aid Office",
   "setting": "A student is talking to a financial aid officer about a delay in his scholarship payment.",
   "speakers": [
-    { "role": "narrator", "voice": "narrator" },
-    { "role": "speaker1", "name": "Man (Student)", "voice": "male" },
-    { "role": "speaker2", "name": "Woman (Financial Aid Officer)", "voice": "female" }
+    {
+      "role": "narrator",
+      "voice": "narrator"
+    },
+    {
+      "role": "speaker1",
+      "name": "Man (Student)",
+      "voice": "male"
+    },
+    {
+      "role": "speaker2",
+      "name": "Woman (Financial Aid Officer)",
+      "voice": "female"
+    }
   ],
   "narrator_intro": "Listen to a conversation between a student and a financial aid officer.",
   "dialogue": [
-    { "speaker": "speaker1", "text": "Hi, I was awarded the Dean's Scholarship this year, but it still hasn't shown up on my tuition account, and classes start next week." },
-    { "speaker": "speaker2", "text": "Let me pull up your file. I see the award here, but it looks like your enrollment verification form hasn't been submitted yet. That form has to be on file before funds are released." },
-    { "speaker": "speaker1", "text": "I thought I submitted that back in July when I registered for classes." },
-    { "speaker": "speaker2", "text": "Registration and the verification form are actually two separate steps, that's a common mix-up. The form is a short one, it just confirms you're enrolled full-time this term." },
-    { "speaker": "speaker1", "text": "Okay, where do I find it?" },
-    { "speaker": "speaker2", "text": "It's on the financial aid portal, under 'Required Documents.' Once you submit it, funds usually post to your account within five business days." },
-    { "speaker": "speaker1", "text": "Five days should still be before the tuition deadline, right?" },
-    { "speaker": "speaker2", "text": "It should be, but to be safe, I'd also suggest requesting a short payment extension from the bursar's office today, just in case there's any delay processing the form." }
+    {
+      "speaker": "speaker1",
+      "text": "Hi, I was awarded the Dean's Scholarship this year, but it still hasn't shown up on my tuition account, and classes start next week."
+    },
+    {
+      "speaker": "speaker2",
+      "text": "Let me pull up your file. I see the award here, but it looks like your enrollment verification form hasn't been submitted yet. That form has to be on file before funds are released."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "I thought I submitted that back in July when I registered for classes."
+    },
+    {
+      "speaker": "speaker2",
+      "text": "Registration and the verification form are actually two separate steps, that's a common mix-up. The form is a short one, it just confirms you're enrolled full-time this term."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "Okay, where do I find it?"
+    },
+    {
+      "speaker": "speaker2",
+      "text": "It's on the financial aid portal, under 'Required Documents.' Once you submit it, funds usually post to your account within five business days."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "Five days should still be before the tuition deadline, right?"
+    },
+    {
+      "speaker": "speaker2",
+      "text": "It should be, but to be safe, I'd also suggest requesting a short payment extension from the bursar's office today, just in case there's any delay processing the form."
+    }
   ],
   "narrator_outro": "Now get ready to answer the questions.",
   "questions": [
@@ -25,12 +60,12 @@
       "question_type": "Main Idea",
       "narrator_text": "Why does the student visit the financial aid office?",
       "options": {
-        "A": "To apply for a new scholarship",
-        "B": "To ask why his scholarship funds have not been applied yet",
+        "A": "To ask why his scholarship funds have not been applied yet",
+        "B": "To apply for a new scholarship",
         "C": "To dispute his tuition bill",
         "D": "To change his enrollment status"
       },
-      "correct_answer": "B",
+      "correct_answer": "A",
       "explanation": "He explains his scholarship hasn't appeared on his account and classes start soon."
     },
     {
@@ -38,12 +73,12 @@
       "question_type": "Detail",
       "narrator_text": "What is missing from the student's file, according to the officer?",
       "options": {
-        "A": "His class schedule",
-        "B": "His enrollment verification form",
+        "A": "His enrollment verification form",
+        "B": "His class schedule",
         "C": "His scholarship acceptance letter",
         "D": "His tax documents"
       },
-      "correct_answer": "B",
+      "correct_answer": "A",
       "explanation": "She tells him the enrollment verification form has not been submitted, which is required to release funds."
     },
     {
@@ -64,12 +99,12 @@
       "question_type": "Inference",
       "narrator_text": "Why does the officer suggest contacting the bursar's office as well?",
       "options": {
-        "A": "Because the scholarship has likely been cancelled",
-        "B": "As a precaution in case the funds are delayed past the tuition deadline",
+        "A": "As a precaution in case the funds are delayed past the tuition deadline",
+        "B": "Because the scholarship has likely been cancelled",
         "C": "Because the bursar's office handles all scholarship approvals",
         "D": "Because the student needs to pay his tuition in full regardless"
       },
-      "correct_answer": "B",
+      "correct_answer": "A",
       "explanation": "She recommends a payment extension as a safety measure in case there's any delay processing the form."
     }
   ]

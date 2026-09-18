@@ -55,22 +55,22 @@
       "choices": [
         {
           "id": "A",
-          "text": "To learn about the candidates before voting."
-        },
-        {
-          "id": "B",
           "text": "To campaign for a friend."
         },
         {
-          "id": "C",
+          "id": "B",
           "text": "To register as a candidate."
         },
         {
-          "id": "D",
+          "id": "C",
           "text": "To meet with a professor."
+        },
+        {
+          "id": "D",
+          "text": "To learn about the candidates before voting."
         }
       ],
-      "answer_key": "A",
+      "answer_key": "D",
       "explanation": "She wants to hear the candidates' ideas before voting.",
       "evidence": "I want to hear the candidates' ideas before I vote next week."
     }

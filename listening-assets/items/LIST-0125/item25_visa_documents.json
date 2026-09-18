@@ -73,11 +73,11 @@
       "narrator_text": "What is the conversation mainly about?",
       "options": {
         "A": "Changing the student's major before graduation",
-        "B": "Picking up travel documents and rules before a trip home",
-        "C": "Applying for a campus parking permit",
-        "D": "Scheduling an English placement test"
+        "B": "Applying for a campus parking permit",
+        "C": "Scheduling an English placement test",
+        "D": "Picking up travel documents and rules before a trip home"
       },
-      "correct_answer": "B",
+      "correct_answer": "D",
       "explanation": "He picks up an updated I-20 and learns travel reporting and what to carry.",
       "commonMistake": "Choosing A—academics are not the topic."
     },
@@ -87,11 +87,11 @@
       "narrator_text": "What does he need if his visa stamp is still valid?",
       "options": {
         "A": "A brand-new visa interview immediately",
-        "B": "Only the travel signature on the I-20",
-        "C": "A letter from every professor",
-        "D": "Permission from Campus Safety"
+        "B": "A letter from every professor",
+        "C": "Permission from Campus Safety",
+        "D": "Only the travel signature on the I-20"
       },
-      "correct_answer": "B",
+      "correct_answer": "D",
       "explanation": "With a valid visa stamp, he only needs the travel signature on the I-20.",
       "commonMistake": "Choosing A—she says a new stamp is not required if the current one is valid."
     },
@@ -101,13 +101,13 @@
       "narrator_text": "What must he do about travel dates in the portal?",
       "options": {
         "A": "Nothing—the office enters dates automatically",
-        "B": "Enter departure and return dates before leaving, and update within five days if the return flight changes",
-        "C": "Only report dates after he comes back",
-        "D": "Delete his enrollment record while traveling"
+        "B": "Only report dates after he comes back",
+        "C": "Delete his enrollment record while traveling",
+        "D": "Enter departure and return dates before leaving, and update within five days if the return flight changes"
       },
-      "correct_answer": "B",
+      "correct_answer": "D",
       "explanation": "Enter dates before departure; update within five days of landing if the return flight changes.",
-      "commonMistake": "Choosing C—he must enter dates before leaving, not only after return."
+      "commonMistake": "Choosing B—he must enter dates before leaving, not only after return."
     },
     {
       "number": 4,
@@ -115,11 +115,11 @@
       "narrator_text": "What should he carry at the airport?",
       "options": {
         "A": "Only a digital photo of his student ID",
-        "B": "Passport, I-20, and proof of enrollment on paper, plus digital copies",
-        "C": "His dorm room key and laundry card",
-        "D": "Cash for a new visa stamp on arrival"
+        "B": "His dorm room key and laundry card",
+        "C": "Cash for a new visa stamp on arrival",
+        "D": "Passport, I-20, and proof of enrollment on paper, plus digital copies"
       },
-      "correct_answer": "B",
+      "correct_answer": "D",
       "explanation": "Passport, I-20, and paper proof of enrollment; digital copies are backup.",
       "commonMistake": "Choosing A—officers usually want paper documents."
     }

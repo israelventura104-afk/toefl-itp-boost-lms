@@ -3,20 +3,55 @@
   "topic": "Student Club Event Planning",
   "setting": "Two students, members of a student organization, are planning a campus event.",
   "speakers": [
-    { "role": "narrator", "voice": "narrator" },
-    { "role": "speaker1", "name": "Woman", "voice": "female" },
-    { "role": "speaker2", "name": "Man", "voice": "male" }
+    {
+      "role": "narrator",
+      "voice": "narrator"
+    },
+    {
+      "role": "speaker1",
+      "name": "Woman",
+      "voice": "female"
+    },
+    {
+      "role": "speaker2",
+      "name": "Man",
+      "voice": "male"
+    }
   ],
   "narrator_intro": "Listen to a conversation between two members of a student organization.",
   "dialogue": [
-    { "speaker": "speaker1", "text": "So the room we booked for the club fair only holds fifty people, but we already have over eighty RSVPs. We might need to change locations." },
-    { "speaker": "speaker2", "text": "That's a good problem to have, honestly. Have you checked if the main hall is open that day? It holds up to two hundred." },
-    { "speaker": "speaker1", "text": "I checked yesterday, and it's free, but booking it requires approval from the student activities office, and that usually takes about a week." },
-    { "speaker": "speaker2", "text": "Our event is in ten days, so that should still work if we submit the request today instead of waiting." },
-    { "speaker": "speaker1", "text": "Good point. I'll send the request this afternoon. Should we also update the flyers, or is the room change not that big of a deal?" },
-    { "speaker": "speaker2", "text": "We should definitely update them. Some people might show up at the old room and miss the event entirely if we don't." },
-    { "speaker": "speaker1", "text": "Fair enough. I'll redo the digital flyer today, but the printed ones are already posted around campus." },
-    { "speaker": "speaker2", "text": "Let's put a small sign with the new location at the old room's entrance too, just as a backup in case someone missed the announcement." }
+    {
+      "speaker": "speaker1",
+      "text": "So the room we booked for the club fair only holds fifty people, but we already have over eighty RSVPs. We might need to change locations."
+    },
+    {
+      "speaker": "speaker2",
+      "text": "That's a good problem to have, honestly. Have you checked if the main hall is open that day? It holds up to two hundred."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "I checked yesterday, and it's free, but booking it requires approval from the student activities office, and that usually takes about a week."
+    },
+    {
+      "speaker": "speaker2",
+      "text": "Our event is in ten days, so that should still work if we submit the request today instead of waiting."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "Good point. I'll send the request this afternoon. Should we also update the flyers, or is the room change not that big of a deal?"
+    },
+    {
+      "speaker": "speaker2",
+      "text": "We should definitely update them. Some people might show up at the old room and miss the event entirely if we don't."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "Fair enough. I'll redo the digital flyer today, but the printed ones are already posted around campus."
+    },
+    {
+      "speaker": "speaker2",
+      "text": "Let's put a small sign with the new location at the old room's entrance too, just as a backup in case someone missed the announcement."
+    }
   ],
   "narrator_outro": "Now get ready to answer the questions.",
   "questions": [
@@ -25,12 +60,12 @@
       "question_type": "Main Idea",
       "narrator_text": "What problem are the two students discussing?",
       "options": {
-        "A": "A lack of interest in their event",
-        "B": "The need to find a bigger venue due to high RSVPs",
+        "A": "The need to find a bigger venue due to high RSVPs",
+        "B": "A lack of interest in their event",
         "C": "A conflict with another club's event",
         "D": "Not having enough volunteers"
       },
-      "correct_answer": "B",
+      "correct_answer": "A",
       "explanation": "They discuss needing a larger room because RSVPs have exceeded the current room's capacity."
     },
     {
@@ -38,12 +73,12 @@
       "question_type": "Detail",
       "narrator_text": "What concern does the woman raise about booking the main hall?",
       "options": {
-        "A": "It is too expensive",
-        "B": "It requires approval that usually takes about a week",
+        "A": "It requires approval that usually takes about a week",
+        "B": "It is too expensive",
         "C": "It is already reserved for another event",
         "D": "It is too far from student housing"
       },
-      "correct_answer": "B",
+      "correct_answer": "A",
       "explanation": "She notes the approval process for the main hall usually takes about a week."
     },
     {
@@ -64,12 +99,12 @@
       "question_type": "Inference",
       "narrator_text": "What can be inferred about the timing of their decision?",
       "options": {
-        "A": "They still have plenty of time and are in no rush",
-        "B": "They need to act quickly to secure the new room before the event",
+        "A": "They need to act quickly to secure the new room before the event",
+        "B": "They still have plenty of time and are in no rush",
         "C": "The event has already been postponed",
         "D": "The main hall is not actually available in time"
       },
-      "correct_answer": "B",
+      "correct_answer": "A",
       "explanation": "With the event ten days away and approval taking about a week, they agree to submit the request the same day."
     }
   ]
