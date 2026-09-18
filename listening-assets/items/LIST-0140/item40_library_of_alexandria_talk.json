@@ -1,0 +1,124 @@
+{
+  "id": "LIST-0140",
+  "part": "C",
+  "topic": "The Library of Alexandria",
+  "setting": "A short talk in a world history class about the Library of Alexandria and its scholarly role.",
+  "speaker": {
+    "role": "speaker1",
+    "name": "Woman (History Professor)",
+    "voice": "female"
+  },
+  "speakers": [
+    {
+      "role": "narrator",
+      "voice": "narrator"
+    },
+    {
+      "role": "speaker1",
+      "name": "Woman (History Professor)",
+      "voice": "female"
+    }
+  ],
+  "narrator_intro": "Listen to part of a talk in a world history class.",
+  "talk": [
+    {
+      "speaker": "speaker1",
+      "text": "In the ancient city of Alexandria, rulers supported a great library and research center."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "Scholars gathered manuscripts from across the Mediterranean and beyond."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "The goal was not only to store scrolls, but to copy, compare, and edit important texts."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "Mathematicians, astronomers, and physicians worked nearby, exchanging ideas in a busy intellectual hub."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "Ships arriving at the harbor sometimes had books copied before travelers continued their journeys."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "Much about the library’s end is debated—fires, conflict, and gradual decline all appear in the sources."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "What matters for us is the model: a state-backed space where knowledge was collected and revised."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "Later libraries and universities echoed that ambition, even if they used different technologies."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "So Alexandria stands as an early symbol of organized scholarship, not just a pile of lost scrolls."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "Next class we’ll look at how translation movements preserved Greek science in other languages."
+    }
+  ],
+  "narrator_outro": "Now get ready to answer the questions.",
+  "questions": [
+    {
+      "number": 1,
+      "question_type": "Main Idea",
+      "narrator_text": "What is the talk mainly about?",
+      "options": {
+        "A": "The Library of Alexandria as a center for collecting and studying texts",
+        "B": "How to build modern skyscrapers in Egypt",
+        "C": "Why ships never entered Alexandria’s harbor",
+        "D": "How to write novels without libraries"
+      },
+      "correct_answer": "A",
+      "explanation": "She describes collecting, copying, editing texts and scholarly exchange.",
+      "commonMistake": "Choosing C—contradicts harbor copying."
+    },
+    {
+      "number": 2,
+      "question_type": "Detail",
+      "narrator_text": "Besides storing scrolls, what else did scholars do?",
+      "options": {
+        "A": "Copy, compare, and edit important texts",
+        "B": "Burn all foreign books on arrival",
+        "C": "Replace writing with only oral myths",
+        "D": "Ban mathematics from the city"
+      },
+      "correct_answer": "A",
+      "explanation": "Goal included copy, compare, and edit texts.",
+      "commonMistake": "Choosing B—opposite."
+    },
+    {
+      "number": 3,
+      "question_type": "Detail",
+      "narrator_text": "What sometimes happened when ships arrived at the harbor?",
+      "options": {
+        "A": "Books were copied before travelers continued",
+        "B": "All cargo was thrown into the sea",
+        "C": "Scholars refused any foreign texts",
+        "D": "The library closed permanently each morning"
+      },
+      "correct_answer": "A",
+      "explanation": "Ships sometimes had books copied before continuing.",
+      "commonMistake": "Choosing C—not what she says."
+    },
+    {
+      "number": 4,
+      "question_type": "Inference",
+      "narrator_text": "What does the professor emphasize about Alexandria’s importance?",
+      "options": {
+        "A": "It models organized, state-backed scholarship beyond merely lost scrolls",
+        "B": "It proves libraries are useless today",
+        "C": "It shows scholarship needs no copying or editing",
+        "D": "It only mattered for cooking recipes"
+      },
+      "correct_answer": "A",
+      "explanation": "She calls it an early symbol of organized scholarship, not just lost scrolls.",
+      "commonMistake": "Choosing B—opposite of her point."
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "id": "LIST-0139",
+  "part": "C",
+  "topic": "Antibiotics and Bacterial Resistance",
+  "setting": "A short lecture in a public health class about antibiotics and why resistance is a growing problem.",
+  "speaker": {
+    "role": "speaker1",
+    "name": "Man (Public Health Professor)",
+    "voice": "male"
+  },
+  "speakers": [
+    {
+      "role": "narrator",
+      "voice": "narrator"
+    },
+    {
+      "role": "speaker1",
+      "name": "Man (Public Health Professor)",
+      "voice": "male"
+    }
+  ],
+  "narrator_intro": "Listen to part of a talk in a public health class.",
+  "talk": [
+    {
+      "speaker": "speaker1",
+      "text": "Antibiotics are medicines that kill bacteria or stop them from growing."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "They transformed medicine by making once-deadly infections treatable."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "But bacteria can evolve defenses, a process we call antibiotic resistance."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "When antibiotics are used too often or stopped too early, resistant strains are more likely to survive."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "Those resistant bacteria can spread between people in hospitals, communities, and even through food systems."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "Doctors now face infections that need stronger drugs—or combinations—because first-line antibiotics fail."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "Public health advice stresses using antibiotics only when needed and finishing the prescribed course."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "Researchers also look for new drugs and better tests that identify the right treatment faster."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "In short, antibiotics remain powerful tools, but misuse threatens their future effectiveness."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "Next week we’ll review case studies of hospital infection-control programs."
+    }
+  ],
+  "narrator_outro": "Now get ready to answer the questions.",
+  "questions": [
+    {
+      "number": 1,
+      "question_type": "Main Idea",
+      "narrator_text": "What is the talk mainly about?",
+      "options": {
+        "A": "Antibiotics and the problem of bacterial resistance",
+        "B": "How to invent vitamin supplements",
+        "C": "Why viruses are the same as bacteria",
+        "D": "How to design hospital architecture only"
+      },
+      "correct_answer": "A",
+      "explanation": "He explains antibiotics and how resistance develops and spreads.",
+      "commonMistake": "Choosing C—he focuses on bacteria."
+    },
+    {
+      "number": 2,
+      "question_type": "Detail",
+      "narrator_text": "What do antibiotics do, according to the professor?",
+      "options": {
+        "A": "Kill bacteria or stop them from growing",
+        "B": "Cure all viral colds instantly",
+        "C": "Replace vaccines completely",
+        "D": "Remove salt from drinking water"
+      },
+      "correct_answer": "A",
+      "explanation": "Antibiotics kill bacteria or stop growth.",
+      "commonMistake": "Choosing B—antibiotics do not treat viruses."
+    },
+    {
+      "number": 3,
+      "question_type": "Detail",
+      "narrator_text": "When are resistant strains more likely to survive?",
+      "options": {
+        "A": "When antibiotics are used too often or stopped too early",
+        "B": "When people drink more water",
+        "C": "When hospitals turn off lights at night",
+        "D": "When patients exercise after lunch"
+      },
+      "correct_answer": "A",
+      "explanation": "Overuse or stopping early favors resistant strains.",
+      "commonMistake": "Choosing B—unrelated."
+    },
+    {
+      "number": 4,
+      "question_type": "Inference",
+      "narrator_text": "What does the professor imply about the future of antibiotics?",
+      "options": {
+        "A": "Misuse can reduce how well they work over time",
+        "B": "They will never face any resistance problems",
+        "C": "They should be taken for every mild cough",
+        "D": "Research on new drugs is unnecessary"
+      },
+      "correct_answer": "A",
+      "explanation": "He says misuse threatens future effectiveness; research continues.",
+      "commonMistake": "Choosing B—contradicts the talk."
+    }
+  ]
+}

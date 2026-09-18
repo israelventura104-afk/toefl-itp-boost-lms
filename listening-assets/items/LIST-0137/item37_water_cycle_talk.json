@@ -1,0 +1,124 @@
+{
+  "id": "LIST-0137",
+  "part": "C",
+  "topic": "The Water Cycle and Climate",
+  "setting": "A short talk in an earth science class about the water cycle and how climate affects it.",
+  "speaker": {
+    "role": "speaker1",
+    "name": "Man (Earth Science Professor)",
+    "voice": "male"
+  },
+  "speakers": [
+    {
+      "role": "narrator",
+      "voice": "narrator"
+    },
+    {
+      "role": "speaker1",
+      "name": "Man (Earth Science Professor)",
+      "voice": "male"
+    }
+  ],
+  "narrator_intro": "Listen to part of a talk in an earth science class.",
+  "talk": [
+    {
+      "speaker": "speaker1",
+      "text": "Water on Earth moves in a continuous cycle among oceans, air, and land."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "Heat from the sun evaporates water from oceans, lakes, and soil into water vapor."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "As moist air rises and cools, vapor condenses into clouds, and precipitation returns water to the surface."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "Some water runs off into rivers; some soaks into the ground and recharges aquifers."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "Plants also release vapor through transpiration, which adds moisture to the air."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "Climate warming can intensify parts of this cycle: warmer air holds more moisture, so some regions see heavier rain."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "At the same time, other areas may face longer dry spells if storm tracks shift."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "Glaciers and snowpack act as seasonal storage; when they shrink, summer river flow can drop."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "So understanding the water cycle helps us predict both floods and droughts under a changing climate."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "Next lecture we’ll map how local watersheds connect to this global system."
+    }
+  ],
+  "narrator_outro": "Now get ready to answer the questions.",
+  "questions": [
+    {
+      "number": 1,
+      "question_type": "Main Idea",
+      "narrator_text": "What is the talk mainly about?",
+      "options": {
+        "A": "How the water cycle works and how climate can change it",
+        "B": "How to dig a private swimming pool",
+        "C": "Why oceans never evaporate",
+        "D": "How to build cloud machines"
+      },
+      "correct_answer": "A",
+      "explanation": "He explains evaporation, condensation, precipitation, and climate effects.",
+      "commonMistake": "Choosing C—contradicts evaporation."
+    },
+    {
+      "number": 2,
+      "question_type": "Detail",
+      "narrator_text": "According to the professor, what starts evaporation?",
+      "options": {
+        "A": "Heat from the sun",
+        "B": "Underground volcanoes only",
+        "C": "City streetlights",
+        "D": "Fish swimming in circles"
+      },
+      "correct_answer": "A",
+      "explanation": "He says heat from the sun evaporates water into vapor.",
+      "commonMistake": "Choosing B—not the cause he gives."
+    },
+    {
+      "number": 3,
+      "question_type": "Detail",
+      "narrator_text": "What does he say warmer air can do?",
+      "options": {
+        "A": "Hold more moisture, so some regions see heavier rain",
+        "B": "Stop all precipitation forever",
+        "C": "Turn rivers into ice instantly",
+        "D": "Remove aquifers from maps"
+      },
+      "correct_answer": "A",
+      "explanation": "Warmer air holds more moisture, linked to heavier rain in some regions.",
+      "commonMistake": "Choosing B—opposite of intensified cycle."
+    },
+    {
+      "number": 4,
+      "question_type": "Inference",
+      "narrator_text": "What can be inferred about shrinking glaciers and snowpack?",
+      "options": {
+        "A": "They may reduce summer river flow because they store water seasonally",
+        "B": "They have no link to rivers",
+        "C": "They only affect deserts far from mountains",
+        "D": "They increase ocean salt for drinking water"
+      },
+      "correct_answer": "A",
+      "explanation": "He says they act as seasonal storage; when they shrink, summer flow can drop.",
+      "commonMistake": "Choosing B—he connects them to river flow."
+    }
+  ]
+}

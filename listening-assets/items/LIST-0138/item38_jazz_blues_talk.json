@@ -1,0 +1,124 @@
+{
+  "id": "LIST-0138",
+  "part": "C",
+  "topic": "Jazz and the Blues Roots",
+  "setting": "A short talk in a music history class about how blues traditions influenced early jazz.",
+  "speaker": {
+    "role": "speaker1",
+    "name": "Woman (Music History Professor)",
+    "voice": "female"
+  },
+  "speakers": [
+    {
+      "role": "narrator",
+      "voice": "narrator"
+    },
+    {
+      "role": "speaker1",
+      "name": "Woman (Music History Professor)",
+      "voice": "female"
+    }
+  ],
+  "narrator_intro": "Listen to part of a talk in a music history class.",
+  "talk": [
+    {
+      "speaker": "speaker1",
+      "text": "Early jazz did not appear from nowhere; it grew out of several African American musical traditions."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "One of the strongest roots is the blues, with its expressive vocal style and flexible pitch."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "Blues often uses a twelve-bar structure and “blue notes”—tones bent slightly for emotional color."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "In New Orleans around 1900, brass bands, ragtime rhythms, and blues feeling mixed in dance halls and parades."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "Improvisation became central: players invented phrases on the spot while staying within a shared form."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "Instruments like the cornet, clarinet, and trombone took turns carrying the melody."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "Recording technology later helped jazz travel far beyond its hometown scenes."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "Still, many historians say you can hear blues sensibility inside jazz solos even today."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "So when we study jazz history, we listen for those blues DNA strands—not just flashy technique."
+    },
+    {
+      "speaker": "speaker1",
+      "text": "Next time we’ll compare New Orleans style with the bigger swing bands of the 1930s."
+    }
+  ],
+  "narrator_outro": "Now get ready to answer the questions.",
+  "questions": [
+    {
+      "number": 1,
+      "question_type": "Main Idea",
+      "narrator_text": "What is the talk mainly about?",
+      "options": {
+        "A": "How blues traditions helped shape early jazz",
+        "B": "How to tune a piano for classical exams",
+        "C": "Why brass instruments were banned in New Orleans",
+        "D": "How to write pop song lyrics"
+      },
+      "correct_answer": "A",
+      "explanation": "She traces jazz roots to blues and New Orleans mixing of styles.",
+      "commonMistake": "Choosing C—not claimed."
+    },
+    {
+      "number": 2,
+      "question_type": "Detail",
+      "narrator_text": "What does the professor say blues often uses?",
+      "options": {
+        "A": "A twelve-bar structure and blue notes",
+        "B": "Only strict military marches",
+        "C": "Silent films without sound",
+        "D": "Orchestra pit elevators"
+      },
+      "correct_answer": "A",
+      "explanation": "Blues often uses twelve-bar structure and blue notes.",
+      "commonMistake": "Choosing B—not blues."
+    },
+    {
+      "number": 3,
+      "question_type": "Detail",
+      "narrator_text": "According to the talk, what became central in early jazz?",
+      "options": {
+        "A": "Improvisation within a shared form",
+        "B": "Reading every note exactly with no variation",
+        "C": "Replacing all instruments with computers",
+        "D": "Singing only in Latin"
+      },
+      "correct_answer": "A",
+      "explanation": "Improvisation on the spot while staying within a shared form.",
+      "commonMistake": "Choosing B—opposite of improvisation."
+    },
+    {
+      "number": 4,
+      "question_type": "Inference",
+      "narrator_text": "What does the professor imply about jazz today?",
+      "options": {
+        "A": "Blues feeling can still be heard in many jazz solos",
+        "B": "Jazz has no connection to earlier music",
+        "C": "Recordings destroyed all blues influence",
+        "D": "Only pianos matter in jazz history"
+      },
+      "correct_answer": "A",
+      "explanation": "She says blues sensibility can still be heard in jazz solos today.",
+      "commonMistake": "Choosing B—contradicts her thesis."
+    }
+  ]
+}
