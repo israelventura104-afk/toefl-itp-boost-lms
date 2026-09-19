@@ -68,57 +68,113 @@
       "number": 1,
       "question_type": "Main Idea",
       "narrator_text": "What is the talk mainly about?",
-      "options": {
-        "A": "How to cook with honey in a dorm kitchen",
-        "B": "Why cities should ban all insects",
-        "C": "How to build a wooden fence for a farm",
-        "D": "Urban beekeeping and its link to local food and pollination"
-      },
+      "options": [
+        {
+          "key": "A",
+          "text": "Why cities should ban all insects"
+        },
+        {
+          "key": "B",
+          "text": "How to cook with honey in a dorm kitchen"
+        },
+        {
+          "key": "C",
+          "text": "How to build a wooden fence for a farm"
+        },
+        {
+          "key": "D",
+          "text": "Urban beekeeping and its link to local food and pollination"
+        }
+      ],
       "correct_answer": "D",
       "explanation": "The speaker explains city hives, pollination, rules, and why pollinators support local food systems.",
-      "commonMistake": "Choosing A—honey is mentioned as one product, not the main focus."
+      "commonMistake": "Choosing A—honey is mentioned as one product, not the main focus.",
+      "correctKey": "D",
+      "correctAnswer": "Urban beekeeping and its link to local food and pollination"
     },
     {
       "number": 2,
       "question_type": "Detail",
       "narrator_text": "According to the speaker, what is the bigger story beyond local honey?",
-      "options": {
-        "A": "Selling bees to airports",
-        "B": "Replacing all grocery stores",
-        "C": "Training bees to carry mail",
-        "D": "Pollination for neighborhood gardens and small farms at the city edge"
-      },
-      "correct_answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "Training bees to carry mail"
+        },
+        {
+          "key": "B",
+          "text": "Pollination for neighborhood gardens and small farms at the city edge"
+        },
+        {
+          "key": "C",
+          "text": "Selling bees to airports"
+        },
+        {
+          "key": "D",
+          "text": "Replacing all grocery stores"
+        }
+      ],
+      "correct_answer": "B",
       "explanation": "He says the bigger story is pollination for neighborhood gardens and small farms at the city edge.",
-      "commonMistake": "Choosing A or C—those are not mentioned."
+      "commonMistake": "Choosing A or C—those are not mentioned.",
+      "correctKey": "B",
+      "correctAnswer": "Pollination for neighborhood gardens and small farms at the city edge"
     },
     {
       "number": 3,
       "question_type": "Detail",
       "narrator_text": "What city rules for beekeepers does he mention?",
-      "options": {
-        "A": "Hive registration, safe distances from sidewalks, and water sources",
-        "B": "A requirement to keep bees only indoors",
-        "C": "A ban on all community gardens",
-        "D": "Mandatory daily spraying of every flower"
-      },
-      "correct_answer": "A",
+      "options": [
+        {
+          "key": "A",
+          "text": "Mandatory daily spraying of every flower"
+        },
+        {
+          "key": "B",
+          "text": "A requirement to keep bees only indoors"
+        },
+        {
+          "key": "C",
+          "text": "Hive registration, safe distances from sidewalks, and water sources"
+        },
+        {
+          "key": "D",
+          "text": "A ban on all community gardens"
+        }
+      ],
+      "correct_answer": "C",
       "explanation": "Keepers must follow registration, safe distances from sidewalks, and provide water sources.",
-      "commonMistake": "Choosing D—he says pesticides are a challenge and some cities limit spraying."
+      "commonMistake": "Choosing D—he says pesticides are a challenge and some cities limit spraying.",
+      "correctKey": "C",
+      "correctAnswer": "Hive registration, safe distances from sidewalks, and water sources"
     },
     {
       "number": 4,
       "question_type": "Inference",
       "narrator_text": "What does the speaker suggest about who should keep bees?",
-      "options": {
-        "A": "Every resident must keep a hive",
-        "B": "Only tourists should handle hives",
-        "C": "Beekeeping has no connection to food",
-        "D": "Not everyone needs to keep bees; pollinators still matter for local food systems"
-      },
-      "correct_answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "Not everyone needs to keep bees; pollinators still matter for local food systems"
+        },
+        {
+          "key": "B",
+          "text": "Beekeeping has no connection to food"
+        },
+        {
+          "key": "C",
+          "text": "Only tourists should handle hives"
+        },
+        {
+          "key": "D",
+          "text": "Every resident must keep a hive"
+        }
+      ],
+      "correct_answer": "A",
       "explanation": "He says the point is not that every resident should keep bees, but that pollinators are part of a healthier local food system.",
-      "commonMistake": "Choosing A—that is what he explicitly rejects."
+      "commonMistake": "Choosing A—that is what he explicitly rejects.",
+      "correctKey": "A",
+      "correctAnswer": "Not everyone needs to keep bees; pollinators still matter for local food systems"
     }
   ]
 }

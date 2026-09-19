@@ -71,57 +71,113 @@
       "number": 1,
       "question_type": "Main Idea",
       "narrator_text": "What is the conversation mainly about?",
-      "options": {
-        "A": "Changing the student's lab schedule",
-        "B": "Scheduling a Writing Center session for a research paper",
-        "C": "Choosing a new research topic for next semester",
-        "D": "Complaining about a professor's grading policy"
-      },
-      "correct_answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "Choosing a new research topic for next semester"
+        },
+        {
+          "key": "B",
+          "text": "Changing the student's lab schedule"
+        },
+        {
+          "key": "C",
+          "text": "Scheduling a Writing Center session for a research paper"
+        },
+        {
+          "key": "D",
+          "text": "Complaining about a professor's grading policy"
+        }
+      ],
+      "correct_answer": "C",
       "explanation": "The student books a Writing Center appointment to improve a research paper draft before Friday.",
-      "commonMistake": "Choosing A because labs are mentioned — that only limits her available times."
+      "commonMistake": "Choosing A because labs are mentioned — that only limits her available times.",
+      "correctKey": "C",
+      "correctAnswer": "Scheduling a Writing Center session for a research paper"
     },
     {
       "number": 2,
       "question_type": "Detail",
       "narrator_text": "What problem did the professor identify with the student's paper?",
-      "options": {
-        "A": "The paper is shorter than the required length.",
-        "B": "The thesis is too broad and the sources are weak.",
-        "C": "The student used the wrong citation style entirely.",
-        "D": "The draft was submitted after the deadline."
-      },
-      "correct_answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "The thesis is too broad and the sources are weak."
+        },
+        {
+          "key": "B",
+          "text": "The student used the wrong citation style entirely."
+        },
+        {
+          "key": "C",
+          "text": "The draft was submitted after the deadline."
+        },
+        {
+          "key": "D",
+          "text": "The paper is shorter than the required length."
+        }
+      ],
+      "correct_answer": "A",
       "explanation": "She says her professor found the thesis too broad and the sources not strong enough.",
-      "commonMistake": "Choosing C because APA comes up later — citations are her extra request, not the professor's main note."
+      "commonMistake": "Choosing C because APA comes up later — citations are her extra request, not the professor's main note.",
+      "correctKey": "A",
+      "correctAnswer": "The thesis is too broad and the sources are weak."
     },
     {
       "number": 3,
       "question_type": "Detail",
       "narrator_text": "When will the student meet with the tutor?",
-      "options": {
-        "A": "Thursday at three o'clock",
-        "B": "Tomorrow morning before lab",
-        "C": "Tomorrow at two-thirty",
-        "D": "Next Friday before the paper is due"
-      },
-      "correct_answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "Tomorrow morning before lab"
+        },
+        {
+          "key": "B",
+          "text": "Next Friday before the paper is due"
+        },
+        {
+          "key": "C",
+          "text": "Thursday at three o'clock"
+        },
+        {
+          "key": "D",
+          "text": "Tomorrow at two-thirty"
+        }
+      ],
+      "correct_answer": "D",
       "explanation": "They agree on tomorrow at two-thirty; Thursday at three was the unused alternative.",
-      "commonMistake": "Choosing A because Thursday at three was offered — she picks tomorrow instead."
+      "commonMistake": "Choosing A because Thursday at three was offered — she picks tomorrow instead.",
+      "correctKey": "D",
+      "correctAnswer": "Tomorrow at two-thirty"
     },
     {
       "number": 4,
       "question_type": "Detail",
       "narrator_text": "What does the tutor ask the student to do before the appointment?",
-      "options": {
-        "A": "Rewrite the entire thesis overnight",
-        "B": "Email the professor for a grade extension",
-        "C": "Print extra copies of journal articles",
-        "D": "Upload the draft to the portal and bring the assignment sheet and source list"
-      },
-      "correct_answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "Email the professor for a grade extension"
+        },
+        {
+          "key": "B",
+          "text": "Upload the draft to the portal and bring the assignment sheet and source list"
+        },
+        {
+          "key": "C",
+          "text": "Print extra copies of journal articles"
+        },
+        {
+          "key": "D",
+          "text": "Rewrite the entire thesis overnight"
+        }
+      ],
+      "correct_answer": "B",
       "explanation": "He asks her to bring the assignment sheet and source list and to upload the draft to the portal tonight.",
-      "commonMistake": "Choosing A because the thesis needs work — that happens in the session, not before."
+      "commonMistake": "Choosing A because the thesis needs work — that happens in the session, not before.",
+      "correctKey": "B",
+      "correctAnswer": "Upload the draft to the portal and bring the assignment sheet and source list"
     }
   ]
 }

@@ -59,53 +59,109 @@
       "number": 1,
       "question_type": "Main Idea",
       "narrator_text": "Why does the woman go to the recreation center desk?",
-      "options": {
-        "A": "To resolve a scheduling conflict with her climbing class",
-        "B": "To cancel her climbing class entirely",
-        "C": "To buy her own climbing shoes",
-        "D": "To request a refund for her deposit"
-      },
-      "correct_answer": "A",
-      "explanation": "She explains her lab now conflicts with her Tuesday climbing class and needs another option."
+      "options": [
+        {
+          "key": "A",
+          "text": "To cancel her climbing class entirely"
+        },
+        {
+          "key": "B",
+          "text": "To resolve a scheduling conflict with her climbing class"
+        },
+        {
+          "key": "C",
+          "text": "To request a refund for her deposit"
+        },
+        {
+          "key": "D",
+          "text": "To buy her own climbing shoes"
+        }
+      ],
+      "correct_answer": "B",
+      "explanation": "She explains her lab now conflicts with her Tuesday climbing class and needs another option.",
+      "correctKey": "B",
+      "correctAnswer": "To resolve a scheduling conflict with her climbing class"
     },
     {
       "number": 2,
       "question_type": "Detail",
       "narrator_text": "What solution does the staff member offer?",
-      "options": {
-        "A": "A refund for the class",
-        "B": "A private lesson instead",
-        "C": "Switching to a Thursday section of the same class",
-        "D": "Enrolling her in a different sport"
-      },
-      "correct_answer": "C",
-      "explanation": "He finds a Thursday section with the same instructor and skill level with two open spots."
+      "options": [
+        {
+          "key": "A",
+          "text": "A refund for the class"
+        },
+        {
+          "key": "B",
+          "text": "A private lesson instead"
+        },
+        {
+          "key": "C",
+          "text": "Enrolling her in a different sport"
+        },
+        {
+          "key": "D",
+          "text": "Switching to a Thursday section of the same class"
+        }
+      ],
+      "correct_answer": "D",
+      "explanation": "He finds a Thursday section with the same instructor and skill level with two open spots.",
+      "correctKey": "D",
+      "correctAnswer": "Switching to a Thursday section of the same class"
     },
     {
       "number": 3,
       "question_type": "Detail",
       "narrator_text": "What happens to the woman's gear deposit?",
-      "options": {
-        "A": "It automatically transfers to the new section",
-        "B": "It is forfeited when switching sections",
-        "C": "It must be paid again",
-        "D": "It is only refundable at the end of the semester"
-      },
+      "options": [
+        {
+          "key": "A",
+          "text": "It automatically transfers to the new section"
+        },
+        {
+          "key": "B",
+          "text": "It is only refundable at the end of the semester"
+        },
+        {
+          "key": "C",
+          "text": "It is forfeited when switching sections"
+        },
+        {
+          "key": "D",
+          "text": "It must be paid again"
+        }
+      ],
       "correct_answer": "A",
-      "explanation": "The staff member confirms deposits transfer automatically between sections of the same class."
+      "explanation": "The staff member confirms deposits transfer automatically between sections of the same class.",
+      "correctKey": "A",
+      "correctAnswer": "It automatically transfers to the new section"
     },
     {
       "number": 4,
       "question_type": "Detail",
       "narrator_text": "According to the staff member, what does the center provide for the first two sessions?",
-      "options": {
-        "A": "Climbing shoes and harnesses",
-        "B": "Free snacks and drinks",
-        "C": "Transportation to the climbing site",
-        "D": "A personal trainer"
-      },
-      "correct_answer": "A",
-      "explanation": "He states the center provides shoes and harnesses for the first two sessions."
+      "options": [
+        {
+          "key": "A",
+          "text": "Transportation to the climbing site"
+        },
+        {
+          "key": "B",
+          "text": "A personal trainer"
+        },
+        {
+          "key": "C",
+          "text": "Climbing shoes and harnesses"
+        },
+        {
+          "key": "D",
+          "text": "Free snacks and drinks"
+        }
+      ],
+      "correct_answer": "C",
+      "explanation": "He states the center provides shoes and harnesses for the first two sessions.",
+      "correctKey": "C",
+      "correctAnswer": "Climbing shoes and harnesses"
     }
   ]
 }

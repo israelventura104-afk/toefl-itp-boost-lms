@@ -59,53 +59,109 @@
       "number": 1,
       "question_type": "Main Idea",
       "narrator_text": "What is the student trying to arrange?",
-      "options": {
-        "A": "Care for an ankle injury from basketball",
-        "B": "A follow-up appointment with his regular doctor",
-        "C": "A referral to a physical therapist",
-        "D": "Insurance paperwork for a past visit"
-      },
+      "options": [
+        {
+          "key": "A",
+          "text": "Care for an ankle injury from basketball"
+        },
+        {
+          "key": "B",
+          "text": "Insurance paperwork for a past visit"
+        },
+        {
+          "key": "C",
+          "text": "A referral to a physical therapist"
+        },
+        {
+          "key": "D",
+          "text": "A follow-up appointment with his regular doctor"
+        }
+      ],
       "correct_answer": "A",
-      "explanation": "He explains he hurt his ankle playing basketball and wants to see someone about it."
+      "explanation": "He explains he hurt his ankle playing basketball and wants to see someone about it.",
+      "correctKey": "A",
+      "correctAnswer": "Care for an ankle injury from basketball"
     },
     {
       "number": 2,
       "question_type": "Detail",
       "narrator_text": "Why does the receptionist recommend the walk-in clinic over a regular appointment?",
-      "options": {
-        "A": "It will be faster for this type of injury",
-        "B": "It is cheaper",
-        "C": "The regular doctor is out sick",
-        "D": "It includes free X-rays"
-      },
-      "correct_answer": "A",
-      "explanation": "She says the walk-in clinic is recommended for injuries because it will be faster than scheduling."
+      "options": [
+        {
+          "key": "A",
+          "text": "The regular doctor is out sick"
+        },
+        {
+          "key": "B",
+          "text": "It will be faster for this type of injury"
+        },
+        {
+          "key": "C",
+          "text": "It is cheaper"
+        },
+        {
+          "key": "D",
+          "text": "It includes free X-rays"
+        }
+      ],
+      "correct_answer": "B",
+      "explanation": "She says the walk-in clinic is recommended for injuries because it will be faster than scheduling.",
+      "correctKey": "B",
+      "correctAnswer": "It will be faster for this type of injury"
     },
     {
       "number": 3,
       "question_type": "Detail",
       "narrator_text": "What does the student need to bring to the appointment?",
-      "options": {
-        "A": "His student ID and insurance card",
-        "B": "A doctor's referral note",
-        "C": "Cash payment only",
-        "D": "A parent's consent form"
-      },
-      "correct_answer": "A",
-      "explanation": "The receptionist tells him to bring his student ID and insurance card if he has one on file."
+      "options": [
+        {
+          "key": "A",
+          "text": "Cash payment only"
+        },
+        {
+          "key": "B",
+          "text": "A parent's consent form"
+        },
+        {
+          "key": "C",
+          "text": "His student ID and insurance card"
+        },
+        {
+          "key": "D",
+          "text": "A doctor's referral note"
+        }
+      ],
+      "correct_answer": "C",
+      "explanation": "The receptionist tells him to bring his student ID and insurance card if he has one on file.",
+      "correctKey": "C",
+      "correctAnswer": "His student ID and insurance card"
     },
     {
       "number": 4,
       "question_type": "Inference",
       "narrator_text": "What can be inferred about the cost of the visit?",
-      "options": {
-        "A": "The basic visit is covered, but extra services carry additional charges",
-        "B": "The entire visit, including any X-ray, is completely free",
-        "C": "The student will need to pay for everything out of pocket",
-        "D": "Only students with private insurance are covered"
-      },
-      "correct_answer": "A",
-      "explanation": "The receptionist explains the visit is covered by the health fee, but an X-ray or boot comes with a small additional charge."
+      "options": [
+        {
+          "key": "A",
+          "text": "Only students with private insurance are covered"
+        },
+        {
+          "key": "B",
+          "text": "The entire visit, including any X-ray, is completely free"
+        },
+        {
+          "key": "C",
+          "text": "The student will need to pay for everything out of pocket"
+        },
+        {
+          "key": "D",
+          "text": "The basic visit is covered, but extra services carry additional charges"
+        }
+      ],
+      "correct_answer": "D",
+      "explanation": "The receptionist explains the visit is covered by the health fee, but an X-ray or boot comes with a small additional charge.",
+      "correctKey": "D",
+      "correctAnswer": "The basic visit is covered, but extra services carry additional charges"
     }
   ]
 }

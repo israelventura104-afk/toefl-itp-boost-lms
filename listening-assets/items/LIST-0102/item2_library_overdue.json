@@ -71,57 +71,113 @@
       "number": 1,
       "question_type": "Main Idea",
       "narrator_text": "What is the conversation mainly about?",
-      "options": {
-        "A": "How to renew library books online",
-        "B": "A mistaken overdue charge on the student's account",
-        "C": "A new email system at the library",
-        "D": "Rules for borrowing more books this week"
-      },
+      "options": [
+        {
+          "key": "A",
+          "text": "A new email system at the library"
+        },
+        {
+          "key": "B",
+          "text": "A mistaken overdue charge on the student's account"
+        },
+        {
+          "key": "C",
+          "text": "Rules for borrowing more books this week"
+        },
+        {
+          "key": "D",
+          "text": "How to renew library books online"
+        }
+      ],
       "correct_answer": "B",
       "explanation": "The student got an overdue email after returning books; the librarian finds a scanning error and removes the fine.",
-      "commonMistake": "Choosing D because he mentions needing more books — that is a side detail, not the main problem."
+      "commonMistake": "Choosing D because he mentions needing more books — that is a side detail, not the main problem.",
+      "correctKey": "B",
+      "correctAnswer": "A mistaken overdue charge on the student's account"
     },
     {
       "number": 2,
       "question_type": "Detail",
       "narrator_text": "Why did the student receive an overdue notice?",
-      "options": {
-        "A": "He returned the books after the due date.",
-        "B": "The returned books were not scanned correctly.",
-        "C": "His student ID was not in the system.",
-        "D": "He forgot to renew the books by email."
-      },
-      "correct_answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "He forgot to renew the books by email."
+        },
+        {
+          "key": "B",
+          "text": "His student ID was not in the system."
+        },
+        {
+          "key": "C",
+          "text": "He returned the books after the due date."
+        },
+        {
+          "key": "D",
+          "text": "The returned books were not scanned correctly."
+        }
+      ],
+      "correct_answer": "D",
       "explanation": "The librarian says the books were returned on time but were not scanned correctly.",
-      "commonMistake": "Choosing A because the email said overdue — the audio shows that message was wrong."
+      "commonMistake": "Choosing A because the email said overdue — the audio shows that message was wrong.",
+      "correctKey": "D",
+      "correctAnswer": "The returned books were not scanned correctly."
     },
     {
       "number": 3,
       "question_type": "Detail",
       "narrator_text": "What will the librarian do right away?",
-      "options": {
-        "A": "Ask the student to pay a reduced fine",
-        "B": "Block the account until Friday",
-        "C": "Remove the overdue charge",
-        "D": "Order replacement copies of the books"
-      },
-      "correct_answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "Remove the overdue charge"
+        },
+        {
+          "key": "B",
+          "text": "Order replacement copies of the books"
+        },
+        {
+          "key": "C",
+          "text": "Block the account until Friday"
+        },
+        {
+          "key": "D",
+          "text": "Ask the student to pay a reduced fine"
+        }
+      ],
+      "correct_answer": "A",
       "explanation": "She says she will remove the charge right now; the account clears in a few minutes.",
-      "commonMistake": "Choosing A because 'fine' is mentioned — he does not have to pay."
+      "commonMistake": "Choosing A because 'fine' is mentioned — he does not have to pay.",
+      "correctKey": "A",
+      "correctAnswer": "Remove the overdue charge"
     },
     {
       "number": 4,
       "question_type": "Detail",
       "narrator_text": "What does the librarian tell the student to do later today?",
-      "options": {
-        "A": "Return to the desk with a printed receipt",
-        "B": "Email the circulation manager",
-        "C": "Refresh his online account to confirm a zero balance",
-        "D": "Borrow the next books before the system updates"
-      },
+      "options": [
+        {
+          "key": "A",
+          "text": "Borrow the next books before the system updates"
+        },
+        {
+          "key": "B",
+          "text": "Email the circulation manager"
+        },
+        {
+          "key": "C",
+          "text": "Refresh his online account to confirm a zero balance"
+        },
+        {
+          "key": "D",
+          "text": "Return to the desk with a printed receipt"
+        }
+      ],
       "correct_answer": "C",
       "explanation": "She tells him to refresh his account online later today to make sure the balance is zero.",
-      "commonMistake": "Choosing D because he needs books this week — she only asks him to check the balance online."
+      "commonMistake": "Choosing D because he needs books this week — she only asks him to check the balance online.",
+      "correctKey": "C",
+      "correctAnswer": "Refresh his online account to confirm a zero balance"
     }
   ]
 }

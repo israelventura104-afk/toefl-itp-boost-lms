@@ -59,53 +59,109 @@
       "number": 1,
       "question_type": "Main Idea",
       "narrator_text": "What problem is the student experiencing?",
-      "options": {
-        "A": "She cannot connect to the campus Wi-Fi",
-        "B": "Her laptop won't turn on",
-        "C": "Her student login has been deactivated",
-        "D": "Her laptop has a virus"
-      },
-      "correct_answer": "A",
-      "explanation": "She explains her laptop keeps rejecting the password when trying to connect to Wi-Fi."
+      "options": [
+        {
+          "key": "A",
+          "text": "Her student login has been deactivated"
+        },
+        {
+          "key": "B",
+          "text": "She cannot connect to the campus Wi-Fi"
+        },
+        {
+          "key": "C",
+          "text": "Her laptop has a virus"
+        },
+        {
+          "key": "D",
+          "text": "Her laptop won't turn on"
+        }
+      ],
+      "correct_answer": "B",
+      "explanation": "She explains her laptop keeps rejecting the password when trying to connect to Wi-Fi.",
+      "correctKey": "B",
+      "correctAnswer": "She cannot connect to the campus Wi-Fi"
     },
     {
       "number": 2,
       "question_type": "Detail",
       "narrator_text": "According to the IT staff member, what likely caused this issue for many students?",
-      "options": {
-        "A": "A weekend network upgrade",
-        "B": "A campus-wide internet outage",
-        "C": "A virus spreading through the network",
-        "D": "An error in the student ID system"
-      },
-      "correct_answer": "A",
-      "explanation": "He explains the issue is likely related to a network upgrade done over the weekend."
+      "options": [
+        {
+          "key": "A",
+          "text": "An error in the student ID system"
+        },
+        {
+          "key": "B",
+          "text": "A campus-wide internet outage"
+        },
+        {
+          "key": "C",
+          "text": "A weekend network upgrade"
+        },
+        {
+          "key": "D",
+          "text": "A virus spreading through the network"
+        }
+      ],
+      "correct_answer": "C",
+      "explanation": "He explains the issue is likely related to a network upgrade done over the weekend.",
+      "correctKey": "C",
+      "correctAnswer": "A weekend network upgrade"
     },
     {
       "number": 3,
       "question_type": "Detail",
       "narrator_text": "What mistake does the student realize she might have been making?",
-      "options": {
-        "A": "Typing her old password instead of her current one",
-        "B": "Using the wrong Wi-Fi network name",
-        "C": "Forgetting to charge her laptop",
-        "D": "Trying to connect from outside the Wi-Fi range"
-      },
+      "options": [
+        {
+          "key": "A",
+          "text": "Typing her old password instead of her current one"
+        },
+        {
+          "key": "B",
+          "text": "Forgetting to charge her laptop"
+        },
+        {
+          "key": "C",
+          "text": "Using the wrong Wi-Fi network name"
+        },
+        {
+          "key": "D",
+          "text": "Trying to connect from outside the Wi-Fi range"
+        }
+      ],
       "correct_answer": "A",
-      "explanation": "She realizes she may have been entering her old password out of habit."
+      "explanation": "She realizes she may have been entering her old password out of habit.",
+      "correctKey": "A",
+      "correctAnswer": "Typing her old password instead of her current one"
     },
     {
       "number": 4,
       "question_type": "Detail",
       "narrator_text": "What does the IT staff member say they will do if the first solution doesn't work?",
-      "options": {
-        "A": "Replace her laptop",
-        "B": "Reset her entire student account",
-        "C": "Help her check whether her network drivers are outdated",
-        "D": "Send a technician to her dorm"
-      },
-      "correct_answer": "C",
-      "explanation": "He offers to walk her through checking outdated network drivers if reconnecting doesn't solve the problem."
+      "options": [
+        {
+          "key": "A",
+          "text": "Reset her entire student account"
+        },
+        {
+          "key": "B",
+          "text": "Replace her laptop"
+        },
+        {
+          "key": "C",
+          "text": "Send a technician to her dorm"
+        },
+        {
+          "key": "D",
+          "text": "Help her check whether her network drivers are outdated"
+        }
+      ],
+      "correct_answer": "D",
+      "explanation": "He offers to walk her through checking outdated network drivers if reconnecting doesn't solve the problem.",
+      "correctKey": "D",
+      "correctAnswer": "Help her check whether her network drivers are outdated"
     }
   ]
 }

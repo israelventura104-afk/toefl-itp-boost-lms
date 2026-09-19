@@ -68,57 +68,113 @@
       "number": 1,
       "question_type": "Main Idea",
       "narrator_text": "What is the talk mainly about?",
-      "options": {
-        "A": "How to dig a private swimming pool",
-        "B": "Why oceans never evaporate",
-        "C": "How the water cycle works and how climate can change it",
-        "D": "How to build cloud machines"
-      },
-      "correct_answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "How the water cycle works and how climate can change it"
+        },
+        {
+          "key": "B",
+          "text": "Why oceans never evaporate"
+        },
+        {
+          "key": "C",
+          "text": "How to dig a private swimming pool"
+        },
+        {
+          "key": "D",
+          "text": "How to build cloud machines"
+        }
+      ],
+      "correct_answer": "A",
       "explanation": "He explains evaporation, condensation, precipitation, and climate effects.",
-      "commonMistake": "Choosing B—contradicts evaporation."
+      "commonMistake": "Choosing B—contradicts evaporation.",
+      "correctKey": "A",
+      "correctAnswer": "How the water cycle works and how climate can change it"
     },
     {
       "number": 2,
       "question_type": "Detail",
       "narrator_text": "According to the professor, what starts evaporation?",
-      "options": {
-        "A": "Underground volcanoes only",
-        "B": "City streetlights",
-        "C": "Heat from the sun",
-        "D": "Fish swimming in circles"
-      },
-      "correct_answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "Fish swimming in circles"
+        },
+        {
+          "key": "B",
+          "text": "City streetlights"
+        },
+        {
+          "key": "C",
+          "text": "Underground volcanoes only"
+        },
+        {
+          "key": "D",
+          "text": "Heat from the sun"
+        }
+      ],
+      "correct_answer": "D",
       "explanation": "He says heat from the sun evaporates water into vapor.",
-      "commonMistake": "Choosing A—not the cause he gives."
+      "commonMistake": "Choosing A—not the cause he gives.",
+      "correctKey": "D",
+      "correctAnswer": "Heat from the sun"
     },
     {
       "number": 3,
       "question_type": "Detail",
       "narrator_text": "What does he say warmer air can do?",
-      "options": {
-        "A": "Stop all precipitation forever",
-        "B": "Turn rivers into ice instantly",
-        "C": "Hold more moisture, so some regions see heavier rain",
-        "D": "Remove aquifers from maps"
-      },
-      "correct_answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "Stop all precipitation forever"
+        },
+        {
+          "key": "B",
+          "text": "Hold more moisture, so some regions see heavier rain"
+        },
+        {
+          "key": "C",
+          "text": "Remove aquifers from maps"
+        },
+        {
+          "key": "D",
+          "text": "Turn rivers into ice instantly"
+        }
+      ],
+      "correct_answer": "B",
       "explanation": "Warmer air holds more moisture, linked to heavier rain in some regions.",
-      "commonMistake": "Choosing A—opposite of intensified cycle."
+      "commonMistake": "Choosing A—opposite of intensified cycle.",
+      "correctKey": "B",
+      "correctAnswer": "Hold more moisture, so some regions see heavier rain"
     },
     {
       "number": 4,
       "question_type": "Inference",
       "narrator_text": "What can be inferred about shrinking glaciers and snowpack?",
-      "options": {
-        "A": "They have no link to rivers",
-        "B": "They only affect deserts far from mountains",
-        "C": "They may reduce summer river flow because they store water seasonally",
-        "D": "They increase ocean salt for drinking water"
-      },
+      "options": [
+        {
+          "key": "A",
+          "text": "They increase ocean salt for drinking water"
+        },
+        {
+          "key": "B",
+          "text": "They only affect deserts far from mountains"
+        },
+        {
+          "key": "C",
+          "text": "They may reduce summer river flow because they store water seasonally"
+        },
+        {
+          "key": "D",
+          "text": "They have no link to rivers"
+        }
+      ],
       "correct_answer": "C",
       "explanation": "He says they act as seasonal storage; when they shrink, summer flow can drop.",
-      "commonMistake": "Choosing A—he connects them to river flow."
+      "commonMistake": "Choosing A—he connects them to river flow.",
+      "correctKey": "C",
+      "correctAnswer": "They may reduce summer river flow because they store water seasonally"
     }
   ]
 }

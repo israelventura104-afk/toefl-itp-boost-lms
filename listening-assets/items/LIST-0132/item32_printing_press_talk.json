@@ -68,57 +68,113 @@
       "number": 1,
       "question_type": "Main Idea",
       "narrator_text": "What is the talk mainly about?",
-      "options": {
-        "A": "How monks built wine presses for monasteries",
-        "B": "Why the Bible was never printed",
-        "C": "How to cast metal for jewelry",
-        "D": "Gutenberg’s printing press and how it changed book production in Europe"
-      },
-      "correct_answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "How monks built wine presses for monasteries"
+        },
+        {
+          "key": "B",
+          "text": "Gutenberg’s printing press and how it changed book production in Europe"
+        },
+        {
+          "key": "C",
+          "text": "How to cast metal for jewelry"
+        },
+        {
+          "key": "D",
+          "text": "Why the Bible was never printed"
+        }
+      ],
+      "correct_answer": "B",
       "explanation": "The professor explains Gutenberg’s movable type system and its impact on European books and literacy.",
-      "commonMistake": "Choosing A—wine presses are only mentioned as a model for the press mechanism."
+      "commonMistake": "Choosing A—wine presses are only mentioned as a model for the press mechanism.",
+      "correctKey": "B",
+      "correctAnswer": "Gutenberg’s printing press and how it changed book production in Europe"
     },
     {
       "number": 2,
       "question_type": "Detail",
       "narrator_text": "According to the professor, what made books rare before the mid-1400s in Europe?",
-      "options": {
-        "A": "They were copied by hand and were expensive",
-        "B": "Paper had not been invented yet",
-        "C": "Only farmers were allowed to read",
-        "D": "Libraries refused to store books"
-      },
-      "correct_answer": "A",
+      "options": [
+        {
+          "key": "A",
+          "text": "Libraries refused to store books"
+        },
+        {
+          "key": "B",
+          "text": "Only farmers were allowed to read"
+        },
+        {
+          "key": "C",
+          "text": "They were copied by hand and were expensive"
+        },
+        {
+          "key": "D",
+          "text": "Paper had not been invented yet"
+        }
+      ],
+      "correct_answer": "C",
       "explanation": "She says books were copied by hand, making them rare and expensive.",
-      "commonMistake": "Choosing B—paper is not the reason she gives."
+      "commonMistake": "Choosing B—paper is not the reason she gives.",
+      "correctKey": "C",
+      "correctAnswer": "They were copied by hand and were expensive"
     },
     {
       "number": 3,
       "question_type": "Detail",
       "narrator_text": "What does the professor say was the key idea of Gutenberg’s system?",
-      "options": {
-        "A": "Reusable movable type that could be rearranged for new pages",
-        "B": "Carving a new wooden page for every book forever",
-        "C": "Printing only maps, never text",
-        "D": "Hiring more scribes instead of using machines"
-      },
-      "correct_answer": "A",
+      "options": [
+        {
+          "key": "A",
+          "text": "Hiring more scribes instead of using machines"
+        },
+        {
+          "key": "B",
+          "text": "Carving a new wooden page for every book forever"
+        },
+        {
+          "key": "C",
+          "text": "Printing only maps, never text"
+        },
+        {
+          "key": "D",
+          "text": "Reusable movable type that could be rearranged for new pages"
+        }
+      ],
+      "correct_answer": "D",
       "explanation": "She emphasizes reusable type that could be rearranged instead of carving each page from scratch.",
-      "commonMistake": "Choosing B—that describes the older, slower approach."
+      "commonMistake": "Choosing B—that describes the older, slower approach.",
+      "correctKey": "D",
+      "correctAnswer": "Reusable movable type that could be rearranged for new pages"
     },
     {
       "number": 4,
       "question_type": "Inference",
       "narrator_text": "What can be inferred about earlier printing outside Europe?",
-      "options": {
-        "A": "No culture had ever printed anything before Gutenberg",
-        "B": "Korea banned all books after 1450",
-        "C": "China copied Gutenberg’s Bible first",
-        "D": "China and Korea had earlier printing traditions, but Gutenberg’s system transformed European publishing"
-      },
-      "correct_answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "China and Korea had earlier printing traditions, but Gutenberg’s system transformed European publishing"
+        },
+        {
+          "key": "B",
+          "text": "Korea banned all books after 1450"
+        },
+        {
+          "key": "C",
+          "text": "China copied Gutenberg’s Bible first"
+        },
+        {
+          "key": "D",
+          "text": "No culture had ever printed anything before Gutenberg"
+        }
+      ],
+      "correct_answer": "A",
       "explanation": "She notes earlier traditions in China and Korea while stressing Gutenberg’s impact in Europe.",
-      "commonMistake": "Choosing A—she explicitly rejects that idea."
+      "commonMistake": "Choosing A—she explicitly rejects that idea.",
+      "correctKey": "A",
+      "correctAnswer": "China and Korea had earlier printing traditions, but Gutenberg’s system transformed European publishing"
     }
   ]
 }

@@ -68,57 +68,113 @@
       "number": 1,
       "question_type": "Main Idea",
       "narrator_text": "What is the talk mainly about?",
-      "options": {
-        "A": "How to build modern skyscrapers in Egypt",
-        "B": "Why ships never entered Alexandria’s harbor",
-        "C": "How to write novels without libraries",
-        "D": "The Library of Alexandria as a center for collecting and studying texts"
-      },
-      "correct_answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "Why ships never entered Alexandria’s harbor"
+        },
+        {
+          "key": "B",
+          "text": "The Library of Alexandria as a center for collecting and studying texts"
+        },
+        {
+          "key": "C",
+          "text": "How to write novels without libraries"
+        },
+        {
+          "key": "D",
+          "text": "How to build modern skyscrapers in Egypt"
+        }
+      ],
+      "correct_answer": "B",
       "explanation": "She describes collecting, copying, editing texts and scholarly exchange.",
-      "commonMistake": "Choosing B—contradicts harbor copying."
+      "commonMistake": "Choosing B—contradicts harbor copying.",
+      "correctKey": "B",
+      "correctAnswer": "The Library of Alexandria as a center for collecting and studying texts"
     },
     {
       "number": 2,
       "question_type": "Detail",
       "narrator_text": "Besides storing scrolls, what else did scholars do?",
-      "options": {
-        "A": "Burn all foreign books on arrival",
-        "B": "Replace writing with only oral myths",
-        "C": "Ban mathematics from the city",
-        "D": "Copy, compare, and edit important texts"
-      },
-      "correct_answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "Ban mathematics from the city"
+        },
+        {
+          "key": "B",
+          "text": "Burn all foreign books on arrival"
+        },
+        {
+          "key": "C",
+          "text": "Copy, compare, and edit important texts"
+        },
+        {
+          "key": "D",
+          "text": "Replace writing with only oral myths"
+        }
+      ],
+      "correct_answer": "C",
       "explanation": "Goal included copy, compare, and edit texts.",
-      "commonMistake": "Choosing A—opposite."
+      "commonMistake": "Choosing A—opposite.",
+      "correctKey": "C",
+      "correctAnswer": "Copy, compare, and edit important texts"
     },
     {
       "number": 3,
       "question_type": "Detail",
       "narrator_text": "What sometimes happened when ships arrived at the harbor?",
-      "options": {
-        "A": "All cargo was thrown into the sea",
-        "B": "Scholars refused any foreign texts",
-        "C": "The library closed permanently each morning",
-        "D": "Books were copied before travelers continued"
-      },
+      "options": [
+        {
+          "key": "A",
+          "text": "The library closed permanently each morning"
+        },
+        {
+          "key": "B",
+          "text": "Scholars refused any foreign texts"
+        },
+        {
+          "key": "C",
+          "text": "All cargo was thrown into the sea"
+        },
+        {
+          "key": "D",
+          "text": "Books were copied before travelers continued"
+        }
+      ],
       "correct_answer": "D",
       "explanation": "Ships sometimes had books copied before continuing.",
-      "commonMistake": "Choosing B—not what she says."
+      "commonMistake": "Choosing B—not what she says.",
+      "correctKey": "D",
+      "correctAnswer": "Books were copied before travelers continued"
     },
     {
       "number": 4,
       "question_type": "Inference",
       "narrator_text": "What does the professor emphasize about Alexandria’s importance?",
-      "options": {
-        "A": "It proves libraries are useless today",
-        "B": "It shows scholarship needs no copying or editing",
-        "C": "It only mattered for cooking recipes",
-        "D": "It models organized, state-backed scholarship beyond merely lost scrolls"
-      },
-      "correct_answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "It models organized, state-backed scholarship beyond merely lost scrolls"
+        },
+        {
+          "key": "B",
+          "text": "It proves libraries are useless today"
+        },
+        {
+          "key": "C",
+          "text": "It only mattered for cooking recipes"
+        },
+        {
+          "key": "D",
+          "text": "It shows scholarship needs no copying or editing"
+        }
+      ],
+      "correct_answer": "A",
       "explanation": "She calls it an early symbol of organized scholarship, not just lost scrolls.",
-      "commonMistake": "Choosing A—opposite of her point."
+      "commonMistake": "Choosing A—opposite of her point.",
+      "correctKey": "A",
+      "correctAnswer": "It models organized, state-backed scholarship beyond merely lost scrolls"
     }
   ]
 }

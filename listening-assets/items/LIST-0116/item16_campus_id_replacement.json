@@ -71,57 +71,113 @@
       "number": 1,
       "question_type": "Main Idea",
       "narrator_text": "What is the conversation mainly about?",
-      "options": {
-        "A": "Replacing a lost campus ID card",
-        "B": "Applying for a first-time campus meal plan",
-        "C": "Reporting a problem with the campus shuttle",
-        "D": "Changing the student's dining hall schedule"
-      },
-      "correct_answer": "A",
+      "options": [
+        {
+          "key": "A",
+          "text": "Applying for a first-time campus meal plan"
+        },
+        {
+          "key": "B",
+          "text": "Reporting a problem with the campus shuttle"
+        },
+        {
+          "key": "C",
+          "text": "Replacing a lost campus ID card"
+        },
+        {
+          "key": "D",
+          "text": "Changing the student's dining hall schedule"
+        }
+      ],
+      "correct_answer": "C",
       "explanation": "The student lost his ID and arranges deactivation plus a same-day replacement.",
-      "commonMistake": "Choosing B because the meal plan is mentioned—only as a reason to deactivate the old card."
+      "commonMistake": "Choosing B because the meal plan is mentioned—only as a reason to deactivate the old card.",
+      "correctKey": "C",
+      "correctAnswer": "Replacing a lost campus ID card"
     },
     {
       "number": 2,
       "question_type": "Detail",
       "narrator_text": "What will the staff member do first?",
-      "options": {
-        "A": "Charge a late library fine",
-        "B": "Call the dining hall manager",
-        "C": "Deactivate the old campus ID",
-        "D": "Issue a temporary paper pass for one week"
-      },
-      "correct_answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "Deactivate the old campus ID"
+        },
+        {
+          "key": "B",
+          "text": "Call the dining hall manager"
+        },
+        {
+          "key": "C",
+          "text": "Issue a temporary paper pass for one week"
+        },
+        {
+          "key": "D",
+          "text": "Charge a late library fine"
+        }
+      ],
+      "correct_answer": "A",
       "explanation": "She says she can deactivate the old card so nobody else can use meal plan or building access.",
-      "commonMistake": "Choosing B because the dining hall is where he last had the card—not her first action."
+      "commonMistake": "Choosing B because the dining hall is where he last had the card—not her first action.",
+      "correctKey": "A",
+      "correctAnswer": "Deactivate the old campus ID"
     },
     {
       "number": 3,
       "question_type": "Detail",
       "narrator_text": "How long will the replacement usually take if he has photo ID?",
-      "options": {
-        "A": "About twenty minutes today",
-        "B": "Three business days",
-        "C": "Until the lost-and-found returns the old card",
-        "D": "One week after paying by cash only"
-      },
-      "correct_answer": "A",
+      "options": [
+        {
+          "key": "A",
+          "text": "One week after paying by cash only"
+        },
+        {
+          "key": "B",
+          "text": "Three business days"
+        },
+        {
+          "key": "C",
+          "text": "Until the lost-and-found returns the old card"
+        },
+        {
+          "key": "D",
+          "text": "About twenty minutes today"
+        }
+      ],
+      "correct_answer": "D",
       "explanation": "With another photo ID, they can print a new card today in about twenty minutes; fee is ten dollars.",
-      "commonMistake": "Choosing B—no multi-day wait is stated for this case."
+      "commonMistake": "Choosing B—no multi-day wait is stated for this case.",
+      "correctKey": "D",
+      "correctAnswer": "About twenty minutes today"
     },
     {
       "number": 4,
       "question_type": "Detail",
       "narrator_text": "What happens to the student's campus shuttle access?",
-      "options": {
-        "A": "It stops until he pays an extra shuttle fee",
-        "B": "It moves to the new card only after 24 hours",
-        "C": "It stays active because it is linked to his student account",
-        "D": "It is canceled when the old card is deactivated"
-      },
-      "correct_answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "It stops until he pays an extra shuttle fee"
+        },
+        {
+          "key": "B",
+          "text": "It stays active because it is linked to his student account"
+        },
+        {
+          "key": "C",
+          "text": "It moves to the new card only after 24 hours"
+        },
+        {
+          "key": "D",
+          "text": "It is canceled when the old card is deactivated"
+        }
+      ],
+      "correct_answer": "B",
       "explanation": "She says the shuttle is linked to the student account, not the physical card number, so it stays active.",
-      "commonMistake": "Choosing D because deactivation sounds total—door access and meals move; shuttle does not."
+      "commonMistake": "Choosing D because deactivation sounds total—door access and meals move; shuttle does not.",
+      "correctKey": "B",
+      "correctAnswer": "It stays active because it is linked to his student account"
     }
   ]
 }

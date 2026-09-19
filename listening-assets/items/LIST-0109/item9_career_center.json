@@ -59,53 +59,109 @@
       "number": 1,
       "question_type": "Main Idea",
       "narrator_text": "What is the conversation mainly about?",
-      "options": {
-        "A": "Choosing which internship offer to accept",
-        "B": "Improving a resume to get more responses from employers",
-        "C": "Scheduling a mock interview",
-        "D": "Deciding on a major"
-      },
-      "correct_answer": "B",
-      "explanation": "The counselor reviews the student's resume and gives suggestions to improve it after she gets no responses."
+      "options": [
+        {
+          "key": "A",
+          "text": "Improving a resume to get more responses from employers"
+        },
+        {
+          "key": "B",
+          "text": "Deciding on a major"
+        },
+        {
+          "key": "C",
+          "text": "Scheduling a mock interview"
+        },
+        {
+          "key": "D",
+          "text": "Choosing which internship offer to accept"
+        }
+      ],
+      "correct_answer": "A",
+      "explanation": "The counselor reviews the student's resume and gives suggestions to improve it after she gets no responses.",
+      "correctKey": "A",
+      "correctAnswer": "Improving a resume to get more responses from employers"
     },
     {
       "number": 2,
       "question_type": "Detail",
       "narrator_text": "What does the counselor say is the main issue with the resume's format?",
-      "options": {
-        "A": "It contains spelling errors",
-        "B": "It resembles an academic CV rather than a professional resume",
-        "C": "It is missing contact information",
-        "D": "It is too short"
-      },
-      "correct_answer": "B",
-      "explanation": "The counselor notes it reads more like an academic CV, which is too dense for quick-skimming recruiters."
+      "options": [
+        {
+          "key": "A",
+          "text": "It is too short"
+        },
+        {
+          "key": "B",
+          "text": "It contains spelling errors"
+        },
+        {
+          "key": "C",
+          "text": "It resembles an academic CV rather than a professional resume"
+        },
+        {
+          "key": "D",
+          "text": "It is missing contact information"
+        }
+      ],
+      "correct_answer": "C",
+      "explanation": "The counselor notes it reads more like an academic CV, which is too dense for quick-skimming recruiters.",
+      "correctKey": "C",
+      "correctAnswer": "It resembles an academic CV rather than a professional resume"
     },
     {
       "number": 3,
       "question_type": "Detail",
       "narrator_text": "What does the counselor suggest about the marketing club experience?",
-      "options": {
-        "A": "It should be removed",
-        "B": "It should be placed above the retail job",
-        "C": "It should be combined with the retail job",
-        "D": "It should only be mentioned in a cover letter"
-      },
+      "options": [
+        {
+          "key": "A",
+          "text": "It should only be mentioned in a cover letter"
+        },
+        {
+          "key": "B",
+          "text": "It should be placed above the retail job"
+        },
+        {
+          "key": "C",
+          "text": "It should be removed"
+        },
+        {
+          "key": "D",
+          "text": "It should be combined with the retail job"
+        }
+      ],
       "correct_answer": "B",
-      "explanation": "He advises moving the marketing club experience above the retail job since it's more relevant."
+      "explanation": "He advises moving the marketing club experience above the retail job since it's more relevant.",
+      "correctKey": "B",
+      "correctAnswer": "It should be placed above the retail job"
     },
     {
       "number": 4,
       "question_type": "Inference",
       "narrator_text": "What can be inferred about the class project mentioned in the conversation?",
-      "options": {
-        "A": "It should not be included on the resume",
-        "B": "It is considered relevant, hands-on experience worth highlighting",
-        "C": "It was not related to marketing",
-        "D": "The counselor was unfamiliar with it"
-      },
-      "correct_answer": "B",
-      "explanation": "The counselor calls it exactly the kind of concrete experience recruiters look for and suggests quantifying it."
+      "options": [
+        {
+          "key": "A",
+          "text": "It should not be included on the resume"
+        },
+        {
+          "key": "B",
+          "text": "It was not related to marketing"
+        },
+        {
+          "key": "C",
+          "text": "The counselor was unfamiliar with it"
+        },
+        {
+          "key": "D",
+          "text": "It is considered relevant, hands-on experience worth highlighting"
+        }
+      ],
+      "correct_answer": "D",
+      "explanation": "The counselor calls it exactly the kind of concrete experience recruiters look for and suggests quantifying it.",
+      "correctKey": "D",
+      "correctAnswer": "It is considered relevant, hands-on experience worth highlighting"
     }
   ]
 }

@@ -68,57 +68,113 @@
       "number": 1,
       "question_type": "Main Idea",
       "narrator_text": "What is the talk mainly about?",
-      "options": {
-        "A": "How habits form and one way to change them",
-        "B": "How to memorize vocabulary lists overnight",
-        "C": "Why psychology classes should be canceled",
-        "D": "How to design a campus cafeteria menu"
-      },
-      "correct_answer": "A",
+      "options": [
+        {
+          "key": "A",
+          "text": "Why psychology classes should be canceled"
+        },
+        {
+          "key": "B",
+          "text": "How habits form and one way to change them"
+        },
+        {
+          "key": "C",
+          "text": "How to memorize vocabulary lists overnight"
+        },
+        {
+          "key": "D",
+          "text": "How to design a campus cafeteria menu"
+        }
+      ],
+      "correct_answer": "B",
       "explanation": "The professor explains the cue–routine–reward loop and strategies for changing habits.",
-      "commonMistake": "Choosing D—snacking is only an example, not the main topic."
+      "commonMistake": "Choosing D—snacking is only an example, not the main topic.",
+      "correctKey": "B",
+      "correctAnswer": "How habits form and one way to change them"
     },
     {
       "number": 2,
       "question_type": "Detail",
       "narrator_text": "According to the professor, what are the three parts of the habit loop?",
-      "options": {
-        "A": "Cue, routine, and reward",
-        "B": "Test, grade, and diploma",
-        "C": "Sleep, dream, and wake",
-        "D": "Buy, sell, and profit"
-      },
-      "correct_answer": "A",
+      "options": [
+        {
+          "key": "A",
+          "text": "Buy, sell, and profit"
+        },
+        {
+          "key": "B",
+          "text": "Test, grade, and diploma"
+        },
+        {
+          "key": "C",
+          "text": "Sleep, dream, and wake"
+        },
+        {
+          "key": "D",
+          "text": "Cue, routine, and reward"
+        }
+      ],
+      "correct_answer": "D",
       "explanation": "She describes the loop as cue, routine, and reward.",
-      "commonMistake": "Choosing B—unrelated campus terms."
+      "commonMistake": "Choosing B—unrelated campus terms.",
+      "correctKey": "D",
+      "correctAnswer": "Cue, routine, and reward"
     },
     {
       "number": 3,
       "question_type": "Detail",
       "narrator_text": "What strategy does she recommend for changing a habit?",
-      "options": {
-        "A": "Keep the same cue and reward but swap in a better routine",
-        "B": "Ignore cues and never seek any reward",
-        "C": "Change every habit at the same time with no plan",
-        "D": "Only use willpower and never change the environment"
-      },
+      "options": [
+        {
+          "key": "A",
+          "text": "Keep the same cue and reward but swap in a better routine"
+        },
+        {
+          "key": "B",
+          "text": "Ignore cues and never seek any reward"
+        },
+        {
+          "key": "C",
+          "text": "Only use willpower and never change the environment"
+        },
+        {
+          "key": "D",
+          "text": "Change every habit at the same time with no plan"
+        }
+      ],
       "correct_answer": "A",
       "explanation": "She says keep cue and reward, replace the routine; also changing the environment helps.",
-      "commonMistake": "Choosing D—she says environment change helps more than willpower alone."
+      "commonMistake": "Choosing D—she says environment change helps more than willpower alone.",
+      "correctKey": "A",
+      "correctAnswer": "Keep the same cue and reward but swap in a better routine"
     },
     {
       "number": 4,
       "question_type": "Inference",
       "narrator_text": "What can be inferred about strong habits?",
-      "options": {
-        "A": "They always require careful planning every time",
-        "B": "They disappear after one day",
-        "C": "They only form in laboratories",
-        "D": "They can run with little conscious planning, which makes unhealthy ones hard to break"
-      },
-      "correct_answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "They disappear after one day"
+        },
+        {
+          "key": "B",
+          "text": "They always require careful planning every time"
+        },
+        {
+          "key": "C",
+          "text": "They can run with little conscious planning, which makes unhealthy ones hard to break"
+        },
+        {
+          "key": "D",
+          "text": "They only form in laboratories"
+        }
+      ],
+      "correct_answer": "C",
       "explanation": "She notes strong habits start with little conscious planning and unhealthy ones are hard to break.",
-      "commonMistake": "Choosing A—that contradicts automaticity."
+      "commonMistake": "Choosing A—that contradicts automaticity.",
+      "correctKey": "C",
+      "correctAnswer": "They can run with little conscious planning, which makes unhealthy ones hard to break"
     }
   ]
 }

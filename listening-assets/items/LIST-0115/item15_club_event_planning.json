@@ -59,53 +59,109 @@
       "number": 1,
       "question_type": "Main Idea",
       "narrator_text": "What problem are the two students discussing?",
-      "options": {
-        "A": "The need to find a bigger venue due to high RSVPs",
-        "B": "A lack of interest in their event",
-        "C": "A conflict with another club's event",
-        "D": "Not having enough volunteers"
-      },
+      "options": [
+        {
+          "key": "A",
+          "text": "The need to find a bigger venue due to high RSVPs"
+        },
+        {
+          "key": "B",
+          "text": "Not having enough volunteers"
+        },
+        {
+          "key": "C",
+          "text": "A conflict with another club's event"
+        },
+        {
+          "key": "D",
+          "text": "A lack of interest in their event"
+        }
+      ],
       "correct_answer": "A",
-      "explanation": "They discuss needing a larger room because RSVPs have exceeded the current room's capacity."
+      "explanation": "They discuss needing a larger room because RSVPs have exceeded the current room's capacity.",
+      "correctKey": "A",
+      "correctAnswer": "The need to find a bigger venue due to high RSVPs"
     },
     {
       "number": 2,
       "question_type": "Detail",
       "narrator_text": "What concern does the woman raise about booking the main hall?",
-      "options": {
-        "A": "It requires approval that usually takes about a week",
-        "B": "It is too expensive",
-        "C": "It is already reserved for another event",
-        "D": "It is too far from student housing"
-      },
-      "correct_answer": "A",
-      "explanation": "She notes the approval process for the main hall usually takes about a week."
+      "options": [
+        {
+          "key": "A",
+          "text": "It is too expensive"
+        },
+        {
+          "key": "B",
+          "text": "It requires approval that usually takes about a week"
+        },
+        {
+          "key": "C",
+          "text": "It is too far from student housing"
+        },
+        {
+          "key": "D",
+          "text": "It is already reserved for another event"
+        }
+      ],
+      "correct_answer": "B",
+      "explanation": "She notes the approval process for the main hall usually takes about a week.",
+      "correctKey": "B",
+      "correctAnswer": "It requires approval that usually takes about a week"
     },
     {
       "number": 3,
       "question_type": "Detail",
       "narrator_text": "What do the students decide to do about the printed flyers?",
-      "options": {
-        "A": "Reprint and repost them immediately",
-        "B": "Remove them from campus entirely",
-        "C": "Leave them as is and add a sign at the old room with updated information",
-        "D": "Replace them with digital-only flyers"
-      },
-      "correct_answer": "C",
-      "explanation": "Since the printed flyers are already posted, they agree to add a sign with the new location at the old room's entrance."
+      "options": [
+        {
+          "key": "A",
+          "text": "Remove them from campus entirely"
+        },
+        {
+          "key": "B",
+          "text": "Reprint and repost them immediately"
+        },
+        {
+          "key": "C",
+          "text": "Replace them with digital-only flyers"
+        },
+        {
+          "key": "D",
+          "text": "Leave them as is and add a sign at the old room with updated information"
+        }
+      ],
+      "correct_answer": "D",
+      "explanation": "Since the printed flyers are already posted, they agree to add a sign with the new location at the old room's entrance.",
+      "correctKey": "D",
+      "correctAnswer": "Leave them as is and add a sign at the old room with updated information"
     },
     {
       "number": 4,
       "question_type": "Inference",
       "narrator_text": "What can be inferred about the timing of their decision?",
-      "options": {
-        "A": "They need to act quickly to secure the new room before the event",
-        "B": "They still have plenty of time and are in no rush",
-        "C": "The event has already been postponed",
-        "D": "The main hall is not actually available in time"
-      },
-      "correct_answer": "A",
-      "explanation": "With the event ten days away and approval taking about a week, they agree to submit the request the same day."
+      "options": [
+        {
+          "key": "A",
+          "text": "The event has already been postponed"
+        },
+        {
+          "key": "B",
+          "text": "The main hall is not actually available in time"
+        },
+        {
+          "key": "C",
+          "text": "They need to act quickly to secure the new room before the event"
+        },
+        {
+          "key": "D",
+          "text": "They still have plenty of time and are in no rush"
+        }
+      ],
+      "correct_answer": "C",
+      "explanation": "With the event ten days away and approval taking about a week, they agree to submit the request the same day.",
+      "correctKey": "C",
+      "correctAnswer": "They need to act quickly to secure the new room before the event"
     }
   ]
 }

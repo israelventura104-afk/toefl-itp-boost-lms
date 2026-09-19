@@ -68,57 +68,113 @@
       "number": 1,
       "question_type": "Main Idea",
       "narrator_text": "What is the talk mainly about?",
-      "options": {
-        "A": "How animals digest sugar from plants",
-        "B": "How leaf cells convert light into chemical energy",
-        "C": "How to grow plants without any water",
-        "D": "How museums display plant fossils"
-      },
-      "correct_answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "How leaf cells convert light into chemical energy"
+        },
+        {
+          "key": "B",
+          "text": "How museums display plant fossils"
+        },
+        {
+          "key": "C",
+          "text": "How to grow plants without any water"
+        },
+        {
+          "key": "D",
+          "text": "How animals digest sugar from plants"
+        }
+      ],
+      "correct_answer": "A",
       "explanation": "The professor explains photosynthesis inside leaf cells: chloroplasts, light reactions, and the Calvin cycle.",
-      "commonMistake": "Choosing A—animals eating plants are not discussed; the focus is the plant’s energy conversion."
+      "commonMistake": "Choosing A—animals eating plants are not discussed; the focus is the plant’s energy conversion.",
+      "correctKey": "A",
+      "correctAnswer": "How leaf cells convert light into chemical energy"
     },
     {
       "number": 2,
       "question_type": "Detail",
       "narrator_text": "According to the professor, why do leaves usually look green?",
-      "options": {
-        "A": "They absorb only green light for sugar production",
-        "B": "They reflect most green light while absorbing blue and red wavelengths",
-        "C": "They store green oxygen inside the stem",
-        "D": "They paint the leaf surface with green minerals from soil"
-      },
-      "correct_answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "They absorb only green light for sugar production"
+        },
+        {
+          "key": "B",
+          "text": "They store green oxygen inside the stem"
+        },
+        {
+          "key": "C",
+          "text": "They paint the leaf surface with green minerals from soil"
+        },
+        {
+          "key": "D",
+          "text": "They reflect most green light while absorbing blue and red wavelengths"
+        }
+      ],
+      "correct_answer": "D",
       "explanation": "Chlorophyll absorbs mainly blue and red light; green is mostly reflected, so leaves look green.",
-      "commonMistake": "Choosing A—green is reflected, not the main wavelength absorbed for the process described."
+      "commonMistake": "Choosing A—green is reflected, not the main wavelength absorbed for the process described.",
+      "correctKey": "D",
+      "correctAnswer": "They reflect most green light while absorbing blue and red wavelengths"
     },
     {
       "number": 3,
       "question_type": "Detail",
       "narrator_text": "What is released when water is split in the light-dependent reactions?",
-      "options": {
-        "A": "Nitrogen gas",
-        "B": "Pure carbon solid",
-        "C": "Oxygen",
-        "D": "Soil fertilizer"
-      },
-      "correct_answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "Pure carbon solid"
+        },
+        {
+          "key": "B",
+          "text": "Oxygen"
+        },
+        {
+          "key": "C",
+          "text": "Nitrogen gas"
+        },
+        {
+          "key": "D",
+          "text": "Soil fertilizer"
+        }
+      ],
+      "correct_answer": "B",
       "explanation": "She says water molecules are split and oxygen is released as a by-product.",
-      "commonMistake": "Choosing A or D—those are not named as products of splitting water here."
+      "commonMistake": "Choosing A or D—those are not named as products of splitting water here.",
+      "correctKey": "B",
+      "correctAnswer": "Oxygen"
     },
     {
       "number": 4,
       "question_type": "Inference",
       "narrator_text": "What can be inferred if a healthy plant receives very little light?",
-      "options": {
-        "A": "It will immediately stop needing carbon dioxide forever",
-        "B": "Sugar production may slow and growth can stall even with water and nutrients",
-        "C": "Chloroplasts will start absorbing only green light",
-        "D": "The Calvin cycle will run faster than usual"
-      },
-      "correct_answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "Chloroplasts will start absorbing only green light"
+        },
+        {
+          "key": "B",
+          "text": "It will immediately stop needing carbon dioxide forever"
+        },
+        {
+          "key": "C",
+          "text": "Sugar production may slow and growth can stall even with water and nutrients"
+        },
+        {
+          "key": "D",
+          "text": "The Calvin cycle will run faster than usual"
+        }
+      ],
+      "correct_answer": "C",
       "explanation": "She notes that with too little light, sugar production slows and growth can stall even when water and nutrients are available.",
-      "commonMistake": "Choosing D—less light would not make the Calvin cycle faster in this talk."
+      "commonMistake": "Choosing D—less light would not make the Calvin cycle faster in this talk.",
+      "correctKey": "C",
+      "correctAnswer": "Sugar production may slow and growth can stall even with water and nutrients"
     }
   ]
 }

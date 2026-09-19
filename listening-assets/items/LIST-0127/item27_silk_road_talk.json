@@ -68,57 +68,113 @@
       "number": 1,
       "question_type": "Main Idea",
       "narrator_text": "What is the talk mainly about?",
-      "options": {
-        "A": "How to manufacture modern silk clothing",
-        "B": "How Silk Road routes connected regions through trade and ideas",
-        "C": "Why Europe banned all Asian imports",
-        "D": "How to navigate a desert with GPS"
-      },
-      "correct_answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "How to navigate a desert with GPS"
+        },
+        {
+          "key": "B",
+          "text": "Why Europe banned all Asian imports"
+        },
+        {
+          "key": "C",
+          "text": "How Silk Road routes connected regions through trade and ideas"
+        },
+        {
+          "key": "D",
+          "text": "How to manufacture modern silk clothing"
+        }
+      ],
+      "correct_answer": "C",
       "explanation": "The professor describes the Silk Road as a network moving goods and ideas across regions.",
-      "commonMistake": "Choosing A—silk is mentioned as a famous good, not as a manufacturing lesson."
+      "commonMistake": "Choosing A—silk is mentioned as a famous good, not as a manufacturing lesson.",
+      "correctKey": "C",
+      "correctAnswer": "How Silk Road routes connected regions through trade and ideas"
     },
     {
       "number": 2,
       "question_type": "Detail",
       "narrator_text": "According to the professor, what was the Silk Road?",
-      "options": {
-        "A": "A single paved highway from China to Rome",
-        "B": "A network of routes across multiple regions",
-        "C": "A railroad built in the nineteenth century",
-        "D": "A river used only for fishing"
-      },
+      "options": [
+        {
+          "key": "A",
+          "text": "A single paved highway from China to Rome"
+        },
+        {
+          "key": "B",
+          "text": "A network of routes across multiple regions"
+        },
+        {
+          "key": "C",
+          "text": "A river used only for fishing"
+        },
+        {
+          "key": "D",
+          "text": "A railroad built in the nineteenth century"
+        }
+      ],
       "correct_answer": "B",
       "explanation": "He says people imagine one highway, but it was actually a network of routes.",
-      "commonMistake": "Choosing A—that is the misconception he corrects."
+      "commonMistake": "Choosing A—that is the misconception he corrects.",
+      "correctKey": "B",
+      "correctAnswer": "A network of routes across multiple regions"
     },
     {
       "number": 3,
       "question_type": "Detail",
       "narrator_text": "Why did long-distance trade favor high-value, lightweight goods?",
-      "options": {
-        "A": "Because farmers refused to grow grain",
-        "B": "Because travel was slow, dangerous, and expensive",
-        "C": "Because silk could not be folded",
-        "D": "Because ships were illegal on land routes"
-      },
-      "correct_answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "Because travel was slow, dangerous, and expensive"
+        },
+        {
+          "key": "B",
+          "text": "Because silk could not be folded"
+        },
+        {
+          "key": "C",
+          "text": "Because ships were illegal on land routes"
+        },
+        {
+          "key": "D",
+          "text": "Because farmers refused to grow grain"
+        }
+      ],
+      "correct_answer": "A",
       "explanation": "Deserts, mountains, and bandits made travel slow and expensive, so traders preferred high-value lightweight goods.",
-      "commonMistake": "Choosing A—grain is mentioned as an example of bulk goods that were less favored, not a farmer refusal."
+      "commonMistake": "Choosing A—grain is mentioned as an example of bulk goods that were less favored, not a farmer refusal.",
+      "correctKey": "A",
+      "correctAnswer": "Because travel was slow, dangerous, and expensive"
     },
     {
       "number": 4,
       "question_type": "Detail",
       "narrator_text": "Besides goods, what else moved along the routes?",
-      "options": {
-        "A": "Only military tanks",
-        "B": "Ideas such as religions, artistic styles, and technologies",
-        "C": "Ocean currents",
-        "D": "Modern stock prices"
-      },
-      "correct_answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "Ocean currents"
+        },
+        {
+          "key": "B",
+          "text": "Modern stock prices"
+        },
+        {
+          "key": "C",
+          "text": "Only military tanks"
+        },
+        {
+          "key": "D",
+          "text": "Ideas such as religions, artistic styles, and technologies"
+        }
+      ],
+      "correct_answer": "D",
       "explanation": "He says ideas traveled too—religions, artistic styles, and technologies moved with the caravans.",
-      "commonMistake": "Choosing A—military equipment is not what he lists as traveling with the caravans."
+      "commonMistake": "Choosing A—military equipment is not what he lists as traveling with the caravans.",
+      "correctKey": "D",
+      "correctAnswer": "Ideas such as religions, artistic styles, and technologies"
     }
   ]
 }

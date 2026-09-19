@@ -71,57 +71,113 @@
       "number": 1,
       "question_type": "Main Idea",
       "narrator_text": "What is the conversation mainly about?",
-      "options": {
-        "A": "Changing the student's academic advisor",
-        "B": "Buying business clothes at the campus store",
-        "C": "Scheduling a make-up final exam",
-        "D": "How to check in and navigate the campus career fair"
-      },
-      "correct_answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "Scheduling a make-up final exam"
+        },
+        {
+          "key": "B",
+          "text": "How to check in and navigate the campus career fair"
+        },
+        {
+          "key": "C",
+          "text": "Buying business clothes at the campus store"
+        },
+        {
+          "key": "D",
+          "text": "Changing the student's academic advisor"
+        }
+      ],
+      "correct_answer": "B",
       "explanation": "She arrives for the career fair; he explains entry time, registration, dress, resumes, and bag check.",
-      "commonMistake": "Choosing B—dress code is only one detail."
+      "commonMistake": "Choosing B—dress code is only one detail.",
+      "correctKey": "B",
+      "correctAnswer": "How to check in and navigate the campus career fair"
     },
     {
       "number": 2,
       "question_type": "Detail",
       "narrator_text": "When can students enter, and when do booth conversations start?",
-      "options": {
-        "A": "Enter at nine; conversations at nine-thirty",
-        "B": "Enter at ten-thirty; conversations at noon",
-        "C": "Enter anytime; conversations only after three",
-        "D": "Enter at ten; conversations at ten-thirty"
-      },
-      "correct_answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "Enter at ten; conversations at ten-thirty"
+        },
+        {
+          "key": "B",
+          "text": "Enter anytime; conversations only after three"
+        },
+        {
+          "key": "C",
+          "text": "Enter at ten-thirty; conversations at noon"
+        },
+        {
+          "key": "D",
+          "text": "Enter at nine; conversations at nine-thirty"
+        }
+      ],
+      "correct_answer": "A",
       "explanation": "Students enter at ten; employer booths start conversations at ten-thirty.",
-      "commonMistake": "Choosing B—ten-thirty is when talks start, not when doors open."
+      "commonMistake": "Choosing B—ten-thirty is when talks start, not when doors open.",
+      "correctKey": "A",
+      "correctAnswer": "Enter at ten; conversations at ten-thirty"
     },
     {
       "number": 3,
       "question_type": "Detail",
       "narrator_text": "What should she do with paper resumes if a company will not take them at the booth?",
-      "options": {
-        "A": "Leave them on any empty table",
-        "B": "Mail them after the fair only",
-        "C": "Use the labeled resume drop boxes along the back wall",
-        "D": "Give them all to the bag-check attendant"
-      },
-      "correct_answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "Leave them on any empty table"
+        },
+        {
+          "key": "B",
+          "text": "Mail them after the fair only"
+        },
+        {
+          "key": "C",
+          "text": "Give them all to the bag-check attendant"
+        },
+        {
+          "key": "D",
+          "text": "Use the labeled resume drop boxes along the back wall"
+        }
+      ],
+      "correct_answer": "D",
       "explanation": "Drop boxes along the back wall are labeled by industry; tables get cleared.",
-      "commonMistake": "Choosing A—he warns not to leave stacks on tables."
+      "commonMistake": "Choosing A—he warns not to leave stacks on tables.",
+      "correctKey": "D",
+      "correctAnswer": "Use the labeled resume drop boxes along the back wall"
     },
     {
       "number": 4,
       "question_type": "Detail",
       "narrator_text": "Until what time do upstairs interviews run?",
-      "options": {
-        "A": "Until three, when the fair floor closes",
-        "B": "Only until ten-thirty",
-        "C": "All night",
-        "D": "Until five"
-      },
-      "correct_answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "Only until ten-thirty"
+        },
+        {
+          "key": "B",
+          "text": "Until three, when the fair floor closes"
+        },
+        {
+          "key": "C",
+          "text": "Until five"
+        },
+        {
+          "key": "D",
+          "text": "All night"
+        }
+      ],
+      "correct_answer": "C",
       "explanation": "The fair closes at three, but interviews upstairs run until five.",
-      "commonMistake": "Choosing A—confuses fair floor closing with interview end time."
+      "commonMistake": "Choosing A—confuses fair floor closing with interview end time.",
+      "correctKey": "C",
+      "correctAnswer": "Until five"
     }
   ]
 }

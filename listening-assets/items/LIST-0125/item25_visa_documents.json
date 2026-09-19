@@ -71,57 +71,113 @@
       "number": 1,
       "question_type": "Main Idea",
       "narrator_text": "What is the conversation mainly about?",
-      "options": {
-        "A": "Changing the student's major before graduation",
-        "B": "Applying for a campus parking permit",
-        "C": "Scheduling an English placement test",
-        "D": "Picking up travel documents and rules before a trip home"
-      },
-      "correct_answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "Picking up travel documents and rules before a trip home"
+        },
+        {
+          "key": "B",
+          "text": "Applying for a campus parking permit"
+        },
+        {
+          "key": "C",
+          "text": "Scheduling an English placement test"
+        },
+        {
+          "key": "D",
+          "text": "Changing the student's major before graduation"
+        }
+      ],
+      "correct_answer": "A",
       "explanation": "He picks up an updated I-20 and learns travel reporting and what to carry.",
-      "commonMistake": "Choosing A—academics are not the topic."
+      "commonMistake": "Choosing A—academics are not the topic.",
+      "correctKey": "A",
+      "correctAnswer": "Picking up travel documents and rules before a trip home"
     },
     {
       "number": 2,
       "question_type": "Detail",
       "narrator_text": "What does he need if his visa stamp is still valid?",
-      "options": {
-        "A": "A brand-new visa interview immediately",
-        "B": "A letter from every professor",
-        "C": "Permission from Campus Safety",
-        "D": "Only the travel signature on the I-20"
-      },
-      "correct_answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "A brand-new visa interview immediately"
+        },
+        {
+          "key": "B",
+          "text": "A letter from every professor"
+        },
+        {
+          "key": "C",
+          "text": "Only the travel signature on the I-20"
+        },
+        {
+          "key": "D",
+          "text": "Permission from Campus Safety"
+        }
+      ],
+      "correct_answer": "C",
       "explanation": "With a valid visa stamp, he only needs the travel signature on the I-20.",
-      "commonMistake": "Choosing A—she says a new stamp is not required if the current one is valid."
+      "commonMistake": "Choosing A—she says a new stamp is not required if the current one is valid.",
+      "correctKey": "C",
+      "correctAnswer": "Only the travel signature on the I-20"
     },
     {
       "number": 3,
       "question_type": "Detail",
       "narrator_text": "What must he do about travel dates in the portal?",
-      "options": {
-        "A": "Nothing—the office enters dates automatically",
-        "B": "Only report dates after he comes back",
-        "C": "Delete his enrollment record while traveling",
-        "D": "Enter departure and return dates before leaving, and update within five days if the return flight changes"
-      },
+      "options": [
+        {
+          "key": "A",
+          "text": "Delete his enrollment record while traveling"
+        },
+        {
+          "key": "B",
+          "text": "Only report dates after he comes back"
+        },
+        {
+          "key": "C",
+          "text": "Nothing—the office enters dates automatically"
+        },
+        {
+          "key": "D",
+          "text": "Enter departure and return dates before leaving, and update within five days if the return flight changes"
+        }
+      ],
       "correct_answer": "D",
       "explanation": "Enter dates before departure; update within five days of landing if the return flight changes.",
-      "commonMistake": "Choosing B—he must enter dates before leaving, not only after return."
+      "commonMistake": "Choosing B—he must enter dates before leaving, not only after return.",
+      "correctKey": "D",
+      "correctAnswer": "Enter departure and return dates before leaving, and update within five days if the return flight changes"
     },
     {
       "number": 4,
       "question_type": "Detail",
       "narrator_text": "What should he carry at the airport?",
-      "options": {
-        "A": "Only a digital photo of his student ID",
-        "B": "His dorm room key and laundry card",
-        "C": "Cash for a new visa stamp on arrival",
-        "D": "Passport, I-20, and proof of enrollment on paper, plus digital copies"
-      },
-      "correct_answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "Only a digital photo of his student ID"
+        },
+        {
+          "key": "B",
+          "text": "Passport, I-20, and proof of enrollment on paper, plus digital copies"
+        },
+        {
+          "key": "C",
+          "text": "His dorm room key and laundry card"
+        },
+        {
+          "key": "D",
+          "text": "Cash for a new visa stamp on arrival"
+        }
+      ],
+      "correct_answer": "B",
       "explanation": "Passport, I-20, and paper proof of enrollment; digital copies are backup.",
-      "commonMistake": "Choosing A—officers usually want paper documents."
+      "commonMistake": "Choosing A—officers usually want paper documents.",
+      "correctKey": "B",
+      "correctAnswer": "Passport, I-20, and proof of enrollment on paper, plus digital copies"
     }
   ]
 }

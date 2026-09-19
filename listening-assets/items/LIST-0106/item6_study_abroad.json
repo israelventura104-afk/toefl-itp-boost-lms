@@ -59,53 +59,109 @@
       "number": 1,
       "question_type": "Main Idea",
       "narrator_text": "What is the main topic of the conversation?",
-      "options": {
-        "A": "The cost of studying abroad",
-        "B": "How the student's credits will transfer for a study abroad program",
-        "C": "The student's housing options in Spain",
-        "D": "Requirements to graduate early"
-      },
-      "correct_answer": "B",
-      "explanation": "The student's primary concern throughout is whether and how his credits will transfer."
+      "options": [
+        {
+          "key": "A",
+          "text": "The cost of studying abroad"
+        },
+        {
+          "key": "B",
+          "text": "The student's housing options in Spain"
+        },
+        {
+          "key": "C",
+          "text": "How the student's credits will transfer for a study abroad program"
+        },
+        {
+          "key": "D",
+          "text": "Requirements to graduate early"
+        }
+      ],
+      "correct_answer": "C",
+      "explanation": "The student's primary concern throughout is whether and how his credits will transfer.",
+      "correctKey": "C",
+      "correctAnswer": "How the student's credits will transfer for a study abroad program"
     },
     {
       "number": 2,
       "question_type": "Detail",
       "narrator_text": "What must the student do if he wants to take a course not on the approved list?",
-      "options": {
-        "A": "Wait until he returns to petition for credit",
-        "B": "Get department approval before leaving",
-        "C": "Take the course as a non-credit elective",
-        "D": "Switch to a different exchange program"
-      },
-      "correct_answer": "B",
-      "explanation": "The advisor explains the petition must be approved by the department chair before he leaves."
+      "options": [
+        {
+          "key": "A",
+          "text": "Wait until he returns to petition for credit"
+        },
+        {
+          "key": "B",
+          "text": "Take the course as a non-credit elective"
+        },
+        {
+          "key": "C",
+          "text": "Switch to a different exchange program"
+        },
+        {
+          "key": "D",
+          "text": "Get department approval before leaving"
+        }
+      ],
+      "correct_answer": "D",
+      "explanation": "The advisor explains the petition must be approved by the department chair before he leaves.",
+      "correctKey": "D",
+      "correctAnswer": "Get department approval before leaving"
     },
     {
       "number": 3,
       "question_type": "Detail",
       "narrator_text": "According to the advisor, what is a challenge for engineering majors in this particular program?",
-      "options": {
-        "A": "There are no engineering courses available at all",
-        "B": "The program is mostly focused on humanities courses",
-        "C": "Engineering students are not eligible to apply",
-        "D": "The engineering courses do not count toward graduation"
-      },
+      "options": [
+        {
+          "key": "A",
+          "text": "The engineering courses do not count toward graduation"
+        },
+        {
+          "key": "B",
+          "text": "The program is mostly focused on humanities courses"
+        },
+        {
+          "key": "C",
+          "text": "There are no engineering courses available at all"
+        },
+        {
+          "key": "D",
+          "text": "Engineering students are not eligible to apply"
+        }
+      ],
       "correct_answer": "B",
-      "explanation": "The advisor notes the program leans toward humanities, though some engineering electives exist."
+      "explanation": "The advisor notes the program leans toward humanities, though some engineering electives exist.",
+      "correctKey": "B",
+      "correctAnswer": "The program is mostly focused on humanities courses"
     },
     {
       "number": 4,
       "question_type": "Inference",
       "narrator_text": "What can be inferred about the petition process?",
-      "options": {
-        "A": "It is usually rejected for engineering students",
-        "B": "It requires more time than the general application",
-        "C": "It is not necessary if the student has good grades",
-        "D": "It must be submitted after returning from Spain"
-      },
-      "correct_answer": "B",
-      "explanation": "The advisor recommends submitting the petition two weeks before the application deadline because department approval takes time."
+      "options": [
+        {
+          "key": "A",
+          "text": "It requires more time than the general application"
+        },
+        {
+          "key": "B",
+          "text": "It must be submitted after returning from Spain"
+        },
+        {
+          "key": "C",
+          "text": "It is not necessary if the student has good grades"
+        },
+        {
+          "key": "D",
+          "text": "It is usually rejected for engineering students"
+        }
+      ],
+      "correct_answer": "A",
+      "explanation": "The advisor recommends submitting the petition two weeks before the application deadline because department approval takes time.",
+      "correctKey": "A",
+      "correctAnswer": "It requires more time than the general application"
     }
   ]
 }

@@ -68,57 +68,113 @@
       "number": 1,
       "question_type": "Main Idea",
       "narrator_text": "What is the talk mainly about?",
-      "options": {
-        "A": "How Roman aqueducts brought water to cities",
-        "B": "How Romans invented electric pumps",
-        "C": "Why baths were banned in Rome",
-        "D": "How to dig modern subway tunnels"
-      },
-      "correct_answer": "A",
+      "options": [
+        {
+          "key": "A",
+          "text": "How to dig modern subway tunnels"
+        },
+        {
+          "key": "B",
+          "text": "How Romans invented electric pumps"
+        },
+        {
+          "key": "C",
+          "text": "Why baths were banned in Rome"
+        },
+        {
+          "key": "D",
+          "text": "How Roman aqueducts brought water to cities"
+        }
+      ],
+      "correct_answer": "D",
       "explanation": "The professor explains aqueduct design, gravity flow, and city water use.",
-      "commonMistake": "Choosing B—he says gravity moved water without pumps."
+      "commonMistake": "Choosing B—he says gravity moved water without pumps.",
+      "correctKey": "D",
+      "correctAnswer": "How Roman aqueducts brought water to cities"
     },
     {
       "number": 2,
       "question_type": "Detail",
       "narrator_text": "According to the professor, why did most of an aqueduct run underground or in covered trenches?",
-      "options": {
-        "A": "To keep the water clean and cool",
-        "B": "To hide treasure from enemies",
-        "C": "Because Romans disliked open sky",
-        "D": "To make the water salty"
-      },
-      "correct_answer": "A",
+      "options": [
+        {
+          "key": "A",
+          "text": "To make the water salty"
+        },
+        {
+          "key": "B",
+          "text": "To keep the water clean and cool"
+        },
+        {
+          "key": "C",
+          "text": "Because Romans disliked open sky"
+        },
+        {
+          "key": "D",
+          "text": "To hide treasure from enemies"
+        }
+      ],
+      "correct_answer": "B",
       "explanation": "He says covered routes kept water clean and cool.",
-      "commonMistake": "Choosing B—not mentioned."
+      "commonMistake": "Choosing B—not mentioned.",
+      "correctKey": "B",
+      "correctAnswer": "To keep the water clean and cool"
     },
     {
       "number": 3,
       "question_type": "Detail",
       "narrator_text": "What made the water move through the aqueduct?",
-      "options": {
-        "A": "A slight downhill grade using gravity",
-        "B": "Teams of horses pulling carts of water",
-        "C": "Steam engines under every arch",
-        "D": "Ocean tides pushing inland"
-      },
+      "options": [
+        {
+          "key": "A",
+          "text": "A slight downhill grade using gravity"
+        },
+        {
+          "key": "B",
+          "text": "Teams of horses pulling carts of water"
+        },
+        {
+          "key": "C",
+          "text": "Steam engines under every arch"
+        },
+        {
+          "key": "D",
+          "text": "Ocean tides pushing inland"
+        }
+      ],
       "correct_answer": "A",
       "explanation": "Gravity and a gentle slope moved water for kilometers without pumps.",
-      "commonMistake": "Choosing C—modern technology not used."
+      "commonMistake": "Choosing C—modern technology not used.",
+      "correctKey": "A",
+      "correctAnswer": "A slight downhill grade using gravity"
     },
     {
       "number": 4,
       "question_type": "Inference",
       "narrator_text": "What does the professor imply about the arched bridges people photograph?",
-      "options": {
-        "A": "They were the entire aqueduct system by themselves",
-        "B": "They were built only for decoration in theaters",
-        "C": "They never carried water at all",
-        "D": "They were only the visible part of a much longer water network"
-      },
-      "correct_answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "They never carried water at all"
+        },
+        {
+          "key": "B",
+          "text": "They were built only for decoration in theaters"
+        },
+        {
+          "key": "C",
+          "text": "They were only the visible part of a much longer water network"
+        },
+        {
+          "key": "D",
+          "text": "They were the entire aqueduct system by themselves"
+        }
+      ],
+      "correct_answer": "C",
       "explanation": "He says the arches were one visible piece of a much longer network.",
-      "commonMistake": "Choosing A—he stresses the longer underground route."
+      "commonMistake": "Choosing A—he stresses the longer underground route.",
+      "correctKey": "C",
+      "correctAnswer": "They were only the visible part of a much longer water network"
     }
   ]
 }

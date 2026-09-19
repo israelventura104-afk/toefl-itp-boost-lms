@@ -95,57 +95,113 @@
       "number": 1,
       "question_type": "Main Idea",
       "narrator_text": "What do the speakers mainly discuss?",
-      "options": {
-        "A": "Work opportunities for students",
-        "B": "The professor's work at the museum",
-        "C": "The man's qualifications for a job",
-        "D": "Possible careers for the man after he graduates"
-      },
-      "correct_answer": "A",
+      "options": [
+        {
+          "key": "A",
+          "text": "Possible careers for the man after he graduates"
+        },
+        {
+          "key": "B",
+          "text": "The man's qualifications for a job"
+        },
+        {
+          "key": "C",
+          "text": "The professor's work at the museum"
+        },
+        {
+          "key": "D",
+          "text": "Work opportunities for students"
+        }
+      ],
+      "correct_answer": "D",
       "explanation": "They discuss the filled museum internship and an alternative library exhibition volunteer role for experience.",
-      "commonMistake": "Choosing D because he mentions museum work after graduation — the talk centers on getting experience now."
+      "commonMistake": "Choosing D because he mentions museum work after graduation — the talk centers on getting experience now.",
+      "correctKey": "D",
+      "correctAnswer": "Work opportunities for students"
     },
     {
       "number": 2,
       "question_type": "Detail",
       "narrator_text": "Why is the student disappointed?",
-      "options": {
-        "A": "He has to quit his job at the library.",
-        "B": "The professor will not allow him to take her class.",
-        "C": "The university recently closed its museum.",
-        "D": "The internship he wants is unavailable."
-      },
-      "correct_answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "The internship he wants is unavailable."
+        },
+        {
+          "key": "B",
+          "text": "He has to quit his job at the library."
+        },
+        {
+          "key": "C",
+          "text": "The university recently closed its museum."
+        },
+        {
+          "key": "D",
+          "text": "The professor will not allow him to take her class."
+        }
+      ],
+      "correct_answer": "A",
       "explanation": "Museum internship positions are all filled for this year; the website announcement was outdated.",
-      "commonMistake": "Choosing C because 'museum' is repeated — the museum is open; the internship slots are full."
+      "commonMistake": "Choosing C because 'museum' is repeated — the museum is open; the internship slots are full.",
+      "correctKey": "A",
+      "correctAnswer": "The internship he wants is unavailable."
     },
     {
       "number": 3,
       "question_type": "Detail",
       "narrator_text": "What will be displayed in the exhibition at the university library?",
-      "options": {
-        "A": "Rare books",
-        "B": "Paintings",
-        "C": "Photographs",
-        "D": "Historical reports"
-      },
+      "options": [
+        {
+          "key": "A",
+          "text": "Historical reports"
+        },
+        {
+          "key": "B",
+          "text": "Rare books"
+        },
+        {
+          "key": "C",
+          "text": "Photographs"
+        },
+        {
+          "key": "D",
+          "text": "Paintings"
+        }
+      ],
       "correct_answer": "C",
       "explanation": "The library is planning an exhibition of photographs documenting university history.",
-      "commonMistake": "Choosing A or D because archives/history are mentioned — the display itself is photographs."
+      "commonMistake": "Choosing A or D because archives/history are mentioned — the display itself is photographs.",
+      "correctKey": "C",
+      "correctAnswer": "Photographs"
     },
     {
       "number": 4,
       "question_type": "Inference",
       "narrator_text": "What can be inferred about Emily Peterson?",
-      "options": {
-        "A": "She will select the library's volunteers.",
-        "B": "She studied art with the student's professor.",
-        "C": "She used to work at the art museum.",
-        "D": "She joined the library staff recently."
-      },
-      "correct_answer": "A",
+      "options": [
+        {
+          "key": "A",
+          "text": "She joined the library staff recently."
+        },
+        {
+          "key": "B",
+          "text": "She will select the library's volunteers."
+        },
+        {
+          "key": "C",
+          "text": "She studied art with the student's professor."
+        },
+        {
+          "key": "D",
+          "text": "She used to work at the art museum."
+        }
+      ],
+      "correct_answer": "B",
       "explanation": "She is the library's exhibitions director and will be interviewing applicants for the volunteer roles.",
-      "commonMistake": "Choosing C because the student wanted museum work — Emily is at the library, not described as ex-museum staff."
+      "commonMistake": "Choosing C because the student wanted museum work — Emily is at the library, not described as ex-museum staff.",
+      "correctKey": "B",
+      "correctAnswer": "She will select the library's volunteers."
     }
   ]
 }

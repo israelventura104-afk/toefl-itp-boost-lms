@@ -68,57 +68,113 @@
       "number": 1,
       "question_type": "Main Idea",
       "narrator_text": "What is the talk mainly about?",
-      "options": {
-        "A": "How to build artificial beaches for tourists",
-        "B": "Why fish prefer cold rivers",
-        "C": "How satellites photograph cities",
-        "D": "Coral bleaching and how ocean warming threatens reefs"
-      },
-      "correct_answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "How satellites photograph cities"
+        },
+        {
+          "key": "B",
+          "text": "Why fish prefer cold rivers"
+        },
+        {
+          "key": "C",
+          "text": "Coral bleaching and how ocean warming threatens reefs"
+        },
+        {
+          "key": "D",
+          "text": "How to build artificial beaches for tourists"
+        }
+      ],
+      "correct_answer": "C",
       "explanation": "The professor explains bleaching, warm water stress, and why reef health signals climate impacts.",
-      "commonMistake": "Choosing C—satellites are only mentioned as a monitoring tool."
+      "commonMistake": "Choosing C—satellites are only mentioned as a monitoring tool.",
+      "correctKey": "C",
+      "correctAnswer": "Coral bleaching and how ocean warming threatens reefs"
     },
     {
       "number": 2,
       "question_type": "Detail",
       "narrator_text": "According to the professor, why do many corals need algae?",
-      "options": {
-        "A": "The algae share energy from photosynthesis with the coral",
-        "B": "The algae scare away all sharks",
-        "C": "The algae turn seawater into fresh water",
-        "D": "The algae build wooden boats"
-      },
-      "correct_answer": "A",
+      "options": [
+        {
+          "key": "A",
+          "text": "The algae build wooden boats"
+        },
+        {
+          "key": "B",
+          "text": "The algae turn seawater into fresh water"
+        },
+        {
+          "key": "C",
+          "text": "The algae scare away all sharks"
+        },
+        {
+          "key": "D",
+          "text": "The algae share energy from photosynthesis with the coral"
+        }
+      ],
+      "correct_answer": "D",
       "explanation": "He says algae live inside coral tissues and share energy from photosynthesis.",
-      "commonMistake": "Choosing B or C—those are not mentioned."
+      "commonMistake": "Choosing B or C—those are not mentioned.",
+      "correctKey": "D",
+      "correctAnswer": "The algae share energy from photosynthesis with the coral"
     },
     {
       "number": 3,
       "question_type": "Detail",
       "narrator_text": "What happens during bleaching?",
-      "options": {
-        "A": "Coral loses its algae, turns pale, and may starve",
-        "B": "Coral grows faster than ever",
-        "C": "Ocean water freezes around the reef",
-        "D": "Fish paint the coral with new colors"
-      },
+      "options": [
+        {
+          "key": "A",
+          "text": "Coral loses its algae, turns pale, and may starve"
+        },
+        {
+          "key": "B",
+          "text": "Coral grows faster than ever"
+        },
+        {
+          "key": "C",
+          "text": "Fish paint the coral with new colors"
+        },
+        {
+          "key": "D",
+          "text": "Ocean water freezes around the reef"
+        }
+      ],
       "correct_answer": "A",
       "explanation": "Bleaching is when coral loses colorful algae, turns pale, and can starve.",
-      "commonMistake": "Choosing B—bleaching is harmful, not helpful growth."
+      "commonMistake": "Choosing B—bleaching is harmful, not helpful growth.",
+      "correctKey": "A",
+      "correctAnswer": "Coral loses its algae, turns pale, and may starve"
     },
     {
       "number": 4,
       "question_type": "Inference",
       "narrator_text": "What does the professor imply about protecting reefs?",
-      "options": {
-        "A": "Only tourism matters; climate action does not",
-        "B": "Reefs need no protection if satellites exist",
-        "C": "Divers should stop visiting oceans entirely",
-        "D": "Both global emissions cuts and local reductions in pollution and overfishing matter"
-      },
-      "correct_answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "Only tourism matters; climate action does not"
+        },
+        {
+          "key": "B",
+          "text": "Both global emissions cuts and local reductions in pollution and overfishing matter"
+        },
+        {
+          "key": "C",
+          "text": "Reefs need no protection if satellites exist"
+        },
+        {
+          "key": "D",
+          "text": "Divers should stop visiting oceans entirely"
+        }
+      ],
+      "correct_answer": "B",
       "explanation": "He links greenhouse gas cuts with reducing local stress from pollution and overfishing.",
-      "commonMistake": "Choosing A—he treats climate and local stress together."
+      "commonMistake": "Choosing A—he treats climate and local stress together.",
+      "correctKey": "B",
+      "correctAnswer": "Both global emissions cuts and local reductions in pollution and overfishing matter"
     }
   ]
 }

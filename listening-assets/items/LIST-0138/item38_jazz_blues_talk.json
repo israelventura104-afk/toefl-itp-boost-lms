@@ -68,57 +68,113 @@
       "number": 1,
       "question_type": "Main Idea",
       "narrator_text": "What is the talk mainly about?",
-      "options": {
-        "A": "How to tune a piano for classical exams",
-        "B": "Why brass instruments were banned in New Orleans",
-        "C": "How blues traditions helped shape early jazz",
-        "D": "How to write pop song lyrics"
-      },
-      "correct_answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "How to write pop song lyrics"
+        },
+        {
+          "key": "B",
+          "text": "How to tune a piano for classical exams"
+        },
+        {
+          "key": "C",
+          "text": "Why brass instruments were banned in New Orleans"
+        },
+        {
+          "key": "D",
+          "text": "How blues traditions helped shape early jazz"
+        }
+      ],
+      "correct_answer": "D",
       "explanation": "She traces jazz roots to blues and New Orleans mixing of styles.",
-      "commonMistake": "Choosing B—not claimed."
+      "commonMistake": "Choosing B—not claimed.",
+      "correctKey": "D",
+      "correctAnswer": "How blues traditions helped shape early jazz"
     },
     {
       "number": 2,
       "question_type": "Detail",
       "narrator_text": "What does the professor say blues often uses?",
-      "options": {
-        "A": "Only strict military marches",
-        "B": "Silent films without sound",
-        "C": "A twelve-bar structure and blue notes",
-        "D": "Orchestra pit elevators"
-      },
-      "correct_answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "A twelve-bar structure and blue notes"
+        },
+        {
+          "key": "B",
+          "text": "Orchestra pit elevators"
+        },
+        {
+          "key": "C",
+          "text": "Only strict military marches"
+        },
+        {
+          "key": "D",
+          "text": "Silent films without sound"
+        }
+      ],
+      "correct_answer": "A",
       "explanation": "Blues often uses twelve-bar structure and blue notes.",
-      "commonMistake": "Choosing A—not blues."
+      "commonMistake": "Choosing A—not blues.",
+      "correctKey": "A",
+      "correctAnswer": "A twelve-bar structure and blue notes"
     },
     {
       "number": 3,
       "question_type": "Detail",
       "narrator_text": "According to the talk, what became central in early jazz?",
-      "options": {
-        "A": "Reading every note exactly with no variation",
-        "B": "Replacing all instruments with computers",
-        "C": "Improvisation within a shared form",
-        "D": "Singing only in Latin"
-      },
-      "correct_answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "Singing only in Latin"
+        },
+        {
+          "key": "B",
+          "text": "Improvisation within a shared form"
+        },
+        {
+          "key": "C",
+          "text": "Reading every note exactly with no variation"
+        },
+        {
+          "key": "D",
+          "text": "Replacing all instruments with computers"
+        }
+      ],
+      "correct_answer": "B",
       "explanation": "Improvisation on the spot while staying within a shared form.",
-      "commonMistake": "Choosing A—opposite of improvisation."
+      "commonMistake": "Choosing A—opposite of improvisation.",
+      "correctKey": "B",
+      "correctAnswer": "Improvisation within a shared form"
     },
     {
       "number": 4,
       "question_type": "Inference",
       "narrator_text": "What does the professor imply about jazz today?",
-      "options": {
-        "A": "Jazz has no connection to earlier music",
-        "B": "Recordings destroyed all blues influence",
-        "C": "Blues feeling can still be heard in many jazz solos",
-        "D": "Only pianos matter in jazz history"
-      },
+      "options": [
+        {
+          "key": "A",
+          "text": "Jazz has no connection to earlier music"
+        },
+        {
+          "key": "B",
+          "text": "Only pianos matter in jazz history"
+        },
+        {
+          "key": "C",
+          "text": "Blues feeling can still be heard in many jazz solos"
+        },
+        {
+          "key": "D",
+          "text": "Recordings destroyed all blues influence"
+        }
+      ],
       "correct_answer": "C",
       "explanation": "She says blues sensibility can still be heard in jazz solos today.",
-      "commonMistake": "Choosing A—contradicts her thesis."
+      "commonMistake": "Choosing A—contradicts her thesis.",
+      "correctKey": "C",
+      "correctAnswer": "Blues feeling can still be heard in many jazz solos"
     }
   ]
 }

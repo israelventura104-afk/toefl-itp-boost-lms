@@ -59,53 +59,109 @@
       "number": 1,
       "question_type": "Main Idea",
       "narrator_text": "What is the main problem being discussed?",
-      "options": {
-        "A": "The man wants to change roommates",
-        "B": "The woman is being disturbed by the man's morning routine",
-        "C": "The man is upset about noise from the woman",
-        "D": "Both students want to move to a different dorm"
-      },
+      "options": [
+        {
+          "key": "A",
+          "text": "The man wants to change roommates"
+        },
+        {
+          "key": "B",
+          "text": "The woman is being disturbed by the man's morning routine"
+        },
+        {
+          "key": "C",
+          "text": "The man is upset about noise from the woman"
+        },
+        {
+          "key": "D",
+          "text": "Both students want to move to a different dorm"
+        }
+      ],
       "correct_answer": "B",
-      "explanation": "The woman explains she is losing sleep because of the man's alarm and the lights he turns on."
+      "explanation": "The woman explains she is losing sleep because of the man's alarm and the lights he turns on.",
+      "correctKey": "B",
+      "correctAnswer": "The woman is being disturbed by the man's morning routine"
     },
     {
       "number": 2,
       "question_type": "Detail",
       "narrator_text": "Why does the man wake up early?",
-      "options": {
-        "A": "He works a morning job",
-        "B": "He has swim practice before class",
-        "C": "He prefers to study early",
-        "D": "He has trouble sleeping"
-      },
-      "correct_answer": "B",
-      "explanation": "He states he has swim practice before class and sets his alarm early to prepare."
+      "options": [
+        {
+          "key": "A",
+          "text": "He has swim practice before class"
+        },
+        {
+          "key": "B",
+          "text": "He prefers to study early"
+        },
+        {
+          "key": "C",
+          "text": "He works a morning job"
+        },
+        {
+          "key": "D",
+          "text": "He has trouble sleeping"
+        }
+      ],
+      "correct_answer": "A",
+      "explanation": "He states he has swim practice before class and sets his alarm early to prepare.",
+      "correctKey": "A",
+      "correctAnswer": "He has swim practice before class"
     },
     {
       "number": 3,
       "question_type": "Detail",
       "narrator_text": "What two changes does the man agree to make?",
-      "options": {
-        "A": "Move his alarm later and study elsewhere",
-        "B": "Put his phone on vibrate and avoid turning on the lights",
-        "C": "Change his class schedule and buy a lamp",
-        "D": "Talk to the resident advisor and switch beds"
-      },
-      "correct_answer": "B",
-      "explanation": "He agrees to switch the alarm to vibrate and to avoid using the overhead light while getting dressed."
+      "options": [
+        {
+          "key": "A",
+          "text": "Change his class schedule and buy a lamp"
+        },
+        {
+          "key": "B",
+          "text": "Move his alarm later and study elsewhere"
+        },
+        {
+          "key": "C",
+          "text": "Talk to the resident advisor and switch beds"
+        },
+        {
+          "key": "D",
+          "text": "Put his phone on vibrate and avoid turning on the lights"
+        }
+      ],
+      "correct_answer": "D",
+      "explanation": "He agrees to switch the alarm to vibrate and to avoid using the overhead light while getting dressed.",
+      "correctKey": "D",
+      "correctAnswer": "Put his phone on vibrate and avoid turning on the lights"
     },
     {
       "number": 4,
       "question_type": "Inference",
       "narrator_text": "What can be inferred about the woman's attitude toward the situation?",
-      "options": {
-        "A": "She is angry and wants to end the roommate arrangement immediately",
-        "B": "She would rather avoid conflict altogether and say nothing",
-        "C": "She prefers addressing the issue directly before considering other options",
-        "D": "She thinks the man is doing this on purpose"
-      },
+      "options": [
+        {
+          "key": "A",
+          "text": "She would rather avoid conflict altogether and say nothing"
+        },
+        {
+          "key": "B",
+          "text": "She thinks the man is doing this on purpose"
+        },
+        {
+          "key": "C",
+          "text": "She prefers addressing the issue directly before considering other options"
+        },
+        {
+          "key": "D",
+          "text": "She is angry and wants to end the roommate arrangement immediately"
+        }
+      ],
       "correct_answer": "C",
-      "explanation": "She says she almost asked to switch rooms but decided to try working it out directly first."
+      "explanation": "She says she almost asked to switch rooms but decided to try working it out directly first.",
+      "correctKey": "C",
+      "correctAnswer": "She prefers addressing the issue directly before considering other options"
     }
   ]
 }

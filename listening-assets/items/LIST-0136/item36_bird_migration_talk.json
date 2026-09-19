@@ -68,57 +68,113 @@
       "number": 1,
       "question_type": "Main Idea",
       "narrator_text": "What is the talk mainly about?",
-      "options": {
-        "A": "How migratory birds navigate over long distances",
-        "B": "How to build birdhouses for city parks",
-        "C": "Why birds never leave their nests",
-        "D": "How satellites photograph oceans"
-      },
-      "correct_answer": "A",
+      "options": [
+        {
+          "key": "A",
+          "text": "How to build birdhouses for city parks"
+        },
+        {
+          "key": "B",
+          "text": "Why birds never leave their nests"
+        },
+        {
+          "key": "C",
+          "text": "How migratory birds navigate over long distances"
+        },
+        {
+          "key": "D",
+          "text": "How satellites photograph oceans"
+        }
+      ],
+      "correct_answer": "C",
       "explanation": "The professor explains multiple navigation cues birds use during migration.",
-      "commonMistake": "Choosing B—unrelated practical tip."
+      "commonMistake": "Choosing B—unrelated practical tip.",
+      "correctKey": "C",
+      "correctAnswer": "How migratory birds navigate over long distances"
     },
     {
       "number": 2,
       "question_type": "Detail",
       "narrator_text": "According to the professor, what can serve as a compass for daytime and nighttime flights?",
-      "options": {
-        "A": "Traffic lights in cities",
-        "B": "Human cell phone towers only",
-        "C": "The position of the sun and stars",
-        "D": "The sound of ocean waves alone"
-      },
-      "correct_answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "Traffic lights in cities"
+        },
+        {
+          "key": "B",
+          "text": "The position of the sun and stars"
+        },
+        {
+          "key": "C",
+          "text": "The sound of ocean waves alone"
+        },
+        {
+          "key": "D",
+          "text": "Human cell phone towers only"
+        }
+      ],
+      "correct_answer": "B",
       "explanation": "She says sun and stars can serve as a compass day and night.",
-      "commonMistake": "Choosing B—not mentioned as the compass."
+      "commonMistake": "Choosing B—not mentioned as the compass.",
+      "correctKey": "B",
+      "correctAnswer": "The position of the sun and stars"
     },
     {
       "number": 3,
       "question_type": "Detail",
       "narrator_text": "What does she say many birds can sense?",
-      "options": {
-        "A": "Radio stations in other countries",
-        "B": "The color of underwater coral",
-        "C": "Earth’s magnetic field",
-        "D": "Train schedules"
-      },
-      "correct_answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "Earth’s magnetic field"
+        },
+        {
+          "key": "B",
+          "text": "The color of underwater coral"
+        },
+        {
+          "key": "C",
+          "text": "Radio stations in other countries"
+        },
+        {
+          "key": "D",
+          "text": "Train schedules"
+        }
+      ],
+      "correct_answer": "A",
       "explanation": "Many birds sense Earth’s magnetic field for direction when skies are cloudy.",
-      "commonMistake": "Choosing A or D—not mentioned."
+      "commonMistake": "Choosing A or D—not mentioned.",
+      "correctKey": "A",
+      "correctAnswer": "Earth’s magnetic field"
     },
     {
       "number": 4,
       "question_type": "Inference",
       "narrator_text": "What does the professor imply about bird navigation?",
-      "options": {
-        "A": "Birds rely on only one cue for every trip",
-        "B": "Young birds never learn from parents",
-        "C": "City lights improve navigation for all species",
-        "D": "Migration uses a combination of celestial, magnetic, and landscape cues"
-      },
+      "options": [
+        {
+          "key": "A",
+          "text": "Birds rely on only one cue for every trip"
+        },
+        {
+          "key": "B",
+          "text": "Young birds never learn from parents"
+        },
+        {
+          "key": "C",
+          "text": "City lights improve navigation for all species"
+        },
+        {
+          "key": "D",
+          "text": "Migration uses a combination of celestial, magnetic, and landscape cues"
+        }
+      ],
       "correct_answer": "D",
       "explanation": "She calls migration a toolkit of celestial, magnetic, and landscape cues.",
-      "commonMistake": "Choosing A—she emphasizes several cues at once."
+      "commonMistake": "Choosing A—she emphasizes several cues at once.",
+      "correctKey": "D",
+      "correctAnswer": "Migration uses a combination of celestial, magnetic, and landscape cues"
     }
   ]
 }

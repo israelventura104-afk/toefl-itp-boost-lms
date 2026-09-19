@@ -71,57 +71,113 @@
       "number": 1,
       "question_type": "Main Idea",
       "narrator_text": "What is the conversation mainly about?",
-      "options": {
-        "A": "Moving the student to a new residence hall",
-        "B": "Buying a new washing machine for the building",
-        "C": "Solving a laundry-card problem in the dorm",
-        "D": "Scheduling a fire drill for the whole campus"
-      },
+      "options": [
+        {
+          "key": "A",
+          "text": "Buying a new washing machine for the building"
+        },
+        {
+          "key": "B",
+          "text": "Moving the student to a new residence hall"
+        },
+        {
+          "key": "C",
+          "text": "Solving a laundry-card problem in the dorm"
+        },
+        {
+          "key": "D",
+          "text": "Scheduling a fire drill for the whole campus"
+        }
+      ],
       "correct_answer": "C",
       "explanation": "Her laundry card readers fail on floor two; he redirects her and explains refunds and timing.",
-      "commonMistake": "Choosing D because a fire-panel test is mentioned—that only explains a locked stairwell."
+      "commonMistake": "Choosing D because a fire-panel test is mentioned—that only explains a locked stairwell.",
+      "correctKey": "C",
+      "correctAnswer": "Solving a laundry-card problem in the dorm"
     },
     {
       "number": 2,
       "question_type": "Detail",
       "narrator_text": "Where can the student do laundry right now?",
-      "options": {
-        "A": "Only in the student union basement",
-        "B": "On the second floor using machines two and three",
-        "C": "On the fourth floor",
-        "D": "At the residence hall desk with a staff washer"
-      },
-      "correct_answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "On the second floor using machines two and three"
+        },
+        {
+          "key": "B",
+          "text": "Only in the student union basement"
+        },
+        {
+          "key": "C",
+          "text": "At the residence hall desk with a staff washer"
+        },
+        {
+          "key": "D",
+          "text": "On the fourth floor"
+        }
+      ],
+      "correct_answer": "D",
       "explanation": "He says the fourth-floor machines are working.",
-      "commonMistake": "Choosing B—those second-floor readers are specifically offline."
+      "commonMistake": "Choosing B—those second-floor readers are specifically offline.",
+      "correctKey": "D",
+      "correctAnswer": "On the fourth floor"
     },
     {
       "number": 3,
       "question_type": "Detail",
       "narrator_text": "What should she do if a machine takes her card but does not start?",
-      "options": {
-        "A": "Swipe the card a second time immediately",
-        "B": "Kick the machine to reset the reader",
-        "C": "Return to the desk for a cycle refund and not swipe again",
-        "D": "Add more money online before trying again"
-      },
-      "correct_answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "Kick the machine to reset the reader"
+        },
+        {
+          "key": "B",
+          "text": "Return to the desk for a cycle refund and not swipe again"
+        },
+        {
+          "key": "C",
+          "text": "Add more money online before trying again"
+        },
+        {
+          "key": "D",
+          "text": "Swipe the card a second time immediately"
+        }
+      ],
+      "correct_answer": "B",
       "explanation": "He tells her not to swipe again and to come back for a refund of the cycle.",
-      "commonMistake": "Choosing A or D—balance is fine; double-swiping is what he warns against."
+      "commonMistake": "Choosing A or D—balance is fine; double-swiping is what he warns against.",
+      "correctKey": "B",
+      "correctAnswer": "Return to the desk for a cycle refund and not swipe again"
     },
     {
       "number": 4,
       "question_type": "Detail",
       "narrator_text": "What must she leave in order to borrow a laundry basket?",
-      "options": {
-        "A": "Her room key",
-        "B": "A cash deposit of ten dollars",
-        "C": "Her laundry card",
-        "D": "Her student ID"
-      },
-      "correct_answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "Her student ID"
+        },
+        {
+          "key": "B",
+          "text": "Her laundry card"
+        },
+        {
+          "key": "C",
+          "text": "Her room key"
+        },
+        {
+          "key": "D",
+          "text": "A cash deposit of ten dollars"
+        }
+      ],
+      "correct_answer": "A",
       "explanation": "Spare baskets require leaving a student ID and returning the basket tonight.",
-      "commonMistake": "Choosing C because the talk is about laundry cards—the deposit item is the student ID."
+      "commonMistake": "Choosing C because the talk is about laundry cards—the deposit item is the student ID.",
+      "correctKey": "A",
+      "correctAnswer": "Her student ID"
     }
   ]
 }

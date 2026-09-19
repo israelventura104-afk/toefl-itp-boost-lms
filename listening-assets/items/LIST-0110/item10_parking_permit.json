@@ -59,53 +59,109 @@
       "number": 1,
       "question_type": "Main Idea",
       "narrator_text": "What is the student's main concern?",
-      "options": {
-        "A": "He lost his parking permit",
-        "B": "He received a ticket despite having a valid permit for a different lot",
-        "C": "His car was towed from campus",
-        "D": "He wants to upgrade his parking permit"
-      },
+      "options": [
+        {
+          "key": "A",
+          "text": "He lost his parking permit"
+        },
+        {
+          "key": "B",
+          "text": "He received a ticket despite having a valid permit for a different lot"
+        },
+        {
+          "key": "C",
+          "text": "He wants to upgrade his parking permit"
+        },
+        {
+          "key": "D",
+          "text": "His car was towed from campus"
+        }
+      ],
       "correct_answer": "B",
-      "explanation": "He explains he was ticketed in the faculty lot even though he has a valid permit, because the north lot was full."
+      "explanation": "He explains he was ticketed in the faculty lot even though he has a valid permit, because the north lot was full.",
+      "correctKey": "B",
+      "correctAnswer": "He received a ticket despite having a valid permit for a different lot"
     },
     {
       "number": 2,
       "question_type": "Detail",
       "narrator_text": "Why is the ticket considered valid according to the staff member?",
-      "options": {
-        "A": "The student's permit had expired",
-        "B": "Permits are only valid for their assigned lot",
-        "C": "The student parked without any permit",
-        "D": "The faculty lot requires a special pass at all times"
-      },
-      "correct_answer": "B",
-      "explanation": "She explains permits are restricted to the specific lot they are assigned to."
+      "options": [
+        {
+          "key": "A",
+          "text": "The student parked without any permit"
+        },
+        {
+          "key": "B",
+          "text": "The student's permit had expired"
+        },
+        {
+          "key": "C",
+          "text": "The faculty lot requires a special pass at all times"
+        },
+        {
+          "key": "D",
+          "text": "Permits are only valid for their assigned lot"
+        }
+      ],
+      "correct_answer": "D",
+      "explanation": "She explains permits are restricted to the specific lot they are assigned to.",
+      "correctKey": "D",
+      "correctAnswer": "Permits are only valid for their assigned lot"
     },
     {
       "number": 3,
       "question_type": "Detail",
       "narrator_text": "How can the parking office verify whether the lot was actually full?",
-      "options": {
-        "A": "By checking sensor data that logs capacity every fifteen minutes",
-        "B": "By reviewing security camera footage",
-        "C": "By asking other students who were parking nearby",
-        "D": "There is no way to verify it"
-      },
+      "options": [
+        {
+          "key": "A",
+          "text": "By checking sensor data that logs capacity every fifteen minutes"
+        },
+        {
+          "key": "B",
+          "text": "By reviewing security camera footage"
+        },
+        {
+          "key": "C",
+          "text": "By asking other students who were parking nearby"
+        },
+        {
+          "key": "D",
+          "text": "There is no way to verify it"
+        }
+      ],
       "correct_answer": "A",
-      "explanation": "The staff member mentions sensors that log lot capacity every fifteen minutes."
+      "explanation": "The staff member mentions sensors that log lot capacity every fifteen minutes.",
+      "correctKey": "A",
+      "correctAnswer": "By checking sensor data that logs capacity every fifteen minutes"
     },
     {
       "number": 4,
       "question_type": "Inference",
       "narrator_text": "What can be inferred about this situation?",
-      "options": {
-        "A": "Full parking lots causing tickets is a recurring issue this semester",
-        "B": "The student is the first person to ever complain about this",
-        "C": "The parking office refuses to consider appeals",
-        "D": "The student will definitely have his fine waived"
-      },
-      "correct_answer": "A",
-      "explanation": "The staff member says he is not the first to bring this up this semester, implying it's a recurring problem."
+      "options": [
+        {
+          "key": "A",
+          "text": "The student is the first person to ever complain about this"
+        },
+        {
+          "key": "B",
+          "text": "The student will definitely have his fine waived"
+        },
+        {
+          "key": "C",
+          "text": "Full parking lots causing tickets is a recurring issue this semester"
+        },
+        {
+          "key": "D",
+          "text": "The parking office refuses to consider appeals"
+        }
+      ],
+      "correct_answer": "C",
+      "explanation": "The staff member says he is not the first to bring this up this semester, implying it's a recurring problem.",
+      "correctKey": "C",
+      "correctAnswer": "Full parking lots causing tickets is a recurring issue this semester"
     }
   ]
 }

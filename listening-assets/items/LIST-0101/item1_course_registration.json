@@ -63,53 +63,109 @@
       "number": 1,
       "question_type": "Main Idea",
       "narrator_text": "What are the speakers mainly discussing?",
-      "options": {
-        "A": "The woman's poor grades in a statistics class",
-        "B": "A scheduling conflict and an alternative course option",
-        "C": "The requirements to become a teaching assistant",
-        "D": "A professor's sabbatical plans"
-      },
+      "options": [
+        {
+          "key": "A",
+          "text": "The woman's poor grades in a statistics class"
+        },
+        {
+          "key": "B",
+          "text": "A scheduling conflict and an alternative course option"
+        },
+        {
+          "key": "C",
+          "text": "The requirements to become a teaching assistant"
+        },
+        {
+          "key": "D",
+          "text": "A professor's sabbatical plans"
+        }
+      ],
       "correct_answer": "B",
-      "explanation": "The woman explains she cannot attend the class due to a work conflict, and the advisor proposes the online section as a solution."
+      "explanation": "The woman explains she cannot attend the class due to a work conflict, and the advisor proposes the online section as a solution.",
+      "correctKey": "B",
+      "correctAnswer": "A scheduling conflict and an alternative course option"
     },
     {
       "number": 2,
       "question_type": "Detail",
       "narrator_text": "Why can't the woman take the regular section of the course?",
-      "options": {
-        "A": "It is already full",
-        "B": "It conflicts with her work schedule",
-        "C": "It is not offered this semester",
-        "D": "She has not completed the prerequisite"
-      },
-      "correct_answer": "B",
-      "explanation": "She states she works until nine most mornings, which conflicts with the 8 a.m. class time."
+      "options": [
+        {
+          "key": "A",
+          "text": "It is already full"
+        },
+        {
+          "key": "B",
+          "text": "She has not completed the prerequisite"
+        },
+        {
+          "key": "C",
+          "text": "It is not offered this semester"
+        },
+        {
+          "key": "D",
+          "text": "It conflicts with her work schedule"
+        }
+      ],
+      "correct_answer": "D",
+      "explanation": "She states she works until nine most mornings, which conflicts with the 8 a.m. class time.",
+      "correctKey": "D",
+      "correctAnswer": "It conflicts with her work schedule"
     },
     {
       "number": 3,
       "question_type": "Detail",
       "narrator_text": "According to the advisor, what is different about the online section?",
-      "options": {
-        "A": "It offers fewer credits",
-        "B": "It requires more independent time management",
-        "C": "It is taught by a different, less experienced instructor",
-        "D": "It has no weekly deadlines"
-      },
-      "correct_answer": "B",
-      "explanation": "The advisor says the online course is a bit more demanding because students must keep up with deadlines without in-class reminders."
+      "options": [
+        {
+          "key": "A",
+          "text": "It requires more independent time management"
+        },
+        {
+          "key": "B",
+          "text": "It is taught by a different, less experienced instructor"
+        },
+        {
+          "key": "C",
+          "text": "It offers fewer credits"
+        },
+        {
+          "key": "D",
+          "text": "It has no weekly deadlines"
+        }
+      ],
+      "correct_answer": "A",
+      "explanation": "The advisor says the online course is a bit more demanding because students must keep up with deadlines without in-class reminders.",
+      "correctKey": "A",
+      "correctAnswer": "It requires more independent time management"
     },
     {
       "number": 4,
       "question_type": "Inference",
       "narrator_text": "What can be inferred about the woman's decision?",
-      "options": {
-        "A": "She is unsure whether she will stay in the course",
-        "B": "She plans to quit her job to attend the regular class",
-        "C": "She is confident the online format fits her situation",
-        "D": "She will wait until next semester to decide"
-      },
+      "options": [
+        {
+          "key": "A",
+          "text": "She will wait until next semester to decide"
+        },
+        {
+          "key": "B",
+          "text": "She is unsure whether she will stay in the course"
+        },
+        {
+          "key": "C",
+          "text": "She is confident the online format fits her situation"
+        },
+        {
+          "key": "D",
+          "text": "She plans to quit her job to attend the regular class"
+        }
+      ],
       "correct_answer": "C",
-      "explanation": "She agrees to switch immediately and explains that her work schedule isn't changing, showing confidence in her decision."
+      "explanation": "She agrees to switch immediately and explains that her work schedule isn't changing, showing confidence in her decision.",
+      "correctKey": "C",
+      "correctAnswer": "She is confident the online format fits her situation"
     }
   ]
 }

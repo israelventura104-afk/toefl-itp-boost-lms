@@ -59,53 +59,109 @@
       "number": 1,
       "question_type": "Main Idea",
       "narrator_text": "What is the woman trying to do?",
-      "options": {
-        "A": "Cancel her meal plan entirely",
-        "B": "Switch to a meal plan with fewer meals",
-        "C": "Add more guest swipes to her account",
-        "D": "Complain about the quality of dining hall food"
-      },
-      "correct_answer": "B",
-      "explanation": "She explains she barely uses ten meals a week and wants to switch from nineteen to a smaller plan."
+      "options": [
+        {
+          "key": "A",
+          "text": "Switch to a meal plan with fewer meals"
+        },
+        {
+          "key": "B",
+          "text": "Add more guest swipes to her account"
+        },
+        {
+          "key": "C",
+          "text": "Complain about the quality of dining hall food"
+        },
+        {
+          "key": "D",
+          "text": "Cancel her meal plan entirely"
+        }
+      ],
+      "correct_answer": "A",
+      "explanation": "She explains she barely uses ten meals a week and wants to switch from nineteen to a smaller plan.",
+      "correctKey": "A",
+      "correctAnswer": "Switch to a meal plan with fewer meals"
     },
     {
       "number": 2,
       "question_type": "Detail",
       "narrator_text": "Why is the woman able to make the change now?",
-      "options": {
-        "A": "She has a special exception from the dean",
-        "B": "It is within the first three weeks of the semester",
-        "C": "It is currently winter break",
-        "D": "She never used any meals from her original plan"
-      },
+      "options": [
+        {
+          "key": "A",
+          "text": "She has a special exception from the dean"
+        },
+        {
+          "key": "B",
+          "text": "It is within the first three weeks of the semester"
+        },
+        {
+          "key": "C",
+          "text": "She never used any meals from her original plan"
+        },
+        {
+          "key": "D",
+          "text": "It is currently winter break"
+        }
+      ],
       "correct_answer": "B",
-      "explanation": "The staff member confirms changes are allowed during the first three weeks, and it is only week two."
+      "explanation": "The staff member confirms changes are allowed during the first three weeks, and it is only week two.",
+      "correctKey": "B",
+      "correctAnswer": "It is within the first three weeks of the semester"
     },
     {
       "number": 3,
       "question_type": "Detail",
       "narrator_text": "What will happen to her unused meals from this week?",
-      "options": {
-        "A": "They will be refunded as credit",
-        "B": "They will roll over to the new plan",
-        "C": "They will not carry over to the new plan",
-        "D": "They will be donated to a campus food bank"
-      },
-      "correct_answer": "C",
-      "explanation": "The staff member explains unused meals reset and do not roll over when switching plans."
+      "options": [
+        {
+          "key": "A",
+          "text": "They will be donated to a campus food bank"
+        },
+        {
+          "key": "B",
+          "text": "They will be refunded as credit"
+        },
+        {
+          "key": "C",
+          "text": "They will roll over to the new plan"
+        },
+        {
+          "key": "D",
+          "text": "They will not carry over to the new plan"
+        }
+      ],
+      "correct_answer": "D",
+      "explanation": "The staff member explains unused meals reset and do not roll over when switching plans.",
+      "correctKey": "D",
+      "correctAnswer": "They will not carry over to the new plan"
     },
     {
       "number": 4,
       "question_type": "Detail",
       "narrator_text": "What difference does the staff member point out about guest swipes?",
-      "options": {
-        "A": "The new plan has more guest swipes",
-        "B": "The new plan has fewer guest swipes",
-        "C": "Guest swipes are being removed entirely",
-        "D": "Guest swipes now cost extra"
-      },
-      "correct_answer": "B",
-      "explanation": "He mentions the fourteen-meal plan includes only two guest swipes instead of five."
+      "options": [
+        {
+          "key": "A",
+          "text": "Guest swipes now cost extra"
+        },
+        {
+          "key": "B",
+          "text": "Guest swipes are being removed entirely"
+        },
+        {
+          "key": "C",
+          "text": "The new plan has fewer guest swipes"
+        },
+        {
+          "key": "D",
+          "text": "The new plan has more guest swipes"
+        }
+      ],
+      "correct_answer": "C",
+      "explanation": "He mentions the fourteen-meal plan includes only two guest swipes instead of five.",
+      "correctKey": "C",
+      "correctAnswer": "The new plan has fewer guest swipes"
     }
   ]
 }

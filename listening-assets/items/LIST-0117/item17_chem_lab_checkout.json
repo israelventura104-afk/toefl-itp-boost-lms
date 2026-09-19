@@ -71,57 +71,113 @@
       "number": 1,
       "question_type": "Main Idea",
       "narrator_text": "What is the conversation mainly about?",
-      "options": {
-        "A": "Checking out lab equipment and following lab rules",
-        "B": "Changing the student's chemistry lecture section",
-        "C": "Repairing a broken hot plate in the storeroom",
-        "D": "Scheduling a make-up titration for next week"
-      },
-      "correct_answer": "A",
+      "options": [
+        {
+          "key": "A",
+          "text": "Repairing a broken hot plate in the storeroom"
+        },
+        {
+          "key": "B",
+          "text": "Scheduling a make-up titration for next week"
+        },
+        {
+          "key": "C",
+          "text": "Checking out lab equipment and following lab rules"
+        },
+        {
+          "key": "D",
+          "text": "Changing the student's chemistry lecture section"
+        }
+      ],
+      "correct_answer": "C",
       "explanation": "She checks out a balance and cylinders and gets rules on use, return, and gloves.",
-      "commonMistake": "Choosing D because titration is named—that is today's experiment, not a make-up."
+      "commonMistake": "Choosing D because titration is named—that is today's experiment, not a make-up.",
+      "correctKey": "C",
+      "correctAnswer": "Checking out lab equipment and following lab rules"
     },
     {
       "number": 2,
       "question_type": "Detail",
       "narrator_text": "Where must the student weigh her samples?",
-      "options": {
-        "A": "At her bench by the window",
-        "B": "At the teaching assistant's desk",
-        "C": "In the instrument room",
-        "D": "In Professor Kim's office"
-      },
-      "correct_answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "At the teaching assistant's desk"
+        },
+        {
+          "key": "B",
+          "text": "At her bench by the window"
+        },
+        {
+          "key": "C",
+          "text": "In Professor Kim's office"
+        },
+        {
+          "key": "D",
+          "text": "In the instrument room"
+        }
+      ],
+      "correct_answer": "D",
       "explanation": "Balances cannot leave the instrument room; she weighs there and carries labeled vials to the bench.",
-      "commonMistake": "Choosing A because her partner saved a window bench—weighing stays in the instrument room."
+      "commonMistake": "Choosing A because her partner saved a window bench—weighing stays in the instrument room.",
+      "correctKey": "D",
+      "correctAnswer": "In the instrument room"
     },
     {
       "number": 3,
       "question_type": "Detail",
       "narrator_text": "What should she do if balance two will not stabilize?",
-      "options": {
-        "A": "Use balance three because balance two is out for calibration",
-        "B": "Shake the balance to reset it",
-        "C": "Borrow Professor Kim's personal scale",
-        "D": "Skip the weighing step until Thursday"
-      },
+      "options": [
+        {
+          "key": "A",
+          "text": "Use balance three because balance two is out for calibration"
+        },
+        {
+          "key": "B",
+          "text": "Borrow Professor Kim's personal scale"
+        },
+        {
+          "key": "C",
+          "text": "Shake the balance to reset it"
+        },
+        {
+          "key": "D",
+          "text": "Skip the weighing step until Thursday"
+        }
+      ],
       "correct_answer": "A",
       "explanation": "He says close the draft doors; if it still drifts, move to balance three—balance two is out for calibration until Thursday.",
-      "commonMistake": "Choosing D because Thursday is mentioned—that is when balance two returns, not when she skips work."
+      "commonMistake": "Choosing D because Thursday is mentioned—that is when balance two returns, not when she skips work.",
+      "correctKey": "A",
+      "correctAnswer": "Use balance three because balance two is out for calibration"
     },
     {
       "number": 4,
       "question_type": "Detail",
       "narrator_text": "What must the student do with heat-resistant gloves?",
-      "options": {
-        "A": "Buy a new pair at the bookstore first",
-        "B": "Leave them on the dirty cart after use",
-        "C": "Sign the glove log and put damaged gloves in the red bin",
-        "D": "Share one pair with the whole lab section"
-      },
-      "correct_answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "Buy a new pair at the bookstore first"
+        },
+        {
+          "key": "B",
+          "text": "Sign the glove log and put damaged gloves in the red bin"
+        },
+        {
+          "key": "C",
+          "text": "Share one pair with the whole lab section"
+        },
+        {
+          "key": "D",
+          "text": "Leave them on the dirty cart after use"
+        }
+      ],
+      "correct_answer": "B",
       "explanation": "She may get gloves but must sign the glove log; damaged gloves go in the red bin, not back on the shelf.",
-      "commonMistake": "Choosing B because a rack/cart was mentioned for cylinders—gloves have a different rule."
+      "commonMistake": "Choosing B because a rack/cart was mentioned for cylinders—gloves have a different rule.",
+      "correctKey": "B",
+      "correctAnswer": "Sign the glove log and put damaged gloves in the red bin"
     }
   ]
 }

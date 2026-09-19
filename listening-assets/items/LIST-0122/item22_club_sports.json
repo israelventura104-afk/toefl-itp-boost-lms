@@ -71,57 +71,113 @@
       "number": 1,
       "question_type": "Main Idea",
       "narrator_text": "What is the conversation mainly about?",
-      "options": {
-        "A": "Renting soccer equipment for a class project",
-        "B": "Changing the student's work schedule on Sundays",
-        "C": "Trying out for the varsity soccer team",
-        "D": "Registering for intramural soccer before the deadline"
-      },
-      "correct_answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "Registering for intramural soccer before the deadline"
+        },
+        {
+          "key": "B",
+          "text": "Changing the student's work schedule on Sundays"
+        },
+        {
+          "key": "C",
+          "text": "Renting soccer equipment for a class project"
+        },
+        {
+          "key": "D",
+          "text": "Trying out for the varsity soccer team"
+        }
+      ],
+      "correct_answer": "A",
       "explanation": "He needs to join intramural soccer; she explains roster deadline, waiver, fee, and physical.",
-      "commonMistake": "Choosing C—this is intramural/club sports, not varsity tryouts."
+      "commonMistake": "Choosing C—this is intramural/club sports, not varsity tryouts.",
+      "correctKey": "A",
+      "correctAnswer": "Registering for intramural soccer before the deadline"
     },
     {
       "number": 2,
       "question_type": "Detail",
       "narrator_text": "When do team rosters close?",
-      "options": {
-        "A": "Tomorrow morning at the health center",
-        "B": "Sunday at noon",
-        "C": "Friday at five",
-        "D": "Next month after midterms"
-      },
-      "correct_answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "Next month after midterms"
+        },
+        {
+          "key": "B",
+          "text": "Friday at five"
+        },
+        {
+          "key": "C",
+          "text": "Sunday at noon"
+        },
+        {
+          "key": "D",
+          "text": "Tomorrow morning at the health center"
+        }
+      ],
+      "correct_answer": "B",
       "explanation": "Rosters close Friday at five, with waiver required before then.",
-      "commonMistake": "Choosing A—tomorrow is for the physical, not the roster deadline."
+      "commonMistake": "Choosing A—tomorrow is for the physical, not the roster deadline.",
+      "correctKey": "B",
+      "correctAnswer": "Friday at five"
     },
     {
       "number": 3,
       "question_type": "Detail",
       "narrator_text": "What must be true about his physical exam?",
-      "options": {
-        "A": "Last year's physical is enough",
-        "B": "Only the team captain needs a physical",
-        "C": "No physical is required for midfielders",
-        "D": "It must be from this academic year"
-      },
-      "correct_answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "Last year's physical is enough"
+        },
+        {
+          "key": "B",
+          "text": "Only the team captain needs a physical"
+        },
+        {
+          "key": "C",
+          "text": "It must be from this academic year"
+        },
+        {
+          "key": "D",
+          "text": "No physical is required for midfielders"
+        }
+      ],
+      "correct_answer": "C",
       "explanation": "Club sports need a physical from this academic year; health center walk-ins are available tomorrow.",
-      "commonMistake": "Choosing A—he hoped last year counted; she says no."
+      "commonMistake": "Choosing A—he hoped last year counted; she says no.",
+      "correctKey": "C",
+      "correctAnswer": "It must be from this academic year"
     },
     {
       "number": 4,
       "question_type": "Detail",
       "narrator_text": "What happens if the team is incomplete by Friday?",
-      "options": {
-        "A": "Players move automatically to varsity",
-        "B": "They pay a double fee and play anyway",
-        "C": "Only the captain is waitlisted",
-        "D": "The whole team is dropped"
-      },
+      "options": [
+        {
+          "key": "A",
+          "text": "Only the captain is waitlisted"
+        },
+        {
+          "key": "B",
+          "text": "They pay a double fee and play anyway"
+        },
+        {
+          "key": "C",
+          "text": "Players move automatically to varsity"
+        },
+        {
+          "key": "D",
+          "text": "The whole team is dropped"
+        }
+      ],
       "correct_answer": "D",
       "explanation": "Waitlist is for free agents; incomplete teams are dropped Friday.",
-      "commonMistake": "Choosing C—the waitlist is not for incomplete full teams."
+      "commonMistake": "Choosing C—the waitlist is not for incomplete full teams.",
+      "correctKey": "D",
+      "correctAnswer": "The whole team is dropped"
     }
   ]
 }

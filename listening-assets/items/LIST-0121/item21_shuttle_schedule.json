@@ -71,57 +71,113 @@
       "number": 1,
       "question_type": "Main Idea",
       "narrator_text": "What is the conversation mainly about?",
-      "options": {
-        "A": "Buying a monthly city bus pass",
-        "B": "Reporting a broken elevator in the dorms",
-        "C": "Canceling a review session with a professor",
-        "D": "How to reach Science Hall during a temporary shuttle change"
-      },
-      "correct_answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "How to reach Science Hall during a temporary shuttle change"
+        },
+        {
+          "key": "B",
+          "text": "Canceling a review session with a professor"
+        },
+        {
+          "key": "C",
+          "text": "Reporting a broken elevator in the dorms"
+        },
+        {
+          "key": "D",
+          "text": "Buying a monthly city bus pass"
+        }
+      ],
+      "correct_answer": "A",
       "explanation": "Evening routes change during midterms; she explains how he can still get to Science Hall.",
-      "commonMistake": "Choosing A—campus shuttle changes, not a city pass, are the topic."
+      "commonMistake": "Choosing A—campus shuttle changes, not a city pass, are the topic.",
+      "correctKey": "A",
+      "correctAnswer": "How to reach Science Hall during a temporary shuttle change"
     },
     {
       "number": 2,
       "question_type": "Detail",
       "narrator_text": "After eight o'clock this week, where does the shuttle loop?",
-      "options": {
-        "A": "Only to the airport and downtown",
-        "B": "Everywhere including Science Hall as usual",
-        "C": "Only around the sports complex",
-        "D": "Between the library, the dorms, and the student union"
-      },
-      "correct_answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "Only to the airport and downtown"
+        },
+        {
+          "key": "B",
+          "text": "Everywhere including Science Hall as usual"
+        },
+        {
+          "key": "C",
+          "text": "Between the library, the dorms, and the student union"
+        },
+        {
+          "key": "D",
+          "text": "Only around the sports complex"
+        }
+      ],
+      "correct_answer": "C",
       "explanation": "On the exam schedule after eight, the bus only loops library–dorms–union.",
-      "commonMistake": "Choosing B—Science Hall is not on the after-eight loop this week."
+      "commonMistake": "Choosing B—Science Hall is not on the after-eight loop this week.",
+      "correctKey": "C",
+      "correctAnswer": "Between the library, the dorms, and the student union"
     },
     {
       "number": 3,
       "question_type": "Detail",
       "narrator_text": "What is true about the night van?",
-      "options": {
-        "A": "It costs five dollars per ride",
-        "B": "It only runs on weekends",
-        "C": "It replaces all daytime buses permanently",
-        "D": "It is free but must be booked at least twenty minutes ahead"
-      },
-      "correct_answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "It costs five dollars per ride"
+        },
+        {
+          "key": "B",
+          "text": "It is free but must be booked at least twenty minutes ahead"
+        },
+        {
+          "key": "C",
+          "text": "It replaces all daytime buses permanently"
+        },
+        {
+          "key": "D",
+          "text": "It only runs on weekends"
+        }
+      ],
+      "correct_answer": "B",
       "explanation": "Free for enrolled students; book at least twenty minutes ahead on the transit app.",
-      "commonMistake": "Choosing A—she says it is free."
+      "commonMistake": "Choosing A—she says it is free.",
+      "correctKey": "B",
+      "correctAnswer": "It is free but must be booked at least twenty minutes ahead"
     },
     {
       "number": 4,
       "question_type": "Detail",
       "narrator_text": "When does normal service to Science Hall resume?",
-      "options": {
-        "A": "Tonight at midnight",
-        "B": "Next semester only",
-        "C": "It never returns to Science Hall",
-        "D": "Starting Monday after exams"
-      },
+      "options": [
+        {
+          "key": "A",
+          "text": "Tonight at midnight"
+        },
+        {
+          "key": "B",
+          "text": "It never returns to Science Hall"
+        },
+        {
+          "key": "C",
+          "text": "Next semester only"
+        },
+        {
+          "key": "D",
+          "text": "Starting Monday after exams"
+        }
+      ],
       "correct_answer": "D",
       "explanation": "Normal service resumes Monday after exams; the change is only for midterm week.",
-      "commonMistake": "Choosing B—she ties the return to after midterms, not next semester."
+      "commonMistake": "Choosing B—she ties the return to after midterms, not next semester.",
+      "correctKey": "D",
+      "correctAnswer": "Starting Monday after exams"
     }
   ]
 }

@@ -68,57 +68,113 @@
       "number": 1,
       "question_type": "Main Idea",
       "narrator_text": "What is the talk mainly about?",
-      "options": {
-        "A": "How to forecast tomorrow's weather with volcanoes",
-        "B": "Where volcanoes form in relation to tectonic plates and hot spots",
-        "C": "How to build a model volcano for a science fair",
-        "D": "Why oceans have no geological activity"
-      },
+      "options": [
+        {
+          "key": "A",
+          "text": "How to forecast tomorrow's weather with volcanoes"
+        },
+        {
+          "key": "B",
+          "text": "Where volcanoes form in relation to tectonic plates and hot spots"
+        },
+        {
+          "key": "C",
+          "text": "How to build a model volcano for a science fair"
+        },
+        {
+          "key": "D",
+          "text": "Why oceans have no geological activity"
+        }
+      ],
       "correct_answer": "B",
       "explanation": "The professor explains volcanoes at divergent and convergent plate boundaries and over hot spots.",
-      "commonMistake": "Choosing A—weather forecasting is not the topic."
+      "commonMistake": "Choosing A—weather forecasting is not the topic.",
+      "correctKey": "B",
+      "correctAnswer": "Where volcanoes form in relation to tectonic plates and hot spots"
     },
     {
       "number": 2,
       "question_type": "Detail",
       "narrator_text": "What happens at divergent boundaries, according to the professor?",
-      "options": {
-        "A": "Plates pull apart and magma rises to create new crust",
-        "B": "Plates stop moving forever",
-        "C": "Only hot spots can exist",
-        "D": "Oceans dry up completely"
-      },
-      "correct_answer": "A",
+      "options": [
+        {
+          "key": "A",
+          "text": "Oceans dry up completely"
+        },
+        {
+          "key": "B",
+          "text": "Plates stop moving forever"
+        },
+        {
+          "key": "C",
+          "text": "Plates pull apart and magma rises to create new crust"
+        },
+        {
+          "key": "D",
+          "text": "Only hot spots can exist"
+        }
+      ],
+      "correct_answer": "C",
       "explanation": "At divergent boundaries plates pull apart and magma rises to fill the gap, creating new crust.",
-      "commonMistake": "Choosing B—plates continue to move in the talk's account."
+      "commonMistake": "Choosing B—plates continue to move in the talk's account.",
+      "correctKey": "C",
+      "correctAnswer": "Plates pull apart and magma rises to create new crust"
     },
     {
       "number": 3,
       "question_type": "Detail",
       "narrator_text": "How does subduction help create volcanoes?",
-      "options": {
-        "A": "By freezing magma instantly at the surface",
-        "B": "Water carried down with the sinking plate helps melt rock above it",
-        "C": "By removing all oxygen from the atmosphere",
-        "D": "By pushing continents into the Sun"
-      },
-      "correct_answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "By removing all oxygen from the atmosphere"
+        },
+        {
+          "key": "B",
+          "text": "By freezing magma instantly at the surface"
+        },
+        {
+          "key": "C",
+          "text": "By pushing continents into the Sun"
+        },
+        {
+          "key": "D",
+          "text": "Water carried down with the sinking plate helps melt rock above it"
+        }
+      ],
+      "correct_answer": "D",
       "explanation": "In subduction, water carried down helps melt rock above the sinking plate, feeding volcanic chains.",
-      "commonMistake": "Choosing A—that is not the mechanism she describes."
+      "commonMistake": "Choosing A—that is not the mechanism she describes.",
+      "correctKey": "D",
+      "correctAnswer": "Water carried down with the sinking plate helps melt rock above it"
     },
     {
       "number": 4,
       "question_type": "Detail",
       "narrator_text": "What example does the professor give of a hot-spot chain?",
-      "options": {
-        "A": "The Amazon rainforest",
-        "B": "The Sahara Desert dunes",
-        "C": "The Moon's surface",
-        "D": "Hawaii"
-      },
-      "correct_answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "Hawaii"
+        },
+        {
+          "key": "B",
+          "text": "The Moon's surface"
+        },
+        {
+          "key": "C",
+          "text": "The Amazon rainforest"
+        },
+        {
+          "key": "D",
+          "text": "The Sahara Desert dunes"
+        }
+      ],
+      "correct_answer": "A",
       "explanation": "She says Hawaii is the usual classroom example of a hot-spot island chain.",
-      "commonMistake": "Choosing A or B—those are not given as hot-spot examples here."
+      "commonMistake": "Choosing A or B—those are not given as hot-spot examples here.",
+      "correctKey": "A",
+      "correctAnswer": "Hawaii"
     }
   ]
 }

@@ -68,57 +68,113 @@
       "number": 1,
       "question_type": "Main Idea",
       "narrator_text": "What is the talk mainly about?",
-      "options": {
-        "A": "How to stretch a canvas for oil painting",
-        "B": "How Impressionist painters changed subject and technique in the 1870s",
-        "C": "Why the Salon banned all landscape art forever",
-        "D": "How digital cameras create modern museum photos"
-      },
+      "options": [
+        {
+          "key": "A",
+          "text": "Why the Salon banned all landscape art forever"
+        },
+        {
+          "key": "B",
+          "text": "How Impressionist painters changed subject and technique in the 1870s"
+        },
+        {
+          "key": "C",
+          "text": "How digital cameras create modern museum photos"
+        },
+        {
+          "key": "D",
+          "text": "How to stretch a canvas for oil painting"
+        }
+      ],
       "correct_answer": "B",
       "explanation": "The professor explains outdoor light, brushstrokes, everyday subjects, and early criticism of Impressionism.",
-      "commonMistake": "Choosing C—the Salon is mentioned as an official path artists sometimes bypassed, not a total ban on landscapes."
+      "commonMistake": "Choosing C—the Salon is mentioned as an official path artists sometimes bypassed, not a total ban on landscapes.",
+      "correctKey": "B",
+      "correctAnswer": "How Impressionist painters changed subject and technique in the 1870s"
     },
     {
       "number": 2,
       "question_type": "Detail",
       "narrator_text": "Why did many Impressionists paint outdoors?",
-      "options": {
-        "A": "To avoid buying paint",
-        "B": "To catch changing light",
-        "C": "Because studios were illegal",
-        "D": "To hide from art dealers"
-      },
-      "correct_answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "Because studios were illegal"
+        },
+        {
+          "key": "B",
+          "text": "To hide from art dealers"
+        },
+        {
+          "key": "C",
+          "text": "To catch changing light"
+        },
+        {
+          "key": "D",
+          "text": "To avoid buying paint"
+        }
+      ],
+      "correct_answer": "C",
       "explanation": "She says they often painted outdoors to catch changing light.",
-      "commonMistake": "Choosing A or C—those reasons are not given."
+      "commonMistake": "Choosing A or C—those reasons are not given.",
+      "correctKey": "C",
+      "correctAnswer": "To catch changing light"
     },
     {
       "number": 3,
       "question_type": "Detail",
       "narrator_text": "How did the name “Impressionism” begin, according to the professor?",
-      "options": {
-        "A": "As an official government award",
-        "B": "As an insult from early critics after Impression, Sunrise",
-        "C": "As a brand name invented by a paint company",
-        "D": "As a title required by the Salon for every work"
-      },
-      "correct_answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "As an insult from early critics after Impression, Sunrise"
+        },
+        {
+          "key": "B",
+          "text": "As an official government award"
+        },
+        {
+          "key": "C",
+          "text": "As a brand name invented by a paint company"
+        },
+        {
+          "key": "D",
+          "text": "As a title required by the Salon for every work"
+        }
+      ],
+      "correct_answer": "A",
       "explanation": "The name began as an insult after a painting titled Impression, Sunrise.",
-      "commonMistake": "Choosing A—early response was mockery, not an award."
+      "commonMistake": "Choosing A—early response was mockery, not an award.",
+      "correctKey": "A",
+      "correctAnswer": "As an insult from early critics after Impression, Sunrise"
     },
     {
       "number": 4,
       "question_type": "Inference",
       "narrator_text": "What shift in painting does the professor emphasize?",
-      "options": {
-        "A": "A move toward momentary perception rather than only polished storytelling",
-        "B": "A rule that artists must paint only kings and gods",
-        "C": "A requirement to finish every canvas indoors",
-        "D": "A rejection of all color in favor of black and white"
-      },
-      "correct_answer": "A",
+      "options": [
+        {
+          "key": "A",
+          "text": "A requirement to finish every canvas indoors"
+        },
+        {
+          "key": "B",
+          "text": "A rule that artists must paint only kings and gods"
+        },
+        {
+          "key": "C",
+          "text": "A rejection of all color in favor of black and white"
+        },
+        {
+          "key": "D",
+          "text": "A move toward momentary perception rather than only polished storytelling"
+        }
+      ],
+      "correct_answer": "D",
       "explanation": "She says painting became about momentary perception, not only polished storytelling.",
-      "commonMistake": "Choosing B—everyday scenes replaced a focus only on gods or kings."
+      "commonMistake": "Choosing B—everyday scenes replaced a focus only on gods or kings.",
+      "correctKey": "D",
+      "correctAnswer": "A move toward momentary perception rather than only polished storytelling"
     }
   ]
 }

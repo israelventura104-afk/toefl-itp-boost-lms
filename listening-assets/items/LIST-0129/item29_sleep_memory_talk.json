@@ -68,57 +68,113 @@
       "number": 1,
       "question_type": "Main Idea",
       "narrator_text": "What is the talk mainly about?",
-      "options": {
-        "A": "How to brew stronger coffee before exams",
-        "B": "How sleep stages support different kinds of memory",
-        "C": "Why dreaming is always meaningless",
-        "D": "How to avoid all deep sleep permanently"
-      },
-      "correct_answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "How to avoid all deep sleep permanently"
+        },
+        {
+          "key": "B",
+          "text": "Why dreaming is always meaningless"
+        },
+        {
+          "key": "C",
+          "text": "How to brew stronger coffee before exams"
+        },
+        {
+          "key": "D",
+          "text": "How sleep stages support different kinds of memory"
+        }
+      ],
+      "correct_answer": "D",
       "explanation": "The professor links deep sleep and REM sleep to different memory functions and study outcomes.",
-      "commonMistake": "Choosing A—caffeine is mentioned only as something that does not replace sleep processes."
+      "commonMistake": "Choosing A—caffeine is mentioned only as something that does not replace sleep processes.",
+      "correctKey": "D",
+      "correctAnswer": "How sleep stages support different kinds of memory"
     },
     {
       "number": 2,
       "question_type": "Detail",
       "narrator_text": "According to the professor, what is deep sleep especially important for?",
-      "options": {
-        "A": "Stabilizing factual memories such as dates and definitions",
-        "B": "Making caffeine more effective",
-        "C": "Stopping all dreaming forever",
-        "D": "Replacing the need to study"
-      },
+      "options": [
+        {
+          "key": "A",
+          "text": "Stabilizing factual memories such as dates and definitions"
+        },
+        {
+          "key": "B",
+          "text": "Stopping all dreaming forever"
+        },
+        {
+          "key": "C",
+          "text": "Replacing the need to study"
+        },
+        {
+          "key": "D",
+          "text": "Making caffeine more effective"
+        }
+      ],
       "correct_answer": "A",
       "explanation": "He says deep sleep seems especially important for stabilizing factual memories like dates, definitions, and formulas.",
-      "commonMistake": "Choosing D—sleep supports memory; it does not replace study."
+      "commonMistake": "Choosing D—sleep supports memory; it does not replace study.",
+      "correctKey": "A",
+      "correctAnswer": "Stabilizing factual memories such as dates and definitions"
     },
     {
       "number": 3,
       "question_type": "Detail",
       "narrator_text": "What often happens if sleep is cut short?",
-      "options": {
-        "A": "People gain extra deep sleep at sunrise",
-        "B": "More REM sleep toward morning is lost, which can hurt problem-solving",
-        "C": "Naps automatically become a full night of sleep",
-        "D": "Factual memory improves without any REM"
-      },
+      "options": [
+        {
+          "key": "A",
+          "text": "People gain extra deep sleep at sunrise"
+        },
+        {
+          "key": "B",
+          "text": "More REM sleep toward morning is lost, which can hurt problem-solving"
+        },
+        {
+          "key": "C",
+          "text": "Factual memory improves without any REM"
+        },
+        {
+          "key": "D",
+          "text": "Naps automatically become a full night of sleep"
+        }
+      ],
       "correct_answer": "B",
       "explanation": "Cutting sleep short often reduces later REM, which can hurt problem-solving the next day.",
-      "commonMistake": "Choosing A—he does not say deep sleep increases when sleep is shortened."
+      "commonMistake": "Choosing A—he does not say deep sleep increases when sleep is shortened.",
+      "correctKey": "B",
+      "correctAnswer": "More REM sleep toward morning is lost, which can hurt problem-solving"
     },
     {
       "number": 4,
       "question_type": "Inference",
       "narrator_text": "What does the professor suggest about caffeine?",
-      "options": {
-        "A": "It fully restores memory processes lost from missing sleep",
-        "B": "It can increase alertness without restoring sleep-related memory processes",
-        "C": "It is required before every psychology exam",
-        "D": "It only works during REM sleep"
-      },
-      "correct_answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "It fully restores memory processes lost from missing sleep"
+        },
+        {
+          "key": "B",
+          "text": "It is required before every psychology exam"
+        },
+        {
+          "key": "C",
+          "text": "It can increase alertness without restoring sleep-related memory processes"
+        },
+        {
+          "key": "D",
+          "text": "It only works during REM sleep"
+        }
+      ],
+      "correct_answer": "C",
       "explanation": "He says caffeine can make you feel alert without restoring the memory processes that happen during sleep.",
-      "commonMistake": "Choosing A—that is what he warns against assuming."
+      "commonMistake": "Choosing A—that is what he warns against assuming.",
+      "correctKey": "C",
+      "correctAnswer": "It can increase alertness without restoring sleep-related memory processes"
     }
   ]
 }

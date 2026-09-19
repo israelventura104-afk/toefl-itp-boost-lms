@@ -59,53 +59,109 @@
       "number": 1,
       "question_type": "Main Idea",
       "narrator_text": "Why does the student go to the bookstore?",
-      "options": {
-        "A": "To buy a new textbook for chemistry",
-        "B": "To return a textbook he no longer needs",
-        "C": "To ask about the store's return policy in general",
-        "D": "To sell used notebooks"
-      },
-      "correct_answer": "B",
-      "explanation": "He explains he dropped the class and wants to return the textbook he purchased."
+      "options": [
+        {
+          "key": "A",
+          "text": "To buy a new textbook for chemistry"
+        },
+        {
+          "key": "B",
+          "text": "To sell used notebooks"
+        },
+        {
+          "key": "C",
+          "text": "To return a textbook he no longer needs"
+        },
+        {
+          "key": "D",
+          "text": "To ask about the store's return policy in general"
+        }
+      ],
+      "correct_answer": "C",
+      "explanation": "He explains he dropped the class and wants to return the textbook he purchased.",
+      "correctKey": "C",
+      "correctAnswer": "To return a textbook he no longer needs"
     },
     {
       "number": 2,
       "question_type": "Detail",
       "narrator_text": "Why can't the student get a full cash refund?",
-      "options": {
-        "A": "He returned the book after the deadline",
-        "B": "He lost the original receipt",
-        "C": "He wrote notes inside the book",
-        "D": "The book is a different edition than required"
-      },
-      "correct_answer": "C",
-      "explanation": "The clerk explains that writing inside the book limits him to store credit rather than a cash refund."
+      "options": [
+        {
+          "key": "A",
+          "text": "He returned the book after the deadline"
+        },
+        {
+          "key": "B",
+          "text": "The book is a different edition than required"
+        },
+        {
+          "key": "C",
+          "text": "He lost the original receipt"
+        },
+        {
+          "key": "D",
+          "text": "He wrote notes inside the book"
+        }
+      ],
+      "correct_answer": "D",
+      "explanation": "The clerk explains that writing inside the book limits him to store credit rather than a cash refund.",
+      "correctKey": "D",
+      "correctAnswer": "He wrote notes inside the book"
     },
     {
       "number": 3,
       "question_type": "Detail",
       "narrator_text": "How much store credit will the student receive?",
-      "options": {
-        "A": "Fifty percent of the purchase price",
-        "B": "Seventy percent of the purchase price",
-        "C": "The full purchase price",
-        "D": "No credit at all"
-      },
-      "correct_answer": "B",
-      "explanation": "The clerk states that light markings qualify for about seventy percent store credit."
+      "options": [
+        {
+          "key": "A",
+          "text": "Seventy percent of the purchase price"
+        },
+        {
+          "key": "B",
+          "text": "The full purchase price"
+        },
+        {
+          "key": "C",
+          "text": "No credit at all"
+        },
+        {
+          "key": "D",
+          "text": "Fifty percent of the purchase price"
+        }
+      ],
+      "correct_answer": "A",
+      "explanation": "The clerk states that light markings qualify for about seventy percent store credit.",
+      "correctKey": "A",
+      "correctAnswer": "Seventy percent of the purchase price"
     },
     {
       "number": 4,
       "question_type": "Inference",
       "narrator_text": "What can be inferred about the store credit?",
-      "options": {
-        "A": "It can only be used for textbooks",
-        "B": "It must be used the same day",
-        "C": "It has flexible use and no expiration",
-        "D": "It cannot be combined with other purchases"
-      },
-      "correct_answer": "C",
-      "explanation": "The clerk says the credit doesn't expire and can be used on anything in the store."
+      "options": [
+        {
+          "key": "A",
+          "text": "It cannot be combined with other purchases"
+        },
+        {
+          "key": "B",
+          "text": "It has flexible use and no expiration"
+        },
+        {
+          "key": "C",
+          "text": "It must be used the same day"
+        },
+        {
+          "key": "D",
+          "text": "It can only be used for textbooks"
+        }
+      ],
+      "correct_answer": "B",
+      "explanation": "The clerk says the credit doesn't expire and can be used on anything in the store.",
+      "correctKey": "B",
+      "correctAnswer": "It has flexible use and no expiration"
     }
   ]
 }

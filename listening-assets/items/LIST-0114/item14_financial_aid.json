@@ -59,53 +59,109 @@
       "number": 1,
       "question_type": "Main Idea",
       "narrator_text": "Why does the student visit the financial aid office?",
-      "options": {
-        "A": "To ask why his scholarship funds have not been applied yet",
-        "B": "To apply for a new scholarship",
-        "C": "To dispute his tuition bill",
-        "D": "To change his enrollment status"
-      },
-      "correct_answer": "A",
-      "explanation": "He explains his scholarship hasn't appeared on his account and classes start soon."
+      "options": [
+        {
+          "key": "A",
+          "text": "To apply for a new scholarship"
+        },
+        {
+          "key": "B",
+          "text": "To change his enrollment status"
+        },
+        {
+          "key": "C",
+          "text": "To dispute his tuition bill"
+        },
+        {
+          "key": "D",
+          "text": "To ask why his scholarship funds have not been applied yet"
+        }
+      ],
+      "correct_answer": "D",
+      "explanation": "He explains his scholarship hasn't appeared on his account and classes start soon.",
+      "correctKey": "D",
+      "correctAnswer": "To ask why his scholarship funds have not been applied yet"
     },
     {
       "number": 2,
       "question_type": "Detail",
       "narrator_text": "What is missing from the student's file, according to the officer?",
-      "options": {
-        "A": "His enrollment verification form",
-        "B": "His class schedule",
-        "C": "His scholarship acceptance letter",
-        "D": "His tax documents"
-      },
-      "correct_answer": "A",
-      "explanation": "She tells him the enrollment verification form has not been submitted, which is required to release funds."
+      "options": [
+        {
+          "key": "A",
+          "text": "His class schedule"
+        },
+        {
+          "key": "B",
+          "text": "His tax documents"
+        },
+        {
+          "key": "C",
+          "text": "His enrollment verification form"
+        },
+        {
+          "key": "D",
+          "text": "His scholarship acceptance letter"
+        }
+      ],
+      "correct_answer": "C",
+      "explanation": "She tells him the enrollment verification form has not been submitted, which is required to release funds.",
+      "correctKey": "C",
+      "correctAnswer": "His enrollment verification form"
     },
     {
       "number": 3,
       "question_type": "Detail",
       "narrator_text": "What misunderstanding did the student have?",
-      "options": {
-        "A": "He thought registering for classes also counted as submitting the verification form",
-        "B": "He thought the scholarship didn't require any forms",
-        "C": "He believed the deadline had already passed",
-        "D": "He thought the form needed to be mailed instead of submitted online"
-      },
+      "options": [
+        {
+          "key": "A",
+          "text": "He thought registering for classes also counted as submitting the verification form"
+        },
+        {
+          "key": "B",
+          "text": "He thought the scholarship didn't require any forms"
+        },
+        {
+          "key": "C",
+          "text": "He thought the form needed to be mailed instead of submitted online"
+        },
+        {
+          "key": "D",
+          "text": "He believed the deadline had already passed"
+        }
+      ],
       "correct_answer": "A",
-      "explanation": "He assumed submitting his class registration in July covered the requirement, but the officer clarifies they are separate steps."
+      "explanation": "He assumed submitting his class registration in July covered the requirement, but the officer clarifies they are separate steps.",
+      "correctKey": "A",
+      "correctAnswer": "He thought registering for classes also counted as submitting the verification form"
     },
     {
       "number": 4,
       "question_type": "Inference",
       "narrator_text": "Why does the officer suggest contacting the bursar's office as well?",
-      "options": {
-        "A": "As a precaution in case the funds are delayed past the tuition deadline",
-        "B": "Because the scholarship has likely been cancelled",
-        "C": "Because the bursar's office handles all scholarship approvals",
-        "D": "Because the student needs to pay his tuition in full regardless"
-      },
-      "correct_answer": "A",
-      "explanation": "She recommends a payment extension as a safety measure in case there's any delay processing the form."
+      "options": [
+        {
+          "key": "A",
+          "text": "Because the scholarship has likely been cancelled"
+        },
+        {
+          "key": "B",
+          "text": "As a precaution in case the funds are delayed past the tuition deadline"
+        },
+        {
+          "key": "C",
+          "text": "Because the student needs to pay his tuition in full regardless"
+        },
+        {
+          "key": "D",
+          "text": "Because the bursar's office handles all scholarship approvals"
+        }
+      ],
+      "correct_answer": "B",
+      "explanation": "She recommends a payment extension as a safety measure in case there's any delay processing the form.",
+      "correctKey": "B",
+      "correctAnswer": "As a precaution in case the funds are delayed past the tuition deadline"
     }
   ]
 }

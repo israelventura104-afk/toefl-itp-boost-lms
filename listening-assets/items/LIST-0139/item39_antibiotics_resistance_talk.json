@@ -68,57 +68,113 @@
       "number": 1,
       "question_type": "Main Idea",
       "narrator_text": "What is the talk mainly about?",
-      "options": {
-        "A": "How to invent vitamin supplements",
-        "B": "Why viruses are the same as bacteria",
-        "C": "Antibiotics and the problem of bacterial resistance",
-        "D": "How to design hospital architecture only"
-      },
-      "correct_answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "How to invent vitamin supplements"
+        },
+        {
+          "key": "B",
+          "text": "Antibiotics and the problem of bacterial resistance"
+        },
+        {
+          "key": "C",
+          "text": "How to design hospital architecture only"
+        },
+        {
+          "key": "D",
+          "text": "Why viruses are the same as bacteria"
+        }
+      ],
+      "correct_answer": "B",
       "explanation": "He explains antibiotics and how resistance develops and spreads.",
-      "commonMistake": "Choosing B—he focuses on bacteria."
+      "commonMistake": "Choosing B—he focuses on bacteria.",
+      "correctKey": "B",
+      "correctAnswer": "Antibiotics and the problem of bacterial resistance"
     },
     {
       "number": 2,
       "question_type": "Detail",
       "narrator_text": "What do antibiotics do, according to the professor?",
-      "options": {
-        "A": "Cure all viral colds instantly",
-        "B": "Replace vaccines completely",
-        "C": "Kill bacteria or stop them from growing",
-        "D": "Remove salt from drinking water"
-      },
-      "correct_answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "Kill bacteria or stop them from growing"
+        },
+        {
+          "key": "B",
+          "text": "Replace vaccines completely"
+        },
+        {
+          "key": "C",
+          "text": "Cure all viral colds instantly"
+        },
+        {
+          "key": "D",
+          "text": "Remove salt from drinking water"
+        }
+      ],
+      "correct_answer": "A",
       "explanation": "Antibiotics kill bacteria or stop growth.",
-      "commonMistake": "Choosing A—antibiotics do not treat viruses."
+      "commonMistake": "Choosing A—antibiotics do not treat viruses.",
+      "correctKey": "A",
+      "correctAnswer": "Kill bacteria or stop them from growing"
     },
     {
       "number": 3,
       "question_type": "Detail",
       "narrator_text": "When are resistant strains more likely to survive?",
-      "options": {
-        "A": "When people drink more water",
-        "B": "When hospitals turn off lights at night",
-        "C": "When antibiotics are used too often or stopped too early",
-        "D": "When patients exercise after lunch"
-      },
-      "correct_answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "When patients exercise after lunch"
+        },
+        {
+          "key": "B",
+          "text": "When hospitals turn off lights at night"
+        },
+        {
+          "key": "C",
+          "text": "When people drink more water"
+        },
+        {
+          "key": "D",
+          "text": "When antibiotics are used too often or stopped too early"
+        }
+      ],
+      "correct_answer": "D",
       "explanation": "Overuse or stopping early favors resistant strains.",
-      "commonMistake": "Choosing A—unrelated."
+      "commonMistake": "Choosing A—unrelated.",
+      "correctKey": "D",
+      "correctAnswer": "When antibiotics are used too often or stopped too early"
     },
     {
       "number": 4,
       "question_type": "Inference",
       "narrator_text": "What does the professor imply about the future of antibiotics?",
-      "options": {
-        "A": "They will never face any resistance problems",
-        "B": "They should be taken for every mild cough",
-        "C": "Misuse can reduce how well they work over time",
-        "D": "Research on new drugs is unnecessary"
-      },
+      "options": [
+        {
+          "key": "A",
+          "text": "Research on new drugs is unnecessary"
+        },
+        {
+          "key": "B",
+          "text": "They should be taken for every mild cough"
+        },
+        {
+          "key": "C",
+          "text": "Misuse can reduce how well they work over time"
+        },
+        {
+          "key": "D",
+          "text": "They will never face any resistance problems"
+        }
+      ],
       "correct_answer": "C",
       "explanation": "He says misuse threatens future effectiveness; research continues.",
-      "commonMistake": "Choosing A—contradicts the talk."
+      "commonMistake": "Choosing A—contradicts the talk.",
+      "correctKey": "C",
+      "correctAnswer": "Misuse can reduce how well they work over time"
     }
   ]
 }
