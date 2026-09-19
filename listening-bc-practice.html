@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Listening Part B + C Focus | TOEFL ITP Boost</title>
+    <link rel="stylesheet" href="styles.css?v=20260827-drop" />
+  </head>
+  <body class="app-body">
+    <header class="topbar" data-site-header></header>
+    <div class="app-frame" data-site-frame>
+    <aside class="sidebar" data-site-sidebar hidden></aside>
+    <script src="nav.js?v=20260827-drop"></script>
+
+    <main class="lesson-shell">
+      <header class="lesson-hero guided-hero">
+        <a class="back-link" href="dashboard.html">Back to Progress</a>
+        <p class="eyebrow">Listening · Focus drill</p>
+        <h1>Part B + Part C only</h1>
+        <p>
+          No Part A. Each set is one campus conversation (Part B) and one short talk (Part C) —
+          8 questions, no timer. Built for focused practice with your teacher.
+        </p>
+        <p class="access-status" data-access-status></p>
+        <p class="practice-status" data-guided-status hidden></p>
+      </header>
+
+      <div data-access-gate></div>
+
+      <div data-access-protected hidden>
+        <section class="guided-practice-panel">
+          <div class="section-heading">
+            <p class="eyebrow">Class practice</p>
+            <h2>8-question B + C drill</h2>
+            <p>
+              1 Part B conversation (4 Q) + 1 Part C talk (4 Q). Immediate feedback. New set anytime.
+            </p>
+          </div>
+
+          <div class="practice-session-meta" style="margin-bottom: 0.75rem">
+            <span data-session-label>Loading…</span>
+            <button class="button secondary compact-button" type="button" data-new-set>New set</button>
+          </div>
+
+          <div class="practice-card guided-card listening-card">
+            <div class="practice-topline">
+              <span data-counter>1 / 8</span>
+              <strong data-score>0/0 correct</strong>
+            </div>
+            <p class="question-meta" data-meta></p>
+            <p class="question-meta" data-topic></p>
+            <div class="listening-player">
+              <audio data-audio controls preload="metadata"></audio>
+              <button class="button secondary compact-button" type="button" data-replay>Replay</button>
+            </div>
+            <h3 data-question></h3>
+            <div class="choice-list" data-options></div>
+            <div class="practice-feedback" data-feedback hidden></div>
+            <div class="practice-actions">
+              <button class="button secondary" type="button" data-prev>Previous</button>
+              <button class="button primary" type="button" data-next>Next</button>
+            </div>
+          </div>
+        </section>
+
+        <section class="results-panel" data-results hidden>
+          <div class="results-hero">
+            <div>
+              <p class="eyebrow">Session complete</p>
+              <h2>Your score</h2>
+              <p data-result-message hidden></p>
+            </div>
+            <div class="result-score">
+              <span>Score</span>
+              <strong data-final-score>0/8</strong>
+              <small data-final-note></small>
+            </div>
+          </div>
+          <div data-study-focus></div>
+          <div class="result-misses-panel" data-mistakes></div>
+          <div class="practice-actions results-actions">
+            <button class="button primary" type="button" data-new-set-result>Practice again</button>
+            <a class="button secondary" href="dashboard.html">Progress</a>
+          </div>
+        </section>
+      </div>
+    </main>
+    </div>
+
+    <script src="access.js"></script>
+    <script src="progress.js"></script>
+    <script src="listening-lib.js?v=20260918c"></script>
+    <script src="results-lib.js"></script>
+    <script src="listening-bc-practice.js?v=20260918d"></script>
+  </body>
+</html>
