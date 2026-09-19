@@ -20,22 +20,22 @@
       "options": [
         {
           "key": "A",
-          "text": "are"
+          "text": "have been"
         },
         {
           "key": "B",
-          "text": "is"
-        },
-        {
-          "key": "C",
           "text": "were"
         },
         {
+          "key": "C",
+          "text": "are"
+        },
+        {
           "key": "D",
-          "text": "have been"
+          "text": "is"
         }
       ],
-      "correctKey": "B",
+      "correctKey": "D",
       "correctAnswer": "is",
       "explanation": "'Each' is singular, so it requires the singular verb 'is.'",
       "commonMistake": "Making the verb agree with the plural noun 'students' instead of 'each.'",
@@ -59,22 +59,22 @@
       "options": [
         {
           "key": "A",
-          "text": "are"
-        },
-        {
-          "key": "B",
-          "text": "were"
-        },
-        {
-          "key": "C",
           "text": "is"
         },
         {
-          "key": "D",
+          "key": "B",
           "text": "have been"
+        },
+        {
+          "key": "C",
+          "text": "are"
+        },
+        {
+          "key": "D",
+          "text": "were"
         }
       ],
-      "correctKey": "C",
+      "correctKey": "A",
       "correctAnswer": "is",
       "explanation": "The subject is 'behavior,' not 'species,' so the singular verb 'is' is required.",
       "commonMistake": "Making the verb agree with the noun closest to it.",
@@ -98,11 +98,11 @@
       "options": [
         {
           "key": "A",
-          "text": "developed"
+          "text": "develop"
         },
         {
           "key": "B",
-          "text": "develop"
+          "text": "had developed"
         },
         {
           "key": "C",
@@ -110,7 +110,7 @@
         },
         {
           "key": "D",
-          "text": "had developed"
+          "text": "developed"
         }
       ],
       "correctKey": "C",
@@ -137,7 +137,7 @@
       "options": [
         {
           "key": "A",
-          "text": "store"
+          "text": "stored"
         },
         {
           "key": "B",
@@ -145,7 +145,7 @@
         },
         {
           "key": "C",
-          "text": "stored"
+          "text": "store"
         },
         {
           "key": "D",
@@ -176,7 +176,7 @@
       "options": [
         {
           "key": "A",
-          "text": "is"
+          "text": "was"
         },
         {
           "key": "B",
@@ -184,11 +184,11 @@
         },
         {
           "key": "C",
-          "text": "was"
+          "text": "being"
         },
         {
           "key": "D",
-          "text": "being"
+          "text": "is"
         }
       ],
       "correctKey": "B",
@@ -215,7 +215,7 @@
       "options": [
         {
           "key": "A",
-          "text": "who"
+          "text": "which"
         },
         {
           "key": "B",
@@ -227,10 +227,10 @@
         },
         {
           "key": "D",
-          "text": "which"
+          "text": "who"
         }
       ],
-      "correctKey": "A",
+      "correctKey": "D",
       "correctAnswer": "who",
       "explanation": "'Who' refers to people and functions as the subject of the adjective clause.",
       "commonMistake": "Choosing 'whom,' which is used as an object, not a subject.",
@@ -254,22 +254,22 @@
       "options": [
         {
           "key": "A",
-          "text": "monitor"
-        },
-        {
-          "key": "B",
-          "text": "monitoring"
-        },
-        {
-          "key": "C",
           "text": "to monitor"
         },
         {
-          "key": "D",
+          "key": "B",
           "text": "monitored"
+        },
+        {
+          "key": "C",
+          "text": "monitor"
+        },
+        {
+          "key": "D",
+          "text": "monitoring"
         }
       ],
-      "correctKey": "C",
+      "correctKey": "A",
       "correctAnswer": "to monitor",
       "explanation": "The infinitive 'to monitor' expresses purpose.",
       "commonMistake": "Using a gerund when the sentence expresses purpose.",

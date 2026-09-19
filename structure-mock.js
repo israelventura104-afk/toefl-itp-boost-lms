@@ -132,21 +132,38 @@ function shuffle(items) {
   return copy;
 }
 
+function takeKeyDiverse(pool, count, keyCounts) {
+  const available = [...pool];
+  const picked = [];
+  while (picked.length < count && available.length) {
+    available.sort((a, b) => {
+      const ka = String(a.correctKey || "").toUpperCase();
+      const kb = String(b.correctKey || "").toUpperCase();
+      return (keyCounts[ka] || 0) - (keyCounts[kb] || 0) || Math.random() - 0.5;
+    });
+    const item = available.shift();
+    picked.push(item);
+    const k = String(item.correctKey || "").toUpperCase();
+    if (keyCounts[k] !== undefined) keyCounts[k] += 1;
+  }
+  return picked;
+}
+
 function buildMockSet(bank, size) {
   const completion = shuffle(bank.filter((item) => !isErrorType(item)));
   const errorItems = shuffle(bank.filter((item) => isErrorType(item)));
+  const keyCounts = { A: 0, B: 0, C: 0, D: 0 };
 
-  const chosen = [];
   const takeCompletion = Math.min(TARGET_COMPLETION, completion.length, size);
-  chosen.push(...completion.slice(0, takeCompletion));
+  const chosen = takeKeyDiverse(completion, takeCompletion, keyCounts);
 
   const takeError = Math.min(TARGET_ERROR, errorItems.length, size - chosen.length);
-  chosen.push(...errorItems.slice(0, takeError));
+  chosen.push(...takeKeyDiverse(errorItems, takeError, keyCounts));
 
   if (chosen.length < size) {
     const used = new Set(chosen.map((item) => item.id));
     const rest = shuffle(bank.filter((item) => !used.has(item.id)));
-    chosen.push(...rest.slice(0, size - chosen.length));
+    chosen.push(...takeKeyDiverse(rest, size - chosen.length, keyCounts));
   }
 
   return shuffle(chosen).slice(0, size);

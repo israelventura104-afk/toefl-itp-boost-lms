@@ -139,10 +139,30 @@ function buildBalancedPractice(bank, size) {
   const groups = groupBySkill(shuffle([...bank]));
   const shuffledGroups = shuffle([...groups.values()]);
   const selected = [];
+  const keyCounts = { A: 0, B: 0, C: 0, D: 0 };
+
+  function pickFromGroup(group) {
+    if (!group.length) return null;
+    // Prefer the letter that is least used so far in this set
+    const ranked = [...group].sort((a, b) => {
+      const ka = String(a.correctKey || "").toUpperCase();
+      const kb = String(b.correctKey || "").toUpperCase();
+      return (keyCounts[ka] || 0) - (keyCounts[kb] || 0) || Math.random() - 0.5;
+    });
+    const choice = ranked[0];
+    const idx = group.findIndex((item) => item.id === choice.id);
+    if (idx >= 0) group.splice(idx, 1);
+    return choice;
+  }
 
   while (selected.length < size && shuffledGroups.some((group) => group.length)) {
     shuffledGroups.forEach((group) => {
-      if (selected.length < size && group.length) selected.push(group.shift());
+      if (selected.length >= size || !group.length) return;
+      const item = pickFromGroup(group);
+      if (!item) return;
+      selected.push(item);
+      const k = String(item.correctKey || "").toUpperCase();
+      if (keyCounts[k] !== undefined) keyCounts[k] += 1;
     });
   }
 

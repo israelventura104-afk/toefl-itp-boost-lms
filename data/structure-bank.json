@@ -19,11 +19,11 @@
       "options": [
         {
           "key": "A",
-          "text": "have"
+          "text": "were"
         },
         {
           "key": "B",
-          "text": "has"
+          "text": "have"
         },
         {
           "key": "C",
@@ -31,10 +31,10 @@
         },
         {
           "key": "D",
-          "text": "were"
+          "text": "has"
         }
       ],
-      "correctKey": "B",
+      "correctKey": "D",
       "correctAnswer": "has",
       "explanation": "'The number of' is singular and takes the singular verb 'has.'",
       "commonMistake": "Choosing a plural verb because 'people' is plural.",
@@ -58,22 +58,22 @@
       "options": [
         {
           "key": "A",
-          "text": "was"
-        },
-        {
-          "key": "B",
-          "text": "is"
-        },
-        {
-          "key": "C",
           "text": "were"
         },
         {
-          "key": "D",
+          "key": "B",
           "text": "has been"
+        },
+        {
+          "key": "C",
+          "text": "is"
+        },
+        {
+          "key": "D",
+          "text": "was"
         }
       ],
-      "correctKey": "C",
+      "correctKey": "A",
       "correctAnswer": "were",
       "explanation": "With 'neither...nor,' the verb agrees with the nearer subject, 'assistants.'",
       "commonMistake": "Making the verb agree with the first subject instead of the nearest one.",
@@ -97,22 +97,22 @@
       "options": [
         {
           "key": "A",
-          "text": "is"
-        },
-        {
-          "key": "B",
           "text": "was"
         },
         {
+          "key": "B",
+          "text": "has been"
+        },
+        {
           "key": "C",
-          "text": "are"
+          "text": "is"
         },
         {
           "key": "D",
-          "text": "has been"
+          "text": "are"
         }
       ],
-      "correctKey": "C",
+      "correctKey": "D",
       "correctAnswer": "are",
       "explanation": "The true subject is 'several letters,' which is plural, so 'are' is correct.",
       "commonMistake": "Choosing a singular verb because the sentence begins with a prepositional phrase.",
@@ -136,22 +136,22 @@
       "options": [
         {
           "key": "A",
-          "text": "was"
-        },
-        {
-          "key": "B",
-          "text": "has been"
-        },
-        {
-          "key": "C",
           "text": "had been"
         },
         {
-          "key": "D",
+          "key": "B",
           "text": "is"
+        },
+        {
+          "key": "C",
+          "text": "has been"
+        },
+        {
+          "key": "D",
+          "text": "was"
         }
       ],
-      "correctKey": "C",
+      "correctKey": "A",
       "correctAnswer": "had been",
       "explanation": "Past perfect passive shows that the damage happened before another past action.",
       "commonMistake": "Using simple past when one past event occurred before another.",
@@ -175,7 +175,7 @@
       "options": [
         {
           "key": "A",
-          "text": "analyze"
+          "text": "will be analyzing"
         },
         {
           "key": "B",
@@ -183,14 +183,14 @@
         },
         {
           "key": "C",
-          "text": "will be analyzing"
+          "text": "have analyzed"
         },
         {
           "key": "D",
-          "text": "have analyzed"
+          "text": "analyze"
         }
       ],
-      "correctKey": "C",
+      "correctKey": "A",
       "correctAnswer": "will be analyzing",
       "explanation": "Future continuous describes an action in progress at a specific future time.",
       "commonMistake": "Using simple future instead of future continuous for an action in progress.",
@@ -214,11 +214,11 @@
       "options": [
         {
           "key": "A",
-          "text": "completed"
+          "text": "were completing"
         },
         {
           "key": "B",
-          "text": "were completing"
+          "text": "had completed"
         },
         {
           "key": "C",
@@ -226,10 +226,10 @@
         },
         {
           "key": "D",
-          "text": "had completed"
+          "text": "completed"
         }
       ],
-      "correctKey": "B",
+      "correctKey": "A",
       "correctAnswer": "were completing",
       "explanation": "Past continuous describes an action in progress when another past action occurred.",
       "commonMistake": "Using simple past when the action was ongoing.",
@@ -253,22 +253,22 @@
       "options": [
         {
           "key": "A",
-          "text": "complete"
-        },
-        {
-          "key": "B",
           "text": "will complete"
         },
         {
+          "key": "B",
+          "text": "completed"
+        },
+        {
           "key": "C",
-          "text": "will have completed"
+          "text": "complete"
         },
         {
           "key": "D",
-          "text": "completed"
+          "text": "will have completed"
         }
       ],
-      "correctKey": "C",
+      "correctKey": "D",
       "correctAnswer": "will have completed",
       "explanation": "Future perfect shows that an action will be completed before a future point.",
       "commonMistake": "Using simple future instead of future perfect after 'by the end of.'",
@@ -292,22 +292,22 @@
       "options": [
         {
           "key": "A",
-          "text": "restored"
-        },
-        {
-          "key": "B",
           "text": "was restored"
         },
         {
-          "key": "C",
+          "key": "B",
           "text": "has restored"
         },
         {
-          "key": "D",
+          "key": "C",
           "text": "restoring"
+        },
+        {
+          "key": "D",
+          "text": "restored"
         }
       ],
-      "correctKey": "B",
+      "correctKey": "A",
       "correctAnswer": "was restored",
       "explanation": "The painting receives the action, so the simple past passive is needed.",
       "commonMistake": "Using an active verb when the subject receives the action.",
@@ -331,22 +331,22 @@
       "options": [
         {
           "key": "A",
-          "text": "grows"
-        },
-        {
-          "key": "B",
-          "text": "is grown"
-        },
-        {
-          "key": "C",
           "text": "is growing"
         },
         {
-          "key": "D",
+          "key": "B",
+          "text": "grows"
+        },
+        {
+          "key": "C",
           "text": "has grown"
+        },
+        {
+          "key": "D",
+          "text": "is grown"
         }
       ],
-      "correctKey": "B",
+      "correctKey": "D",
       "correctAnswer": "is grown",
       "explanation": "The sentence describes a crop being cultivated, so present passive is correct.",
       "commonMistake": "Choosing an active verb when the focus is on the crop, not the growers.",
@@ -370,22 +370,22 @@
       "options": [
         {
           "key": "A",
-          "text": "are"
-        },
-        {
-          "key": "B",
           "text": "are being"
         },
         {
-          "key": "C",
+          "key": "B",
           "text": "are being renovated"
         },
         {
-          "key": "D",
+          "key": "C",
           "text": "have renovated"
+        },
+        {
+          "key": "D",
+          "text": "are"
         }
       ],
-      "correctKey": "C",
+      "correctKey": "B",
       "correctAnswer": "are being renovated",
       "explanation": "Present continuous passive describes an action currently in progress that affects the subject.",
       "commonMistake": "Omitting the past participle in a continuous passive structure.",
@@ -409,7 +409,7 @@
       "options": [
         {
           "key": "A",
-          "text": "have"
+          "text": "have been destroyed"
         },
         {
           "key": "B",
@@ -417,14 +417,14 @@
         },
         {
           "key": "C",
-          "text": "have been destroyed"
+          "text": "destroying"
         },
         {
           "key": "D",
-          "text": "destroying"
+          "text": "have"
         }
       ],
-      "correctKey": "C",
+      "correctKey": "A",
       "correctAnswer": "have been destroyed",
       "explanation": "Present perfect passive is needed because wetlands receive the action over a time period continuing to the present.",
       "commonMistake": "Using active present perfect or omitting the past participle.",
@@ -448,7 +448,7 @@
       "options": [
         {
           "key": "A",
-          "text": "offers"
+          "text": "will offer"
         },
         {
           "key": "B",
@@ -456,14 +456,14 @@
         },
         {
           "key": "C",
-          "text": "will offer"
+          "text": "offers"
         },
         {
           "key": "D",
           "text": "would offer"
         }
       ],
-      "correctKey": "C",
+      "correctKey": "A",
       "correctAnswer": "will offer",
       "explanation": "First conditional uses 'if + present simple' and 'will + base verb.'",
       "commonMistake": "Using 'would' for a real future possibility.",
@@ -487,7 +487,7 @@
       "options": [
         {
           "key": "A",
-          "text": "expand"
+          "text": "expanded"
         },
         {
           "key": "B",
@@ -499,7 +499,7 @@
         },
         {
           "key": "D",
-          "text": "expanded"
+          "text": "expand"
         }
       ],
       "correctKey": "C",
@@ -530,18 +530,18 @@
         },
         {
           "key": "B",
-          "text": "would be"
-        },
-        {
-          "key": "C",
           "text": "would have been"
         },
         {
-          "key": "D",
+          "key": "C",
           "text": "will be"
+        },
+        {
+          "key": "D",
+          "text": "would be"
         }
       ],
-      "correctKey": "C",
+      "correctKey": "B",
       "correctAnswer": "would have been",
       "explanation": "Third conditional uses 'if + past perfect' and 'would have + past participle.'",
       "commonMistake": "Using second conditional form for an unreal past situation.",
@@ -565,22 +565,22 @@
       "options": [
         {
           "key": "A",
-          "text": "will be"
-        },
-        {
-          "key": "B",
           "text": "would have been"
         },
         {
-          "key": "C",
+          "key": "B",
           "text": "are"
         },
         {
-          "key": "D",
+          "key": "C",
           "text": "had been"
+        },
+        {
+          "key": "D",
+          "text": "will be"
         }
       ],
-      "correctKey": "B",
+      "correctKey": "A",
       "correctAnswer": "would have been",
       "explanation": "'Had the policy been introduced' is an inverted third conditional.",
       "commonMistake": "Not recognizing that 'Had + subject + past participle' replaces 'If + past perfect.'",
@@ -604,22 +604,22 @@
       "options": [
         {
           "key": "A",
-          "text": "would be"
-        },
-        {
-          "key": "B",
           "text": "would have been"
         },
         {
+          "key": "B",
+          "text": "were"
+        },
+        {
           "key": "C",
-          "text": "will be"
+          "text": "would be"
         },
         {
           "key": "D",
-          "text": "were"
+          "text": "will be"
         }
       ],
-      "correctKey": "A",
+      "correctKey": "C",
       "correctAnswer": "would be",
       "explanation": "This mixed conditional connects a past condition with a present result.",
       "commonMistake": "Using third conditional result form when the result is present.",
@@ -643,22 +643,22 @@
       "options": [
         {
           "key": "A",
-          "text": "drinks"
-        },
-        {
-          "key": "B",
           "text": "drink"
         },
         {
-          "key": "C",
+          "key": "B",
           "text": "drank"
+        },
+        {
+          "key": "C",
+          "text": "drinks"
         },
         {
           "key": "D",
           "text": "drinking"
         }
       ],
-      "correctKey": "B",
+      "correctKey": "A",
       "correctAnswer": "drink",
       "explanation": "After 'recommended that,' the subjunctive uses the base form of the verb.",
       "commonMistake": "Using third-person singular form after a subjunctive trigger.",
@@ -682,22 +682,22 @@
       "options": [
         {
           "key": "A",
-          "text": "revises"
+          "text": "be revised"
         },
         {
           "key": "B",
-          "text": "revised"
+          "text": "revises"
         },
         {
           "key": "C",
-          "text": "be revised"
+          "text": "revised"
         },
         {
           "key": "D",
           "text": "is revised"
         }
       ],
-      "correctKey": "C",
+      "correctKey": "A",
       "correctAnswer": "be revised",
       "explanation": "The passive subjunctive form is 'be + past participle.'",
       "commonMistake": "Using a normal passive form instead of subjunctive passive.",
@@ -725,18 +725,18 @@
         },
         {
           "key": "B",
-          "text": "read"
+          "text": "has read"
         },
         {
           "key": "C",
-          "text": "reading"
+          "text": "read"
         },
         {
           "key": "D",
-          "text": "has read"
+          "text": "reading"
         }
       ],
-      "correctKey": "B",
+      "correctKey": "C",
       "correctAnswer": "read",
       "explanation": "After 'suggested that,' the base form 'read' is used for the subjunctive.",
       "commonMistake": "Adding -s to the verb because the subject is singular.",
@@ -760,7 +760,7 @@
       "options": [
         {
           "key": "A",
-          "text": "stored"
+          "text": "be stored"
         },
         {
           "key": "B",
@@ -768,14 +768,14 @@
         },
         {
           "key": "C",
-          "text": "be stored"
+          "text": "stored"
         },
         {
           "key": "D",
           "text": "storing"
         }
       ],
-      "correctKey": "C",
+      "correctKey": "A",
       "correctAnswer": "be stored",
       "explanation": "In formal subjunctive structures, the passive form is 'be + past participle.'",
       "commonMistake": "Using past passive after a past reporting expression instead of subjunctive form.",
@@ -838,22 +838,22 @@
       "options": [
         {
           "key": "A",
-          "text": "using"
-        },
-        {
-          "key": "B",
           "text": "used"
         },
         {
-          "key": "C",
+          "key": "B",
           "text": "were used"
         },
         {
-          "key": "D",
+          "key": "C",
           "text": "to use"
+        },
+        {
+          "key": "D",
+          "text": "using"
         }
       ],
-      "correctKey": "B",
+      "correctKey": "A",
       "correctAnswer": "used",
       "explanation": "'Used in the experiment' is a reduced passive adjective clause meaning 'that were used in the experiment.'",
       "commonMistake": "Choosing 'were used,' which creates a second finite verb before the main verb 'were resistant.'",
@@ -877,22 +877,22 @@
       "options": [
         {
           "key": "A",
-          "text": "Using"
-        },
-        {
-          "key": "B",
           "text": "Used"
         },
         {
+          "key": "B",
+          "text": "To use"
+        },
+        {
           "key": "C",
-          "text": "It used"
+          "text": "Using"
         },
         {
           "key": "D",
-          "text": "To use"
+          "text": "It used"
         }
       ],
-      "correctKey": "B",
+      "correctKey": "A",
       "correctAnswer": "Used",
       "explanation": "'Used properly' is a reduced passive adverb clause meaning 'When it is used properly.'",
       "commonMistake": "Choosing 'Using,' which incorrectly makes the software the doer of the action.",
@@ -916,7 +916,7 @@
       "options": [
         {
           "key": "A",
-          "text": "Examining"
+          "text": "To examine"
         },
         {
           "key": "B",
@@ -928,7 +928,7 @@
         },
         {
           "key": "D",
-          "text": "To examine"
+          "text": "Examining"
         }
       ],
       "correctKey": "B",
@@ -955,22 +955,22 @@
       "options": [
         {
           "key": "A",
-          "text": "manufactured"
-        },
-        {
-          "key": "B",
-          "text": "manufacturing"
-        },
-        {
-          "key": "C",
           "text": "to manufacture"
         },
         {
-          "key": "D",
+          "key": "B",
           "text": "was manufacturing"
+        },
+        {
+          "key": "C",
+          "text": "manufacturing"
+        },
+        {
+          "key": "D",
+          "text": "manufactured"
         }
       ],
-      "correctKey": "C",
+      "correctKey": "A",
       "correctAnswer": "to manufacture",
       "explanation": "After ordinal expressions such as 'the first,' an infinitive is commonly used to reduce an adjective clause.",
       "commonMistake": "Choosing 'manufacturing,' which is possible in other contexts but less appropriate after 'the first.'",
@@ -994,22 +994,22 @@
       "options": [
         {
           "key": "A",
-          "text": "who"
-        },
-        {
-          "key": "B",
-          "text": "whom"
-        },
-        {
-          "key": "C",
           "text": "that"
         },
         {
-          "key": "D",
+          "key": "B",
+          "text": "who"
+        },
+        {
+          "key": "C",
           "text": "whose"
+        },
+        {
+          "key": "D",
+          "text": "whom"
         }
       ],
-      "correctKey": "C",
+      "correctKey": "A",
       "correctAnswer": "that",
       "explanation": "'That' refers to 'the novel' and functions as the object of the adjective clause.",
       "commonMistake": "Choosing 'who' or 'whom,' which refer to people.",
@@ -1033,22 +1033,22 @@
       "options": [
         {
           "key": "A",
-          "text": "who"
-        },
-        {
-          "key": "B",
-          "text": "whose"
-        },
-        {
-          "key": "C",
           "text": "whom"
         },
         {
-          "key": "D",
+          "key": "B",
+          "text": "who"
+        },
+        {
+          "key": "C",
           "text": "which"
+        },
+        {
+          "key": "D",
+          "text": "whose"
         }
       ],
-      "correctKey": "B",
+      "correctKey": "D",
       "correctAnswer": "whose",
       "explanation": "'Whose' shows possession: the physician's research.",
       "commonMistake": "Choosing 'who,' which cannot show possession before a noun.",
@@ -1072,22 +1072,22 @@
       "options": [
         {
           "key": "A",
-          "text": "which"
-        },
-        {
-          "key": "B",
           "text": "in which"
         },
         {
-          "key": "C",
+          "key": "B",
           "text": "where in"
+        },
+        {
+          "key": "C",
+          "text": "which"
         },
         {
           "key": "D",
           "text": "that in"
         }
       ],
-      "correctKey": "B",
+      "correctKey": "A",
       "correctAnswer": "in which",
       "explanation": "'In which' is needed because the study was conducted in the community.",
       "commonMistake": "Choosing 'which' without the required preposition.",
@@ -1119,11 +1119,11 @@
         },
         {
           "key": "C",
-          "text": "what"
+          "text": "who"
         },
         {
           "key": "D",
-          "text": "who"
+          "text": "what"
         }
       ],
       "correctKey": "B",
@@ -1150,11 +1150,11 @@
       "options": [
         {
           "key": "A",
-          "text": "What"
+          "text": "That"
         },
         {
           "key": "B",
-          "text": "That"
+          "text": "What"
         },
         {
           "key": "C",
@@ -1165,7 +1165,7 @@
           "text": "Whether"
         }
       ],
-      "correctKey": "A",
+      "correctKey": "B",
       "correctAnswer": "What",
       "explanation": "'What causes inflation' functions as the subject of the sentence.",
       "commonMistake": "Choosing 'That,' which would need a complete clause after it.",
@@ -1189,22 +1189,22 @@
       "options": [
         {
           "key": "A",
-          "text": "why do"
+          "text": "why they are"
         },
         {
           "key": "B",
-          "text": "why"
-        },
-        {
-          "key": "C",
           "text": "why are"
         },
         {
+          "key": "C",
+          "text": "why"
+        },
+        {
           "key": "D",
-          "text": "why they are"
+          "text": "why do"
         }
       ],
-      "correctKey": "B",
+      "correctKey": "C",
       "correctAnswer": "why",
       "explanation": "In embedded questions, normal statement word order is used: 'why students respond.'",
       "commonMistake": "Using question word order after 'explains.'",
@@ -1267,22 +1267,22 @@
       "options": [
         {
           "key": "A",
-          "text": "what"
-        },
-        {
-          "key": "B",
           "text": "that"
         },
         {
-          "key": "C",
+          "key": "B",
           "text": "which"
         },
         {
-          "key": "D",
+          "key": "C",
           "text": "whether"
+        },
+        {
+          "key": "D",
+          "text": "what"
         }
       ],
-      "correctKey": "B",
+      "correctKey": "A",
       "correctAnswer": "that",
       "explanation": "'That' introduces a complete noun clause after the adjective 'clear.'",
       "commonMistake": "Choosing 'what,' which would replace a noun inside the clause.",
@@ -1306,22 +1306,22 @@
       "options": [
         {
           "key": "A",
-          "text": "because"
-        },
-        {
-          "key": "B",
           "text": "why"
         },
         {
+          "key": "B",
+          "text": "that why"
+        },
+        {
           "key": "C",
-          "text": "why did"
+          "text": "because"
         },
         {
           "key": "D",
-          "text": "that why"
+          "text": "why did"
         }
       ],
-      "correctKey": "B",
+      "correctKey": "A",
       "correctAnswer": "why",
       "explanation": "'Why the settlement was abandoned' is a noun clause serving as the object of 'determined.'",
       "commonMistake": "Using question word order: 'why did the settlement...'.",
@@ -1345,22 +1345,22 @@
       "options": [
         {
           "key": "A",
-          "text": "critics have observed"
+          "text": "observed critics have"
         },
         {
           "key": "B",
-          "text": "have critics observed"
-        },
-        {
-          "key": "C",
           "text": "critics observed"
         },
         {
+          "key": "C",
+          "text": "critics have observed"
+        },
+        {
           "key": "D",
-          "text": "observed critics have"
+          "text": "have critics observed"
         }
       ],
-      "correctKey": "B",
+      "correctKey": "D",
       "correctAnswer": "have critics observed",
       "explanation": "A negative adverbial at the beginning of a sentence requires auxiliary-subject inversion.",
       "commonMistake": "Keeping normal word order after 'Rarely.'",
@@ -1384,7 +1384,7 @@
       "options": [
         {
           "key": "A",
-          "text": "did"
+          "text": "was"
         },
         {
           "key": "B",
@@ -1392,14 +1392,14 @@
         },
         {
           "key": "C",
-          "text": "was"
+          "text": "did"
         },
         {
           "key": "D",
           "text": "had"
         }
       ],
-      "correctKey": "A",
+      "correctKey": "C",
       "correctAnswer": "did",
       "explanation": "When 'only after' begins the sentence, the main clause requires inversion with 'did.'",
       "commonMistake": "Using normal word order or the wrong auxiliary.",
@@ -1423,22 +1423,22 @@
       "options": [
         {
           "key": "A",
-          "text": "the earthquake was"
-        },
-        {
-          "key": "B",
-          "text": "was the earthquake"
-        },
-        {
-          "key": "C",
           "text": "the earthquake"
         },
         {
-          "key": "D",
+          "key": "B",
           "text": "did the earthquake"
+        },
+        {
+          "key": "C",
+          "text": "the earthquake was"
+        },
+        {
+          "key": "D",
+          "text": "was the earthquake"
         }
       ],
-      "correctKey": "B",
+      "correctKey": "D",
       "correctAnswer": "was the earthquake",
       "explanation": "With 'so + adjective' at the beginning, inversion is required: 'So powerful was the earthquake...'",
       "commonMistake": "Using normal subject-verb order after an initial 'so' phrase.",
@@ -1466,7 +1466,7 @@
         },
         {
           "key": "B",
-          "text": "did officials confirm"
+          "text": "confirmed officials"
         },
         {
           "key": "C",
@@ -1474,10 +1474,10 @@
         },
         {
           "key": "D",
-          "text": "confirmed officials"
+          "text": "did officials confirm"
         }
       ],
-      "correctKey": "B",
+      "correctKey": "D",
       "correctAnswer": "did officials confirm",
       "explanation": "'Not until' at the beginning triggers inversion in the main clause.",
       "commonMistake": "Using normal word order after a negative introductory phrase.",
@@ -1505,18 +1505,18 @@
         },
         {
           "key": "B",
-          "text": "has there been"
+          "text": "was there has"
         },
         {
           "key": "C",
-          "text": "there was"
+          "text": "has there been"
         },
         {
           "key": "D",
-          "text": "was there has"
+          "text": "there was"
         }
       ],
-      "correctKey": "B",
+      "correctKey": "C",
       "correctAnswer": "has there been",
       "explanation": "The negative adverb 'Never' at the beginning requires inversion: auxiliary + subject.",
       "commonMistake": "Keeping normal word order after 'Never.'",
@@ -1540,11 +1540,11 @@
       "options": [
         {
           "key": "A",
-          "text": "to evaluate"
+          "text": "evaluate"
         },
         {
           "key": "B",
-          "text": "evaluation"
+          "text": "to evaluate"
         },
         {
           "key": "C",
@@ -1552,7 +1552,7 @@
         },
         {
           "key": "D",
-          "text": "evaluate"
+          "text": "evaluation"
         }
       ],
       "correctKey": "C",
@@ -1579,22 +1579,22 @@
       "options": [
         {
           "key": "A",
-          "text": "graduate students"
-        },
-        {
-          "key": "B",
           "text": "students who graduate"
         },
         {
-          "key": "C",
+          "key": "B",
           "text": "graduating"
         },
         {
-          "key": "D",
+          "key": "C",
           "text": "to graduate students"
+        },
+        {
+          "key": "D",
+          "text": "graduate students"
         }
       ],
-      "correctKey": "A",
+      "correctKey": "D",
       "correctAnswer": "graduate students",
       "explanation": "'Not only' and 'but also' should connect grammatically parallel elements.",
       "commonMistake": "Choosing a phrase that does not match 'undergraduate students.'",
@@ -1618,11 +1618,11 @@
       "options": [
         {
           "key": "A",
-          "text": "its materials are durable"
+          "text": "durable materials"
         },
         {
           "key": "B",
-          "text": "durable materials"
+          "text": "materials durable"
         },
         {
           "key": "C",
@@ -1630,10 +1630,10 @@
         },
         {
           "key": "D",
-          "text": "materials durable"
+          "text": "its materials are durable"
         }
       ],
-      "correctKey": "B",
+      "correctKey": "A",
       "correctAnswer": "durable materials",
       "explanation": "The phrase must be parallel with 'modern design' and 'efficient use of space.'",
       "commonMistake": "Choosing a full clause instead of a parallel noun phrase.",
@@ -1657,11 +1657,11 @@
       "options": [
         {
           "key": "A",
-          "text": "promoting better sleep"
+          "text": "better sleep promotion"
         },
         {
           "key": "B",
-          "text": "better sleep promotion"
+          "text": "promoting better sleep"
         },
         {
           "key": "C",
@@ -1700,7 +1700,7 @@
         },
         {
           "key": "B",
-          "text": "grasslands preventing erosion"
+          "text": "erosion is prevented by grasslands"
         },
         {
           "key": "C",
@@ -1708,7 +1708,7 @@
         },
         {
           "key": "D",
-          "text": "erosion is prevented by grasslands"
+          "text": "grasslands preventing erosion"
         }
       ],
       "correctKey": "A",
@@ -1739,7 +1739,7 @@
         },
         {
           "key": "B",
-          "text": "giving"
+          "text": "given"
         },
         {
           "key": "C",
@@ -1747,10 +1747,10 @@
         },
         {
           "key": "D",
-          "text": "given"
+          "text": "giving"
         }
       ],
-      "correctKey": "B",
+      "correctKey": "D",
       "correctAnswer": "giving",
       "explanation": "The verb 'avoid' is followed by a gerund, so 'giving' is correct.",
       "commonMistake": "Using an infinitive after 'avoid.'",
@@ -1774,22 +1774,22 @@
       "options": [
         {
           "key": "A",
-          "text": "expanding"
-        },
-        {
-          "key": "B",
-          "text": "expand"
-        },
-        {
-          "key": "C",
           "text": "to expand"
         },
         {
-          "key": "D",
+          "key": "B",
+          "text": "expanding"
+        },
+        {
+          "key": "C",
           "text": "expanded"
+        },
+        {
+          "key": "D",
+          "text": "expand"
         }
       ],
-      "correctKey": "C",
+      "correctKey": "A",
       "correctAnswer": "to expand",
       "explanation": "The verb 'plan' is followed by an infinitive: 'plan to expand.'",
       "commonMistake": "Using a gerund after 'plan.'",
@@ -1817,18 +1817,18 @@
         },
         {
           "key": "B",
-          "text": "operating"
+          "text": "to operate"
         },
         {
           "key": "C",
-          "text": "to operate"
+          "text": "operating"
         },
         {
           "key": "D",
           "text": "operated"
         }
       ],
-      "correctKey": "C",
+      "correctKey": "B",
       "correctAnswer": "to operate",
       "explanation": "After adjectives such as 'difficult,' English commonly uses an infinitive.",
       "commonMistake": "Using the base verb directly after an adjective.",
@@ -1852,22 +1852,22 @@
       "options": [
         {
           "key": "A",
-          "text": "understand"
-        },
-        {
-          "key": "B",
-          "text": "to understand"
-        },
-        {
-          "key": "C",
           "text": "understanding"
         },
         {
-          "key": "D",
+          "key": "B",
           "text": "understood"
+        },
+        {
+          "key": "C",
+          "text": "to understand"
+        },
+        {
+          "key": "D",
+          "text": "understand"
         }
       ],
-      "correctKey": "C",
+      "correctKey": "A",
       "correctAnswer": "understanding",
       "explanation": "A verb after a preposition must be in gerund form.",
       "commonMistake": "Using an infinitive after the preposition 'in.'",
@@ -1895,18 +1895,18 @@
         },
         {
           "key": "B",
-          "text": "growing"
-        },
-        {
-          "key": "C",
           "text": "grown"
         },
         {
-          "key": "D",
+          "key": "C",
           "text": "are growing"
+        },
+        {
+          "key": "D",
+          "text": "growing"
         }
       ],
-      "correctKey": "B",
+      "correctKey": "D",
       "correctAnswer": "growing",
       "explanation": "'Growing near the river' modifies 'plants' and means 'that grow near the river.'",
       "commonMistake": "Choosing a finite verb and creating two main verbs.",
@@ -1930,22 +1930,22 @@
       "options": [
         {
           "key": "A",
-          "text": "carving"
-        },
-        {
-          "key": "B",
           "text": "carved"
         },
         {
+          "key": "B",
+          "text": "to carve"
+        },
+        {
           "key": "C",
-          "text": "were carved"
+          "text": "carving"
         },
         {
           "key": "D",
-          "text": "to carve"
+          "text": "were carved"
         }
       ],
-      "correctKey": "B",
+      "correctKey": "A",
       "correctAnswer": "carved",
       "explanation": "'Carved from local stone' is a reduced passive modifier describing the columns.",
       "commonMistake": "Choosing 'were carved,' which creates an extra finite verb.",
@@ -1969,7 +1969,7 @@
       "options": [
         {
           "key": "A",
-          "text": "Compared"
+          "text": "Was comparing"
         },
         {
           "key": "B",
@@ -1977,7 +1977,7 @@
         },
         {
           "key": "C",
-          "text": "Was comparing"
+          "text": "Compared"
         },
         {
           "key": "D",
@@ -2016,14 +2016,14 @@
         },
         {
           "key": "C",
-          "text": "Having observed"
+          "text": "To observe"
         },
         {
           "key": "D",
-          "text": "To observe"
+          "text": "Having observed"
         }
       ],
-      "correctKey": "C",
+      "correctKey": "D",
       "correctAnswer": "Having observed",
       "explanation": "'Having observed' shows that the observation happened before the researchers noticed the pattern.",
       "commonMistake": "Using a simple participle when the sentence requires a completed earlier action.",
@@ -2047,7 +2047,7 @@
       "options": [
         {
           "key": "A",
-          "text": "Handling"
+          "text": "To handle"
         },
         {
           "key": "B",
@@ -2055,7 +2055,7 @@
         },
         {
           "key": "C",
-          "text": "To handle"
+          "text": "Handling"
         },
         {
           "key": "D",
@@ -2086,22 +2086,22 @@
       "options": [
         {
           "key": "A",
-          "text": "showing"
-        },
-        {
-          "key": "B",
           "text": "shows"
         },
         {
-          "key": "C",
+          "key": "B",
           "text": "show"
         },
         {
-          "key": "D",
+          "key": "C",
           "text": "to show"
+        },
+        {
+          "key": "D",
+          "text": "showing"
         }
       ],
-      "correctKey": "C",
+      "correctKey": "B",
       "correctAnswer": "show",
       "explanation": "A modal verb is followed by the base form of the main verb.",
       "commonMistake": "Using an infinitive or -ing form after a modal.",
@@ -2125,22 +2125,22 @@
       "options": [
         {
           "key": "A",
-          "text": "inspect"
-        },
-        {
-          "key": "B",
           "text": "be inspected"
         },
         {
-          "key": "C",
+          "key": "B",
           "text": "inspected"
+        },
+        {
+          "key": "C",
+          "text": "inspect"
         },
         {
           "key": "D",
           "text": "inspecting"
         }
       ],
-      "correctKey": "B",
+      "correctKey": "A",
       "correctAnswer": "be inspected",
       "explanation": "The passive form after a modal is 'modal + be + past participle.'",
       "commonMistake": "Using only the past participle after a modal.",
@@ -2164,22 +2164,22 @@
       "options": [
         {
           "key": "A",
-          "text": "have been"
+          "text": "be have"
         },
         {
           "key": "B",
-          "text": "has been"
+          "text": "have been"
         },
         {
           "key": "C",
-          "text": "had been"
+          "text": "has been"
         },
         {
           "key": "D",
-          "text": "be have"
+          "text": "had been"
         }
       ],
-      "correctKey": "A",
+      "correctKey": "B",
       "correctAnswer": "have been",
       "explanation": "Modal perfect uses 'modal + have + past participle.'",
       "commonMistake": "Changing 'have' to 'has' after a modal.",
@@ -2211,14 +2211,14 @@
         },
         {
           "key": "C",
-          "text": "to sign"
+          "text": "signed"
         },
         {
           "key": "D",
-          "text": "signed"
+          "text": "to sign"
         }
       ],
-      "correctKey": "C",
+      "correctKey": "D",
       "correctAnswer": "to sign",
       "explanation": "'Be required' is followed by an infinitive: 'required to sign.'",
       "commonMistake": "Using the base verb directly after a passive expression of obligation.",
@@ -2242,22 +2242,22 @@
       "options": [
         {
           "key": "A",
-          "text": "originates"
-        },
-        {
-          "key": "B",
           "text": "originating"
         },
         {
+          "key": "B",
+          "text": "to originate"
+        },
+        {
           "key": "C",
-          "text": "have originated"
+          "text": "originates"
         },
         {
           "key": "D",
-          "text": "to originate"
+          "text": "have originated"
         }
       ],
-      "correctKey": "C",
+      "correctKey": "D",
       "correctAnswer": "have originated",
       "explanation": "'Must have + past participle' expresses a strong conclusion about the past.",
       "commonMistake": "Using a present-tense verb after 'must' when referring to a past event.",
@@ -2281,22 +2281,22 @@
       "options": [
         {
           "key": "A",
-          "text": "in"
-        },
-        {
-          "key": "B",
-          "text": "on"
-        },
-        {
-          "key": "C",
           "text": "at"
         },
         {
-          "key": "D",
+          "key": "B",
           "text": "for"
+        },
+        {
+          "key": "C",
+          "text": "on"
+        },
+        {
+          "key": "D",
+          "text": "in"
         }
       ],
-      "correctKey": "B",
+      "correctKey": "C",
       "correctAnswer": "on",
       "explanation": "The correct collocation is 'focus on.'",
       "commonMistake": "Choosing a preposition based on translation rather than collocation.",
@@ -2328,11 +2328,11 @@
         },
         {
           "key": "C",
-          "text": "with"
+          "text": "at"
         },
         {
           "key": "D",
-          "text": "at"
+          "text": "with"
         }
       ],
       "correctKey": "A",
@@ -2359,22 +2359,22 @@
       "options": [
         {
           "key": "A",
-          "text": "of"
+          "text": "by"
         },
         {
           "key": "B",
-          "text": "in"
-        },
-        {
-          "key": "C",
           "text": "to"
         },
         {
+          "key": "C",
+          "text": "in"
+        },
+        {
           "key": "D",
-          "text": "by"
+          "text": "of"
         }
       ],
-      "correctKey": "B",
+      "correctKey": "C",
       "correctAnswer": "in",
       "explanation": "The correct expression is 'an increase in demand.'",
       "commonMistake": "Choosing 'of' because it frequently follows nouns in English.",
@@ -2398,22 +2398,22 @@
       "options": [
         {
           "key": "A",
-          "text": "on"
-        },
-        {
-          "key": "B",
-          "text": "in"
-        },
-        {
-          "key": "C",
           "text": "at"
         },
         {
-          "key": "D",
+          "key": "B",
+          "text": "on"
+        },
+        {
+          "key": "C",
           "text": "from"
+        },
+        {
+          "key": "D",
+          "text": "in"
         }
       ],
-      "correctKey": "A",
+      "correctKey": "B",
       "correctAnswer": "on",
       "explanation": "The correct phrase is 'based on.'",
       "commonMistake": "Using 'in' after 'based' because of first-language interference.",
@@ -2437,11 +2437,11 @@
       "options": [
         {
           "key": "A",
-          "text": "repair"
+          "text": "repaired"
         },
         {
           "key": "B",
-          "text": "repaired"
+          "text": "to repair"
         },
         {
           "key": "C",
@@ -2449,10 +2449,10 @@
         },
         {
           "key": "D",
-          "text": "to repair"
+          "text": "repair"
         }
       ],
-      "correctKey": "B",
+      "correctKey": "A",
       "correctAnswer": "repaired",
       "explanation": "The causative structure is 'have + object + past participle' when the object receives the action.",
       "commonMistake": "Using the base verb after the object in a passive causative structure.",
@@ -2476,22 +2476,22 @@
       "options": [
         {
           "key": "A",
-          "text": "the more acidic"
+          "text": "the acidity"
         },
         {
           "key": "B",
-          "text": "more acidic"
-        },
-        {
-          "key": "C",
           "text": "most acidic"
         },
         {
+          "key": "C",
+          "text": "more acidic"
+        },
+        {
           "key": "D",
-          "text": "the acidity"
+          "text": "the more acidic"
         }
       ],
-      "correctKey": "A",
+      "correctKey": "D",
       "correctAnswer": "the more acidic",
       "explanation": "The structure is 'the more..., the more...' for parallel comparative relationships.",
       "commonMistake": "Omitting 'the' in the second comparative phrase.",
@@ -2519,15 +2519,15 @@
         },
         {
           "key": "B",
-          "text": "it should"
-        },
-        {
-          "key": "C",
           "text": "should it"
         },
         {
-          "key": "D",
+          "key": "C",
           "text": "it"
+        },
+        {
+          "key": "D",
+          "text": "it should"
         }
       ],
       "correctKey": "A",
@@ -2554,22 +2554,22 @@
       "options": [
         {
           "key": "A",
-          "text": "was an"
-        },
-        {
-          "key": "B",
           "text": "an"
         },
         {
-          "key": "C",
+          "key": "B",
           "text": "who an"
         },
         {
-          "key": "D",
+          "key": "C",
           "text": "being an"
+        },
+        {
+          "key": "D",
+          "text": "was an"
         }
       ],
-      "correctKey": "B",
+      "correctKey": "A",
       "correctAnswer": "an",
       "explanation": "The phrase 'an American painter...' is an appositive that renames Georgia O'Keeffe without adding another finite verb.",
       "commonMistake": "Adding 'was,' which creates a second main verb.",
@@ -2593,22 +2593,22 @@
       "options": [
         {
           "key": "A",
-          "text": "were"
-        },
-        {
-          "key": "B",
-          "text": "was"
-        },
-        {
-          "key": "C",
           "text": "have been"
         },
         {
-          "key": "D",
+          "key": "B",
           "text": "being"
+        },
+        {
+          "key": "C",
+          "text": "were"
+        },
+        {
+          "key": "D",
+          "text": "was"
         }
       ],
-      "correctKey": "B",
+      "correctKey": "D",
       "correctAnswer": "was",
       "explanation": "The subject is 'One,' which is singular, so the verb must be 'was.'",
       "commonMistake": "Making the verb agree with the plural noun 'findings' instead of the true subject 'One.'",
@@ -2636,7 +2636,7 @@
         },
         {
           "key": "B",
-          "text": "lower"
+          "text": "lowering"
         },
         {
           "key": "C",
@@ -2644,7 +2644,7 @@
         },
         {
           "key": "D",
-          "text": "lowering"
+          "text": "lower"
         }
       ],
       "correctKey": "A",
@@ -2671,7 +2671,7 @@
       "options": [
         {
           "key": "A",
-          "text": "many"
+          "text": "several"
         },
         {
           "key": "B",
@@ -2683,7 +2683,7 @@
         },
         {
           "key": "D",
-          "text": "several"
+          "text": "many"
         }
       ],
       "correctKey": "C",
@@ -2714,18 +2714,18 @@
         },
         {
           "key": "B",
-          "text": "how people make decisions"
-        },
-        {
-          "key": "C",
           "text": "how make people decisions"
         },
         {
-          "key": "D",
+          "key": "C",
           "text": "how decisions people make"
+        },
+        {
+          "key": "D",
+          "text": "how people make decisions"
         }
       ],
-      "correctKey": "B",
+      "correctKey": "D",
       "correctAnswer": "how people make decisions",
       "explanation": "Indirect questions use statement word order: 'how people make decisions.'",
       "commonMistake": "Using direct question word order after an infinitive phrase.",
@@ -2749,22 +2749,22 @@
       "options": [
         {
           "key": "A",
-          "text": "therefore"
-        },
-        {
-          "key": "B",
           "text": "however"
         },
         {
-          "key": "C",
+          "key": "B",
           "text": "for example"
         },
         {
-          "key": "D",
+          "key": "C",
           "text": "similarly"
+        },
+        {
+          "key": "D",
+          "text": "therefore"
         }
       ],
-      "correctKey": "B",
+      "correctKey": "A",
       "correctAnswer": "however",
       "explanation": "'However' introduces a contrast between the software's power and the need for training.",
       "commonMistake": "Choosing a connector that shows cause, example, or similarity instead of contrast.",
@@ -2788,22 +2788,22 @@
       "options": [
         {
           "key": "A",
-          "text": "calibrate"
-        },
-        {
-          "key": "B",
           "text": "calibrating"
         },
         {
-          "key": "C",
+          "key": "B",
           "text": "calibrated"
         },
         {
-          "key": "D",
+          "key": "C",
           "text": "to calibrate"
+        },
+        {
+          "key": "D",
+          "text": "calibrate"
         }
       ],
-      "correctKey": "C",
+      "correctKey": "B",
       "correctAnswer": "calibrated",
       "explanation": "The causative passive structure is 'have + object + past participle.'",
       "commonMistake": "Using the base verb after the object when the object receives the action.",
@@ -2831,18 +2831,18 @@
         },
         {
           "key": "B",
-          "text": "appear"
+          "text": "has appeared"
         },
         {
           "key": "C",
-          "text": "appearing"
+          "text": "appear"
         },
         {
           "key": "D",
-          "text": "has appeared"
+          "text": "appearing"
         }
       ],
-      "correctKey": "B",
+      "correctKey": "C",
       "correctAnswer": "appear",
       "explanation": "The true subject is 'several inscriptions,' which is plural, so the verb must be 'appear.'",
       "commonMistake": "Making the verb agree with the singular noun 'wall.'",
@@ -2866,11 +2866,11 @@
       "options": [
         {
           "key": "A",
-          "text": "their"
+          "text": "they"
         },
         {
           "key": "B",
-          "text": "its"
+          "text": "their"
         },
         {
           "key": "C",
@@ -2878,10 +2878,10 @@
         },
         {
           "key": "D",
-          "text": "they"
+          "text": "its"
         }
       ],
-      "correctKey": "B",
+      "correctKey": "D",
       "correctAnswer": "its",
       "explanation": "'Cell' is singular, so the possessive pronoun must be 'its.'",
       "commonMistake": "Using 'their' with a singular noun.",
@@ -2905,7 +2905,7 @@
       "options": [
         {
           "key": "A",
-          "text": "A"
+          "text": "No article"
         },
         {
           "key": "B",
@@ -2913,14 +2913,14 @@
         },
         {
           "key": "C",
-          "text": "The"
+          "text": "A"
         },
         {
           "key": "D",
-          "text": "No article"
+          "text": "The"
         }
       ],
-      "correctKey": "C",
+      "correctKey": "D",
       "correctAnswer": "The",
       "explanation": "'The moon' refers to a unique object commonly identified by the definite article.",
       "commonMistake": "Omitting the article before a unique astronomical object.",
@@ -2944,22 +2944,22 @@
       "options": [
         {
           "key": "A",
-          "text": "Because"
+          "text": "So that"
         },
         {
           "key": "B",
-          "text": "Although"
-        },
-        {
-          "key": "C",
           "text": "Since"
         },
         {
+          "key": "C",
+          "text": "Although"
+        },
+        {
           "key": "D",
-          "text": "So that"
+          "text": "Because"
         }
       ],
-      "correctKey": "B",
+      "correctKey": "C",
       "correctAnswer": "Although",
       "explanation": "'Although' introduces a contrast between incomplete evidence and forming a hypothesis.",
       "commonMistake": "Choosing a cause connector when the sentence requires concession.",
@@ -2983,11 +2983,11 @@
       "options": [
         {
           "key": "A",
-          "text": "store"
+          "text": "stored"
         },
         {
           "key": "B",
-          "text": "storing"
+          "text": "store"
         },
         {
           "key": "C",
@@ -2995,7 +2995,7 @@
         },
         {
           "key": "D",
-          "text": "stored"
+          "text": "storing"
         }
       ],
       "correctKey": "C",
@@ -3022,11 +3022,11 @@
       "options": [
         {
           "key": "A",
-          "text": "Read"
+          "text": "Reading"
         },
         {
           "key": "B",
-          "text": "Reading"
+          "text": "Read"
         },
         {
           "key": "C",
@@ -3037,7 +3037,7 @@
           "text": "Reads"
         }
       ],
-      "correctKey": "B",
+      "correctKey": "A",
       "correctAnswer": "Reading",
       "explanation": "A gerund can function as the subject of a sentence.",
       "commonMistake": "Using the base verb as a sentence subject.",
@@ -3061,22 +3061,22 @@
       "options": [
         {
           "key": "A",
-          "text": "have tested"
+          "text": "testing"
         },
         {
           "key": "B",
-          "text": "have been tested"
-        },
-        {
-          "key": "C",
           "text": "were testing"
         },
         {
+          "key": "C",
+          "text": "have tested"
+        },
+        {
           "key": "D",
-          "text": "testing"
+          "text": "have been tested"
         }
       ],
-      "correctKey": "B",
+      "correctKey": "D",
       "correctAnswer": "have been tested",
       "explanation": "The treatments receive the action, and 'in recent clinical trials' supports the present perfect passive.",
       "commonMistake": "Using active present perfect when the subject receives the action.",
@@ -3100,7 +3100,7 @@
       "options": [
         {
           "key": "A",
-          "text": "were"
+          "text": "would have been"
         },
         {
           "key": "B",
@@ -3108,11 +3108,11 @@
         },
         {
           "key": "C",
-          "text": "would have been"
+          "text": "will be"
         },
         {
           "key": "D",
-          "text": "will be"
+          "text": "were"
         }
       ],
       "correctKey": "B",
@@ -3143,15 +3143,15 @@
         },
         {
           "key": "B",
-          "text": "which"
-        },
-        {
-          "key": "C",
           "text": "that"
         },
         {
-          "key": "D",
+          "key": "C",
           "text": "what"
+        },
+        {
+          "key": "D",
+          "text": "which"
         }
       ],
       "correctKey": "A",
@@ -3178,22 +3178,22 @@
       "options": [
         {
           "key": "A",
-          "text": "that"
+          "text": "which"
         },
         {
           "key": "B",
-          "text": "what"
+          "text": "that"
         },
         {
           "key": "C",
-          "text": "whether"
+          "text": "what"
         },
         {
           "key": "D",
-          "text": "which"
+          "text": "whether"
         }
       ],
-      "correctKey": "C",
+      "correctKey": "D",
       "correctAnswer": "whether",
       "explanation": "'Whether' introduces an indirect yes/no choice after 'decide.'",
       "commonMistake": "Choosing 'that,' which states information rather than presenting a choice.",
@@ -3607,22 +3607,22 @@
       "options": [
         {
           "key": "A",
-          "text": "are"
+          "text": "have been"
         },
         {
           "key": "B",
-          "text": "were"
+          "text": "are"
         },
         {
           "key": "C",
-          "text": "is"
+          "text": "were"
         },
         {
           "key": "D",
-          "text": "have been"
+          "text": "is"
         }
       ],
-      "correctKey": "C",
+      "correctKey": "D",
       "correctAnswer": "is",
       "explanation": "In American academic English, a collective noun such as 'committee' is usually treated as singular.",
       "commonMistake": "Using a plural verb because a committee contains several people.",
@@ -3646,7 +3646,7 @@
       "options": [
         {
           "key": "A",
-          "text": "study"
+          "text": "had studied"
         },
         {
           "key": "B",
@@ -3658,7 +3658,7 @@
         },
         {
           "key": "D",
-          "text": "had studied"
+          "text": "study"
         }
       ],
       "correctKey": "C",
@@ -3689,11 +3689,11 @@
         },
         {
           "key": "B",
-          "text": "have been"
+          "text": "were being"
         },
         {
           "key": "C",
-          "text": "were being"
+          "text": "have been"
         },
         {
           "key": "D",
@@ -3732,14 +3732,14 @@
         },
         {
           "key": "C",
-          "text": "will not be"
+          "text": "had been"
         },
         {
           "key": "D",
-          "text": "had been"
+          "text": "will not be"
         }
       ],
-      "correctKey": "C",
+      "correctKey": "D",
       "correctAnswer": "will not be",
       "explanation": "'Unless' means 'if not,' so the result clause must show the negative consequence.",
       "commonMistake": "Treating 'unless' as if it meant 'if.'",
@@ -3767,18 +3767,18 @@
         },
         {
           "key": "B",
-          "text": "answering"
+          "text": "answered"
         },
         {
           "key": "C",
-          "text": "to answer"
+          "text": "answering"
         },
         {
           "key": "D",
-          "text": "answered"
+          "text": "to answer"
         }
       ],
-      "correctKey": "C",
+      "correctKey": "D",
       "correctAnswer": "to answer",
       "explanation": "The verb 'encourage' is followed by object + infinitive: 'encouraged the participants to answer.'",
       "commonMistake": "Using a gerund after the object.",
@@ -3806,7 +3806,7 @@
         },
         {
           "key": "B",
-          "text": "enrolled"
+          "text": "to enroll"
         },
         {
           "key": "C",
@@ -3814,10 +3814,10 @@
         },
         {
           "key": "D",
-          "text": "to enroll"
+          "text": "enrolled"
         }
       ],
-      "correctKey": "B",
+      "correctKey": "D",
       "correctAnswer": "enrolled",
       "explanation": "'Enrolled in the study' is a reduced passive adjective clause meaning 'who were enrolled in the study.'",
       "commonMistake": "Choosing 'were enrolled,' which creates an unnecessary second finite verb.",
@@ -3841,7 +3841,7 @@
       "options": [
         {
           "key": "A",
-          "text": "which"
+          "text": "that"
         },
         {
           "key": "B",
@@ -3849,7 +3849,7 @@
         },
         {
           "key": "C",
-          "text": "that"
+          "text": "which"
         },
         {
           "key": "D",
@@ -3880,22 +3880,22 @@
       "options": [
         {
           "key": "A",
-          "text": "that"
+          "text": "whether"
         },
         {
           "key": "B",
-          "text": "what"
+          "text": "that"
         },
         {
           "key": "C",
-          "text": "which"
+          "text": "what"
         },
         {
           "key": "D",
-          "text": "whether"
+          "text": "which"
         }
       ],
-      "correctKey": "B",
+      "correctKey": "C",
       "correctAnswer": "what",
       "explanation": "'What the government knew' is a noun clause functioning as the object of 'revealed.'",
       "commonMistake": "Using 'that' when the clause needs a noun-like element inside it.",
@@ -3919,22 +3919,22 @@
       "options": [
         {
           "key": "A",
-          "text": "did"
-        },
-        {
-          "key": "B",
-          "text": "do"
-        },
-        {
-          "key": "C",
           "text": "were"
         },
         {
-          "key": "D",
+          "key": "B",
           "text": "had"
+        },
+        {
+          "key": "C",
+          "text": "do"
+        },
+        {
+          "key": "D",
+          "text": "did"
         }
       ],
-      "correctKey": "A",
+      "correctKey": "D",
       "correctAnswer": "did",
       "explanation": "When 'little' begins a sentence with negative meaning, auxiliary-subject inversion is required.",
       "commonMistake": "Keeping normal subject-verb order after an initial negative expression.",
@@ -3958,7 +3958,7 @@
       "options": [
         {
           "key": "A",
-          "text": "sleeping adequately"
+          "text": "to sleep adequately"
         },
         {
           "key": "B",
@@ -3966,7 +3966,7 @@
         },
         {
           "key": "C",
-          "text": "to sleep adequately"
+          "text": "sleeping adequately"
         },
         {
           "key": "D",
@@ -4040,7 +4040,7 @@
         },
         {
           "key": "B",
-          "text": "between"
+          "text": "for"
         },
         {
           "key": "C",
@@ -4048,10 +4048,10 @@
         },
         {
           "key": "D",
-          "text": "for"
+          "text": "between"
         }
       ],
-      "correctKey": "B",
+      "correctKey": "D",
       "correctAnswer": "between",
       "explanation": "'Connection between X and Y' is the correct academic collocation.",
       "commonMistake": "Using 'among' when two clearly defined elements are compared.",
@@ -4075,22 +4075,22 @@
       "options": [
         {
           "key": "A",
-          "text": "than"
+          "text": "like"
         },
         {
           "key": "B",
-          "text": "as"
-        },
-        {
-          "key": "C",
           "text": "more"
         },
         {
+          "key": "C",
+          "text": "as"
+        },
+        {
           "key": "D",
-          "text": "like"
+          "text": "than"
         }
       ],
-      "correctKey": "B",
+      "correctKey": "C",
       "correctAnswer": "as",
       "explanation": "The correct comparison structure is 'as + adjective + as.'",
       "commonMistake": "Using 'than' after 'as.'",
@@ -4114,22 +4114,22 @@
       "options": [
         {
           "key": "A",
-          "text": "A"
-        },
-        {
-          "key": "B",
-          "text": "An"
-        },
-        {
-          "key": "C",
           "text": "The"
         },
         {
-          "key": "D",
+          "key": "B",
+          "text": "A"
+        },
+        {
+          "key": "C",
           "text": "No article"
+        },
+        {
+          "key": "D",
+          "text": "An"
         }
       ],
-      "correctKey": "D",
+      "correctKey": "C",
       "correctAnswer": "No article",
       "explanation": "Abstract nouns used in a general sense often take no article.",
       "commonMistake": "Adding 'the' before a general abstract noun.",
@@ -4192,22 +4192,22 @@
       "options": [
         {
           "key": "A",
-          "text": "however"
+          "text": "similarly"
         },
         {
           "key": "B",
-          "text": "therefore"
+          "text": "however"
         },
         {
           "key": "C",
-          "text": "similarly"
+          "text": "therefore"
         },
         {
           "key": "D",
           "text": "otherwise"
         }
       ],
-      "correctKey": "B",
+      "correctKey": "C",
       "correctAnswer": "therefore",
       "explanation": "'Therefore' introduces a result or consequence.",
       "commonMistake": "Choosing a contrast connector when the second clause is a result.",
@@ -4231,7 +4231,7 @@
       "options": [
         {
           "key": "A",
-          "text": "was a"
+          "text": "being"
         },
         {
           "key": "B",
@@ -4239,11 +4239,11 @@
         },
         {
           "key": "C",
-          "text": "who a"
+          "text": "was a"
         },
         {
           "key": "D",
-          "text": "being"
+          "text": "who a"
         }
       ],
       "correctKey": "B",
@@ -4270,7 +4270,7 @@
       "options": [
         {
           "key": "A",
-          "text": "is"
+          "text": "has been"
         },
         {
           "key": "B",
@@ -4278,14 +4278,14 @@
         },
         {
           "key": "C",
-          "text": "are"
+          "text": "is"
         },
         {
           "key": "D",
-          "text": "has been"
+          "text": "are"
         }
       ],
-      "correctKey": "C",
+      "correctKey": "D",
       "correctAnswer": "are",
       "explanation": "With 'either...or,' the verb agrees with the nearer subject, 'committee members.'",
       "commonMistake": "Making the verb agree with the first subject instead of the nearest subject.",
@@ -4426,22 +4426,22 @@
       "options": [
         {
           "key": "A",
-          "text": "submit"
-        },
-        {
-          "key": "B",
-          "text": "to submit"
-        },
-        {
-          "key": "C",
           "text": "submitted"
         },
         {
-          "key": "D",
+          "key": "B",
           "text": "submitting"
+        },
+        {
+          "key": "C",
+          "text": "to submit"
+        },
+        {
+          "key": "D",
+          "text": "submit"
         }
       ],
-      "correctKey": "A",
+      "correctKey": "D",
       "correctAnswer": "submit",
       "explanation": "The causative verb 'make' is followed by object + base verb.",
       "commonMistake": "Using an infinitive after the object in a causative 'make' structure.",
@@ -4465,11 +4465,11 @@
       "options": [
         {
           "key": "A",
-          "text": "are"
+          "text": "were"
         },
         {
           "key": "B",
-          "text": "were"
+          "text": "have been"
         },
         {
           "key": "C",
@@ -4477,7 +4477,7 @@
         },
         {
           "key": "D",
-          "text": "have been"
+          "text": "are"
         }
       ],
       "correctKey": "C",
@@ -4504,22 +4504,22 @@
       "options": [
         {
           "key": "A",
-          "text": "indicates"
+          "text": "was indicated"
         },
         {
           "key": "B",
-          "text": "indicating"
+          "text": "indicates"
         },
         {
           "key": "C",
-          "text": "indicate"
+          "text": "indicating"
         },
         {
           "key": "D",
-          "text": "was indicated"
+          "text": "indicate"
         }
       ],
-      "correctKey": "C",
+      "correctKey": "D",
       "correctAnswer": "indicate",
       "explanation": "The subject is plural, \"results,\" so the plural verb \"indicate\" is required. The prepositional phrase \"of the laboratory experiment\" does not control the verb.",
       "commonMistake": {
@@ -4547,7 +4547,7 @@
       "options": [
         {
           "key": "A",
-          "text": "why"
+          "text": "why it"
         },
         {
           "key": "B",
@@ -4559,10 +4559,10 @@
         },
         {
           "key": "D",
-          "text": "why it"
+          "text": "why"
         }
       ],
-      "correctKey": "A",
+      "correctKey": "D",
       "correctAnswer": "why",
       "explanation": "After \"uncertain,\" the sentence needs a noun clause beginning with \"why.\" The full clause is \"why the ancient settlement was abandoned,\" with normal subject-verb order.",
       "commonMistake": {
@@ -4590,22 +4590,22 @@
       "options": [
         {
           "key": "A",
-          "text": "discovering"
+          "text": "that discovered"
         },
         {
           "key": "B",
-          "text": "were discovered"
-        },
-        {
-          "key": "C",
           "text": "discovered"
         },
         {
+          "key": "C",
+          "text": "were discovered"
+        },
+        {
           "key": "D",
-          "text": "that discovered"
+          "text": "discovering"
         }
       ],
-      "correctKey": "C",
+      "correctKey": "B",
       "correctAnswer": "discovered",
       "explanation": "\"Discovered in the monastery library\" is a reduced adjective clause meaning \"that were discovered in the monastery library.\"",
       "commonMistake": {
@@ -4633,7 +4633,7 @@
       "options": [
         {
           "key": "A",
-          "text": "following"
+          "text": "follow"
         },
         {
           "key": "B",
@@ -4641,14 +4641,14 @@
         },
         {
           "key": "C",
-          "text": "follow"
+          "text": "they follow"
         },
         {
           "key": "D",
-          "text": "they follow"
+          "text": "following"
         }
       ],
-      "correctKey": "C",
+      "correctKey": "A",
       "correctAnswer": "follow",
       "explanation": "The three objects of \"how to\" must be parallel: \"identify, report, and follow.\"",
       "commonMistake": {
@@ -4719,22 +4719,22 @@
       "options": [
         {
           "key": "A",
-          "text": "Despite"
-        },
-        {
-          "key": "B",
           "text": "Although"
         },
         {
+          "key": "B",
+          "text": "Despite"
+        },
+        {
           "key": "C",
-          "text": "Because of"
+          "text": "In spite"
         },
         {
           "key": "D",
-          "text": "In spite"
+          "text": "Because of"
         }
       ],
-      "correctKey": "B",
+      "correctKey": "A",
       "correctAnswer": "Although",
       "explanation": "\"Although\" introduces a full clause with a subject and verb: \"the telescope was relatively small.\"",
       "commonMistake": {
@@ -4762,11 +4762,11 @@
       "options": [
         {
           "key": "A",
-          "text": "electric lighting became"
+          "text": "electric lighting did become"
         },
         {
           "key": "B",
-          "text": "became electric lighting"
+          "text": "electric lighting became"
         },
         {
           "key": "C",
@@ -4774,7 +4774,7 @@
         },
         {
           "key": "D",
-          "text": "electric lighting did become"
+          "text": "became electric lighting"
         }
       ],
       "correctKey": "C",
@@ -4848,7 +4848,7 @@
       "options": [
         {
           "key": "A",
-          "text": "who"
+          "text": "which"
         },
         {
           "key": "B",
@@ -4856,11 +4856,11 @@
         },
         {
           "key": "C",
-          "text": "whom"
+          "text": "who"
         },
         {
           "key": "D",
-          "text": "which"
+          "text": "whom"
         }
       ],
       "correctKey": "B",
@@ -4891,7 +4891,7 @@
       "options": [
         {
           "key": "A",
-          "text": "The most of crops"
+          "text": "Most the crops"
         },
         {
           "key": "B",
@@ -4899,11 +4899,11 @@
         },
         {
           "key": "C",
-          "text": "Most of crops"
+          "text": "The most of crops"
         },
         {
           "key": "D",
-          "text": "Most the crops"
+          "text": "Most of crops"
         }
       ],
       "correctKey": "B",
@@ -4938,18 +4938,18 @@
         },
         {
           "key": "B",
-          "text": "must have rained"
+          "text": "had to rain"
         },
         {
           "key": "C",
-          "text": "should rain"
+          "text": "must have rained"
         },
         {
           "key": "D",
-          "text": "had to rain"
+          "text": "should rain"
         }
       ],
-      "correctKey": "B",
+      "correctKey": "C",
       "correctAnswer": "must have rained",
       "explanation": "\"Must have rained\" expresses a logical conclusion about a past event based on present evidence.",
       "commonMistake": {
@@ -5020,22 +5020,22 @@
       "options": [
         {
           "key": "A",
-          "text": "tradition"
+          "text": "traditionalize"
         },
         {
           "key": "B",
-          "text": "traditional"
-        },
-        {
-          "key": "C",
           "text": "traditionally"
         },
         {
+          "key": "C",
+          "text": "traditional"
+        },
+        {
           "key": "D",
-          "text": "traditionalize"
+          "text": "tradition"
         }
       ],
-      "correctKey": "B",
+      "correctKey": "C",
       "correctAnswer": "traditional",
       "explanation": "An adjective is needed to modify the noun \"art.\" The correct form is \"traditional.\"",
       "commonMistake": {
@@ -5063,22 +5063,22 @@
       "options": [
         {
           "key": "A",
-          "text": "one of the longest rivers"
-        },
-        {
-          "key": "B",
           "text": "is one of the longest rivers"
         },
         {
+          "key": "B",
+          "text": "one of the longest rivers"
+        },
+        {
           "key": "C",
-          "text": "that is one of the longest rivers"
+          "text": "being one of the longest rivers"
         },
         {
           "key": "D",
-          "text": "being one of the longest rivers"
+          "text": "that is one of the longest rivers"
         }
       ],
-      "correctKey": "A",
+      "correctKey": "B",
       "correctAnswer": "one of the longest rivers",
       "explanation": "The phrase \"one of the longest rivers in North America\" is an appositive that identifies the Mississippi River without adding another finite verb.",
       "commonMistake": {
@@ -5149,22 +5149,22 @@
       "options": [
         {
           "key": "A",
-          "text": "those"
+          "text": "these are"
         },
         {
           "key": "B",
-          "text": "that"
-        },
-        {
-          "key": "C",
           "text": "them"
         },
         {
+          "key": "C",
+          "text": "that"
+        },
+        {
           "key": "D",
-          "text": "these are"
+          "text": "those"
         }
       ],
-      "correctKey": "A",
+      "correctKey": "D",
       "correctAnswer": "those",
       "explanation": "\"Those\" correctly substitutes for the plural noun \"satellites\" in a comparison.",
       "commonMistake": {
@@ -5192,22 +5192,22 @@
       "options": [
         {
           "key": "A",
-          "text": "where"
-        },
-        {
-          "key": "B",
-          "text": "which"
-        },
-        {
-          "key": "C",
           "text": "what"
         },
         {
-          "key": "D",
+          "key": "B",
           "text": "there"
+        },
+        {
+          "key": "C",
+          "text": "which"
+        },
+        {
+          "key": "D",
+          "text": "where"
         }
       ],
-      "correctKey": "A",
+      "correctKey": "D",
       "correctAnswer": "where",
       "explanation": "\"Where\" introduces an adjective clause modifying a place: \"the valley where the expedition set up camp.\"",
       "commonMistake": {
@@ -5235,11 +5235,11 @@
       "options": [
         {
           "key": "A",
-          "text": "translate"
+          "text": "translated"
         },
         {
           "key": "B",
-          "text": "translated"
+          "text": "translate"
         },
         {
           "key": "C",
@@ -5250,7 +5250,7 @@
           "text": "to translate"
         }
       ],
-      "correctKey": "B",
+      "correctKey": "A",
       "correctAnswer": "translated",
       "explanation": "The causative passive pattern is \"have + object + past participle\": \"had the program translated.\"",
       "commonMistake": {
@@ -5278,7 +5278,7 @@
       "options": [
         {
           "key": "A",
-          "text": "few"
+          "text": "many"
         },
         {
           "key": "B",
@@ -5286,7 +5286,7 @@
         },
         {
           "key": "C",
-          "text": "many"
+          "text": "few"
         },
         {
           "key": "D",
@@ -5321,22 +5321,22 @@
       "options": [
         {
           "key": "A",
-          "text": "Walking"
-        },
-        {
-          "key": "B",
-          "text": "Walked"
-        },
-        {
-          "key": "C",
           "text": "To walk"
         },
         {
-          "key": "D",
+          "key": "B",
           "text": "They walked"
+        },
+        {
+          "key": "C",
+          "text": "Walking"
+        },
+        {
+          "key": "D",
+          "text": "Walked"
         }
       ],
-      "correctKey": "A",
+      "correctKey": "C",
       "correctAnswer": "Walking",
       "explanation": "\"Walking along the riverbank\" is an introductory participial phrase describing the biologists.",
       "commonMistake": {
@@ -5364,22 +5364,22 @@
       "options": [
         {
           "key": "A",
-          "text": "review"
-        },
-        {
-          "key": "B",
           "text": "are reviewed"
         },
         {
-          "key": "C",
+          "key": "B",
           "text": "reviewing"
+        },
+        {
+          "key": "C",
+          "text": "review"
         },
         {
           "key": "D",
           "text": "have reviewing"
         }
       ],
-      "correctKey": "B",
+      "correctKey": "A",
       "correctAnswer": "are reviewed",
       "explanation": "The rules receive the action, so the passive form \"are reviewed\" is needed.",
       "commonMistake": {
@@ -5407,22 +5407,22 @@
       "options": [
         {
           "key": "A",
-          "text": "There is"
-        },
-        {
-          "key": "B",
           "text": "It is"
         },
         {
+          "key": "B",
+          "text": "They are"
+        },
+        {
           "key": "C",
-          "text": "There are"
+          "text": "There is"
         },
         {
           "key": "D",
-          "text": "They are"
+          "text": "There are"
         }
       ],
-      "correctKey": "A",
+      "correctKey": "C",
       "correctAnswer": "There is",
       "explanation": "\"Debate\" is a singular noncount noun here, so the correct existential structure is \"There is considerable debate.\"",
       "commonMistake": {
@@ -5450,22 +5450,22 @@
       "options": [
         {
           "key": "A",
-          "text": "accommodates"
-        },
-        {
-          "key": "B",
-          "text": "accommodating"
-        },
-        {
-          "key": "C",
           "text": "to accommodate"
         },
         {
-          "key": "D",
+          "key": "B",
+          "text": "accommodates"
+        },
+        {
+          "key": "C",
           "text": "accommodated"
+        },
+        {
+          "key": "D",
+          "text": "accommodating"
         }
       ],
-      "correctKey": "C",
+      "correctKey": "A",
       "correctAnswer": "to accommodate",
       "explanation": "The infinitive \"to accommodate\" expresses the purpose of redesigning the bridge.",
       "commonMistake": {
@@ -5493,11 +5493,11 @@
       "options": [
         {
           "key": "A",
-          "text": "biologically diverse"
+          "text": "the most biologically diverse"
         },
         {
           "key": "B",
-          "text": "the most biologically diverse"
+          "text": "biologically diverse"
         },
         {
           "key": "C",
@@ -5508,7 +5508,7 @@
           "text": "the biologically diverse most"
         }
       ],
-      "correctKey": "B",
+      "correctKey": "A",
       "correctAnswer": "the most biologically diverse",
       "explanation": "The correct pattern is \"one of the + superlative + plural noun\": \"one of the most biologically diverse regions.\"",
       "commonMistake": {
@@ -5536,22 +5536,22 @@
       "options": [
         {
           "key": "A",
-          "text": "submits"
+          "text": "will submit"
         },
         {
           "key": "B",
-          "text": "submit"
+          "text": "submits"
         },
         {
           "key": "C",
-          "text": "submitted"
+          "text": "submit"
         },
         {
           "key": "D",
-          "text": "will submit"
+          "text": "submitted"
         }
       ],
-      "correctKey": "B",
+      "correctKey": "C",
       "correctAnswer": "submit",
       "explanation": "After verbs such as \"recommend,\" a that-clause can use the base form of the verb: \"that each student submit.\"",
       "commonMistake": {
@@ -5579,22 +5579,22 @@
       "options": [
         {
           "key": "A",
-          "text": "reviews"
-        },
-        {
-          "key": "B",
           "text": "review"
         },
         {
+          "key": "B",
+          "text": "reviews"
+        },
+        {
           "key": "C",
-          "text": "reviewing"
+          "text": "has reviewed"
         },
         {
           "key": "D",
-          "text": "has reviewed"
+          "text": "reviewing"
         }
       ],
-      "correctKey": "B",
+      "correctKey": "A",
       "correctAnswer": "review",
       "explanation": "A compound subject joined by \"and\" normally takes a plural verb, so \"review\" is required.",
       "commonMistake": {
@@ -5626,15 +5626,15 @@
         },
         {
           "key": "B",
-          "text": "have found"
+          "text": "were finding"
         },
         {
           "key": "C",
-          "text": "find"
+          "text": "have found"
         },
         {
           "key": "D",
-          "text": "were finding"
+          "text": "find"
         }
       ],
       "correctKey": "A",
@@ -5665,11 +5665,11 @@
       "options": [
         {
           "key": "A",
-          "text": "will review"
+          "text": "will be reviewed"
         },
         {
           "key": "B",
-          "text": "will be reviewed"
+          "text": "will review"
         },
         {
           "key": "C",
@@ -5680,7 +5680,7 @@
           "text": "are reviewing"
         }
       ],
-      "correctKey": "B",
+      "correctKey": "A",
       "correctAnswer": "will be reviewed",
       "explanation": "The regulations receive the action, so the future passive form \"will be reviewed\" is required.",
       "commonMistake": {
@@ -5712,15 +5712,15 @@
         },
         {
           "key": "B",
-          "text": "turned"
-        },
-        {
-          "key": "C",
           "text": "would turn"
         },
         {
-          "key": "D",
+          "key": "C",
           "text": "had turned"
+        },
+        {
+          "key": "D",
+          "text": "turned"
         }
       ],
       "correctKey": "A",
@@ -5759,14 +5759,14 @@
         },
         {
           "key": "C",
-          "text": "submit"
+          "text": "will submit"
         },
         {
           "key": "D",
-          "text": "will submit"
+          "text": "submit"
         }
       ],
-      "correctKey": "C",
+      "correctKey": "D",
       "correctAnswer": "submit",
       "explanation": "After verbs such as \"recommend,\" formal English uses the base form in a that-clause.",
       "commonMistake": {
@@ -5794,22 +5794,22 @@
       "options": [
         {
           "key": "A",
-          "text": "enroll"
-        },
-        {
-          "key": "B",
           "text": "enrolling"
         },
         {
-          "key": "C",
+          "key": "B",
           "text": "are enrolled"
+        },
+        {
+          "key": "C",
+          "text": "enroll"
         },
         {
           "key": "D",
           "text": "to enroll"
         }
       ],
-      "correctKey": "B",
+      "correctKey": "A",
       "correctAnswer": "enrolling",
       "explanation": "\"Enrolling in the advanced seminar\" is a reduced adjective clause meaning \"who enroll in the advanced seminar.\"",
       "commonMistake": {
@@ -5837,7 +5837,7 @@
       "options": [
         {
           "key": "A",
-          "text": "who"
+          "text": "what"
         },
         {
           "key": "B",
@@ -5845,14 +5845,14 @@
         },
         {
           "key": "C",
-          "text": "that"
+          "text": "who"
         },
         {
           "key": "D",
-          "text": "what"
+          "text": "that"
         }
       ],
-      "correctKey": "C",
+      "correctKey": "D",
       "correctAnswer": "that",
       "explanation": "\"That\" correctly refers to \"the theory\" as the object of the adjective clause.",
       "commonMistake": {
@@ -5880,22 +5880,22 @@
       "options": [
         {
           "key": "A",
-          "text": "whether"
+          "text": "what"
         },
         {
           "key": "B",
-          "text": "that"
-        },
-        {
-          "key": "C",
           "text": "which"
         },
         {
+          "key": "C",
+          "text": "whether"
+        },
+        {
           "key": "D",
-          "text": "what"
+          "text": "that"
         }
       ],
-      "correctKey": "A",
+      "correctKey": "C",
       "correctAnswer": "whether",
       "explanation": "\"Whether\" introduces a noun clause expressing two possible alternatives.",
       "commonMistake": {
@@ -5923,22 +5923,22 @@
       "options": [
         {
           "key": "A",
-          "text": "scientists have discovered"
-        },
-        {
-          "key": "B",
           "text": "have scientists discovered"
         },
         {
-          "key": "C",
+          "key": "B",
           "text": "scientists discovered"
+        },
+        {
+          "key": "C",
+          "text": "scientists have discovered"
         },
         {
           "key": "D",
           "text": "did scientists discovered"
         }
       ],
-      "correctKey": "B",
+      "correctKey": "A",
       "correctAnswer": "have scientists discovered",
       "explanation": "The negative adverb \"Seldom\" at the beginning requires auxiliary-subject inversion.",
       "commonMistake": {
@@ -5966,7 +5966,7 @@
       "options": [
         {
           "key": "A",
-          "text": "training teachers"
+          "text": "to train teachers"
         },
         {
           "key": "B",
@@ -5974,14 +5974,14 @@
         },
         {
           "key": "C",
-          "text": "to train teachers"
+          "text": "training teachers"
         },
         {
           "key": "D",
           "text": "teachers are trained"
         }
       ],
-      "correctKey": "C",
+      "correctKey": "A",
       "correctAnswer": "to train teachers",
       "explanation": "The series uses infinitive phrases: \"to improve,\" \"to expand,\" and \"to train.\"",
       "commonMistake": {
@@ -6439,7 +6439,7 @@
       "options": [
         {
           "key": "A",
-          "text": "more reliable"
+          "text": "reliably"
         },
         {
           "key": "B",
@@ -6451,7 +6451,7 @@
         },
         {
           "key": "D",
-          "text": "reliably"
+          "text": "more reliable"
         }
       ],
       "correctKey": "B",
@@ -6490,14 +6490,14 @@
         },
         {
           "key": "C",
-          "text": "to"
+          "text": "about"
         },
         {
           "key": "D",
-          "text": "about"
+          "text": "to"
         }
       ],
-      "correctKey": "C",
+      "correctKey": "D",
       "correctAnswer": "to",
       "explanation": "The adjective \"sensitive\" is followed by the preposition \"to.\"",
       "commonMistake": {
@@ -6525,7 +6525,7 @@
       "options": [
         {
           "key": "A",
-          "text": "understand"
+          "text": "understood"
         },
         {
           "key": "B",
@@ -6533,14 +6533,14 @@
         },
         {
           "key": "C",
-          "text": "to understand"
+          "text": "understand"
         },
         {
           "key": "D",
-          "text": "understood"
+          "text": "to understand"
         }
       ],
-      "correctKey": "C",
+      "correctKey": "D",
       "correctAnswer": "to understand",
       "explanation": "After an adjective such as \"easy,\" an infinitive is commonly used: \"easy to understand.\"",
       "commonMistake": {
@@ -6568,22 +6568,22 @@
       "options": [
         {
           "key": "A",
-          "text": "won"
+          "text": "who winner of"
         },
         {
           "key": "B",
-          "text": "she won"
-        },
-        {
-          "key": "C",
           "text": "winner of"
         },
         {
+          "key": "C",
+          "text": "she won"
+        },
+        {
           "key": "D",
-          "text": "who winner of"
+          "text": "won"
         }
       ],
-      "correctKey": "C",
+      "correctKey": "B",
       "correctAnswer": "winner of",
       "explanation": "\"Winner of two Nobel Prizes\" is an appositive noun phrase that correctly identifies Marie Curie.",
       "commonMistake": {
@@ -6611,22 +6611,22 @@
       "options": [
         {
           "key": "A",
-          "text": "have increased"
+          "text": "increase"
         },
         {
           "key": "B",
-          "text": "are increasing"
+          "text": "have increased"
         },
         {
           "key": "C",
-          "text": "has increased"
+          "text": "are increasing"
         },
         {
           "key": "D",
-          "text": "increase"
+          "text": "has increased"
         }
       ],
-      "correctKey": "C",
+      "correctKey": "D",
       "correctAnswer": "has increased",
       "explanation": "\"The number\" is singular, so the singular present perfect form \"has increased\" is required.",
       "commonMistake": {
@@ -6654,22 +6654,22 @@
       "options": [
         {
           "key": "A",
-          "text": "is"
-        },
-        {
-          "key": "B",
-          "text": "has been"
-        },
-        {
-          "key": "C",
           "text": "are"
         },
         {
-          "key": "D",
+          "key": "B",
           "text": "was"
+        },
+        {
+          "key": "C",
+          "text": "is"
+        },
+        {
+          "key": "D",
+          "text": "has been"
         }
       ],
-      "correctKey": "C",
+      "correctKey": "A",
       "correctAnswer": "are",
       "explanation": "In a \"there\" construction, the verb agrees with the real subject that follows it. Since \"several possible explanations\" is plural, \"are\" is required.",
       "commonMistake": {
@@ -6697,22 +6697,22 @@
       "options": [
         {
           "key": "A",
-          "text": "develop"
-        },
-        {
-          "key": "B",
           "text": "will have developed"
         },
         {
+          "key": "B",
+          "text": "are developing"
+        },
+        {
           "key": "C",
-          "text": "had developed"
+          "text": "develop"
         },
         {
           "key": "D",
-          "text": "are developing"
+          "text": "had developed"
         }
       ],
-      "correctKey": "B",
+      "correctKey": "A",
       "correctAnswer": "will have developed",
       "explanation": "The phrase \"By the end of the decade\" points to a completed action before a future time, so the future perfect is correct.",
       "commonMistake": {
@@ -6744,7 +6744,7 @@
         },
         {
           "key": "B",
-          "text": "were identifying"
+          "text": "are identifying"
         },
         {
           "key": "C",
@@ -6752,7 +6752,7 @@
         },
         {
           "key": "D",
-          "text": "are identifying"
+          "text": "were identifying"
         }
       ],
       "correctKey": "C",
@@ -6783,22 +6783,22 @@
       "options": [
         {
           "key": "A",
-          "text": "will be"
-        },
-        {
-          "key": "B",
           "text": "would have been"
         },
         {
-          "key": "C",
+          "key": "B",
           "text": "would be"
         },
         {
-          "key": "D",
+          "key": "C",
           "text": "had been"
+        },
+        {
+          "key": "D",
+          "text": "will be"
         }
       ],
-      "correctKey": "B",
+      "correctKey": "A",
       "correctAnswer": "would have been",
       "explanation": "The if-clause uses past perfect, so the result clause of a past unreal conditional requires \"would have + past participle.\"",
       "commonMistake": {
@@ -6869,22 +6869,22 @@
       "options": [
         {
           "key": "A",
-          "text": "collecting"
-        },
-        {
-          "key": "B",
-          "text": "were collected"
-        },
-        {
-          "key": "C",
           "text": "collected"
         },
         {
-          "key": "D",
+          "key": "B",
           "text": "to collect"
+        },
+        {
+          "key": "C",
+          "text": "collecting"
+        },
+        {
+          "key": "D",
+          "text": "were collected"
         }
       ],
-      "correctKey": "C",
+      "correctKey": "A",
       "correctAnswer": "collected",
       "explanation": "\"Collected from the river\" is a reduced passive adjective clause meaning \"that were collected from the river.\"",
       "commonMistake": {
@@ -6912,7 +6912,7 @@
       "options": [
         {
           "key": "A",
-          "text": "where"
+          "text": "what"
         },
         {
           "key": "B",
@@ -6924,10 +6924,10 @@
         },
         {
           "key": "D",
-          "text": "what"
+          "text": "where"
         }
       ],
-      "correctKey": "A",
+      "correctKey": "D",
       "correctAnswer": "where",
       "explanation": "\"Where\" correctly introduces an adjective clause referring to a place.",
       "commonMistake": {
@@ -6955,22 +6955,22 @@
       "options": [
         {
           "key": "A",
-          "text": "what"
-        },
-        {
-          "key": "B",
           "text": "that"
         },
         {
-          "key": "C",
+          "key": "B",
           "text": "whether"
         },
         {
-          "key": "D",
+          "key": "C",
           "text": "which"
+        },
+        {
+          "key": "D",
+          "text": "what"
         }
       ],
-      "correctKey": "B",
+      "correctKey": "A",
       "correctAnswer": "that",
       "explanation": "\"That\" introduces a complete noun clause functioning as the object of \"suggests.\"",
       "commonMistake": {
@@ -6998,22 +6998,22 @@
       "options": [
         {
           "key": "A",
-          "text": "the researchers could"
-        },
-        {
-          "key": "B",
-          "text": "could the researchers"
-        },
-        {
-          "key": "C",
           "text": "the researchers did"
         },
         {
-          "key": "D",
+          "key": "B",
           "text": "did the researchers could"
+        },
+        {
+          "key": "C",
+          "text": "could the researchers"
+        },
+        {
+          "key": "D",
+          "text": "the researchers could"
         }
       ],
-      "correctKey": "B",
+      "correctKey": "C",
       "correctAnswer": "could the researchers",
       "explanation": "When \"Only when\" begins the sentence, the main clause requires auxiliary-subject inversion.",
       "commonMistake": {
@@ -7041,22 +7041,22 @@
       "options": [
         {
           "key": "A",
-          "text": "resists heat"
-        },
-        {
-          "key": "B",
-          "text": "heat resistance"
-        },
-        {
-          "key": "C",
           "text": "resistant to heat"
         },
         {
-          "key": "D",
+          "key": "B",
           "text": "to resist heat"
+        },
+        {
+          "key": "C",
+          "text": "resists heat"
+        },
+        {
+          "key": "D",
+          "text": "heat resistance"
         }
       ],
-      "correctKey": "C",
+      "correctKey": "A",
       "correctAnswer": "resistant to heat",
       "explanation": "The series contains adjectives or adjective phrases: \"lightweight,\" \"durable,\" and \"resistant to heat.\"",
       "commonMistake": {
@@ -7514,7 +7514,7 @@
       "options": [
         {
           "key": "A",
-          "text": "cite"
+          "text": "to cite"
         },
         {
           "key": "B",
@@ -7522,14 +7522,14 @@
         },
         {
           "key": "C",
-          "text": "to cite"
+          "text": "cited"
         },
         {
           "key": "D",
-          "text": "cited"
+          "text": "cite"
         }
       ],
-      "correctKey": "C",
+      "correctKey": "A",
       "correctAnswer": "to cite",
       "explanation": "The verb \"remind\" is followed by object + infinitive: \"reminded the students to cite.\"",
       "commonMistake": {
@@ -7557,11 +7557,11 @@
       "options": [
         {
           "key": "A",
-          "text": "as accurate as"
+          "text": "accurate than"
         },
         {
           "key": "B",
-          "text": "so accurate than"
+          "text": "as accurate as"
         },
         {
           "key": "C",
@@ -7569,10 +7569,10 @@
         },
         {
           "key": "D",
-          "text": "accurate than"
+          "text": "so accurate than"
         }
       ],
-      "correctKey": "A",
+      "correctKey": "B",
       "correctAnswer": "as accurate as",
       "explanation": "Equal comparison requires the structure \"as + adjective + as.\"",
       "commonMistake": {
@@ -7600,22 +7600,22 @@
       "options": [
         {
           "key": "A",
-          "text": "approve"
-        },
-        {
-          "key": "B",
-          "text": "be approved"
-        },
-        {
-          "key": "C",
           "text": "have approved"
         },
         {
-          "key": "D",
+          "key": "B",
+          "text": "approve"
+        },
+        {
+          "key": "C",
           "text": "approving"
+        },
+        {
+          "key": "D",
+          "text": "be approved"
         }
       ],
-      "correctKey": "B",
+      "correctKey": "D",
       "correctAnswer": "be approved",
       "explanation": "The report receives the action, so the modal passive form \"must be approved\" is required.",
       "commonMistake": {
@@ -7647,18 +7647,18 @@
         },
         {
           "key": "B",
-          "text": "in"
+          "text": "for"
         },
         {
           "key": "C",
-          "text": "for"
+          "text": "in"
         },
         {
           "key": "D",
           "text": "of"
         }
       ],
-      "correctKey": "B",
+      "correctKey": "C",
       "correctAnswer": "in",
       "explanation": "The correct academic collocation is \"rich in\" natural resources.",
       "commonMistake": {
