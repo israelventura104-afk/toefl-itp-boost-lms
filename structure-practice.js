@@ -60,16 +60,30 @@ function normalizeItem(raw) {
     key: String(option.key ?? "").trim().toUpperCase(),
     text: String(option.text ?? option.key ?? "").trim(),
   }));
-  if (window.StructureLib?.alignErrorOptions) {
-    options = StructureLib.alignErrorOptions(question, options, type).map((option) => ({
-      key: String(option.key ?? "").trim().toUpperCase(),
-      text: String(option.text ?? option.key ?? "").trim(),
-    }));
+  if (window.StructureLib?.normalizeErrorFields && StructureLib.isErrorIdentification(type, question)) {
+    const normalized = StructureLib.normalizeErrorFields(
+      question,
+      type,
+      raw.correctKey ?? raw.correct_answer,
+      options,
+      raw.correctAnswer
+    );
+    options = normalized.options;
+    var correctKey = normalized.correctKey;
+    var correctAnswer = normalized.correctAnswer;
+  } else {
+    if (window.StructureLib?.alignErrorOptions) {
+      options = StructureLib.alignErrorOptions(question, options, type).map((option) => ({
+        key: String(option.key ?? "").trim().toUpperCase(),
+        text: String(option.text ?? option.key ?? "").trim(),
+      }));
+    }
+    var correctKey = String(raw.correctKey ?? raw.correct_answer ?? "")
+      .trim()
+      .toUpperCase();
+    const correctFromOptions = options.find((option) => option.key === correctKey);
+    var correctAnswer = correctFromOptions?.text || raw.correctAnswer || correctKey;
   }
-  const correctKey = String(raw.correctKey ?? raw.correct_answer ?? "")
-    .trim()
-    .toUpperCase();
-  const correctFromOptions = options.find((option) => option.key === correctKey);
 
   return {
     id: String(raw.id ?? "").trim(),
@@ -79,7 +93,7 @@ function normalizeItem(raw) {
     question,
     options,
     correctKey,
-    correctAnswer: correctFromOptions?.text || raw.correctAnswer || correctKey,
+    correctAnswer,
     explanation: raw.explanation || "",
     commonMistake: raw.commonMistake || "",
   };
@@ -241,7 +255,7 @@ function renderFeedback(item) {
 
   feedbackEl.innerHTML = `
     <strong>${answer.correct ? "Correct" : "Incorrect"}</strong>
-    <p>The correct answer is <b>${escapeHtml(item.correctKey)}. ${escapeHtml(item.correctAnswer)}</b></p>
+    <p>The correct answer is <b>${escapeHtml(window.StructureLib?.formatCorrectLabel(item.correctKey, item.correctAnswer) || `${item.correctKey}. ${item.correctAnswer}`)}</b></p>
     <p>${escapeHtml(item.explanation)}</p>
     ${mistakeLine}
   `;

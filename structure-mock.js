@@ -90,16 +90,30 @@ function normalizeItem(raw) {
     key: String(option.key ?? "").trim().toUpperCase(),
     text: String(option.text ?? option.key ?? "").trim(),
   }));
-  if (window.StructureLib?.alignErrorOptions) {
-    options = StructureLib.alignErrorOptions(question, options, type).map((option) => ({
-      key: String(option.key ?? "").trim().toUpperCase(),
-      text: String(option.text ?? option.key ?? "").trim(),
-    }));
+  if (window.StructureLib?.normalizeErrorFields && StructureLib.isErrorIdentification(type, question)) {
+    const normalized = StructureLib.normalizeErrorFields(
+      question,
+      type,
+      raw.correctKey ?? raw.correct_answer,
+      options,
+      raw.correctAnswer
+    );
+    options = normalized.options;
+    var correctKey = normalized.correctKey;
+    var correctAnswer = normalized.correctAnswer;
+  } else {
+    if (window.StructureLib?.alignErrorOptions) {
+      options = StructureLib.alignErrorOptions(question, options, type).map((option) => ({
+        key: String(option.key ?? "").trim().toUpperCase(),
+        text: String(option.text ?? option.key ?? "").trim(),
+      }));
+    }
+    var correctKey = String(raw.correctKey ?? raw.correct_answer ?? "")
+      .trim()
+      .toUpperCase();
+    const correctFromOptions = options.find((option) => option.key === correctKey);
+    var correctAnswer = correctFromOptions?.text || raw.correctAnswer || correctKey;
   }
-  const correctKey = String(raw.correctKey ?? raw.correct_answer ?? "")
-    .trim()
-    .toUpperCase();
-  const correctFromOptions = options.find((option) => option.key === correctKey);
 
   return {
     id: String(raw.id ?? "").trim(),
@@ -109,7 +123,7 @@ function normalizeItem(raw) {
     question,
     options,
     correctKey,
-    correctAnswer: correctFromOptions?.text || raw.correctAnswer || correctKey,
+    correctAnswer,
     explanation: raw.explanation || "",
     commonMistake: formatCommonMistake(
       raw.commonMistake || raw.distractor_rationale,
@@ -391,7 +405,7 @@ function finishExam({ auto = false } = {}) {
         ? StructureLib.formatStructureQuestionHtml(item.question, item.type)
         : ResultsLib.escapeHtml(item.question),
       yours: blank ? "no answer" : selectedKey,
-      correct: `${item.correctKey}. ${item.correctAnswer}`,
+      correct: window.StructureLib?.formatCorrectLabel(item.correctKey, item.correctAnswer) || `${item.correctKey}. ${item.correctAnswer}`,
       explanation: item.explanation,
       trap: item.commonMistake,
     }));

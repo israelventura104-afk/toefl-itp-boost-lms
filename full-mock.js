@@ -174,16 +174,29 @@ function normalizeStructureItem(raw) {
         ? "Error Identification"
         : rawType;
   const prompt = raw.question || raw.stem || "";
-  if (window.StructureLib?.alignErrorOptions) {
+  let correctKey = String(raw.correctKey ?? raw.correct_answer ?? "")
+    .trim()
+    .toUpperCase();
+  let correctAnswer = raw.correctAnswer;
+  if (window.StructureLib?.normalizeErrorFields && StructureLib.isErrorIdentification(type, prompt)) {
+    const normalized = StructureLib.normalizeErrorFields(
+      prompt,
+      type,
+      correctKey,
+      options,
+      correctAnswer
+    );
+    options = normalized.options;
+    correctKey = normalized.correctKey;
+    correctAnswer = normalized.correctAnswer;
+  } else if (window.StructureLib?.alignErrorOptions) {
     options = StructureLib.alignErrorOptions(prompt, options, type).map((option) => ({
       key: String(option.key ?? "").trim().toUpperCase(),
       text: String(option.text ?? option.key ?? "").trim(),
     }));
   }
-  const correctKey = String(raw.correctKey ?? raw.correct_answer ?? "")
-    .trim()
-    .toUpperCase();
   const hit = options.find((o) => o.key === correctKey);
+  correctAnswer = hit?.text || correctAnswer || correctKey;
   return {
     id: String(raw.id ?? "").trim(),
     type,
@@ -192,7 +205,7 @@ function normalizeStructureItem(raw) {
     prompt,
     options,
     correctKey,
-    correctAnswer: hit?.text || raw.correctAnswer || correctKey,
+    correctAnswer,
     explanation: raw.explanation || "",
     commonMistake: formatCommonMistake(raw.commonMistake || raw.distractor_rationale, correctKey),
   };

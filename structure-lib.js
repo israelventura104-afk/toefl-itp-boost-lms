@@ -1,6 +1,7 @@
 /**
- * Shared Structure helpers — Error Identification display (ITP-style underlines).
- * Bank items store markers as "phrase (A) phrase (B) …"; render as four clear chunks.
+ * Shared Structure helpers — Error Identification (ITP-style).
+ * Standard: sentence with four underlined chunks (A–D after each);
+ * options = those phrases; feedback = "B. phrase".
  */
 (function (global) {
   function escapeHtml(value) {
@@ -19,8 +20,8 @@
   }
 
   /**
-   * Parse "… (A) … (B) … (C) … (D) …" into four labeled segments + trailing text.
-   * Letter comes AFTER the phrase it labels (prep-book convention).
+   * Parse "phrase (A) phrase (B) phrase (C) phrase (D)".
+   * Letter comes AFTER the phrase it labels.
    */
   function parseErrorSegments(questionText) {
     const text = String(questionText ?? "");
@@ -45,10 +46,9 @@
     const segments = [];
     let cursor = 0;
     for (const marker of markers) {
-      const raw = text.slice(cursor, marker.index);
       segments.push({
         letter: marker.letter,
-        text: raw.trim(),
+        text: text.slice(cursor, marker.index).trim(),
       });
       cursor = marker.end;
     }
@@ -59,10 +59,6 @@
     };
   }
 
-  /**
-   * Convert parenthetical markers into underlined A–D chunks (exam look).
-   * Sentence Completion and plain text pass through escaped only.
-   */
   function formatStructureQuestionHtml(questionText, type) {
     const text = String(questionText ?? "");
     if (!text) return "";
@@ -77,7 +73,8 @@
     const chunks = parsed.segments
       .filter((seg) => seg.text)
       .map(
-        (seg) =>
+        (seg, index) =>
+          (index ? " " : "") +
           `<span class="error-id-chunk" data-choice="${seg.letter}">` +
           `<span class="error-id-text">${escapeHtml(seg.text)}</span>` +
           `<span class="error-id-letter">${seg.letter}</span>` +
@@ -85,7 +82,6 @@
       )
       .join("");
 
-    // Keep trailing text / final period outside the last underline
     let ending = "";
     const trail = parsed.trailing;
     if (!trail || trail === ".") {
@@ -106,27 +102,55 @@
     );
   }
 
-  /**
-   * Error Identification choices must match the underlined chunks.
-   * Some bank items store A/A…D/D or a short word on the wrong letter.
-   */
+  /** Force options A–D to equal the underlined phrases. */
   function alignErrorOptions(questionText, options, type) {
-    if (!Array.isArray(options) || !options.length) return options;
-    if (!isErrorIdentification(type, questionText)) return options;
+    if (!isErrorIdentification(type, questionText)) {
+      return Array.isArray(options) ? options : [];
+    }
     const parsed = parseErrorSegments(questionText);
-    if (!parsed) return options;
+    if (!parsed) {
+      return (options || []).map((option) => ({
+        key: String(option.key || "").trim().toUpperCase(),
+        text: String(option.text ?? option.key ?? "").trim(),
+      }));
+    }
 
-    const byLetter = {};
-    parsed.segments.forEach((seg) => {
-      if (seg.letter && seg.text) byLetter[seg.letter] = seg.text;
-    });
+    return parsed.segments.map((seg) => ({
+      key: seg.letter,
+      text: seg.text,
+    }));
+  }
 
-    return options.map((option) => {
-      const key = String(option.key || "").trim().toUpperCase();
-      const phrase = byLetter[key];
-      if (!phrase) return { key, text: String(option.text ?? option.key ?? "").trim() };
-      return { key, text: phrase };
-    });
+  /** Always "B. were asked" (never letter-only or bare word without letter). */
+  function formatCorrectLabel(correctKey, correctAnswer) {
+    const key = String(correctKey || "").trim().toUpperCase();
+    const phrase = String(correctAnswer || "").trim();
+    if (key && phrase && phrase.toUpperCase() !== key) {
+      return `${key}. ${phrase}`;
+    }
+    if (key) return key;
+    return phrase;
+  }
+
+  /**
+   * Normalize an Error ID item: options = chunks, correctAnswer = phrase for correctKey.
+   */
+  function normalizeErrorFields(questionText, type, correctKey, options, correctAnswer) {
+    const key = String(correctKey || "").trim().toUpperCase();
+    const aligned = alignErrorOptions(questionText, options, type);
+    const hit = aligned.find((option) => option.key === key);
+    const phrase =
+      (hit && hit.text) ||
+      (String(correctAnswer || "").trim().toUpperCase() === key
+        ? ""
+        : String(correctAnswer || "").trim()) ||
+      key;
+    return {
+      options: aligned,
+      correctKey: key,
+      correctAnswer: phrase || key,
+      correctLabel: formatCorrectLabel(key, phrase || key),
+    };
   }
 
   global.StructureLib = {
@@ -136,5 +160,7 @@
     formatStructureQuestionHtml,
     setStructureQuestion,
     alignErrorOptions,
+    formatCorrectLabel,
+    normalizeErrorFields,
   };
 })(window);
