@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="listening-bc-eh.css?v=20260920-eh" />
+  <link rel="stylesheet" href="listening-bc-eh.css?v=20260920-color" />
 </head>
 <body>
 <div class="shell">
@@ -58,15 +58,16 @@
           <span data-counter>1 / 8</span>
           <strong data-score>0/0 correct</strong>
         </div>
+        <p class="tip"><strong>How feedback works:</strong> pick an answer — green = correct, red = your miss. The box below always shows the right option and a short why.</p>
         <p class="q-meta" data-meta></p>
         <p class="q-meta" data-topic></p>
         <div class="player">
           <audio data-audio controls preload="metadata"></audio>
           <button class="btn ghost" type="button" data-replay>Replay</button>
         </div>
-        <h3 data-question style="margin:8px 0;color:var(--navy);font-size:1.05rem;"></h3>
+        <h3 class="prompt" data-question></h3>
         <div class="choice-list" data-options></div>
-        <div class="feedback" data-feedback hidden></div>
+        <div class="practice-feedback" data-feedback hidden></div>
         <div class="actions-row">
           <button class="btn ghost" type="button" data-prev>Previous</button>
           <button class="btn primary" type="button" data-next>Next</button>
@@ -77,7 +78,7 @@
     <section class="lesson results" data-results hidden>
       <header class="lesson-head">
         <h3>Session complete</h3>
-        <p>Your score for this B + C set.</p>
+        <p>Your score for this B + C set — review misses in red cards below.</p>
       </header>
       <div class="panel-pad">
         <div class="results-hero">
@@ -110,6 +111,6 @@
 <script src="progress.js"></script>
 <script src="listening-lib.js?v=20260918e"></script>
 <script src="results-lib.js"></script>
-<script src="listening-bc-practice.js?v=20260920-eh"></script>
+<script src="listening-bc-practice.js?v=20260920-color"></script>
 </body>
 </html>
