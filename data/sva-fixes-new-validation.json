@@ -1,0 +1,166 @@
+{
+  "batch": "sva-fixes-and-new-2026-09-20",
+  "all_pass": true,
+  "items": [
+    {
+      "id": "STR-0126",
+      "type": "SC",
+      "subskill": "Intervening PP",
+      "avg": 4.83,
+      "verdict": "PASS",
+      "notes": "Meta fixed; intervening phrase trap clear.",
+      "scores": {
+        "D1": 5,
+        "D2": 5,
+        "D3": 5,
+        "D4": 5,
+        "D5": 4,
+        "D6": 5
+      }
+    },
+    {
+      "id": "STR-0151",
+      "type": "SC",
+      "subskill": "Compound + and",
+      "avg": 4.67,
+      "verdict": "PASS",
+      "notes": "Meta fixed; difficulty set to 2.",
+      "scores": {
+        "D1": 5,
+        "D2": 4,
+        "D3": 5,
+        "D4": 5,
+        "D5": 4,
+        "D6": 5
+      }
+    },
+    {
+      "id": "STR-0176",
+      "type": "SC",
+      "subskill": "There + plural",
+      "avg": 4.83,
+      "verdict": "PASS",
+      "notes": "Meta fixed; there-construction.",
+      "scores": {
+        "D1": 5,
+        "D2": 5,
+        "D3": 5,
+        "D4": 5,
+        "D5": 4,
+        "D6": 5
+      }
+    },
+    {
+      "id": "TQB-STR-0127",
+      "type": "EI",
+      "subskill": "Neither\u2026Nor",
+      "avg": 5.0,
+      "verdict": "PASS",
+      "notes": "Rewritten academic EI; nearer = supervisor.",
+      "scores": {
+        "D1": 5,
+        "D2": 5,
+        "D3": 5,
+        "D4": 5,
+        "D5": 5,
+        "D6": 5
+      }
+    },
+    {
+      "id": "TQB-STR-0142",
+      "type": "EI",
+      "subskill": "Neither\u2026Nor",
+      "avg": 5.0,
+      "verdict": "PASS",
+      "notes": "Rewritten academic EI; nearer = members.",
+      "scores": {
+        "D1": 5,
+        "D2": 5,
+        "D3": 5,
+        "D4": 5,
+        "D5": 5,
+        "D6": 5
+      }
+    },
+    {
+      "id": "TQB-STR-0170",
+      "type": "SC",
+      "subskill": "A number of",
+      "avg": 5.0,
+      "verdict": "PASS",
+      "notes": "NEW \u2014 contrasts with the number of.",
+      "scores": {
+        "D1": 5,
+        "D2": 5,
+        "D3": 5,
+        "D4": 5,
+        "D5": 5,
+        "D6": 5
+      }
+    },
+    {
+      "id": "TQB-STR-0171",
+      "type": "SC",
+      "subskill": "Along with",
+      "avg": 5.0,
+      "verdict": "PASS",
+      "notes": "NEW \u2014 along with ignored for agreement.",
+      "scores": {
+        "D1": 5,
+        "D2": 5,
+        "D3": 5,
+        "D4": 5,
+        "D5": 5,
+        "D6": 5
+      }
+    },
+    {
+      "id": "TQB-STR-0172",
+      "type": "SC",
+      "subskill": "Relative clause",
+      "avg": 5.0,
+      "verdict": "PASS",
+      "notes": "NEW \u2014 head noun vs noun in clause.",
+      "scores": {
+        "D1": 5,
+        "D2": 5,
+        "D3": 5,
+        "D4": 5,
+        "D5": 5,
+        "D6": 5
+      }
+    },
+    {
+      "id": "TQB-STR-0173",
+      "type": "EI",
+      "subskill": "Evidence uncountable",
+      "avg": 5.0,
+      "verdict": "PASS",
+      "notes": "NEW \u2014 mass noun agreement.",
+      "scores": {
+        "D1": 5,
+        "D2": 5,
+        "D3": 5,
+        "D4": 5,
+        "D5": 5,
+        "D6": 5
+      }
+    },
+    {
+      "id": "TQB-STR-0174",
+      "type": "EI",
+      "subskill": "Percent of + plural",
+      "avg": 5.0,
+      "verdict": "PASS",
+      "notes": "NEW \u2014 percent of applicants \u2192 plural.",
+      "scores": {
+        "D1": 5,
+        "D2": 5,
+        "D3": 5,
+        "D4": 5,
+        "D5": 5,
+        "D6": 5
+      }
+    }
+  ]
+}
