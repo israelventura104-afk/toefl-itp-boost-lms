@@ -34,7 +34,7 @@ function bootStrategyClass({ teachHtml, demos, practice, slotLabel }) {
   document.getElementById("panel-teach").innerHTML = teachHtml;
 
   let demoIndex = 0;
-  let demoRevealed = false;
+  let demoChoice = null; // key selected on current demo screen
   const demoMeta = document.getElementById("demo-meta");
   const demoStage = document.getElementById("demo-stage");
   const demoProgress = document.getElementById("demo-progress");
@@ -44,37 +44,65 @@ function bootStrategyClass({ teachHtml, demos, practice, slotLabel }) {
 
   function renderDemo() {
     const item = demos[demoIndex];
-    demoRevealed = false;
-    demoMeta.textContent = `Demo ${demoIndex + 1} of ${demos.length} · one screen`;
+    demoMeta.textContent = `Demo ${demoIndex + 1} of ${demos.length} · pick one option`;
     demoProgress.style.width = `${((demoIndex + 1) / demos.length) * 100}%`;
-    const options = item.options.map((opt) => `
-      <div class="opt locked"><span class="key">${escapeHtml(opt.key)}</span><span>${escapeHtml(opt.text)}</span></div>
-    `).join("");
     const right = item.options.find((o) => o.key === item.correctKey);
+    const answered = demoChoice != null;
+    const ok = answered && demoChoice === item.correctKey;
+    const options = item.options.map((opt) => {
+      let cls = "opt";
+      if (answered) {
+        cls += " locked";
+        if (opt.key === item.correctKey) cls += " correct";
+        if (opt.key === demoChoice && demoChoice !== item.correctKey) cls += " incorrect";
+        if (opt.key === demoChoice) cls += " selected";
+      }
+      return `<button type="button" class="${cls}" data-key="${escapeHtml(opt.key)}" ${answered ? "disabled" : ""}>
+        <span class="key">${escapeHtml(opt.key)}</span><span>${escapeHtml(opt.text)}</span>
+      </button>`;
+    }).join("");
+    let teachHtmlInner = "";
+    if (answered) {
+      teachHtmlInner = `
+      <div class="teach-box ${ok ? "is-correct" : "is-incorrect"}" id="demo-teach">
+        <strong>${ok ? "Correct" : "Incorrect"} · ${escapeHtml(slotLabel)}: ${escapeHtml(item.slot)} · Answer ${escapeHtml(item.correctKey)}. ${escapeHtml(right?.text || "")}</strong>
+        <p style="margin:8px 0 0">${escapeHtml(item.teach)}</p>
+      </div>`;
+    } else {
+      teachHtmlInner = `<div class="teach-box" id="demo-teach" hidden></div>`;
+    }
     demoStage.innerHTML = `
       <h3 style="margin:0 0 8px;color:var(--navy);font-size:1.05rem">${escapeHtml(item.title)}</h3>
       <p class="stem">${formatStem(item.stem)}</p>
       <div class="options">${options}</div>
-      <div class="teach-box" id="demo-teach" hidden>
-        <strong>${escapeHtml(slotLabel)}: ${escapeHtml(item.slot)} · Answer ${escapeHtml(item.correctKey)}. ${escapeHtml(right?.text || "")}</strong>
-        <p style="margin:8px 0 0">${escapeHtml(item.teach)}</p>
-      </div>`;
+      ${teachHtmlInner}`;
+    if (!answered) {
+      demoStage.querySelectorAll(".opt").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          demoChoice = btn.getAttribute("data-key");
+          renderDemo();
+        });
+      });
+    }
     demoPrev.disabled = demoIndex === 0;
     demoNext.textContent = demoIndex === demos.length - 1 ? "Go to Practice tab" : "Next demo";
-    demoReveal.textContent = "Reveal model answer";
+    demoReveal.textContent = answered ? (ok ? "Correct — see tip above" : "See tip above") : "Or reveal model answer";
+    demoReveal.disabled = answered;
   }
 
-  demoPrev.addEventListener("click", () => { if (demoIndex > 0) { demoIndex -= 1; renderDemo(); } });
+  demoPrev.addEventListener("click", () => {
+    if (demoIndex > 0) { demoIndex -= 1; demoChoice = null; renderDemo(); }
+  });
   demoNext.addEventListener("click", () => {
-    if (demoIndex < demos.length - 1) { demoIndex += 1; renderDemo(); return; }
+    if (demoIndex < demos.length - 1) { demoIndex += 1; demoChoice = null; renderDemo(); return; }
     document.querySelector('.tab[data-tab="practice"]').click();
   });
   demoReveal.addEventListener("click", () => {
-    const box = document.getElementById("demo-teach");
-    if (!box) return;
-    demoRevealed = !demoRevealed;
-    box.hidden = !demoRevealed;
-    demoReveal.textContent = demoRevealed ? "Hide model answer" : "Reveal model answer";
+    if (demoChoice != null) return;
+    // Reveal without a student pick: mark correct answer only
+    const item = demos[demoIndex];
+    demoChoice = item.correctKey;
+    renderDemo();
   });
   renderDemo();
 
