@@ -4,7 +4,7 @@
   "purpose": "guided_and_mocks",
   "reuse_in_mocks": true,
   "exclude_from_free_intro": true,
-  "item_count": 234,
+  "item_count": 239,
   "items": [
     {
       "id": "TQB-STR-0002",
@@ -2585,7 +2585,7 @@
       "section": "Structure",
       "type": "Sentence Completion",
       "skill": "Mixed Advanced",
-      "subskill": "Subject Complement Agreement",
+      "subskill": "One of + Singular Verb",
       "difficulty": 4,
       "estimatedTime": 50,
       "academicTopic": "Anthropology",
@@ -4494,12 +4494,12 @@
     {
       "id": "STR-0126",
       "section": "Structure",
-      "type": "structure_completion",
-      "skill": "subject-verb agreement",
-      "subskill": "intervening prepositional phrase",
-      "difficulty": "medium",
-      "estimatedTime": null,
-      "academicTopic": null,
+      "type": "Sentence Completion",
+      "skill": "Subject-Verb Agreement",
+      "subskill": "Intervening Prepositional Phrase",
+      "difficulty": 3,
+      "estimatedTime": 45,
+      "academicTopic": "Chemistry",
       "question": "The results of the laboratory experiment __________ that the compound was unstable at high temperatures.",
       "options": [
         {
@@ -4522,16 +4522,12 @@
       "correctKey": "D",
       "correctAnswer": "indicate",
       "explanation": "The subject is plural, \"results,\" so the plural verb \"indicate\" is required. The prepositional phrase \"of the laboratory experiment\" does not control the verb.",
-      "commonMistake": {
-        "A": "Incorrect singular verb attracted by the nearby singular noun \"experiment.\"",
-        "B": "Incorrect because a participle cannot serve as the main verb here.",
-        "D": "Incorrect passive construction and singular agreement."
-      },
-      "learningObjective": "A plural subject must take a plural verb even when a singular noun appears in an intervening prepositional phrase.",
+      "commonMistake": "Making the verb agree with the singular noun in the prepositional phrase (\"experiment\") instead of the true plural subject (\"results\").",
+      "learningObjective": "Ignore intervening prepositional phrases when matching verb number to the true subject.",
       "tags": [
-        "agreement",
-        "prepositional_phrase",
-        "main_verb"
+        "subject_verb_agreement",
+        "intervening_phrase",
+        "sentence_completion"
       ]
     },
     {
@@ -5569,12 +5565,12 @@
     {
       "id": "STR-0151",
       "section": "Structure",
-      "type": "structure_completion",
-      "skill": "subject-verb agreement",
-      "subskill": "compound subject joined by and",
-      "difficulty": "easy",
-      "estimatedTime": null,
-      "academicTopic": null,
+      "type": "Sentence Completion",
+      "skill": "Subject-Verb Agreement",
+      "subskill": "Compound Subject with And",
+      "difficulty": 2,
+      "estimatedTime": 40,
+      "academicTopic": "Academic Publishing",
       "question": "The professor and her assistant __________ the data before publishing the article.",
       "options": [
         {
@@ -5597,16 +5593,12 @@
       "correctKey": "A",
       "correctAnswer": "review",
       "explanation": "A compound subject joined by \"and\" normally takes a plural verb, so \"review\" is required.",
-      "commonMistake": {
-        "A": "Incorrect singular verb for a compound subject.",
-        "C": "Incorrect because a participle cannot serve as the main verb here.",
-        "D": "Incorrect singular auxiliary with a plural compound subject."
-      },
-      "learningObjective": "Compound subjects joined by \"and\" require plural verb agreement.",
+      "commonMistake": "Using a singular verb because the second noun looks closer to the verb, or treating the compound subject as singular.",
+      "learningObjective": "Use a plural verb with compound subjects joined by and.",
       "tags": [
-        "agreement",
+        "subject_verb_agreement",
         "compound_subject",
-        "plural_verb"
+        "sentence_completion"
       ]
     },
     {
@@ -6644,12 +6636,12 @@
     {
       "id": "STR-0176",
       "section": "Structure",
-      "type": "structure_completion",
-      "skill": "subject-verb agreement",
-      "subskill": "there construction with plural subject",
-      "difficulty": "medium",
-      "estimatedTime": null,
-      "academicTopic": null,
+      "type": "Sentence Completion",
+      "skill": "Subject-Verb Agreement",
+      "subskill": "There + Plural Subject",
+      "difficulty": 3,
+      "estimatedTime": 45,
+      "academicTopic": "Biology",
       "question": "There __________ several possible explanations for the sudden decline in bee populations.",
       "options": [
         {
@@ -6672,16 +6664,12 @@
       "correctKey": "A",
       "correctAnswer": "are",
       "explanation": "In a \"there\" construction, the verb agrees with the real subject that follows it. Since \"several possible explanations\" is plural, \"are\" is required.",
-      "commonMistake": {
-        "A": "Incorrect singular verb with a plural subject.",
-        "B": "Incorrect singular auxiliary with a plural subject.",
-        "D": "Incorrect singular past verb and inconsistent with the present academic statement."
-      },
-      "learningObjective": "The verb in a \"there\" construction agrees with the noun phrase after the verb.",
+      "commonMistake": "Choosing a singular verb after There because There feels like a singular subject.",
+      "learningObjective": "In there-constructions, make the verb agree with the real subject that follows.",
       "tags": [
-        "agreement",
+        "subject_verb_agreement",
         "there_construction",
-        "plural_subject"
+        "sentence_completion"
       ]
     },
     {
@@ -7765,43 +7753,43 @@
       "section": "Structure",
       "type": "Error Identification",
       "skill": "Subject-Verb Agreement",
-      "subskill": "Neither...Nor",
+      "subskill": "Neither…Nor (Nearer Subject)",
       "difficulty": 3,
       "estimatedTime": 50,
-      "academicTopic": "Education",
-      "question": "Neither the students nor (A) the teacher (B) were able (C) to solve the (D) difficult equation.",
+      "academicTopic": "Graduate Studies",
+      "question": "Neither the laboratory assistants nor the supervisor (A) were informed (B) of the schedule change (C) before the meeting (D).",
       "options": [
         {
           "key": "A",
-          "text": "Neither the students nor"
+          "text": "Neither the laboratory assistants nor the supervisor"
         },
         {
           "key": "B",
-          "text": "the teacher"
+          "text": "were informed"
         },
         {
           "key": "C",
-          "text": "were able"
+          "text": "of the schedule change"
         },
         {
           "key": "D",
-          "text": "to solve the"
+          "text": "before the meeting"
         }
       ],
-      "correctKey": "C",
-      "correctAnswer": "were able",
-      "explanation": "With 'neither...nor', the verb agrees with the nearest subject ('the teacher' = singular). It should be 'was able'.",
-      "commonMistake": "Choosing a grammatically correct underlined part instead of the error.",
-      "learningObjective": "Identify the underlined error in a Structure Written Expression item.",
+      "correctKey": "B",
+      "correctAnswer": "were informed",
+      "explanation": "With neither…nor, the verb agrees with the nearer subject. The nearer subject is supervisor (singular), so were informed should be was informed.",
+      "commonMistake": "Making the verb plural because the first noun (assistants) is plural.",
+      "learningObjective": "Apply nearer-subject agreement with neither…nor.",
       "tags": [
         "error_identification",
         "subject_verb_agreement",
         "neither_nor"
       ],
       "source": {
-        "file": "Grammar section part A.txt",
+        "file": "revised",
         "original_number": 2,
-        "used_revised": false
+        "used_revised": true
       }
     },
     {
@@ -8425,43 +8413,43 @@
       "section": "Structure",
       "type": "Error Identification",
       "skill": "Subject-Verb Agreement",
-      "subskill": "Neither...Nor",
+      "subskill": "Neither…Nor (Nearer Subject)",
       "difficulty": 3,
       "estimatedTime": 50,
-      "academicTopic": "Social Life",
-      "question": "Neither (A) John nor (B) his friends (C) was (D) at the party.",
+      "academicTopic": "University Administration",
+      "question": "Neither the department chair nor the committee members (A) was prepared (B) to approve the proposal (C) before Friday (D).",
       "options": [
         {
           "key": "A",
-          "text": "Neither"
+          "text": "Neither the department chair nor the committee members"
         },
         {
           "key": "B",
-          "text": "John nor"
+          "text": "was prepared"
         },
         {
           "key": "C",
-          "text": "his friends"
+          "text": "to approve the proposal"
         },
         {
           "key": "D",
-          "text": "was"
+          "text": "before Friday"
         }
       ],
-      "correctKey": "D",
-      "correctAnswer": "was",
-      "explanation": "With 'neither...nor', the verb agrees with the nearest subject. 'His friends' is plural, so the verb should be 'were' instead of 'was'.",
-      "commonMistake": "Choosing a grammatically correct underlined part instead of the error.",
-      "learningObjective": "Identify the underlined error in a Structure Written Expression item.",
+      "correctKey": "B",
+      "correctAnswer": "was prepared",
+      "explanation": "With neither…nor, the verb agrees with the nearer subject. The nearer subject is committee members (plural), so was prepared should be were prepared.",
+      "commonMistake": "Making the verb singular because the first noun (chair) is singular.",
+      "learningObjective": "Apply nearer-subject agreement when the second noun is plural.",
       "tags": [
         "error_identification",
         "subject_verb_agreement",
         "neither_nor"
       ],
       "source": {
-        "file": "Grammar section part A.txt",
+        "file": "revised",
         "original_number": 18,
-        "used_revised": false
+        "used_revised": true
       }
     },
     {
@@ -9525,6 +9513,201 @@
         "error_identification",
         "quantifiers",
         "amount_number"
+      ]
+    },
+    {
+      "id": "TQB-STR-0170",
+      "section": "Structure",
+      "type": "Sentence Completion",
+      "skill": "Subject-Verb Agreement",
+      "subskill": "A Number Of (Plural)",
+      "difficulty": 3,
+      "estimatedTime": 45,
+      "academicTopic": "Education",
+      "question": "A number of recent studies _____ that bilingual programs improve early literacy.",
+      "options": [
+        {
+          "key": "A",
+          "text": "shows"
+        },
+        {
+          "key": "B",
+          "text": "has shown"
+        },
+        {
+          "key": "C",
+          "text": "show"
+        },
+        {
+          "key": "D",
+          "text": "showing"
+        }
+      ],
+      "correctKey": "C",
+      "correctAnswer": "show",
+      "explanation": "A number of is plural and takes a plural verb. Show agrees with studies as a plural idea after a number of.",
+      "commonMistake": "Treating a number of like the number of and choosing a singular verb (shows / has shown).",
+      "learningObjective": "Contrast a number of (plural) with the number of (singular).",
+      "tags": [
+        "subject_verb_agreement",
+        "a_number_of",
+        "sentence_completion"
+      ]
+    },
+    {
+      "id": "TQB-STR-0171",
+      "section": "Structure",
+      "type": "Sentence Completion",
+      "skill": "Subject-Verb Agreement",
+      "subskill": "Along With / Together With",
+      "difficulty": 3,
+      "estimatedTime": 45,
+      "academicTopic": "Laboratory Science",
+      "question": "The lead researcher, along with her graduate students, _____ the samples every morning.",
+      "options": [
+        {
+          "key": "A",
+          "text": "analyze"
+        },
+        {
+          "key": "B",
+          "text": "analyzes"
+        },
+        {
+          "key": "C",
+          "text": "are analyzing"
+        },
+        {
+          "key": "D",
+          "text": "have analyzed"
+        }
+      ],
+      "correctKey": "B",
+      "correctAnswer": "analyzes",
+      "explanation": "Phrases with along with do not make the subject plural. The true subject is The lead researcher (singular), so analyzes is required.",
+      "commonMistake": "Adding graduate students to the subject because of along with.",
+      "learningObjective": "Ignore along with / together with phrases when choosing verb number.",
+      "tags": [
+        "subject_verb_agreement",
+        "along_with",
+        "sentence_completion"
+      ]
+    },
+    {
+      "id": "TQB-STR-0172",
+      "section": "Structure",
+      "type": "Sentence Completion",
+      "skill": "Subject-Verb Agreement",
+      "subskill": "Intervening Relative Clause",
+      "difficulty": 4,
+      "estimatedTime": 50,
+      "academicTopic": "History",
+      "question": "The theory that early farmers built complex irrigation systems _____ still debated by historians.",
+      "options": [
+        {
+          "key": "A",
+          "text": "are"
+        },
+        {
+          "key": "B",
+          "text": "have been"
+        },
+        {
+          "key": "C",
+          "text": "is"
+        },
+        {
+          "key": "D",
+          "text": "were"
+        }
+      ],
+      "correctKey": "C",
+      "correctAnswer": "is",
+      "explanation": "The true subject is The theory (singular). The relative clause that early farmers built complex irrigation systems does not control the verb.",
+      "commonMistake": "Making the verb plural because systems (inside the clause) is plural and closer to the blank.",
+      "learningObjective": "Match the verb to the head noun, not to a noun inside an intervening relative clause.",
+      "tags": [
+        "subject_verb_agreement",
+        "relative_clause",
+        "sentence_completion"
+      ]
+    },
+    {
+      "id": "TQB-STR-0173",
+      "section": "Structure",
+      "type": "Error Identification",
+      "skill": "Subject-Verb Agreement",
+      "subskill": "Uncountable / Mass Noun",
+      "difficulty": 3,
+      "estimatedTime": 50,
+      "academicTopic": "Law",
+      "question": "All of the evidence (A) presented at the hearing (B) were considered (C) by the review board (D).",
+      "options": [
+        {
+          "key": "A",
+          "text": "All of the evidence"
+        },
+        {
+          "key": "B",
+          "text": "presented at the hearing"
+        },
+        {
+          "key": "C",
+          "text": "were considered"
+        },
+        {
+          "key": "D",
+          "text": "by the review board"
+        }
+      ],
+      "correctKey": "C",
+      "correctAnswer": "were considered",
+      "explanation": "Evidence is an uncountable noun and is singular. Were considered should be was considered.",
+      "commonMistake": "Treating evidence as plural because it ends with -s or because all of feels plural.",
+      "learningObjective": "Use singular verbs with uncountable nouns such as evidence, information, and research.",
+      "tags": [
+        "error_identification",
+        "subject_verb_agreement",
+        "uncountable"
+      ]
+    },
+    {
+      "id": "TQB-STR-0174",
+      "section": "Structure",
+      "type": "Error Identification",
+      "skill": "Subject-Verb Agreement",
+      "subskill": "Percent Of + Plural Noun",
+      "difficulty": 4,
+      "estimatedTime": 55,
+      "academicTopic": "Admissions",
+      "question": "More than sixty percent of the applicants (A) to the program (B) was rejected (C) last year (D).",
+      "options": [
+        {
+          "key": "A",
+          "text": "More than sixty percent of the applicants"
+        },
+        {
+          "key": "B",
+          "text": "to the program"
+        },
+        {
+          "key": "C",
+          "text": "was rejected"
+        },
+        {
+          "key": "D",
+          "text": "last year"
+        }
+      ],
+      "correctKey": "C",
+      "correctAnswer": "was rejected",
+      "explanation": "With percent of + plural countable noun, the verb is usually plural. Was rejected should be were rejected.",
+      "commonMistake": "Making the verb singular because percent looks singular.",
+      "learningObjective": "After percent of, agree with the noun that follows of when it is a plural countable.",
+      "tags": [
+        "error_identification",
+        "subject_verb_agreement",
+        "percent_of"
       ]
     }
   ]
