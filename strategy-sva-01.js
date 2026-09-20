@@ -4,6 +4,27 @@
   const practice = [{"id": "Q01", "stem": "One of the most important findings of the study ____ that early trade networks were more complex than previously believed.", "options": [{"key": "A", "text": "have been"}, {"key": "B", "text": "being"}, {"key": "C", "text": "were"}, {"key": "D", "text": "was"}], "correctKey": "D", "slot": "One of + Singular Verb", "explain": "The subject is 'One,' which is singular, so the verb must be 'was.'"}, {"id": "Q02", "stem": "On the wall of the ancient temple ____ several inscriptions in an unknown language.", "options": [{"key": "A", "text": "appears"}, {"key": "B", "text": "has appeared"}, {"key": "C", "text": "appear"}, {"key": "D", "text": "appearing"}], "correctKey": "C", "slot": "Inverted Subject After Prepositional Phrase", "explain": "The true subject is 'several inscriptions,' which is plural, so the verb must be 'appear.'"}, {"id": "Q03", "stem": "The committee ____ reviewing the scholarship applications this week.", "options": [{"key": "A", "text": "have been"}, {"key": "B", "text": "are"}, {"key": "C", "text": "were"}, {"key": "D", "text": "is"}], "correctKey": "D", "slot": "Collective Noun", "explain": "In American academic English, a collective noun such as 'committee' is usually treated as singular."}, {"id": "Q04", "stem": "Either the department chair or the committee members ____ responsible for approving the proposal.", "options": [{"key": "A", "text": "has been"}, {"key": "B", "text": "was"}, {"key": "C", "text": "is"}, {"key": "D", "text": "are"}], "correctKey": "D", "slot": "Either...Or Agreement", "explain": "With 'either...or,' the verb agrees with the nearer subject, 'committee members.'"}, {"id": "Q05", "stem": "One of the theories proposed by early anthropologists ____ still discussed today.", "options": [{"key": "A", "text": "were"}, {"key": "B", "text": "have been"}, {"key": "C", "text": "is"}, {"key": "D", "text": "are"}], "correctKey": "C", "slot": "Complex Subject Agreement", "explain": "The subject is 'One,' not 'theories,' so the singular verb 'is' is required."}, {"id": "Q06", "stem": "The results of the laboratory experiment ____ that the compound was unstable at high temperatures.", "options": [{"key": "A", "text": "was indicated"}, {"key": "B", "text": "indicates"}, {"key": "C", "text": "indicating"}, {"key": "D", "text": "indicate"}], "correctKey": "D", "slot": "Intervening Prepositional Phrase", "explain": "The subject is plural, \"results,\" so the plural verb \"indicate\" is required. The prepositional phrase \"of the laboratory experiment\" does not control the verb."}, {"id": "Q07", "stem": "The professor and her assistant ____ the data before publishing the article.", "options": [{"key": "A", "text": "review"}, {"key": "B", "text": "reviews"}, {"key": "C", "text": "has reviewed"}, {"key": "D", "text": "reviewing"}], "correctKey": "A", "slot": "Compound Subject with And", "explain": "A compound subject joined by \"and\" normally takes a plural verb, so \"review\" is required."}, {"id": "Q08", "stem": "There ____ several possible explanations for the sudden decline in bee populations.", "options": [{"key": "A", "text": "are"}, {"key": "B", "text": "was"}, {"key": "C", "text": "is"}, {"key": "D", "text": "has been"}], "correctKey": "A", "slot": "There + Plural Subject", "explain": "In a \"there\" construction, the verb agrees with the real subject that follows it. Since \"several possible explanations\" is plural, \"are\" is required."}, {"id": "Q09", "stem": "Neither the laboratory assistants nor the supervisor (A) were informed (B) of the schedule change (C) before the meeting (D).", "options": [{"key": "A", "text": "Neither the laboratory assistants nor the supervisor"}, {"key": "B", "text": "were informed"}, {"key": "C", "text": "of the schedule change"}, {"key": "D", "text": "before the meeting"}], "correctKey": "B", "slot": "Neither…Nor (Nearer Subject)", "explain": "With neither…nor, the verb agrees with the nearer subject. The nearer subject is supervisor (singular), so were informed should be was informed."}, {"id": "Q10", "stem": "Neither the department chair nor the committee members (A) was prepared (B) to approve the proposal (C) before Friday (D).", "options": [{"key": "A", "text": "Neither the department chair nor the committee members"}, {"key": "B", "text": "was prepared"}, {"key": "C", "text": "to approve the proposal"}, {"key": "D", "text": "before Friday"}], "correctKey": "B", "slot": "Neither…Nor (Nearer Subject)", "explain": "With neither…nor, the verb agrees with the nearer subject. The nearer subject is committee members (plural), so was prepared should be were prepared."}, {"id": "Q11", "stem": "One of the most important discoveries (A) of the past decade (B) were announced (C) at the conference (D).", "options": [{"key": "A", "text": "One of the most important discoveries"}, {"key": "B", "text": "of the past decade"}, {"key": "C", "text": "were announced"}, {"key": "D", "text": "at the conference"}], "correctKey": "C", "slot": "One Of The + Plural Noun", "explain": "The underlined verb phrase \"were announced\" is incorrect. The subject is 'one,' which is singular, so the verb should be 'was announced,' not 'were announced.'"}, {"id": "Q12", "stem": "The number of applications (A) for the program (B) have increased (C) every year since 2018 (D).", "options": [{"key": "A", "text": "The number of applications"}, {"key": "B", "text": "for the program"}, {"key": "C", "text": "have increased"}, {"key": "D", "text": "every year since 2018"}], "correctKey": "C", "slot": "The Number Of", "explain": "The underlined verb phrase \"have increased\" is incorrect. 'The number of' is singular and takes 'has increased,' not 'have increased.'"}, {"id": "Q13", "stem": "A number of recent studies ____ that bilingual programs improve early literacy.", "options": [{"key": "A", "text": "shows"}, {"key": "B", "text": "has shown"}, {"key": "C", "text": "show"}, {"key": "D", "text": "showing"}], "correctKey": "C", "slot": "A Number Of (Plural)", "explain": "A number of is plural and takes a plural verb. Show agrees with studies as a plural idea after a number of."}, {"id": "Q14", "stem": "The lead researcher, along with her graduate students, ____ the samples every morning.", "options": [{"key": "A", "text": "analyze"}, {"key": "B", "text": "analyzes"}, {"key": "C", "text": "are analyzing"}, {"key": "D", "text": "have analyzed"}], "correctKey": "B", "slot": "Along With / Together With", "explain": "Phrases with along with do not make the subject plural. The true subject is The lead researcher (singular), so analyzes is required."}, {"id": "Q15", "stem": "The theory that early farmers built complex irrigation systems ____ still debated by historians.", "options": [{"key": "A", "text": "are"}, {"key": "B", "text": "have been"}, {"key": "C", "text": "is"}, {"key": "D", "text": "were"}], "correctKey": "C", "slot": "Intervening Relative Clause", "explain": "The true subject is The theory (singular). The relative clause that early farmers built complex irrigation systems does not control the verb."}];
   const slotLabel = "Pattern";
 
+  const enhancedTeachHtml = teachHtml
+    .replace(
+      "Ask: who or what is doing the action?",
+      "Find the complete subject, identify its head noun, and decide whether that head is singular or plural."
+    )
+    .replace("  </ul>", `    <li><strong>Compound subject with <em>and</em></strong> → normally plural.<br>
+      ✓ <em>The professor and her assistant <strong>review</strong> the data.</em><br>
+      ✗ <em>The professor and her assistant reviews the data.</em></li>
+    <li><strong>Collective noun</strong> → for TOEFL's American English convention, normally singular when the group acts as one unit.<br>
+      ✓ <em>The committee <strong>is</strong> reviewing the applications.</em><br>
+      ✗ <em>The committee are reviewing the applications.</em></li>
+    <li><strong>Inverted structure</strong> → find the subject after the opening phrase and make the verb agree with it.<br>
+      ✓ <em>On the wall <strong>appear</strong> several inscriptions.</em><br>
+      ✗ <em>On the wall appears several inscriptions.</em></li>
+  </ul>`);
+
+  const committeeItem = practice.find((item) => item.id === "Q03");
+  if (committeeItem) {
+    committeeItem.explain = "For TOEFL's American English convention, a collective noun such as 'committee' is normally singular when the group acts as one unit.";
+  }
+
 
   function escapeHtml(value) {
     return String(value ?? "")
@@ -17,9 +38,6 @@
   }
 
 function bootStrategyClass({ teachHtml, demos, practice, slotLabel }) {
-  const counts = { A: 0, B: 0, C: 0, D: 0 };
-  practice.forEach((q) => { counts[q.correctKey] += 1; });
-  console.info("[Strategy] balance", counts);
 
   const tabs = document.querySelectorAll(".tab");
   const panels = document.querySelectorAll(".panel");
@@ -191,7 +209,24 @@ function bootStrategyClass({ teachHtml, demos, practice, slotLabel }) {
     });
     results.hidden = false;
     scoreLine.textContent = `Score: ${correct} / 15 (${Math.round((correct / 15) * 100)}%)`;
-    balanceNote.textContent = `Correct-letter balance: A×${counts.A} · B×${counts.B} · C×${counts.C} · D×${counts.D}.`;
+    const patternGroups = [
+      { label: "Singular head words", ids: ["Q01", "Q05", "Q11", "Q12"] },
+      { label: "Inverted / delayed subjects", ids: ["Q02", "Q08"] },
+      { label: "Collective / compound subjects", ids: ["Q03", "Q07"] },
+      { label: "Either / neither", ids: ["Q04", "Q09", "Q10"] },
+      { label: "Intervening phrases / clauses", ids: ["Q06", "Q14", "Q15"] },
+      { label: "A number of", ids: ["Q13"] }
+    ];
+    const performance = patternGroups.map(({ label, ids }) => {
+      const groupCorrect = review.filter(({ item, ok }) => ids.includes(item.id) && ok).length;
+      return `${label}: ${groupCorrect}/${ids.length}`;
+    }).join(" · ");
+    const nextStep = correct >= 13
+      ? "Mastery achieved. Continue to the next strategy."
+      : correct >= 10
+        ? "Review the patterns you missed, then try again."
+        : "Return to Teach and Demo before trying again.";
+    balanceNote.textContent = `Performance by pattern: ${performance}. ${nextStep}`;
     reviewList.innerHTML = review.map(({ index, item, chosen, chosenText, rightText, ok }) => `
       <article class="review-item ${ok ? "ok" : "bad"}">
         <h4>Q${index + 1} · ${ok ? "Correct" : "Incorrect"} · ${escapeHtml(slotLabel)}: ${escapeHtml(item.slot)}</h4>
@@ -218,5 +253,5 @@ function bootStrategyClass({ teachHtml, demos, practice, slotLabel }) {
   renderPractice();
 }
 
-  bootStrategyClass({ teachHtml, demos, practice, slotLabel });
+  bootStrategyClass({ teachHtml: enhancedTeachHtml, demos, practice, slotLabel });
 })();
