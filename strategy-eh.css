@@ -176,6 +176,25 @@ button { cursor: pointer; }
 .opt:hover { border-color: var(--teal); }
 .opt.selected { border-color: var(--teal); background: var(--wash); }
 .opt.locked { cursor: default; }
+.opt.correct {
+  border-color: #238d85;
+  background: rgba(13, 138, 141, 0.12);
+}
+.opt.incorrect {
+  border-color: #c24b3f;
+  background: rgba(239, 111, 97, 0.12);
+}
+.opt.correct .key { background: #238d85; }
+.opt.incorrect .key { background: #c24b3f; }
+.teach-box.is-correct {
+  background: rgba(13, 138, 141, 0.1);
+  border: 1px solid rgba(13, 138, 141, 0.25);
+}
+.teach-box.is-incorrect {
+  background: rgba(239, 111, 97, 0.1);
+  border: 1px solid rgba(239, 111, 97, 0.25);
+}
+
 .opt .key {
   flex: 0 0 auto; width: 26px; height: 26px; border-radius: 8px; display: grid; place-items: center;
   background: var(--navy); color: #fff; font-size: 0.75rem; font-weight: 800;
