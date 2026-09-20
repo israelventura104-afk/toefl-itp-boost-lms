@@ -1,0 +1,370 @@
+{
+  "skill": "Subject-Verb Agreement",
+  "rubric": "structure-validation-rubric.md",
+  "pass_rule": "avg>=4.0 and no dim <3",
+  "scored": [
+    {
+      "id": "TQB-STR-0002",
+      "type": "SC",
+      "subskill": "The Number Of",
+      "scores": {
+        "D1": 5,
+        "D2": 5,
+        "D3": 5,
+        "D4": 5,
+        "D5": 5,
+        "D6": 4
+      },
+      "avg": 4.83,
+      "verdict": "PASS",
+      "notes": "Exemplar ITP pattern."
+    },
+    {
+      "id": "TQB-STR-0003",
+      "type": "SC",
+      "subskill": "Neither…Nor (nearer)",
+      "scores": {
+        "D1": 5,
+        "D2": 5,
+        "D3": 5,
+        "D4": 5,
+        "D5": 5,
+        "D6": 4
+      },
+      "avg": 4.83,
+      "verdict": "PASS",
+      "notes": "Nearer-subject rule correct."
+    },
+    {
+      "id": "TQB-STR-0005",
+      "type": "SC",
+      "subskill": "Inversion after PP",
+      "scores": {
+        "D1": 5,
+        "D2": 5,
+        "D3": 5,
+        "D4": 5,
+        "D5": 5,
+        "D6": 4
+      },
+      "avg": 4.83,
+      "verdict": "PASS",
+      "notes": "True subject = several letters."
+    },
+    {
+      "id": "TQB-STR-0075",
+      "type": "SC",
+      "subskill": "One of + singular",
+      "scores": {
+        "D1": 5,
+        "D2": 5,
+        "D3": 5,
+        "D4": 3,
+        "D5": 5,
+        "D6": 4
+      },
+      "avg": 4.5,
+      "verdict": "PASS",
+      "notes": "Retag subskill: not Subject Complement."
+    },
+    {
+      "id": "TQB-STR-0081",
+      "type": "SC",
+      "subskill": "Inversion after PP",
+      "scores": {
+        "D1": 5,
+        "D2": 5,
+        "D3": 5,
+        "D4": 5,
+        "D5": 5,
+        "D6": 4
+      },
+      "avg": 4.83,
+      "verdict": "PASS",
+      "notes": "Classic ITP inversion."
+    },
+    {
+      "id": "TQB-STR-0101",
+      "type": "SC",
+      "subskill": "Collective noun (AmE)",
+      "scores": {
+        "D1": 5,
+        "D2": 4,
+        "D3": 5,
+        "D4": 5,
+        "D5": 4,
+        "D6": 4
+      },
+      "avg": 4.5,
+      "verdict": "PASS",
+      "notes": "AmE singular committee — note in teach."
+    },
+    {
+      "id": "TQB-STR-0118",
+      "type": "SC",
+      "subskill": "Either…Or (nearer)",
+      "scores": {
+        "D1": 5,
+        "D2": 5,
+        "D3": 5,
+        "D4": 5,
+        "D5": 5,
+        "D6": 4
+      },
+      "avg": 4.83,
+      "verdict": "PASS",
+      "notes": "Nearer = members → are."
+    },
+    {
+      "id": "TQB-STR-0125",
+      "type": "SC",
+      "subskill": "One of + singular",
+      "scores": {
+        "D1": 5,
+        "D2": 5,
+        "D3": 5,
+        "D4": 5,
+        "D5": 5,
+        "D6": 4
+      },
+      "avg": 4.83,
+      "verdict": "PASS",
+      "notes": "Same family as 0075 — OK for practice variety."
+    },
+    {
+      "id": "STR-0126",
+      "type": "SC",
+      "subskill": "Intervening PP",
+      "scores": {
+        "D1": 5,
+        "D2": 5,
+        "D3": 5,
+        "D4": 5,
+        "D5": 4,
+        "D6": 2
+      },
+      "avg": 4.33,
+      "verdict": "REWRITE",
+      "notes": "Content OK; commonMistake is a broken dict (wrong letters). Fix meta → PASS."
+    },
+    {
+      "id": "STR-0151",
+      "type": "SC",
+      "subskill": "Compound subject + and",
+      "scores": {
+        "D1": 5,
+        "D2": 4,
+        "D3": 5,
+        "D4": 5,
+        "D5": 4,
+        "D6": 2
+      },
+      "avg": 4.17,
+      "verdict": "REWRITE",
+      "notes": "Content OK but d=easy + broken commonMistake dict. Fix meta / bump difficulty."
+    },
+    {
+      "id": "STR-0176",
+      "type": "SC",
+      "subskill": "There + plural",
+      "scores": {
+        "D1": 5,
+        "D2": 5,
+        "D3": 5,
+        "D4": 5,
+        "D5": 4,
+        "D6": 2
+      },
+      "avg": 4.33,
+      "verdict": "REWRITE",
+      "notes": "Content OK; commonMistake dict labels correct key as wrong. Fix meta → PASS."
+    },
+    {
+      "id": "TQB-STR-0091",
+      "type": "EI",
+      "subskill": "Each + singular",
+      "scores": {
+        "D1": 5,
+        "D2": 5,
+        "D3": 5,
+        "D4": 5,
+        "D5": 5,
+        "D6": 4
+      },
+      "avg": 4.83,
+      "verdict": "PASS",
+      "notes": "Strong EI; options = phrases."
+    },
+    {
+      "id": "STR-0187",
+      "type": "EI",
+      "subskill": "Each + singular",
+      "scores": {
+        "D1": 5,
+        "D2": 5,
+        "D3": 5,
+        "D4": 5,
+        "D5": 4,
+        "D6": 4
+      },
+      "avg": 4.67,
+      "verdict": "PASS",
+      "notes": "Near-duplicate of 0091 — use only one in demos."
+    },
+    {
+      "id": "STR-0162",
+      "type": "EI",
+      "subskill": "There + agreement",
+      "scores": {
+        "D1": 4,
+        "D2": 5,
+        "D3": 5,
+        "D4": 5,
+        "D5": 4,
+        "D6": 3
+      },
+      "avg": 4.33,
+      "verdict": "PASS",
+      "notes": "Underline chunk is several reasons a bit wide; acceptable."
+    },
+    {
+      "id": "TQB-STR-0143",
+      "type": "EI",
+      "subskill": "News (uncountable)",
+      "scores": {
+        "D1": 5,
+        "D2": 5,
+        "D3": 5,
+        "D4": 5,
+        "D5": 4,
+        "D6": 3
+      },
+      "avg": 4.5,
+      "verdict": "PASS",
+      "notes": "commonMistake generic; still teaches rule."
+    },
+    {
+      "id": "TQB-STR-0147",
+      "type": "EI",
+      "subskill": "One of + singular",
+      "scores": {
+        "D1": 5,
+        "D2": 5,
+        "D3": 5,
+        "D4": 5,
+        "D5": 5,
+        "D6": 4
+      },
+      "avg": 4.83,
+      "verdict": "PASS",
+      "notes": "Clean academic EI."
+    },
+    {
+      "id": "TQB-STR-0148",
+      "type": "EI",
+      "subskill": "The Number Of",
+      "scores": {
+        "D1": 5,
+        "D2": 5,
+        "D3": 5,
+        "D4": 5,
+        "D5": 5,
+        "D6": 4
+      },
+      "avg": 4.83,
+      "verdict": "PASS",
+      "notes": "Paired well with SC-0002."
+    },
+    {
+      "id": "TQB-STR-0161",
+      "type": "EI",
+      "subskill": "As well as",
+      "scores": {
+        "D1": 5,
+        "D2": 5,
+        "D3": 5,
+        "D4": 5,
+        "D5": 5,
+        "D6": 4
+      },
+      "avg": 4.83,
+      "verdict": "PASS",
+      "notes": "Strong ITP trap."
+    },
+    {
+      "id": "TQB-STR-0127",
+      "type": "EI",
+      "subskill": "Neither…Nor",
+      "scores": {
+        "D1": 2,
+        "D2": 5,
+        "D3": 5,
+        "D4": 5,
+        "D5": 4,
+        "D6": 3
+      },
+      "avg": 4.0,
+      "verdict": "REWRITE",
+      "notes": "Option D span to solve the is not a meaningful chunk. Rebuild underlines."
+    },
+    {
+      "id": "TQB-STR-0142",
+      "type": "EI",
+      "subskill": "Neither…Nor",
+      "scores": {
+        "D1": 2,
+        "D2": 3,
+        "D3": 5,
+        "D4": 4,
+        "D5": 3,
+        "D6": 3
+      },
+      "avg": 3.33,
+      "verdict": "REWRITE",
+      "notes": "Chunks Neither / John nor unnatural; party less academic. Full rewrite."
+    }
+  ],
+  "pass_ids": [
+    "TQB-STR-0002",
+    "TQB-STR-0003",
+    "TQB-STR-0005",
+    "TQB-STR-0075",
+    "TQB-STR-0081",
+    "TQB-STR-0101",
+    "TQB-STR-0118",
+    "TQB-STR-0125",
+    "TQB-STR-0091",
+    "STR-0187",
+    "STR-0162",
+    "TQB-STR-0143",
+    "TQB-STR-0147",
+    "TQB-STR-0148",
+    "TQB-STR-0161"
+  ],
+  "rewrite_ids": [
+    "STR-0126",
+    "STR-0151",
+    "STR-0176",
+    "TQB-STR-0127",
+    "TQB-STR-0142"
+  ],
+  "suggested_demos": [
+    "TQB-STR-0002",
+    "TQB-STR-0003",
+    "TQB-STR-0005",
+    "TQB-STR-0091",
+    "TQB-STR-0161"
+  ],
+  "suggested_practice_seed": [
+    "TQB-STR-0075",
+    "TQB-STR-0081",
+    "TQB-STR-0101",
+    "TQB-STR-0118",
+    "TQB-STR-0125",
+    "STR-0187",
+    "STR-0162",
+    "TQB-STR-0143",
+    "TQB-STR-0147",
+    "TQB-STR-0148"
+  ]
+}
