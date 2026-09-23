@@ -218,5 +218,6 @@ Classroom pages: teach → 5 demos → 15 practice. Feedback on practice only af
 | 10 | Noun Clauses | `strategy-nc-10-noun-clauses.html` |
 | 11 | Reduced Clauses | `strategy-rc-11-reduced-clauses.html` |
 | 12 | Passive Voice | `strategy-pv-12-passive-voice.html` |
+| 13 | Gerunds and Infinitives | `strategy-gi-13-gerunds-infinitives.html` |
 
-Next in this track: Gerunds and infinitives. Hub menu lists 03–12. Demo titles never name the answer. Error ID items use clickable underlines.
+Agreed clause/voice/form block is complete (Noun Clauses → Reduced Clauses → Passive → Gerunds). Hub menu lists 03–13. Demo titles never name the answer. Error ID items use clickable underlines.
