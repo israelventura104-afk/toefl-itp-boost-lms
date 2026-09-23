@@ -321,6 +321,20 @@
     return escapeHtml(stem).replace(/____/g, '<span class="blank">____</span>');
   }
 
+  function renderEiLine(item, selected, { locked = false, showKey = false } = {}) {
+    const chunks = item.options.map((opt) => {
+      const classes = ["ei-chunk"];
+      if (selected === opt.key) classes.push("selected");
+      if (showKey && opt.key === item.correctKey) classes.push("correct");
+      if (showKey && selected === opt.key && selected !== item.correctKey) classes.push("miss");
+      return `<button type="button" class="${classes.join(" ")}" data-key="${escapeHtml(opt.key)}" ${locked ? "disabled" : ""}>
+        <span class="ei-words">${escapeHtml(opt.text)}</span>
+        <span class="ei-lab">${escapeHtml(opt.key)}</span>
+      </button>`;
+    }).join("");
+    return `<p class="ei-line">${chunks}.</p>`;
+  }
+
   function bootStrategyClass({ teachHtml, demos, practice, slotLabel, patternGroups }) {
     const counts = { A: 0, B: 0, C: 0, D: 0 };
     practice.forEach((q) => { counts[q.correctKey] += 1; });
@@ -354,30 +368,21 @@
       const opened = demoOpened.has(demoIndex);
       const right = item.options.find((o) => o.key === item.correctKey);
       const ok = selected === item.correctKey;
-      demoMeta.textContent = `Demo ${demoIndex + 1} of ${demos.length} · pick one, then See feedback`;
+      demoMeta.textContent = `Demo ${demoIndex + 1} of ${demos.length} · tap the underlined part, then See feedback`;
       demoProgress.style.width = `${((demoIndex + 1) / demos.length) * 100}%`;
-      const options = item.options.map((opt) => {
-        const classes = ["opt"];
-        if (selected === opt.key) classes.push("selected");
-        if (opened && opt.key === item.correctKey) classes.push("correct");
-        if (opened && selected === opt.key && !ok) classes.push("miss");
-        return `<button type="button" class="${classes.join(" ")}" data-key="${escapeHtml(opt.key)}" ${opened ? "disabled" : ""}>
-        <span class="key">${escapeHtml(opt.key)}</span><span>${escapeHtml(opt.text)}</span>
-      </button>`;
-      }).join("");
       const verdict = ok
-        ? `Correct · ${escapeHtml(slotLabel)}: ${escapeHtml(item.slot)} · ${escapeHtml(item.correctKey)}. ${escapeHtml(right?.text || "")}`
-        : `Not this time · ${escapeHtml(slotLabel)}: ${escapeHtml(item.slot)} · answer ${escapeHtml(item.correctKey)}. ${escapeHtml(right?.text || "")}`;
+        ? `Correct · ${escapeHtml(slotLabel)}: ${escapeHtml(item.slot)} · change “${escapeHtml(right?.text || "")}”`
+        : `Not this time · ${escapeHtml(slotLabel)}: change “${escapeHtml(right?.text || "")}”`;
       demoStage.innerHTML = `
       <h3 style="margin:0 0 8px;color:var(--navy);font-size:1.05rem">${escapeHtml(item.title)}</h3>
-      <p class="stem">${formatStem(item.stem)}</p>
-      <div class="options">${options}</div>
-      <p class="status" id="demo-hint" hidden>Choose A, B, C, or D first.</p>
+      ${renderEiLine(item, selected, { locked: opened, showKey: opened })}
+      <p class="ei-hint">Tap the underlined part that must change.</p>
+      <p class="status" id="demo-hint" hidden>Tap an underlined part first.</p>
       <div class="teach-box ${ok ? "ok" : "bad"}" id="demo-teach" ${opened ? "" : "hidden"}>
         <strong>${verdict}</strong>
         <p style="margin:8px 0 0">${escapeHtml(item.teach)}</p>
       </div>`;
-      demoStage.querySelectorAll(".opt").forEach((btn) => {
+      demoStage.querySelectorAll(".ei-chunk").forEach((btn) => {
         btn.addEventListener("click", () => {
           if (demoOpened.has(demoIndex)) return;
           demoAnswers.set(demoIndex, btn.getAttribute("data-key"));
@@ -436,7 +441,7 @@
         : `Answered ${n} of 15. One question per screen.`;
       const answered = answers.has(practice[qIndex].id);
       practiceProgress.style.width = `${((qIndex + 1) / practice.length) * 100}%`;
-      practiceMeta.textContent = `Question ${qIndex + 1} of ${practice.length}` + (answered ? " · selected" : "");
+      practiceMeta.textContent = `Question ${qIndex + 1} of ${practice.length}` + (answered ? " · underlined part selected" : "");
       practicePrev.disabled = qIndex === 0 || submitted;
       if (qIndex === practice.length - 1) {
         practiceNext.hidden = true;
@@ -455,14 +460,10 @@
     function renderPractice() {
       const item = practice[qIndex];
       const selected = answers.get(item.id);
-      const options = item.options.map((opt) => `
-      <button type="button" class="opt${selected === opt.key ? " selected" : ""}" data-key="${escapeHtml(opt.key)}" ${submitted ? "disabled" : ""}>
-        <span class="key">${escapeHtml(opt.key)}</span><span>${escapeHtml(opt.text)}</span>
-      </button>`).join("");
       practiceStage.innerHTML = `
-      <p class="stem">${formatStem(item.stem)}</p>
-      <div class="options">${options}</div>`;
-      practiceStage.querySelectorAll(".opt").forEach((btn) => {
+      ${renderEiLine(item, selected, { locked: submitted, showKey: submitted })}
+      <p class="ei-hint">Tap the underlined part that must change.</p>`;
+      practiceStage.querySelectorAll(".ei-chunk").forEach((btn) => {
         btn.addEventListener("click", () => {
           if (submitted) return;
           answers.set(item.id, btn.getAttribute("data-key"));
@@ -511,9 +512,9 @@
       reviewList.innerHTML = review.map(({ index, item, chosen, chosenText, rightText, ok }) => `
       <article class="review-item ${ok ? "ok" : "bad"}">
         <h4>Q${index + 1} · ${ok ? "Correct" : "Incorrect"} · ${escapeHtml(slotLabel)}: ${escapeHtml(item.slot)}</h4>
-        <p class="stem">${formatStem(item.stem)}</p>
-        <p>Yours: <strong>${escapeHtml(chosen || "—")}. ${escapeHtml(chosenText)}</strong></p>
-        <p>Correct: <strong>${escapeHtml(item.correctKey)}. ${escapeHtml(rightText)}</strong></p>
+        ${renderEiLine(item, chosen, { locked: true, showKey: true })}
+        <p>You tapped: <strong>${escapeHtml(chosenText)}</strong></p>
+        <p>Must change: <strong>${escapeHtml(rightText)}</strong></p>
         <p>${escapeHtml(item.explain)}</p>
       </article>`).join("");
       results.scrollIntoView({ behavior: "smooth", block: "start" });
