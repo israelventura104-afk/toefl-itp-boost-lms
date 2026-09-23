@@ -214,5 +214,6 @@ Classroom pages: teach → 5 demos → 15 practice. Feedback on practice only af
 | 06 | Word Forms | `strategy-wf-06-word-forms.html` |
 | 07 | Subjunctive | `strategy-sj-07-subjunctive.html` |
 | 08 | Adjective Clauses | `strategy-ac-08-adjective-clauses.html` |
+| 09 | Error Identification routine | `strategy-ei-09-error-identification.html` |
 
-CA-03 was a details/summary stub; rebuilt to the same engine as 01/02. Hub menu lists 03–08.
+CA-03 was a details/summary stub; rebuilt to the same engine as 01/02. Hub menu lists 03–09. Demo titles never name the answer.
