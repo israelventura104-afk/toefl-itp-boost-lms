@@ -213,5 +213,6 @@ Classroom pages: teach → 5 demos → 15 practice. Feedback on practice only af
 | 05 | Parallel Structure | `strategy-ps-05-parallel-structure.html` |
 | 06 | Word Forms | `strategy-wf-06-word-forms.html` |
 | 07 | Subjunctive | `strategy-sj-07-subjunctive.html` |
+| 08 | Adjective Clauses | `strategy-ac-08-adjective-clauses.html` |
 
-CA-03 was a details/summary stub; rebuilt to the same engine as 01/02. Hub menu lists 03–07.
+CA-03 was a details/summary stub; rebuilt to the same engine as 01/02. Hub menu lists 03–08.
