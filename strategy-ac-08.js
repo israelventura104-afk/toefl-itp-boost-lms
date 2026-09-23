@@ -38,7 +38,7 @@
 
   const demos = [
     {
-      title: "Demo 1 · Who (people, subject)",
+      title: "Demo 1",
       stem: "The botanist ____ discovered the orchid now teaches at the university.",
       options: [
         { key: "A", text: "which" },
@@ -51,7 +51,7 @@
       teach: "Botanist is a person and does the discovering, so who is required. Common trap: which, which is for things."
     },
     {
-      title: "Demo 2 · Which (things)",
+      title: "Demo 2",
       stem: "The manuscript ____ was damaged in storage has now been restored.",
       options: [
         { key: "A", text: "who" },
@@ -64,7 +64,7 @@
       teach: "Manuscript is a thing, so which is required. Common trap: who, because the sentence feels academic and ‘human’."
     },
     {
-      title: "Demo 3 · Whose (possession)",
+      title: "Demo 3",
       stem: "The researcher ____ samples were lost repeated the experiment.",
       options: [
         { key: "A", text: "who" },
@@ -77,7 +77,7 @@
       teach: "The samples belong to the researcher, so whose is required. Common trap: who, which cannot show possession."
     },
     {
-      title: "Demo 4 · Whom (people, object)",
+      title: "Demo 4",
       stem: "The historian ____ the committee invited specializes in Roman aqueducts.",
       options: [
         { key: "A", text: "whom" },
@@ -90,7 +90,7 @@
       teach: "The committee invited the historian, so the relative is an object: whom. Common trap: which."
     },
     {
-      title: "Demo 5 · Error ID · which for a person",
+      title: "Demo 5",
       stem: "(A) The botanist (B) which discovered (C) the orchid (D) teaches here.",
       options: [
         { key: "A", text: "The botanist" },
