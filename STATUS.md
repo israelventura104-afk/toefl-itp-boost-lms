@@ -216,5 +216,6 @@ Classroom pages: teach → 5 demos → 15 practice. Feedback on practice only af
 | 08 | Adjective Clauses | `strategy-ac-08-adjective-clauses.html` |
 | 09 | Error Identification routine | `strategy-ei-09-error-identification.html` |
 | 10 | Noun Clauses | `strategy-nc-10-noun-clauses.html` |
+| 11 | Reduced Clauses | `strategy-rc-11-reduced-clauses.html` |
 
-Next in this track: Reduced Clauses → Passive → Gerunds and infinitives. Hub menu lists 03–10. Demo titles never name the answer. Error ID items use clickable underlines.
+Next in this track: Passive → Gerunds and infinitives. Hub menu lists 03–11. Demo titles never name the answer. Error ID items use clickable underlines.
