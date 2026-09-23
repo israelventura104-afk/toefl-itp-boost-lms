@@ -199,3 +199,16 @@ GitHub Pages notes:
 - Free short demo test: `demo-test.html` (3 Structure + 3 Listening + 3 Reading)
 - Config: `data/demo-test.json`
 - Dashboard remains for after class code / course work
+
+### Strategy class track (English Hub)
+
+Classroom pages: teach → 5 demos → 15 practice. Feedback on practice only after submit.
+
+| # | Skill | Page |
+|---|--------|------|
+| 01 | Subject–Verb Agreement | `strategy-sva-01-subject-verb-agreement.html` |
+| 02 | Prepositional Interruptions | `strategy-pi-02-prepositional-interruptions.html` |
+| 03 | Correlative Agreement | `strategy-ca-03-correlative-agreement.html` |
+| 04 | Verb Tenses | `strategy-vt-04-verb-tenses.html` |
+
+CA-03 was a details/summary stub; rebuilt to the same engine as 01/02. Hub menu lists 03 and 04.
