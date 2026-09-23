@@ -175,6 +175,7 @@ button { cursor: pointer; }
   line-height: 2.55;
   color: var(--navy);
 }
+.ei-plain { font-weight: 650; }
 .ei-chunk {
   display: inline-flex;
   flex-direction: column;
