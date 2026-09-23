@@ -3,7 +3,7 @@ from collections import Counter
 from pathlib import Path
 
 root = Path(__file__).resolve().parents[1]
-for name in ["strategy-ca-03.js", "strategy-vt-04.js"]:
+for name in ["strategy-ca-03.js", "strategy-vt-04.js", "strategy-ps-05.js"]:
     text = (root / name).read_text(encoding="utf-8")
     practice = text.split("const practice = [", 1)[1].split("];", 1)[0]
     keys = re.findall(r'correctKey: "([ABCD])"', practice)

@@ -210,5 +210,6 @@ Classroom pages: teach → 5 demos → 15 practice. Feedback on practice only af
 | 02 | Prepositional Interruptions | `strategy-pi-02-prepositional-interruptions.html` |
 | 03 | Correlative Agreement | `strategy-ca-03-correlative-agreement.html` |
 | 04 | Verb Tenses | `strategy-vt-04-verb-tenses.html` |
+| 05 | Parallel Structure | `strategy-ps-05-parallel-structure.html` |
 
-CA-03 was a details/summary stub; rebuilt to the same engine as 01/02. Hub menu lists 03 and 04.
+CA-03 was a details/summary stub; rebuilt to the same engine as 01/02. Hub menu lists 03–05.
